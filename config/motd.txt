@@ -1,4 +1,4 @@
 <h1>Welcome to the TGMC codebase!</h1>
 
-<i>Don't forget to set your own MOTD.</i>
+<i>This is a marine based PVE server, if the option comes, don't play a xeno without staff approval.</i>
 <br><br>

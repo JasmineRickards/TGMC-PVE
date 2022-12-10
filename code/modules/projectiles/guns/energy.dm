@@ -11,7 +11,10 @@
 	placed_overlay_iconstate = "laser"
 	reciever_flags = AMMO_RECIEVER_MAGAZINES|AMMO_RECIEVER_DO_NOT_EJECT_HANDFULS|AMMO_RECIEVER_CYCLE_ONLY_BEFORE_FIRE
 	default_ammo_type = /obj/item/cell/lasgun
-	allowed_ammo_types = list(/obj/item/cell/lasgun)
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun,
+		/obj/item/cell/lasgun/volkite/powerpack,
+		)
 	muzzle_flash = null
 
 /obj/item/weapon/gun/energy/get_current_rounds(obj/item/mag)
@@ -269,7 +272,10 @@
 	damage_falloff_mult = 0.25
 	fire_delay = 2
 	default_ammo_type = /obj/item/cell/lasgun/lasrifle
-	allowed_ammo_types = list(/obj/item/cell/lasgun/lasrifle)
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun,
+		/obj/item/cell/lasgun/volkite/powerpack,
+		)
 	var/list/datum/lasrifle/base/mode_list = list(
 	)
 
@@ -345,7 +351,10 @@
 	flags_equip_slot = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_BULKY
 	default_ammo_type = /obj/item/cell/lasgun/lasrifle
-	allowed_ammo_types = list(/obj/item/cell/lasgun/lasrifle)
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun,
+		/obj/item/cell/lasgun/volkite/powerpack,
+		)
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_ENERGY|GUN_AMMO_COUNTER|GUN_AMMO_COUNT_BY_SHOTS_REMAINING|GUN_NO_PITCH_SHIFT_NEAR_EMPTY|GUN_SHOWS_AMMO_REMAINING
 	muzzle_flash_color = COLOR_TESLA_BLUE
 	ammo_level_icon = "tesla"
@@ -822,7 +831,10 @@
 	unload_sound = 'sound/weapons/guns/interact/volkite_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/volkite_reload.ogg'
 	max_shots = 50
-	ammo_datum_type = /datum/ammo/energy/volkite
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun/volkite,
+		/obj/item/cell/lasgun/volkite/powerpack,
+	)
 	rounds_per_shot = 24
 	default_ammo_type = /obj/item/cell/lasgun/volkite
 	allowed_ammo_types = list(/obj/item/cell/lasgun/volkite)
@@ -855,7 +867,10 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	max_shots = 15
 	rounds_per_shot = 36
-	ammo_datum_type = /datum/ammo/energy/volkite/medium
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun/volkite/small,
+		/obj/item/cell/lasgun/volkite/powerpack,
+	)
 	default_ammo_type = /obj/item/cell/lasgun/volkite/small
 	allowed_ammo_types = list(/obj/item/cell/lasgun/volkite/small)
 	fire_sound = 'sound/weapons/guns/fire/volkite_3.ogg'
@@ -877,6 +892,10 @@
 	item_state = "charger"
 	max_shots = 45
 	rounds_per_shot = 32
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun/volkite,
+		/obj/item/cell/lasgun/volkite/powerpack,
+	)
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/lasersight,

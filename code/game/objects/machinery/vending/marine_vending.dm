@@ -20,6 +20,8 @@
 			/obj/item/ammo_magazine/rifle/tx11 = -1,
 			/obj/item/weapon/gun/shotgun/pump/lever/repeater = -1,
 			/obj/item/ammo_magazine/packet/p4570 = -1,
+			/obj/item/weapon/gun/rifle/m41a = -1,
+			/obj/item/ammo_magazine/rifle/m41a = -1,
 		),
 		"Energy Weapons" = list(
 			/obj/item/cell/lasgun/lasrifle = -1,
@@ -29,12 +31,28 @@
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/standard_marine_mlaser = -1,
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/standard_marine_pistol = -1,
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/tesla = 2,
+			/obj/item/cell/lasgun = -1,
+			/obj/item/weapon/gun/energy/lasgun/M43 = -1,
+			/obj/item/cell/lasgun/volkite = -1,
+			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/charger = -1,
+			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/caliver = -1,
+			/obj/item/cell/lasgun/volkite/turret = -1,
+			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/cope/tgmc = 25,
+			/obj/item/cell/lasgun/volkite/powerpack = -1,
+			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/culverin = 5,
+
+
+
 		),
 		"SMGs" = list(
 			/obj/item/weapon/gun/smg/standard_smg = -1,
 			/obj/item/ammo_magazine/smg/standard_smg = -1,
 			/obj/item/weapon/gun/smg/standard_machinepistol = -1,
 			/obj/item/ammo_magazine/smg/standard_machinepistol = -1,
+			/obj/item/weapon/gun/rifle/alf_machinecarbine = -1,
+			/obj/item/ammo_magazine/rifle/alf_machinecarbine = -1,
+			/obj/item/weapon/gun/smg/m25 = -1,
+			/obj/item/ammo_magazine/smg/m25 = -1,
 		),
 		"Marksman" = list(
 			/obj/item/weapon/gun/rifle/standard_dmr = -1,
@@ -68,6 +86,8 @@
 			/obj/item/ammo_magazine/standard_gpmg = -1,
 			/obj/item/weapon/gun/standard_mmg = 5,
 			/obj/item/ammo_magazine/standard_mmg = -1,
+			/obj/item/weapon/gun/rifle/m412l1_hpr = 5,
+			/obj/item/ammo_magazine/m412l1_hpr = -1,
 		),
 		"Melee" = list(
 			/obj/item/weapon/combat_knife = -1,

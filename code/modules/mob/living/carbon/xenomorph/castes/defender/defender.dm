@@ -4,8 +4,8 @@
 	desc = "A alien with an armored head crest."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Defender Walking"
-	health = 200
-	maxHealth = 200
+	health = 250
+	maxHealth = 250
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16

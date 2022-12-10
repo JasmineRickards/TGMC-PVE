@@ -245,6 +245,7 @@
 /obj/item/storage/box/spec/scoutshotgun/Initialize(mapload, ...)
 	. = ..()
 	new /obj/item/clothing/suit/storage/marine/M3S(src)
+	new /obj/item/weapon/gun/shotgun/zx76(src)
 	new /obj/item/clothing/head/helmet/marine/scout(src)
 	new /obj/item/clothing/glasses/night/tx8(src)
 	new /obj/item/binoculars/tactical/scout(src)

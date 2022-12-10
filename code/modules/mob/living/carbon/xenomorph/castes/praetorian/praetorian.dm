@@ -4,8 +4,8 @@
 	desc = "A huge, looming beast of an alien."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Praetorian Walking"
-	health = 210
-	maxHealth = 210
+	health = 1500
+	maxHealth = 1500
 	plasma_stored = 200
 	pixel_x = -16
 	old_x = -16

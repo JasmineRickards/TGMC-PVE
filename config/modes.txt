@@ -17,17 +17,20 @@ endmode
 
 mode Extended
 	requiredplayers 0
-	votable 0
+	votable 1
 endmode
 
 mode Civil War
 	requiredplayers 2
+	votable 0
 endmode
 
 mode Combat Patrol
 	requiredplayers 2
+	votable 0
 endmode
 
 mode Sensor Capture
 	requiredplayers 2
+	votable 0
 endmode

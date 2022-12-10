@@ -14,23 +14,23 @@ endmap
 
 map lv624
 	default
-	minplayers 25
+	minplayers 2
 endmap
 
 map desertdam
-	minplayers 90
+	minplayers 2
 endmap
 
 map icarus_military_port
-	minplayers 50
+	minplayers 2
 endmap
 
 map bigred_v2
-	minplayers 25
+	minplayers 2
 endmap
 
 map ice_colony_v2
-	minplayers 40
+	minplayers 2
 endmap
 
 map prison_station_fop
@@ -42,24 +42,24 @@ map vapor_processing
 endmap
 
 map icy_caves
-	maxplayers 50
+	maxplayers 2
 endmap
 
 map research_outpost
-	maxplayers 40
+	maxplayers 2
 endmap
 
 map whiskey_outpost_v2
 endmap
 
 map magmoor_digsite_iv
-	minplayers 20
+	minplayers 2
 endmap
 
 map orion_outpost
-	maxplayers 40
+	maxplayers 4
 endmap
 
 map gelida_iv
-	minplayers 50
+	minplayers 5
 endmap

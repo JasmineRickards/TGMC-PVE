@@ -10,7 +10,7 @@
 	wound_type = "queen" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = 25
 
 	// *** Speed *** //
 	speed = 0
@@ -20,7 +20,7 @@
 	plasma_gain = 40
 
 	// *** Health *** //
-	max_health = 425
+	max_health = 2500
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_YOUNG_THRESHOLD
@@ -92,7 +92,7 @@
 	plasma_gain = 50
 
 	// *** Health *** //
-	max_health = 450
+	max_health = 2600
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_MATURE_THRESHOLD
@@ -115,7 +115,7 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = 23
+	melee_damage = 28
 
 	// *** Speed *** //
 	speed = -0.2
@@ -148,7 +148,7 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = 23
+	melee_damage = 29
 
 	// *** Speed *** //
 	speed = -0.3
@@ -158,7 +158,7 @@
 	plasma_gain = 70
 
 	// *** Health *** //
-	max_health = 500
+	max_health = 2900
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ANCIENT_THRESHOLD
@@ -181,7 +181,7 @@
 	primordial_message = "Destiny bows to our will as the universe trembles before us."
 	upgrade = XENO_UPGRADE_FOUR
 	// *** Melee Attacks *** //
-	melee_damage = 23
+	melee_damage = 30
 
 	// *** Speed *** //
 	speed = -0.3
@@ -191,7 +191,7 @@
 	plasma_gain = 70
 
 	// *** Health *** //
-	max_health = 500
+	max_health = 4000
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 65, ENERGY = 65, BOMB = 30, BIO = 60, FIRE = 60, ACID = 60)

@@ -396,9 +396,11 @@
 		/obj/item/storage/box/loot/sadarclassic_pack,
 	)
 	rare_list = list(
+		/obj/item/storage/box/spec/heavy_grenadier,
+		/obj/item/storage/box/spec/demolitionist,
+		/obj/item/storage/box/spec/scoutshotgun,
+		/obj/item/storage/box/spec/pyro,
 		/obj/item/storage/box/loot/tl102_pack,
-		/obj/item/storage/box/loot/mortar_pack,
-		/obj/item/storage/box/loot/howitzer_pack,
 		/obj/item/storage/box/loot/sentry_pack,
 	)
 	uncommon_list = list(
@@ -406,18 +408,22 @@
 		/obj/item/storage/box/loot/railgun_pack,
 		/obj/item/storage/box/loot/scoutrifle_pack,
 		/obj/item/storage/box/loot/recoilless_pack,
+		/obj/item/storage/box/loot/injectors_pack,
+		/obj/item/storage/box/loot/PMC,
 	)
 	common_list = list(
+		/obj/item/storage/box/loot/jaeger_mods,
+		/obj/item/storage/box/loot/materials_pack,
 		/obj/item/storage/box/loot/autosniper_pack,
 		/obj/item/storage/box/loot/thermobaric_pack,
-		/obj/item/storage/box/loot/tesla_pack,
+		/obj/item/storage/box/loot/sentry_pack,
 		/obj/item/storage/box/loot/tx54_pack,
 	)
 
 // Crates the lootbox uses.
 
 /obj/item/storage/box/loot
-	name = "\improper generic equipment"
+	name = "\improper loot equipment"
 	desc = "A large case containing some kind of equipment. Drag this sprite into you to open it up!\nNOTE: You cannot put items back inside this case."
 	icon = 'icons/Marine/marine-weapons.dmi'
 	icon_state = "smartgun_case"
@@ -427,12 +433,40 @@
 	foldable = null
 
 /obj/item/storage/box/loot/Initialize()
+	new /obj/item/storage/box/MRE(src)
 	. = ..()
-	new /obj/item/weapon/banhammer(src)
 
 // Common
 
+/obj/item/storage/box/loot/jaeger_mods/Initialize()
+	name = "Advanced Jaeger"
+	. = ..()
+	new /obj/item/armor_module/module/hlin_explosive_armor(src)
+	new /obj/item/armor_module/module/tyr_extra_armor(src)
+	new /obj/item/armor_module/module/tyr_head(src)
+	new /obj/item/armor_module/module/valkyrie_autodoc(src)
+	new /obj/item/armor_module/module/mimir_environment_protection(src)
+	new /obj/item/armor_module/module/mimir_environment_protection/mimir_helmet(src)
+	new	/obj/item/armor_module/module/welding/superior(src)
+	new /obj/item/armor_module/module/welding/superior(src)
+
+
+/obj/item/storage/box/loot/injectors_pack/Initialize()
+	name = "Advanced medical"
+	. = ..()
+	new /obj/item/storage/pouch/medical_injectors/medic(src)
+	new /obj/item/storage/pouch/medical_injectors/medic(src)
+	new /obj/item/storage/pouch/medical_injectors/medic(src)
+	new /obj/item/storage/pouch/medical_injectors/medic(src)
+	new /obj/item/storage/pouch/medical_injectors/medic(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/peridaxon_plus(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/peridaxon_plus(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/peridaxon_plus(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/peridaxon_plus(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/peridaxon_plus(src)
+
 /obj/item/storage/box/loot/autosniper_pack/Initialize()
+	name = "autosniper"
 	. = ..()
 	new /obj/item/weapon/gun/rifle/standard_autosniper(src)
 	new /obj/item/weapon/gun/rifle/standard_autosniper(src)
@@ -449,6 +483,7 @@
 	new /obj/item/ammo_magazine/rifle/autosniper(src) //180 total and common, fine considering 3 autos is really strong.
 
 /obj/item/storage/box/loot/thermobaric_pack/Initialize()
+	name = "Thermobarric"
 	. = ..()
 	new /obj/item/weapon/gun/launcher/rocket/m57a4/t57(src)
 	new /obj/item/weapon/gun/launcher/rocket/m57a4/t57(src)
@@ -465,12 +500,14 @@
 	new /obj/item/ammo_magazine/rocket/m57a4(src) // three launchers and 10 arrays. Common. 200.
 
 /obj/item/storage/box/loot/tesla_pack/Initialize()
+	name = "Tesla"
 	. = ..()
 	new /obj/item/weapon/gun/energy/lasgun/lasrifle/tesla(src)
 	new /obj/item/weapon/gun/energy/lasgun/lasrifle/tesla(src)
 	new /obj/item/weapon/gun/energy/lasgun/lasrifle/tesla(src) // 180 and nothing else. Have fun.
 
 /obj/item/storage/box/loot/tx54_pack/Initialize()
+	name = "TX-54"
 	. = ..()
 	new /obj/item/weapon/gun/rifle/tx54(src)
 	new /obj/item/weapon/gun/rifle/tx54(src)
@@ -490,7 +527,24 @@
 
 // Uncommon
 
+/obj/item/storage/box/loot/PMC/Initialize()
+	name = "PMC Kit"
+	new /obj/item/weapon/gun/smg/m25/elite/pmc(src)
+	new	/obj/item/clothing/under/marine/veteran/PMC/leader(src)
+	new /obj/item/clothing/mask/gas/PMC/leader(src)
+	new /obj/item/clothing/suit/storage/marine/veteran/PMC/leader(src)
+	new /obj/item/clothing/gloves/marine/veteran/PMC(src)
+	new /obj/item/clothing/head/helmet/marine/veteran/PMC/leader(src)
+	new /obj/item/storage/pouch/magazine/large/pmc_m25(src)
+	new /obj/item/storage/pouch/magazine/large/pmc_m25(src)
+	new /obj/item/storage/pouch/magazine/large/pmc_m25(src)
+	new /obj/item/storage/pouch/magazine/large/pmc_m25(src)
+	new /obj/item/storage/pouch/magazine/large/pmc_m25(src)
+	new /obj/item/storage/pouch/magazine/large/pmc_m25(src)
+	new /obj/item/storage/pouch/magazine/large/pmc_m25(src)
+
 /obj/item/storage/box/loot/materials_pack/Initialize()
+	name = "FOB Materials"
 	. = ..()
 	new /obj/item/stack/sheet/plasteel/large_stack(src)
 	new /obj/item/stack/sheet/plasteel/large_stack(src)
@@ -504,6 +558,7 @@
 	new /obj/item/stack/sandbags_empty/full(src)
 
 /obj/item/storage/box/loot/recoilless_pack/Initialize()
+	name = "Recoilles"
 	. = ..()
 	new /obj/item/storage/holster/backholster/rpg/full(src)
 	new /obj/item/storage/holster/backholster/rpg/full(src)
@@ -516,6 +571,7 @@
 	new /obj/item/ammo_magazine/rocket/recoilless/heat(src)
 
 /obj/item/storage/box/loot/railgun_pack/Initialize()
+	name = "Railgun"
 	. = ..()
 	new /obj/item/weapon/gun/rifle/railgun(src)
 	new /obj/item/weapon/gun/rifle/railgun(src)
@@ -524,35 +580,87 @@
 	new /obj/item/ammo_magazine/railgun/smart(src)
 	new /obj/item/ammo_magazine/railgun/smart(src)
 	new /obj/item/ammo_magazine/railgun/smart(src)
+	new /obj/item/ammo_magazine/railgun/smart(src)
+	new /obj/item/ammo_magazine/railgun/smart(src)
+	new /obj/item/ammo_magazine/railgun/smart(src)
+	new /obj/item/ammo_magazine/railgun/smart(src)
+	new /obj/item/ammo_magazine/railgun/smart(src)
+	new /obj/item/ammo_magazine/railgun/smart(src)
+	new /obj/item/ammo_magazine/railgun/smart(src)
+	new /obj/item/ammo_magazine/railgun/smart(src)
+	new /obj/item/ammo_magazine/railgun/smart(src)
+	new /obj/item/ammo_magazine/railgun/smart(src)
+	new /obj/item/ammo_magazine/railgun/smart(src)
+	new /obj/item/ammo_magazine/railgun/smart(src)
 	new /obj/item/ammo_magazine/railgun/hvap(src)
 	new /obj/item/ammo_magazine/railgun/hvap(src)
 	new /obj/item/ammo_magazine/railgun/hvap(src)
 	new /obj/item/ammo_magazine/railgun/hvap(src)
+	new /obj/item/ammo_magazine/railgun/hvap(src)
+	new /obj/item/ammo_magazine/railgun/hvap(src)
+	new /obj/item/ammo_magazine/railgun/hvap(src)
+	new /obj/item/ammo_magazine/railgun/hvap(src)
+	new /obj/item/ammo_magazine/railgun/hvap(src)
+	new /obj/item/ammo_magazine/railgun/hvap(src)
+	new /obj/item/ammo_magazine/railgun/hvap(src)
+	new /obj/item/ammo_magazine/railgun/hvap(src)
+	new /obj/item/ammo_magazine/railgun/hvap(src)
+	new /obj/item/ammo_magazine/railgun(src)
+	new /obj/item/ammo_magazine/railgun(src)
+	new /obj/item/ammo_magazine/railgun(src)
+	new /obj/item/ammo_magazine/railgun(src)
+	new /obj/item/ammo_magazine/railgun(src)
+	new /obj/item/ammo_magazine/railgun(src)
+	new /obj/item/ammo_magazine/railgun(src)
+	new /obj/item/ammo_magazine/railgun(src)
+	new /obj/item/ammo_magazine/railgun(src)
+	new /obj/item/ammo_magazine/railgun(src)
 	new /obj/item/ammo_magazine/railgun(src)
 	new /obj/item/ammo_magazine/railgun(src)
 	new /obj/item/ammo_magazine/railgun(src)
 	new /obj/item/ammo_magazine/railgun(src)
 
 /obj/item/storage/box/loot/scoutrifle_pack/Initialize()
+	name = "TX-8"
 	. = ..()
 	new /obj/item/weapon/gun/rifle/tx8(src)
 	new /obj/item/weapon/gun/rifle/tx8(src)
 	new /obj/item/weapon/gun/rifle/tx8(src)
+	new /obj/item/clothing/glasses/night/tx8
+	new /obj/item/clothing/glasses/night/tx8
+	new /obj/item/clothing/glasses/night/tx8
+	new /obj/item/clothing/glasses/night/tx8
 	new /obj/item/ammo_magazine/packet/scout_rifle(src)
 	new /obj/item/ammo_magazine/packet/scout_rifle(src)
 	new /obj/item/ammo_magazine/packet/scout_rifle(src)
 	new /obj/item/ammo_magazine/packet/scout_rifle(src)
-	new /obj/item/ammo_magazine/rifle/tx8
-	new /obj/item/ammo_magazine/rifle/tx8
-	new /obj/item/ammo_magazine/rifle/tx8
-	new /obj/item/ammo_magazine/rifle/tx8
-	new /obj/item/ammo_magazine/rifle/tx8
-	new /obj/item/ammo_magazine/rifle/tx8
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
+	new /obj/item/ammo_magazine/rifle/tx8(src)
 
 
 // Rares
 
 /obj/item/storage/box/loot/mortar_pack/Initialize()
+	name = "Mortars"
 	. = ..()
 	new /obj/item/mortar_kit(src)
 	new /obj/item/mortar_kit(src)
@@ -561,6 +669,7 @@
 	new /obj/item/mortar_kit(src)
 
 /obj/item/storage/box/loot/howitzer_pack/Initialize()
+	name = "Howitzer"
 	. = ..()
 	new /obj/item/mortar_kit/howitzer(src)
 	new /obj/item/mortar_kit/howitzer(src)
@@ -578,11 +687,13 @@
 	new /obj/item/mortal_shell/howitzer/white_phos(src)
 
 /obj/item/storage/box/loot/tl102_pack/Initialize()
+	name = "T-102 ammo"
 	. = ..()
 	new /obj/item/storage/box/tl102(src)
 	new /obj/item/storage/box/tl102(src)
 
 /obj/item/storage/box/loot/sentry_pack/Initialize()
+	name = "Bulk sentries"
 	. = ..()
 	new /obj/item/storage/box/sentry(src)
 	new /obj/item/storage/box/sentry(src)
@@ -592,15 +703,15 @@
 // Legendaries
 
 /obj/item/storage/box/loot/operator_pack/Initialize()
+	name = "Operator"
 	. = ..()
-	new /obj/item/weapon/gun/rifle/m412/elite
-	new /obj/item/ammo_magazine/rifle
-	new /obj/item/ammo_magazine/rifle
-	new /obj/item/ammo_magazine/rifle
-	new /obj/item/ammo_magazine/rifle
-	new /obj/item/clothing/glasses/night/tx8
+	new /obj/item/explosive/plastique(src)
+	new /obj/item/storage/backpack/lightpack(src)
+	new /obj/item/weapon/gun/rifle/m412/elite(src)
+	new /obj/item/clothing/glasses/night/tx8(src)
 
 /obj/item/storage/box/loot/b18classic_pack/Initialize()
+	name = "B-18 kit"
 	. = ..()
 	new /obj/item/clothing/suit/storage/marine/specialist(src)
 	new /obj/item/clothing/head/helmet/marine/specialist(src)
@@ -608,18 +719,36 @@
 	new /obj/item/weapon/gun/minigun(src)
 	new /obj/item/ammo_magazine/minigun_powerpack(src)
 	new /obj/item/ammo_magazine/minigun_powerpack(src)
+	new /obj/item/ammo_magazine/minigun_powerpack(src)
+	new /obj/item/ammo_magazine/minigun_powerpack(src)
+	new /obj/item/ammo_magazine/minigun_powerpack(src)
+	new /obj/item/ammo_magazine/minigun_powerpack(src)
 
 /obj/item/storage/box/loot/heavy_pack/Initialize()
+	name = "Miniguns kit"
 	. = ..()
 	new /obj/item/weapon/gun/minigun(src)
 	new /obj/item/weapon/gun/minigun(src)
+	new /obj/item/ammo_magazine/minigun_powerpack(src)
+	new /obj/item/ammo_magazine/minigun_powerpack(src)
+	new /obj/item/ammo_magazine/minigun_powerpack(src)
+	new /obj/item/ammo_magazine/minigun_powerpack(src)
 	new /obj/item/ammo_magazine/minigun_powerpack(src)
 	new /obj/item/ammo_magazine/minigun_powerpack(src)
 	new /obj/item/armor_module/module/tyr_extra_armor(src)
 	new /obj/item/armor_module/module/tyr_extra_armor(src)
 
 /obj/item/storage/box/loot/sadarclassic_pack/Initialize()
+	name = "SADAR"
 	. = ..()
 	new /obj/item/weapon/gun/launcher/rocket/sadar(src)
 	new /obj/item/storage/backpack/marine/satchel/scout_cloak/scout(src)
 	new /obj/item/ammo_magazine/rocket/sadar/ap(src)
+	new /obj/item/ammo_magazine/rocket/sadar/ap(src)
+	new /obj/item/ammo_magazine/rocket/sadar/ap(src)
+	new /obj/item/ammo_magazine/rocket/sadar/ap(src)
+	new /obj/item/ammo_magazine/rocket/sadar/ap(src)
+	new /obj/item/ammo_magazine/rocket/sadar/ap(src)
+	new /obj/item/ammo_magazine/rocket/sadar/ap(src)
+
+

@@ -6,7 +6,7 @@
 	icon = 'icons/obj/items/ammo.dmi'
 	icon_state = "m43"
 	item_state = null
-	maxcharge = 600 ///Changed due to the fact some maps and ERTs spawn with the child, the lasrifle. Charges on guns changed accordingly.
+	maxcharge = 1850 ///Changed due to the fact some maps and ERTs spawn with the child, the lasrifle. Charges on guns changed accordingly.
 	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "mag_cell"
 	charge_overlay = "m43"
@@ -27,14 +27,14 @@
 	desc = "An advanced, ultrahigh capacity battery used to power the M43 lasgun; has sixty percent more charge capacity than standard laspacks."
 	charge_overlay = "m43_e"
 	icon_state = "m43_e"
-	maxcharge = 1600
+	maxcharge = 3500
 
 /obj/item/cell/lasgun/pulse
 	name = "\improper M19C4 pulse battery"
 	desc = "An advanced, ultrahigh capacity battery used to power the M19C4 pulse rifle system; Uses pulse-based energy rather than laser energy, massively increasing its firepower. It can also recharge on its own."
 	charge_overlay = "pulse"
 	icon_state = "pulse"
-	maxcharge = 2000 // 100 shots.
+	maxcharge = 4000 // 200 shots.
 	self_recharge = TRUE
 	charge_amount = 25 // 10%, 1 shot
 	charge_delay = 2 SECONDS
@@ -52,7 +52,7 @@
 	charge_overlay = "te"
 	icon_state = "te"
 	icon_state_mini = "mag_cell_te"
-	maxcharge = 600
+	maxcharge = 1850
 
 /obj/item/cell/lasgun/fob_sentry/cell
 	maxcharge = INFINITY
@@ -64,7 +64,7 @@
 	desc = "A specialized high density battery used to power volkite weaponry."
 	icon = 'icons/obj/items/ammo.dmi'
 	icon_state = "volkite"
-	maxcharge = 1440
+	maxcharge = 3500
 	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "mag_cell"
 	charge_overlay = "volkite"
@@ -75,7 +75,7 @@
 	desc = "A specialized compact battery used to power the smallest volkite weaponry."
 	icon = 'icons/obj/items/ammo.dmi'
 	icon_state = "volkite_small"
-	maxcharge = 540
+	maxcharge = 850
 	w_class = WEIGHT_CLASS_SMALL
 	icon_state_mini = "mag_cell"
 	charge_overlay = "volkite_small"
@@ -105,7 +105,7 @@
 	flags_magazine_features = MAGAZINE_REFUND_IN_CHAMBER|MAGAZINE_WORN
 	w_class = WEIGHT_CLASS_HUGE
 	slowdown = 0.3
-	maxcharge = 4800
+	maxcharge = 15000
 	self_recharge = TRUE
 	charge_amount = 32
 	charge_delay = 2 SECONDS

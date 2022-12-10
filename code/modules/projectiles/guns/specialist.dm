@@ -391,7 +391,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	icon_state = "minigun"
 	item_state = "minigun"
 	fire_animation = "minigun_fire"
-	max_shells = 500 //codex
+	max_shells = 1500 //codex
 	caliber = CALIBER_762X51 //codex
 	load_method = MAGAZINE //codex
 	fire_sound = 'sound/weapons/guns/fire/minigun.ogg'
@@ -452,8 +452,8 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	aim_slowdown = 1.5
 	actions_types = list()
 
-	fire_delay = 0.1 SECONDS
-	windup_delay = 0.7 SECONDS
+	fire_delay = 0.09 SECONDS
+	windup_delay = 0.3 SECONDS
 	scatter = -5
 	recoil = 0
 	recoil_unwielded = 4

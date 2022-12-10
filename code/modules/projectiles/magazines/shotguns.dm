@@ -13,8 +13,8 @@ one type of shotgun ammo, but I think it helps in referencing it. ~N
 	icon_state = "slugs"
 	default_ammo = /datum/ammo/bullet/shotgun/slug
 	caliber = CALIBER_12G //All shotgun rounds are 12g right now.
-	max_rounds = 25 // Real shotgun boxes are usually 5 or 25 rounds. This works with the new system, five handfuls.
-	w_class = WEIGHT_CLASS_BULKY // Can't throw it in your pocket, friend.
+	max_rounds = 75 // Real shotgun boxes are usually 5 or 25 rounds. This works with the new system, five handfuls.
+	w_class = WEIGHT_CLASS_NORMAL // Can throw it in your pocket, friend.
 	icon_state_mini = "slugs"
 
 /obj/item/ammo_magazine/shotgun/incendiary
@@ -22,6 +22,7 @@ one type of shotgun ammo, but I think it helps in referencing it. ~N
 	desc = "A box filled with self-detonating incendiary shotgun rounds. 12 Gauge."
 	icon_state = "incendiary"
 	default_ammo = /datum/ammo/bullet/shotgun/incendiary
+	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "incendiary"
 
 /obj/item/ammo_magazine/shotgun/buckshot
@@ -29,6 +30,7 @@ one type of shotgun ammo, but I think it helps in referencing it. ~N
 	desc = "A box filled with buckshot spread shotgun shells. 12 Gauge."
 	icon_state = "buckshot"
 	default_ammo = /datum/ammo/bullet/shotgun/buckshot
+	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "buckshot"
 
 /obj/item/ammo_magazine/shotgun/flechette
@@ -36,6 +38,7 @@ one type of shotgun ammo, but I think it helps in referencing it. ~N
 	desc = "A box filled with flechette shotgun shells. 12 Gauge."
 	icon_state = "flechette"
 	default_ammo = /datum/ammo/bullet/shotgun/flechette
+	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "flechette"
 
 /obj/item/ammo_magazine/shotgun/beanbag
@@ -43,6 +46,7 @@ one type of shotgun ammo, but I think it helps in referencing it. ~N
 	desc = "A box filled with beanbag shotgun shells used for non-lethal crowd control. 12 Gauge."
 	icon_state = "beanbag"
 	default_ammo = /datum/ammo/bullet/shotgun/beanbag
+	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "beanbag"
 
 /obj/item/ammo_magazine/shotgun/tracker
@@ -50,6 +54,7 @@ one type of shotgun ammo, but I think it helps in referencing it. ~N
 	desc = "A box filled with tracker shotgun shells. 12 Gauge."
 	icon_state = "tracking"
 	default_ammo = /datum/ammo/bullet/shotgun/tracker
+	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "tracking"
 
 /obj/item/ammo_magazine/rifle/bolt
@@ -58,7 +63,7 @@ one type of shotgun ammo, but I think it helps in referencing it. ~N
 	icon_state = "7.62" //Thank you Alterist
 	default_ammo = /datum/ammo/bullet/sniper/svd
 	caliber = CALIBER_762X54 //Cyka Blyat
-	max_rounds = 20 // Real rifle boxes are usually 20 rounds. This works with the new system, four handfuls.
+	max_rounds = 65 // Real rifle boxes are usually 20 rounds. This works with the new system, four handfuls.
 	w_class = WEIGHT_CLASS_SMALL // CAN throw it in your pocket, friend.
 	icon_state_mini = "mosin"
 
@@ -88,7 +93,7 @@ one type of shotgun ammo, but I think it helps in referencing it. ~N
 	icon_state = "derringer_box"
 	default_ammo = /datum/ammo/bullet/pistol/superheavy/derringer
 	caliber = CALIBER_41RIM
-	max_rounds = 10
+	max_rounds = 20
 	w_class = WEIGHT_CLASS_SMALL
 	icon_state_mini = "ammo_packet"
 
@@ -98,7 +103,7 @@ one type of shotgun ammo, but I think it helps in referencing it. ~N
 	icon_state = "mbx900_sabot"
 	default_ammo = /datum/ammo/bullet/shotgun/mbx900_sabot
 	caliber = CALIBER_410
-	max_rounds = 25
+	max_rounds = 50
 	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "mbx900_sabot"
 

@@ -9,7 +9,7 @@
 	upgrade = XENO_UPGRADE_BASETYPE
 
 	// *** Melee Attacks *** //
-	melee_damage = 16
+	melee_damage = 10
 
 	// *** Speed *** //
 	speed = -0.8
@@ -20,7 +20,7 @@
 	plasma_gain = 25
 
 	// *** Health *** //
-	max_health = 225
+	max_health = 150
 
 	// *** Evolution *** //
 	evolution_threshold = 80
@@ -86,7 +86,7 @@
 	plasma_gain = 30
 
 	// *** Health *** //
-	max_health = 250
+	max_health = 175
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_ONE_MATURE_THRESHOLD
@@ -104,7 +104,7 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = 18
+	melee_damage = 13
 
 	// *** Speed *** //
 	speed = -1.0
@@ -114,7 +114,7 @@
 	plasma_gain = 35
 
 	// *** Health *** //
-	max_health = 275
+	max_health = 200
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_ONE_ELDER_THRESHOLD
@@ -132,7 +132,7 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = 18
+	melee_damage = 14
 
 	// *** Speed *** //
 	speed = -1.2
@@ -142,7 +142,7 @@
 	plasma_gain = 40
 
 	// *** Health *** //
-	max_health = 300
+	max_health = 250
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_ONE_ANCIENT_THRESHOLD
@@ -160,7 +160,7 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = 18
+	melee_damage = 15
 
 	// *** Speed *** //
 	speed = -1.2

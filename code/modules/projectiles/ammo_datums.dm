@@ -1188,7 +1188,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state_empty = "smartgun_empty"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
 	accurate_range = 12
-	damage = 20
+	damage = 35
 	penetration = 15
 	sundering = 2
 
@@ -1199,7 +1199,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state_empty = "smartgun_empty"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
 	accurate_range = 12
-	damage = 10
+	damage = 15
 	penetration = 25
 	sundering = 1
 	damage_falloff = 0.1
@@ -1267,7 +1267,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	accuracy_var_low = 3
 	accuracy_var_high = 3
 	accurate_range = 5
-	damage = 25
+	damage = 35
 	penetration = 100
 	sundering = 7
 	max_range = 30
@@ -1301,7 +1301,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "high velocity railgun slug"
 	shell_speed = 5
 	max_range = 21
-	damage = 100
+	damage = 800
 	penetration = 30
 	sundering = 100
 
@@ -1311,7 +1311,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/railgun/smart
 	name = "smart armor piercing railgun slug"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE|AMMO_IFF
-	damage = 75
+	damage = 450
 	penetration = 20
 	sundering = 50
 
@@ -1325,7 +1325,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
 	shell_speed = 4
 	max_range = 14
-	damage = 150
+	damage = 950
 	penetration = 100
 	sundering = 20
 	bullet_color = COLOR_PULSE_BLUE
@@ -1346,7 +1346,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	shell_speed = 2
 	accurate_range = 12
 	max_range = 15
-	damage = 12			//impact damage from a grenade to the dome
+	damage = 22			//impact damage from a grenade to the dome
 	penetration = 0
 	sundering = 0
 	shrapnel_chance = 0
@@ -1399,7 +1399,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	accuracy_var_low = 5
 	accuracy_var_high = 5
 	max_range = 4
-	damage = 20
+	damage = 30
 	penetration = 20
 	sundering = 3
 	damage_falloff = 0
@@ -1429,7 +1429,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "20mm HE grenade"
 	hud_state = "grenade_he"
 	bonus_projectiles_type = null
-	max_range = 12
+	max_range = 22
 	handful_greyscale_colors = "#b02323"
 	projectile_greyscale_colors = "#b02323"
 
@@ -1451,12 +1451,12 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/tx54/mech
 	name = "30mm fragmentation grenade"
 	bonus_projectiles_type = /datum/ammo/bullet/tx54_spread/mech
-	damage = 15
+	damage = 25
 	penetration = 10
 	projectile_greyscale_colors = "#4f0303"
 
 /datum/ammo/bullet/tx54_spread/mech
-	damage = 15
+	damage = 25
 	penetration = 10
 	sundering = 0.5
 
@@ -1471,7 +1471,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	shell_speed = 2
 	handful_amount = 3
 	max_range = 3 //failure to detonate if the target is too close
-	damage = 15
+	damage = 25
 	bonus_projectiles_scatter = 12
 	///How many bonus projectiles to generate. New var so it doesn't trigger on firing
 	var/bonus_projectile_quantity = 5
@@ -1532,7 +1532,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	accuracy_var_low = 5
 	accuracy_var_high = 5
 	max_range = 7
-	damage = 20
+	damage = 30
 	penetration = 20
 	sundering = 3
 	damage_falloff = 1
@@ -1543,7 +1543,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/micro_rail_spread/incendiary
 	name = "incendiary flechette"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOB|AMMO_INCENDIARY|AMMO_LEAVE_TURF
-	damage = 15
+	damage = 25
 	penetration = 5
 	sundering = 1.5
 	max_range = 6
@@ -1665,7 +1665,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	accuracy = 40
 	accurate_range = 20
 	max_range = 30
-	damage = 200
+	damage = 300
 	penetration = 100
 	sundering = 100
 	bullet_color = LIGHT_COLOR_FIRE
@@ -1692,7 +1692,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	damage_falloff = 0
 	accurate_range = 15
 	penetration = 150
-	damage = 325
+	damage = 525
 
 /datum/ammo/rocket/ap/drop_nade(turf/T)
 	explosion(T, flash_range = 1)
@@ -1728,7 +1728,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	max_range = 40
 	shell_speed = 3
 	penetration = 200
-	damage = 200
+	damage = 300
 	sundering = 50
 	handful_amount = 1
 
@@ -1743,7 +1743,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	damage_type = BURN
 	accuracy_var_low = 7
 	accurate_range = 15
-	damage = 200
+	damage = 500
 	penetration = 75
 	max_range = 20
 	sundering = 100
@@ -1760,7 +1760,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "thermobaric rocket"
 	hud_state = "rocket_thermobaric"
 	flags_ammo_behavior = AMMO_ROCKET
-	damage = 40
+	damage = 80
 	penetration = 25
 	max_range = 30
 	sundering = 2
@@ -1789,7 +1789,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "super thermobaric rocket"
 	hud_state = "rocket_thermobaric"
 	flags_ammo_behavior = AMMO_ROCKET
-	damage = 200
+	damage = 400
 	penetration = 75
 	max_range = 30
 	sundering = 100
@@ -1805,7 +1805,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	shell_speed = 2
 	accurate_range = 20
 	max_range = 30
-	damage = 100
+	damage = 300
 	penetration = 50
 	sundering = 50
 
@@ -1815,7 +1815,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/rocket/recoilless/heat
 	name = "HEAT shell"
 	hud_state = "shell_heat"
-	damage = 200
+	damage = 500
 	penetration = 100
 	sundering = 0
 
@@ -1828,7 +1828,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	flags_ammo_behavior = AMMO_ROCKET|AMMO_SUNDERING //We want this to specifically go farther than onscreen range.
 	accurate_range = 15
 	max_range = 20
-	damage = 75
+	damage = 250
 	penetration = 50
 	sundering = 25
 
@@ -1985,7 +1985,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state_empty = "shell_empty"
 	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_SUNDERING|AMMO_PASS_THROUGH_TURF
 	shell_speed = 2
-	damage = 90
+	damage = 350
 	penetration = 30
 	sundering = 10
 	handful_amount = 1
@@ -2001,7 +2001,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state = "shell_he"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
 	shell_speed = 4
-	damage = 200
+	damage = 500
 	penetration = 40
 	sundering = 65
 
@@ -2023,7 +2023,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "high velocity high explosive shell"
 	hud_state = "shell_he"
 	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_SUNDERING
-	damage = 50
+	damage = 200
 	penetration = 50
 	sundering = 25
 

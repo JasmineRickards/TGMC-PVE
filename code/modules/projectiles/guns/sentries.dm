@@ -93,7 +93,7 @@
 	deployable_item = /obj/machinery/deployable/mounted/sentry/cope
 	turret_range = 9
 	w_class = WEIGHT_CLASS_NORMAL //same as other sentries
-	sentry_iff_signal = SON_OF_MARS_IFF
+	sentry_iff_signal = TGMC_LOYALIST_IFF
 
 	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 100, FIRE = 80, ACID = 50)
 
@@ -278,4 +278,39 @@
 	ammo_datum_type = /datum/ammo/bullet/turret
 	sentry_iff_signal = TGMC_LOYALIST_IFF
 
+/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/cope/tgmc
+	name = "\improper COPE sentry"
+	desc = "The Centurion Omnidirectional Point-defense Energy sentry is a man portable, automated weapon system utilised by the SOM. It is activated in hand then thrown into place before it deploys, where it's ground hugging profile makes it a difficult target to accurately hit. Equipped with a compact volkite weapon system, and a recharging battery to allow for prolonged use, but can take normal volkite cells in a pinch. This one has been modified with TGMC IFF Codes."
+	icon_state = "cope"
+	icon = 'icons/Marine/sentry.dmi'
+	max_integrity = 225
+	integrity_failure = 50
+	deploy_time = 1 SECONDS
+	undeploy_time = 1 SECONDS
+	turret_flags = TURRET_HAS_CAMERA|TURRET_ALERTS|TURRET_RADIAL
+	deployable_item = /obj/machinery/deployable/mounted/sentry/cope
+	turret_range = 9
+	w_class = WEIGHT_CLASS_NORMAL //same as other sentries
+	sentry_iff_signal = TGMC_LOYALIST_IFF
+
+	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 100, FIRE = 80, ACID = 50)
+
+	ignored_terrains = list(
+		/obj/machinery/deployable/mounted,
+		/obj/machinery/miner,
+	)
+
+	flags_gun_features = GUN_AMMO_COUNTER|GUN_DEPLOYED_FIRE_ONLY|GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNT_BY_SHOTS_REMAINING|GUN_ENERGY
+	reciever_flags = AMMO_RECIEVER_MAGAZINES|AMMO_RECIEVER_DO_NOT_EJECT_HANDFULS|AMMO_RECIEVER_CYCLE_ONLY_BEFORE_FIRE //doesn't autoeject its recharging battery
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
+	flags_item = IS_DEPLOYABLE|TWOHANDED
+
+	max_shots = 150
+	rounds_per_shot = 12
+	fire_delay = 0.2 SECONDS
+	scatter = -3
+	damage_falloff_mult = 0.5
+	ammo_datum_type = /datum/ammo/energy/volkite/light
+	default_ammo_type = /obj/item/cell/lasgun/volkite/turret
+	allowed_ammo_types = list(/obj/item/cell/lasgun/volkite/turret, /obj/item/cell/lasgun/volkite)
 
