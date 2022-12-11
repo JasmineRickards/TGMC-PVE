@@ -363,8 +363,8 @@
 	recoil = 2
 	scatter_unwielded = 45
 	accuracy_mult = 1.1 //it's got a bipod
-	fire_delay = 0.15 SECONDS
-	burst_amount = 1
+	fire_delay = 0.8 SECONDS
+	burst_amount = 5
 	deploy_time = 1 SECONDS
 	undeploy_time = 0.5 SECONDS
 	max_integrity = 200

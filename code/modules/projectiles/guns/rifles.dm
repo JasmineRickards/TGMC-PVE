@@ -9,11 +9,12 @@
 	flags_gun_features = GUN_CAN_POINTBLANK||GUN_AMMO_COUNTER
 	load_method = MAGAZINE //codex
 	aim_slowdown = 0.35
+	fire_delay = 0.1
 	wield_delay = 0.6 SECONDS
 	gun_skill_category = GUN_SKILL_RIFLES
 
 	burst_amount = 3
-	burst_delay = 0.2 SECONDS
+	burst_delay = 0.1 SECONDS
 	accuracy_mult_unwielded = 0.6
 	scatter = 0
 	scatter_unwielded = 13
@@ -76,7 +77,7 @@
 	aim_fire_delay = 0.1 SECONDS
 	aim_speed_modifier = 2
 
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_delay = 0.1 SECONDS
 	extra_delay = 0.05 SECONDS
 	accuracy_mult = 1.05
@@ -156,8 +157,8 @@
 	aim_fire_delay = 0.1 SECONDS
 	aim_speed_modifier = 2
 
-	fire_delay = 0.2 SECONDS
-	burst_delay = 0.15 SECONDS
+	fire_delay = 0.1 SECONDS
+	burst_delay = 0.1 SECONDS
 	extra_delay = 0.05 SECONDS
 	accuracy_mult = 1.1
 	scatter = -2
@@ -364,8 +365,8 @@
 	starting_attachment_types = list(/obj/item/weapon/gun/grenade_launcher/underslung)
 	attachable_offset = list("muzzle_x" = 44, "muzzle_y" = 19,"rail_x" = 15, "rail_y" = 21, "under_x" = 25, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
 
-	fire_delay = 0.2 SECONDS
-	burst_delay = 0.15 SECONDS
+	fire_delay = 0.1 SECONDS
+	burst_delay = 0.1 SECONDS
 	accuracy_mult = 1.1
 	scatter = -1
 	wield_delay = 0.7 SECONDS
@@ -412,9 +413,10 @@
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/weapon/gun/grenade_launcher/underslung)
 
 
-	burst_delay = 0.2 SECONDS
-	accuracy_mult = 1.15
-	damage_mult = 1.5
+	fire_delay = 0.1 SECONDS
+	burst_delay = 0.15 SECONDS
+	accuracy_mult = 1.5
+	damage_mult = 2
 	scatter = -2
 	force = 20
 
@@ -463,7 +465,7 @@
 	burst_amount = 4
 	burst_delay = 0.15 SECONDS
 	scatter = 0
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 
 
 
@@ -507,7 +509,7 @@
 	force = 20
 
 	burst_amount = 1
-	fire_delay = 0.25 SECONDS
+	fire_delay = 0.15 SECONDS
 	scatter = 2
 	wield_delay = 0.8 SECONDS
 
@@ -586,7 +588,7 @@
 	aim_fire_delay = 0.2 SECONDS
 	aim_speed_modifier = 2.5
 
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	scatter = 2
 	extra_delay = -0.05 SECONDS
 	burst_delay = 0.15 SECONDS
@@ -722,8 +724,8 @@
 	aim_fire_delay = 0.1 SECONDS
 	aim_speed_modifier = 2
 
-	fire_delay = 0.2 SECONDS
-	burst_amount = 1
+	fire_delay = 0.1 SECONDS
+	burst_amount = 3
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 0.5
 	scatter = 2
@@ -779,7 +781,7 @@
 	aim_fire_delay = 0.2 SECONDS
 	aim_speed_modifier = 6
 
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.08 SECONDS
 	damage_falloff_mult = 0.5
 	burst_amount = 1
 	accuracy_mult_unwielded = 0.4
@@ -845,11 +847,11 @@
 	aim_fire_delay = 0.15 SECONDS
 	aim_speed_modifier = 2
 
-	fire_delay = 0.3 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_amount = 5
 	burst_delay = 0.1 SECONDS
 	accuracy_mult_unwielded = 0.5
-	accuracy_mult = 1.05
+	accuracy_mult = 1.3
 	scatter = 5
 	scatter_unwielded = 25
 	recoil_unwielded = 5
@@ -920,7 +922,7 @@
 	aim_fire_delay = 0.15 SECONDS
 	aim_speed_modifier = 2
 
-	fire_delay = 0.25 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_amount = 3
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 0.8
@@ -1017,7 +1019,7 @@
 	attachable_offset = list("muzzle_x" = 30, "muzzle_y" = 16,"rail_x" = 12, "rail_y" = 17, "under_x" = 20, "under_y" = 13, "stock_x" = 26, "stock_y" = 13)
 	gun_skill_category = GUN_SKILL_SHOTGUNS
 
-	fire_delay = 1 SECONDS
+	fire_delay = 0.2 SECONDS
 	accuracy_mult = 1.15
 	burst_amount = 1
 	scatter = -2
@@ -1071,7 +1073,7 @@
 	starting_attachment_types = list(/obj/item/attachable/stock/sgstock, /obj/item/attachable/sgbarrel)
 	gun_skill_category = GUN_SKILL_SMARTGUN //Uses SG skill for the penalties.
 	attachable_offset = list("muzzle_x" = 42, "muzzle_y" = 17,"rail_x" = 15, "rail_y" = 21, "under_x" = 24, "under_y" = 14, "stock_x" = 12, "stock_y" = 13)
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.13 SECONDS
 	burst_amount = 0
 	accuracy_mult_unwielded = 0.5
 	accuracy_mult = 1.1
@@ -1180,7 +1182,7 @@
 	)
 
 	burst_amount = 0
-	fire_delay = 1.35 SECONDS
+	fire_delay = 0.8 SECONDS
 	accuracy_mult = 1.15
 	accuracy_mult_unwielded = 0.7
 	scatter = -5
@@ -1228,7 +1230,7 @@
 	)
 
 	burst_amount = 0
-	fire_delay = 0.55 SECONDS
+	fire_delay = 0.5 SECONDS
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 0.7
 	scatter = -5
@@ -1276,7 +1278,7 @@
 	actions_types = list(/datum/action/item_action/aim_mode)
 	aim_fire_delay = 0.15 SECONDS
 
-	fire_delay = 0.25 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_amount = 3
 	burst_delay = 0.05 SECONDS
 	extra_delay = 0.1 SECONDS
@@ -1351,7 +1353,7 @@
 	aim_fire_delay = 0.15 SECONDS
 	aim_speed_modifier = 2.5
 
-	fire_delay = 0.25 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_amount = 1
 	burst_delay = 0.15 SECONDS
 	accuracy_mult = 1.2
@@ -1400,7 +1402,7 @@
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC, GUN_FIREMODE_BURSTFIRE, GUN_FIREMODE_AUTOBURST)
 	attachable_offset = list("muzzle_x" = 31, "muzzle_y" = 16,"rail_x" = 10, "rail_y" = 19, "under_x" = 21, "under_y" = 13, "stock_x" = 0, "stock_y" = 13)
 
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_delay = 0.1 SECONDS
 	extra_delay = 0.5 SECONDS
 	///Same delay as normal burst mode
@@ -1462,7 +1464,7 @@
 
 	accuracy_mult = 1.1
 	burst_amount = 1
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	scatter = 1
 	wield_delay = 0.5 SECONDS
 	movement_acc_penalty_mult = 4

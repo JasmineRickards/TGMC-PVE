@@ -35,7 +35,7 @@
 	aim_speed_modifier = 0.65
 	scatter = -2
 	scatter_unwielded = 4
-	akimbo_additional_delay = 0.9
+	akimbo_additional_delay = 0.1
 
 	placed_overlay_iconstate = "pistol"
 
@@ -57,7 +57,7 @@
 
 	attachable_offset = list("muzzle_x" = 29, "muzzle_y" = 20,"rail_x" = 13, "rail_y" = 23, "under_x" = 24, "under_y" = 14, "stock_x" = 21, "stock_y" = 17)
 
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.1 SECONDS
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 0.95
 	scatter_unwielded = 4
@@ -192,7 +192,7 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 22,"rail_x" = 13, "rail_y" = 24, "under_x" = 21, "under_y" = 17, "stock_x" = 21, "stock_y" = 17)
 
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.15 SECONDS
 	accuracy_mult = 1.20 //Has a forced laser sight.
 	accuracy_mult_unwielded = 0.95
 	recoil = -2
@@ -224,7 +224,7 @@
 	allowed_ammo_types = list(/obj/item/ammo_magazine/pistol/m1911)
 	attachable_offset = list("muzzle_x" = 30, "muzzle_y" = 21,"rail_x" = 17, "rail_y" = 22, "under_x" = 21, "under_y" = 15, "stock_x" = 21, "stock_y" = 17)
 	reciever_flags = AMMO_RECIEVER_MAGAZINES
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	accuracy_mult = 1.05
 	accuracy_mult_unwielded = 0.85
 	damage_mult = 1.15
@@ -270,7 +270,7 @@
 	accuracy_mult = 1.15
 	scatter_unwielded = 0
 	aim_slowdown = 0.2
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 
 /obj/item/weapon/gun/pistol/g22/tranq
 	name = "\improper P-22 custom pistol"
@@ -327,7 +327,7 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	attachable_offset = list("muzzle_x" = 31, "muzzle_y" = 19,"rail_x" = 9, "rail_y" = 23, "under_x" = 22, "under_y" = 14, "stock_x" = 20, "stock_y" = 17)
 
-	fire_delay = 0.7 SECONDS
+	fire_delay = 0.2 SECONDS
 	scatter_unwielded = 25
 	recoil = 1
 	recoil_unwielded = 2
@@ -374,7 +374,7 @@
 	//Making the gun have an invisible silencer since it's supposed to have one.
 	starting_attachment_types = list(/obj/item/attachable/suppressor/unremovable/invisible)
 
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	accuracy_mult = 1.3
 	scatter_unwielded = 2
 	damage_mult = 1.3
@@ -412,7 +412,7 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	attachable_offset = list("muzzle_x" = 25, "muzzle_y" = 20,"rail_x" = 12, "rail_y" = 22, "under_x" = 17, "under_y" = 15, "stock_x" = 22, "stock_y" = 17)
 
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.1 SECONDS
 
 //-------------------------------------------------------
 //P-17 Pocket pistol. Based on a PMM.
@@ -441,7 +441,7 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 20,"rail_x" = 21, "rail_y" = 15, "under_x" = 17, "under_y" = 15, "stock_x" = 22, "stock_y" = 17)
 
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.1 SECONDS
 	recoil = -2
 	recoil_unwielded = -2
 	scatter_unwielded = 0
@@ -469,7 +469,7 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 20,"rail_x" = 8, "rail_y" = 22, "under_x" = 18, "under_y" = 15, "stock_x" = 16, "stock_y" = 15)
 
-	fire_delay = 1 SECONDS
+	fire_delay = 0.5 SECONDS
 	burst_delay = 0.5 SECONDS
 	damage_mult = 1.2
 	recoil = 1

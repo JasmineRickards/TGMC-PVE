@@ -529,6 +529,7 @@
 
 /obj/item/storage/box/loot/PMC/Initialize()
 	name = "PMC Kit"
+	. = ..()
 	new /obj/item/weapon/gun/smg/m25/elite/pmc(src)
 	new	/obj/item/clothing/under/marine/veteran/PMC/leader(src)
 	new /obj/item/clothing/mask/gas/PMC/leader(src)
@@ -709,6 +710,15 @@
 	new /obj/item/storage/backpack/lightpack(src)
 	new /obj/item/weapon/gun/rifle/m412/elite(src)
 	new /obj/item/clothing/glasses/night/tx8(src)
+	new /obj/item/ammo_magazine/rifle/ap(src)
+	new /obj/item/ammo_magazine/rifle/ap(src)
+	new /obj/item/ammo_magazine/rifle/ap(src)
+	new /obj/item/ammo_magazine/rifle/ap(src)
+	new /obj/item/ammo_magazine/rifle/ap(src)
+	new /obj/item/ammo_magazine/rifle/ap(src)
+	new /obj/item/ammo_magazine/rifle/ap(src)
+	new /obj/item/ammo_magazine/rifle/ap(src)
+	new /obj/item/ammo_magazine/rifle/ap(src)
 
 /obj/item/storage/box/loot/b18classic_pack/Initialize()
 	name = "B-18 kit"

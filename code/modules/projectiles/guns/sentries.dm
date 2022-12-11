@@ -61,10 +61,10 @@
 
 	turret_range = 8
 	deploy_time = 6 SECONDS
-	max_shells = 500
+	max_shells = 1000
 	fire_delay = 0.25 SECONDS
 
-	scatter = 2
+	scatter = -2
 
 	ammo_datum_type = /datum/ammo/bullet/turret
 	default_ammo_type = /obj/item/ammo_magazine/sentry
@@ -223,7 +223,7 @@
 	desc = "A deployable, automated turret with AI targeting capabilities. This is a lightweight portable model meant for rapid deployment and point defense. Armed with an light, high velocity machine gun and a 100-round drum magazine."
 	icon_state = "minisentry"
 
-	max_shells = 300
+	max_shells = 600
 	knockdown_threshold = 80
 
 	ammo_datum_type = /datum/ammo/bullet/turret/mini
@@ -234,9 +234,10 @@
 	burst_delay = 0.2 SECONDS
 	burst_amount = 3
 	extra_delay = 0.3 SECONDS
-	scatter = 3
+	scatter = -3
 
-	deploy_time = 3 SECONDS
+	deploy_time = 1 SECONDS
+	undeploy_time = 1 SECONDS
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC, GUN_FIREMODE_AUTOBURST)
 
 /obj/item/weapon/gun/sentry/mini/combat_patrol
@@ -288,7 +289,7 @@
 	deploy_time = 1 SECONDS
 	undeploy_time = 1 SECONDS
 	turret_flags = TURRET_HAS_CAMERA|TURRET_ALERTS|TURRET_RADIAL
-	deployable_item = /obj/machinery/deployable/mounted/sentry/cope
+	deployable_item = /obj/machinery/deployable/mounted/sentry/cope/tgmc
 	turret_range = 9
 	w_class = WEIGHT_CLASS_NORMAL //same as other sentries
 	sentry_iff_signal = TGMC_LOYALIST_IFF
@@ -307,7 +308,7 @@
 
 	max_shots = 150
 	rounds_per_shot = 12
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.4 SECONDS
 	scatter = -3
 	damage_falloff_mult = 0.5
 	ammo_datum_type = /datum/ammo/energy/volkite/light

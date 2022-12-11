@@ -38,9 +38,9 @@
 	var/locked = FALSE
 	var/mob/living/carbon/human/occupant = null
 	var/list/surgery_todo_list = list() //a list of surgeries to do.
-//	var/surgery_t = 0 //Surgery timer in seconds.
+	var/surgery_t = 3 //Surgery timer in seconds.
 	var/surgery = FALSE
-	var/surgery_mod = 1 //What multiple to increase the surgery timer? This is used for any non-WO maps or events that are done.
+	var/surgery_mod = 0.5 //What multiple to increase the surgery timer? This is used for any non-WO maps or events that are done.
 	var/filtering = 0
 	var/blood_transfer = 0
 	var/heal_brute = 0
@@ -55,9 +55,9 @@
 	//It uses power
 	use_power = ACTIVE_POWER_USE
 	idle_power_usage = 15
-	active_power_usage = 120000 // It rebuilds you from nothing...
+	active_power_usage = 120 // It rebuilds you from nothing...
 
-	var/stored_metal = 1000 // starts with 500 metal loaded
+	var/stored_metal = 2000 // starts with 500 metal loaded
 	var/stored_metal_max = 2000
 
 
@@ -715,14 +715,14 @@
 		if(surgery)
 			to_chat(usr, span_warning("There's no way you're getting out while this thing is operating on you!"))
 			return
-		else
+//		else
 			visible_message("[usr] engages the internal release mechanism, and climbs out of \the [src].")
-	if(usr.skills.getRating("surgery") < SKILL_SURGERY_TRAINED && !event)
-		usr.visible_message(span_notice("[usr] fumbles around figuring out how to use [src]."),
-		span_notice("You fumble around figuring out how to use [src]."))
-		var/fumbling_time = max(0 , SKILL_TASK_TOUGH - ( SKILL_TASK_EASY * usr.skills.getRating("surgery") ))// 8 secs non-trained, 5 amateur
-		if(!do_after(usr, fumbling_time, TRUE, src, BUSY_ICON_UNSKILLED) || !occupant)
-			return
+//	if(usr.skills.getRating("surgery") < SKILL_SURGERY_TRAINED && !event)
+//		usr.visible_message(span_notice("[usr] fumbles around figuring out how to use [src]."),
+//		span_notice("You fumble around figuring out how to use [src]."))
+//		var/fumbling_time = max(0 , SKILL_TASK_TOUGH - ( SKILL_TASK_EASY * usr.skills.getRating("surgery") ))// 8 secs non-trained, 5 amateur
+//		if(!do_after(usr, fumbling_time, TRUE, src, BUSY_ICON_UNSKILLED) || !occupant)
+//			return
 	if(surgery)
 		surgery = 0
 		if(usr.skills.getRating("surgery") < SKILL_SURGERY_TRAINED) //Untrained people will fail to terminate the surgery properly.

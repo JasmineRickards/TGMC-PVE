@@ -514,6 +514,7 @@
 //Throwable turret
 /obj/machinery/deployable/mounted/sentry/cope
 	density = FALSE
+/obj/machinery/deployable/mounted/sentry/cope/tgmc
 
 /obj/machinery/deployable/mounted/sentry/cope/sentry_start_fire()
 	var/obj/item/weapon/gun/internal_gun = internal_item

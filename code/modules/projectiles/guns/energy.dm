@@ -95,7 +95,7 @@
 	gun_skill_category = GUN_SKILL_RIFLES
 	muzzle_flash_color = COLOR_LASER_RED
 
-	fire_delay = 3
+	fire_delay = 0.05 SECONDS
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 0.6
 	scatter_unwielded = 80 //Heavy and unwieldy
@@ -147,6 +147,7 @@
 	force = 20 //Large and hefty! Includes stock bonus.
 	icon_state = "m43"
 	item_state = "m43"
+	fire_delay = 0.1 SECONDS
 	max_shots = 50 //codex stuff
 	load_method = CELL //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/M43
@@ -180,7 +181,6 @@
 	accuracy_mult_unwielded = 0.5 //Heavy and unwieldy; you don't one hand this.
 	scatter_unwielded = 100 //Heavy and unwieldy; you don't one hand this.
 	damage_falloff_mult = 0.25
-	fire_delay = 3
 
 //variant without ugl attachment
 /obj/item/weapon/gun/energy/lasgun/M43/stripped
@@ -270,7 +270,7 @@
 	accuracy_mult_unwielded = 0.5 //Heavy and unwieldy; you don't one hand this.
 	scatter_unwielded = 100 //Heavy and unwieldy; you don't one hand this.
 	damage_falloff_mult = 0.25
-	fire_delay = 2
+	fire_delay = 1.5
 	default_ammo_type = /obj/item/cell/lasgun/lasrifle
 	allowed_ammo_types = list(
 		/obj/item/cell/lasgun,
@@ -436,7 +436,7 @@
 	wield_delay = 0.5 SECONDS
 	scatter = 0
 	scatter_unwielded = 10
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	accuracy_mult_unwielded = 0.55
 	damage_falloff_mult = 0.2
 	mode_list = list(
@@ -463,7 +463,7 @@
 /datum/lasrifle/base/energy_rifle_mode/overcharge
 	rounds_per_shot = 30
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/overcharge
-	fire_delay = 0.45 SECONDS
+	fire_delay = 0.12 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/Laser overcharge standard.ogg'
 	message_to_user = "You set the laser rifle's charge mode to overcharge."
 	fire_mode = GUN_FIREMODE_AUTOMATIC
@@ -505,7 +505,7 @@
 	wield_delay = 0.6 SECONDS
 	scatter = 2
 	scatter_unwielded = 4
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.05 SECONDS
 	accuracy_mult = 1
 	accuracy_mult_unwielded = 0.9
 	damage_falloff_mult = 0.2
@@ -521,7 +521,7 @@
 /datum/lasrifle/base/energy_pistol_mode/standard
 	rounds_per_shot = 20
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/pistol
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.1 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/Laser Pistol Standard.ogg'
 	message_to_user = "You set the laser pistol's charge mode to standard fire."
 	fire_mode = GUN_FIREMODE_SEMIAUTO
@@ -540,7 +540,7 @@
 /datum/lasrifle/base/energy_pistol_mode/heat
 	rounds_per_shot = 110
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/pistol/heat
-	fire_delay = 0.5 SECONDS
+	fire_delay = 0.2 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/laser3.ogg'
 	message_to_user = "You set the laser pistol's charge mode to wave heat."
 	fire_mode = GUN_FIREMODE_AUTOMATIC
@@ -586,7 +586,7 @@
 	wield_delay = 0.3 SECONDS
 	scatter = 1
 	scatter_unwielded = 10
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_amount = 1
 	burst_delay = 0.15 SECONDS
 	accuracy_mult = 1
@@ -605,7 +605,7 @@
 /datum/lasrifle/base/energy_carbine_mode/auto_burst_standard ///I know this seems tacky, but if I make auto burst a standard firemode it somehow buffs spread's fire delay.
 	rounds_per_shot = 15
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_amount = 4
 	fire_sound = 'sound/weapons/guns/fire/Laser Rifle Standard.ogg'
 	message_to_user = "You set the laser carbine's charge mode to standard auto burst fire."
@@ -619,7 +619,7 @@
 /datum/lasrifle/base/energy_carbine_mode/base/spread
 	rounds_per_shot = 60
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/blast
-	fire_delay = 1.5 SECONDS
+	fire_delay = 0.6 SECONDS
 	burst_amount = 1
 	fire_sound = 'sound/weapons/guns/fire/Laser Carbine Scatter.ogg'
 	message_to_user = "You set the laser carbine's charge mode to spread."
@@ -667,10 +667,10 @@
 	starting_attachment_types = list(/obj/item/attachable/scope/unremovable/laser_sniper_scope)
 
 	aim_slowdown = 0.7
-	wield_delay = 0.7 SECONDS
+	wield_delay = 0.4 SECONDS
 	scatter = 0
 	scatter_unwielded = 10
-	fire_delay = 1 SECONDS
+	fire_delay = 0.8 SECONDS
 	accuracy_mult = 1.2
 	accuracy_mult_unwielded = 0.5
 	movement_acc_penalty_mult = 6
@@ -681,7 +681,7 @@
 
 /datum/lasrifle/base/energy_sniper_mode/standard
 	rounds_per_shot = 50
-	fire_delay = 1 SECONDS
+	fire_delay = 0.3 SECONDS
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/sniper
 	fire_sound = 'sound/weapons/guns/fire/Laser Sniper Standard.ogg'
 	message_to_user = "You set the sniper rifle's charge mode to standard fire."
@@ -690,7 +690,7 @@
 
 /datum/lasrifle/base/energy_sniper_mode/heat
 	rounds_per_shot = 150
-	fire_delay = 1 SECONDS
+	fire_delay = 0.4 SECONDS
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/sniper_heat
 	fire_sound = 'sound/weapons/guns/fire/laser3.ogg'
 	message_to_user = "You set the sniper rifle's charge mode to wave heat."
@@ -735,7 +735,7 @@
 	aim_slowdown = 1
 	wield_delay = 1.5 SECONDS
 	scatter = 1
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.08 SECONDS
 	accuracy_mult = 1
 	accuracy_mult_unwielded = 0.3
 	scatter_unwielded = 30
@@ -748,7 +748,7 @@
 /datum/lasrifle/base/energy_mg_mode/standard
 	rounds_per_shot = 4
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/autolaser
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.09 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/Laser Sniper Standard.ogg'
 	message_to_user = "You set the machine laser's charge mode to standard fire."
 	fire_mode = GUN_FIREMODE_AUTOMATIC
@@ -756,7 +756,7 @@
 
 /datum/lasrifle/base/energy_mg_mode/standard/efficiency
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/autolaser/efficiency
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.07 SECONDS
 	rounds_per_shot = 3
 	message_to_user = "You set the machine laser's charge mode to efficiency mode."
 
@@ -793,7 +793,7 @@
 	wield_delay = 0.5 SECONDS
 	scatter = 0
 	scatter_unwielded = 10
-	fire_delay = 0.5 SECONDS
+	fire_delay = 0.4 SECONDS
 	accuracy_mult_unwielded = 0.55
 	damage_falloff_mult = 0.3
 	mode_list = list(
@@ -804,7 +804,7 @@
 /datum/lasrifle/base/energy_rifle_mode/xray
 	rounds_per_shot = 15
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/xray
-	fire_delay = 0.5 SECONDS
+	fire_delay = 0.4 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/laser3.ogg'
 	message_to_user = "You set the xray rifle's charge mode to standard fire."
 	fire_mode = GUN_FIREMODE_AUTOMATIC
@@ -891,7 +891,9 @@
 	icon_state = "charger"
 	item_state = "charger"
 	max_shots = 45
+	fire_delay = 0.15 SECONDS
 	rounds_per_shot = 32
+	ammo_datum_type = /datum/ammo/energy/volkite/medium
 	allowed_ammo_types = list(
 		/obj/item/cell/lasgun/volkite,
 		/obj/item/cell/lasgun/volkite/powerpack,
@@ -964,6 +966,7 @@
 	attachable_offset = list("muzzle_x" = 38, "muzzle_y" = 13,"rail_x" = 9, "rail_y" = 24, "under_x" = 45, "under_y" = 11, "stock_x" = 22, "stock_y" = 12)
 	accuracy_mult = 1.1
 	aim_slowdown = 0.65
+	fire_delay = 0.13 SECONDS
 	damage_falloff_mult = 0.6
 	wield_delay	= 0.7 SECONDS
 	fire_delay = 0.25 SECONDS
@@ -985,6 +988,7 @@
 	desc = "Volkite weapons are the pride of Martian weapons manufacturing, their construction being a tightly guarded secret. Infamous for its ability to deflagrate organic targets with its tremendous thermal energy, explosively burning flesh in a fiery blast that can be deadly to anyone unfortunate enough to be nearby. The culverin is the largest man portable example of volkite weaponry, and can lay down a staggering torrent of fire due to its linked back-mounted powerpack. Drag click the powerpack to the gun to load."
 	icon_state = "culverin"
 	item_state = "culverin"
+	fire_delay = 0.15 SECONDS
 	inhand_x_dimension = 64
 	inhand_y_dimension = 32
 	item_icons = list(
@@ -993,6 +997,7 @@
 	)
 	ammo_level_icon = null
 	max_shots = 120
+	fire_delay = 0.1 SECONDS
 	ammo_datum_type = /datum/ammo/energy/volkite/heavy
 	rounds_per_shot = 30
 	default_ammo_type = null
@@ -1004,8 +1009,7 @@
 	reciever_flags = AMMO_RECIEVER_MAGAZINES|AMMO_RECIEVER_DO_NOT_EJECT_HANDFULS|AMMO_RECIEVER_CYCLE_ONLY_BEFORE_FIRE
 	attachable_offset = list("muzzle_x" = 34, "muzzle_y" = 14,"rail_x" = 11, "rail_y" = 29, "under_x" = 23, "under_y" = 10, "stock_x" = 22, "stock_y" = 12)
 	aim_slowdown = 1
-	wield_delay	= 1.2 SECONDS
-	fire_delay = 0.15 SECONDS
+	wield_delay	= 0.4 SECONDS
 	scatter = 3
 	accuracy_mult_unwielded = 0.4
 	scatter_unwielded = 35

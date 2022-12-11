@@ -190,6 +190,13 @@
 			/obj/item/attachable/flamer_nozzle/long = -1,
 			/obj/item/attachable/stock/t19stock = -1,
 			/obj/item/attachable/stock/t35stock = -1,
+			/obj/item/attachable/focuslens = -1,
+			/obj/item/attachable/widelens = -1,
+			/obj/item/attachable/heatlens = -1,
+			/obj/item/attachable/efflens = -1,
+			/obj/item/attachable/pulselens = -1,
+
+
 		),
 		"Boxes" = list(
 			/obj/item/ammo_magazine/packet/p9mm = -1,
@@ -207,6 +214,8 @@
 			/obj/item/ammo_magazine/packet/p4570 = -1,
 			/obj/item/storage/box/visual/magazine = -1,
 			/obj/item/storage/box/visual/grenade = -1,
+			/obj/item/ammo_magazine/packet/smart_minigun= 15,
+			/obj/item/ammo_magazine/standard_smartmachinegun = 15,
 		),
 		"Utility" = list(
 			/obj/item/flashlight/combat = -1,
@@ -740,6 +749,8 @@
 			/obj/item/ammo_magazine/packet/p4570 = -1,
 			/obj/item/storage/box/visual/magazine = -1,
 			/obj/item/storage/box/visual/grenade = -1,
+			/obj/item/ammo_magazine/packet/smart_minigun= -1,
+			/obj/item/ammo_magazine/standard_smartmachinegun = -1,
 		),
 		"Utility" = list(
 			/obj/item/flashlight/combat = -1,

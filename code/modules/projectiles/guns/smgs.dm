@@ -20,7 +20,7 @@
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC, GUN_FIREMODE_BURSTFIRE, GUN_FIREMODE_AUTOBURST)
 	gun_skill_category = GUN_SKILL_SMGS
 
-	fire_delay = 0.3 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_amount = 3
 	recoil_unwielded = 0.5
 	akimbo_additional_delay = 0.2
@@ -64,7 +64,7 @@
 	accuracy_mult_unwielded = 0.9
 	recoil_unwielded = 0
 	scatter = 0
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.1 SECONDS
 	scatter_unwielded = 4
 	aim_slowdown = 0.15
 	burst_amount = 5
@@ -124,7 +124,7 @@
 	accuracy_mult = 1.05
 	accuracy_mult_unwielded = 0.9
 	scatter = 1
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.1 SECONDS
 	scatter_unwielded = 8
 	aim_slowdown = 0.2
 	burst_amount = 0
@@ -184,7 +184,7 @@
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 0.95
 	scatter = 4
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	scatter_unwielded = 10
 	aim_slowdown = 0.15
 	burst_amount = 3
@@ -255,7 +255,7 @@
 
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 12, "rail_y" = 21, "under_x" = 28, "under_y" = 17, "stock_x" = 28, "stock_y" = 17)
 
-	fire_delay = 0.3 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_delay = 0.2 SECONDS
 	burst_amount = 4
 	accuracy_mult_unwielded = 0.9
@@ -342,7 +342,7 @@
 		/obj/item/attachable/stock/irremoveable/ppsh,
 	)
 
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_amount = 6
 	accuracy_mult = 1.05
 	accuracy_mult_unwielded = 0.8
@@ -370,7 +370,7 @@
 	allowed_ammo_types = list(/obj/item/ammo_magazine/smg/uzi, /obj/item/ammo_magazine/smg/uzi/extended)
 	attachable_offset = list("muzzle_x" = 30, "muzzle_y" = 20,"rail_x" = 11, "rail_y" = 27, "under_x" = 22, "under_y" = 16, "stock_x" = 22, "stock_y" = 16)
 
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_amount = 4
 	accuracy_mult_unwielded = 0.9
 	scatter = 0
@@ -416,7 +416,7 @@
 
 	attachable_offset = list("muzzle_x" = 38, "muzzle_y" = 20,"rail_x" = 13, "rail_y" = 22, "under_x" = 31, "under_y" = 15, "stock_x" = 24, "stock_y" = 10)
 
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.1 SECONDS
 	aim_slowdown = 0.15
 	wield_delay = 0.4 SECONDS
 
