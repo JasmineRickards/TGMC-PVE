@@ -7,6 +7,7 @@
 	item_state = "grenade"
 	throw_speed = 3
 	throw_range = 7
+	var/caliber = CALIBER_40MM
 	flags_atom = CONDUCT
 	flags_equip_slot = ITEM_SLOT_BELT
 	hitsound = 'sound/weapons/smash.ogg'
