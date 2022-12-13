@@ -379,3 +379,80 @@
 	max_rounds = 2000
 	caliber = CALIBER_10x26_CASELESS
 	flags_item_map_variant = null
+
+/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack
+	name = "\improper T-71 adaptive ammopack"
+	desc = "The support gunner's new best friend, a reinforced backpack with a coolant system and a unique action to alter the caliber of ammunition the internal drum and linked feed belts accept, accommodating most belt or drum-fed machineguns in the TGMC's arsenel. It is issued empty and must be configured prior to loading."
+	icon_state = "powerpacksg"
+	flags_atom = CONDUCT
+	flags_equip_slot = ITEM_SLOT_BACK
+	flags_magazine = MAGAZINE_WORN|MAGAZINE_REFILLABLE
+	default_ammo = null
+	current_rounds = 0
+	max_rounds = 0
+	caliber = null
+	flags_item_map_variant = null
+	var/list/datum/ammopacktype/caliber_types = list(
+		"10x24 Caseless" = /datum/ammopacktype/p10x24,
+		"10x25 Caseless" = /datum/ammopacktype/p10x25, //This is partially a joke, included only because the ALF-51B is belt-fed
+		"10x26 Caseless" = /datum/ammopacktype/p10x26
+		)
+
+/datum/ammopacktype
+	var/name = "Debug Coderbus"
+	var/default_ammo = /datum/ammo/bullet/rifle
+	var/max_rounds = 4500
+	var/caliber = CALIBER_10X24_CASELESS
+	var/radial_icon = 'icons/mob/radial.dmi'
+	var/radial_icon_state = "10x24"
+	var/caliber_label = "Fix Me!"
+
+/datum/ammopacktype/p10x24
+	default_ammo = /datum/ammo/bullet/rifle
+	max_rounds = 4500
+	caliber = CALIBER_10X24_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "10x24"
+	caliber_label = "10x24mm Caseless"
+
+/datum/ammopacktype/p10x25
+	default_ammo = /datum/ammo/bullet/rifle/heavy
+	max_rounds = 3750
+	caliber = CALIBER_10X25_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "10x25"
+	caliber_label = "10x25mm Caseless"
+
+/datum/ammopacktype/p10x26
+	default_ammo = /datum/ammo/bullet/rifle/machinegun
+	max_rounds = 3000
+	caliber = CALIBER_10x26_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "10x26"
+	caliber_label = "10x26mm Caseless"
+
+/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/unique_action(mob/user)
+	if(!user)
+		CRASH("switch_modes called with no user.")
+		return FALSE
+
+	if(current_rounds > 0)
+		to_chat(user, span_warning("The pack's jam-prevention software disallows altering the caliber fit while it is loaded."))
+		return FALSE
+	var/list/caliber_variants = list()
+	for(var/caliber in caliber_types)
+		caliber_variants += list("[caliber]" = image(icon = initial(caliber_types[caliber].radial_icon), icon_state = initial(caliber_types[caliber].radial_icon_state)))
+
+	var/datum/ammopacktype/choice = caliber_types[show_radial_menu(user, user, caliber_variants, null, 64, tooltips = TRUE)]
+	if(!choice)
+		return
+
+	to_chat(user, "[icon2html(src, user)] You press a button on the control panel labled [initial(choice.caliber_label)]")
+	if(!do_after(user, 1 SECONDS, TRUE, src, BUSY_ICON_GENERIC))
+		return
+
+	default_ammo = initial(choice.default_ammo)
+	max_rounds = initial(choice.max_rounds)
+	caliber = initial(choice.caliber)
+
+	playsound(src, 'sound/machines/hydraulics_2.ogg', 40, 1)
