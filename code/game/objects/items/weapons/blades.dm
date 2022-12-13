@@ -25,7 +25,7 @@
 	item_state = "claymore"
 	flags_atom = CONDUCT
 	flags_equip_slot = ITEM_SLOT_BELT
-	force = 40
+	force = 60
 	throwforce = 10
 	sharp = IS_SHARP_ITEM_BIG
 	edge = 1
@@ -45,7 +45,7 @@
 	desc = "TerraGov Marine Corps' experimental High Point-Singularity 'Harvester' blade. An advanced weapon that trades sheer force for the ability to apply a variety of debilitating effects when loaded with certain reagents. Activate after loading to prime a single use of an effect. It also harvests substances from alien lifeforms it strikes when connected to the Vali system."
 	icon_state = "energy_sword"
 	item_state = "energy_katana"
-	force = 60
+	force = 75
 	attack_speed = 12
 	w_class = WEIGHT_CLASS_BULKY
 	flags_item = DRAINS_XENO
@@ -90,13 +90,13 @@
 	desc = "A fancy ceremonial sword passed down from generation to generation. Despite this, it has been very well cared for, and is in top condition."
 	icon_state = "mercsword"
 	item_state = "machete"
-	force = 55
+	force = 65
 
 /obj/item/weapon/claymore/mercsword/machete
 	name = "\improper M2132 machete"
 	desc = "Latest issue of the TGMC Machete. Great for clearing out jungle or brush on outlying colonies. Found commonly in the hands of scouts and trackers, but difficult to carry with the usual kit."
 	icon_state = "machete"
-	force = 75
+	force = 85
 	attack_speed = 12
 	w_class = WEIGHT_CLASS_BULKY
 
@@ -115,7 +115,7 @@
 	desc = "This appears to be a rather old blade that has been well taken care of, it is probably a family heirloom. Oddly despite its probable non-combat purpose it is sharpened and not blunt."
 	icon_state = "officer_sword"
 	item_state = "officer_sword"
-	force = 75
+	force = 85
 	attack_speed = 12
 	w_class = WEIGHT_CLASS_BULKY
 
@@ -132,7 +132,7 @@
 	desc = "The pride of an imperial commissar, held high as they charge into battle."
 	icon_state = "comsword"
 	item_state = "comsword"
-	force = 80
+	force = 95
 	attack_speed = 10
 	w_class = WEIGHT_CLASS_BULKY
 
@@ -145,7 +145,7 @@
 	desc = "A finely made Japanese sword, with a well sharpened blade. The blade has been filed to a molecular edge, and is extremely deadly. Commonly found in the hands of mercenaries and yakuza."
 	icon_state = "katana"
 	flags_atom = CONDUCT
-	force = 50
+	force = 85
 	throwforce = 10
 	sharp = IS_SHARP_ITEM_BIG
 	edge = 1
@@ -167,7 +167,7 @@
 	name = "\improper tachi"
 	desc = "A genuine replica of an ancient blade. This one is in remarkably good condition. It could do some damage to everyone, including yourself."
 	icon_state = "samurai_open"
-	force = 60
+	force = 85
 	attack_speed = 12
 	w_class = WEIGHT_CLASS_BULKY
 
@@ -185,7 +185,7 @@
 	flags_atom = CONDUCT
 	sharp = IS_SHARP_ITEM_ACCURATE
 	materials = list(/datum/material/metal = 200)
-	force = 30
+	force = 50
 	w_class = WEIGHT_CLASS_SMALL
 	throwforce = 20
 	throw_speed = 3
@@ -226,7 +226,7 @@
 	icon_state = "upp_knife"
 	item_state = "knife"
 	desc = "The standard issue survival knife of the UPP forces, the Type 30 is effective, but humble. It is small enough to be non-cumbersome, but lethal none-the-less."
-	force = 20
+	force = 50
 	throwforce = 10
 	throw_speed = 2
 	throw_range = 8
@@ -240,7 +240,7 @@
 	flags_atom = CONDUCT
 	sharp = IS_SHARP_ITEM_ACCURATE
 	materials = list(/datum/material/metal = 200)
-	force = 30
+	force = 50
 	w_class = WEIGHT_CLASS_SMALL
 	throwforce = 20
 	throw_speed = 3
@@ -283,9 +283,9 @@
 	singular_name = "knife"
 	flags_atom = CONDUCT|DIRLOCK
 	sharp = IS_SHARP_ITEM_ACCURATE
-	force = 20
+	force = 50
 	w_class = WEIGHT_CLASS_TINY
-	throwforce = 45
+	throwforce = 85
 	throw_speed = 5
 	throw_range = 7
 	hitsound = 'sound/weapons/slash.ogg'
@@ -372,7 +372,7 @@
 	if(!on)
 		on = !on
 		icon_state = "chainswordon"
-		force = 40
+		force = 100
 		throwforce = 30
 	else
 		on = !on

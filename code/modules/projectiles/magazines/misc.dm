@@ -139,7 +139,7 @@
 
 /obj/item/ammo_magazine/packet/p10x20mm
 	name = "packet of 10x20mm"
-	desc = "A packet containing 125 rounds of 10x20mm caseless."
+	desc = "A packet containing 1500 rounds of 10x20mm caseless."
 	icon_state = "box_10x20mm"
 	caliber = CALIBER_10X20_CASELESS
 	default_ammo = /datum/ammo/bullet/smg
