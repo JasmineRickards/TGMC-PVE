@@ -28,7 +28,7 @@
 
 	fire_sound = 'sound/weapons/guns/fire/hmg2.ogg'
 	reload_sound = 'sound/weapons/guns/interact/minigun_cocked.ogg'
-
+	caliber = CALIBER_10X30
 	default_ammo_type = /obj/item/ammo_magazine/tl102
 
 	scatter = 10
@@ -73,7 +73,7 @@
 	icon_state = "entrenched"
 
 	default_ammo_type = /obj/item/ammo_magazine/tl102/hsg_nest
-
+	caliber = CALIBER_10X30
 	attachable_allowed = list(/obj/item/attachable/scope/unremovable/tl102/nest)
 	starting_attachment_types = list(
 		/obj/item/attachable/scope/unremovable/tl102/nest,
