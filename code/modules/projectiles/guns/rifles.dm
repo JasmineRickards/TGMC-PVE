@@ -691,7 +691,10 @@
 	unload_sound = 'sound/weapons/guns/interact/T42_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/T42_reload.ogg'
 	default_ammo_type = /obj/item/ammo_magazine/standard_lmg
-	allowed_ammo_types = list(/obj/item/ammo_magazine/standard_lmg)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/standard_lmg,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/verticalgrip,
@@ -751,7 +754,10 @@
 	unload_sound = 'sound/weapons/guns/interact/T42_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/T42_reload.ogg'
 	default_ammo_type = /obj/item/ammo_magazine/standard_gpmg
-	allowed_ammo_types = list(/obj/item/ammo_magazine/standard_gpmg)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/standard_gpmg,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/flashlight,
@@ -815,7 +821,10 @@
 	unload_sound = 'sound/weapons/guns/interact/m41a_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/m41a_reload.ogg'
 	default_ammo_type = /obj/item/ammo_magazine/m412l1_hpr
-	allowed_ammo_types = list(/obj/item/ammo_magazine/m412l1_hpr)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/m412l1_hpr,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/extended_barrel,
 		/obj/item/attachable/reddot,
@@ -1386,7 +1395,9 @@
 	max_shells = 80 //codex
 	force = 20
 	default_ammo_type = /obj/item/ammo_magazine/rifle/alf_machinecarbine
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/alf_machinecarbine)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/alf_machinecarbine,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack)
 	attachable_allowed = list(
 		/obj/item/attachable/flashlight,
 		/obj/item/attachable/bipod,
@@ -1735,7 +1746,9 @@
 	unload_sound = 'sound/weapons/guns/interact/T42_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/T42_reload.ogg'
 	default_ammo_type = /obj/item/ammo_magazine/som_mg
-	allowed_ammo_types = list(/obj/item/ammo_magazine/som_mg)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/som_mg,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack)
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/flashlight,
