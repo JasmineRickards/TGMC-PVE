@@ -12,7 +12,7 @@
 	///high chance to block bullets, offset by being unanchored
 	coverage = 80
 	///maximum tank capacity used to set reagents in initialize
-	var/tank_volume = 1000
+	var/tank_volume = 5000
 	///Current amount we will transfer every time we click on this
 	var/amount_per_transfer_from_this = 10
 	///list of possible transer amounts for this reagent dispenser
