@@ -391,6 +391,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	icon_state = "minigun"
 	item_state = "minigun"
 	fire_animation = "minigun_fire"
+	caliber = CALIBER_10x30
 	max_shells = 1500 //codex
 	caliber = CALIBER_762X51 //codex
 	load_method = MAGAZINE //codex
