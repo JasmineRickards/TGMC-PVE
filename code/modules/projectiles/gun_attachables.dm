@@ -593,11 +593,41 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 
 /obj/item/attachable/magnetic_harness
 	name = "magnetic harness"
-	desc = "A magnetically attached harness kit that attaches to the rail mount of a weapon. When dropped, the weapon will sling to a TGMC armor."
+	desc = "A magnetically attached harness kit that attaches to the rail mount of a weapon. When dropped, the weapon will sling to a TGMC armor. You can also tighten it around your shoulder to keep yourself from dropping it."
 	icon_state = "magnetic"
 	slot = ATTACHMENT_SLOT_RAIL
 	pixel_shift_x = 13
+	flags_attach_features = ATTACH_REMOVABLE|ATTACH_ACTIVATION
+	attachment_action_type = /datum/action/item_action/toggle
 
+/obj/item/attachable/magnetic_harness/activate(mob/living/user, turn_off)
+	if(lace_deployed)
+		to_chat(user, span_notice("You loosen the [src]."))
+		DISABLE_BITFIELD(master_gun.flags_item, NODROP)
+		to_chat(user, span_notice("You feel the [src] loosen around your shoulder!"))
+		playsound(user, 'sound/weapons/fistunclamp.ogg', 25, 1, 7)
+		icon_state = "magnetic"
+	else if(turn_off)
+		return
+	else
+		if(user.do_actions)
+			return
+		if(!do_after(user, 0.5 SECONDS, TRUE, src, BUSY_ICON_BAR))
+			return
+		to_chat(user, span_notice("You tighten the [src]."))
+		ENABLE_BITFIELD(master_gun.flags_item, NODROP)
+		to_chat(user, span_warning("You feel the [src] close around your shoulder!"))
+		playsound(user, 'sound/weapons/fistclamp.ogg', 25, 1, 7)
+		icon_state = "magnetic"
+
+	lace_deployed = !lace_deployed
+
+	for(var/i in master_gun.actions)
+		var/datum/action/action_to_update = i
+		action_to_update.update_button_icon()
+
+	update_icon()
+	return TRUE
 
 /obj/item/attachable/scope
 	name = "rail scope"
@@ -1220,8 +1250,6 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 
 	update_icon()
 	return TRUE
-
-
 
 /obj/item/attachable/burstfire_assembly
 	name = "burst fire assembly"
