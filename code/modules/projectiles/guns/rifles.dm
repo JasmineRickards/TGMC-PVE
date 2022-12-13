@@ -236,7 +236,7 @@
 	aim_fire_delay = 0.2 SECONDS
 	aim_speed_modifier = 2
 
-	fire_delay = 0.65 SECONDS
+	fire_delay = 0.18 SECONDS
 	accuracy_mult = 1.15
 	scatter = -4
 	burst_amount = 1
@@ -263,7 +263,7 @@
 	unload_sound = 'sound/weapons/guns/interact/m41a_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/m41a_reload.ogg'
 	caliber = CALIBER_10x265_CASELESS //codex
-	aim_slowdown = 0.55
+	aim_slowdown = 0.16
 	wield_delay = 0.7 SECONDS
 	force = 20
 	max_shells = 36 //codex

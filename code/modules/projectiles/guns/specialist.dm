@@ -324,6 +324,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	icon_state = "tx8"
 	item_state = "tx8"
 	max_shells = 25 //codex
+	fire_delay = 0.15 SECONDS
 	muzzleflash_iconstate = "muzzle_flash_medium"
 	caliber = CALIBER_10X28_CASELESS //codex
 	fire_sound = 'sound/weapons/guns/fire/t64.ogg'
