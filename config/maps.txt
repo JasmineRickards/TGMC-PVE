@@ -34,19 +34,18 @@ map ice_colony_v2
 endmap
 
 map prison_station_fop
-	minplayers 20
-	maxplayers 60
+	minplayers 6
 endmap
 
 map vapor_processing
 endmap
 
 map icy_caves
-	maxplayers 2
+	minplayers 2
 endmap
 
 map research_outpost
-	maxplayers 2
+	minplayers 2
 endmap
 
 map whiskey_outpost_v2
@@ -57,7 +56,7 @@ map magmoor_digsite_iv
 endmap
 
 map orion_outpost
-	maxplayers 4
+	minplayers 2
 endmap
 
 map gelida_iv
