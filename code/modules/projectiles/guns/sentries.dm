@@ -8,7 +8,7 @@
 
 	max_integrity = 200
 	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 100, FIRE = 80, ACID = 50)
-
+	caliber = CALIBER_10X28
 	fire_delay = 0.6 SECONDS
 	extra_delay = 0.6 SECONDS
 	burst_delay = 0.3 SECONDS
@@ -222,7 +222,7 @@
 	name = "\improper ST-580 point defense sentry"
 	desc = "A deployable, automated turret with AI targeting capabilities. This is a lightweight portable model meant for rapid deployment and point defense. Armed with an light, high velocity machine gun and a 100-round drum magazine."
 	icon_state = "minisentry"
-
+	caliber = CALIBER_10X20
 	max_shells = 600
 	knockdown_threshold = 80
 
@@ -250,6 +250,7 @@
 	icon_state = "sentry"
 	turret_flags = TURRET_HAS_CAMERA|TURRET_ON|TURRET_IMMOBILE|TURRET_SAFETY|TURRET_RADIAL
 	max_shells = 100
+	caliber = CALIBER_10X28
 
 	ammo_datum_type = /datum/ammo/bullet/turret/gauss
 	default_ammo_type = /obj/item/ammo_magazine/sentry
