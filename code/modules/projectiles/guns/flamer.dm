@@ -7,6 +7,7 @@
 	desc = "flame go froosh"
 	flags_equip_slot = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_BULKY
+	caliber = CALIBER_FUEL_THICK
 	force = 15
 	fire_sound = "gun_flamethrower"
 	dry_fire_sound = 'sound/weapons/guns/fire/flamethrower_empty.ogg'
