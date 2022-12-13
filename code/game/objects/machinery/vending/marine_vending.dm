@@ -88,6 +88,7 @@
 			/obj/item/ammo_magazine/standard_mmg = -1,
 			/obj/item/weapon/gun/rifle/m412l1_hpr = 5,
 			/obj/item/ammo_magazine/m412l1_hpr = -1,
+			/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack = -1,
 		),
 		"Melee" = list(
 			/obj/item/weapon/combat_knife = -1,
