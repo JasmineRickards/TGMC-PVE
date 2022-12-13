@@ -679,7 +679,7 @@
 	desc = "A specialized backpack worn by TGMC technicians. It carries a fueltank for quick welder refueling and use,"
 	icon_state = "engineerpack"
 	item_state = "engineerpack"
-	var/max_fuel = 260
+	var/max_fuel = 500
 	storage_slots = null
 	max_storage_space = 15
 	access_delay = 0

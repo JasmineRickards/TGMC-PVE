@@ -4,7 +4,7 @@
 	icon = 'icons/obj/items/tank.dmi'
 	icon_state = "canister"
 	w_class = WEIGHT_CLASS_BULKY
-	volume = 200
+	volume = 800
 	list_reagents = list(/datum/reagent/fuel = 200)
 	///how much fuel we use up per spill
 	var/fuel_usage = 10

@@ -183,7 +183,7 @@
 	///Number for how much fuel we have left, this x15 seconds is how much time we have while flying
 	var/fuel_left = 40
 	///How much fuel we can hold maximum
-	var/fuel_max = 40
+	var/fuel_max = 400
 	///Our currently selected weapon we will fire
 	var/obj/structure/dropship_equipment/weapon/active_weapon
 

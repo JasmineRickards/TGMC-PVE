@@ -72,7 +72,7 @@
 	desc = "A fueltank"
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "weldtank"
-	list_reagents = list(/datum/reagent/fuel = 1000)
+	list_reagents = list(/datum/reagent/fuel = 5000)
 	///Whether this tank is modded to drip fuel when its moved
 	var/modded = FALSE
 	///Rig we attached to this fuel tank
