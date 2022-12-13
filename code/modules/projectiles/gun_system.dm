@@ -1098,7 +1098,6 @@
 /obj/item/weapon/gun/proc/reload(obj/item/new_mag, mob/living/user, force = FALSE)
 	if(HAS_TRAIT(src, TRAIT_GUN_BURST_FIRING) || user?.do_actions)
 		return
-
 	if(!(new_mag.type in allowed_ammo_types))
 		if(CHECK_BITFIELD(reciever_flags, AMMO_RECIEVER_HANDFULS))
 			var/obj/item/ammo_magazine/mag = new_mag
@@ -1135,11 +1134,6 @@
 		if(!get_current_rounds(new_mag) && !force)
 			to_chat(user, span_notice("[new_mag] is empty!"))
 			return FALSE
-		if(!istype(new_mag, /obj/item/cell)) // Makes sure the check below isn't applied to energy cells
-			var/obj/item/ammo_magazine/mag = new_mag
-			if(mag.caliber != caliber) // Sanity check for magazines to ensure that the calibers actually match.
-				to_chat(user, span_warning("[new_mag] cannot fit into [src]!"))
-				return FALSE
 		var/flags_magazine_features = get_flags_magazine_features(new_mag)
 		if(flags_magazine_features && CHECK_BITFIELD(flags_magazine_features, MAGAZINE_WORN) && user && user.get_active_held_item() == new_mag)
 			return FALSE
