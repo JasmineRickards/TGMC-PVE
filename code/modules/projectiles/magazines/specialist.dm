@@ -348,7 +348,7 @@
 	desc = "A heavy reinforced backpack with support equipment, power cells, and spare rounds for the MG-100 Minigun System.\nClick the icon in the top left to reload your M56."
 	icon = 'icons/obj/items/storage/storage.dmi'
 	icon_state = "powerpack"
-	flags_atom = CONDUCT\
+	flags_atom = CONDUCT
 	caliber = CALIBER_762X51
 	flags_equip_slot = ITEM_SLOT_BACK
 	flags_magazine = MAGAZINE_WORN
