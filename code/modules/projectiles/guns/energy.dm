@@ -249,6 +249,10 @@
 	rounds_per_shot = 12
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun/lasrifle,
+		/obj/item/cell/lasgun/volkite/powerpack,
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
 		/obj/item/attachable/bayonetknife,
