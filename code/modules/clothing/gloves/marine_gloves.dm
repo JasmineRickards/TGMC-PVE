@@ -6,6 +6,7 @@
 /obj/item/clothing/gloves/marine
 	name = "marine combat gloves"
 	desc = "Standard issue marine tactical gloves. It reads: 'knit by Marine Widows Association'."
+	species_exception = list(/datum/species/robot)
 	icon_state = "gloves_marine"
 	item_state = "gloves_marine"
 	siemens_coefficient = 0.6
