@@ -107,7 +107,7 @@
 	slowdown = 0.3
 	maxcharge = 15000
 	self_recharge = TRUE
-	charge_amount = 32
+	charge_amount = 300
 	charge_delay = 2 SECONDS
 
 ///Handles draining power from the powerpack, returns the value of the charge drained to MouseDrop where it's added to the cell.
