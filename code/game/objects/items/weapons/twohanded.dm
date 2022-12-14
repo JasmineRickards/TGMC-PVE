@@ -349,11 +349,11 @@
 	attack_speed = 20
 
 	///amount of fuel stored inside
-	var/max_fuel = 50
+	var/max_fuel = 100
 	///amount of fuel used per hit
-	var/fuel_used = 5
+	var/fuel_used = 1
 	///additional damage when weapon is active
-	var/additional_damage = 75
+	var/additional_damage = 150
 	///stun value
 	var/stun = 1
 	///weaken value
