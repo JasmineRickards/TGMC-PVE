@@ -262,7 +262,7 @@ GLOBAL_LIST_INIT(blacklisted_cargo_types, typecacheof(list(
 	desc = "A console for an Automated Storage and Retrieval System"
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = SHUTTLE_SUPPLY
-	req_access = list(ACCESS_MARINE_CARGO)
+//	req_access = list(ACCESS_MARINE_CARGO)
 	circuit = null
 	var/datum/supply_ui/SU
 	///Id of the shuttle controlled
