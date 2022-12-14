@@ -284,7 +284,7 @@
 	ammo_used_per_firing = 10
 	travelling_time = 0 SECONDS
 	transferable_ammo = TRUE
-	point_cost = 25
+	point_cost = 0
 	ammo_type = RAILGUN_AMMO
 	devastating_explosion_range = 0
 	heavy_explosion_range = 2

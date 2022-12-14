@@ -33,7 +33,7 @@
 
 	scatter = 10
 	deployed_scatter_change = -10
-	fire_delay = 0.25 SECONDS
+	fire_delay = 0.1 SECONDS
 
 	burst_amount = 3
 	burst_delay = 0.1 SECONDS
