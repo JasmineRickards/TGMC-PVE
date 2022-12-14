@@ -21,13 +21,13 @@
 	 */
 	var/free_xeno_at_start = FREE_XENO_AT_START
 
-/datum/job/xenomorph/return_spawn_type(datum/preferences/prefs)
-	return /mob/living/carbon/xenomorph/larva
+//datum/job/xenomorph/return_spawn_type(datum/preferences/prefs)
+//	return /mob/living/carbon/xenomorph/larva
 
-/datum/job/xenomorph/return_spawn_turf()
-	if(length(GLOB.xeno_resin_silos))
-		return pick(GLOB.xeno_resin_silos)
-	return pick(GLOB.spawns_by_job[/datum/job/xenomorph])
+//datum/job/xenomorph/return_spawn_turf()
+//	if(length(GLOB.xeno_resin_silos))
+//		return pick(GLOB.xeno_resin_silos)
+//	return pick(GLOB.spawns_by_job[/datum/job/xenomorph])
 
 /datum/job/xenomorph/radio_help_message(mob/M)
 	. = ..()
