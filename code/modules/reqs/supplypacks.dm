@@ -792,6 +792,7 @@ ARMOR
 		/obj/item/armor_module/module/mimir_environment_protection,
 		/obj/item/armor_module/module/better_shoulder_lamp,
 		/obj/item/armor_module/module/hlin_explosive_armor,
+		/obj/item/armor_module/module/eshield/mk2,
 	)
 	cost = 40
 
@@ -801,6 +802,13 @@ ARMOR
 		/obj/item/armor_module/module/valkyrie_autodoc,
 	)
 	cost = 12
+
+datum/supply_packs/armor/modular/attachments/mk2eshield
+	name = "Jaeger Arrowhead mk.2"
+	contains = list(
+		/obj/item/armor_module/module/eshield/mk2,
+	)
+	cost = 18
 
 /datum/supply_packs/armor/modular/attachments/fire_proof
 	name = "Jaeger Surt fireproof module"

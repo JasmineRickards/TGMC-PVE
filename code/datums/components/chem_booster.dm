@@ -21,7 +21,7 @@
 	var/mob/living/carbon/human/wearer
 
 	///Amount of substance that the component can store
-	var/resource_storage_max = 200
+	var/resource_storage_max = 400
 	///Amount of substance stored currently
 	var/resource_storage_current = 0
 	///Amount required for operation
@@ -59,15 +59,15 @@
 	///Information about how reagents boost the system's effects.
 	var/reagent_info = ""
 	///Vali brute healing is multiplied by this
-	var/brute_heal_amp = 1
+	var/brute_heal_amp = 1.3
 	///Vali burn healing is multiplied by this
-	var/burn_heal_amp = 1
+	var/burn_heal_amp = 1.3
 	///Vali toxin healing is multiplied by this
-	var/tox_heal = 0
+	var/tox_heal = 0.5
 	///Vali stamina regen is multiplied by this
 	var/stamina_regen_amp = 1
 	///Vali movement speed buff is this value
-	var/movement_boost = 0
+	var/movement_boost = 0.4
 	///How much time left on vali heal till necrosis occurs
 	var/vali_necro_timer
 

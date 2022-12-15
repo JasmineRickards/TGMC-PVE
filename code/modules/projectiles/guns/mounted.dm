@@ -322,7 +322,6 @@
 	item_state = "t27"
 	caliber = CALIBER_10x27_CASELESS // codex
 	max_shells = 300 //codex
-	fire_delay = 0.1 SECONDS
 	force = 40
 	aim_slowdown = 1.2
 	wield_delay = 2 SECONDS
@@ -364,7 +363,7 @@
 	recoil = 2
 	scatter_unwielded = 45
 	accuracy_mult = 1.1 //it's got a bipod
-	fire_delay = 0.8 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_amount = 5
 	deploy_time = 1 SECONDS
 	undeploy_time = 0.5 SECONDS

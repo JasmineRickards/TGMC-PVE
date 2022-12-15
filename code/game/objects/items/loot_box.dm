@@ -449,6 +449,7 @@
 	new /obj/item/armor_module/module/mimir_environment_protection/mimir_helmet(src)
 	new	/obj/item/armor_module/module/welding/superior(src)
 	new /obj/item/armor_module/module/welding/superior(src)
+	new /obj/item/armor_module/module/eshield/mk2(src)
 
 
 /obj/item/storage/box/loot/injectors_pack/Initialize()
