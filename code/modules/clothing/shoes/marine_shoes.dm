@@ -3,6 +3,7 @@
 /obj/item/clothing/shoes/marine
 	name = "marine combat boots"
 	desc = "Standard issue combat boots for combat scenarios or combat situations. All combat, all the time."
+	species_exception = list(/datum/species/robot)
 	icon_state = "marine"
 	item_state = "marine"
 	flags_armor_protection = FEET

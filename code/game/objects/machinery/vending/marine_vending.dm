@@ -1182,6 +1182,7 @@
 			/obj/item/clothing/suit/storage/marine/robot/light = -1,
 			/obj/item/clothing/suit/storage/marine/robot = -1,
 			/obj/item/clothing/suit/storage/marine/robot/heavy = -1,
+			/obj/item/clothing/suit/modular/robot = -1,
 		),
 		"Helmets" = list(
 			/obj/item/clothing/head/modular/marine/m10x = -1,
@@ -1198,6 +1199,9 @@
 			/obj/item/clothing/head/helmet/marine/robot/light = -1,
 			/obj/item/clothing/head/helmet/marine/robot = -1,
 			/obj/item/clothing/head/helmet/marine/robot/heavy = -1,
+			/obj/item/clothing/head/modular/marine/m10x/robot = -1,
+			/obj/item/clothing/head/modular/marine/helljumper/robot = -1,
+			/obj/item/clothing/head/modular/marine/assault/robot = -1,
 		),
 		"Jaeger chestpieces" = list(
 			/obj/item/armor_module/armor/chest/marine/skirmisher = -1,

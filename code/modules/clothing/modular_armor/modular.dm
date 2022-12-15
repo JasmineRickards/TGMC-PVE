@@ -952,3 +952,113 @@
 		/obj/item/armor_module/storage/helmet,
 		/obj/item/armor_module/armor/badge,
 	)
+
+/obj/item/clothing/suit/modular/robot
+	name = "Golem XM-03 robotic combat exoskeleton"
+	desc = "Designed to mount a variety of modular armor components and support systems. It comes installed with light-plating and a shoulder lamp, and is a modified version of the Jaeger exoskeleton for use by combat robots. Mount armor pieces to it by clicking on the frame with the components. Use Alt-Click to remove any attached items."
+	species_exception = list(/datum/species/robot)
+	attachments_allowed = list(
+		/obj/item/armor_module/armor/chest/marine,
+		/obj/item/armor_module/armor/legs/marine,
+		/obj/item/armor_module/armor/arms/marine,
+
+		/obj/item/armor_module/armor/chest/marine/skirmisher,
+		/obj/item/armor_module/armor/legs/marine/skirmisher,
+		/obj/item/armor_module/armor/arms/marine/skirmisher,
+
+		/obj/item/armor_module/armor/chest/marine/skirmisher/scout,
+		/obj/item/armor_module/armor/legs/marine/scout,
+		/obj/item/armor_module/armor/arms/marine/scout,
+
+		/obj/item/armor_module/armor/chest/marine/assault,
+		/obj/item/armor_module/armor/legs/marine/assault,
+		/obj/item/armor_module/armor/arms/marine/assault,
+
+		/obj/item/armor_module/armor/chest/marine/eva,
+		/obj/item/armor_module/armor/legs/marine/eva,
+		/obj/item/armor_module/armor/arms/marine/eva,
+
+		/obj/item/armor_module/armor/chest/marine/assault/eod,
+		/obj/item/armor_module/armor/legs/marine/eod,
+		/obj/item/armor_module/armor/arms/marine/eod,
+
+		/obj/item/armor_module/armor/chest/marine/helljumper,
+		/obj/item/armor_module/armor/legs/marine/helljumper,
+		/obj/item/armor_module/armor/arms/marine/helljumper,
+
+		/obj/item/armor_module/module/better_shoulder_lamp,
+		/obj/item/armor_module/module/fire_proof,
+		/obj/item/armor_module/module/tyr_extra_armor,
+		/obj/item/armor_module/module/tyr_extra_armor/mark1,
+		/obj/item/armor_module/module/mimir_environment_protection,
+		/obj/item/armor_module/module/mimir_environment_protection/mark1,
+		/obj/item/armor_module/module/hlin_explosive_armor,
+		/obj/item/armor_module/module/ballistic_armor,
+		/obj/item/armor_module/module/eshield,
+
+		/obj/item/armor_module/storage/general,
+		/obj/item/armor_module/storage/ammo_mag,
+		/obj/item/armor_module/storage/engineering,
+		/obj/item/armor_module/storage/medical,
+		/obj/item/armor_module/storage/medical/basic,
+		/obj/item/armor_module/storage/injector,
+		/obj/item/armor_module/storage/grenade,
+		/obj/item/armor_module/storage/integrated,
+		/obj/item/armor_module/armor/badge,
+	)
+
+/obj/item/clothing/head/modular/marine/helljumper/robot
+	name = "Golem Pattern Visored Helmet"
+	desc = "Usually paired with the Golem Combat Exoskeleton. Can mount utility functions on the helmet hard points. Fitted for combat robots."
+	species_exception = list(/datum/species/robot)
+	icon_state = "helljumper_helmet"
+	greyscale_config = /datum/greyscale_config/modularhelmet/helljumper
+	attachments_allowed = list(
+		/obj/item/armor_module/module/tyr_head,
+		/obj/item/armor_module/module/hod_head,
+		/obj/item/armor_module/module/mimir_environment_protection/mimir_helmet,
+		/obj/item/armor_module/module/mimir_environment_protection/mimir_helmet/mark1,
+//		/obj/item/armor_module/module/welding,
+//		/obj/item/armor_module/module/welding/superior,
+		/obj/item/armor_module/module/binoculars,
+		/obj/item/armor_module/module/antenna,
+		/obj/item/armor_module/storage/helmet,
+		/obj/item/armor_module/armor/visor/marine/helljumper,
+		/obj/item/armor_module/armor/badge,
+	)
+	starting_attachments = list(/obj/item/armor_module/armor/visor/marine/helljumper, /obj/item/armor_module/storage/helmet)
+
+/obj/item/clothing/head/modular/marine/assault/robot
+	name = "Jaeger Pattern Assault Helmet"
+	desc = "Usually paired with the Golem Combat Exoskeleton. Can mount utility functions on the helmet hard points. Fitted for combat robots."
+	icon_state = "assault_helmet"
+	greyscale_config = /datum/greyscale_config/modularhelmet/assault
+	attachments_allowed = list(
+		/obj/item/armor_module/module/tyr_head,
+		/obj/item/armor_module/module/hod_head,
+		/obj/item/armor_module/module/mimir_environment_protection/mimir_helmet,
+		/obj/item/armor_module/module/mimir_environment_protection/mimir_helmet/mark1,
+//		/obj/item/armor_module/module/welding,
+//		/obj/item/armor_module/module/welding/superior,
+		/obj/item/armor_module/module/binoculars,
+		/obj/item/armor_module/module/antenna,
+		/obj/item/armor_module/storage/helmet,
+		/obj/item/armor_module/armor/visor/marine/assault,
+		/obj/item/armor_module/armor/badge,
+	)
+
+/obj/item/clothing/head/modular/marine/m10x/robot
+	name = "Golem Pattern Open Helmet"
+	desc = "Usually paired with the Golem Combat Exoskeleton. Can mount utility functions on the helmet hard points. Fitted for combat robots."
+	attachments_allowed = list(
+		/obj/item/armor_module/module/tyr_head,
+		/obj/item/armor_module/module/hod_head,
+		/obj/item/armor_module/module/mimir_environment_protection/mimir_helmet,
+		/obj/item/armor_module/module/mimir_environment_protection/mimir_helmet/mark1,
+//		/obj/item/armor_module/module/welding,
+//		/obj/item/armor_module/module/welding/superior,
+		/obj/item/armor_module/module/binoculars,
+		/obj/item/armor_module/module/antenna,
+		/obj/item/armor_module/storage/helmet,
+		/obj/item/armor_module/armor/badge,
+	)
