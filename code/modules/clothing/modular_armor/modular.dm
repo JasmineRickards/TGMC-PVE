@@ -1029,8 +1029,9 @@
 	starting_attachments = list(/obj/item/armor_module/armor/visor/marine/helljumper, /obj/item/armor_module/storage/helmet)
 
 /obj/item/clothing/head/modular/marine/assault/robot
-	name = "Jaeger Pattern Assault Helmet"
+	name = "Golem Pattern Assault Helmet"
 	desc = "Usually paired with the Golem Combat Exoskeleton. Can mount utility functions on the helmet hard points. Fitted for combat robots."
+	species_exception = list(/datum/species/robot)
 	icon_state = "assault_helmet"
 	greyscale_config = /datum/greyscale_config/modularhelmet/assault
 	attachments_allowed = list(
@@ -1050,6 +1051,7 @@
 /obj/item/clothing/head/modular/marine/m10x/robot
 	name = "Golem Pattern Open Helmet"
 	desc = "Usually paired with the Golem Combat Exoskeleton. Can mount utility functions on the helmet hard points. Fitted for combat robots."
+	species_exception = list(/datum/species/robot)
 	attachments_allowed = list(
 		/obj/item/armor_module/module/tyr_head,
 		/obj/item/armor_module/module/hod_head,
