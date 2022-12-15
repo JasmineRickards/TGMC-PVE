@@ -302,27 +302,27 @@
 	variants_by_parent_type = list(/obj/item/clothing/suit/modular/xenonauten = "mod_eshield_xn", /obj/item/clothing/suit/modular/xenonauten/light = "mod_eshield_xn", /obj/item/clothing/suit/modular/xenonauten/heavy = "mod_eshield_xn")
 
 	///Current shield Health
-	var/shield_health = 0
+	shield_health = 0
 	///Maximum shield Health
-	var/max_shield_health = 120
+	max_shield_health = 120
 	///Amount to recharge per tick, processes once every two seconds.
-	var/recharge_rate = 20
+	recharge_rate = 20
 
 	///Spark system used to generate sparks when the armor takes damage
-	var/datum/effect_system/spark_spread/spark_system
+	datum/effect_system/spark_spread/spark_system
 
 	///Shield color when the shield is 0 - 33% full
-	var/shield_color_low = COLOR_MAROON
+	shield_color_low = COLOR_MAROON
 	///Shield color when the shield is 33 - 66% full
-	var/shield_color_mid = COLOR_MOSTLY_PURE_RED
+	shield_color_mid = COLOR_MOSTLY_PURE_RED
 	///Shield color when the shield is 66% to full
-	var/shield_color_full = COLOR_BLUE_LIGHT
+	shield_color_full = COLOR_BLUE_LIGHT
 	///Current shield color
-	var/current_color
+	current_color
 	///Delay it takes to start recharging again after the shield has been damaged.
-	var/damaged_shield_cooldown = 10 SECONDS
+	damaged_shield_cooldown = 10 SECONDS
 	///Holds id for a timer which triggers recharge start. Null if not currently delayed.
-	var/recharge_timer
+	recharge_timer
 
 /obj/item/armor_module/module/eshield/Initialize()
 	. = ..()
