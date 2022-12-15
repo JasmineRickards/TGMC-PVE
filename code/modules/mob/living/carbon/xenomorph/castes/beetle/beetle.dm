@@ -25,3 +25,8 @@
 	target_turf = get_step_rand(target_turf) //Scatter
 	H.throw_at(get_turf(target_turf), 4, 70, H)
 	H.Paralyze(20)
+
+/mob/living/carbon/xenomorph/beetle/on_death()
+	///We QDEL them as cleanup and preventing them from being sold
+	QDEL_IN(src, TIME_TO_DISSOLVE)
+	return ..()

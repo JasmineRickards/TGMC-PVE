@@ -62,6 +62,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	starting_attachment_types = list(/obj/item/attachable/scope/antimaterial, /obj/item/attachable/sniperbarrel)
 
 	fire_delay = 2.5 SECONDS
+	damage_mult = 3
 	burst_amount = 1
 	accuracy_mult = 1.1
 	recoil = 2
@@ -255,6 +256,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	starting_attachment_types = list(/obj/item/attachable/scope/pmc, /obj/item/attachable/sniperbarrel)
 
 	fire_delay = 1.5 SECONDS
+	damage_mult = 3
 	accuracy_mult = 1.2
 	scatter = 3
 	recoil = 5
@@ -305,7 +307,8 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	aim_fire_delay = 0.8 SECONDS
 	aim_speed_modifier = 0.75
 
-	fire_delay = 1.2 SECONDS
+	fire_delay = 0.8 SECONDS
+	damage_mult = 2
 	burst_amount = 1
 	accuracy_mult = 1
 	scatter = -5
@@ -822,7 +825,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	icon = 'icons/Marine/gun64.dmi'
 	icon_state = "railgun"
 	item_state = "railgun"
-	max_shells = 1 //codex
+	max_shells = 3 //codex
 	caliber = CALIBER_RAILGUN
 	fire_sound = 'sound/weapons/guns/fire/railgun.ogg'
 	fire_rattle = 'sound/weapons/guns/fire/railgun.ogg'
@@ -846,7 +849,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER
 	reciever_flags = AMMO_RECIEVER_MAGAZINES|AMMO_RECIEVER_AUTO_EJECT|AMMO_RECIEVER_CYCLE_ONLY_BEFORE_FIRE
 
-	fire_delay = 1 SECONDS
+	fire_delay = 2 SECONDS
 	burst_amount = 1
 	accuracy_mult = 2
 	recoil = 0

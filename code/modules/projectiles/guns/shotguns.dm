@@ -26,6 +26,7 @@
 	scatter_unwielded = 10
 	recoil = 2
 	recoil_unwielded = 4
+	damage_mult = 2
 	movement_acc_penalty_mult = 2
 	lower_akimbo_accuracy = 3
 	upper_akimbo_accuracy = 5
@@ -364,6 +365,7 @@
 	aim_speed_modifier = 0.8
 
 	fire_delay = 0.4 SECONDS
+	damage_mult = 3
 	accuracy_mult = 1.15
 	accuracy_mult_unwielded = 0.7
 	scatter = -1
@@ -421,6 +423,7 @@
 
 	scatter = -25
 	scatter_unwielded = 20
+	damage_mult = 4
 
 	recoil = 2
 	recoil_unwielded = 4
@@ -498,6 +501,7 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 
 	fire_delay = 0.4 SECONDS
+	damage_mult = 2
 	accuracy_mult = 1.2
 	accuracy_mult_unwielded = 0.7
 	scatter = 2
