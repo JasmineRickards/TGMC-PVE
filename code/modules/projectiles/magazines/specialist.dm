@@ -457,3 +457,75 @@
 	caliber = initial(choice.caliber)
 
 	playsound(src, 'sound/machines/hydraulics_2.ogg', 40, 1)
+
+/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt
+	name = "\improper T-72 Pointman longevity belt"
+	desc = "The widely successful deployment of the T-71 ammopack for support gunmers has led to calls for a more portable version for use by regular infantry. The T-72 has been developed to answer this call, featuring the same Unique Action system for configuration and supporting not only assault rifles and carbines, but pistols and SMGs as well. It is also sacrifices capacity for portability, holding a third of the ammunition of the Ammopack but being wearable around one's waist."
+	flags_equip_slot = ITEM_SLOT_BELT
+	icon = 'icons/obj/items/storage/storage.dmi'
+	icon_state = "ammopackbelt"
+	caliber_types = list(
+		"10x20 Caseless" = /datum/ammopacktype/p10x20b,
+		"10x24 Caseless" = /datum/ammopacktype/p10x24b,
+		"10x25 Caseless" = /datum/ammopacktype/p10x25b,
+		"10x26.5 Caseless" = /datum/ammopacktype/p10x265b,
+		"492x34mm Caseless" = /datum/ammopacktype/p492x34b,
+		"16 Gauge Flechettes" = /datum/ammopacktype/tx15_flechette,
+		"16 Gauge Slugs" = /datum/ammopacktype/tx15_slug,
+		)
+
+/datum/ammopacktype/p10x24b
+	default_ammo = /datum/ammo/bullet/rifle
+	max_rounds = 1500
+	caliber = CALIBER_10X24_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "10x24"
+	caliber_label = "10x24mm Caseless"
+
+/datum/ammopacktype/p10x25b
+	default_ammo = /datum/ammo/bullet/rifle/heavy
+	max_rounds = 1250
+	caliber = CALIBER_10X25_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "10x25"
+	caliber_label = "10x25mm Caseless"
+
+/datum/ammopacktype/p10x265b
+	default_ammo = /datum/ammo/bullet/rifle/standard_br
+	max_rounds = 1000
+	caliber = CALIBER_10x265_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "10x265"
+	caliber_label = "10x26.5mm Caseless"
+
+/datum/ammopacktype/tx15_slug
+	default_ammo = /datum/ammo/bullet/shotgun/tx15_slug
+	caliber = CALIBER_16G
+	max_rounds = 600
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "16g-slug"
+	caliber_label = "16 Gauge Slugs"
+
+/datum/ammopacktype/tx15_flechette
+	default_ammo = /datum/ammo/bullet/shotgun/tx15_flechette
+	caliber = CALIBER_16G
+	max_rounds = 600
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "16g-flechette"
+	caliber_label = "16 Gauge Flechettes"
+
+/datum/ammopacktype/p10x20b
+	default_ammo = /datum/ammo/bullet/smg
+	max_rounds = 1500
+	caliber = CALIBER_10X20_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "10x20"
+	caliber_label = "10x20mm Caseless"
+
+/datum/ammopacktype/p492x34b
+	default_ammo = /datum/ammo/bullet/rifle/hv
+	max_rounds = 2100
+	caliber = CALIBER_492X34_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "492x34"
+	caliber_label = "492x34mm Caseless"
