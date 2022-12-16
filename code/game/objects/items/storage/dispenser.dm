@@ -23,7 +23,7 @@
 /obj/machinery/deployable/dispenser/proc/deploy()
 	affecting_list = list()
 	for(var/mob/living/carbon/human/human in view(2, src))
-		if(!(human.species.species_flags & ROBOTIC_LIMBS)) // can only affect robots
+		if(!(human.species.species_flags)) // can only affect robots
 			continue
 		RegisterSignal(human, COMSIG_PARENT_QDELETING, .proc/on_affecting_qdel)
 		affecting_list[human] = beam(human, "blood_light", maxdistance = 3)
@@ -46,7 +46,7 @@
 ///checks if a mob that moved close is elligible to get heal beamed.
 /obj/machinery/deployable/dispenser/proc/entered_tiles(datum/source, mob/living/carbon/human/entering)
 	SIGNAL_HANDLER
-	if(!ishuman(entering) || !(entering.species.species_flags & ROBOTIC_LIMBS)) // can only affect robots
+	if(!ishuman(entering) || !(entering.species.species_flags)) // can only affect robots
 		return
 	if(entering in affecting_list)
 		return
