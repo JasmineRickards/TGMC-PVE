@@ -241,7 +241,7 @@
 	actions_types = list(/datum/action/item_action/aim_mode)
 	aim_fire_delay = 0.2 SECONDS
 	aim_speed_modifier = 2
-
+	damage_mult = 1.5
 	fire_delay = 0.18 SECONDS
 	accuracy_mult = 1.15
 	scatter = -4
@@ -315,6 +315,7 @@
 	fire_delay = 0.3 SECONDS
 	burst_amount = 3
 	burst_delay = 0.10 SECONDS
+	damage_mult = 1.5
 	extra_delay = 0.25 SECONDS
 	accuracy_mult = 0.9
 	scatter = 0

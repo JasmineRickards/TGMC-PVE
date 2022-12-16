@@ -13,7 +13,6 @@ Format:
 endmap
 
 map lv624
-	default
 	minplayers 2
 endmap
 
@@ -49,6 +48,7 @@ map research_outpost
 endmap
 
 map whiskey_outpost_v2
+	minplayers 2
 endmap
 
 map magmoor_digsite_iv
