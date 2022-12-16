@@ -14,6 +14,7 @@
 	allowed_ammo_types = list(
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
+		/obj/item/cell/lasgun/lasrifle,
 		)
 	muzzle_flash = null
 
@@ -83,6 +84,11 @@
 	fire_sound = 'sound/weapons/guns/fire/laser.ogg'
 	load_method = CELL //codex
 	ammo_datum_type  = /datum/ammo/energy/lasgun
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun,
+		/obj/item/cell/lasgun/volkite/powerpack,
+		/obj/item/cell/lasgun/lasrifle,
+		)
 	flags_equip_slot = ITEM_SLOT_BACK
 	muzzleflash_iconstate = "muzzle_flash_laser"
 	w_class = WEIGHT_CLASS_BULKY
@@ -151,6 +157,11 @@
 	max_shots = 50 //codex stuff
 	load_method = CELL //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/M43
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun,
+		/obj/item/cell/lasgun/volkite/powerpack,
+		/obj/item/cell/lasgun/lasrifle,
+		)
 	ammo_diff = null
 	rounds_per_shot = ENERGY_STANDARD_AMMO_COST
 	attachable_allowed = list(
@@ -246,6 +257,11 @@
 	max_shots = 50 //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine
 	ammo_diff = null
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun,
+		/obj/item/cell/lasgun/volkite/powerpack,
+		/obj/item/cell/lasgun/lasrifle,
+		)
 	rounds_per_shot = 12
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)

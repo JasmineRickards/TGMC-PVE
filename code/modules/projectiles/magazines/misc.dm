@@ -156,3 +156,12 @@
 	w_class = WEIGHT_CLASS_SMALL
 	current_rounds = 500
 	max_rounds = 500
+
+/obj/item/ammo_magazine/packet/p86x70mm
+	name = "box of 7.62x39"
+	desc = "A box containing 800 rounds of 7.62x39 caseless."
+	caliber = CALIBER_762X39
+	icon_state = "box_86x70mm"
+	default_ammo = /datum/ammo/bullet/sniper/pfc
+	current_rounds = 800
+	max_rounds = 800

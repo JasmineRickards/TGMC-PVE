@@ -22,6 +22,8 @@
 			/obj/item/ammo_magazine/packet/p4570 = -1,
 			/obj/item/weapon/gun/rifle/m41a = -1,
 			/obj/item/ammo_magazine/rifle/m41a = -1,
+			/obj/item/weapon/gun/rifle/type71 = -1,
+			/obj/item/ammo_magazine/rifle/type71 = -1,
 		),
 		"Energy Weapons" = list(
 			/obj/item/cell/lasgun/lasrifle = -1,
@@ -33,6 +35,7 @@
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/tesla = 2,
 			/obj/item/cell/lasgun = -1,
 			/obj/item/weapon/gun/energy/lasgun/M43 = -1,
+//			/obj/item/weapon/gun/energy/lasgun/lasrifle = -1,
 			/obj/item/cell/lasgun/volkite = -1,
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/charger = -1,
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/caliver = -1,
