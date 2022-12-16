@@ -1029,7 +1029,7 @@
 	attachable_offset = list("muzzle_x" = 30, "muzzle_y" = 16,"rail_x" = 12, "rail_y" = 17, "under_x" = 20, "under_y" = 13, "stock_x" = 26, "stock_y" = 13)
 	gun_skill_category = GUN_SKILL_SHOTGUNS
 
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.35 SECONDS
 	accuracy_mult = 1.15
 	burst_amount = 1
 	scatter = -2
