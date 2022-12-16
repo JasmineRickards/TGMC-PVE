@@ -120,3 +120,23 @@ one type of shotgun ammo, but I think it helps in referencing it. ~N
 	icon_state = "mbx900_tracker"
 	default_ammo = /datum/ammo/bullet/shotgun/mbx900_tracker
 	icon_state_mini = "mbx900_tracker"
+
+/obj/item/ammo_magazine/shotgun/box16gslug
+	name = "box of 16 gauge shotgun slugs"
+	desc = "A box filled with automatic shotgun shells. The future is now, old man. 16 Gauge."
+	icon_state = "box_tx15_slug"
+	default_ammo = /datum/ammo/bullet/shotgun/tx15_slug
+	caliber = CALIBER_16G
+	max_rounds = 600 // 50 magazines worth for TX-15
+	w_class = WEIGHT_CLASS_NORMAL // Can throw it in your pocket, friend.
+	icon_state_mini = "slugs"
+
+/obj/item/ammo_magazine/shotgun/box16gflechette
+	name = "box of 16 gauge shotgun flechettes"
+	desc = "A box filled with automatic shotgun shells. The future is now, old man. 16 Gauge."
+	icon_state = "box_tx15_flechette"
+	default_ammo = /datum/ammo/bullet/shotgun/tx15_flechette
+	caliber = CALIBER_16G
+	max_rounds = 600 // 50 magazines worth for TX-15
+	w_class = WEIGHT_CLASS_NORMAL // Can throw it in your pocket, friend.
+	icon_state_mini = "flechette"

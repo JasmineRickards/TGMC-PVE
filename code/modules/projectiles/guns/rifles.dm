@@ -40,7 +40,10 @@
 	max_shells = 36 //codex
 	force = 20
 	default_ammo_type = /obj/item/ammo_magazine/rifle/standard_carbine
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/standard_carbine)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/standard_carbine,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/verticalgrip,
@@ -120,7 +123,10 @@
 	max_shells = 50 //codex
 	force = 20
 	default_ammo_type = /obj/item/ammo_magazine/rifle/standard_assaultrifle
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/standard_assaultrifle)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/standard_assaultrifle,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/verticalgrip,
@@ -268,7 +274,10 @@
 	force = 20
 	max_shells = 36 //codex
 	default_ammo_type = /obj/item/ammo_magazine/rifle/standard_br
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/standard_br)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/standard_br,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/suppressor,
 		/obj/item/attachable/bayonet,
@@ -332,6 +341,7 @@
 		/obj/item/ammo_magazine/rifle/extended,
 		/obj/item/ammo_magazine/rifle/incendiary,
 		/obj/item/ammo_magazine/rifle/ap,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
 	)
 	attachable_allowed = list(
 		/obj/item/attachable/suppressor,
@@ -439,7 +449,10 @@
 	wield_delay = 1.35 SECONDS
 	max_shells = 95 //codex
 	default_ammo_type = /obj/item/ammo_magazine/rifle/m41a
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/m41a)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/m41a,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
 		/obj/item/attachable/bayonetknife,
@@ -694,7 +707,8 @@
 	default_ammo_type = /obj/item/ammo_magazine/standard_lmg
 	allowed_ammo_types = list(
 		/obj/item/ammo_magazine/standard_lmg,
-		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
 		)
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
@@ -824,7 +838,8 @@
 	default_ammo_type = /obj/item/ammo_magazine/m412l1_hpr
 	allowed_ammo_types = list(
 		/obj/item/ammo_magazine/m412l1_hpr,
-		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
 		)
 	attachable_allowed = list(
 		/obj/item/attachable/extended_barrel,
@@ -1002,6 +1017,7 @@
 	allowed_ammo_types = list(
 		/obj/item/ammo_magazine/rifle/tx15_slug,
 		/obj/item/ammo_magazine/rifle/tx15_flechette,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
 	)
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
@@ -1062,7 +1078,8 @@
 	unload_sound = 'sound/weapons/guns/interact/T42_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/T42_reload.ogg'
 	default_ammo_type = /obj/item/ammo_magazine/standard_smartmachinegun
-	allowed_ammo_types = list(/obj/item/ammo_magazine/standard_smartmachinegun)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/standard_smartmachinegun)
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/verticalgrip,
@@ -1269,7 +1286,10 @@
 	unload_sound = 'sound/weapons/guns/interact/T42_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/T42_reload.ogg'
 	default_ammo_type = /obj/item/ammo_magazine/rifle/tx11
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/tx11)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/tx11,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/flashlight,
@@ -1331,7 +1351,10 @@
 	max_shells = 30 //codex
 	force = 20
 	default_ammo_type = /obj/item/ammo_magazine/rifle/standard_skirmishrifle
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/standard_skirmishrifle)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/standard_skirmishrifle,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/verticalgrip,
@@ -1565,7 +1588,10 @@
 	max_shells = 36 //codex
 	wield_delay = 1 SECONDS
 	default_ammo_type = /obj/item/ammo_magazine/rifle/tx55
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/tx55)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/tx55,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/scope/optical,
 		/obj/item/weapon/gun/rifle/tx54/mini,
@@ -1640,7 +1666,12 @@
 	caliber = CALIBER_10X24_CASELESS
 	max_shells = 50
 	default_ammo_type = /obj/item/ammo_magazine/rifle/som
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/som, /obj/item/ammo_magazine/rifle/som/ap, /obj/item/ammo_magazine/rifle/som/incendiary)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/som,
+		/obj/item/ammo_magazine/rifle/som/ap,
+		/obj/item/ammo_magazine/rifle/som/incendiary,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
+		)
 	attachable_allowed = list(
 		/obj/item/weapon/gun/shotgun/micro_grenade,
 		/obj/item/attachable/reddot,

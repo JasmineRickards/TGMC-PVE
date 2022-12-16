@@ -39,7 +39,10 @@
 	flags_equip_slot = ITEM_SLOT_BACK|ITEM_SLOT_BELT
 	type_of_casings = null
 	default_ammo_type = /obj/item/ammo_magazine/smg/standard_machinepistol
-	allowed_ammo_types = list(/obj/item/ammo_magazine/smg/standard_machinepistol)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/smg/standard_machinepistol,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
+		)
 
 	w_class = WEIGHT_CLASS_NORMAL
 	attachable_allowed = list(
@@ -99,7 +102,10 @@
 	force = 20
 	type_of_casings = null
 	default_ammo_type = /obj/item/ammo_magazine/smg/standard_smg
-	allowed_ammo_types = list(/obj/item/ammo_magazine/smg/standard_smg)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/smg/standard_smg,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/suppressor,
 		/obj/item/attachable/reddot,
@@ -163,6 +169,7 @@
 		/obj/item/ammo_magazine/smg/m25,
 		/obj/item/ammo_magazine/smg/m25/ap,
 		/obj/item/ammo_magazine/smg/m25/extended,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
 	)
 	attachable_allowed = list(
 		/obj/item/attachable/suppressor,
@@ -396,7 +403,13 @@
 	flags_equip_slot = ITEM_SLOT_BACK
 	type_of_casings = null
 	default_ammo_type = /obj/item/ammo_magazine/smg/som
-	allowed_ammo_types = list(/obj/item/ammo_magazine/smg/som, /obj/item/ammo_magazine/smg/som/ap, /obj/item/ammo_magazine/smg/som/incendiary, /obj/item/ammo_magazine/smg/som/extended)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/smg/som,
+		/obj/item/ammo_magazine/smg/som/ap,
+		/obj/item/ammo_magazine/smg/som/incendiary,
+		/obj/item/ammo_magazine/smg/som/extended,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt
+		)
 	fire_sound = 'sound/weapons/guns/fire/vector_fire.ogg'
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC, GUN_FIREMODE_AUTOBURST) //full auto, fuller auto
 
