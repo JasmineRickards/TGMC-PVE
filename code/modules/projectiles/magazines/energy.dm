@@ -108,7 +108,7 @@
 	maxcharge = 15000
 	self_recharge = TRUE
 	charge_amount = 300
-	charge_delay = 2 SECONDS
+	charge_delay = 5 SECONDS
 
 ///Handles draining power from the powerpack, returns the value of the charge drained to MouseDrop where it's added to the cell.
 /obj/item/cell/lasgun/volkite/powerpack/proc/use_charge(mob/user, amount = 0, mention_charge = TRUE)
