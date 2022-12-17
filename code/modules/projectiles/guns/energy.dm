@@ -928,10 +928,9 @@
 	rounds_per_shot = 32
 	ammo_datum_type = /datum/ammo/energy/volkite/medium
 	allowed_ammo_types = list(
-		/obj/item/cell/lasgun,
+		/obj/item/cell/lasgun/volkite,
 		/obj/item/cell/lasgun/volkite/powerpack,
-		/obj/item/cell/lasgun/lasrifle,
-		)
+	)
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/lasersight,
