@@ -374,6 +374,7 @@
 	allowed_ammo_types = list(
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
+		/obj/item/cell/lasgun/lasrifle,
 		)
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_ENERGY|GUN_AMMO_COUNTER|GUN_AMMO_COUNT_BY_SHOTS_REMAINING|GUN_NO_PITCH_SHIFT_NEAR_EMPTY|GUN_SHOWS_AMMO_REMAINING
 	muzzle_flash_color = COLOR_TESLA_BLUE
@@ -428,6 +429,11 @@
 	max_shots = 50 //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine
 	ammo_diff = null
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun,
+		/obj/item/cell/lasgun/volkite/powerpack,
+		/obj/item/cell/lasgun/lasrifle,
+		)
 	rounds_per_shot = 12
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
@@ -790,6 +796,11 @@
 	max_shots = 40 //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/xray
 	rounds_per_shot = 15
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun,
+		/obj/item/cell/lasgun/volkite/powerpack,
+		/obj/item/cell/lasgun/lasrifle,
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
 		/obj/item/attachable/bayonetknife,
@@ -852,9 +863,10 @@
 	reload_sound = 'sound/weapons/guns/interact/volkite_reload.ogg'
 	max_shots = 50
 	allowed_ammo_types = list(
-		/obj/item/cell/lasgun/volkite,
+		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
-	)
+		/obj/item/cell/lasgun/lasrifle,
+		)
 	rounds_per_shot = 24
 	default_ammo_type = /obj/item/cell/lasgun/volkite
 	allowed_ammo_types = list(/obj/item/cell/lasgun/volkite)
@@ -888,9 +900,10 @@
 	max_shots = 15
 	rounds_per_shot = 36
 	allowed_ammo_types = list(
-		/obj/item/cell/lasgun/volkite/small,
+		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
-	)
+		/obj/item/cell/lasgun/lasrifle,
+		)
 	default_ammo_type = /obj/item/cell/lasgun/volkite/small
 	allowed_ammo_types = list(/obj/item/cell/lasgun/volkite/small)
 	fire_sound = 'sound/weapons/guns/fire/volkite_3.ogg'
@@ -915,9 +928,10 @@
 	rounds_per_shot = 32
 	ammo_datum_type = /datum/ammo/energy/volkite/medium
 	allowed_ammo_types = list(
-		/obj/item/cell/lasgun/volkite,
+		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
-	)
+		/obj/item/cell/lasgun/lasrifle,
+		)
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/lasersight,
