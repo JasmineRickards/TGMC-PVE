@@ -120,7 +120,7 @@
 	icon_state = "2"
 	soft_armor = list(MELEE = 45, BULLET = 55, LASER = 55, ENERGY = 20, BOMB = 45, BIO = 30, FIRE = 25, ACID = 35)
 	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
-	light_range = 8 //because it's LIGHT armor, get it?
+	light_range = 9 //because it's LIGHT armor, get it?
 
 /obj/item/clothing/suit/storage/marine/harness
 	name = "\improper M3 pattern marine harness"
@@ -179,7 +179,7 @@
 	icon_state = "7"
 	soft_armor = list(MELEE = 40, BULLET = 55, LASER = 55, ENERGY = 40, BOMB = 40, BIO = 40, FIRE = 40, ACID = 45)
 	slowdown = SLOWDOWN_ARMOR_LIGHT
-	light_range = 8
+	light_range = 9
 	pockets = /obj/item/storage/internal/suit/leader
 
 /obj/item/clothing/suit/storage/marine/mech_pilot
@@ -282,7 +282,7 @@
 	icon_state = "2"
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 45, BOMB = 45, BIO = 45, FIRE = 45, ACID = 50)
 	slowdown = 0.5 //a bit less
-	light_range = 6
+	light_range = 9
 
 /obj/item/clothing/suit/storage/marine/riot
 	name = "\improper M5 riot control armor"
@@ -491,7 +491,7 @@
 	desc = "A body armour that offers much better protection than the flak armour."
 	icon_state = "guardSLarmor"
 	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 85, ENERGY = 85, BOMB = 85, BIO = 25, FIRE = 85, ACID = 85)
-	light_range = 6 // better light
+	light_range = 9 // better light
 	pockets = /obj/item/storage/internal/suit/imperial
 
 /obj/item/storage/internal/suit/imperial
@@ -516,7 +516,7 @@
 	desc = "A power armour that was once broken, is functional once again. However this version isn't as powerful as the real power armour."
 	//icon_state
 	soft_armor = list(MELEE = 75, BULLET = 60, LASER = 55, ENERGY = 40, BOMB = 45, BIO = 15, FIRE = 40, ACID = 40)
-	light_range = 6
+	light_range = 9
 	pockets = /obj/item/storage/internal/suit/imperial
 
 /obj/item/clothing/suit/storage/marine/imperial/power/astartes

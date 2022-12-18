@@ -93,7 +93,7 @@
 	/// The charge consumption every 2 seconds
 	var/energy_consummed = 6
 	/// The lighting power of the floodlight
-	var/floodlight_light_range = 15
+	var/floodlight_light_range = 18
 
 /obj/machinery/floodlightcombat/Initialize()
 	. = ..()

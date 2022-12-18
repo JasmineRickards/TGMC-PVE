@@ -10,7 +10,7 @@
 	move_delay = 8
 	light_system = HYBRID_LIGHT
 	light_power = 8
-	light_range = 0
+	light_range = 3
 	light_color = LIGHT_COLOR_ORANGE
 	light_mask_type = /atom/movable/lighting_mask/rotating
 	light_pixel_y = 10

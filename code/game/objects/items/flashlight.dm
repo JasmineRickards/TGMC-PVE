@@ -9,7 +9,7 @@
 	flags_equip_slot = ITEM_SLOT_BELT
 	materials = list(/datum/material/metal = 50, /datum/material/glass = 20)
 	actions_types = list(/datum/action/item_action)
-	light_range = 5
+	light_range = 7
 	light_power = 3 //luminosity when on
 	///Can this be turned into a rail light ?
 	var/raillight_compatible = TRUE
@@ -119,7 +119,7 @@
 	icon_state = "penlight"
 	item_state = ""
 	flags_atom = CONDUCT
-	light_range = 2
+	light_range = 3
 	w_class = WEIGHT_CLASS_TINY
 	raillight_compatible = FALSE
 
@@ -128,7 +128,7 @@
 	desc = "A miniature lamp, that might be used by small robots."
 	icon_state = "penlight"
 	item_state = ""
-	light_range = 2
+	light_range = 3
 	w_class = WEIGHT_CLASS_TINY
 	raillight_compatible = FALSE
 
@@ -138,7 +138,7 @@
 	desc = "A desk lamp with an adjustable mount."
 	icon_state = "lamp"
 	item_state = "lamp"
-	light_range = 5
+	light_range = 7
 	w_class = WEIGHT_CLASS_BULKY
 	light_on = FALSE
 	raillight_compatible = FALSE
@@ -149,7 +149,7 @@
 	desc = "For celebrating Chanukah."
 	icon_state = "menorah"
 	item_state = "menorah"
-	light_range = 2
+	light_range = 4
 	w_class = WEIGHT_CLASS_BULKY
 
 //Green-shaded desk lamp
@@ -157,7 +157,7 @@
 	desc = "A classic green-shaded desk lamp."
 	icon_state = "lampgreen"
 	item_state = "lampgreen"
-	light_range = 5
+	light_range = 6
 
 /obj/item/flashlight/lamp/verb/toggle_light()
 	set name = "Toggle light"
@@ -256,7 +256,7 @@
 	icon_state = "floor1" //not a slime extract sprite but... something close enough!
 	item_state = "slime"
 	w_class = WEIGHT_CLASS_TINY
-	light_range = 6
+	light_range = 8
 	light_on = TRUE //Bio-luminesence has one setting, on.
 	raillight_compatible = FALSE
 
@@ -270,5 +270,5 @@
 	name = "lantern"
 	icon_state = "lantern"
 	desc = "A mining lantern."
-	light_range = 6			// luminosity when on
+	light_range = 8			// luminosity when on
 	raillight_compatible = FALSE

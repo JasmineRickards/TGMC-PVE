@@ -104,7 +104,7 @@
 		/obj/item/armor_module/storage/integrated,
 		/obj/item/armor_module/armor/badge,
 	)
-	light_range = 5
+	light_range = 7
 
 	///List of icon_state suffixes for armor varients.
 	var/list/icon_state_variants = list()

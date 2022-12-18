@@ -32,7 +32,7 @@
 	COOLDOWN_DECLARE(mecha_bump_smash)
 	light_system = MOVABLE_LIGHT
 	light_on = FALSE
-	light_range = 8
+	light_range = 9
 	generic_canpass = FALSE
 	hud_possible = list(MACHINE_HEALTH_HUD, MACHINE_AMMO_HUD, ORDER_HUD)
 	mouse_pointer = 'icons/mecha/mecha_mouse.dmi'

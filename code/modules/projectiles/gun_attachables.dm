@@ -526,7 +526,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	name = "rail flashlight"
 	desc = "A simple flashlight used for mounting on a firearm. \nHas no drawbacks, but isn't particuraly useful outside of providing a light source."
 	icon_state = "flashlight"
-	light_mod = 6
+	light_mod = 7
 	light_system = MOVABLE_LIGHT
 	slot = ATTACHMENT_SLOT_RAIL
 	materials = list(/datum/material/metal = 100, /datum/material/glass = 20)

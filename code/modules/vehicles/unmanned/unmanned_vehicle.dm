@@ -6,7 +6,7 @@
 	icon_state = "light_uv"
 	anchored = FALSE
 	buckle_flags = null
-	light_range = 6
+	light_range = 8
 	light_power = 3
 	light_system = MOVABLE_LIGHT
 	move_delay = 2.5	//set this to limit the speed of the vehicle

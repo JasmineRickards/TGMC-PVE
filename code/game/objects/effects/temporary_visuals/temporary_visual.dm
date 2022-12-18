@@ -82,10 +82,10 @@
 	resistance_flags = RESIST_ALL
 	mouse_opacity = 0
 	light_system = HYBRID_LIGHT
-	light_power = 12
-	light_range = 12 //Way brighter than most lights
+	light_power = 14
+	light_range = 14 //Way brighter than most lights
 	pixel_y = 150
-	duration = 90 SECONDS
+	duration = 180 SECONDS
 
 /obj/effect/temp_visual/above_flare/Initialize()
 	. = ..()
