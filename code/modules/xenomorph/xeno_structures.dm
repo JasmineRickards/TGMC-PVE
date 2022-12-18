@@ -1261,7 +1261,7 @@ TUNNEL
 			set_light(2, 2, LIGHT_COLOR_RED)
 
 /obj/structure/xeno/spawner
-	name = "spawner"
+	name = "Nest"
 	desc = "A slimy, oozy resin bed filled with foul-looking egg-like ...things."
 	icon = 'icons/Xeno/3x3building.dmi'
 	icon_state = "spawner"
