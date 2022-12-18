@@ -653,7 +653,7 @@
 	if(!organ)
 		return ..()
 	organ.heal_organ_damage(3 * effect_str)
-	H.adjustCloneLoss(1 * effect_str)
+//	H.adjustCloneLoss(1 * effect_str)
 	return ..()
 
 /datum/reagent/medicine/peridaxon_plus/overdose_process(mob/living/L, metabolism)
