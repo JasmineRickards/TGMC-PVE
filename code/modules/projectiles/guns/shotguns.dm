@@ -303,7 +303,7 @@
 
 	fire_delay = 0.4 SECONDS
 	damage_mult = 0.75
-	accuracy_mult = 1.25
+	accuracy_mult = 2
 	accuracy_mult_unwielded = 1
 	scatter_unwielded = 10
 	recoil = 0 // It has a stock. It's on the sprite.
