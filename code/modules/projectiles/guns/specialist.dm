@@ -825,7 +825,8 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	icon = 'icons/Marine/gun64.dmi'
 	icon_state = "railgun"
 	item_state = "railgun"
-	max_shells = 3 //codex
+	max_chamber_items = 3
+	max_shells = 1 //codex
 	caliber = CALIBER_RAILGUN
 	fire_sound = 'sound/weapons/guns/fire/railgun.ogg'
 	fire_rattle = 'sound/weapons/guns/fire/railgun.ogg'
