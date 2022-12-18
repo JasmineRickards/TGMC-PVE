@@ -303,6 +303,7 @@
 /obj/item/defibrillator/gloves
 	name = "advanced medical combat gloves"
 	desc = "Advanced medical gloves, these include small electrodes to defibrilate a patiant. No more bulky units!"
+	species_exception = list(/datum/species/robot)
 	icon_state = "defib_gloves"
 	item_state = "defib_gloves"
 	ready = TRUE

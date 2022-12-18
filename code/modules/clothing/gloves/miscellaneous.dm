@@ -1,6 +1,7 @@
 /obj/item/clothing/gloves/captain
 	desc = "Regal blue gloves, with a nice gold trim. Swanky."
 	name = "captain's gloves"
+	species_exception = list(/datum/species/robot)
 	icon_state = "captain"
 	item_state = "egloves"
 	flags_cold_protection = HANDS
@@ -56,6 +57,7 @@
 /obj/item/clothing/gloves/latex
 	name = "latex gloves"
 	desc = "Sterile latex gloves."
+	species_exception = list(/datum/species/robot)
 	icon_state = "latex"
 	item_state = "lgloves"
 	siemens_coefficient = 0.30
