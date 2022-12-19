@@ -65,7 +65,7 @@
 	icon_state_mini = "tank_orange"
 
 /obj/item/ammo_magazine/flamer_tank/large/som
-	name = "large flamerthrower tank"
+	name = "V-62 large flamerthrower tank"
 	desc = "A large fuel tank of ultra thick napthal, a sticky combustable liquid chemical, for use in the V-62 flamethrower."
 	icon_state = "flametank_som"
 	max_rounds = 200

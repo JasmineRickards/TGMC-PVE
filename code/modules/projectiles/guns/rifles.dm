@@ -203,9 +203,12 @@
 	aim_slowdown = 0.75
 	wield_delay = 0.3 SECONDS
 	force = 20
-	max_shells = 10 //codex
+	max_shells = 20 //codex
 	default_ammo_type = /obj/item/ammo_magazine/rifle/standard_dmr
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/standard_dmr)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/standard_dmr
+		/obj/item/ammo_magazine/rifle/standard_dmr/incendiary,
+	)
 	attachable_allowed = list(
 		/obj/item/attachable/suppressor,
 		/obj/item/attachable/bayonet,
@@ -276,6 +279,7 @@
 	default_ammo_type = /obj/item/ammo_magazine/rifle/standard_br
 	allowed_ammo_types = list(
 		/obj/item/ammo_magazine/rifle/standard_br,
+		/obj/item/ammo_magazine/rifle/standard_br/incendiary,
 		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
 		)
 	attachable_allowed = list(

@@ -79,12 +79,12 @@
 
 /obj/item/ammo_magazine/rifle/standard_dmr/incendiary
 	name = "\improper DMR-37 incendiary magazine (10x27mm)"
-	desc = "A 10mm incendiary DMR magazine, carries less rounds however."
-	caliber = CALIBER_10X27_INCENDIARY_CASELESS
+	desc = "A 10mm incendiary DMR magazine."
+	caliber = CALIBER_10x27_NORMAL
 	icon_state = "t37_incin"
 	w_class = WEIGHT_CLASS_NORMAL
 	default_ammo = /datum/ammo/bullet/rifle/standard_dmr/incendiary
-	max_rounds = 15
+	max_rounds = 20
 	icon_state_mini = "mag_dmr_red"
 
 //-------------------------------------------------------

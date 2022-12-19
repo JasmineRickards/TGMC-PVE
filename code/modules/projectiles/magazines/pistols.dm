@@ -38,25 +38,25 @@
 	icon_state_mini = "mag_pistol"
 
 /obj/item/ammo_magazine/pistol/hp
-	name = "\improper M4A3 hollowpoint magazine (9mm)"
+	name = "\improper RT-3 hollowpoint magazine (9mm)"
 	icon_state = "m4a3_hp"
 	default_ammo = /datum/ammo/bullet/pistol/hollow
 	icon_state_mini = "mag_pistol_blue"
 
 /obj/item/ammo_magazine/pistol/ap
-	name = "\improper M4A3 AP magazine (9mm)"
+	name = "\improper RT-3 AP magazine (9mm)"
 	icon_state = "m4a3_ap"
 	default_ammo = /datum/ammo/bullet/pistol/ap
 	icon_state_mini = "mag_pistol_green"
 
 /obj/item/ammo_magazine/pistol/incendiary
-	name = "\improper M4A3 incendiary magazine (9mm)"
+	name = "\improper RT-3 incendiary magazine (9mm)"
 	icon_state = "m4a3_incendiary"
 	default_ammo = /datum/ammo/bullet/pistol/incendiary
 	icon_state_mini = "mag_pistol_red"
 
 /obj/item/ammo_magazine/pistol/extended
-	name = "\improper M4A3 extended magazine (9mm)"
+	name = "\improper RT-3 extended magazine (9mm)"
 	max_rounds = 24
 	icon_state = "m4a3_ext"
 	icon_state_mini = "mag_pistol_yellow"
@@ -236,6 +236,6 @@
 	desc = "A SP-13 magazine."
 	caliber = CALIBER_9X19
 	icon_state = "tx13"
-	max_rounds = 25
+	max_rounds = 50
 	w_class = WEIGHT_CLASS_SMALL
 	default_ammo = /datum/ammo/bullet/pistol
