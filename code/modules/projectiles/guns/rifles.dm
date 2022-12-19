@@ -82,7 +82,7 @@
 
 	fire_delay = 0.1 SECONDS
 	burst_delay = 0.1 SECONDS
-	extra_delay = 0.05 SECONDS
+	autoburst_delay = 0.001 SECONDS //this makes it fuller auto
 	accuracy_mult = 1.05
 	scatter = 0
 	burst_scatter_mult = 0.25
@@ -165,7 +165,6 @@
 
 	fire_delay = 0.1 SECONDS
 	burst_delay = 0.1 SECONDS
-	extra_delay = 0.05 SECONDS
 	accuracy_mult = 1.1
 	scatter = -2
 	wield_delay = 0.3 SECONDS
@@ -297,6 +296,9 @@
 		/obj/item/attachable/scope/marine,
 		/obj/item/attachable/scope/mini,
 		/obj/item/attachable/motiondetector,
+		/obj/item/weapon/gun/pistol/plasma_pistol,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/flamer/mini_flamer,
 		/obj/item/weapon/gun/grenade_launcher/underslung,
 		/obj/item/attachable/buildasentry,
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
@@ -311,12 +313,9 @@
 	aim_fire_delay = 0.2 SECONDS
 	aim_speed_modifier = 3
 
-	autoburst_delay = 0.60 SECONDS
-	fire_delay = 0.3 SECONDS
 	burst_amount = 3
 	burst_delay = 0.10 SECONDS
 	damage_mult = 1.5
-	extra_delay = 0.25 SECONDS
 	accuracy_mult = 0.9
 	scatter = 0
 
@@ -1316,7 +1315,6 @@
 	fire_delay = 0.1 SECONDS
 	burst_amount = 3
 	burst_delay = 0.05 SECONDS
-	extra_delay = 0.1 SECONDS
 	accuracy_mult_unwielded = 0.5
 	accuracy_mult = 1.15
 	scatter = -1
@@ -1719,7 +1717,6 @@
 
 	burst_amount = 3
 	burst_delay = 0.1 SECONDS
-	extra_delay = 0.1 SECONDS
 	autoburst_delay = 0.3 SECONDS
 
 	damage_falloff_mult = 0.7

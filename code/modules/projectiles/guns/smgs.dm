@@ -444,7 +444,6 @@
 
 	burst_amount = 1
 	burst_delay = 0.1 SECONDS
-	extra_delay = 0.1 SECONDS
 	autoburst_delay = 0.1 SECONDS //this makes it fuller auto
 	burst_accuracy_mult = 0.7
 	burst_scatter_mult = 15
