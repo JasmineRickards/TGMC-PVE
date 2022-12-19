@@ -23,7 +23,7 @@
 	fire_delay = 0.1 SECONDS
 	burst_amount = 3
 	recoil_unwielded = 0.5
-	akimbo_additional_delay = 0.2
+	akimbo_additional_delay = 0.1
 	movement_acc_penalty_mult = 3
 
 //-------------------------------------------------------
@@ -72,7 +72,7 @@
 	aim_slowdown = 0.15
 	burst_amount = 5
 	movement_acc_penalty_mult = 2
-	akimbo_additional_delay = 1.3
+	akimbo_additional_delay = 0.1
 	upper_akimbo_accuracy = 5
 	lower_akimbo_accuracy = 3
 
@@ -449,7 +449,7 @@
 	burst_accuracy_mult = 0.7
 	burst_scatter_mult = 15
 
-	akimbo_additional_delay = 0.7
+	akimbo_additional_delay = 0.1
 	upper_akimbo_accuracy = 5
 	lower_akimbo_accuracy = 3
 

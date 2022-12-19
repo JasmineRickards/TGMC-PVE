@@ -792,6 +792,8 @@
 		/obj/item/attachable/motiondetector,
 		/obj/item/attachable/buildasentry,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/attachable/verticalgrip,
+		/obj/item/attachable/angledgrip,
 	)
 
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY
@@ -800,7 +802,7 @@
 	gun_skill_category = GUN_SKILL_HEAVY_WEAPONS
 	attachable_offset = list("muzzle_x" = 41, "muzzle_y" = 21,"rail_x" = 8, "rail_y" = 23, "under_x" = 25, "under_y" = 14, "stock_x" = 11, "stock_y" = 14)
 	actions_types = list(/datum/action/item_action/aim_mode)
-	aim_fire_delay = 0.2 SECONDS
+	aim_fire_delay = 0.12 SECONDS
 	aim_speed_modifier = 6
 
 	fire_delay = 0.08 SECONDS
@@ -1623,9 +1625,9 @@
 	)
 	attachable_offset = list("muzzle_x" = 31, "muzzle_y" = 17,"rail_x" = 13, "rail_y" = 22, "under_x" = 21, "under_y" = 14, "stock_x" = -1, "stock_y" = 17)
 
-	aim_fire_delay = 0.1 SECONDS
+	aim_fire_delay = 0.2 SECONDS
 	aim_speed_modifier = 2
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_delay = 0.15 SECONDS
 	extra_delay = 0.05 SECONDS
 	accuracy_mult_unwielded = 0.5
@@ -1704,10 +1706,10 @@
 
 	wield_delay = 0.6 SECONDS
 
-	aim_fire_delay = 0.1 SECONDS
+	aim_fire_delay = 0.15 SECONDS
 	aim_speed_modifier = 2
 
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	aim_slowdown = 0.35
 
 	accuracy_mult = 1.05
@@ -1807,10 +1809,10 @@
 	gun_skill_category = GUN_SKILL_HEAVY_WEAPONS
 	attachable_offset = list("muzzle_x" = 53, "muzzle_y" = 19,"rail_x" = 14, "rail_y" = 23, "under_x" = 41, "under_y" = 14, "stock_x" = -32, "stock_y" = 0)
 	actions_types = list(/datum/action/item_action/aim_mode)
-	aim_fire_delay = 0.2 SECONDS
+	aim_fire_delay = 0.15 SECONDS
 	aim_slowdown = 1.2
 
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_amount = 1
 	accuracy_mult_unwielded = 0.4
 	scatter = 6

@@ -360,18 +360,28 @@
 
 /obj/item/ammo_magazine/minigun_powerpack/snow
 	icon_state = "s_powerpack"
+	caliber = CALIBER_762X51
+	current_rounds = 1000
+	max_rounds = 1000
 	flags_item_map_variant = null
 
 /obj/item/ammo_magazine/minigun_powerpack/fancy
 	icon_state = "powerpackw"
+	caliber = CALIBER_762X51
+	current_rounds = 1000
+	max_rounds = 1000
 	flags_item_map_variant = null
 
 /obj/item/ammo_magazine/minigun_powerpack/merc
 	icon_state = "powerpackp"
+	caliber = CALIBER_762X51
+	current_rounds = 1000
+	max_rounds = 1000
 	flags_item_map_variant = null
 
 /obj/item/ammo_magazine/minigun_powerpack/smartgun
 	name = "\improper SG-85 powerpack"
+	caliber = CALIBER_762X51
 	desc = "A reinforced backpack heavy with the IFF altered ammunition, onboard micro generator, and extensive cooling system which enables the SG-85 gatling gun to operate. \nUse the SG-85 on the backpack itself to connect them."
 	icon_state = "powerpacksg"
 	flags_magazine = MAGAZINE_WORN|MAGAZINE_REFILLABLE
