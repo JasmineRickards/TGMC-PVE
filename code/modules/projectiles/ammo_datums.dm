@@ -717,7 +717,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 
 /datum/ammo/bullet/rifle/standard_br/incendiary
 	name = "incendiary light marksman bullet"
-	hud_state = "hivelo"
+	hud_state = "hivelo_fire"
 	hud_state_empty = "hivelo_empty"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_INCENDIARY
 	damage = 25

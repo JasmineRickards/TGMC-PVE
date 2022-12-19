@@ -206,7 +206,7 @@
 	max_shells = 20 //codex
 	default_ammo_type = /obj/item/ammo_magazine/rifle/standard_dmr
 	allowed_ammo_types = list(
-		/obj/item/ammo_magazine/rifle/standard_dmr
+		/obj/item/ammo_magazine/rifle/standard_dmr,
 		/obj/item/ammo_magazine/rifle/standard_dmr/incendiary,
 	)
 	attachable_allowed = list(
