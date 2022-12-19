@@ -1357,6 +1357,8 @@
 			/obj/item/clothing/head/tgmcberet = -1,
 			/obj/item/clothing/glasses/mgoggles = -1,
 			/obj/item/clothing/glasses/mgoggles/prescription = -1,
+			/obj/item/clothing/glasses/hud/xenohud = -1,
+			/obj/item/clothing/glasses/night/imager_goggles = -1,
 		),
 		"Masks" = list(
 			/obj/item/clothing/mask/rebreather/scarf = -1,

@@ -727,9 +727,14 @@ ARMOR
 	cost = 5
 
 /datum/supply_packs/armor/imager_goggle
-	name = "Optical Imager Goggles"
-	contains = list(/obj/item/clothing/glasses/night/imager_goggles)
+	name = "XenoMate Enhanced Imager Goggles"
+	contains = list(/obj/item/clothing/glasses/hud/xenohud/night)
 	cost = 5
+
+/datum/supply_packs/armor/imager_goggle/meson
+	name = "XenoMate Multi-Stage Imager Goggles"
+	contains = list(/obj/item/clothing/glasses/hud/xenohud/night/meson)
+	cost = 10
 
 /datum/supply_packs/armor/riot
 	name = "Heavy Riot Armor Set"

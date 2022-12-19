@@ -138,16 +138,29 @@
 	actions_types = null
 
 /obj/item/clothing/glasses/hud/xenohud
-	name = "XenoMate HUD"
-	desc = "A heads-up display that scans any nearby xenomorph's data."
+	name = "XenoMate optical imager goggles"
+	desc = "A heads-up display that scans any nearby xenomorph's data, and increases the visibility of dimly lit terrain."
 	icon_state = "securityhud"
 	deactive_state = "degoggles_sec"
 	species_exception = list(/datum/species/robot)
 	sprite_sheets = list("Combat Robot" = 'icons/mob/species/robot/glasses.dmi')
 	flags_armor_protection = NONE
+	darkness_view = 2
 	toggleable = TRUE
 	hud_type = DATA_HUD_XENO_STATUS
 	actions_types = list(/datum/action/item_action/toggle)
+
+/obj/item/clothing/glasses/hud/xenohud/night
+	name = "XenoMate enhanced imager goggles"
+	desc = "A heads-up display that scans any nearby xenomorph's data. This model allows greater visibility even in the absence of light."
+	darkness_view = 14
+	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
+
+/obj/item/clothing/glasses/hud/xenohud/night/meson
+	name = "XenoMate multi-stage imager goggles"
+	desc = "A heads-up display that scans any nearby xenomorph's data. This improved model has meson imaging to highlight terrain."
+	vision_flags = SEE_TURFS
+	lighting_alpha = LIGHTING_PLANE_ALPHA_INVISIBLE
 
 /obj/item/clothing/glasses/hud/painhud
 	name = "Pain HUD"
