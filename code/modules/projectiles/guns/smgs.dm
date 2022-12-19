@@ -20,7 +20,7 @@
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC, GUN_FIREMODE_BURSTFIRE, GUN_FIREMODE_AUTOBURST)
 	gun_skill_category = GUN_SKILL_SMGS
 
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.08 SECONDS
 	burst_amount = 3
 	recoil_unwielded = 0.5
 	akimbo_additional_delay = 0.1
@@ -67,7 +67,7 @@
 	accuracy_mult_unwielded = 0.9
 	recoil_unwielded = 0
 	scatter = 0
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.08 SECONDS
 	scatter_unwielded = 4
 	aim_slowdown = 0.15
 	burst_amount = 5
@@ -125,12 +125,12 @@
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
 	attachable_offset = list("muzzle_x" = 31, "muzzle_y" = 15,"rail_x" = 22, "rail_y" = 22, "under_x" = 26, "under_y" = 12, "stock_x" = 24, "stock_y" = 10)
 	actions_types = list(/datum/action/item_action/aim_mode)
-	aim_fire_delay = 0.1 SECONDS
+	aim_fire_delay = 0.12 SECONDS
 	aim_speed_modifier = 0.55
 	accuracy_mult = 1.05
 	accuracy_mult_unwielded = 0.9
 	scatter = 1
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.08 SECONDS
 	scatter_unwielded = 8
 	aim_slowdown = 0.2
 	burst_amount = 0
@@ -191,7 +191,7 @@
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 0.95
 	scatter = 4
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.08 SECONDS
 	scatter_unwielded = 10
 	aim_slowdown = 0.15
 	burst_amount = 3
@@ -262,8 +262,8 @@
 
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 12, "rail_y" = 21, "under_x" = 28, "under_y" = 17, "stock_x" = 28, "stock_y" = 17)
 
-	fire_delay = 0.1 SECONDS
-	burst_delay = 0.2 SECONDS
+	fire_delay = 0.08 SECONDS
+	burst_delay = 0.12 SECONDS
 	burst_amount = 4
 	accuracy_mult_unwielded = 0.9
 	scatter = 5
@@ -294,7 +294,7 @@
 	accuracy_mult_unwielded = 0.9
 	scatter = 2
 	scatter_unwielded = 6
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.08 SECONDS
 	aim_slowdown = 0.3
 	wield_delay = 0.2 SECONDS
 
@@ -349,7 +349,7 @@
 		/obj/item/attachable/stock/irremoveable/ppsh,
 	)
 
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.08 SECONDS
 	burst_amount = 6
 	accuracy_mult = 1.05
 	accuracy_mult_unwielded = 0.8
@@ -377,7 +377,7 @@
 	allowed_ammo_types = list(/obj/item/ammo_magazine/smg/uzi, /obj/item/ammo_magazine/smg/uzi/extended)
 	attachable_offset = list("muzzle_x" = 30, "muzzle_y" = 20,"rail_x" = 11, "rail_y" = 27, "under_x" = 22, "under_y" = 16, "stock_x" = 22, "stock_y" = 16)
 
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.08 SECONDS
 	burst_amount = 4
 	accuracy_mult_unwielded = 0.9
 	scatter = 0
@@ -429,7 +429,7 @@
 
 	attachable_offset = list("muzzle_x" = 38, "muzzle_y" = 20,"rail_x" = 13, "rail_y" = 22, "under_x" = 31, "under_y" = 15, "stock_x" = 24, "stock_y" = 10)
 
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.08 SECONDS
 	aim_slowdown = 0.15
 	wield_delay = 0.2 SECONDS
 
@@ -442,10 +442,10 @@
 	scatter = 2
 	scatter_unwielded = 8
 
-	burst_amount = 1
+	burst_amount = 3
 	burst_delay = 0.1 SECONDS
 	extra_delay = 0.1 SECONDS
-	autoburst_delay = 0.1 SECONDS //this makes it fuller auto
+	autoburst_delay = 0.1 SECONDS //this makes it fuller auto (Note from PVE, this is HILARIOUSLY stupid.)
 	burst_accuracy_mult = 0.7
 	burst_scatter_mult = 15
 

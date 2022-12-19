@@ -740,10 +740,10 @@
 	gun_skill_category = GUN_SKILL_HEAVY_WEAPONS
 	attachable_offset = list("muzzle_x" = 49, "muzzle_y" = 16,"rail_x" = 20, "rail_y" = 19, "under_x" = 24, "under_y" = 9, "stock_x" = 0, "stock_y" = 13)
 	actions_types = list(/datum/action/item_action/aim_mode)
-	aim_fire_delay = 0.1 SECONDS
+	aim_fire_delay = 0.12 SECONDS
 	aim_speed_modifier = 2
 
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.09 SECONDS
 	burst_amount = 3
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 0.5
@@ -872,10 +872,10 @@
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 8, "rail_y" = 21, "under_x" = 22, "under_y" = 15, "stock_x" = 9, "stock_y" = 15)
 	starting_attachment_types = list(/obj/item/attachable/stock/irremoveable/rifle)
 	actions_types = list(/datum/action/item_action/aim_mode)
-	aim_fire_delay = 0.15 SECONDS
+	aim_fire_delay = 0.12 SECONDS
 	aim_speed_modifier = 2
 
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.9 SECONDS
 	burst_amount = 5
 	burst_delay = 0.1 SECONDS
 	accuracy_mult_unwielded = 0.5
@@ -1809,10 +1809,10 @@
 	gun_skill_category = GUN_SKILL_HEAVY_WEAPONS
 	attachable_offset = list("muzzle_x" = 53, "muzzle_y" = 19,"rail_x" = 14, "rail_y" = 23, "under_x" = 41, "under_y" = 14, "stock_x" = -32, "stock_y" = 0)
 	actions_types = list(/datum/action/item_action/aim_mode)
-	aim_fire_delay = 0.15 SECONDS
+	aim_fire_delay = 0.12 SECONDS
 	aim_slowdown = 1.2
 
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.08 SECONDS
 	burst_amount = 1
 	accuracy_mult_unwielded = 0.4
 	scatter = 6

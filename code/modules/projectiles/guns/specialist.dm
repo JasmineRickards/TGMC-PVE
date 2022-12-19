@@ -417,7 +417,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	aim_fire_delay = 0.1 SECONDS
 	aim_speed_modifier = 12
 
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.08 SECONDS //It's a fucking minigun.
 	windup_delay = 0.4 SECONDS
 	windup_sound = 'sound/weapons/guns/fire/tank_minigun_start.ogg'
 	scatter = 5
@@ -567,7 +567,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	recoil = 3
 	scatter = -100
 	placed_overlay_iconstate = "sadar"
-	windup_delay = 0.4 SECONDS
+	windup_delay = 0.1 SECONDS
 	///the smoke effect after firing
 	var/datum/effect_system/smoke_spread/smoke
 	///removes backblast damage if false
@@ -637,7 +637,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	unload_sound = 'sound/weapons/guns/interact/launcher_reload.ogg'
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 6, "rail_y" = 19, "under_x" = 19, "under_y" = 14, "stock_x" = 19, "stock_y" = 14)
 
-	fire_delay = 1 SECONDS
+	fire_delay = 0.1 SECONDS
 	recoil = 3
 	scatter = -100
 
@@ -808,7 +808,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 6, "rail_y" = 19, "under_x" = 19, "under_y" = 14, "stock_x" = 19, "stock_y" = 14)
 
-	windup_delay = 0.6 SECONDS
+	windup_delay = 0.3 SECONDS
 	recoil = 2
 	scatter = -1
 	movement_acc_penalty_mult = 5 //You shouldn't fire this on the move
