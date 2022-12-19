@@ -24,6 +24,8 @@
 			/obj/item/ammo_magazine/rifle/m41a = -1,
 			/obj/item/weapon/gun/rifle/type71 = -1,
 			/obj/item/ammo_magazine/rifle/type71 = -1,
+			/obj/item/weapon/gun/rifle/som = -1,
+			/obj/item/ammo_magazine/rifle/som = -1,
 		),
 		"Energy Weapons" = list(
 			/obj/item/cell/lasgun/lasrifle = -1,
@@ -56,6 +58,8 @@
 			/obj/item/ammo_magazine/rifle/alf_machinecarbine = -1,
 			/obj/item/weapon/gun/smg/m25 = -1,
 			/obj/item/ammo_magazine/smg/m25 = -1,
+			/obj/item/weapon/gun/smg/som = -1,
+			/obj/item/ammo_magazine/smg/som = -1,
 		),
 		"Marksman" = list(
 			/obj/item/weapon/gun/rifle/standard_dmr = -1,
@@ -81,6 +85,7 @@
 			/obj/item/weapon/gun/rifle/standard_autoshotgun = -1,
 			/obj/item/ammo_magazine/rifle/tx15_flechette = -1,
 			/obj/item/ammo_magazine/rifle/tx15_slug = -1,
+			/obj/item/weapon/gun/shotgun/som = -1.
 		),
 		"Machinegun" = list(
 			/obj/item/weapon/gun/rifle/standard_lmg = -1,
@@ -92,6 +97,8 @@
 			/obj/item/weapon/gun/rifle/m412l1_hpr = 5,
 			/obj/item/ammo_magazine/m412l1_hpr = -1,
 			/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack = -1,
+			/obj/item/weapon/gun/rifle/som_mg= -1,
+			/obj/item/ammo_magazine/som_mg = -1,
 		),
 		"Melee" = list(
 			/obj/item/weapon/combat_knife = -1,
@@ -121,6 +128,9 @@
 			/obj/item/ammo_magazine/pistol/plasma_pistol = -1,
 			/obj/item/weapon/gun/shotgun/double/derringer = 10,
 			/obj/item/ammo_magazine/pistol/derringer = 15,
+			/obj/item/weapon/gun/pistol/som = -1,
+			/obj/item/ammo_magazine/pistol/som = -1,
+
 		),
 		"Grenades" = list(
 			/obj/item/weapon/gun/grenade_launcher/single_shot = -1,
@@ -144,6 +154,8 @@
 			/obj/item/ammo_magazine/rifle/pepperball = -1,
 			/obj/item/weapon/gun/flamer/big_flamer/marinestandard = 4,
 			/obj/item/ammo_magazine/flamer_tank/large = 16,
+			/obj/item/weapon/gun/flamer/som = 3,
+			/obj/item/ammo_magazine/flamer_tank/large/som = 15,
 			/obj/item/ammo_magazine/flamer_tank/backtank = 4,
 			/obj/item/jetpack_marine = 3,
 			/obj/item/bodybag/tarp = 10,
@@ -1235,6 +1247,7 @@
 			/obj/item/clothing/suit/storage/marine/robot = -1,
 			/obj/item/clothing/suit/storage/marine/robot/heavy = -1,
 			/obj/item/clothing/suit/modular/robot = -1,
+			/obj/item/clothing/suit/storage/marine = -1,
 		),
 		"Helmets" = list(
 			/obj/item/clothing/head/modular/marine/m10x = -1,
@@ -1301,6 +1314,34 @@
 			/obj/item/armor_module/module/better_shoulder_lamp = -1,
 			/obj/item/armor_module/module/chemsystem = -1,
 			/obj/item/armor_module/module/eshield = -1,
+		),
+		"SOM Suits" = list(
+			/obj/item/clothing/suit/modular/som/light = -1,
+			/obj/item/clothing/suit/modular/som = -1,
+			/obj/item/clothing/suit/modular/som/heavy = -1,
+			/obj/item/clothing/head/modular/som = -1,
+			/obj/item/clothing/suit/storage/marine/som = -1,
+			/obj/item/clothing/head/helmet/marine/som = -1,
+			/obj/item/armor_module/module/mimir_environment_protection/mimir_helmet/som = -1,
+			/obj/item/armor_module/module/tyr_head/som= -1,
+			/obj/item/armor_module/module/better_shoulder_lamp = -1,
+			/obj/item/armor_module/module/fire_proof/som = -1,
+			/obj/item/armor_module/module/tyr_extra_armor/som = -1,
+			/obj/item/armor_module/module/mimir_environment_protection/som = -1,
+			/obj/item/armor_module/module/hlin_explosive_armor = -1,
+			/obj/item/armor_module/module/eshield/som = -1,
+			/obj/item/armor_module/storage/general = -1,
+			/obj/item/armor_module/storage/ammo_mag = -1,
+			/obj/item/armor_module/storage/engineering = -1,
+			/obj/item/armor_module/storage/medical = -1,
+			/obj/item/armor_module/storage/medical/basic = -1,
+			/obj/item/armor_module/storage/injector = -1,
+			/obj/item/armor_module/storage/grenade = -1,
+			/obj/item/armor_module/storage/integrated = -1,
+			/obj/item/armor_module/armor/badge = -1,
+
+
+
 		),
 	)
 
@@ -1454,8 +1495,29 @@
 			/obj/item/clothing/head/garrisoncap = -1,
 			/obj/item/clothing/head/servicecap = -1,
 		),
-	)
+		"SOM Attire" = list(
+			/obj/item/clothing/under/som = -1,
+			/obj/item/clothing/under/som/medic = -1,
+			/obj/item/clothing/under/som/webbing = -1,
+			/obj/item/storage/belt/marine/som = -1,
+			/obj/item/storage/pouch/pistol/som = -1,
+			/obj/item/clothing/gloves/marine/som = -1,
+			/obj/item/clothing/shoes/marine/som/knife = -1,
+			/obj/item/storage/box/MRE/som = -1,
+			/obj/item/storage/backpack/satchel/som = -1,
+			/obj/item/storage/holster/backholster/rpg/som = -1,
+			/obj/item/storage/backpack/lightpack/som = -1,
+			/obj/item/storage/belt/sparepouch/som = -1,
+			/obj/item/storage/pouch/general/large/som = -1,
+			/obj/item/storage/pouch/firstaid/som = -1,
+			/obj/item/storage/pouch/medical_injectors/som = -1,
+			/obj/item/storage/pouch/tools/som/full = -1,
+			/obj/item/storage/pouch/shotgun/som = -1,
+			/obj/item/weapon/shield/riot/marine/som = -1,
 
+
+		),
+	)
 	prices = list()
 
 /obj/machinery/vending/uniform_supply/valhalla
