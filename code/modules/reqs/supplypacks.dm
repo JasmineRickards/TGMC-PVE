@@ -1502,6 +1502,16 @@ Imports
 	contains = list(/obj/item/loot_box/marine)
 	cost = 50
 
+/datum/supply_packs/imports/somRPG
+	name = "SoM RPG kit"
+	contains = list(/obj/item/storage/holster/backholster/rpg/som/war_crimes)
+	cost = 30
+
+/datum/supply_packs/imports/somRPGammo
+	name = "SOM RPG thermo warhead"
+	contains = list(/obj/item/ammo_magazine/rocket/som/thermobaric)
+	cost = 3
+
 /*******************************************************************************
 VEHICLES
 *******************************************************************************/

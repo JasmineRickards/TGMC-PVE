@@ -1247,7 +1247,13 @@
 			/obj/item/clothing/suit/storage/marine/robot = -1,
 			/obj/item/clothing/suit/storage/marine/robot/heavy = -1,
 			/obj/item/clothing/suit/modular/robot = -1,
-			/obj/item/clothing/suit/storage/marine = -1,
+			/obj/item/clothing/suit/storage/marine/M3HB = -1,
+			/obj/item/clothing/suit/storage/marine/M3LB = -1,
+			/obj/item/clothing/suit/storage/marine/M3IS = -1,
+			/obj/item/clothing/suit/storage/marine/M3E = -1,
+			/obj/item/clothing/suit/storage/marine/M3P = -1,
+			/obj/item/clothing/head/helmet/marine/scout = -1,
+
 		),
 		"Helmets" = list(
 			/obj/item/clothing/head/modular/marine/m10x = -1,
