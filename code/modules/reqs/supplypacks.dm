@@ -816,7 +816,7 @@ datum/supply_packs/armor/modular/attachments/mk2eshield
 	cost = 18
 
 /datum/supply_packs/armor/modular/attachments/fire_proof
-	name = "Jaeger Ragnarok thermal insulation module"
+	name = "Jaeger Muspelheimr thermal insulation module"
 	contains = list(
 		/obj/item/armor_module/module/fire_proof/mk2,
 	)
