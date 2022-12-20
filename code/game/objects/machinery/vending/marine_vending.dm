@@ -1153,6 +1153,7 @@
 			/obj/item/healthanalyzer = 16,
 			/obj/item/bodybag/cryobag = 24,
 			/obj/item/tool/surgery/solderingtool = 10,
+			/obj/item/storage/belt/rig/medical = 10,
 		),
 	)
 
