@@ -60,7 +60,7 @@
 	item_state = "mod_fire_a"
 	hard_armor = list("fire" = 200, "energy" = 10)
 	soft_armor = list("energy" = 25)
-	slowdown = 0.4
+	slowdown = 0.2
 	slot = ATTACHMENT_SLOT_MODULE
 	variants_by_parent_type = list(/obj/item/clothing/suit/modular/xenonauten = "mod_fire_xn", /obj/item/clothing/suit/modular/xenonauten/light = "mod_fire_xn", /obj/item/clothing/suit/modular/xenonauten/heavy = "mod_fire_xn")
 
@@ -85,7 +85,7 @@
 	desc = "Designed for mounting on modular armor. An upgrade on the Surtr system, this model has excellent energy dispersion properties, capable of standing up to blasts from even the heaviest volkite weapons and nullifying the weakest almost entirely. It has a reduced impact on mobility as well."
 	hard_armor = list("fire" = 200, "energy" = 20)
 	soft_armor = list("energy" = 50)
-	slowdown = 0.1
+	slowdown = 0
 
 /**
  * Extra armor module
