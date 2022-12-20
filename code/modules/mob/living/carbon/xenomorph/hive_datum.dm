@@ -72,19 +72,19 @@
 	.["hive_max_tier_three"] = tier3_xeno_limit
 	.["hive_minion_count"] = length(xenos_by_tier[XENO_TIER_MINION])
 
-//	var/datum/job/xeno_job = SSjob.GetJobType(/datum/job/xenomorph)
-//	.["hive_larva_current"] = xeno_job.job_points
-//	.["hive_larva_rate"] = SSsilo.current_larva_spawn_rate
-//	.["hive_larva_burrowed"] = xeno_job.total_positions - xeno_job.current_positions
+	var/datum/job/xeno_job = SSjob.GetJobType(/datum/job/xenomorph)
+	.["hive_larva_current"] = xeno_job.job_points
+	.["hive_larva_rate"] = SSsilo.current_larva_spawn_rate
+	.["hive_larva_burrowed"] = xeno_job.total_positions - xeno_job.current_positions
 
 	var/psy_points = SSpoints.xeno_points_by_hive[hivenumber]
 	.["hive_psy_points"] = !isnull(psy_points) ? psy_points : 0
 
-//	var/hivemind_countdown = SSticker.mode?.get_hivemind_collapse_countdown()
-//	.["hive_orphan_collapse"] = !isnull(hivemind_countdown) ? hivemind_countdown : 0
-//	var/siloless_countdown = SSticker.mode?.get_siloless_collapse_countdown()
-//	.["hive_silo_collapse"] = !isnull(siloless_countdown) ? siloless_countdown : 0
-//	.["hive_queen_remaining"] = !isnull(xeno_queen_timer) ? timeleft(xeno_queen_timer) MILLISECONDS : 0
+	var/hivemind_countdown = SSticker.mode?.get_hivemind_collapse_countdown()
+	.["hive_orphan_collapse"] = !isnull(hivemind_countdown) ? hivemind_countdown : 0
+	var/siloless_countdown = SSticker.mode?.get_siloless_collapse_countdown()
+	.["hive_silo_collapse"] = !isnull(siloless_countdown) ? siloless_countdown : 0
+	.["hive_queen_remaining"] = !isnull(xeno_queen_timer) ? timeleft(xeno_queen_timer) MILLISECONDS : 0
 
 	.["hive_primos"] = list()
 	for(var/tier in GLOB.tier_to_primo_upgrade)
@@ -748,16 +748,16 @@ to_chat will check for valid clients itself already so no need to double check f
 /datum/hive_status/normal // subtype for easier typechecking and overrides
 	hive_flags = HIVE_CAN_HIJACK
 
-///Signal handler to tell the hive to check for siloless in MINIMUM_TIME_SILO_LESS_COLLAPSE
-//datum/hive_status/normal/proc/set_siloless_collapse_timer()
-//	SIGNAL_HANDLER
-//	UnregisterSignal(SSdcs, list(COMSIG_GLOB_OPEN_TIMED_SHUTTERS_LATE, COMSIG_GLOB_OPEN_SHUTTERS_EARLY))
-//	addtimer(CALLBACK(src, .proc/handle_silo_death_timer, TRUE), MINIMUM_TIME_SILO_LESS_COLLAPSE)
+//Signal handler to tell the hive to check for siloless in MINIMUM_TIME_SILO_LESS_COLLAPSE
+datum/hive_status/normal/proc/set_siloless_collapse_timer()
+	SIGNAL_HANDLER
+	UnregisterSignal(SSdcs, list(COMSIG_GLOB_OPEN_TIMED_SHUTTERS_LATE, COMSIG_GLOB_OPEN_SHUTTERS_EARLY))
+	addtimer(CALLBACK(src, .proc/handle_silo_death_timer, TRUE), MINIMUM_TIME_SILO_LESS_COLLAPSE)
 
-//datum/hive_status/normal/on_queen_death(mob/living/carbon/xenomorph/queen/Q)
-//	if(living_xeno_queen != Q)
-//		return FALSE
-//	return ..()
+datum/hive_status/normal/on_queen_death(mob/living/carbon/xenomorph/queen/Q)
+	if(living_xeno_queen != Q)
+		return FALSE
+	return ..()
 
 
 /datum/hive_status/normal/handle_ruler_timer()
@@ -949,30 +949,30 @@ to_chat will check for valid clients itself already so no need to double check f
 /datum/hive_status/proc/handle_silo_death_timer()
 	return
 
-//datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
-//	if(bypass_flag)
-//		hive_flags |= HIVE_CAN_COLLAPSE_FROM_SILO
-//	else if(!(hive_flags & HIVE_CAN_COLLAPSE_FROM_SILO))
-//		return
-//	if(SSticker.mode.name != "Distress Signal")
-//		return
-//	var/datum/game_mode/infestation/distress/D = SSticker.mode
-//	if(D.round_stage != INFESTATION_MARINE_DEPLOYMENT)
-//		if(D?.siloless_hive_timer)
-//			deltimer(D.siloless_hive_timer)
-//			D.siloless_hive_timer = null
-//		return
-//	if(GLOB.xeno_resin_silos.len)
-//		if(D?.siloless_hive_timer)
-//			deltimer(D.siloless_hive_timer)
-//			D.siloless_hive_timer = null
-//		return
+datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
+	if(bypass_flag)
+		hive_flags |= HIVE_CAN_COLLAPSE_FROM_SILO
+	else if(!(hive_flags & HIVE_CAN_COLLAPSE_FROM_SILO))
+		return
+	if(SSticker.mode.name != "Distress Signal")
+		return
+	var/datum/game_mode/infestation/distress/D = SSticker.mode
+	if(D.round_stage != INFESTATION_MARINE_DEPLOYMENT)
+		if(D?.siloless_hive_timer)
+			deltimer(D.siloless_hive_timer)
+			D.siloless_hive_timer = null
+		return
+	if(GLOB.xeno_resin_silos.len)
+		if(D?.siloless_hive_timer)
+			deltimer(D.siloless_hive_timer)
+			D.siloless_hive_timer = null
+		return
 
-//	if(D?.siloless_hive_timer)
-//		return
+	if(D?.siloless_hive_timer)
+		return
 
-//	xeno_message("We don't have any silos! The hive will collapse if nothing is done", "xenoannounce", 6, TRUE)
-//	D.siloless_hive_timer = addtimer(CALLBACK(D, /datum/game_mode.proc/siloless_hive_collapse), DISTRESS_SILO_COLLAPSE, TIMER_STOPPABLE)
+	xeno_message("We don't have any silos! The hive will collapse if nothing is done", "xenoannounce", 6, TRUE)
+	D.siloless_hive_timer = addtimer(CALLBACK(D, /datum/game_mode.proc/siloless_hive_collapse), DISTRESS_SILO_COLLAPSE, TIMER_STOPPABLE)
 
 /**
  * Add a mob to the candidate queue, the first mobs of the queue will have priority on new larva spots

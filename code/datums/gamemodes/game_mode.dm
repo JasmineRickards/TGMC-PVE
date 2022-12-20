@@ -64,7 +64,7 @@
 	return TRUE
 
 
-/datum/game_mode/proc/can_start(bypass_checks = FALSE)
+/datum/game_mode/proc/can_start(bypass_checks = TRUE)
 	if(!(config_tag in SSmapping.configs[GROUND_MAP].gamemodes) && !bypass_checks)
 		log_world("attempted to start [src.type] on "+SSmapping.configs[GROUND_MAP].map_name+" which doesn't support it.")
 		// start a gamemode vote, in theory this should never happen.
@@ -120,9 +120,9 @@
 
 /datum/game_mode/proc/post_setup()
 	addtimer(CALLBACK(src, .proc/display_roundstart_logout_report), ROUNDSTART_LOGOUT_REPORT_TIME)
-//	if(flags_round_type & MODE_SILO_RESPAWN)
-//		var/datum/hive_status/normal/HN = GLOB.hive_datums[XENO_HIVE_NORMAL]
-//		HN.RegisterSignal(SSdcs, list(COMSIG_GLOB_OPEN_TIMED_SHUTTERS_LATE, COMSIG_GLOB_OPEN_SHUTTERS_EARLY), /datum/hive_status/normal.proc/set_siloless_collapse_timer)
+	if(flags_round_type & MODE_SILO_RESPAWN)
+		var/datum/hive_status/normal/HN = GLOB.hive_datums[XENO_HIVE_NORMAL]
+		HN.RegisterSignal(SSdcs, list(COMSIG_GLOB_OPEN_TIMED_SHUTTERS_LATE, COMSIG_GLOB_OPEN_SHUTTERS_EARLY), /datum/hive_status/normal.proc/set_siloless_collapse_timer)
 	if(!SSdbcore.Connect())
 		return
 	var/sql

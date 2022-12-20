@@ -238,7 +238,7 @@ Sensors indicate [numXenosShip || "no"] unknown lifeform signature[numXenosShip 
 
 	to_chat(world, dat)
 
-/datum/game_mode/infestation/can_start(bypass_checks = FALSE)
+/datum/game_mode/infestation/can_start(bypass_checks = TRUE)
 	. = ..()
 	if(!.)
 		return
