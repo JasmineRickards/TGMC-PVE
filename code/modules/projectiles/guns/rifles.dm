@@ -481,6 +481,7 @@
 	burst_amount = 4
 	aim_fire_delay = 0.12 SECONDS
 	burst_delay = 0.15 SECONDS
+	actions_types = list(/datum/action/item_action/aim_mode)
 	aim_slowdown = 0.4
 	scatter = 0
 	fire_delay = 0.1 SECONDS
