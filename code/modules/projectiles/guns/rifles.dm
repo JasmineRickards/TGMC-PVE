@@ -10,7 +10,7 @@
 	load_method = MAGAZINE //codex
 	aim_slowdown = 0.35
 	fire_delay = 0.1
-	wield_delay = 0.6 SECONDS
+	wield_delay = 0.2 SECONDS
 	gun_skill_category = GUN_SKILL_RIFLES
 
 	burst_amount = 3
@@ -168,7 +168,7 @@
 	extra_delay = 0.05 SECONDS
 	accuracy_mult = 1.1
 	scatter = -2
-	wield_delay = 0.7 SECONDS
+	wield_delay = 0.3 SECONDS
 	burst_amount = 3
 	aim_slowdown = 0.4
 	damage_falloff_mult = 0.5
@@ -201,7 +201,7 @@
 	reload_sound = 'sound/weapons/guns/interact/m41a_reload.ogg'
 	caliber = CALIBER_10x27_CASELESS //codex
 	aim_slowdown = 0.75
-	wield_delay = 0.8 SECONDS
+	wield_delay = 0.3 SECONDS
 	force = 20
 	max_shells = 10 //codex
 	default_ammo_type = /obj/item/ammo_magazine/rifle/standard_dmr
@@ -270,7 +270,7 @@
 	reload_sound = 'sound/weapons/guns/interact/m41a_reload.ogg'
 	caliber = CALIBER_10x265_CASELESS //codex
 	aim_slowdown = 0.16
-	wield_delay = 0.7 SECONDS
+	wield_delay = 0.3 SECONDS
 	force = 20
 	max_shells = 36 //codex
 	default_ammo_type = /obj/item/ammo_magazine/rifle/standard_br
@@ -379,8 +379,9 @@
 	fire_delay = 0.1 SECONDS
 	burst_delay = 0.1 SECONDS
 	accuracy_mult = 1.1
+	aim_fire_delay = 0.13 SECONDS
 	scatter = -1
-	wield_delay = 0.7 SECONDS
+	wield_delay = 0.3 SECONDS
 	burst_amount = 3
 	aim_slowdown = 0.4
 	damage_mult = 1.05 //Has smaller magazines
@@ -447,7 +448,7 @@
 	unload_sound = 'sound/weapons/guns/interact/m41a_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/m41a_reload.ogg'
 	aim_slowdown = 0.5
-	wield_delay = 1.35 SECONDS
+	wield_delay = 0.4 SECONDS
 	max_shells = 95 //codex
 	default_ammo_type = /obj/item/ammo_magazine/rifle/m41a
 	allowed_ammo_types = list(
@@ -478,7 +479,9 @@
 	attachable_offset = list("muzzle_x" = 41, "muzzle_y" = 19,"rail_x" = 12, "rail_y" = 24, "under_x" = 24, "under_y" = 13, "stock_x" = 22, "stock_y" = 16)
 
 	burst_amount = 4
+	aim_fire_delay = 0.12 SECONDS
 	burst_delay = 0.15 SECONDS
+	aim_slowdown = 0.4
 	scatter = 0
 	fire_delay = 0.1 SECONDS
 
@@ -526,7 +529,7 @@
 	burst_amount = 1
 	fire_delay = 0.15 SECONDS
 	scatter = 2
-	wield_delay = 0.8 SECONDS
+	wield_delay = 0.3 SECONDS
 
 	placed_overlay_iconstate = "ak47"
 
@@ -608,7 +611,7 @@
 	extra_delay = -0.05 SECONDS
 	burst_delay = 0.15 SECONDS
 	accuracy_mult = 1.1
-	wield_delay = 0.5 SECONDS
+	wield_delay = 0.3 SECONDS
 	damage_mult = 1.2
 
 /obj/item/weapon/gun/rifle/m16/freelancer
@@ -670,7 +673,7 @@
 	fire_delay = 0.15 SECONDS
 	burst_delay = 0.15 SECONDS
 	accuracy_mult = 1.15
-	wield_delay = 0.5 SECONDS
+	wield_delay = 0.3 SECONDS
 	damage_mult = 1.2
 	scatter = 1
 	movement_acc_penalty_mult = 4
@@ -700,7 +703,7 @@
 	max_shells = 120 //codex
 	force = 30
 	aim_slowdown = 0.8
-	wield_delay = 1 SECONDS
+	wield_delay = 0.6 SECONDS
 	fire_sound =  'sound/weapons/guns/fire/t40.ogg'
 	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
 	unload_sound = 'sound/weapons/guns/interact/T42_unload.ogg'
@@ -740,10 +743,10 @@
 	gun_skill_category = GUN_SKILL_HEAVY_WEAPONS
 	attachable_offset = list("muzzle_x" = 49, "muzzle_y" = 16,"rail_x" = 20, "rail_y" = 19, "under_x" = 24, "under_y" = 9, "stock_x" = 0, "stock_y" = 13)
 	actions_types = list(/datum/action/item_action/aim_mode)
-	aim_fire_delay = 0.1 SECONDS
+	aim_fire_delay = 0.12 SECONDS
 	aim_speed_modifier = 2
 
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.09 SECONDS
 	burst_amount = 3
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 0.5
@@ -763,7 +766,7 @@
 	max_shells = 250 //codex
 	force = 35
 	aim_slowdown = 1.2
-	wield_delay = 1.5 SECONDS
+	wield_delay = 0.6 SECONDS
 	fire_sound =  'sound/weapons/guns/fire/GPMG.ogg'
 	fire_rattle =  'sound/weapons/guns/fire/GPMG_low.ogg'
 	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
@@ -792,6 +795,8 @@
 		/obj/item/attachable/motiondetector,
 		/obj/item/attachable/buildasentry,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/attachable/verticalgrip,
+		/obj/item/attachable/angledgrip,
 	)
 
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY
@@ -800,7 +805,7 @@
 	gun_skill_category = GUN_SKILL_HEAVY_WEAPONS
 	attachable_offset = list("muzzle_x" = 41, "muzzle_y" = 21,"rail_x" = 8, "rail_y" = 23, "under_x" = 25, "under_y" = 14, "stock_x" = 11, "stock_y" = 14)
 	actions_types = list(/datum/action/item_action/aim_mode)
-	aim_fire_delay = 0.2 SECONDS
+	aim_fire_delay = 0.12 SECONDS
 	aim_speed_modifier = 6
 
 	fire_delay = 0.08 SECONDS
@@ -831,7 +836,7 @@
 	caliber = CALIBER_10X24_CASELESS //codex
 	max_shells = 200 //codex
 	aim_slowdown = 0.8
-	wield_delay = 2 SECONDS
+	wield_delay = 0.6 SECONDS
 	fire_sound =  'sound/weapons/guns/fire/hmg.ogg'
 	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
 	unload_sound = 'sound/weapons/guns/interact/m41a_unload.ogg'
@@ -870,10 +875,10 @@
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 8, "rail_y" = 21, "under_x" = 22, "under_y" = 15, "stock_x" = 9, "stock_y" = 15)
 	starting_attachment_types = list(/obj/item/attachable/stock/irremoveable/rifle)
 	actions_types = list(/datum/action/item_action/aim_mode)
-	aim_fire_delay = 0.15 SECONDS
+	aim_fire_delay = 0.12 SECONDS
 	aim_speed_modifier = 2
 
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.09 SECONDS
 	burst_amount = 5
 	burst_delay = 0.1 SECONDS
 	accuracy_mult_unwielded = 0.5
@@ -911,7 +916,7 @@
 	default_ammo_type = /obj/item/ammo_magazine/rifle/type71
 	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/type71)
 	aim_slowdown = 0.6
-	wield_delay = 0.7 SECONDS
+	wield_delay = 0.3 SECONDS
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/verticalgrip,
@@ -948,7 +953,7 @@
 	aim_fire_delay = 0.15 SECONDS
 	aim_speed_modifier = 2
 
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.09 SECONDS
 	burst_amount = 3
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 0.8
@@ -992,7 +997,7 @@
 	attachable_offset = list("muzzle_x" = 30, "muzzle_y" = 19,"rail_x" = 10, "rail_y" = 22, "under_x" = 21, "under_y" = 18, "stock_x" = 21, "stock_y" = 18)
 	starting_attachment_types = list(/obj/item/attachable/suppressor/unremovable/invisible, /obj/item/attachable/scope/unremovable)
 
-	fire_delay = 0.3 SECONDS
+	fire_delay = 0.08 SECONDS
 	burst_amount = 2
 	accuracy_mult = 1.25
 	accuracy_mult_unwielded = 0.8
@@ -1073,7 +1078,7 @@
 	max_shells = 300 //codex
 	force = 30
 	aim_slowdown = 0.95
-	wield_delay = 1.3 SECONDS
+	wield_delay = 0.6 SECONDS
 	fire_sound = "gun_smartgun"
 	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
 	unload_sound = 'sound/weapons/guns/interact/T42_unload.ogg'
@@ -1219,7 +1224,7 @@
 	recoil = 0
 	recoil_unwielded = 4
 	aim_slowdown = 1
-	wield_delay = 1.3 SECONDS
+	wield_delay = 0.3 SECONDS
 	cock_delay = 0.7 SECONDS
 	movement_acc_penalty_mult = 6
 
@@ -1268,7 +1273,7 @@
 	recoil = 0
 	recoil_unwielded = 4
 	aim_slowdown = 1
-	wield_delay = 1.3 SECONDS
+	wield_delay = 0.3 SECONDS
 	movement_acc_penalty_mult = 6
 
 //-------------------------------------------------------
@@ -1281,7 +1286,7 @@
 	item_state = "tx11"
 	caliber = CALIBER_492X34_CASELESS //codex
 	max_shells = 70 //codex
-	wield_delay = 0.65 SECONDS
+	wield_delay = 0.3 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/M412.ogg'
 	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
 	unload_sound = 'sound/weapons/guns/interact/T42_unload.ogg'
@@ -1313,7 +1318,7 @@
 
 	fire_delay = 0.1 SECONDS
 	burst_amount = 3
-	burst_delay = 0.05 SECONDS
+	burst_delay = 0.08 SECONDS
 	extra_delay = 0.1 SECONDS
 	accuracy_mult_unwielded = 0.5
 	accuracy_mult = 1.15
@@ -1394,7 +1399,7 @@
 	burst_delay = 0.15 SECONDS
 	accuracy_mult = 1.2
 	scatter = -2
-	wield_delay = 0.6 SECONDS
+	wield_delay = 0.3 SECONDS
 	aim_slowdown = 0.5
 	damage_falloff_mult = 0.5
 
@@ -1448,7 +1453,7 @@
 	scatter = 4
 	burst_amount = 4
 	aim_slowdown = 0.3
-	wield_delay = 0.4 SECONDS
+	wield_delay = 0.3 SECONDS
 	damage_falloff_mult = 3
 	movement_acc_penalty_mult = 4
 
@@ -1504,7 +1509,7 @@
 	burst_amount = 1
 	fire_delay = 0.1 SECONDS
 	scatter = 1
-	wield_delay = 0.5 SECONDS
+	wield_delay = 0.3 SECONDS
 	movement_acc_penalty_mult = 4
 
 //-------------------------------------------------------
@@ -1547,7 +1552,7 @@
 	gun_firemode_list = list(GUN_FIREMODE_SEMIAUTO)
 	attachable_offset = list("muzzle_x" = 31, "muzzle_y" = 17,"rail_x" = 12, "rail_y" = 20, "under_x" = 28, "under_y" = 13, "stock_x" = -1, "stock_y" = 17)
 	aim_slowdown = 0.8
-	wield_delay = 0.8 SECONDS
+	wield_delay = 0.4 SECONDS
 	burst_amount = 1
 	accuracy_mult = 1.15
 	scatter = -2
@@ -1587,7 +1592,7 @@
 	reload_sound = 'sound/weapons/guns/interact/t18_reload.ogg'
 	caliber = CALIBER_10X24_CASELESS //codex
 	max_shells = 36 //codex
-	wield_delay = 1 SECONDS
+	wield_delay = 0.3 SECONDS
 	default_ammo_type = /obj/item/ammo_magazine/rifle/tx55
 	allowed_ammo_types = list(
 		/obj/item/ammo_magazine/rifle/tx55,
@@ -1623,9 +1628,9 @@
 	)
 	attachable_offset = list("muzzle_x" = 31, "muzzle_y" = 17,"rail_x" = 13, "rail_y" = 22, "under_x" = 21, "under_y" = 14, "stock_x" = -1, "stock_y" = 17)
 
-	aim_fire_delay = 0.1 SECONDS
+	aim_fire_delay = 0.2 SECONDS
 	aim_speed_modifier = 2
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	burst_delay = 0.15 SECONDS
 	extra_delay = 0.05 SECONDS
 	accuracy_mult_unwielded = 0.5
@@ -1702,12 +1707,12 @@
 	attachable_offset = list("muzzle_x" = 45, "muzzle_y" = 16,"rail_x" = 23, "rail_y" = 24, "under_x" = 33, "under_y" = 11, "stock_x" = -1, "stock_y" = 17)
 	actions_types = list(/datum/action/item_action/aim_mode)
 
-	wield_delay = 0.6 SECONDS
+	wield_delay = 0.3 SECONDS
 
-	aim_fire_delay = 0.1 SECONDS
+	aim_fire_delay = 0.15 SECONDS
 	aim_speed_modifier = 2
 
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	aim_slowdown = 0.35
 
 	accuracy_mult = 1.05
@@ -1774,7 +1779,7 @@
 	caliber = CALIBER_10x26_CASELESS
 	max_shells = 200
 	force = 35
-	wield_delay = 1.5 SECONDS
+	wield_delay = 0.3 SECONDS
 	fire_sound =  'sound/weapons/guns/fire/GPMG.ogg'
 	fire_rattle =  'sound/weapons/guns/fire/GPMG_low.ogg'
 	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
@@ -1807,10 +1812,10 @@
 	gun_skill_category = GUN_SKILL_HEAVY_WEAPONS
 	attachable_offset = list("muzzle_x" = 53, "muzzle_y" = 19,"rail_x" = 14, "rail_y" = 23, "under_x" = 41, "under_y" = 14, "stock_x" = -32, "stock_y" = 0)
 	actions_types = list(/datum/action/item_action/aim_mode)
-	aim_fire_delay = 0.2 SECONDS
+	aim_fire_delay = 0.12 SECONDS
 	aim_slowdown = 1.2
 
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.08 SECONDS
 	burst_amount = 1
 	accuracy_mult_unwielded = 0.4
 	scatter = 6

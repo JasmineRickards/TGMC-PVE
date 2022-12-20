@@ -13,7 +13,7 @@
 	max_w_class = 3
 	storage_slots = null
 	max_storage_space = 24
-	access_delay = 1.5 SECONDS
+	access_delay = 0 SECONDS
 
 /obj/item/storage/backpack/should_access_delay(obj/item/item, mob/user, taking_out)
 	if(!taking_out) // Always allow items to be tossed in instantly

@@ -15,7 +15,7 @@
 	type_of_casings = "shell"
 	allowed_ammo_types = list()
 	aim_slowdown = 0.35
-	wield_delay = 0.6 SECONDS //Shotguns are really easy to put up to fire, since they are designed for CQC (at least compared to a rifle)
+	wield_delay = 0.3 SECONDS //Shotguns are really easy to put up to fire, since they are designed for CQC (at least compared to a rifle)
 	gun_skill_category = GUN_SKILL_SHOTGUNS
 	flags_item_map_variant = NONE
 
@@ -110,7 +110,7 @@
 	damage_mult = 1  //30% less damage. Faster firerate.
 	recoil = 0 //It has a stock on the sprite.
 	recoil_unwielded = 2
-	wield_delay = 1 SECONDS
+	wield_delay = 0.3 SECONDS
 	akimbo_additional_delay = 0.9
 
 /obj/item/weapon/gun/shotgun/combat/masterkey
@@ -374,7 +374,7 @@
 	recoil_unwielded = 4
 	cock_delay = 12
 	aim_slowdown = 1
-	wield_delay = 1.2 SECONDS
+	wield_delay = 0.3 SECONDS
 	movement_acc_penalty_mult = 4.5
 
 	placed_overlay_iconstate = "wood"
@@ -429,7 +429,7 @@
 	recoil_unwielded = 4
 
 	aim_slowdown = 1
-	wield_delay = 1 SECONDS
+	wield_delay = 0.3 SECONDS
 	movement_acc_penalty_mult = 5
 
 	placed_overlay_iconstate = "wood"
@@ -461,7 +461,7 @@
 	recoil = 1
 	recoil_unwielded = 1
 	aim_slowdown = 0
-	wield_delay = 0.5 SECONDS
+	wield_delay = 0.3 SECONDS
 
 /obj/item/weapon/gun/shotgun/double/derringer/Initialize()
 	. = ..()
@@ -686,7 +686,7 @@
 
 	fire_delay = 0.2 SECONDS
 	damage_mult = 0.9
-	wield_delay = 0.75 SECONDS
+	wield_delay = 0.3 SECONDS
 	burst_amount = 2
 	burst_delay = 0.01 SECONDS //basically instantaneous two shots
 	extra_delay = 0.5 SECONDS
@@ -726,16 +726,16 @@
 	)
 	attachable_offset = list("muzzle_x" = 45, "muzzle_y" = 18,"rail_x" = 26, "rail_y" = 22, "under_x" = 14, "under_y" = 16, "stock_x" = 14, "stock_y" = 16)
 
-	fire_delay = 0.4 SECONDS
+	fire_delay = 0.45 SECONDS
 	accuracy_mult = 1.15
 	accuracy_mult_unwielded = 0.6
 	scatter = 4
 	scatter_unwielded = 16
-	damage_mult = 0.85
+	damage_mult = 1.25
 	recoil = 1
 	recoil_unwielded = 4
 	aim_slowdown = 0.35
-	wield_delay = 0.65 SECONDS
+	wield_delay = 0.3 SECONDS
 
 /obj/item/weapon/gun/shotgun/som/pointman
 	starting_attachment_types = list(/obj/item/attachable/bayonet, /obj/item/attachable/motiondetector)
