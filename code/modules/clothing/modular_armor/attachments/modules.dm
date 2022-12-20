@@ -53,12 +53,13 @@
  * Fire poof module
 */
 /obj/item/armor_module/module/fire_proof
-	name = "\improper Surt Pyrotechnical Insulation System"
+	name = "\improper Surtr Pyrotechnical Insulation System"
 	icon = 'icons/mob/modular/modular_armor_modules.dmi'
-	desc = "Designed for mounting on modular armor. Providing a near immunity to being bathed in flames, and amazing flame retardant qualities, this is every pyromaniacs' first stop to survival. Will impact mobility."
+	desc = "Designed for mounting on modular armor. Providing a near immunity to being bathed in flames, decent protection against volkite weaponry, and amazing flame retardant qualities, this is every pyromaniacs' first stop to survival. Will impact mobility."
 	icon_state = "mod_fire"
 	item_state = "mod_fire_a"
-	hard_armor = list("fire" = 200)
+	hard_armor = list("fire" = 200, "energy" = 10)
+	soft_armor = list("energy" = 25)
 	slowdown = 0.4
 	slot = ATTACHMENT_SLOT_MODULE
 	variants_by_parent_type = list(/obj/item/clothing/suit/modular/xenonauten = "mod_fire_xn", /obj/item/clothing/suit/modular/xenonauten/light = "mod_fire_xn", /obj/item/clothing/suit/modular/xenonauten/heavy = "mod_fire_xn")
@@ -77,6 +78,14 @@
 	icon_state = "mod_fire_som"
 	item_state = "mod_fire_som_a"
 	variants_by_parent_type = list()
+
+/obj/item/armor_module/module/fire_proof/mk2
+	name = "\improper Muspelheimr Thermal Insulation System"
+	icon = 'icons/mob/modular/modular_armor_modules.dmi'
+	desc = "Designed for mounting on modular armor. An upgrade on the Surtr system, this model has excellent energy dispersion properties, capable of standing up to blasts from even the heaviest volkite weapons and nullifying the weakest almost entirely. It has a reduced impact on mobility as well."
+	hard_armor = list("fire" = 200, "energy" = 20)
+	soft_armor = list("energy" = 50)
+	slowdown = 0.1
 
 /**
  * Extra armor module
