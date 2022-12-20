@@ -379,6 +379,7 @@
 	fire_delay = 0.1 SECONDS
 	burst_delay = 0.1 SECONDS
 	accuracy_mult = 1.1
+	aim_fire_delay = 0.13 SECONDS
 	scatter = -1
 	wield_delay = 0.3 SECONDS
 	burst_amount = 3
@@ -478,7 +479,9 @@
 	attachable_offset = list("muzzle_x" = 41, "muzzle_y" = 19,"rail_x" = 12, "rail_y" = 24, "under_x" = 24, "under_y" = 13, "stock_x" = 22, "stock_y" = 16)
 
 	burst_amount = 4
+	aim_fire_delay = 0.12 SECONDS
 	burst_delay = 0.15 SECONDS
+	aim_slowdown = 0.4
 	scatter = 0
 	fire_delay = 0.1 SECONDS
 
