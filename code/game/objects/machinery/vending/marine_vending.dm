@@ -452,8 +452,13 @@
 			/obj/item/ammo_magazine/packet/p492x34mm = -1,
 			/obj/item/ammo_magazine/packet/p86x70mm = -1,
 			/obj/item/ammo_magazine/packet/p4570 = -1,
+			/obj/item/ammo_magazine/shotgun/box16gslug = -1,
+			/obj/item/ammo_magazine/shotgun/box16gflechette = -1,
+			/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt = -1,
 			/obj/item/storage/box/visual/magazine = -1,
 			/obj/item/storage/box/visual/grenade = -1,
+			/obj/item/ammo_magazine/packet/smart_minigun= 15,
+			/obj/item/ammo_magazine/standard_smartmachinegun = 15,
 		),
 		"Utility" = list(
 			/obj/item/flashlight/combat = -1,
@@ -1147,6 +1152,7 @@
 			/obj/item/defibrillator = 8,
 			/obj/item/healthanalyzer = 16,
 			/obj/item/bodybag/cryobag = 24,
+			/obj/item/tool/surgery/solderingtool = 10,
 		),
 	)
 
