@@ -1340,6 +1340,7 @@
 			/obj/item/armor_module/module/chemsystem = -1,
 			/obj/item/armor_module/module/eshield = -1,
 			/obj/item/armor_module/storage/integrated = -1,
+      /obj/item/armor_module/module/fire_proof = -1, //SoM version is available, now this is too.
 		),
 		"SOM Suits" = list(
 			/obj/item/clothing/suit/modular/som/light = -1,
