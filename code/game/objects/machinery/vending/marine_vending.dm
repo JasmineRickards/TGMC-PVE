@@ -271,6 +271,8 @@
 			/obj/item/ammo_magazine/rifle/m41a = -1,
 			/obj/item/weapon/gun/rifle/type71 = -1,
 			/obj/item/ammo_magazine/rifle/type71 = -1,
+			/obj/item/weapon/gun/rifle/som = -1,
+			/obj/item/ammo_magazine/rifle/som = -1,
 		),
 		"Energy Weapons" = list(
 			/obj/item/cell/lasgun/lasrifle = -1,
@@ -303,6 +305,8 @@
 			/obj/item/ammo_magazine/rifle/alf_machinecarbine = -1,
 			/obj/item/weapon/gun/smg/m25 = -1,
 			/obj/item/ammo_magazine/smg/m25 = -1,
+			/obj/item/weapon/gun/smg/som = -1,
+			/obj/item/ammo_magazine/smg/som = -1,
 		),
 		"Marksman" = list(
 			/obj/item/weapon/gun/rifle/standard_dmr = -1,
@@ -328,6 +332,7 @@
 			/obj/item/weapon/gun/rifle/standard_autoshotgun = -1,
 			/obj/item/ammo_magazine/rifle/tx15_flechette = -1,
 			/obj/item/ammo_magazine/rifle/tx15_slug = -1,
+			/obj/item/weapon/gun/shotgun/som = -1.
 		),
 		"Machinegun" = list(
 			/obj/item/weapon/gun/rifle/standard_lmg = -1,
@@ -339,6 +344,8 @@
 			/obj/item/weapon/gun/rifle/m412l1_hpr = 5,
 			/obj/item/ammo_magazine/m412l1_hpr = -1,
 			/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack = -1,
+			/obj/item/weapon/gun/rifle/som_mg= -1,
+			/obj/item/ammo_magazine/som_mg = -1,
 		),
 		"Melee" = list(
 			/obj/item/weapon/combat_knife = -1,
@@ -368,6 +375,9 @@
 			/obj/item/ammo_magazine/pistol/plasma_pistol = -1,
 			/obj/item/weapon/gun/shotgun/double/derringer = 10,
 			/obj/item/ammo_magazine/pistol/derringer = 15,
+			/obj/item/weapon/gun/pistol/som = -1,
+			/obj/item/ammo_magazine/pistol/som = -1,
+
 		),
 		"Grenades" = list(
 			/obj/item/weapon/gun/grenade_launcher/single_shot = -1,
@@ -388,11 +398,14 @@
 		),
 		"Specialized" = list(
 			/obj/item/weapon/gun/rifle/pepperball = 4,
-			/obj/item/ammo_magazine/rifle/pepperball = 40,
+			/obj/item/ammo_magazine/rifle/pepperball = -1,
 			/obj/item/weapon/gun/flamer/big_flamer/marinestandard = 4,
-			/obj/item/ammo_magazine/flamer_tank/large = 30,
-			/obj/item/ammo_magazine/flamer_tank/backtank = 4,
+			/obj/item/ammo_magazine/flamer_tank/large = 16,
+			/obj/item/weapon/gun/flamer/som = 3,
+			/obj/item/ammo_magazine/flamer_tank/large/som = 15,
+			/obj/item/ammo_magazine/flamer_tank/backtank = -1,
 			/obj/item/jetpack_marine = 3,
+			/obj/item/bodybag/tarp = 10,
 		),
 		"Attachments" = list(
 			/obj/item/attachable/bayonet = -1,
