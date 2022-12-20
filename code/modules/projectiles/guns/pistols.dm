@@ -582,7 +582,7 @@
 	gun_firemode_list = list(GUN_FIREMODE_SEMIAUTO)
 	attachable_offset = list("muzzle_x" = 29, "muzzle_y" = 22,"rail_x" = 6, "rail_y" = 23, "under_x" = 24, "under_y" = 15, "stock_x" = 11, "stock_y" = 10)
 
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.05 SECONDS
 	accuracy_mult = 1.2
 	accuracy_mult_unwielded = 0.95
 	recoil = -2

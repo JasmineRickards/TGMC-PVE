@@ -809,6 +809,7 @@
 		/obj/item/armor_module/storage/grenade,
 		/obj/item/armor_module/storage/integrated,
 		/obj/item/armor_module/armor/badge,
+		/obj/item/armor_module/module/eshield/mk2,
 	)
 
 	icon_state_variants = list(

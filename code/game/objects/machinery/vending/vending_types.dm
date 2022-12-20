@@ -221,14 +221,18 @@
 	resistance_flags = INDESTRUCTIBLE
 	products = list(
 		"Hypospray" = list (
-			/obj/item/reagent_containers/hypospray/autoinjector/dexalinplus = 10,
-			/obj/item/reagent_containers/hypospray/autoinjector/sleeptoxin = 10,
-			/obj/item/reagent_containers/hypospray/advanced = 5,
-			/obj/item/reagent_containers/hypospray/advanced/bicaridine = 5,
-			/obj/item/reagent_containers/hypospray/advanced/kelotane = 5,
-			/obj/item/reagent_containers/hypospray/advanced/tramadol = 5,
-			/obj/item/reagent_containers/hypospray/advanced/tricordrazine = 5,
-			/obj/item/reagent_containers/hypospray/advanced/dylovene = 5,
+			/obj/item/reagent_containers/hypospray/autoinjector/dexalinplus = -1,
+			/obj/item/reagent_containers/hypospray/autoinjector/sleeptoxin = -1,
+			/obj/item/reagent_containers/hypospray/advanced = -1,
+			/obj/item/reagent_containers/hypospray/advanced/bicaridine = -1,
+			/obj/item/reagent_containers/hypospray/advanced/kelotane = -1,
+			/obj/item/reagent_containers/hypospray/advanced/tramadol = -1,
+			/obj/item/reagent_containers/hypospray/advanced/tricordrazine = -1,
+			/obj/item/reagent_containers/hypospray/advanced/dylovene = -1,
+			/obj/item/reagent_containers/hypospray/advanced/meralyne = -1,
+			/obj/item/reagent_containers/hypospray/advanced/dermaline = -1,
+			/obj/item/reagent_containers/hypospray/advanced/meraderm = -1,
+			/obj/item/reagent_containers/hypospray/advanced/nanoblood = -1,
 		),
 		"Reagent Bottle" = list(
 			/obj/item/reagent_containers/glass/bottle/bicaridine = -1,
@@ -245,6 +249,11 @@
 			/obj/item/reagent_containers/glass/bottle/lemoline = -1,
 			/obj/item/reagent_containers/glass/bottle/nanoblood = -1,
 			/obj/item/reagent_containers/glass/bottle/doctor_delight = -1,
+			/obj/item/reagent_containers/glass/bottle/meralyne = -1,
+			/obj/item/reagent_containers/glass/bottle/dermaline = -1,
+			/obj/item/reagent_containers/glass/bottle/meraderm = -1,
+			/obj/item/reagent_containers/glass/bottle/nanoblood = -1,
+			/obj/item/reagent_containers/glass/bottle/lemoline/doctor = -1,
 		),
 		"Pill Bottle" = list(
 			/obj/item/storage/pill_bottle/bicaridine = -1,
@@ -260,6 +269,9 @@
 			/obj/item/storage/pill_bottle/quickclot = -1,
 			/obj/item/storage/pill_bottle/hypervene = -1,
 			/obj/item/storage/pill_bottle/russian_red = -1,
+			/obj/item/storage/pill_bottle/paracetamol = -1,
+			/obj/item/storage/pill_bottle/meralyne = -1,
+			/obj/item/storage/pill_bottle/dermaline = -1,
 		),
 		"Heal Pack" = list(
 			/obj/item/stack/medical/heal_pack/advanced/bruise_pack = -1,
@@ -282,7 +294,13 @@
 			/obj/item/reagent_containers/hypospray/autoinjector/rezadone = -1,
 			/obj/item/reagent_containers/hypospray/autoinjector/virilyth = -1,
 			/obj/item/reagent_containers/hypospray/autoinjector/roulettium = -1,
-			/obj/item/reagent_containers/glass/bottle/toxin = 1,
+			/obj/item/reagent_containers/glass/bottle/toxin = -1,
+			/obj/item/reagent_containers/glass/bottle/chloralhydrate = -1,
+			/obj/item/reagent_containers/glass/bottle/pacid = -1,
+			/obj/item/reagent_containers/glass/bottle/capsaicin = -1,
+			/obj/item/reagent_containers/glass/bottle/frostoil = -1,
+			/obj/item/storage/pill_bottle/happy = -1,
+			/obj/item/storage/pill_bottle/zoom = -1,
 		),
 	)
 

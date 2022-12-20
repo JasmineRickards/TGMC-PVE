@@ -1,4 +1,9 @@
-Name = Admin
+Name = Game Admin
+Include = EVERYTHING
+Exclude =
+Edit = EVERYTHING
+
+Name = Game Master
 Include = EVERYTHING
 Exclude =
 Edit = EVERYTHING

@@ -727,9 +727,14 @@ ARMOR
 	cost = 5
 
 /datum/supply_packs/armor/imager_goggle
-	name = "Optical Imager Goggles"
-	contains = list(/obj/item/clothing/glasses/night/imager_goggles)
+	name = "XenoMate Enhanced Imager Goggles"
+	contains = list(/obj/item/clothing/glasses/hud/xenohud/night)
 	cost = 5
+
+/datum/supply_packs/armor/imager_goggle/meson
+	name = "XenoMate Multi-Stage Imager Goggles"
+	contains = list(/obj/item/clothing/glasses/hud/xenohud/night/meson)
+	cost = 10
 
 /datum/supply_packs/armor/riot
 	name = "Heavy Riot Armor Set"
@@ -1496,6 +1501,16 @@ Imports
 	name = "Loot box"
 	contains = list(/obj/item/loot_box/marine)
 	cost = 50
+
+/datum/supply_packs/imports/somRPG
+	name = "SoM RPG kit"
+	contains = list(/obj/item/storage/holster/backholster/rpg/som/war_crimes)
+	cost = 30
+
+/datum/supply_packs/imports/somRPGammo
+	name = "SOM RPG thermo warhead"
+	contains = list(/obj/item/ammo_magazine/rocket/som/thermobaric)
+	cost = 3
 
 /*******************************************************************************
 VEHICLES
