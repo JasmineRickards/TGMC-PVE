@@ -391,15 +391,16 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 
 /datum/ammo/bullet/pistol/mech
 	name = "super-heavy pistol bullet"
-	damage = 45
-	penetration = 20
-	sundering = 1
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_IFF
+	damage = 68
+	penetration = 50
+	sundering = 5
 
 /datum/ammo/bullet/pistol/mech/burst
 	name = "super-heavy pistol bullet"
-	damage = 35
-	penetration = 10
-	sundering = 0.5
+	damage = 68
+	penetration = 50
+	sundering = 5
 
 /datum/ammo/bullet/pistol/incendiary
 	name = "incendiary pistol bullet"
@@ -580,9 +581,10 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 
 /datum/ammo/bullet/smg/mech
 	name = "super-heavy submachinegun bullet"
-	damage = 20
-	sundering = 0.25
-	penetration = 10
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_IFF
+	damage = 30
+	sundering = 3
+	penetration = 40
 
 /*
 //================================================
@@ -735,19 +737,19 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 
 /datum/ammo/bullet/rifle/mech
 	name = "super-heavy rifle bullet"
-	damage = 25
-	penetration = 15
-	sundering = 0.5
-	damage_falloff = 0.8
+	damage = 75
+	penetration = 30
+	sundering = 2
+	damage_falloff = 0
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_IFF
 
 /datum/ammo/bullet/rifle/mech/burst
-	damage = 30
-	penetration = 10
+	damage = 60
+	penetration = 30
 
 /datum/ammo/bullet/rifle/mech/lmg
-	damage = 20
+	damage = 100
 	penetration = 20
-	damage_falloff = 0.7
 
 /*
 //================================================
@@ -1044,20 +1046,26 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	icon_state = "buckshot"
 	hud_state = "shotgun_buckshot"
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/mech/spread
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_IFF
 	bonus_projectiles_amount = 2
 	bonus_projectiles_scatter = 5
 	accuracy_var_low = 10
 	accuracy_var_high = 10
 	max_range = 10
 	damage = 100
-	damage_falloff = 4
+	penetration = 25
+	damage_falloff = 2
+	sundering = 10
 
 /datum/ammo/bullet/shotgun/mech/spread
 	name = "super-heavy additional buckshot"
 	icon_state = "buckshot"
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_IFF
 	max_range = 10
 	damage = 75
-	damage_falloff = 4
+	penetration = 25
+	damage_falloff = 2
+	sundering = 10
 
 //datum/ammo/bullet/shotgun/mech/on_hit_mob(mob/M, obj/projectile/proj)
 //	staggerstun(M, proj, weaken = 1, stagger = 1, knockback = 2, slowdown = 0.5, max_range = 3)
@@ -1170,9 +1178,9 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/sniper/mech
 	name = "light anti-tank bullet"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_SNIPER|AMMO_IFF
-	damage = 100
-	penetration = 35
-	sundering = 5
+	damage = 150
+	penetration = 100
+	sundering = 10
 	damage_falloff = 0.3
 
 /*
@@ -1256,9 +1264,13 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 
 /datum/ammo/bullet/minigun/mech
 	name = "vulcan bullet"
-	damage = 20
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_IFF
+	damage = 50
 	penetration = 20
-	sundering = 0.5
+	accuracy_var_low = 0.5
+	accuracy_var_high = 0.5
+	accurate_range = 7
+	sundering = 1
 
 /datum/ammo/bullet/dual_cannon
 	name = "dualcannon bullet"
@@ -1451,14 +1463,14 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/tx54/mech
 	name = "30mm fragmentation grenade"
 	bonus_projectiles_type = /datum/ammo/bullet/tx54_spread/mech
-	damage = 25
-	penetration = 10
+	damage = 75
+	penetration = 50
 	projectile_greyscale_colors = "#4f0303"
 
 /datum/ammo/bullet/tx54_spread/mech
 	damage = 25
-	penetration = 10
-	sundering = 0.5
+	penetration = 50
+	sundering = 10
 
 //datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 //	staggerstun(M, proj, max_range = 3, stagger = 0, slowdown = 0.2, shake = 0)
@@ -1710,12 +1722,13 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	explosion(T, 0, 4, 6, 7)
 
 /datum/ammo/rocket/mech
-	name = "large high-explosive rocket"
-	damage = 75
+	name = "large high-explosive smart rocket"
+	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_SUNDERING|AMMO_IFF
+	damage = 100
 	penetration = 50
 
 /datum/ammo/rocket/mech/drop_nade(turf/T)
-	explosion(T, 0, 2, 4, 5)
+	explosion(T, 1, 2, 4, 5)
 
 /datum/ammo/rocket/heavy_rr
 	name = "75mm round"
@@ -2475,21 +2488,22 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 
 /datum/ammo/energy/lasgun/marine/mech
 	name = "superheated laser bolt"
-	damage = 45
+	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_SUNDERING|AMMO_HITSCAN|AMMO_IFF
+	damage = 90
 	penetration = 20
-	sundering = 1
-	damage_falloff = 0.5
+	sundering = 5
+	damage_falloff = 0
 
 /datum/ammo/energy/lasgun/marine/mech/burst
-	damage = 40
+	damage = 90
 	penetration = 20
-	sundering = 0.75
-	damage_falloff = 0.6
+	sundering = 5
+	damage_falloff = 0
 
 /datum/ammo/energy/lasgun/marine/mech/smg
 	name = "superheated pulsed laser bolt"
-	damage = 20
-	penetration = 10
+	damage = 70
+	penetration = 20
 
 // Plasma //
 /datum/ammo/energy/plasma
@@ -3231,6 +3245,15 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	var/burntime = 17
 	var/burnlevel = 31
 
+/datum/ammo/flamethrower/mech_flamer
+	name = "phoron phosphate flame"
+	flags_ammo_behavior = AMMO_INCENDIARY|AMMO_FLAME|AMMO_EXPLOSIVE|AMMO_IFF
+	fire_color = "blue"
+	max_range = 14
+	damage = 100
+	burntime = 60
+	burnlevel = 50
+
 /datum/ammo/flamethrower/drop_flame(turf/T)
 	if(!istype(T))
 		return
@@ -3256,7 +3279,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/flamethrower/mech_flamer/drop_flame(turf/T)
 	if(!istype(T))
 		return
-	flame_radius(1, T)
+	flame_radius(3, T)
 
 /datum/ammo/flamethrower/blue
 	name = "blue flame"

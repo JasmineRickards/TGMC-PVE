@@ -115,25 +115,25 @@ GLOBAL_LIST_INIT(mech_bodytypes, list(MECH_RECON, MECH_ASSAULT, MECH_VANGUARD))
 	return list(icon2appearance(overlay_icon), icon2appearance(visor_icon), emissive_appearance(visor_icon))
 
 /datum/mech_limb/head/recon
-	health_mod = 200
+	health_mod = 100
 	accuracy_mod = 1.3
-	slowdown_mod = 0.2
+	slowdown_mod = 0.1
 	light_range = 7
 	greyscale_type = /datum/greyscale_config/mech_recon/head
 	visor_config = /datum/greyscale_config/mech_recon/visor
 
 /datum/mech_limb/head/assault
-	health_mod = 350
+	health_mod = 175
 	accuracy_mod = 1.4
-	slowdown_mod = 0.3
+	slowdown_mod = 0.15
 	light_range = 6
 	greyscale_type = /datum/greyscale_config/mech_assault/head
 	visor_config = /datum/greyscale_config/mech_assault/visor
 
 /datum/mech_limb/head/vanguard
-	health_mod = 550
+	health_mod = 275
 	accuracy_mod = 1.5
-	slowdown_mod = 0.4
+	slowdown_mod = 0.2
 	light_range = 5
 	greyscale_type = /datum/greyscale_config/mech_vanguard/head
 	visor_config = /datum/greyscale_config/mech_vanguard/visor
@@ -153,20 +153,20 @@ GLOBAL_LIST_INIT(mech_bodytypes, list(MECH_RECON, MECH_ASSAULT, MECH_VANGUARD))
 	detached.add_cell() //replaces with a standard high cap that does not have built in recharge
 
 /datum/mech_limb/torso/recon
-	health_mod = 200
-	slowdown_mod = 0.4
+	health_mod = 100
+	slowdown_mod = 0.2
 	cell_type = /obj/item/cell/mecha
 	greyscale_type = /datum/greyscale_config/mech_recon/torso
 
 /datum/mech_limb/torso/assault
-	health_mod = 350
-	slowdown_mod = 0.7
+	health_mod = 175
+	slowdown_mod = 0.35
 	cell_type = /obj/item/cell/mecha/medium
 	greyscale_type = /datum/greyscale_config/mech_assault/torso
 
 /datum/mech_limb/torso/vanguard
-	health_mod = 550
-	slowdown_mod = 1.0
+	health_mod = 275
+	slowdown_mod = 0.5
 	cell_type = /obj/item/cell/mecha/large
 	greyscale_type = /datum/greyscale_config/mech_vanguard/torso
 
@@ -193,21 +193,21 @@ GLOBAL_LIST_INIT(mech_bodytypes, list(MECH_RECON, MECH_ASSAULT, MECH_VANGUARD))
 	return image(overlay_icon, icon_state = "left")
 
 /datum/mech_limb/arm/recon
-	health_mod = 200
+	health_mod = 100
 	scatter_mod = -10
-	slowdown_mod = 0.2
+	slowdown_mod = 0.1
 	greyscale_type = /datum/greyscale_config/mech_recon/arms
 
 /datum/mech_limb/arm/assault
-	health_mod = 350
+	health_mod = 175
 	scatter_mod = -17
-	slowdown_mod = 0.3
+	slowdown_mod = 0.15
 	greyscale_type = /datum/greyscale_config/mech_assault/arms
 
 /datum/mech_limb/arm/vanguard
-	health_mod = 550
+	health_mod = 275
 	scatter_mod = -25
-	slowdown_mod = 0.4
+	slowdown_mod = 0.2
 	greyscale_type = /datum/greyscale_config/mech_vanguard/arms
 
 
@@ -216,16 +216,16 @@ GLOBAL_LIST_INIT(mech_bodytypes, list(MECH_RECON, MECH_ASSAULT, MECH_VANGUARD))
 	health_mod = 300
 
 /datum/mech_limb/legs/recon
-	health_mod = 200
-	slowdown_mod = -0.7
+	health_mod = 100
+	slowdown_mod = -1.4
 	greyscale_type = /datum/greyscale_config/mech_recon/legs
 
 /datum/mech_limb/legs/assault
-	health_mod = 500
-	slowdown_mod = -0.3
+	health_mod = 250
+	slowdown_mod = -0.6
 	greyscale_type = /datum/greyscale_config/mech_assault/legs
 
 /datum/mech_limb/legs/vanguard
-	health_mod = 700
+	health_mod = 350
 	slowdown_mod = 0.1
 	greyscale_type = /datum/greyscale_config/mech_vanguard/legs
