@@ -31,6 +31,7 @@
 
 datum/game_mode/infestation/distress/post_setup()
 	. = ..()
+	SSticker.bypass_checks = TRUE
 	SSpoints.add_psy_points(XENO_HIVE_NORMAL, 2 * SILO_PRICE + 4 * XENO_TURRET_PRICE)
 
 	for(var/i in GLOB.xeno_turret_turfs)

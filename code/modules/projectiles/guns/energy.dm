@@ -999,7 +999,7 @@
 	attachable_offset = list("muzzle_x" = 38, "muzzle_y" = 13,"rail_x" = 9, "rail_y" = 24, "under_x" = 45, "under_y" = 11, "stock_x" = 22, "stock_y" = 12)
 	accuracy_mult = 1.1
 	aim_slowdown = 0.65
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.12 SECONDS
 	damage_falloff_mult = 0.6
 	wield_delay	= 0.4 SECONDS
 	fire_delay = 0.25 SECONDS

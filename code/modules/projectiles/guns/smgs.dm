@@ -447,7 +447,7 @@
 	extra_delay = 0.1 SECONDS
 	autoburst_delay = 0.1 SECONDS //this makes it fuller auto (Note from PVE, this is HILARIOUSLY stupid.)
 	burst_accuracy_mult = 0.7
-	burst_scatter_mult = 15
+	burst_scatter_mult = 0.8
 
 	akimbo_additional_delay = 0.1
 	upper_akimbo_accuracy = 5
