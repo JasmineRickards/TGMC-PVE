@@ -137,6 +137,7 @@
 	flags_equip_slot = ITEM_SLOT_BACK
 	icon = 'icons/Marine/marine-hmg.dmi'
 	icon_state = "autocannon"
+	caliber = CALIBER_20
 
 	fire_sound = 'sound/weapons/guns/fire/autocannon_fire.ogg'
 	reload_sound = 'sound/weapons/guns/interact/minigun_cocked.ogg'
