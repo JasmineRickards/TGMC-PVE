@@ -310,11 +310,11 @@
 	mech_flags = EXOSUIT_MODULE_GREYSCALE
 	ammotype = /datum/ammo/bullet/minigun/mech
 	max_integrity = 400
-	projectiles = 200
-	projectiles_cache = 800
-	projectiles_cache_max = 800
+	projectiles = 400
+	projectiles_cache = 1600
+	projectiles_cache_max = 1600
 	variance = 35
-	projectile_delay = 1.5
+	projectile_delay = 0.015 SECONDS
 	slowdown = 0.7
 	windup_delay = 0.5 SECONDS
 	harmful = TRUE
@@ -388,8 +388,8 @@
 	ammotype = /datum/ammo/flamethrower/mech_flamer
 	max_integrity = 250
 	projectiles = 20
-	projectiles_cache = 20 // low ammo counts so player cant just spam fire while rushing infinitely
-	projectiles_cache_max = 20
+	projectiles_cache = 80 // low ammo counts so player cant just spam fire while rushing infinitely
+	projectiles_cache_max = 80
 	variance = 0
 	projectile_delay = 2 SECONDS
 	slowdown = 0.4
