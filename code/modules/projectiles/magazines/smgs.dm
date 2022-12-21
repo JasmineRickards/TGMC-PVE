@@ -30,6 +30,14 @@
 	icon_state_mini = "mag_smg_yellow"
 	bonus_overlay = "m25_ex"
 
+/obj/item/ammo_magazine/smg/packe/tap
+	name = "packet of 10x20mm AP"
+	desc = "A box of 10x20mm armor piercing ammo"
+	icon_state = "box_10x20mm_ap"
+	default_ammo = /datum/ammo/bullet/smg/ap
+	max_rounds = 1200 // AP is strong
+	w_class = WEIGHT_CLASS_NORMAL
+
 //-------------------------------------------------------
 //MP-19 Machinepistol ammo
 

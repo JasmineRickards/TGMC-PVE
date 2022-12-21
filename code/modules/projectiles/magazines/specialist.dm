@@ -482,6 +482,8 @@
 		"492x34mm Caseless" = /datum/ammopacktype/p492x34b,
 		"16 Gauge Flechettes" = /datum/ammopacktype/tx15_flechette,
 		"16 Gauge Slugs" = /datum/ammopacktype/tx15_slug,
+		"10x24AP Caseless" = /datum/ammopacktype/p10x24AP,
+		"10X20AP Caseless" = /datum/ammopacktype/p10x20AP,
 		)
 
 /datum/ammopacktype/p10x24b
@@ -539,3 +541,19 @@
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "492x34"
 	caliber_label = "492x34mm Caseless"
+
+/datum/ammopacktype/p10x24AP
+	default_ammo = /datum/ammo/bullet/rifle/ap
+	max_rounds = 1200
+	caliber = CALIBER_10X24_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "10x24ap"
+	caliber_label = "10x24mmAP Caseless"
+
+/datum/ammopacktype/p10x20AP
+	default_ammo = /datum/ammo/bullet/smg/ap
+	max_rounds = 1200
+	caliber = CALIBER_10X20_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "10x20ap"
+	caliber_label = "10x20mmAP Caseless"

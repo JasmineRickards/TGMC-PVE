@@ -541,10 +541,21 @@ WEAPONS
 	cost = 20
 
 /datum/supply_packs/weapons/pfcflak
-	name = "Tl-127 Flak Magazine"
+	name = "SR-127 Flak Magazine"
 	contains = list(/obj/item/ammo_magazine/rifle/chamberedrifle/flak)
 	cost = 5
 	available_against_xeno_only = TRUE
+
+
+/datum/supply_packs/weapons/dmr37incendiary
+	name = "DMR-37 Incendary Magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/standard_dmr/incendiary)
+	cost = 4
+
+/datum/supply_packs/weapons/br64incendiary
+	name = "BR-64 Incendiary Magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/standard_br/incendiary)
+	cost = 4
 
 /datum/supply_packs/weapons/xray_gun
 	name = "TE-X Laser Rifle"
@@ -565,15 +576,44 @@ WEAPONS
 	contains = list(/obj/item/ammo_magazine/pistol/standard_pistol/smart_pistol)
 	cost = 1
 
+/datum/supply_packs/weapons/rt3ap
+	name = "RT-3 AP Magazine"
+	contains = list(/obj/item/ammo_magazine/pistol/ap)
+	cost = 2
+
+/datum/supply_packs/weapons/rt3hollowpoint
+	name = "RT-3 Hollowpoint Magazine"
+	contains = list(/obj/item/ammo_magazine/pistol/hp)
+	cost = 2
+
+/datum/supply_packs/weapons/rt3incendiary
+	name = "RT-3 Incendiary Magazine"
+	contains = list(/obj/item/ammo_magazine/pistol/incendiary)
+	cost = 2
+
+/datum/supply_packs/weapons/rt3magazine
+	name = "RT-3 Extended Magazine"
+	contains = list(/obj/item/ammo_magazine/pistol/extended)
+	cost = 1
 /datum/supply_packs/weapons/BigAmmoBox
 	name = "Big Ammo Box (10x24mm)"
 	contains = list(/obj/item/big_ammo_box)
 	cost = 5
 
+/datum/supply_packs/weapons/BigAmmoBoxAP
+	name ="Big Ammo AP Box (10x24mm AP)"
+	contains = list(/obj/item/ammo_magazine/rifle/box/ap)
+	cost = 10
+
 /datum/supply_packs/weapons/BigAmmoBoxSMG
 	name = "Big Ammo Box (10x20mm)"
 	contains = list(/obj/item/big_ammo_box/smg)
 	cost = 5
+
+/datum/supply_packs/weapons/BigAmmoBoxSMGAP
+	name = "Big Ammo Packet (10x20mm AP)"
+	contains = list(/obj/item/ammo_magazine/packet/packet/ap)
+	cost = 10
 
 /*******************************************************************************
 EXPLOSIVES
@@ -1245,10 +1285,30 @@ Imports
 	contains = list(/obj/item/weapon/gun/rifle/m412)
 	cost = 5
 
+/datum/supply_packs/imports/m412e
+	name = "PR-412E battle rifle"
+	contains = list(/obj/item/weapon/gun/rifle/m412/elite)
+	cost = 10
+
 /datum/supply_packs/imports/m41a2/ammo
 	name = "PR-412 Pulse Rifle Ammo"
 	contains = list(/obj/item/ammo_magazine/rifle)
 	cost = 1
+
+/datum/supply_packs/imports/m41a2/ammoextended
+	name = "PR4-12 Extended Pulse Rifle Ammo"
+	contains = list(/obj/item/ammo_magazine/rifle/extended)
+	cost = 3
+
+/datum/supply_packs/imports/m41a2/ammoincendiary
+	name = "PR4-12 Extended Pulse Rifle Ammo"
+	contains = list(/obj/item/ammo_magazine/rifle/incendiary)
+	cost = 4
+
+/datum/supply_packs/imports/m41a2/ammoap
+	name = "PR4-12 Extended Pulse Rifle Ammo"
+	contains = list(/obj/item/ammo_magazine/rifle/ap)
+	cost = 5
 
 /datum/supply_packs/imports/m412l1
 	name = "PR-412L1 Heavy Pulse Rifle"
@@ -1285,10 +1345,25 @@ Imports
 	contains = list(/obj/item/weapon/gun/smg/m25)
 	cost = 5
 
+/datum/supply_packs/imports/m25b
+	name = "SMG-25B SMG"
+	contains = list(/obj/item/weapon/gun/smg/m25/elite)
+	cost = 10
+
 /datum/supply_packs/imports/m25/ammo
 	name = "SMG-25 SMG Ammo"
 	contains = list(/obj/item/ammo_magazine/smg/m25)
 	cost = 1
+
+/datum/supply_packs/imports/m25/ammoap
+	name = "SMG-25 AP SMG Ammo"
+	contains = list(/obj/item/ammo_magazine/smg/m25/ap)
+	cost = 4
+
+/datum/supply_packs/imports/m25/ammoextended
+	name = "SMG-25 extended SMG Ammo"
+	contains = list(/obj/item/ammo_magazine/smg/m25/extended)
+	cost = 2
 
 /datum/supply_packs/imports/skorpion
 	name = "CZ-81 Skorpion SMG"
@@ -1511,6 +1586,68 @@ Imports
 	name = "SOM RPG thermo warhead"
 	contains = list(/obj/item/ammo_magazine/rocket/som/thermobaric)
 	cost = 3
+
+/datum/supply_packs/imports/v11incendiary
+	name = "V-11 Incendiary Ammo"
+	contains = list(/obj/item/ammo_magazine/pistol/som/incendiary)
+	cost = 2
+
+/datum/supply_packs/imports/v11extended
+	name = "V-11 Extended Ammo"
+	contains = list(/obj/item/ammo_magazine/pistol/som/extended)
+	cost = 2
+
+/datum/supply_packs/imports/v21ap
+	name = "V-21 AP Ammo"
+	contains = list(/obj/item/ammo_magazine/smg/som/ap)
+	cost = 4
+
+/datum/supply_packs/imports/v21incendiary
+	name = "V-21 Incendiary Ammo"
+	contains = list(/obj/item/ammo_magazine/smg/som/incendiary)
+	cost = 3
+
+/datum/supply_packs/imports/v21extended
+	name = "V-21 Extended Ammo"
+	contains = list(/obj/item/ammo_magazine/smg/som/extended)
+	cost = 2
+
+/datum/supply_packs/imports/v31ap
+	name = "V-31 AP Ammo"
+	contains = list(/obj/item/ammo_magazine/rifle/som/ap)
+	cost = 4
+
+/datum/supply_packs/imports/v31incendiary
+	name = "V-31 Incendiary Ammo"
+	contains = list(/obj/item/ammo_magazine/rifle/som/incendiary)
+	cost = 3
+
+/datum/supply_packs/imports/microgrenade
+	name = "handful of airburst micro grenades"
+	contains = list(/obj/item/ammo_magazine/handful/micro_grenade)
+	cost = 2
+
+/datum/supply_packs/imports/microgrenadedb
+	name = "handful of dragon's breath micro grenades"
+	contains = list(/obj/item/ammo_magazine/handful/micro_grenade/dragonbreath)
+	cost = 3
+
+
+/datum/supply_packs/imports/microgrenadecluster
+	name = "handful of clustermunition micro grenades"
+	contains = list(/obj/item/ammo_magazine/handful/micro_grenade/cluster)
+	cost = 2
+
+/datum/supply_packs/imports/microgrenadesmoke
+	name = "handful of smoke burst micro grenade"
+	contains = list(/obj/item/ammo_magazine/handful/micro_grenade/smoke_burst)
+	cost = 2
+
+/datum/supply_packs/imports/v51bassaultshotgun
+	name = "V-51B Assault Shotgun"
+	contains = list(/obj/item/weapon/gun/shotgun/som/burst)
+	cost = 40
+
 
 /*******************************************************************************
 VEHICLES

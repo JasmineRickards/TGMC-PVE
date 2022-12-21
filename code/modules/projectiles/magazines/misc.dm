@@ -15,6 +15,15 @@
 	current_rounds = 1500
 	max_rounds = 1500
 
+/obj/item/ammo_magazine/rifle/box/ap
+	name = "box of 10x24mm AP"
+	desc = "A box of 10x24mm armor piercing rounds"
+	caliber = CALIBER_10X24_CASELESS
+	icon_state = "box_10x24mm_ap"
+	default_ammo = /datum/ammo/bullet/rifle/ap
+	max_rounds = 1200 // AP is strong
+	w_class = WEIGHT_CLASS_NORMAL
+
 /obj/item/ammo_magazine/packet/p10x265mm
 	name = "box of 10x26.5mm"
 	desc = "A box containing 1000 rounds of 10x26.5mm caseless."
@@ -146,6 +155,15 @@
 	w_class = WEIGHT_CLASS_SMALL
 	current_rounds = 1500
 	max_rounds = 1500
+
+/obj/item/ammo_magazine/packet/packet/ap
+	name = "packet of 10x20mm AP"
+	desc = "A box of 10x20mm armor piercing ammo"
+	icon_state = "box_10x20mm_ap"
+	caliber = CALIBER_10X20_CASELESS
+	default_ammo = /datum/ammo/bullet/smg/ap
+	w_class = WEIGHT_CLASS_SMALL
+	max_rounds = 1200 // AP is strong
 
 /obj/item/ammo_magazine/packet/p4570
 	name = "packet of .45-70"
