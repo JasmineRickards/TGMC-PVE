@@ -495,6 +495,8 @@
 			/obj/item/ammo_magazine/rifle = -1,
 			/obj/item/weapon/gun/rifle/type71 = -1,
 			/obj/item/ammo_magazine/rifle/type71 = -1,
+			/obj/item/weapon/gun/rifle/som = -1,
+			/obj/item/ammo_magazine/rifle/som = -1,
 		),
 		"Energy Weapons" = list(
 			/obj/item/cell/lasgun/lasrifle = -1,
