@@ -585,6 +585,11 @@
 	max_shots = 40 //codex stuff
 	load_method = CELL //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun,
+		/obj/item/cell/lasgun/volkite/powerpack,
+		/obj/item/cell/lasgun/lasrifle,
+		)
 	ammo_diff = null
 	rounds_per_shot = 15
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
@@ -696,7 +701,7 @@
 	wield_delay = 0.3 SECONDS
 	scatter = 0
 	scatter_unwielded = 10
-	fire_delay = 0.8 SECONDS
+	fire_delay = 0.2 SECONDS
 	accuracy_mult = 1.2
 	accuracy_mult_unwielded = 0.5
 	movement_acc_penalty_mult = 6
@@ -707,7 +712,7 @@
 
 /datum/lasrifle/base/energy_sniper_mode/standard
 	rounds_per_shot = 50
-	fire_delay = 0.3 SECONDS
+	fire_delay = 0.2 SECONDS
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/sniper
 	fire_sound = 'sound/weapons/guns/fire/Laser Sniper Standard.ogg'
 	message_to_user = "You set the sniper rifle's charge mode to standard fire."
@@ -716,7 +721,7 @@
 
 /datum/lasrifle/base/energy_sniper_mode/heat
 	rounds_per_shot = 150
-	fire_delay = 0.4 SECONDS
+	fire_delay = 0.3 SECONDS
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/sniper_heat
 	fire_sound = 'sound/weapons/guns/fire/laser3.ogg'
 	message_to_user = "You set the sniper rifle's charge mode to wave heat."
@@ -734,6 +739,11 @@
 	w_class = WEIGHT_CLASS_BULKY
 	max_shots = 150 //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/autolaser
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun,
+		/obj/item/cell/lasgun/volkite/powerpack,
+		/obj/item/cell/lasgun/lasrifle,
+		)
 	ammo_diff = null
 	rounds_per_shot = 4
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
