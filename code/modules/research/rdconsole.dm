@@ -2,7 +2,7 @@
 	name = "R&D Console"
 	icon_state = "rdcomp"
 	circuit = /obj/item/circuitboard/computer/rdconsole
-	req_access = list(ACCESS_MARINE_RESEARCH)
+//	req_access = list(ACCESS_MARINE_RESEARCH)
 
 
 /obj/machinery/computer/rdconsole/robotics
