@@ -72,7 +72,7 @@
 	aim_slowdown = 0.15
 	burst_amount = 5
 	movement_acc_penalty_mult = 2
-	akimbo_additional_delay = 0.12
+	akimbo_additional_delay = 0.14
 	upper_akimbo_accuracy = 5
 	lower_akimbo_accuracy = 3
 
