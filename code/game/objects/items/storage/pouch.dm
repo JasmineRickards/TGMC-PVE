@@ -7,6 +7,7 @@
 	flags_equip_slot = ITEM_SLOT_POCKET
 	storage_slots = 1
 	draw_mode = 0
+	max_storage_space = 24
 	allow_drawing_method = TRUE
 	var/fill_type
 	var/fill_number = 0
@@ -51,7 +52,7 @@
 /obj/item/storage/pouch/general/large
 	name = "general pouch"
 	storage_slots = null
-	max_storage_space = 12
+	max_storage_space = 24
 	icon_state = "large_drop"
 	draw_mode = 0
 
@@ -441,7 +442,6 @@
 	desc = "A specialized medical pouch that can only hold auto-injectors."
 	icon_state = "firstaid_injector"
 	storage_slots = 16
-	max_storage_space = 14
 	can_hold = list(/obj/item/reagent_containers/hypospray/autoinjector)
 
 /obj/item/storage/pouch/medical_injectors/firstaid

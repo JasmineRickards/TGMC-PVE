@@ -6,6 +6,7 @@
 	icon = 'icons/obj/clothing/belts.dmi'
 	icon_state = "utilitybelt"
 	item_state = "utility"
+	max_storage_space = 94
 	item_state_worn = TRUE
 	flags_equip_slot = ITEM_SLOT_BELT
 	attack_verb = list("whipped", "lashed", "disciplined")
@@ -41,6 +42,7 @@
 	desc = "The M276 is the standard load-bearing equipment of the TGMC. It consists of a modular belt with various clips. This version lacks any combat functionality, and is commonly used by engineers to transport important tools."
 	icon_state = "utilitybelt"
 	item_state = "utility"
+	storage_slots = 12
 	can_hold = list(
 		/obj/item/tool/crowbar,
 		/obj/item/tool/screwdriver,
@@ -83,7 +85,6 @@
 	icon_state = "medicalbag"
 	item_state = "medicbag"
 	storage_slots = 32 //can hold 3 "rows" of very limited medical equipment, but it *should* give a decent boost to squad medics.
-	max_storage_space = 84
 	max_w_class = 3
 	can_hold = list(
 		/obj/item/healthanalyzer,
@@ -214,7 +215,6 @@
 	item_state = "medical"
 	storage_slots = 24
 	max_w_class = 3
-	max_storage_space = 84
 
 	can_hold = list(
 		/obj/item/healthanalyzer,
@@ -276,7 +276,6 @@
 	icon_state = "hypospraybelt"
 	item_state = "medicbag"
 	storage_slots = 18
-	max_storage_space = 42
 	max_w_class = 2
 	can_hold = list(
 		/obj/item/healthanalyzer,
@@ -311,7 +310,6 @@
 	item_state = "security"//Could likely use a better one.
 	storage_slots = 7
 	max_w_class = 3
-	max_storage_space = 21
 	can_hold = list(
 		/obj/item/explosive/grenade/flashbang,
 		/obj/item/explosive/grenade/chem_grenade/teargas,
@@ -345,7 +343,6 @@
 	item_state = "swatbelt"
 	storage_slots = 24
 	max_w_class = 3
-	max_storage_space = 21
 
 /obj/item/storage/belt/marine
 	name = "\improper M276 pattern ammo load rig"
@@ -355,7 +352,6 @@
 	w_class = WEIGHT_CLASS_BULKY
 	storage_slots = 24
 	max_w_class = 3
-	max_storage_space = 18
 	can_hold = list(
 		/obj/item/weapon/combat_knife,
 		/obj/item/attachable/bayonetknife,
@@ -539,8 +535,7 @@
 	item_state = "shotgunbelt"
 	w_class = WEIGHT_CLASS_BULKY
 	storage_slots = 48
-	max_w_class = 2
-	max_storage_space = 28
+	max_w_class = 3
 	can_hold = list(/obj/item/ammo_magazine/handful,
 					/obj/item/ammo_magazine/shotgun)
 
@@ -652,8 +647,7 @@
 	name = "martini henry ammo belt"
 	desc = "A belt good enough for holding all your .577/400 ball rounds."
 	icon_state = ".557_belt"
-	storage_slots = 12
-	max_storage_space = 24
+	storage_slots = 24
 
 	draw_mode = 1
 
@@ -736,7 +730,6 @@
 	w_class = WEIGHT_CLASS_BULKY
 	storage_slots = 32
 	max_w_class = 3
-	max_storage_space = 27
 	can_hold = list(/obj/item/explosive/grenade)
 
 /obj/item/storage/belt/grenade/som
@@ -760,7 +753,6 @@
 	w_class = WEIGHT_CLASS_BULKY
 	storage_slots = 48
 	max_w_class = 3
-	max_storage_space = 48
 	can_hold = list(/obj/item/explosive/grenade)
 
 /obj/item/storage/belt/grenade/b17/Initialize()
@@ -811,7 +803,6 @@
 		/obj/item/weapon/gun = 1,
 	)
 	storage_slots = 7
-	max_storage_space = 15
 	max_w_class = 3
 	///The gun it holds, used for referencing later so we can update the icon.
 	var/obj/item/weapon/gun/current_gun
@@ -1018,7 +1009,6 @@
 	desc = "The M276 is the standard load-bearing equipment of the TGMC. It consists of a modular belt with various clips. This version is for the M44 magnum revolver, along with three pouches for speedloaders."
 	icon_state = "m44_holster"
 	item_state = "m44_holster"
-	max_storage_space = 16
 	max_w_class = 4
 	can_hold = list(
 		/obj/item/weapon/gun/revolver,
@@ -1041,7 +1031,6 @@
 	desc = "The M276 is the standard load-bearing equipment of the TGMC. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with three pouches for speedloaders."
 	icon_state = "mateba_holster"
 	item_state = "mateba_holster"
-	max_storage_space = 16
 	bypass_w_limit = list(
 		/obj/item/weapon/gun/revolver/mateba,
 	)
@@ -1130,7 +1119,6 @@
 	max_w_class = 4 //So it can hold the shotgun.
 	w_class = WEIGHT_CLASS_BULKY
 	storage_slots = 3
-	max_storage_space = 8
 	can_hold = list(
 		/obj/item/weapon/gun/shotgun/double/marine,
 		/obj/item/ammo_magazine/shotgun,
