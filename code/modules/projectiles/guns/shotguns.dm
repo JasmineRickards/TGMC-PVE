@@ -60,7 +60,7 @@
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 10, "rail_y" = 21, "under_x" = 14, "under_y" = 16, "stock_x" = 14, "stock_y" = 16)
 	starting_attachment_types = list(/obj/item/weapon/gun/grenade_launcher/underslung/invisible)
 
-	fire_delay = 0.4 SECONDS //one shot every 1.5 seconds.
+	fire_delay = 0.15 SECONDS //one shot every 1.5 seconds.
 	accuracy_mult_unwielded = 0.5 //you need to wield this gun for any kind of accuracy
 	scatter_unwielded = 10
 	damage_mult = 1  //normalizing gun for vendors; damage reduced by 25% to compensate for faster fire rate; still higher DPS than T-32.
@@ -302,8 +302,8 @@
 	)
 
 	fire_delay = 0.4 SECONDS
-	damage_mult = 0.75
-	accuracy_mult = 2
+	damage_mult = 2.2
+	accuracy_mult = 1
 	accuracy_mult_unwielded = 1
 	scatter_unwielded = 10
 	recoil = 0 // It has a stock. It's on the sprite.

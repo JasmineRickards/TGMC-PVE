@@ -78,6 +78,7 @@
 			/obj/item/weapon/gun/shotgun/pump/t35 = -1,
 			/obj/item/weapon/gun/shotgun/combat/standardmarine = -1,
 			/obj/item/weapon/gun/shotgun/double/marine = -1,
+			/obj/item/weapon/gun/shotgun/combat = -1,
 			/obj/item/storage/belt/gun/ts34/full = -1,
 			/obj/item/ammo_magazine/shotgun = -1,
 			/obj/item/ammo_magazine/shotgun/buckshot = -1,
@@ -211,6 +212,7 @@
 			/obj/item/attachable/heatlens = -1,
 			/obj/item/attachable/efflens = -1,
 			/obj/item/attachable/pulselens = -1,
+			/obj/item/attachable/stock/tactical= -1,
 
 
 		),
@@ -326,6 +328,7 @@
 			/obj/item/weapon/gun/shotgun/combat/standardmarine = -1,
 			/obj/item/weapon/gun/shotgun/double/marine = -1,
 			/obj/item/storage/belt/gun/ts34/full = -1,
+			/obj/item/weapon/gun/shotgun/combat = -1,
 			/obj/item/ammo_magazine/shotgun = -1,
 			/obj/item/ammo_magazine/shotgun/buckshot = -1,
 			/obj/item/ammo_magazine/shotgun/flechette = -1,
@@ -437,6 +440,7 @@
 			/obj/item/attachable/flamer_nozzle/long = -1,
 			/obj/item/attachable/stock/t19stock = -1,
 			/obj/item/attachable/stock/t35stock = -1,
+			/obj/item/attachable/stock/tactical= -1,
 		),
 		"Boxes" = list(
 			/obj/item/ammo_magazine/packet/p9mm = -1,
