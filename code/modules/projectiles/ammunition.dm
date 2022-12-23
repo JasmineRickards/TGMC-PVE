@@ -223,7 +223,7 @@
 	flags_equip_slot = null // It only fits into pockets and such.
 	w_class = WEIGHT_CLASS_SMALL
 	current_rounds = 1 // So it doesn't get autofilled for no reason.
-	max_rounds = 5 // For shotguns, though this will be determined by the handful type when generated.
+	max_rounds = 15 // For shotguns, though this will be determined by the handful type when generated.
 	flags_atom = CONDUCT|DIRLOCK
 	flags_magazine = MAGAZINE_HANDFUL|MAGAZINE_REFILLABLE
 	attack_speed = 3 // should make reloading less painful
@@ -232,7 +232,7 @@
 /obj/item/ammo_magazine/handful/buckshot
 	name = "handful of shotgun buckshot shells (12g)"
 	icon_state = "shotgun buckshot shell"
-	current_rounds = 5
+	current_rounds = 15
 	default_ammo = /datum/ammo/bullet/shotgun/buckshot
 	caliber = CALIBER_12G
 
@@ -240,7 +240,7 @@
 	name = "handful of airburst micro grenades (10g)"
 	icon_state = "micro_grenade_airburst"
 	current_rounds = 3
-	max_rounds = 3
+	max_rounds = 6
 	default_ammo = /datum/ammo/bullet/micro_rail/airburst
 	caliber = CALIBER_10G_RAIL
 
@@ -262,7 +262,7 @@
 /obj/item/ammo_magazine/handful/flechette
 	name = "handful of shotgun flechette shells (12g)"
 	icon_state = "shotgun flechette shell"
-	current_rounds = 5
+	current_rounds = 15
 	default_ammo = /datum/ammo/bullet/shotgun/flechette
 	caliber = CALIBER_12G
 

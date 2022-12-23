@@ -8,7 +8,7 @@
 	caliber = CALIBER_10X28
 	icon_state = "t26"
 	w_class = WEIGHT_CLASS_NORMAL
-	max_rounds = 15
+	max_rounds = 45
 	default_ammo = /datum/ammo/bullet/sniper
 	reload_delay = 3
 	icon_state_mini = "mag_sniper"
@@ -44,7 +44,7 @@
 	default_ammo = /datum/ammo/bullet/sniper/elite
 	caliber = CALIBER_10X99
 	icon_state = "m42c"
-	max_rounds = 6
+	max_rounds = 32
 
 
 //SVD //Based on the actual Dragunov sniper rifle.
@@ -55,7 +55,7 @@
 	caliber = CALIBER_762X54
 	icon_state = "svd"
 	default_ammo = /datum/ammo/bullet/sniper/svd
-	max_rounds = 10
+	max_rounds = 30
 	icon_state_mini = "mag_rifle"
 
 
@@ -68,7 +68,7 @@
 	icon_state = "tx8"
 	caliber = CALIBER_10X28_CASELESS
 	default_ammo = /datum/ammo/bullet/rifle/tx8
-	max_rounds = 25
+	max_rounds = 45
 	icon_state_mini = "mag_rifle_big"
 
 /obj/item/ammo_magazine/rifle/tx8/incendiary
@@ -99,7 +99,7 @@
 	icon_state = "rocket"
 	w_class = WEIGHT_CLASS_NORMAL
 	flags_magazine = MAGAZINE_REFUND_IN_CHAMBER
-	max_rounds = 1
+	max_rounds = 2
 	default_ammo = /datum/ammo/rocket
 	reload_delay = 60
 
@@ -133,7 +133,7 @@
 	caliber = CALIBER_84MM
 	icon_state = "rocket"
 	w_class = WEIGHT_CLASS_NORMAL
-	max_rounds = 1
+	max_rounds = 2
 	default_ammo = /datum/ammo/rocket
 	reload_delay = 60
 
@@ -158,7 +158,7 @@
 	caliber = CALIBER_67MM
 	icon_state = "shell"
 	w_class = WEIGHT_CLASS_BULKY
-	max_rounds = 1
+	max_rounds = 2
 	default_ammo = /datum/ammo/rocket/recoilless
 	reload_delay = 30
 
@@ -206,11 +206,11 @@
 
 /obj/item/ammo_magazine/rocket/oneuse
 	name = "\improper 68mm high-explosive shell"
-	desc = "A rocket used to reload a one use rocket once returned to an armory."
+	desc = "A rocket used to reload a two use rocket once returned to an armory."
 	caliber = CALIBER_68MM
 	icon_state = "rocket"
 	w_class = WEIGHT_CLASS_BULKY
-	max_rounds = 1
+	max_rounds = 2
 	default_ammo = /datum/ammo/rocket/oneuse
 	reload_delay = 30
 
@@ -219,7 +219,7 @@
 	desc = "The internal tube of a one use rpg."
 	caliber = CALIBER_68MM
 	default_ammo = /datum/ammo/rocket/recoilless
-	max_rounds = 1
+	max_rounds = 2
 	current_rounds = 0
 	reload_delay = 30
 
@@ -231,7 +231,7 @@
 	desc = "A thermobaric rocket tube for a RL-57 quad launcher. Activate in hand to receive some metal when it's used up. The Rockets don't do much damage on a direct hit, but the fire effect is strong.."
 	caliber = CALIBER_ROCKETARRAY
 	icon_state = "quad_rocket"
-	max_rounds = 4
+	max_rounds = 6
 	default_ammo = /datum/ammo/rocket/wp/quad
 	reload_delay = 200
 
@@ -240,14 +240,14 @@
 	desc = "A thermobaric rocket tube for a RL-57 quad launcher. Activate in hand to receive some metal when it's used up. Has huge red markings..."
 	caliber = CALIBER_ROCKETARRAY
 	icon_state = "quad_rocket"
-	max_rounds = 4
+	max_rounds = 6
 	default_ammo = /datum/ammo/rocket/wp/quad/ds
 
 /obj/item/ammo_magazine/internal/launcher/rocket/m57a4
 	desc = "The internal tube of an RL-57 thermobaric launcher."
 	caliber = CALIBER_ROCKETARRAY
 	default_ammo = /datum/ammo/rocket/wp/quad
-	max_rounds = 4
+	max_rounds = 6
 
 /obj/item/ammo_magazine/internal/launcher/rocket/m57a4/ds
 	default_ammo = /datum/ammo/rocket/wp/quad/ds
@@ -306,7 +306,7 @@
 	caliber = CALIBER_RAILGUN
 	icon_state = "railgun"
 	default_ammo = /datum/ammo/bullet/railgun
-	max_rounds = 3
+	max_rounds = 6
 	reload_delay = 20 //Hard to reload.
 	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "mag_railgun"
@@ -331,7 +331,7 @@
 	caliber = CALIBER_PEPPERBALL
 	icon_state = "pepperball"
 	default_ammo = /datum/ammo/bullet/pepperball
-	max_rounds = 100
+	max_rounds = 200
 	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "mag_pepperball"
 
@@ -340,7 +340,7 @@
 	desc = "A small canister for use with the miniature pepperball gun."
 	icon_state = "pepperball_mini"
 	default_ammo = /datum/ammo/bullet/pepperball/pepperball_mini
-	max_rounds = 20
+	max_rounds = 40
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_magazine/minigun_powerpack

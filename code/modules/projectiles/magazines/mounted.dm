@@ -7,14 +7,14 @@
 	icon_state = "mag"
 	flags_magazine = NONE
 	caliber = CALIBER_10X30
-	max_rounds = 300
+	max_rounds = 800
 	default_ammo = /datum/ammo/bullet/machinegun
 	reload_delay = 5 SECONDS
 	icon_state_mini = "mag_tl102"
 
 ///This is the one that comes in the mapbound and dropship mounted version of the HSG-102, it has a stupid amount of ammo. Even more than the ammo counter can display.
 /obj/item/ammo_magazine/tl102/hsg_nest
-	max_rounds = 500
+	max_rounds = 800
 
 /obj/item/ammo_magazine/heavymachinegun
 	name = "HMG-08 drum magazine (10x28mm Caseless)"
@@ -25,7 +25,7 @@
 	icon_state = "mg08_mag"
 	flags_magazine = NONE
 	caliber = CALIBER_10X28
-	max_rounds = 500
+	max_rounds = 800
 	default_ammo = /datum/ammo/bullet/machinegun
 	reload_delay = 10 SECONDS
 
@@ -35,7 +35,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	flags_equip_slot = ITEM_SLOT_BELT
 	icon_state = "mg08_mag_small"
-	max_rounds = 250
+	max_rounds = 450
 	reload_delay = 5 SECONDS
 
 /obj/item/ammo_magazine/standard_mmg
@@ -63,7 +63,7 @@
 		)
 	flags_magazine = MAGAZINE_REFUND_IN_CHAMBER
 	caliber = CALIBER_37MM
-	max_rounds = 1
+	max_rounds = 2
 	default_ammo = /datum/ammo/rocket/atgun_shell
 	reload_delay = 2 SECONDS
 
@@ -101,7 +101,7 @@
 	icon_state = "ac_mag"
 	flags_magazine = NONE
 	caliber = CALIBER_20
-	max_rounds = 150
+	max_rounds = 350
 	default_ammo = /datum/ammo/bullet/dual_cannon
 	reload_delay = 5 SECONDS
 

@@ -1501,7 +1501,14 @@ Imports
 	name = "Loot box"
 	contains = list(/obj/item/loot_box/marine)
 	cost = 50
-
+/datum/supply_packs/armor/somgorgon
+	name = "SOM Gorgon armor"
+	contains = list(
+		/obj/item/weapon/gun/shotgun/som/burst,
+		/obj/item/clothing/head/modular/som/leader,
+		/obj/item/clothing/suit/modular/som/heavy/leader/valk,
+	)
+	cost = 100
 /datum/supply_packs/imports/somRPG
 	name = "SoM RPG kit"
 	contains = list(/obj/item/storage/holster/backholster/rpg/som/war_crimes)

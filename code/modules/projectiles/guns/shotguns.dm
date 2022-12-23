@@ -2,7 +2,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	force = 14.0
 	caliber = CALIBER_12G //codex
-	max_chamber_items = 8 //codex
+	max_chamber_items = 15 //codex
 	load_method = SINGLE_CASING //codex
 	fire_sound = 'sound/weapons/guns/fire/shotgun.ogg'
 	dry_fire_sound = 'sound/weapons/guns/fire/shotgun_empty.ogg'
@@ -46,7 +46,7 @@
 	fire_sound = 'sound/weapons/guns/fire/shotgun_automatic.ogg'
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
-	max_chamber_items = 9
+	max_chamber_items = 15
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
 		/obj/item/attachable/reddot,
@@ -118,7 +118,7 @@
 	desc = "A weapon-mounted, three-shot shotgun. Reloadable with any normal 12 gauge shell. The short barrel reduces the ammo's effectiveness drastically in exchange for fitting as a attachment.."
 	icon = 'icons/Marine/marine-weapons.dmi'
 	icon_state = "masterkey"
-	max_chamber_items = 2
+	max_chamber_items = 8
 	attachable_allowed = list()
 	starting_attachment_types = list()
 	slot = ATTACHMENT_SLOT_UNDER
@@ -126,7 +126,7 @@
 	detach_delay = 3 SECONDS
 	flags_gun_features = GUN_IS_ATTACHMENT|GUN_AMMO_COUNTER|GUN_ATTACHMENT_FIRE_ONLY|GUN_WIELDED_STABLE_FIRING_ONLY|GUN_CAN_POINTBLANK|GUN_WIELDED_FIRING_ONLY
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
-	damage_mult = 0.6 // 40% less damage, but MUCH higher falloff.
+	damage_mult = 1 // 40% less damage, but MUCH higher falloff.
 	damage_falloff_mult = 2
 	scatter = 3
 	fire_delay = 0.8 SECONDS // Base shotgun fire delay.
@@ -237,7 +237,7 @@
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
 	fire_sound = 'sound/weapons/guns/fire/shotgun.ogg'
 	cocked_sound = 'sound/weapons/guns/interact/shotgun_pump.ogg'
-	max_chamber_items = 8
+	max_chamber_items = 15
 	cock_delay = 1.4 SECONDS
 
 	attachable_allowed = list(
@@ -331,7 +331,7 @@
 	reload_sound = 'sound/weapons/guns/interact/mosin_reload.ogg'
 	caliber = CALIBER_762X54 //codex
 	load_method = SINGLE_CASING //codex
-	max_chamber_items = 4 //codex
+	max_chamber_items = 8 //codex
 	default_ammo_type = /datum/ammo/bullet/sniper/svd
 	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/boltclip)
 	gun_skill_category = GUN_SKILL_RIFLES
@@ -484,7 +484,7 @@
 	reload_sound = 'sound/weapons/guns/interact/mosin_reload.ogg'
 	caliber = CALIBER_44 //codex
 	load_method = SINGLE_CASING //codex
-	max_chamber_items = 9 //codex
+	max_chamber_items = 15 //codex
 	default_ammo_type = /datum/ammo/bullet/revolver/tp44
 	gun_skill_category = GUN_SKILL_RIFLES
 	cocked_sound = 'sound/weapons/guns/interact/ak47_cocked.ogg'//good enough for now.
@@ -525,7 +525,7 @@
 	reload_sound = 'sound/weapons/guns/interact/mosin_reload.ogg'
 	caliber = CALIBER_4570 //codex
 	load_method = SINGLE_CASING //codex
-	max_chamber_items = 13 //codex
+	max_chamber_items = 18 //codex
 	default_ammo_type = /datum/ammo/bullet/rifle/repeater
 	gun_skill_category = GUN_SKILL_RIFLES
 	cocked_sound = 'sound/weapons/guns/interact/ak47_cocked.ogg'//good enough for now.
@@ -569,7 +569,7 @@
 	reload_sound = 'sound/weapons/guns/interact/mosin_reload.ogg'
 	caliber = CALIBER_410
 	load_method = SINGLE_CASING
-	max_chamber_items = 9
+	max_chamber_items = 15
 	default_ammo_type = /datum/ammo/bullet/shotgun/mbx900_buckshot
 	gun_skill_category = GUN_SKILL_SHOTGUNS
 	cocked_sound = 'sound/weapons/guns/interact/ak47_cocked.ogg'
@@ -612,7 +612,7 @@
 	cock_animation = "t35_pump"
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
 	fire_sound = 'sound/weapons/guns/fire/t35.ogg'
-	max_chamber_items = 8
+	max_chamber_items = 15
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
 		/obj/item/attachable/bayonetknife,
@@ -663,7 +663,7 @@
 	icon_state = "zx-76"
 	item_state = "zx-76"
 	flags_equip_slot = ITEM_SLOT_BACK
-	max_chamber_items = 9 //codex
+	max_chamber_items = 15 //codex
 	caliber = CALIBER_12G //codex
 	load_method = SINGLE_CASING //codex
 	fire_sound = 'sound/weapons/guns/fire/shotgun_light.ogg'
@@ -714,7 +714,7 @@
 	hand_reload_sound = 'sound/weapons/guns/interact/v51_load.ogg'
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
-	max_chamber_items = 9
+	max_chamber_items = 15
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
 		/obj/item/attachable/bayonetknife,
@@ -748,10 +748,21 @@
 	name = "\improper V-51B assault shotgun"
 	desc = "V-51B custom. An upgraded version of the standard SOM shotgun with a burst fire mode and a snazzy paintjob. Rare as it is deadly."
 	icon_state = "v51b"
-	burst_amount = 2
-	burst_delay = 0.5 SECONDS
+	burst_amount = 3
+	burst_delay = 0.2 SECONDS
 	extra_delay = -0.2 SECONDS
 	default_ammo_type = /datum/ammo/bullet/shotgun/flechette
+	fire_delay = 0.2 SECONDS
+	accuracy_mult = 1.15
+	accuracy_mult_unwielded = 0.6
+	scatter = 4
+	scatter_unwielded = 16
+	damage_mult = 1.25
+	recoil = 1
+	recoil_unwielded = 4
+	aim_slowdown = 0.35
+	wield_delay = 0.3 SECONDS
+	max_chamber_items = 20
 
 /obj/item/weapon/gun/shotgun/som/burst/pointman
 	default_ammo_type = /datum/ammo/bullet/shotgun/flechette

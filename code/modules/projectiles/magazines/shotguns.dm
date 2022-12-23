@@ -13,7 +13,7 @@ one type of shotgun ammo, but I think it helps in referencing it. ~N
 	icon_state = "slugs"
 	default_ammo = /datum/ammo/bullet/shotgun/slug
 	caliber = CALIBER_12G //All shotgun rounds are 12g right now.
-	max_rounds = 75 // Real shotgun boxes are usually 5 or 25 rounds. This works with the new system, five handfuls.
+	max_rounds = 150 // Real shotgun boxes are usually 5 or 25 rounds. This works with the new system, five handfuls.
 	w_class = WEIGHT_CLASS_NORMAL // Can throw it in your pocket, friend.
 	icon_state_mini = "slugs"
 

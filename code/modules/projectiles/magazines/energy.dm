@@ -6,7 +6,7 @@
 	icon = 'icons/obj/items/ammo.dmi'
 	icon_state = "m43"
 	item_state = null
-	maxcharge = 1850 ///Changed due to the fact some maps and ERTs spawn with the child, the lasrifle. Charges on guns changed accordingly.
+	maxcharge = 2850 ///Changed due to the fact some maps and ERTs spawn with the child, the lasrifle. Charges on guns changed accordingly.
 	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "mag_cell"
 	charge_overlay = "m43"
@@ -27,7 +27,7 @@
 	desc = "An advanced, ultrahigh capacity battery used to power the M43 lasgun; has sixty percent more charge capacity than standard laspacks."
 	charge_overlay = "m43_e"
 	icon_state = "m43_e"
-	maxcharge = 3500
+	maxcharge = 4500
 
 /obj/item/cell/lasgun/pulse
 	name = "\improper M19C4 pulse battery"
@@ -52,7 +52,7 @@
 	charge_overlay = "te"
 	icon_state = "te"
 	icon_state_mini = "mag_cell_te"
-	maxcharge = 1850
+	maxcharge = 2850
 
 /obj/item/cell/lasgun/fob_sentry/cell
 	maxcharge = INFINITY
