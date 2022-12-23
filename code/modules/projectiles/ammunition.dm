@@ -240,7 +240,7 @@
 	name = "handful of airburst micro grenades (10g)"
 	icon_state = "micro_grenade_airburst"
 	current_rounds = 3
-	max_rounds = 6
+	max_rounds = 5
 	default_ammo = /datum/ammo/bullet/micro_rail/airburst
 	caliber = CALIBER_10G_RAIL
 

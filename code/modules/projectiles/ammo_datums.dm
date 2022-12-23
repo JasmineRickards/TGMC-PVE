@@ -1481,7 +1481,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	handful_icon_state = "micro_grenade_airburst"
 	flags_ammo_behavior = AMMO_BALLISTIC
 	shell_speed = 2
-	handful_amount = 3
+	handful_amount = 5
 	max_range = 3 //failure to detonate if the target is too close
 	damage = 25
 	bonus_projectiles_scatter = 12
