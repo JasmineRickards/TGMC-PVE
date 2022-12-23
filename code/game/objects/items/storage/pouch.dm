@@ -44,14 +44,14 @@
 
 /obj/item/storage/pouch/general/medium
 	name = "medium general pouch"
-	storage_slots = 2
+	storage_slots = 6
 	icon_state = "medium_drop"
 	draw_mode = 0
 
 /obj/item/storage/pouch/general/large
 	name = "general pouch"
 	storage_slots = null
-	max_storage_space = 6
+	max_storage_space = 12
 	icon_state = "large_drop"
 	draw_mode = 0
 
@@ -81,7 +81,7 @@
 		/obj/item/attachable/bayonet,
 	)
 	icon_state = "bayonet"
-	storage_slots = 3
+	storage_slots = 6
 	draw_mode = 1
 
 /obj/item/storage/pouch/bayonet/full
@@ -96,7 +96,7 @@
 	name = "survival pouch"
 	desc = "It can contain flashlights, a pill, a crowbar, metal sheets, and some bandages."
 	icon_state = "survival"
-	storage_slots = 6
+	storage_slots = 12
 	max_w_class = 3
 	can_hold = list(
 		/obj/item/flashlight,
@@ -120,7 +120,7 @@
 	name = "first-aid pouch"
 	desc = "Standard marine first-aid pouch. It can contain autoinjectors, sets of pills, and bandages."
 	icon_state = "firstaid"
-	storage_slots = 6
+	storage_slots = 12
 	can_hold = list(
 		/obj/item/reagent_containers/hypospray/autoinjector,
 		/obj/item/stack/medical,
@@ -190,8 +190,8 @@
 	name = "magazine pouch"
 	desc = "It can contain ammo magazines."
 	icon_state = "medium_ammo_mag"
-	max_w_class = 3
-	storage_slots = 2
+	max_w_class = 6
+	storage_slots = 6
 	draw_mode = 0
 	can_hold = list(
 		/obj/item/ammo_magazine/rifle,
@@ -209,17 +209,17 @@
 
 /obj/item/storage/pouch/magazine/large
 	name = "magazine pouch"
-	desc = "This pouch can contain three ammo magazines."
+	desc = "This pouch can contain six ammo magazines."
 	icon_state = "large_ammo_mag"
-	storage_slots = 3
+	storage_slots = 6
 
 /obj/item/storage/pouch/magazine/large/tx8full
 	fill_type = /obj/item/ammo_magazine/rifle/tx8
-	fill_number = 3
+	fill_number = 6
 
 /obj/item/storage/pouch/magazine/large/t19full
 	fill_type = /obj/item/ammo_magazine/smg/standard_smg
-	fill_number = 3
+	fill_number = 6
 
 /obj/item/storage/pouch/magazine/large/som
 	desc = "This pouch can contain three ammo magazines. Made with traditional SOM leather."
@@ -230,7 +230,7 @@
 	desc = "It can contain pistol and revolver ammo magazines."
 	max_w_class = 2
 	icon_state = "pistol_mag"
-	storage_slots = 3
+	storage_slots = 6
 
 	can_hold = list(
 		/obj/item/ammo_magazine/pistol,
@@ -242,7 +242,7 @@
 /obj/item/storage/pouch/magazine/pistol/large
 	name = "pistol magazine pouch"
 	desc = "This pouch can contain six pistol and revolver ammo magazines."
-	storage_slots = 6
+	storage_slots = 12
 	icon_state = "large_pistol_mag"
 
 /obj/item/storage/pouch/magazine/pistol/large/full
@@ -299,9 +299,9 @@
 
 /obj/item/storage/pouch/magazine/drum
 	name = "drum magazine pouch"
-	desc = "It can contain one drum magazine."
+	desc = "It can contain three drum magazine."
 	icon_state = "large_ammo_drum"
-	storage_slots = 1
+	storage_slots = 3
 	can_hold = list(
 		/obj/item/ammo_magazine/standard_smartmachinegun,
 	)
@@ -311,7 +311,7 @@
 	name = "explosive pouch"
 	desc = "It can contain grenades, plastiques, mine boxes, and other explosives."
 	icon_state = "large_explosive"
-	storage_slots = 4
+	storage_slots = 8
 	max_w_class = 3
 	can_hold = list(
 		/obj/item/explosive/plastique,
@@ -349,7 +349,7 @@
 	name = "Grenade pouch"
 	desc = "It can contain grenades."
 	icon_state = "explosive"
-	storage_slots = 6
+	storage_slots = 12
 	can_hold = list(
 		/obj/item/explosive/grenade,
 	)
@@ -440,7 +440,7 @@
 	name = "medical injector pouch"
 	desc = "A specialized medical pouch that can only hold auto-injectors."
 	icon_state = "firstaid_injector"
-	storage_slots = 8
+	storage_slots = 16
 	max_storage_space = 14
 	can_hold = list(/obj/item/reagent_containers/hypospray/autoinjector)
 
@@ -499,12 +499,15 @@
 	name = "medical lolipop pouch"
 	desc = "A small medical pouch with three seperate pockets to sort your medical lollipops."
 	icon_state = "medlolly"
-	storage_slots = 3
+	storage_slots = 6
 
 	can_hold = list(/obj/item/storage/box/combat_lolipop,)
 
 /obj/item/storage/pouch/med_lolipops/Initialize()
 	. = ..()
+	new /obj/item/storage/box/combat_lolipop(src)
+	new /obj/item/storage/box/combat_lolipop/tricord(src)
+	new /obj/item/storage/box/combat_lolipop/tramadol(src)
 	new /obj/item/storage/box/combat_lolipop(src)
 	new /obj/item/storage/box/combat_lolipop/tricord(src)
 	new /obj/item/storage/box/combat_lolipop/tramadol(src)
@@ -596,7 +599,7 @@
 
 /obj/item/storage/pouch/radio
 	name = "radio pouch"
-	storage_slots = 2
+	storage_slots = 4
 	icon_state = "radio"
 	draw_mode = 1
 	desc = "It can contain two handheld radios."
@@ -605,7 +608,7 @@
 
 /obj/item/storage/pouch/field_pouch
 	name = "field utility pouch"
-	storage_slots = 5
+	storage_slots = 10
 	max_w_class = 3
 	icon_state = "utility"
 	draw_mode = 1
@@ -633,7 +636,7 @@
 	name = "electronics pouch"
 	desc = "It is designed to hold most electronics, power cells and circuitboards."
 	icon_state = "electronics"
-	storage_slots = 6
+	storage_slots = 12
 	can_hold = list(
 		/obj/item/circuitboard,
 		/obj/item/cell,
@@ -649,7 +652,7 @@
 /obj/item/storage/pouch/construction
 	name = "construction pouch"
 	desc = "It's designed to hold construction materials - glass/metal sheets, metal rods, barbed wire, cable coil, and empty sandbags. It also has a hook for an entrenching tool."
-	storage_slots = 4
+	storage_slots = 8
 	max_w_class = 3
 	icon_state = "construction"
 	can_hold = list(
@@ -681,7 +684,7 @@
 /obj/item/storage/pouch/tools
 	name = "tools pouch"
 	desc = "It's designed to hold maintenance tools - screwdriver, wrench, cable coil, etc. It also has a hook for an entrenching tool."
-	storage_slots = 5
+	storage_slots = 8
 	max_w_class = 3
 	icon_state = "tools"
 	can_hold = list(
@@ -720,7 +723,7 @@
 	name = "shotgun shell pouch"
 	desc = "A pouch specialized for holding shotgun ammo."
 	icon_state = "shotshells"
-	storage_slots = 4
+	storage_slots = 14
 	draw_mode = 0
 	can_hold = list(/obj/item/ammo_magazine/handful)
 

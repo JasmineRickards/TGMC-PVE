@@ -82,9 +82,9 @@
 	desc = "The M276 is the standard load-bearing equipment of the TGMC. This configuration mounts a duffel bag filled with a range of injectors and light medical supplies and is common among medics."
 	icon_state = "medicalbag"
 	item_state = "medicbag"
-	storage_slots = 21 //can hold 3 "rows" of very limited medical equipment, but it *should* give a decent boost to squad medics.
-	max_storage_space = 42
-	max_w_class = 2
+	storage_slots = 32 //can hold 3 "rows" of very limited medical equipment, but it *should* give a decent boost to squad medics.
+	max_storage_space = 84
+	max_w_class = 3
 	can_hold = list(
 		/obj/item/healthanalyzer,
 		/obj/item/reagent_containers/glass/bottle,
@@ -95,6 +95,7 @@
 		/obj/item/reagent_containers/hypospray/autoinjector,
 		/obj/item/stack/medical,
 		/obj/item/tool/surgery/solderingtool,
+		/obj/item/defibrillator,
 	)
 
 /obj/item/storage/belt/lifesaver/full/Initialize()  //The belt, with all it's magic inside!
@@ -211,9 +212,9 @@
 	desc = "The M276 is the standard load-bearing equipment of the TGMC. It consists of a modular belt with various clips. This version is a less common configuration, designed to transport medical supplies and heavier medical tools."
 	icon_state = "medicalbelt"
 	item_state = "medical"
-	storage_slots = 16
+	storage_slots = 24
 	max_w_class = 3
-	max_storage_space = 42
+	max_storage_space = 84
 
 	can_hold = list(
 		/obj/item/healthanalyzer,
@@ -342,7 +343,7 @@
 	desc = "Can hold security gear like handcuffs and flashes, with more pouches for more storage."
 	icon_state = "swatbelt"
 	item_state = "swatbelt"
-	storage_slots = 9
+	storage_slots = 24
 	max_w_class = 3
 	max_storage_space = 21
 
@@ -352,7 +353,7 @@
 	icon_state = "marinebelt"
 	item_state = "marinebelt"
 	w_class = WEIGHT_CLASS_BULKY
-	storage_slots = 6
+	storage_slots = 24
 	max_w_class = 3
 	max_storage_space = 18
 	can_hold = list(
@@ -537,10 +538,11 @@
 	icon_state = "shotgunbelt"
 	item_state = "shotgunbelt"
 	w_class = WEIGHT_CLASS_BULKY
-	storage_slots = 14
+	storage_slots = 48
 	max_w_class = 2
 	max_storage_space = 28
-	can_hold = list(/obj/item/ammo_magazine/handful)
+	can_hold = list(/obj/item/ammo_magazine/handful,
+					/obj/item/ammo_magazine/shotgun)
 
 
 /obj/item/storage/belt/shotgun/attackby(obj/item/I, mob/user, params)
@@ -732,7 +734,7 @@
 	icon_state="grenadebelt"
 	item_state="grenadebelt"
 	w_class = WEIGHT_CLASS_BULKY
-	storage_slots = 9
+	storage_slots = 32
 	max_w_class = 3
 	max_storage_space = 27
 	can_hold = list(/obj/item/explosive/grenade)
@@ -756,7 +758,7 @@
 /obj/item/storage/belt/grenade/b17
 	name = "\improper M276 pattern M40 HEDP rig Mk II"
 	w_class = WEIGHT_CLASS_BULKY
-	storage_slots = 16
+	storage_slots = 48
 	max_w_class = 3
 	max_storage_space = 48
 	can_hold = list(/obj/item/explosive/grenade)
