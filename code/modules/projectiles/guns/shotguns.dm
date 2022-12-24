@@ -28,7 +28,7 @@
 	recoil_unwielded = 4
 	damage_mult = 2
 	movement_acc_penalty_mult = 2
-	akimbo_additional_delay = 0.15
+	akimbo_additional_delay = 0.15 SECONDS
 	lower_akimbo_accuracy = 3
 	upper_akimbo_accuracy = 5
 
@@ -64,7 +64,7 @@
 	fire_delay = 0.15 SECONDS //one shot every 1.5 seconds.
 	accuracy_mult_unwielded = 0.5 //you need to wield this gun for any kind of accuracy
 	scatter_unwielded = 10
-	akimbo_additional_delay = 0.2
+	akimbo_additional_delay = 0.2 SECONDS
 	damage_mult = 1  //normalizing gun for vendors; damage reduced by 25% to compensate for faster fire rate; still higher DPS than T-32.
 	recoil = 2
 	recoil_unwielded = 4
