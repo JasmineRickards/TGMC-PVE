@@ -514,6 +514,12 @@
 	gun_firemode = GUN_FIREMODE_SEMIAUTO
 	gun_firemode_list = list(GUN_FIREMODE_SEMIAUTO)
 
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun,
+		/obj/item/cell/lasgun/volkite/powerpack,
+		/obj/item/cell/lasgun/lasrifle,
+		)
+
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
 		/obj/item/attachable/bayonetknife,
