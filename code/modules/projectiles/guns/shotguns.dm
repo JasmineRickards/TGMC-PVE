@@ -3,7 +3,7 @@
 	force = 14.0
 	caliber = CALIBER_12G //codex
 	max_chamber_items = 15 //codex
-	load_method = SINGLE_CASING //codex
+	load_method = SINGLE_CASING|SPEEDLOADER //codex
 	fire_sound = 'sound/weapons/guns/fire/shotgun.ogg'
 	dry_fire_sound = 'sound/weapons/guns/fire/shotgun_empty.ogg'
 	reload_sound = 'sound/weapons/guns/interact/shotgun_shell_insert.ogg'
@@ -28,6 +28,7 @@
 	recoil_unwielded = 4
 	damage_mult = 2
 	movement_acc_penalty_mult = 2
+	akimbo_additional_delay = 0.15
 	lower_akimbo_accuracy = 3
 	upper_akimbo_accuracy = 5
 
@@ -63,6 +64,7 @@
 	fire_delay = 0.15 SECONDS //one shot every 1.5 seconds.
 	accuracy_mult_unwielded = 0.5 //you need to wield this gun for any kind of accuracy
 	scatter_unwielded = 10
+	akimbo_additional_delay = 0.2
 	damage_mult = 1  //normalizing gun for vendors; damage reduced by 25% to compensate for faster fire rate; still higher DPS than T-32.
 	recoil = 2
 	recoil_unwielded = 4
@@ -568,7 +570,7 @@
 	dry_fire_sound = 'sound/weapons/guns/fire/sniper_empty.ogg'
 	reload_sound = 'sound/weapons/guns/interact/mosin_reload.ogg'
 	caliber = CALIBER_410
-	load_method = SINGLE_CASING
+	load_method = SINGLE_CASING|SPEEDLOADER
 	max_chamber_items = 15
 	default_ammo_type = /datum/ammo/bullet/shotgun/mbx900_buckshot
 	gun_skill_category = GUN_SKILL_SHOTGUNS
@@ -665,7 +667,7 @@
 	flags_equip_slot = ITEM_SLOT_BACK
 	max_chamber_items = 15 //codex
 	caliber = CALIBER_12G //codex
-	load_method = SINGLE_CASING //codex
+	load_method = SPEEDLOADER //codex
 	fire_sound = 'sound/weapons/guns/fire/shotgun_light.ogg'
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
 	aim_slowdown = 0.45

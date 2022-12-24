@@ -1046,13 +1046,14 @@
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
 	)
 
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY //Its a shotgun type weapon effectively, most shotgun type weapons shouldn't be able to point blank 1 handed.
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER //Its a shotgun type weapon effectively, most shotgun type weapons shouldn't be able to point blank 1 handed.
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
 	starting_attachment_types = list(/obj/item/attachable/stock/tx15)
 	attachable_offset = list("muzzle_x" = 30, "muzzle_y" = 16,"rail_x" = 12, "rail_y" = 17, "under_x" = 20, "under_y" = 13, "stock_x" = 26, "stock_y" = 13)
 	gun_skill_category = GUN_SKILL_SHOTGUNS
 
 	fire_delay = 0.35 SECONDS
+	akimbo_additional_delay = 0.15
 	accuracy_mult = 1.15
 	burst_amount = 1
 	scatter = -2
