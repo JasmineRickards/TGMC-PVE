@@ -44,7 +44,7 @@
 	icon_state = "mk221"
 	item_state = "mk221"
 	fire_sound = 'sound/weapons/guns/fire/shotgun_automatic.ogg'
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
 	max_chamber_items = 15
 	attachable_allowed = list(
@@ -81,7 +81,7 @@
 	icon_state = "t39"
 	item_state = "t39"
 	fire_sound = 'sound/weapons/guns/fire/shotgun_automatic.ogg'
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
@@ -157,7 +157,7 @@
 		/obj/item/attachable/magnetic_harness,
 	)
 
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	reciever_flags = AMMO_RECIEVER_TOGGLES_OPEN|AMMO_RECIEVER_TOGGLES_OPEN_EJECTS|AMMO_RECIEVER_HANDFULS
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 21,"rail_x" = 15, "rail_y" = 22, "under_x" = 21, "under_y" = 16, "stock_x" = 21, "stock_y" = 16)
 
@@ -213,7 +213,7 @@
 		/obj/item/attachable/scope/mini,
 	)
 
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 17,"rail_x" = 15, "rail_y" = 19, "under_x" = 21, "under_y" = 13, "stock_x" = 13, "stock_y" = 16)
 
 	fire_delay = 0.4 SECONDS
@@ -255,7 +255,7 @@
 		/obj/item/attachable/stock/shotgun,
 	)
 
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	reciever_flags = AMMO_RECIEVER_HANDFULS|AMMO_RECIEVER_REQUIRES_UNIQUE_ACTION|AMMO_RECIEVER_UNIQUE_ACTION_LOCKS
 	cocked_message = "You rack the pump."
 	cock_locked_message = "The pump is locked! Fire it first!"
@@ -712,7 +712,7 @@
 	dry_fire_sound = 'sound/weapons/guns/fire/v51_empty.ogg'
 	reload_sound = 'sound/weapons/guns/interact/v51_load.ogg'
 	hand_reload_sound = 'sound/weapons/guns/interact/v51_load.ogg'
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
 	max_chamber_items = 15
 	attachable_allowed = list(
