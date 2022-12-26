@@ -965,6 +965,7 @@
 		/obj/item/armor_module/module/antenna,
 		/obj/item/armor_module/storage/helmet,
 		/obj/item/armor_module/armor/badge,
+		/obj/item/armor_module/module/tyr_head/som,
 	)
 
 /obj/item/clothing/suit/modular/robot

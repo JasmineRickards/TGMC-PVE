@@ -763,7 +763,7 @@
 	name = "SADAR"
 	. = ..()
 	new /obj/item/weapon/gun/launcher/rocket/sadar(src)
-//	new /obj/item/storage/backpack/marine/satchel/scout_cloak/scout(src)
+	new /obj/item/storage/backpack/marine/satchel/scout_cloak/scout(src)
 	new /obj/item/ammo_magazine/rocket/sadar/ap(src)
 	new /obj/item/ammo_magazine/rocket/sadar/ap(src)
 	new /obj/item/ammo_magazine/rocket/sadar/ap(src)
