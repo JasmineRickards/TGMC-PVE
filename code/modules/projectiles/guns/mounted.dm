@@ -383,7 +383,7 @@
 	icon_state = "tat36"
 	item_state = "tat36"
 	caliber = CALIBER_37MM // codex
-	max_shells = 1 //codex
+	max_shells = 3 //codex
 	fire_sound = 'sound/weapons/guns/fire/tat36.ogg'
 	reload_sound = 'sound/weapons/guns/interact/tat36_reload.ogg'
 	default_ammo_type = /obj/item/ammo_magazine/standard_atgun

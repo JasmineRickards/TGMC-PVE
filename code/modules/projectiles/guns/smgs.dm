@@ -37,13 +37,17 @@
 	caliber = CALIBER_10X20_CASELESS //codex
 	max_shells = 30 //codex
 	flags_equip_slot = ITEM_SLOT_BACK|ITEM_SLOT_BELT
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_IS_ATTACHMENT
 	type_of_casings = null
 	default_ammo_type = /obj/item/ammo_magazine/smg/standard_machinepistol
 	allowed_ammo_types = list(
 		/obj/item/ammo_magazine/smg/standard_machinepistol,
 		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
 		)
-
+	wield_delay_mod	= 0.2 SECONDS
+	slot = ATTACHMENT_SLOT_UNDER
+	attach_delay = 3 SECONDS
+	detach_delay = 3 SECONDS
 	w_class = WEIGHT_CLASS_NORMAL
 	attachable_allowed = list(
 		/obj/item/attachable/suppressor,
@@ -119,6 +123,7 @@
 		/obj/item/attachable/motiondetector,
 		/obj/item/attachable/buildasentry,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER

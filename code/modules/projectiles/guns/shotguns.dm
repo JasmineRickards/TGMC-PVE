@@ -57,11 +57,15 @@
 		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/stock/tactical,
 		/obj/item/weapon/gun/grenade_launcher/underslung/invisible,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 10, "rail_y" = 21, "under_x" = 14, "under_y" = 16, "stock_x" = 14, "stock_y" = 16)
 	starting_attachment_types = list(/obj/item/weapon/gun/grenade_launcher/underslung/invisible)
 
-	fire_delay = 0.2 SECONDS //one shot every 1.5 seconds.
+	fire_delay = 0.35 SECONDS //one shot every 1.5 seconds.
 	accuracy_mult_unwielded = 0.5 //you need to wield this gun for any kind of accuracy
 	scatter_unwielded = 10
 	akimbo_additional_delay = 0.2 SECONDS
@@ -99,6 +103,10 @@
 		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/motiondetector,
 		/obj/item/attachable/stock/t39stock,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	attachable_offset = list("muzzle_x" = 41, "muzzle_y" = 20,"rail_x" = 18, "rail_y" = 20, "under_x" = 23, "under_y" = 12, "stock_x" = 13, "stock_y" = 14)
@@ -157,6 +165,10 @@
 		/obj/item/attachable/gyro,
 		/obj/item/attachable/flashlight,
 		/obj/item/attachable/magnetic_harness,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
@@ -213,6 +225,10 @@
 		/obj/item/attachable/scope,
 		/obj/item/attachable/scope/marine,
 		/obj/item/attachable/scope/mini,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
@@ -255,6 +271,10 @@
 		/obj/item/attachable/compensator,
 		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/stock/shotgun,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
@@ -296,6 +316,10 @@
 		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/motiondetector,
 		/obj/item/attachable/stock/irremoveable/pal12,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 	flags_item_map_variant = NONE
 	attachable_offset = list("muzzle_x" = 38, "muzzle_y" = 19,"rail_x" = 14, "rail_y" = 19, "under_x" = 37, "under_y" = 16, "stock_x" = 15, "stock_y" = 14)
@@ -353,6 +377,10 @@
 		/obj/item/attachable/buildasentry,
 		/obj/item/attachable/stock/mosin,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 	flags_item_map_variant = NONE
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
@@ -416,6 +444,10 @@
 		/obj/item/attachable/motiondetector,
 		/obj/item/attachable/buildasentry,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
@@ -682,6 +714,7 @@
 		/obj/item/weapon/gun/flamer/mini_flamer,
 		/obj/item/weapon/gun/shotgun/combat/masterkey,
 		/obj/item/weapon/gun/grenade_launcher/underslung,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	attachable_offset = list("muzzle_x" = 40, "muzzle_y" = 17,"rail_x" = 12, "rail_y" = 23, "under_x" = 29, "under_y" = 12, "stock_x" = 13, "stock_y" = 15)
@@ -725,6 +758,7 @@
 		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/motiondetector,
 		/obj/item/attachable/reddot,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 	attachable_offset = list("muzzle_x" = 45, "muzzle_y" = 18,"rail_x" = 26, "rail_y" = 22, "under_x" = 14, "under_y" = 16, "stock_x" = 14, "stock_y" = 16)
 

@@ -71,6 +71,7 @@
 		/obj/item/attachable/buildasentry,
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
@@ -154,6 +155,7 @@
 		/obj/item/attachable/buildasentry,
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
@@ -232,6 +234,7 @@
 		/obj/item/attachable/buildasentry,
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_CAN_POINTBLANK
@@ -301,6 +304,7 @@
 		/obj/item/attachable/buildasentry,
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_CAN_POINTBLANK
@@ -369,11 +373,13 @@
 		/obj/item/attachable/buildasentry,
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
+
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC, GUN_FIREMODE_BURSTFIRE, GUN_FIREMODE_AUTOBURST)
-	starting_attachment_types = list(/obj/item/weapon/gun/grenade_launcher/underslung)
+//	starting_attachment_types = list(/obj/item/weapon/gun/grenade_launcher/underslung)
 	attachable_offset = list("muzzle_x" = 44, "muzzle_y" = 19,"rail_x" = 15, "rail_y" = 21, "under_x" = 25, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
 
 	fire_delay = 0.1 SECONDS
@@ -419,6 +425,7 @@
 		/obj/item/attachable/buildasentry,
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	attachable_offset = list("muzzle_x" = 44, "muzzle_y" = 19,"rail_x" = 15, "rail_y" = 21, "under_x" = 25, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
@@ -469,13 +476,16 @@
 		/obj/item/attachable/scope,
 		/obj/item/attachable/buildasentry,
 		/obj/item/attachable/stock/irremoveable/m41a,
-		/obj/item/weapon/gun/grenade_launcher/underslung/invisible,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC, GUN_FIREMODE_BURSTFIRE, GUN_FIREMODE_AUTOBURST)
-	starting_attachment_types = list(/obj/item/attachable/stock/irremoveable/m41a, /obj/item/weapon/gun/grenade_launcher/underslung/invisible)
+//	starting_attachment_types = list(/obj/item/attachable/stock/irremoveable/m41a, /obj/item/weapon/gun/grenade_launcher/underslung/invisible)
 	attachable_offset = list("muzzle_x" = 41, "muzzle_y" = 19,"rail_x" = 12, "rail_y" = 24, "under_x" = 24, "under_y" = 13, "stock_x" = 22, "stock_y" = 16)
 
 	burst_amount = 4
@@ -519,6 +529,7 @@
 		/obj/item/weapon/gun/grenade_launcher/underslung,
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
 		/obj/item/weapon/gun/grenade_launcher/underslung/mpi, //alt sprite, unremovable
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
@@ -598,6 +609,7 @@
 		/obj/item/attachable/buildasentry,
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
@@ -665,6 +677,7 @@
 		/obj/item/weapon/gun/flamer/mini_flamer,
 		/obj/item/weapon/gun/grenade_launcher/underslung,
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
@@ -737,6 +750,7 @@
 		/obj/item/weapon/gun/flamer/mini_flamer,
 		/obj/item/weapon/gun/grenade_launcher/underslung,
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_AMMO_COUNTER
@@ -798,6 +812,7 @@
 		/obj/item/attachable/shoulder_mount,
 		/obj/item/attachable/verticalgrip,
 		/obj/item/attachable/angledgrip,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY
@@ -868,6 +883,7 @@
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
 		/obj/item/attachable/stock/irremoveable/rifle,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY
@@ -945,6 +961,7 @@
 		/obj/item/weapon/gun/flamer/mini_flamer/unremovable,
 		/obj/item/attachable/suppressor/unremovable/invisible,
 		/obj/item/attachable/scope/unremovable,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
@@ -1044,6 +1061,7 @@
 		/obj/item/weapon/gun/flamer/mini_flamer,
 		/obj/item/weapon/gun/grenade_launcher/underslung,
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER //Its a shotgun type weapon effectively, most shotgun type weapons shouldn't be able to point blank 1 handed.
@@ -1101,6 +1119,7 @@
 		/obj/item/attachable/stock/sgstock,
 		/obj/item/attachable/sgbarrel,
 		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY|GUN_IFF
@@ -1201,6 +1220,10 @@
 		/obj/item/attachable/bayonetknife,
 		/obj/item/attachable/compensator,
 		/obj/item/attachable/bipod,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER
@@ -1255,6 +1278,7 @@
 		/obj/item/attachable/bayonet,
 		/obj/item/attachable/bayonetknife,
 		/obj/item/attachable/compensator,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
 
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER|GUN_IFF

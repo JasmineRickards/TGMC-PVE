@@ -63,7 +63,7 @@
 		)
 	flags_magazine = MAGAZINE_REFUND_IN_CHAMBER
 	caliber = CALIBER_37MM
-	max_rounds = 2
+	max_rounds = 3
 	default_ammo = /datum/ammo/rocket/atgun_shell
 	reload_delay = 2 SECONDS
 
