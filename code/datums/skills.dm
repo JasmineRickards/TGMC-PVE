@@ -384,6 +384,7 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 
 /datum/skills/pilot
 	name = PILOT_OFFICER
+	engineer = SKILL_ENGINEER_ENGI // Juuuust below ship tech
 	pilot = SKILL_PILOT_TRAINED
 	powerloader = SKILL_POWERLOADER_PRO
 	leadership = SKILL_LEAD_TRAINED
