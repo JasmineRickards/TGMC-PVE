@@ -61,7 +61,7 @@
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 10, "rail_y" = 21, "under_x" = 14, "under_y" = 16, "stock_x" = 14, "stock_y" = 16)
 	starting_attachment_types = list(/obj/item/weapon/gun/grenade_launcher/underslung/invisible)
 
-	fire_delay = 0.15 SECONDS //one shot every 1.5 seconds.
+	fire_delay = 0.2 SECONDS //one shot every 1.5 seconds.
 	accuracy_mult_unwielded = 0.5 //you need to wield this gun for any kind of accuracy
 	scatter_unwielded = 10
 	akimbo_additional_delay = 0.2 SECONDS
@@ -129,8 +129,8 @@
 	flags_gun_features = GUN_IS_ATTACHMENT|GUN_AMMO_COUNTER|GUN_ATTACHMENT_FIRE_ONLY|GUN_WIELDED_STABLE_FIRING_ONLY|GUN_CAN_POINTBLANK|GUN_WIELDED_FIRING_ONLY
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
 	damage_mult = 1 // 40% less damage, but MUCH higher falloff.
-	damage_falloff_mult = 2
-	scatter = 3
+	damage_falloff_mult = 1
+	scatter = 1
 	fire_delay = 0.8 SECONDS // Base shotgun fire delay.
 	pixel_shift_x = 14
 	pixel_shift_y = 18
@@ -687,7 +687,7 @@
 	attachable_offset = list("muzzle_x" = 40, "muzzle_y" = 17,"rail_x" = 12, "rail_y" = 23, "under_x" = 29, "under_y" = 12, "stock_x" = 13, "stock_y" = 15)
 
 	fire_delay = 0.2 SECONDS
-	damage_mult = 0.9
+	damage_mult = 1.2
 	wield_delay = 0.3 SECONDS
 	burst_amount = 2
 	burst_delay = 0.01 SECONDS //basically instantaneous two shots

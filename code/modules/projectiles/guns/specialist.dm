@@ -417,8 +417,9 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	aim_fire_delay = 0.1 SECONDS
 	aim_speed_modifier = 12
 
-	fire_delay = 0.08 SECONDS //It's a fucking minigun.
-	windup_delay = 0.4 SECONDS
+	fire_delay = 0.07 SECONDS //It's a fucking minigun.
+	windup_delay = 0.2 SECONDS
+	damage_mult = 1.15
 	windup_sound = 'sound/weapons/guns/fire/tank_minigun_start.ogg'
 	scatter = 5
 	recoil = 2
@@ -457,6 +458,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	actions_types = list()
 
 	fire_delay = 0.06 SECONDS
+	damage_mult = 1.15
 	windup_delay = 0.2 SECONDS
 	scatter = -5
 	recoil = 0

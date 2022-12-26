@@ -924,6 +924,7 @@
 		/obj/item/armor_module/armor/badge,
 		/obj/item/armor_module/module/tyr_head,
 		/obj/item/armor_module/module/hod_head,
+		/obj/item/armor_module/module/mimir_environment_protection/mimir_helmet,
 	)
 
 	starting_attachments = list(/obj/item/armor_module/storage/helmet)
