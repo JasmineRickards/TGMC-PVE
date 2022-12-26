@@ -122,3 +122,8 @@
 			A.remove_empowered_frame()
 			A.update_button_icon()
 	combo = 0
+
+/mob/living/carbon/xenomorph/warrior/on_death()
+	///We QDEL them as cleanup and preventing them from being sold
+	QDEL_IN(src, TIME_TO_DISSOLVE)
+	return ..()

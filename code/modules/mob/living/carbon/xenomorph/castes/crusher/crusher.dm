@@ -18,6 +18,10 @@
 	old_x = -16
 	old_y = -3
 
+/mob/living/carbon/xenomorph/crusher/on_death()
+	///We QDEL them as cleanup and preventing them from being sold
+	QDEL_IN(src, TIME_TO_DISSOLVE)
+	return ..()
 
 /mob/living/carbon/xenomorph/crusher/handle_special_state()
 	if(is_charging >= CHARGE_ON)

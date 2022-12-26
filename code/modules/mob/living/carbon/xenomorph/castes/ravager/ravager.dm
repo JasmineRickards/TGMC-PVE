@@ -14,6 +14,11 @@
 	pixel_x = -16
 	old_x = -16
 
+/mob/living/carbon/xenomorph/ravager/on_death()
+	///We QDEL them as cleanup and preventing them from being sold
+	QDEL_IN(src, TIME_TO_DISSOLVE)
+	return ..()
+
 // ***************************************
 // *********** Mob overrides
 // ***************************************

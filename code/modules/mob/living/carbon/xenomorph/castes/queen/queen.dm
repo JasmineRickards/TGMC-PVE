@@ -23,6 +23,11 @@
 		/mob/living/carbon/xenomorph/proc/hijack,
 	)
 
+/mob/living/carbon/xenomorph/queen/on_death()
+	///We QDEL them as cleanup and preventing them from being sold
+	QDEL_IN(src, TIME_TO_DISSOLVE)
+	return ..()
+
 // ***************************************
 // *********** Init
 // ***************************************
