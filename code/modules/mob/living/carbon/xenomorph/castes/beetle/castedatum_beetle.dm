@@ -14,14 +14,14 @@
 	melee_damage = 8
 
 	// *** Speed *** //
-	speed = 0
+	speed = 0.1
 
 	// *** Plasma *** //
 	plasma_max = 320 ///4 forward charges
 	plasma_gain = 10
 
 	// *** Health *** //
-	max_health = 260
+	max_health = 300
 
 	// *** Flags *** //
 	caste_flags = CASTE_DO_NOT_ALERT_LOW_LIFE|CASTE_IS_A_MINION

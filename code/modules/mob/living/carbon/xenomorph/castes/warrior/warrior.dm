@@ -4,8 +4,8 @@
 	desc = "A beefy, alien with an armored carapace."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Warrior Walking"
-	health = 250
-	maxHealth = 250
+	health = 350
+	maxHealth = 350
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16

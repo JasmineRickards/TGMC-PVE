@@ -14,14 +14,14 @@
 	attack_delay = 8
 
 	// *** Speed *** //
-	speed = -0.1
+	speed = -0.5
 
 	// *** Plasma *** //
 	plasma_max = 200
 	plasma_gain = 10
 
 	// *** Health *** //
-	max_health = 1850
+	max_health = 3000
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_YOUNG_THRESHOLD
@@ -79,7 +79,7 @@
 	plasma_gain = 15
 
 	// *** Health *** //
-	max_health = 1850
+	max_health = 3450
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_MATURE_THRESHOLD
@@ -108,7 +108,7 @@
 	plasma_gain = 30
 
 	// *** Health *** //
-	max_health = 1900
+	max_health = 3600
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ELDER_THRESHOLD
@@ -137,7 +137,7 @@
 	plasma_gain = 30
 
 	// *** Health *** //
-	max_health = 1900
+	max_health = 3750
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ANCIENT_THRESHOLD
@@ -166,7 +166,7 @@
 	plasma_gain = 30
 
 	// *** Health *** //
-	max_health = 2000
+	max_health = 4000
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 45, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 100, BIO = 100, FIRE = 40, ACID = 100)

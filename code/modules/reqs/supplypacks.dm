@@ -1502,19 +1502,16 @@ Imports
 	contains = list(/obj/item/loot_box/marine)
 	cost = 50
 
-/datum/supply_packs/armor/somgorgon
+/datum/supply_packs/imports/somgorgon
 	name = "SOM Gorgon armor"
 	contains = list(
 		/obj/item/clothing/head/modular/som/leader,
-		/obj/item/clothing/suit/modular/som/heavy/leader/valk,
-	)
+		/obj/item/clothing/suit/modular/som/heavy/leader/valk,)
 	cost = 80
 
-	/datum/supply_packs/armor/somgburstshot
+/datum/supply_packs/imports/somgburstshot
 	name = "V-51B Burst shotgun"
-	contains = list(
-		/obj/item/weapon/gun/shotgun/som/burst,
-	)
+	contains = list(/obj/item/weapon/gun/shotgun/som/burst,)
 	cost = 20
 
 /datum/supply_packs/imports/somRPG

@@ -13,14 +13,14 @@
 	melee_damage = 25
 
 	// *** Speed *** //
-	speed = 0
+	speed = -0.5
 
 	// *** Plasma *** //
 	plasma_max = 900
 	plasma_gain = 40
 
 	// *** Health *** //
-	max_health = 2500
+	max_health = 3500
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_YOUNG_THRESHOLD
@@ -92,7 +92,7 @@
 	plasma_gain = 50
 
 	// *** Health *** //
-	max_health = 2600
+	max_health = 3600
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_MATURE_THRESHOLD
@@ -125,7 +125,7 @@
 	plasma_gain = 60
 
 	// *** Health *** //
-	max_health = 475
+	max_health = 3700
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ELDER_THRESHOLD
@@ -158,7 +158,7 @@
 	plasma_gain = 70
 
 	// *** Health *** //
-	max_health = 2900
+	max_health = 3800
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ANCIENT_THRESHOLD

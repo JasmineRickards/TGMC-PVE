@@ -35,3 +35,7 @@
 /mob/living/carbon/xenomorph/hunter/gib_animation()
 	new /obj/effect/overlay/temp/gib_animation/xeno(loc, 0, src, "Hunter Gibbed", icon)
 
+/mob/living/carbon/xenomorph/gunter/on_death()
+	///We QDEL them as cleanup and preventing them from being sold
+	QDEL_IN(src, TIME_TO_DISSOLVE)
+	return ..()

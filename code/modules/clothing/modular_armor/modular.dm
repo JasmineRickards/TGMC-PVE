@@ -860,7 +860,7 @@
 /obj/item/clothing/suit/modular/som/heavy/leader
 	name = "\improper SOM Gorgon pattern assault armor"
 	desc = "A bulky suit of heavy combat armor, the M-35 'Gorgon' armor provides the user with superior protection without severely impacting mobility. Typically seen on SOM leaders or their most elite combat units due to the significant construction and maintenance requirements. You'll need serious firepower to punch through this. Alt-Click to remove attached items. Use it to toggle the built-in flashlight."
-	soft_armor = list(MELEE = 60, BULLET = 80, LASER = 70, ENERGY = 70, BOMB = 60, BIO = 55, FIRE = 65, ACID = 55)
+	soft_armor = list(MELEE = 65, BULLET = 80, LASER = 70, ENERGY = 70, BOMB = 60, BIO = 55, FIRE = 65, ACID = 55)
 	icon_state = "som_leader"
 	item_state = "som_leader"
 
@@ -871,6 +871,7 @@
 		/obj/item/armor_module/module/better_shoulder_lamp,
 		/obj/item/armor_module/module/valkyrie_autodoc,
 		/obj/item/armor_module/module/fire_proof/som,
+		/obj/item/armor_module/module/tyr_extra_armor/som,
 		/obj/item/armor_module/module/mimir_environment_protection/som,
 		/obj/item/armor_module/module/hlin_explosive_armor,
 		/obj/item/armor_module/module/eshield/som,
@@ -883,6 +884,10 @@
 		/obj/item/armor_module/storage/grenade,
 		/obj/item/armor_module/storage/integrated,
 		/obj/item/armor_module/armor/badge,
+		/obj/item/armor_module/module/eshield/mk2,
+		/obj/item/armor_module/module/fire_proof/mk2,
+		/obj/item/armor_module/module/tyr_extra_armor,
+		/obj/item/armor_module/module/tyr_extra_armor/mark1,
 	)
 
 /obj/item/clothing/suit/modular/som/heavy/leader/valk
@@ -903,7 +908,7 @@
 		slot_r_hand_str = 'icons/mob/items_righthand_1.dmi',)
 	icon_state = "som_helmet"
 	item_state = "som_helmet"
-	soft_armor = list(MELEE = 45, BULLET = 70, LASER = 60, ENERGY = 60, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 65, BULLET = 70, LASER = 60, ENERGY = 60, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 	greyscale_config = null
 	greyscale_colors = null
 	flags_inv_hide = HIDEEARS|HIDEALLHAIR
@@ -917,6 +922,8 @@
 		/obj/item/armor_module/module/antenna,
 		/obj/item/armor_module/storage/helmet,
 		/obj/item/armor_module/armor/badge,
+		/obj/item/armor_module/module/tyr_head,
+		/obj/item/armor_module/module/hod_head,
 	)
 
 	starting_attachments = list(/obj/item/armor_module/storage/helmet)

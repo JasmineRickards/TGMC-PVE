@@ -11,7 +11,7 @@
 	wound_type = "hunter" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = 21
+	melee_damage = 25
 	attack_delay = 7
 
 	// *** Speed *** //
@@ -23,7 +23,7 @@
 	plasma_gain = 10
 
 	// *** Health *** //
-	max_health = 250
+	max_health = 350
 
 	// *** Evolution *** //
 	evolution_threshold = 180
@@ -84,7 +84,7 @@
 	plasma_gain = 15
 
 	// *** Health *** //
-	max_health = 250
+	max_health = 350
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_MATURE_THRESHOLD
@@ -139,7 +139,7 @@
 	plasma_gain = 18
 
 	// *** Health *** //
-	max_health = 290
+	max_health = 490
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ANCIENT_THRESHOLD
@@ -167,7 +167,7 @@
 	plasma_gain = 18
 
 	// *** Health *** //
-	max_health = 290
+	max_health = 590
 	// *** Defense *** //
 	soft_armor = list(MELEE = 55, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 0, BIO = 18, FIRE = 30, ACID = 18)
 

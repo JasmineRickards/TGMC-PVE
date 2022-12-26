@@ -80,7 +80,7 @@
 	plasma_gain = 25
 
 	// *** Health *** //
-	max_health = 270
+	max_health = 370
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_MATURE_THRESHOLD
@@ -110,7 +110,7 @@
 	plasma_gain = 28
 
 	// *** Health *** //
-	max_health = 290
+	max_health = 490
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ELDER_THRESHOLD
@@ -140,7 +140,7 @@
 	plasma_gain = 30
 
 	// *** Health *** //
-	max_health = 310
+	max_health = 410
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ANCIENT_THRESHOLD
@@ -168,7 +168,7 @@
 	plasma_gain = 30
 
 	// *** Health *** //
-	max_health = 310
+	max_health = 510
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 25, BULLET = 35, LASER = 35, ENERGY = 35, BOMB = 0, BIO = 20, FIRE = 35, ACID = 20)
