@@ -49,6 +49,7 @@
 	attach_delay = 3 SECONDS
 	detach_delay = 3 SECONDS
 	w_class = WEIGHT_CLASS_NORMAL
+	placed_overlay_iconstate = "t19"
 	attachable_allowed = list(
 		/obj/item/attachable/suppressor,
 		/obj/item/attachable/reddot,
