@@ -3,8 +3,8 @@
 /turf/closed/mineral/smooth,
 /area/lv624/ground/caves/rock)
 "aq" = (
-/turf/open/ground/coast/corner{
-	dir = 1
+/turf/open/ground/coast{
+	dir = 4
 	},
 /area/lv624/ground/caves/central2)
 "aI" = (
@@ -98,8 +98,8 @@
 /turf/open/floor/plating/ground/dirt,
 /area/lv624/ground/caves/central2)
 "gz" = (
-/turf/open/ground/coast/corner{
-	dir = 4
+/turf/open/ground/coast{
+	dir = 1
 	},
 /area/lv624/ground/caves/central2)
 "gA" = (
@@ -138,7 +138,8 @@
 /area/lv624/ground/caves/central2)
 "ir" = (
 /turf/open/ground/coast{
-	dir = 1
+	dir = 1;
+	icon_state = "beachcorner"
 	},
 /area/lv624/ground/caves/central2)
 "iL" = (
@@ -217,8 +218,9 @@
 /turf/open/ground/coast,
 /area/lv624/ground/caves/central2)
 "qv" = (
-/turf/open/ground/coast/corner{
-	dir = 8
+/turf/open/ground/coast{
+	dir = 8;
+	icon_state = "beachcorner"
 	},
 /area/lv624/ground/caves/central2)
 "qz" = (
@@ -259,7 +261,8 @@
 /area/lv624/ground/caves/central2)
 "tE" = (
 /turf/open/ground/coast{
-	dir = 4
+	dir = 4;
+	icon_state = "beachcorner"
 	},
 /area/lv624/ground/caves/central2)
 "ui" = (
@@ -589,7 +592,9 @@
 	},
 /area/lv624/ground/caves/central2)
 "OG" = (
-/turf/open/ground/coast/corner,
+/turf/open/ground/coast{
+	icon_state = "beachcorner"
+	},
 /area/lv624/ground/caves/central2)
 "OX" = (
 /obj/effect/ai_node,
@@ -619,8 +624,9 @@
 	},
 /area/lv624/ground/caves/central1)
 "Qn" = (
-/turf/open/ground/coast/corner2{
-	dir = 8
+/turf/open/ground/coast{
+	dir = 8;
+	icon_state = "beachcorner2"
 	},
 /area/lv624/ground/caves/central2)
 "QR" = (
@@ -2617,7 +2623,7 @@ iL
 lx
 bD
 OG
-tE
+aq
 qv
 MN
 aa
@@ -2653,7 +2659,7 @@ lx
 OG
 MC
 ik
-ir
+gz
 lx
 aa
 "}
@@ -2688,7 +2694,7 @@ OG
 MC
 Au
 Dr
-ir
+gz
 lx
 aa
 "}
@@ -2723,7 +2729,7 @@ MC
 ik
 ik
 ik
-ir
+gz
 lx
 aa
 "}
@@ -2758,7 +2764,7 @@ ik
 ik
 ik
 Au
-ir
+gz
 VH
 aa
 "}
@@ -2793,7 +2799,7 @@ ik
 Dr
 ik
 Qn
-gz
+tE
 lx
 aa
 "}
@@ -2827,7 +2833,7 @@ Au
 ik
 ik
 Qn
-gz
+tE
 lx
 aa
 aa
@@ -2857,11 +2863,11 @@ KP
 KP
 lx
 MN
-aq
+ir
 Un
 Un
 Un
-gz
+tE
 lx
 aa
 aa

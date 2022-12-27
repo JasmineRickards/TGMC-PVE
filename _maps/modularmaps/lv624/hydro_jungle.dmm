@@ -546,10 +546,13 @@
 	},
 /area/lv624/ground/jungle9)
 "Vg" = (
-/obj/machinery/door/poddoor/mainship/open{
+/obj/machinery/door/poddoor/mainship{
+	density = 0;
 	dir = 2;
+	icon_state = "pdoor0";
 	id = "nexus_blast";
 	name = "\improper Nexus Blast Door";
+	opacity = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/door/airlock/mainship/secure{

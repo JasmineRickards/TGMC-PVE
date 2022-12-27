@@ -6,7 +6,7 @@
 	if(next_move > world.time)
 		return
 
-	if(incapacitated())
+	if(istype(loc, /obj/vehicle/multitile/root/cm_armored))
 		return
 
 	if(hand)

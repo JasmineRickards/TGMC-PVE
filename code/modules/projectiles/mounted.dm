@@ -8,7 +8,7 @@
 	use_power = FALSE
 	hud_possible = list(MACHINE_HEALTH_HUD, MACHINE_AMMO_HUD)
 	flags_atom = ON_BORDER
-	flags_pass = PASSABLE
+	throwpass = TRUE
 	///Store user old pixel x
 	var/user_old_x = 0
 	///Store user old pixel y

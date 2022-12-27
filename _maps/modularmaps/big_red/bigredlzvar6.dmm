@@ -433,7 +433,9 @@
 /turf/open/floor/tile/dark,
 /area/bigredv2/outside/marshal_office)
 "mh" = (
-/obj/structure/prop/mainship/telecomms,
+/obj/structure/showcase{
+	icon_state = "broadcaster_send"
+	},
 /turf/open/floor/podhatch/floor,
 /area/bigredv2/outside/telecomm)
 "mi" = (
@@ -2044,7 +2046,9 @@
 /turf/open/floor/tile/green/whitegreenfull,
 /area/bigredv2/outside/marshal_office)
 "YQ" = (
-/obj/structure/prop/mainship/telecomms/bus,
+/obj/structure/showcase{
+	icon_state = "bus"
+	},
 /turf/open/floor/podhatch/floor,
 /area/bigredv2/outside/telecomm)
 "Ze" = (

@@ -47,19 +47,23 @@
 
 /turf/open/ground/river/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	. = ..()
-	if(has_catwalk || !iscarbon(arrived))
+	if(has_catwalk)
 		return
-	var/mob/living/carbon/C = arrived
-	C.clean_mob()
+	if(iscarbon(arrived))
+		var/mob/living/carbon/C = arrived
+		var/river_slowdown = 1.75
+		C.clean_mob()
 
-	if(isxeno(C))
-		var/mob/living/carbon/xenomorph/xeno = C
-		xeno.next_move_slowdown += xeno.xeno_caste.snow_slowdown
-	else
-		C.next_move_slowdown += 1.75
+		if(isxeno(C))
+			if(!isxenoboiler(C))
+				river_slowdown = 1.3
+			else
+				river_slowdown = -0.5
 
-	if(C.on_fire)
-		C.ExtinguishMob()
+		if(C.on_fire)
+			C.ExtinguishMob()
+
+		C.next_move_slowdown += river_slowdown
 
 /turf/open/ground/river/poison/Initialize()
 	. = ..()
@@ -74,7 +78,7 @@
 	if(!isliving(arrived))
 		return
 	var/mob/living/L = arrived
-	L.apply_damage(55, TOX, blocked = BIO)
+	L.apply_damage(55, TOX)
 	UPDATEHEALTH(L)
 
 

@@ -92,7 +92,9 @@
 	},
 /area/bigredv2/outside/space_port)
 "cX" = (
-/obj/structure/prop/mainship/telecomms,
+/obj/structure/showcase{
+	icon_state = "broadcaster_send"
+	},
 /turf/open/floor/podhatch/floor,
 /area/bigredv2/outside/telecomm)
 "df" = (
@@ -1209,7 +1211,9 @@
 /turf/open/floor/tile/dark,
 /area/bigredv2/outside/space_port)
 "HX" = (
-/obj/structure/prop/mainship/telecomms/bus,
+/obj/structure/showcase{
+	icon_state = "bus"
+	},
 /turf/open/floor/podhatch/floor,
 /area/bigredv2/outside/telecomm)
 "Ic" = (

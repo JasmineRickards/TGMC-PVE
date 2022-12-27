@@ -150,8 +150,8 @@
 		. = "es"
 
 
-//atoms also have gender! mostly only matters for singular/plural outside mobs, but you can have a male hat if you really want
-/atom/p_they(capitalized, temp_gender)
+//mobs(and atoms but atoms don't really matter write your own proc overrides) also have gender!
+/mob/p_they(capitalized, temp_gender)
 	if(!temp_gender)
 		temp_gender = gender
 	. = "it"
@@ -166,7 +166,7 @@
 		. = capitalize(.)
 
 
-/atom/p_their(capitalized, temp_gender)
+/mob/p_their(capitalized, temp_gender)
 	if(!temp_gender)
 		temp_gender = gender
 	. = "its"
@@ -181,7 +181,7 @@
 		. = capitalize(.)
 
 
-/atom/p_them(capitalized, temp_gender)
+/mob/p_them(capitalized, temp_gender)
 	if(!temp_gender)
 		temp_gender = gender
 	. = "it"
@@ -196,7 +196,7 @@
 		. = capitalize(.)
 
 
-/atom/p_have(temp_gender)
+/mob/p_have(temp_gender)
 	if(!temp_gender)
 		temp_gender = gender
 	. = "has"
@@ -204,7 +204,7 @@
 		. = "have"
 
 
-/atom/p_are(temp_gender)
+/mob/p_are(temp_gender)
 	if(!temp_gender)
 		temp_gender = gender
 	. = "is"
@@ -212,7 +212,7 @@
 		. = "are"
 
 
-/atom/p_were(temp_gender)
+/mob/p_were(temp_gender)
 	if(!temp_gender)
 		temp_gender = gender
 	. = "was"
@@ -220,7 +220,7 @@
 		. = "were"
 
 
-/atom/p_do(temp_gender)
+/mob/p_do(temp_gender)
 	if(!temp_gender)
 		temp_gender = gender
 	. = "does"
@@ -228,14 +228,14 @@
 		. = "do"
 
 
-/atom/p_s(temp_gender)
+/mob/p_s(temp_gender)
 	if(!temp_gender)
 		temp_gender = gender
 	if(temp_gender != PLURAL)
 		. = "s"
 
 
-/atom/p_es(temp_gender)
+/mob/p_es(temp_gender)
 	if(!temp_gender)
 		temp_gender = gender
 	if(temp_gender != PLURAL)

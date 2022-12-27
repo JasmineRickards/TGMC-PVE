@@ -433,7 +433,7 @@
 	var/left_click = pa.Find("left")
 	if (launcherActivated)
 		//Clicking on UI elements shouldn't launch a pod
-		if(istype(target,/atom/movable/screen))
+		if(istype(target,/obj/screen))
 			return FALSE
 
 		. = TRUE

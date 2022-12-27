@@ -31,8 +31,6 @@
 /turf/open/floor/plating/icefloor/warnplate
 	icon_state = "warnplate"
 
-/turf/open/floor/plating/icefloor/warnplate/corner
-	icon_state = "warnplatecorner"
 
 /turf/open/floor/plating/plating_catwalk
 	icon = 'icons/turf/mainship.dmi'
@@ -134,11 +132,10 @@
 /turf/open/floor/plating/dmg1
 	icon_state = "platingdmg1"
 
+
 /turf/open/floor/plating/dmg2
 	icon_state = "platingdmg2"
 
+
 /turf/open/floor/plating/dmg3
 	icon_state = "platingdmg3"
-
-/turf/open/floor/plating/scorched
-	icon_state = "panelscorched"

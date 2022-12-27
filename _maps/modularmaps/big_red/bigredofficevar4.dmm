@@ -353,7 +353,8 @@
 /area/bigredv2/outside/office_complex)
 "ne" = (
 /obj/structure/table,
-/obj/structure/flora/pottedplant/fifteen{
+/obj/structure/flora/pottedplant{
+	icon_state = "plant-15";
 	pixel_y = 10
 	},
 /turf/open/floor/tile/white,
@@ -1181,7 +1182,8 @@
 /area/bigredv2/outside/office_complex)
 "RA" = (
 /obj/structure/table,
-/obj/structure/flora/pottedplant/fifteen{
+/obj/structure/flora/pottedplant{
+	icon_state = "plant-15";
 	pixel_y = 10
 	},
 /turf/open/floor/grimy,

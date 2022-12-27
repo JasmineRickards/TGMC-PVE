@@ -63,7 +63,7 @@ GLOBAL_LIST_INIT(greyscale_weapons_data, generate_greyscale_weapons_data())
 			"ammo_type" = initial(ammo.ammo_type),
 		))
 
-/atom/movable/screen/mech_builder_view
+/obj/screen/mech_builder_view
 	name = "Mech preview"
 	del_on_map_removal = FALSE
 	layer = OBJ_LAYER
@@ -71,16 +71,16 @@ GLOBAL_LIST_INIT(greyscale_weapons_data, generate_greyscale_weapons_data())
 	///list of plane masters to apply to owners
 	var/list/plane_masters = list()
 
-/atom/movable/screen/mech_builder_view/Initialize(mapload)
+/obj/screen/mech_builder_view/Initialize(mapload)
 	. = ..()
 	assigned_map = "mech_preview_[REF(src)]"
 	set_position(1, 1)
-	for(var/plane_master_type in subtypesof(/atom/movable/screen/plane_master) - /atom/movable/screen/plane_master/blackness)
-		var/atom/movable/screen/plane_master/plane_master = new plane_master_type()
+	for(var/plane_master_type in subtypesof(/obj/screen/plane_master) - /obj/screen/plane_master/blackness)
+		var/obj/screen/plane_master/plane_master = new plane_master_type()
 		plane_master.screen_loc = "[assigned_map]:CENTER"
 		plane_masters += plane_master
 
-/atom/movable/screen/mech_builder_view/Destroy()
+/obj/screen/mech_builder_view/Destroy()
 	QDEL_LIST(plane_masters)
 	return ..()
 
@@ -129,7 +129,9 @@ GLOBAL_LIST_INIT(greyscale_weapons_data, generate_greyscale_weapons_data())
 	///List of max equipment that we're allowed to attach while using this console
 	var/equipment_max = MECH_GREYSCALE_MAX_EQUIP
 	///reference to the mech screen object
-	var/atom/movable/screen/mech_builder_view/mech_view
+	var/obj/screen/mech_builder_view/mech_view
+	///bool if the mech is currently assembling, stops Ui actions
+	var/currently_assembling = FALSE
 	///list of stat data that will be sent to the UI
 	var/list/current_stats
 
@@ -179,6 +181,8 @@ GLOBAL_LIST_INIT(greyscale_weapons_data, generate_greyscale_weapons_data())
 		return FALSE
 
 /obj/machinery/computer/mech_builder/ui_interact(mob/user, datum/tgui/ui)
+	if(currently_assembling)
+		return
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(ui)
 		return
@@ -215,7 +219,6 @@ GLOBAL_LIST_INIT(greyscale_weapons_data, generate_greyscale_weapons_data())
 	data["selected_name"] = selected_name
 	data["selected_equipment"] = selected_equipment
 	data["current_stats"] = current_stats
-	data["cooldown_left"] = S_TIMER_COOLDOWN_TIMELEFT(src, COOLDOWN_MECHA)
 	return data
 
 /obj/machinery/computer/mech_builder/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
@@ -223,7 +226,7 @@ GLOBAL_LIST_INIT(greyscale_weapons_data, generate_greyscale_weapons_data())
 	if(.)
 		return
 
-	if(S_TIMER_COOLDOWN_TIMELEFT(src, COOLDOWN_MECHA))
+	if(currently_assembling)
 		return FALSE
 	var/selected_part = params["bodypart"]
 	if(selected_part && !(selected_part in selected_primary))
@@ -288,10 +291,11 @@ GLOBAL_LIST_INIT(greyscale_weapons_data, generate_greyscale_weapons_data())
 					return FALSE
 			if(isnull(selected_visor))
 				return FALSE
+			currently_assembling = TRUE
 			addtimer(CALLBACK(src, .proc/deploy_mech), 1 SECONDS)
 			playsound(get_step(src, dir), 'sound/machines/elevator_move.ogg', 50, 0)
-			S_TIMER_COOLDOWN_START(src, COOLDOWN_MECHA, 5 MINUTES)
-			return TRUE
+			ui.close()
+			return FALSE
 
 		if("add_weapon")
 			var/obj/item/mecha_parts/mecha_equipment/weapon/new_type = text2path(params["type"])
@@ -378,6 +382,7 @@ GLOBAL_LIST_INIT(greyscale_weapons_data, generate_greyscale_weapons_data())
 		var/datum/mech_limb/limb = new limb_type()
 		limb.update_colors(selected_primary[slot], selected_secondary[slot], selected_visor)
 		limb.attach(mech, slot)
+	currently_assembling = FALSE
 	if(selected_equipment[MECHA_L_ARM])
 		var/new_type = selected_equipment[MECHA_L_ARM]
 		var/obj/item/mecha_parts/mecha_equipment/weapon/new_gun = new new_type
@@ -392,9 +397,6 @@ GLOBAL_LIST_INIT(greyscale_weapons_data, generate_greyscale_weapons_data())
 
 	mech.pixel_y = 240
 	animate(mech, time=4 SECONDS, pixel_y=initial(mech.pixel_y), easing=SINE_EASING|EASE_OUT)
-
-	balloon_alert_to_viewers("Beep. Mecha ready for use.")
-	playsound(src, 'sound/machines/chime.ogg', 30, 1)
 
 ///updates the current_stats data for the UI
 /obj/machinery/computer/mech_builder/proc/update_stats(selected_part, old_bodytype, new_bodytype)

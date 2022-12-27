@@ -71,8 +71,7 @@ GLOBAL_LIST_EMPTY(surgery_steps)
 /datum/surgery_step/proc/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool, datum/limb/affected)
 	return null
 
-//TODO why is this not a proc on the actual limb??
-/proc/spread_germs_to_organ(datum/limb/E, mob/living/carbon/human/user)
+proc/spread_germs_to_organ(datum/limb/E, mob/living/carbon/human/user)
 	if(!istype(user) || !istype(E))
 		return
 
@@ -111,7 +110,7 @@ GLOBAL_LIST_EMPTY(surgery_steps)
 		E.germ_level += 100
 
 
-/proc/do_surgery(mob/living/carbon/M, mob/living/user, obj/item/tool)
+proc/do_surgery(mob/living/carbon/M, mob/living/user, obj/item/tool)
 	if(!istype(M))
 		return FALSE
 	if(user.a_intent == INTENT_HARM) //Check for Hippocratic Oath

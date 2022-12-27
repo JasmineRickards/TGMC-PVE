@@ -404,6 +404,7 @@
 "AC" = (
 /obj/machinery/light{
 	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/open/floor/plating,
 /area/bigredv2/outside/nw)
@@ -423,6 +424,7 @@
 "Cq" = (
 /obj/machinery/light{
 	dir = 1;
+	icon_state = "tube1"
 	},
 /obj/structure/largecrate/random/case/small,
 /turf/open/floor/plating,
@@ -487,6 +489,7 @@
 "Gb" = (
 /obj/machinery/light{
 	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/open/floor/plating,
 /area/bigredv2/outside/nw)

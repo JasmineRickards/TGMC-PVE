@@ -10,7 +10,9 @@
 	pixel_x = -7;
 	pixel_y = 11
 	},
-/turf/open/floor/wood/broken,
+/turf/open/floor/wood{
+	icon_state = "wood-broken1"
+	},
 /area/lv624/ground/caves/central2)
 "aT" = (
 /obj/item/ammo_casing/shell,
@@ -59,7 +61,9 @@
 	},
 /area/lv624/ground/caves/central1)
 "iX" = (
-/turf/open/floor/wood/broken/three,
+/turf/open/floor/wood{
+	icon_state = "wood-broken3"
+	},
 /area/lv624/ground/caves/central2)
 "jd" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -177,7 +181,9 @@
 /area/lv624/ground/caves/central2)
 "sb" = (
 /obj/effect/decal/cleanable/blood/drip,
-/turf/open/floor/wood/broken/four,
+/turf/open/floor/wood{
+	icon_state = "wood-broken4"
+	},
 /area/lv624/ground/caves/central2)
 "sp" = (
 /obj/structure/rack,
@@ -196,7 +202,9 @@
 /obj/structure/barricade/sandbags{
 	dir = 1
 	},
-/turf/open/floor/wood/broken/six,
+/turf/open/floor/wood{
+	icon_state = "wood-broken6"
+	},
 /area/lv624/ground/caves/central2)
 "wg" = (
 /turf/open/ground/coast{
@@ -228,7 +236,9 @@
 /area/lv624/ground/caves/central1)
 "yw" = (
 /obj/effect/landmark/weed_node,
-/turf/open/floor/wood/broken/six,
+/turf/open/floor/wood{
+	icon_state = "wood-broken6"
+	},
 /area/lv624/ground/caves/central2)
 "yC" = (
 /obj/effect/spawner/random/trash,
@@ -256,7 +266,9 @@
 /area/lv624/ground/caves/central1)
 "BI" = (
 /obj/effect/ai_node,
-/turf/open/floor/wood/broken,
+/turf/open/floor/wood{
+	icon_state = "wood-broken1"
+	},
 /area/lv624/ground/caves/central2)
 "Ce" = (
 /obj/effect/decal/cleanable/dirt,
@@ -320,7 +332,9 @@
 /turf/open/floor/wood,
 /area/lv624/ground/caves/central2)
 "Jh" = (
-/turf/open/floor/wood/broken/seven,
+/turf/open/floor/wood{
+	icon_state = "wood-broken7"
+	},
 /area/lv624/ground/caves/central2)
 "JW" = (
 /obj/effect/ai_node,
@@ -343,7 +357,9 @@
 "Lt" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/spawner/random/gun/sidearms,
-/turf/open/floor/wood/broken,
+/turf/open/floor/wood{
+	icon_state = "wood-broken1"
+	},
 /area/lv624/ground/caves/central2)
 "LD" = (
 /obj/structure/rack,
@@ -371,7 +387,9 @@
 /area/lv624/ground/caves/central2)
 "Nl" = (
 /obj/item/paper/crumpled/bloody,
-/turf/open/floor/wood/broken/seven,
+/turf/open/floor/wood{
+	icon_state = "wood-broken7"
+	},
 /area/lv624/ground/caves/central2)
 "Np" = (
 /obj/structure/table/woodentable,
@@ -400,7 +418,9 @@
 /area/lv624/ground/caves/central1)
 "QD" = (
 /obj/effect/decal/cleanable/blood/drip,
-/turf/open/floor/wood/broken/six,
+/turf/open/floor/wood{
+	icon_state = "wood-broken6"
+	},
 /area/lv624/ground/caves/central2)
 "QH" = (
 /obj/effect/landmark/xeno_resin_door,
@@ -504,10 +524,14 @@
 	pixel_y = 6
 	},
 /obj/effect/spawner/random/ammo/machinegun,
-/turf/open/floor/wood/broken/four,
+/turf/open/floor/wood{
+	icon_state = "wood-broken4"
+	},
 /area/lv624/ground/caves/central2)
 "Za" = (
-/turf/open/floor/wood/broken/six,
+/turf/open/floor/wood{
+	icon_state = "wood-broken6"
+	},
 /area/lv624/ground/caves/central2)
 "Zg" = (
 /obj/item/stack/sheet/wood,
