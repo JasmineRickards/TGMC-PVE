@@ -276,6 +276,7 @@
 "gt" = (
 /obj/effect/attach_point/weapon/dropship1{
 	dir = 8;
+	icon_state = "equip_base_l_wing"
 	},
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 8
@@ -291,7 +292,9 @@
 /turf/open/floor/tile/white,
 /area/bigredv2/outside/marshal_office)
 "gC" = (
-/obj/structure/prop/mainship/telecomms,
+/obj/structure/showcase{
+	icon_state = "broadcaster_send"
+	},
 /turf/open/floor/podhatch/floor,
 /area/bigredv2/outside/telecomm)
 "gF" = (
@@ -334,7 +337,9 @@
 	},
 /area/bigredv2/outside/space_port)
 "hs" = (
-/obj/structure/prop/mainship/telecomms/bus,
+/obj/structure/showcase{
+	icon_state = "bus"
+	},
 /turf/open/floor/podhatch/floor,
 /area/bigredv2/outside/telecomm)
 "hx" = (

@@ -12,7 +12,6 @@
 	tier = XENO_TIER_THREE
 	upgrade = XENO_UPGRADE_ZERO
 	mob_size = MOB_SIZE_BIG
-	bubble_icon = "alienroyal"
 
 /mob/living/carbon/xenomorph/gorger/Initialize(mapload)
 	. = ..()

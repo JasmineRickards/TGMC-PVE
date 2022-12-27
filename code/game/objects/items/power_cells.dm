@@ -84,9 +84,8 @@
 	icon_state = "icell"
 	maxcharge = 30000
 	materials = list(/datum/material/metal = 700, /datum/material/glass = 80)
-
-/obj/item/cell/infinite/use()
-	return TRUE
+	use()
+		return 1
 
 /obj/item/cell/potato
 	name = "potato battery"

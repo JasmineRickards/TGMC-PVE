@@ -6,7 +6,7 @@
 	anchored = TRUE
 	opacity = TRUE
 	density = TRUE
-	flags_pass = NONE
+	throwpass = FALSE
 	move_resist = MOVE_FORCE_VERY_STRONG
 	layer = DOOR_OPEN_LAYER
 	explosion_block = 2

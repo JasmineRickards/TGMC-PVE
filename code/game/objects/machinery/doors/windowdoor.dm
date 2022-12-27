@@ -12,7 +12,6 @@
 	visible = FALSE
 	use_power = FALSE
 	flags_atom = ON_BORDER
-	flags_pass = PASSLASER
 	opacity = FALSE
 	var/obj/item/circuitboard/airlock/electronics = null
 

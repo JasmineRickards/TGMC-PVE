@@ -994,7 +994,9 @@
 /turf/open/floor/tile/dark,
 /area/bigredv2/outside/space_port)
 "zj" = (
-/obj/structure/prop/mainship/telecomms,
+/obj/structure/showcase{
+	icon_state = "broadcaster_send"
+	},
 /turf/open/floor/podhatch/floor,
 /area/bigredv2/outside/telecomm)
 "zw" = (
@@ -1726,7 +1728,9 @@
 /turf/open/floor/tile/white,
 /area/bigredv2/outside/marshal_office)
 "RN" = (
-/obj/structure/prop/mainship/telecomms/bus,
+/obj/structure/showcase{
+	icon_state = "bus"
+	},
 /turf/open/floor/podhatch/floor,
 /area/bigredv2/outside/telecomm)
 "RO" = (
@@ -1789,6 +1793,7 @@
 "Tk" = (
 /obj/effect/attach_point/weapon/dropship1{
 	dir = 8;
+	icon_state = "equip_base_l_wing"
 	},
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 8

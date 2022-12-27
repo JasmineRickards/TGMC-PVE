@@ -1,59 +1,59 @@
-/atom/movable/screen/ghost
+/obj/screen/ghost
 	icon = 'icons/mob/screen_ghost.dmi'
 
-/atom/movable/screen/ghost/MouseEntered()
+/obj/screen/ghost/MouseEntered()
 	flick(icon_state + "_anim", src)
 
-/atom/movable/screen/ghost/follow_ghosts
+/obj/screen/ghost/follow_ghosts
 	name = "Follow"
 	icon_state = "follow_ghost"
 
-/atom/movable/screen/ghost/follow_ghosts/Click()
+/obj/screen/ghost/follow_ghosts/Click()
 	var/mob/dead/observer/G = usr
 	G.follow()
 
-// /atom/movable/screen/ghost/follow_xeno
+// /obj/screen/ghost/follow_xeno
 // 	name = "Follow Xeno"
 // 	icon_state = "follow_xeno"
 
-// /atom/movable/screen/ghost/follow_xeno/Click()
+// /obj/screen/ghost/follow_xeno/Click()
 // 	var/mob/dead/observer/G = usr
 // 	G.follow_xeno()
 
-// /atom/movable/screen/ghost/follow_human
+// /obj/screen/ghost/follow_human
 // 	name = "Follow Humans"
 // 	icon_state = "follow_human"
 
-// /atom/movable/screen/ghost/follow_human/Click()
+// /obj/screen/ghost/follow_human/Click()
 // 	var/mob/dead/observer/G = usr
 // 	G.follow_human()
 
-/atom/movable/screen/ghost/reenter_corpse
+/obj/screen/ghost/reenter_corpse
 	name = "Reenter corpse"
 	icon_state = "reenter_corpse"
 
-/atom/movable/screen/ghost/reenter_corpse/Click()
+/obj/screen/ghost/reenter_corpse/Click()
 	var/mob/dead/observer/G = usr
 	G.reenter_corpse()
 
 
 /datum/hud/ghost/New(mob/owner, ui_style='icons/mob/screen/white.dmi', ui_color, ui_alpha = 230)
 	. = ..()
-	var/atom/movable/screen/using
+	var/obj/screen/using
 
-	using = new /atom/movable/screen/ghost/follow_ghosts()
+	using = new /obj/screen/ghost/follow_ghosts()
 	using.screen_loc = ui_ghost_slot2
 	static_inventory += using
 
-	// using = new /atom/movable/screen/ghost/follow_xeno()
+	// using = new /obj/screen/ghost/follow_xeno()
 	// using.screen_loc = ui_ghost_slot2
 	// static_inventory += using
 
-	// using = new /atom/movable/screen/ghost/follow_human()
+	// using = new /obj/screen/ghost/follow_human()
 	// using.screen_loc = ui_ghost_slot3
 	// static_inventory += using
 
-	using = new /atom/movable/screen/ghost/reenter_corpse()
+	using = new /obj/screen/ghost/reenter_corpse()
 	using.screen_loc = ui_ghost_slot3
 	static_inventory += using
 

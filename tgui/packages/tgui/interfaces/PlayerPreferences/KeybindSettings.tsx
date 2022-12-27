@@ -65,11 +65,7 @@ export const KeybindSettings = (props, context) => {
             {all_keybindings['MOVEMENT']?.filter(filterSearch).map((kb) => (
               <KeybindingPreference key={kb.name} keybind={kb} />
             ))}
-            {all_keybindings['COMMUNICATION']
-              ?.filter(filterSearch)
-              .map((kb) => (
-                <KeybindingPreference key={kb.name} keybind={kb} />
-              ))}
+
             {all_keybindings['MOB']?.filter(filterSearch).map((kb) => (
               <KeybindingPreference key={kb.name} keybind={kb} />
             ))}

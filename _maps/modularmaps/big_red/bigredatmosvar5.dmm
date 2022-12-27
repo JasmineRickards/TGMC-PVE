@@ -5,8 +5,9 @@
 /area/bigredv2/outside/filtration_plant)
 "ba" = (
 /obj/effect/landmark/lv624/fog_blocker,
-/turf/open/floor/marking/asteroidwarning{
+/turf/open/floor{
 	dir = 4;
+	icon_state = "asteroidwarning"
 	},
 /area/bigredv2/outside/s)
 "bs" = (
@@ -88,7 +89,10 @@
 "iv" = (
 /obj/machinery/light,
 /obj/effect/ai_node,
-/turf/open/floor/asteroidfloor,
+/turf/open/floor{
+	dir = 1;
+	icon_state = "asteroidfloor"
+	},
 /area/bigredv2/outside/s)
 "iD" = (
 /obj/structure/table,
@@ -300,8 +304,9 @@
 /area/bigredv2/outside/filtration_plant)
 "sy" = (
 /obj/effect/landmark/weed_node,
-/turf/open/floor/marking/asteroidwarning{
+/turf/open/floor{
 	dir = 4;
+	icon_state = "asteroidwarning"
 	},
 /area/bigredv2/outside/s)
 "tm" = (
@@ -328,8 +333,9 @@
 /turf/closed/wall/r_wall,
 /area/bigredv2/outside/filtration_plant)
 "uL" = (
-/turf/open/floor/marking/asteroidwarning{
+/turf/open/floor{
 	dir = 4;
+	icon_state = "asteroidwarning"
 	},
 /area/bigredv2/outside/s)
 "uZ" = (
@@ -367,7 +373,10 @@
 /area/bigredv2/outside/s)
 "xh" = (
 /obj/effect/ai_node,
-/turf/open/floor/asteroidfloor,
+/turf/open/floor{
+	dir = 1;
+	icon_state = "asteroidfloor"
+	},
 /area/bigredv2/outside/s)
 "xw" = (
 /obj/effect/ai_node,
@@ -398,8 +407,9 @@
 /area/bigredv2/outside/s)
 "yn" = (
 /obj/effect/landmark/weed_node,
-/turf/open/floor/marking/asteroidwarning{
+/turf/open/floor{
 	dir = 8;
+	icon_state = "asteroidwarning"
 	},
 /area/bigredv2/outside/s)
 "ys" = (
@@ -421,7 +431,10 @@
 /turf/closed/mineral/smooth/bigred,
 /area/bigredv2/caves/rock)
 "zH" = (
-/turf/open/floor/asteroidfloor,
+/turf/open/floor{
+	dir = 1;
+	icon_state = "asteroidfloor"
+	},
 /area/bigredv2/outside/s)
 "Au" = (
 /turf/closed/wall/r_wall/unmeltable,
@@ -512,8 +525,9 @@
 /area/bigredv2/outside/se)
 "Dg" = (
 /obj/effect/landmark/lv624/fog_blocker,
-/turf/open/floor/marking/asteroidwarning{
+/turf/open/floor{
 	dir = 8;
+	icon_state = "asteroidwarning"
 	},
 /area/bigredv2/outside/s)
 "Dn" = (
@@ -677,8 +691,9 @@
 /area/bigredv2/outside/filtration_plant)
 "Ka" = (
 /obj/effect/ai_node,
-/turf/open/floor/marking/asteroidwarning{
+/turf/open/floor{
 	dir = 4;
+	icon_state = "asteroidwarning"
 	},
 /area/bigredv2/outside/s)
 "Kb" = (
@@ -717,8 +732,9 @@
 /turf/open/floor/plating,
 /area/bigredv2/outside/filtration_plant)
 "Md" = (
-/turf/open/floor/marking/asteroidwarning{
+/turf/open/floor{
 	dir = 8;
+	icon_state = "asteroidwarning"
 	},
 /area/bigredv2/outside/s)
 "MR" = (
@@ -728,7 +744,9 @@
 /area/bigredv2/outside/filtration_plant)
 "MY" = (
 /obj/structure/window_frame/colony/reinforced,
-/obj/item/shard,
+/obj/item/shard{
+	icon_state = "small"
+	},
 /turf/open/floor/plating,
 /area/bigredv2/outside/filtration_plant)
 "Np" = (
@@ -744,7 +762,10 @@
 /area/bigredv2/outside/se)
 "Nz" = (
 /obj/machinery/light,
-/turf/open/floor/asteroidfloor,
+/turf/open/floor{
+	dir = 1;
+	icon_state = "asteroidfloor"
+	},
 /area/bigredv2/outside/s)
 "NV" = (
 /obj/effect/ai_node,
@@ -759,15 +780,23 @@
 "Oy" = (
 /obj/effect/landmark/lv624/fog_blocker,
 /obj/effect/landmark/weed_node,
-/turf/open/floor/asteroidfloor,
+/turf/open/floor{
+	dir = 1;
+	icon_state = "asteroidfloor"
+	},
 /area/bigredv2/outside/s)
 "OG" = (
 /obj/structure/cryofeed,
-/turf/open/floor/bcircuit/anim,
+/turf/open/floor/bcircuit/anim{
+	icon_state = "bcircuitoff"
+	},
 /area/bigredv2/outside/filtration_plant)
 "Qe" = (
 /obj/effect/landmark/weed_node,
-/turf/open/floor/asteroidfloor,
+/turf/open/floor{
+	dir = 1;
+	icon_state = "asteroidfloor"
+	},
 /area/bigredv2/outside/s)
 "Qs" = (
 /obj/effect/ai_node,
@@ -795,8 +824,9 @@
 "Rp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/weed_node,
-/turf/open/floor/marking/asteroidwarning{
+/turf/open/floor{
 	dir = 4;
+	icon_state = "asteroidwarning"
 	},
 /area/bigredv2/outside/s)
 "Rt" = (
@@ -891,7 +921,9 @@
 /obj/structure/cryofeed/right{
 	name = "\improper coolant feed"
 	},
-/turf/open/floor/bcircuit/anim,
+/turf/open/floor/bcircuit/anim{
+	icon_state = "bcircuitoff"
+	},
 /area/bigredv2/outside/filtration_plant)
 "WO" = (
 /obj/effect/landmark/lv624/fog_blocker,
@@ -935,8 +967,9 @@
 /area/bigredv2/outside/filtration_plant)
 "Yb" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/marking/asteroidwarning{
+/turf/open/floor{
 	dir = 4;
+	icon_state = "asteroidwarning"
 	},
 /area/bigredv2/outside/s)
 "Yt" = (
@@ -955,7 +988,10 @@
 "YQ" = (
 /obj/effect/ai_node,
 /obj/effect/landmark/weed_node,
-/turf/open/floor/asteroidfloor,
+/turf/open/floor{
+	dir = 1;
+	icon_state = "asteroidfloor"
+	},
 /area/bigredv2/outside/s)
 "ZA" = (
 /obj/structure/cable,

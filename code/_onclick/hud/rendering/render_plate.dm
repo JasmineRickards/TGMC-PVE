@@ -23,29 +23,29 @@
  * IE a bulge filter will apply as if the world was one object
  * remember that once planes are unified on a render plate you cant change the layering of them!
  */
-/atom/movable/screen/plane_master/rendering_plate
+/obj/screen/plane_master/rendering_plate
 	name = "default rendering plate"
 
 
 ///this plate renders the final screen to show to the player
-/atom/movable/screen/plane_master/rendering_plate/master
+/obj/screen/plane_master/rendering_plate/master
 	name = "master rendering plate"
 	plane = RENDER_PLANE_MASTER
 	render_relay_plane = null
 	generate_render_target = FALSE
 
 ///renders general in charachter game objects
-/atom/movable/screen/plane_master/rendering_plate/game_world
+/obj/screen/plane_master/rendering_plate/game_world
 	name = "game rendering plate"
 	plane = RENDER_PLANE_GAME
 	render_relay_plane = RENDER_PLANE_MASTER
 
-/atom/movable/screen/plane_master/rendering_plate/game_world/Initialize(mapload)
+/obj/screen/plane_master/rendering_plate/game_world/Initialize(mapload)
 	. = ..()
 	add_filter("displacer", 1, displacement_map_filter(render_source = GRAVITY_PULSE_RENDER_TARGET, size = 10))
 
 ///render plate for OOC stuff like ghosts, hud-screen effects, etc
-/atom/movable/screen/plane_master/rendering_plate/non_game
+/obj/screen/plane_master/rendering_plate/non_game
 	name = "non-game rendering plate"
 	plane = RENDER_PLANE_NON_GAME
 	render_relay_plane = RENDER_PLANE_MASTER
@@ -64,7 +64,7 @@
  * * mymob: mob whose plane is being backdropped
  * * relay_plane: plane we are relaying this plane master to
  */
-/atom/movable/screen/plane_master/proc/relay_render_to_plane(mob/mymob, relay_plane)
+/obj/screen/plane_master/proc/relay_render_to_plane(mob/mymob, relay_plane)
 	if(relay in mymob.client.screen)
 		return
 	if(!render_target && generate_render_target)

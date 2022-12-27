@@ -275,15 +275,17 @@
 /turf/open/floor/mainship/tcomms,
 /area/shuttle/canterbury)
 "bi" = (
-/obj/structure/barricade/plasteel{
-	dir = 8
-	},
 /obj/machinery/door_control{
-	id = "starboard_umbilical_outer";
+	id = "port_umbilical_outer";
 	name = "outer door-control";
 	pixel_y = 32
 	},
-/turf/open/floor/mainship/stripesquare,
+/obj/machinery/door/poddoor/mainship{
+	id = "port_umbilical_outer";
+	name = "\improper Umbillical Airlock"
+	},
+/obj/machinery/door/poddoor/shutters/transit,
+/turf/open/floor/mainship/mono,
 /area/shuttle/canterbury)
 "bj" = (
 /obj/structure/cable,
@@ -399,15 +401,17 @@
 /turf/open/floor/mainship,
 /area/shuttle/canterbury)
 "bC" = (
-/obj/structure/barricade/plasteel{
-	dir = 4
-	},
 /obj/machinery/door_control{
 	id = "starboard_umbilical_outer";
 	name = "outer door-control";
 	pixel_y = 32
 	},
-/turf/open/floor/mainship/stripesquare,
+/obj/machinery/door/poddoor/mainship{
+	id = "starboard_umbilical_outer";
+	name = "\improper Umbillical Airlock"
+	},
+/obj/machinery/door/poddoor/shutters/transit,
+/turf/open/floor/mainship/mono,
 /area/shuttle/canterbury)
 "bD" = (
 /obj/structure/cable,
@@ -1159,7 +1163,7 @@ al
 Mj
 Kk
 ab
-bU
+bi
 bU
 bU
 bU
@@ -1192,7 +1196,7 @@ al
 Ui
 Xp
 ab
-bi
+DH
 DH
 DH
 DH
@@ -1654,7 +1658,7 @@ al
 vW
 cR
 ab
-bC
+hc
 hc
 hc
 hc
@@ -1687,7 +1691,7 @@ al
 ql
 te
 ab
-bV
+bC
 bV
 bV
 bV

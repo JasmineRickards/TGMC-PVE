@@ -2341,7 +2341,9 @@
 /turf/open/floor/elevatorshaft,
 /area/bigredv2/caves/lambda_lab)
 "atg" = (
-/obj/machinery/vending/snack,
+/obj/machinery/vending/snack{
+	icon_state = "snack-broken"
+	},
 /turf/open/floor/tile/darkish,
 /area/bigredv2/caves/lambda_lab)
 "ati" = (
@@ -2355,7 +2357,9 @@
 /turf/open/floor/tile/dark/purple2,
 /area/bigredv2/caves/lambda_lab)
 "atj" = (
-/obj/machinery/vending/coffee,
+/obj/machinery/vending/coffee{
+	icon_state = "coffee-broken"
+	},
 /turf/open/floor/tile/darkish,
 /area/bigredv2/caves/lambda_lab)
 "atw" = (
@@ -2489,18 +2493,22 @@
 	},
 /area/bigredv2/caves/lambda_lab)
 "auv" = (
+/obj/structure/showcase{
+	icon_state = "bus"
+	},
 /obj/structure/cable,
-/obj/structure/prop/mainship/telecomms/bus,
 /turf/open/floor/tile/darkish,
 /area/bigredv2/caves/lambda_lab)
 "auw" = (
+/obj/structure/showcase{
+	icon_state = "mechfab1"
+	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 1
 	},
-/obj/structure/prop/mainship/protolathe/engi,
 /turf/open/floor/tile/darkish,
 /area/bigredv2/caves/lambda_lab)
 "auy" = (
@@ -2602,13 +2610,15 @@
 /turf/open/floor/tile/darkish,
 /area/bigredv2/caves/lambda_lab)
 "avj" = (
+/obj/structure/showcase{
+	icon_state = "broadcaster_send"
+	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
-/obj/structure/prop/mainship/telecomms,
 /turf/open/floor/tile/darkish,
 /area/bigredv2/caves/lambda_lab)
 "avk" = (
@@ -2758,7 +2768,9 @@
 /turf/open/floor/tile/dark,
 /area/bigredv2/caves/lambda_lab)
 "awK" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/sovietsoda{
+	icon_state = "sovietsoda-broken"
+	},
 /turf/open/floor/tile/darkish,
 /area/bigredv2/caves/lambda_lab)
 "axh" = (
@@ -3933,7 +3945,9 @@
 /area/bigredv2/caves/lambda_lab)
 "aIQ" = (
 /obj/structure/cable,
-/turf/open/floor/tile/damaged/five,
+/turf/open/floor/podhatch/floor{
+	icon_state = "damaged5"
+	},
 /area/bigredv2/caves/lambda_lab)
 "aIS" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/layer1,
@@ -4089,7 +4103,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
 	},
-/turf/open/floor/tile/damaged/three,
+/turf/open/floor/podhatch/floor{
+	icon_state = "damaged3"
+	},
 /area/bigredv2/caves/lambda_lab)
 "aJN" = (
 /obj/structure/cable,
@@ -5968,7 +5984,9 @@
 /turf/open/floor,
 /area/bigredv2/outside/cargo)
 "bkD" = (
-/obj/machinery/vending/sovietsoda,
+/obj/machinery/vending/sovietsoda{
+	icon_state = "sovietsoda-broken"
+	},
 /turf/open/floor,
 /area/bigredv2/outside/filtration_plant)
 "bkE" = (
@@ -6420,7 +6438,9 @@
 	},
 /area/bigredv2/outside/sw)
 "bqI" = (
-/obj/machinery/vending/snack,
+/obj/machinery/vending/snack{
+	icon_state = "snack-broken"
+	},
 /turf/open/floor,
 /area/bigredv2/outside/engineering)
 "bqV" = (
@@ -7634,15 +7654,14 @@
 /area/bigredv2/outside/nanotrasen_lab/inside)
 "bDJ" = (
 /obj/structure/showcase,
-/turf/open/floor/carpet/side{
-	dir = 9
-	},
+/turf/open/floor/carpet/edge2,
 /area/bigredv2/outside/nanotrasen_lab/inside)
 "bDK" = (
-/obj/structure/showcase/coinpress,
-/turf/open/floor/carpet/side{
-	dir = 5
+/obj/structure/showcase{
+	desc = "A stand with a plastic display of some kind of weird machine.";
+	icon_state = "coinpress0"
 	},
+/turf/open/floor/carpet/edge2,
 /area/bigredv2/outside/nanotrasen_lab/inside)
 "bDM" = (
 /obj/structure/table,
@@ -7690,10 +7709,10 @@
 /turf/open/floor/tile/dark,
 /area/bigredv2/outside/nanotrasen_lab/inside)
 "bEm" = (
-/obj/structure/prop/mainship/telecomms/bus,
-/turf/open/floor/carpet/side{
-	dir = 6
+/obj/structure/showcase{
+	icon_state = "bus"
 	},
+/turf/open/floor/carpet/edge2,
 /area/bigredv2/outside/nanotrasen_lab/inside)
 "bEo" = (
 /obj/machinery/atmospherics/pipe/simple/green/hidden,
@@ -8737,8 +8756,10 @@
 /turf/open/floor/wood,
 /area/bigredv2/outside/marshal_office)
 "eBs" = (
+/obj/machinery/vending/coffee{
+	icon_state = "coffee-broken"
+	},
 /obj/effect/landmark/weed_node,
-/obj/machinery/vending/coffee,
 /turf/open/floor,
 /area/bigredv2/outside/engineering)
 "eBw" = (
@@ -10316,11 +10337,11 @@
 /turf/open/floor,
 /area/bigredv2/outside/hydroponics)
 "jdq" = (
-/obj/effect/landmark/weed_node,
-/obj/structure/prop/mainship/protolathe/engi,
-/turf/open/floor/carpet/side{
-	dir = 10
+/obj/structure/showcase{
+	icon_state = "mechfab1"
 	},
+/obj/effect/landmark/weed_node,
+/turf/open/floor/carpet/edge2,
 /area/bigredv2/outside/nanotrasen_lab/inside)
 "jdy" = (
 /obj/effect/landmark/start/job/xenomorph,
@@ -10931,8 +10952,8 @@
 /turf/open/floor/tile/dark,
 /area/bigredv2/caves/lambda_lab)
 "kMt" = (
-/obj/effect/landmark/weed_node,
 /obj/machinery/vending/snack,
+/obj/effect/landmark/weed_node,
 /turf/open/floor,
 /area/bigredv2/outside/hydroponics)
 "kOk" = (
@@ -11329,7 +11350,9 @@
 "maQ" = (
 /obj/effect/landmark/weed_node,
 /obj/effect/landmark/xeno_resin_door,
-/turf/open/floor/tile/damaged/four,
+/turf/open/floor/podhatch/floor{
+	icon_state = "damaged4"
+	},
 /area/bigredv2/caves/lambda_lab)
 "mdh" = (
 /obj/structure/table,

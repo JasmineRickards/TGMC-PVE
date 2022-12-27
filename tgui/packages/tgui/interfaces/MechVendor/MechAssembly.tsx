@@ -1,8 +1,7 @@
-import { capitalize } from 'common/string';
 import { useBackend, useLocalState } from '../../backend';
-import { Box, Button, ByondUi, Collapsible, ColorBox, Input, Section, Stack } from '../../components';
-import { formatTime } from '../../format';
-import { BodypartPickerData, ColorDisplayData, MechVendData, partdefinetofluff } from './data';
+import { capitalize } from 'common/string';
+import { Button, Section, Box, Stack, ByondUi, ColorBox, Collapsible, Input } from '../../components';
+import { ColorDisplayData, BodypartPickerData, MechVendData, partdefinetofluff } from './data';
 
 const ColorDisplayRow = (props: ColorDisplayData, context) => {
   const { shown_colors } = props;
@@ -69,7 +68,6 @@ export const MechAssembly = (props, context) => {
     current_stats,
     all_equipment,
     selected_equipment,
-    cooldown_left,
   } = data;
   const [selectedBodypart, setSelectedBodypart] = useLocalState(
     context,
@@ -220,12 +218,7 @@ export const MechAssembly = (props, context) => {
               }
             />
             <Button
-              content={
-                cooldown_left
-                  ? `BUSY (${formatTime(cooldown_left, 'short')})`
-                  : 'ASSEMBLE'
-              }
-              disabled={cooldown_left && cooldown_left > 0}
+              content="ASSEMBLE"
               fluid
               mt={2}
               color={'red'}

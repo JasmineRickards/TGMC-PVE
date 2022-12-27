@@ -534,7 +534,7 @@
 	var/list/pa = params2list(params)
 	var/left_click = pa.Find("left")
 	if(launcherActivated)
-		if(istype(target,/atom/movable/screen))
+		if(istype(target,/obj/screen))
 			return FALSE
 
 		. = TRUE

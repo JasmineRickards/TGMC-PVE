@@ -29,12 +29,10 @@
 
 
 /obj/item/bodybag/afterattack(atom/target, mob/user, proximity)
-	if(!proximity || !isturf(target) || target.density)
+	if(!proximity)
 		return
-	var/turf/target_turf = target
-	for(var/atom/atom_to_check AS in target_turf)
-		if(atom_to_check.density)
-			return
+	if(!isopenturf(target))
+		return
 	deploy_bodybag(user, target)
 
 

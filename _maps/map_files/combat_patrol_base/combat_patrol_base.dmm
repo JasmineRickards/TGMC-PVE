@@ -118,7 +118,9 @@
 /turf/open/shuttle/elevator/grating,
 /area/mainship/patrol_base/som)
 "bX" = (
-/obj/structure/prop/mainship/name_stencil/M,
+/obj/structure/prop/mainship/name_stencil{
+	icon_state = "TGMC3"
+	},
 /turf/open/floor/mainship_hull/dir{
 	dir = 8
 	},
@@ -577,7 +579,9 @@
 /turf/open/floor/plating/ground/concrete,
 /area/mainship/patrol_base/som)
 "it" = (
-/obj/structure/prop/mainship/name_stencil/G,
+/obj/structure/prop/mainship/name_stencil{
+	icon_state = "TGMC2"
+	},
 /turf/open/floor/mainship_hull/dir{
 	dir = 8
 	},
@@ -1642,7 +1646,9 @@
 	},
 /area/mainship/patrol_base/som)
 "xz" = (
-/obj/structure/prop/mainship/name_stencil/C,
+/obj/structure/prop/mainship/name_stencil{
+	icon_state = "TGMC4"
+	},
 /turf/open/floor/mainship_hull/dir{
 	dir = 8
 	},

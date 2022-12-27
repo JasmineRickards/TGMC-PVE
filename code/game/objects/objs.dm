@@ -8,8 +8,6 @@
 	var/force = 0
 	///damage type to deal when this obj is attacking something
 	var/damtype = BRUTE
-	///The amount of armor penetration the object has when attacking something
-	var/penetration = 0
 	var/list/materials
 
 	/// %-reduction-based armor.
@@ -39,7 +37,7 @@
 	///Optimization for dynamic explosion block values, for things whose explosion block is dependent on certain conditions.
 	var/real_explosion_block
 
-	///Odds of a projectile hitting the object, if the object is dense and has THROWPROJECTILE
+	///odds of a projectile hitting the object, if throwpass is true and the object is dense
 	var/coverage = 50
 
 /obj/Initialize()
