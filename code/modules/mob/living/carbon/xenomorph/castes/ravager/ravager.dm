@@ -13,6 +13,7 @@
 	upgrade = XENO_UPGRADE_ZERO
 	pixel_x = -16
 	old_x = -16
+	bubble_icon = "alienroyal"
 
 /mob/living/carbon/xenomorph/ravager/on_death()
 	///We QDEL them as cleanup and preventing them from being sold
