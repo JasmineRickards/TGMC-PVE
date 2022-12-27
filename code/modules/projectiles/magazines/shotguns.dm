@@ -63,7 +63,7 @@ one type of shotgun ammo, but I think it helps in referencing it. ~N
 	icon_state = "7.62" //Thank you Alterist
 	default_ammo = /datum/ammo/bullet/sniper/svd
 	caliber = CALIBER_762X54 //Cyka Blyat
-	max_rounds = 65 // Real rifle boxes are usually 20 rounds. This works with the new system, four handfuls.
+	max_rounds = 200 // Real rifle boxes are usually 20 rounds. This works with the new system, four handfuls.
 	w_class = WEIGHT_CLASS_SMALL // CAN throw it in your pocket, friend.
 	icon_state_mini = "mosin"
 
@@ -73,7 +73,7 @@ one type of shotgun ammo, but I think it helps in referencing it. ~N
 	icon_state = "clip"
 	default_ammo = /datum/ammo/bullet/sniper/svd
 	caliber = CALIBER_762X54
-	max_rounds = 4
+	max_rounds = 10
 	w_class = WEIGHT_CLASS_SMALL
 	icon_state_mini = "clip"
 

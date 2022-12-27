@@ -357,7 +357,7 @@
 	reload_sound = 'sound/weapons/guns/interact/mosin_reload.ogg'
 	caliber = CALIBER_762X54 //codex
 	load_method = SINGLE_CASING //codex
-	max_chamber_items = 8 //codex
+	max_chamber_items = 10 //codex
 	default_ammo_type = /datum/ammo/bullet/sniper/svd
 	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/boltclip)
 	gun_skill_category = GUN_SKILL_RIFLES
