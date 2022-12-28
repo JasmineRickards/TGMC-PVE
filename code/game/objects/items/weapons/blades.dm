@@ -372,8 +372,8 @@
 	if(!on)
 		on = !on
 		icon_state = "chainswordon"
-		force = 100
-		throwforce = 30
+		force = 150
+		throwforce = 150
 	else
 		on = !on
 		icon_state = initial(icon_state)

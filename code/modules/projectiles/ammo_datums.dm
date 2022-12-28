@@ -2445,8 +2445,8 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "xray heat bolt"
 	icon_state = "u_laser"
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_SUNDERING|AMMO_HITSCAN
-	damage = 75
-	penetration = 5
+	damage = 95
+	penetration = 15
 	sundering = 1
 	max_range = 18
 	hitscan_effect_icon = "u_laser_beam"
@@ -2455,7 +2455,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "xray piercing bolt"
 	icon_state = "xray"
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_HITSCAN|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
-	damage = 25
+	damage = 50
 	penetration = 100
 	max_range = 10
 	hitscan_effect_icon = "xray_beam"
