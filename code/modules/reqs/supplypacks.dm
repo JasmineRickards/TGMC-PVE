@@ -1524,6 +1524,14 @@ Imports
 	contains = list(/obj/item/ammo_magazine/rocket/som/thermobaric)
 	cost = 3
 
+/datum/supply_packs/imports/carapace
+	name = "Imperial guard carapace armor"
+	contains = list(
+		/obj/item/clothing/suit/storage/marine/imperial/sergeant/veteran,
+		/obj/item/clothing/head/helmet/marine/imperial/sergeant/veteran,
+		/obj/item/weapon/chainsword,)
+	cost = 120
+
 /*******************************************************************************
 VEHICLES
 *******************************************************************************/

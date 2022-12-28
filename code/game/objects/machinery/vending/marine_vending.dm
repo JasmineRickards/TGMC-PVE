@@ -40,7 +40,7 @@
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/tesla = 2,
 			/obj/item/cell/lasgun = -1,
 			/obj/item/weapon/gun/energy/lasgun/M43 = -1,
-//			/obj/item/weapon/gun/energy/lasgun/lasrifle = -1,
+			/obj/item/weapon/gun/energy/lasgun/lasrifle = -1,
 			/obj/item/cell/lasgun/volkite = -1,
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/charger = -1,
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/caliver = -1,
@@ -1377,9 +1377,33 @@
 			/obj/item/armor_module/storage/grenade = -1,
 			/obj/item/armor_module/storage/integrated = -1,
 			/obj/item/armor_module/armor/badge = -1,
+		),
+		"Imperial Guard" = list(
+			/obj/item/clothing/head/helmet/marine/imperial = -1,
+			/obj/item/clothing/suit/storage/marine/imperial = -1,
+
+		),
+		"USL" = list(
+			/obj/item/clothing/suit/storage/faction/UPP/heavy = -1,
+			/obj/item/clothing/head/uppcap/beret = -1,
+			/obj/item/clothing/suit/storage/faction/UPP = -1,
+			/obj/item/clothing/head/helmet/UPP = -1,
 
 
+		),
+		"Freelancer" = list(
+			/obj/item/clothing/suit/storage/faction/freelancer = -1,
+			/obj/item/clothing/head/frelancer = -1,
 
+		),
+		"Civilian" = list(
+			/obj/item/clothing/suit/armor/riot = -1,
+			/obj/item/clothing/head/helmet/riot = -1,
+			/obj/item/clothing/suit/armor/bulletproof = -1,
+			/obj/item/clothing/head/helmet = -1,
+			/obj/item/clothing/head/helmet/swat = -1,
+			/obj/item/clothing/suit/armor/swat/officer = -1,
+			/obj/item/clothing/suit/armor/swat = -1,
 		),
 	)
 
@@ -1553,6 +1577,34 @@
 			/obj/item/storage/pouch/shotgun/som = -1,
 			/obj/item/weapon/shield/riot/marine/som = -1,
 
+
+		),
+		"Imperial Guard" = list(
+			/obj/item/clothing/under/marine/imperial = -1,
+			/obj/item/reagent_containers/food/snacks/enrg_bar = -1,
+			/obj/item/clothing/shoes/marine/imperial = -1,
+			/obj/item/storage/backpack/lightpack = -1,
+		),
+		"USL" = list(
+			/obj/item/clothing/gloves/marine/veteran/PMC = -1,
+			/obj/item/clothing/under/marine/veteran/UPP = -1,
+			/obj/item/clothing/shoes/marine = -1,
+			/obj/item/storage/backpack/lightpack = -1,
+		),
+		"Freelancer" = list(
+			/obj/item/clothing/gloves/marine/veteran/PMC = -1,
+			/obj/item/clothing/under/marine/veteran/freelancer = -1,
+			/obj/item/clothing/mask/rebreather/scarf/freelancer = -1,
+			/obj/item/clothing/shoes/marine = -1,
+			/obj/item/storage/backpack/lightpack = -1,
+		),
+		"Pizza time" = list(
+			/obj/item/pizzabox/margherita = -1,
+			/obj/item/storage/backpack/satchel = -1,
+			/obj/item/clothing/shoes/red = -1,
+			/obj/item/clothing/under/pizza = -1,
+			/obj/item/clothing/head/soft/red = -1,
+			/obj/item/reagent_containers/food/drinks/cans/dr_gibb = -1,
 
 		),
 	)

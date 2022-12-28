@@ -254,6 +254,8 @@
 	icon = 'icons/Marine/gun64.dmi'
 	icon_state = "tx73"
 	item_state = "tx73"
+	scatter = -1
+	accuracy_mult = 1.3
 	max_shots = 50 //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine
 	ammo_diff = null
