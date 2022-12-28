@@ -484,9 +484,22 @@
 		"16 Gauge Slugs" = /datum/ammopacktype/tx15_slug,
 		)
 
+/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/pouch
+	name = "\improper T-73 Reiter Pouch"
+	desc = "Following the successful deployment of the T-72 Pointman, the T-73 Reiter was commissioned as an ammo feed system for magazine-compatible handguns which can be clipped onto one's pocket. Thanks to the compact size of pistol munitions, it holds two boxes worth of any pistol caliber and is a popular choice for Corpsmen, who may prefer mobility and to have a hand free at all times for search and rescue operations and performance of their typical duties, and for squad marines who find either the experience of wielding handguns akimbo or the experience of fighting with a pistol from the seat of a motorbike to be especially exhilarating."
+	flags_equip_slot = ITEM_SLOT_POCKET
+	icon = 'icons/Marine/marine-pouches.dmi'
+	icon_state = "ammopackpouch"
+	caliber_types = list(
+		"9x19mm Parabellum" = /datum/ammopacktype/p9mm,
+		".45 Automatic Pistol" = /datum/ammopacktype/p45acp,
+		".380 Automatic Pistol" = /datum/ammopacktype/p380acp,
+		".50 Automag" = /datum/ammopacktype/p50ae,
+		)
+
 /datum/ammopacktype/p10x24b
 	default_ammo = /datum/ammo/bullet/rifle
-	max_rounds = 1500
+	max_rounds = 3000
 	caliber = CALIBER_10X24_CASELESS
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "10x24"
@@ -494,7 +507,7 @@
 
 /datum/ammopacktype/p10x25b
 	default_ammo = /datum/ammo/bullet/rifle/heavy
-	max_rounds = 1250
+	max_rounds = 2500
 	caliber = CALIBER_10X25_CASELESS
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "10x25"
@@ -502,7 +515,7 @@
 
 /datum/ammopacktype/p10x265b
 	default_ammo = /datum/ammo/bullet/rifle/standard_br
-	max_rounds = 1000
+	max_rounds = 2000
 	caliber = CALIBER_10x265_CASELESS
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "10x265"
@@ -511,7 +524,7 @@
 /datum/ammopacktype/tx15_slug
 	default_ammo = /datum/ammo/bullet/shotgun/tx15_slug
 	caliber = CALIBER_16G
-	max_rounds = 600
+	max_rounds = 1200
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "16g-slug"
 	caliber_label = "16 Gauge Slugs"
@@ -519,14 +532,14 @@
 /datum/ammopacktype/tx15_flechette
 	default_ammo = /datum/ammo/bullet/shotgun/tx15_flechette
 	caliber = CALIBER_16G
-	max_rounds = 600
+	max_rounds = 1200
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "16g-flechette"
 	caliber_label = "16 Gauge Flechettes"
 
 /datum/ammopacktype/p10x20b
 	default_ammo = /datum/ammo/bullet/smg
-	max_rounds = 1500
+	max_rounds = 3000
 	caliber = CALIBER_10X20_CASELESS
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "10x20"
@@ -534,8 +547,40 @@
 
 /datum/ammopacktype/p492x34b
 	default_ammo = /datum/ammo/bullet/rifle/hv
-	max_rounds = 2100
+	max_rounds = 4200
 	caliber = CALIBER_492X34_CASELESS
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "492x34"
 	caliber_label = "492x34mm Caseless"
+
+/datum/ammopacktype/p9mm
+	default_ammo = /datum/ammo/bullet/pistol
+	max_rounds = 2000
+	caliber = CALIBER_9X19
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "9mm"
+	caliber_label = "9x19mm Parabellum"
+
+/datum/ammopacktype/p45acp
+	default_ammo = /datum/ammo/bullet/pistol/heavy
+	max_rounds = 2000
+	caliber = CALIBER_45ACP
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "45acp"
+	caliber_label = ".45 ACP"
+
+/datum/ammopacktype/p380acp
+	default_ammo = /datum/ammo/bullet/pistol/tiny/ap
+	max_rounds = 2000
+	caliber = CALIBER_380ACP
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "380acp"
+	caliber_label = ".380 ACP"
+
+/datum/ammopacktype/p50ae
+	default_ammo = /datum/ammo/bullet/pistol/superheavy
+	max_rounds = 1000
+	caliber = CALIBER_50AE
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "50ae"
+	caliber_label = ".50 Automag"

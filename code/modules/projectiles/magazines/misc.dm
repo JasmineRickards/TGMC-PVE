@@ -82,12 +82,12 @@
 // pistol packets
 
 /obj/item/ammo_magazine/packet/p9mm
-	name = "packet of 9mm"
-	desc = "A packet containing 700 rounds of 9mm."
+	name = "packet of 9x19mm Parabellum"
+	desc = "A packet containing 1000 rounds of 9x19mm Parabellum."
 	caliber = CALIBER_9X19
 	icon_state = "box_9mm"
-	current_rounds = 700
-	max_rounds = 700
+	current_rounds = 1000
+	max_rounds = 1000
 	w_class = WEIGHT_CLASS_SMALL
 	default_ammo = /datum/ammo/bullet/pistol
 
@@ -110,22 +110,23 @@
 
 /obj/item/ammo_magazine/packet/acp
 	name = "packet of .45 ACP"
+	desc = "A packet containing 1000 rounds of .45 ACP."
 	icon_state = "box_45acp"
 	default_ammo = /datum/ammo/bullet/pistol/heavy
 	w_class = WEIGHT_CLASS_SMALL
 	caliber = CALIBER_45ACP
-	current_rounds = 500
-	max_rounds = 500
+	current_rounds = 1000
+	max_rounds = 1000
 
 /obj/item/ammo_magazine/packet/p9mmap
 	name = "packet of 9mm AP"
-	desc = "A packet containing 700 rounds of 9mm armor-piercing."
+	desc = "A packet containing 1000 rounds of 9mm armor-piercing."
 	icon_state = "box_9mmap"
 	default_ammo = /datum/ammo/bullet/pistol/ap
 	w_class = WEIGHT_CLASS_SMALL
 	caliber = CALIBER_9X19
-	current_rounds = 700
-	max_rounds = 700
+	current_rounds = 1000
+	max_rounds = 1000
 
 /obj/item/ammo_magazine/packet/p10x26mm
 	name = "packet of 10x26mm"
@@ -165,3 +166,23 @@
 	default_ammo = /datum/ammo/bullet/sniper/pfc
 	current_rounds = 800
 	max_rounds = 800
+
+/obj/item/ammo_magazine/packet/p380acp
+	name = "packet of .380 ACP"
+	desc = "A packet containing 1000 rounds of .380 ACP."
+	icon_state = "box_380acp"
+	caliber = CALIBER_380ACP
+	default_ammo = /datum/ammo/bullet/pistol/tiny/ap
+	w_class = WEIGHT_CLASS_SMALL
+	current_rounds = 1000
+	max_rounds = 1000
+
+/obj/item/ammo_magazine/packet/p50ae
+	name = "packet of .50 Automag"
+	desc = "A packet containing 500 rounds of .50 Automag."
+	icon_state = "box_50ae"
+	caliber = CALIBER_50AE
+	default_ammo = /datum/ammo/bullet/pistol/superheavy
+	w_class = WEIGHT_CLASS_SMALL
+	current_rounds = 500
+	max_rounds = 500
