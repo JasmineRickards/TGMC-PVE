@@ -492,6 +492,7 @@
 	icon_state = "ammopackpouch"
 	caliber_types = list(
 		"9x19mm Parabellum" = /datum/ammopacktype/p9mm,
+		"9x19mm Armor Piercing" = /datum/ammopacktype/p9mmap,
 		".45 Automatic Pistol" = /datum/ammopacktype/p45acp,
 		".380 Automatic Pistol" = /datum/ammopacktype/p380acp,
 		".50 Automag" = /datum/ammopacktype/p50ae,
@@ -560,6 +561,14 @@
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "9mm"
 	caliber_label = "9x19mm Parabellum"
+
+/datum/ammopacktype/p9mmap
+	default_ammo = /datum/ammo/bullet/pistol/ap
+	max_rounds = 2000
+	caliber = CALIBER_9X19
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "9mmap"
+	caliber_label = "9x19mm Armor Piercing"
 
 /datum/ammopacktype/p45acp
 	default_ammo = /datum/ammo/bullet/pistol/heavy
