@@ -802,7 +802,7 @@
 	storage_type_limits = list(
 		/obj/item/weapon/gun = 1,
 	)
-	storage_slots = 7
+	storage_slots = 25 // Same as mag belt, plus one slot for the actual gun
 	max_w_class = 3
 	///The gun it holds, used for referencing later so we can update the icon.
 	var/obj/item/weapon/gun/current_gun
