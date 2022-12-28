@@ -109,6 +109,7 @@
 	name = "heavy-duty weapon laser cell"
 	desc = "A cell with enough charge to contain 15 heavy laser shots for the TE-9001. This cannot be recharged."
 	w_class = WEIGHT_CLASS_BULKY
+	caliber = CALIBER_HEAVY_LASER
 	flags_magazine = NONE
 	max_rounds = 15
 	default_ammo = /datum/ammo/energy/lasgun/marine/heavy_laser

@@ -179,7 +179,7 @@
 
 	fire_sound = 'sound/weapons/guns/fire/tank_flamethrower.ogg'
 	reload_sound = 'sound/weapons/guns/interact/minigun_cocked.ogg'
-
+	caliber = CALIBER_HEAVY_LASER
 	default_ammo_type = /obj/item/ammo_magazine/heavy_laser
 
 	scatter = 10
