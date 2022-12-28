@@ -576,7 +576,7 @@
 /datum/reagent/medicine/russian_red/on_mob_life(mob/living/L, metabolism)
 	L.heal_limb_damage(10*effect_str, 10*effect_str)
 	L.adjustToxLoss(-2.5*effect_str)
-	L.adjustCloneLoss(effect_str)
+//	L.adjustCloneLoss(effect_str)
 	if(iscarbon(L))
 		var/mob/living/carbon/C = L
 		C.setShock_Stage(min(C.shock_stage - 5*effect_str, 150)) //removes a target from deep paincrit instantly
@@ -779,7 +779,7 @@
 		target_IB.parent_limb.createwound(CUT, target_IB.damage / 2)
 		UnregisterSignal(target_IB, COMSIG_PARENT_QDELETING)
 		QDEL_NULL(target_IB)
-		L.adjustCloneLoss(5*effect_str)
+//		L.adjustCloneLoss(5*effect_str)
 	return ..()
 
 ///Choose an internal bleeding wound to lock onto and cure after a delay.

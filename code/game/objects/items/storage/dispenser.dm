@@ -1,7 +1,7 @@
 
 /obj/machinery/deployable/dispenser
 	name = "TX-9000 provisions dispenser"
-	desc = "The TX-9000 also known as \"Dispenser\" is a machine capable of holding a large amount of items on it, while also healing nearby synthetics. Your allies will often ask you to lay down one of these."
+	desc = "The TX-9000 also known as \"Dispenser\" is a machine capable of holding a large amount of items on it, while also healing nearby synthetics and infantry. Your allies will often ask you to lay down one of these."
 	density = TRUE
 	anchored = TRUE
 	max_integrity = 250
