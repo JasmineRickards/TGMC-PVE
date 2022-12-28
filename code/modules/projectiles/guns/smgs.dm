@@ -80,6 +80,20 @@
 	akimbo_additional_delay = 0.14
 	upper_akimbo_accuracy = 5
 	lower_akimbo_accuracy = 3
+/obj/item/weapon/gun/smg/standard_machinepistol/can_attach(obj/item/attaching_to, mob/attacher)
+	if(!attachments_by_slot[ATTACHMENT_SLOT_RAIL])
+		return TRUE
+	to_chat(attacher, span_warning("You cannot attach [src] to [attaching_to] while [attachments_by_slot[ATTACHMENT_SLOT_RAIL]] occupies [src]'s rail slot."))
+	return FALSE
+
+/obj/item/weapon/gun/smg/standard_machinepistol/on_attach(obj/item/attached_to, mob/user)
+	flags_gun_features |= GUN_WIELDED_STABLE_FIRING_ONLY|GUN_WIELDED_FIRING_ONLY
+	return ..()
+
+/obj/item/weapon/gun/smg/standard_machinepistol/on_detach(obj/item/attached_to, mob/user)
+	flags_gun_features &= ~GUN_WIELDED_STABLE_FIRING_ONLY|GUN_WIELDED_FIRING_ONLY
+	return ..()
+
 
 /obj/item/weapon/gun/smg/standard_machinepistol/compact
 	starting_attachment_types = list(/obj/item/attachable/reddot, /obj/item/attachable/compensator, /obj/item/attachable/lasersight)
