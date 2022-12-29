@@ -9,7 +9,10 @@
 	siemens_coefficient = 0.6
 	w_class = WEIGHT_CLASS_HUGE
 	allowed = list(/obj/item/weapon/gun)//Guns only.
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 /obj/item/clothing/suit/armor/mob_can_equip(mob/M, slot, disable_warning)
 	. = ..()
@@ -91,8 +94,12 @@
 	item_state = "bulletproof"
 	blood_overlay_type = "armor"
 	flags_armor_protection = CHEST
+<<<<<<< Updated upstream
 	soft_armor = list(MELEE = 30, BULLET = 55, LASER = 0, ENERGY = 0, BOMB = 30, BIO = 0, FIRE = 0, ACID = 15)
 	hard_armor = list(MELEE = 0, BULLET = 20, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 5)
+=======
+	soft_armor = list(MELEE = 30, BULLET = 80, LASER = 0, ENERGY = 0, BOMB = 30, BIO = 0, FIRE = 0, ACID = 15)
+>>>>>>> Stashed changes
 	siemens_coefficient = 0.7
 	permeability_coefficient = 0.9
 	time_to_unequip = 20
@@ -112,7 +119,7 @@
 	item_state = "swat"
 	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
 	slowdown = 1.2
-	soft_armor = list(MELEE = 65, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 0, BIO = 0, FIRE = 10, ACID = 10)
+	soft_armor = list(MELEE = 65, BULLET = 80, LASER = 10, ENERGY = 10, BOMB = 0, BIO = 0, FIRE = 10, ACID = 10)
 	flags_inventory = BLOCKSHARPOBJ
 	flags_inv_hide = HIDEJUMPSUIT
 	flags_item = SYNTH_RESTRICTED
@@ -131,7 +138,7 @@
 	flags_armor_protection = CHEST|GROIN|LEGS|FEET|ARMS
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/baton,/obj/item/restraints/handcuffs,/obj/item/tank/emergency_oxygen)
 	slowdown = 1
-	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 50, ENERGY = 25, BOMB = 50, BIO = 100, FIRE = 25, ACID = 25)
+	soft_armor = list(MELEE = 50, BULLET = 80, LASER = 50, ENERGY = 25, BOMB = 50, BIO = 100, FIRE = 25, ACID = 25)
 	flags_inventory = BLOCKSHARPOBJ|NOPRESSUREDMAGE
 	flags_item = SYNTH_RESTRICTED
 	flags_inv_hide = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
@@ -189,7 +196,7 @@
 	flags_armor_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	flags_item = SYNTH_RESTRICTED
 	slowdown = 0
-	soft_armor = list(MELEE = 50, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 50, BIO = 40, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 80, LASER = 40, ENERGY = 40, BOMB = 50, BIO = 40, FIRE = 50, ACID = 50)
 	siemens_coefficient = 0.7
 
 
@@ -269,7 +276,7 @@
 	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
 	flags_item = SYNTH_RESTRICTED
 	slowdown = 1
-	soft_armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 40, BOMB = 20, BIO = 0, FIRE = 40, ACID = 40)
+	soft_armor = list(MELEE = 60, BULLET = 80, LASER = 60, ENERGY = 40, BOMB = 20, BIO = 0, FIRE = 40, ACID = 40)
 	siemens_coefficient = 0.7
 
 
