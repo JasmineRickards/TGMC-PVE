@@ -390,6 +390,7 @@
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection =CHEST|GROIN|ARMS|LEGS|FEET|HANDS
+	flags_item_map_variant = NONE
 
 /obj/item/clothing/suit/storage/marine/veteran/PMC
 	name = "\improper M4 pattern PMC armor"
@@ -411,8 +412,6 @@
 		/obj/item/weapon/claymore/mercsword/machete,
 		/obj/item/weapon/combat_knife,
 	)
-	flags_item_map_variant = NONE
-
 
 /obj/item/clothing/suit/storage/marine/veteran/PMC/leader
 	name = "\improper M4 pattern PMC leader armor"
@@ -464,6 +463,7 @@
 	flags_heat_protection =CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	soft_armor = list(MELEE = 70, BULLET = 70, LASER = 50, ENERGY = 60, BOMB = 50, BIO = 10, FIRE = 60, ACID = 60)
 	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
+	flags_item_map_variant = NONE
 
 /obj/item/clothing/suit/storage/marine/veteran/dutch
 	name = "\improper D2 armored vest"
@@ -474,6 +474,7 @@
 	flags_heat_protection =CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	soft_armor = list(MELEE = 55, BULLET = 55, LASER = 55, ENERGY = 65, BOMB = 70, BIO = 10, FIRE = 65, ACID = 30)
 	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
+	flags_item_map_variant = NONE
 
 
 /*===========================I.o.M================================*/
@@ -546,6 +547,7 @@
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection =CHEST|GROIN|ARMS|LEGS|FEET|HANDS
+	flags_item_map_variant = NONE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	blood_overlay_type = "armor"
