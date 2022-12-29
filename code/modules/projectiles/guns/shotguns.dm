@@ -24,7 +24,7 @@
 	accuracy_mult_unwielded = 0.75
 	scatter = 4
 	scatter_unwielded = 10
-	recoil = 2
+	recoil = -1
 	recoil_unwielded = 4
 	damage_mult = 2
 	movement_acc_penalty_mult = 2
@@ -70,7 +70,7 @@
 	scatter_unwielded = 10
 	akimbo_additional_delay = 0.2 SECONDS
 	damage_mult = 1  //normalizing gun for vendors; damage reduced by 25% to compensate for faster fire rate; still higher DPS than T-32.
-	recoil = 2
+	recoil = -1
 	recoil_unwielded = 4
 	aim_slowdown = 0.4
 
@@ -118,7 +118,7 @@
 	scatter = 3
 	scatter_unwielded = 12
 	damage_mult = 1  //30% less damage. Faster firerate.
-	recoil = 0 //It has a stock on the sprite.
+	recoil = -1 //It has a stock on the sprite.
 	recoil_unwielded = 2
 	wield_delay = 0.3 SECONDS
 	akimbo_additional_delay = 0.9
@@ -179,7 +179,7 @@
 	burst_delay = 2
 	scatter = 4
 	scatter_unwielded = 8
-	recoil = 2
+	recoil = -1
 	recoil_unwielded = 4
 	aim_slowdown = 0.6
 
@@ -238,7 +238,7 @@
 	burst_amount = 1
 	scatter = 3
 	scatter_unwielded = 10
-	recoil = 2
+	recoil = -1
 	recoil_unwielded = 4
 
 
@@ -285,7 +285,7 @@
 
 	fire_delay = 0.4 SECONDS
 	scatter_unwielded = 10
-	recoil = 2
+	recoil = -1
 	recoil_unwielded = 4
 	aim_slowdown = 0.45
 
@@ -332,7 +332,7 @@
 	accuracy_mult = 1
 	accuracy_mult_unwielded = 1
 	scatter_unwielded = 10
-	recoil = 0 // It has a stock. It's on the sprite.
+	recoil = -1 // It has a stock. It's on the sprite.
 	recoil_unwielded = 0
 	cock_delay = 12
 	aim_slowdown = 0.4
@@ -459,7 +459,7 @@
 	scatter_unwielded = 20
 	damage_mult = 4
 
-	recoil = 2
+	recoil = -1
 	recoil_unwielded = 4
 
 	aim_slowdown = 1
@@ -585,7 +585,7 @@
 	damage_falloff_mult = 0.5
 	scatter = -5
 	scatter_unwielded = 7
-	recoil = 0
+	recoil = -1
 	recoil_unwielded = 2
 	cock_delay = 2
 	aim_slowdown = 0.6
@@ -671,7 +671,7 @@
 
 	fire_delay = 20
 	scatter_unwielded = 10
-	recoil = 2
+	recoil = -1
 	recoil_unwielded = 4
 	aim_slowdown = 0.45
 	cock_delay = 14
@@ -724,7 +724,7 @@
 	attachable_offset = list("muzzle_x" = 40, "muzzle_y" = 17,"rail_x" = 12, "rail_y" = 23, "under_x" = 29, "under_y" = 12, "stock_x" = 13, "stock_y" = 15)
 
 	fire_delay = 0.2 SECONDS
-	recoil = 1
+	recoil = -1
 	damage_mult = 1.5
 	wield_delay = 0.3 SECONDS
 	burst_amount = 2
