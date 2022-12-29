@@ -317,7 +317,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state = "pistol"
 	hud_state_empty = "pistol_empty"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
-	damage = 20
+	damage = 40
 	penetration = 5
 	accurate_range = 5
 	sundering = 1
@@ -332,8 +332,8 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/pistol/tiny/ap
 	name = "light pistol bullet"
 	hud_state = "pistol_lightap"
-	damage = 22.5
-	penetration = 15 //So it can actually hurt something.
+	damage = 45
+	penetration = 25 //So it can actually hurt something.
 	sundering = 0.5
 	damage_falloff = 1.5
 
@@ -357,12 +357,12 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 2
 
 /datum/ammo/bullet/pistol/hollow/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, stagger = 1, slowdown = 0.5, knockback = 1)
+	staggerstun(M, P, stagger = 1, slowdown = 1, knockback = 0)
 
 /datum/ammo/bullet/pistol/ap
 	name = "armor-piercing pistol bullet"
 	hud_state = "pistol_ap"
-	damage = 20
+	damage = 40
 	penetration = 12.5
 	shrapnel_chance = 25
 	sundering = 2
@@ -370,7 +370,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/pistol/heavy
 	name = "heavy pistol bullet"
 	hud_state = "pistol_heavy"
-	damage = 30
+	damage = 60
 	penetration = 5
 	shrapnel_chance = 25
 	sundering = 2.15
@@ -378,12 +378,12 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/pistol/superheavy
 	name = "high impact pistol bullet"
 	hud_state = "pistol_hollow"
-	damage = 45
+	damage = 80
 	penetration = 15
 	sundering = 3.5
 
 /datum/ammo/bullet/pistol/superheavy/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, stagger = 1, slowdown = 1, shake = 0)
+	staggerstun(M, P, weaken = 1, stagger = 2, slowdown = 3, shake = 0)
 
 /datum/ammo/bullet/pistol/superheavy/derringer
 	handful_amount = 2
@@ -414,7 +414,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "squash-head pistol bullet"
 	hud_state = "pistol_special"
 	accuracy = 5
-	damage = 32
+	damage = 50
 	penetration = 10
 	shrapnel_chance = 25
 	sundering = 2
@@ -448,26 +448,26 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state_empty = "revolver_empty"
 	handful_amount = 7
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
-	damage = 45
+	damage = 70
 	penetration = 10
 	sundering = 3
 
 /datum/ammo/bullet/revolver/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, stagger = 1, slowdown = 0.5, knockback = 1)
+	staggerstun(M, P, stagger = 2, slowdown = 2, knockback = 0)
 
 /datum/ammo/bullet/revolver/tp44
 	name = "standard revolver bullet"
-	damage = 40
+	damage = 80
 	penetration = 15
 	sundering = 1
 
 /datum/ammo/bullet/revolver/tp44/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, stagger = 0, slowdown = 0, knockback = 1, shake = 0)
+	staggerstun(M, P, stagger = 2, slowdown = 2, knockback = 0, shake = 0)
 
 /datum/ammo/bullet/revolver/small
 	name = "small revolver bullet"
 	hud_state = "revolver_small"
-	damage = 30
+	damage = 60
 
 /datum/ammo/bullet/revolver/small/on_hit_mob(mob/M,obj/projectile/P)
 	staggerstun(M, P, slowdown = 0.5)
@@ -479,13 +479,13 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	damage_falloff = 0
 	accuracy = 15
 	accurate_range = 15
-	damage = 30
+	damage = 60
 	penetration = 10
 
 /datum/ammo/bullet/revolver/heavy
 	name = "heavy revolver bullet"
 	hud_state = "revolver_heavy"
-	damage = 50
+	damage = 100
 	penetration = 5
 	accuracy = -10
 
@@ -493,12 +493,12 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "high-impact revolver bullet"
 	hud_state = "revolver_impact"
 	handful_amount = 6
-	damage = 50
+	damage = 80
 	penetration = 20
 	sundering = 3
 
 /datum/ammo/bullet/revolver/highimpact/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, weaken = 1, stagger = 1, slowdown = 1, knockback = 1, shake = 0.5)
+	staggerstun(M, P, weaken = 1, stagger = 2, slowdown = 3, knockback = 1, shake = 0.5)
 
 /datum/ammo/bullet/revolver/ricochet
 	bonus_projectiles_type = /datum/ammo/bullet/revolver/small
@@ -626,12 +626,12 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/rifle/repeater
 	name = "heavy impact rifle bullet"
 	hud_state = "revolver_heavy"
-	damage = 70
-	penetration = 20
-	sundering = 1.25
+	damage = 90
+	penetration = 30
+	sundering = 5
 
 /datum/ammo/bullet/rifle/repeater/on_hit_mob(mob/M, obj/projectile/P)
-	staggerstun(M, P, max_range = 3, slowdown = 2, stagger = 1, shake = 0.5)
+	staggerstun(M, P, max_range = 3, slowdown = 2, stagger = 2, shake = 0.5)
 
 /datum/ammo/bullet/rifle/incendiary
 	name = "incendiary rifle bullet"
@@ -663,7 +663,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
 	accurate_range = 15
 	accurate_range_min = 6
-	damage = 40
+	damage = 70
 	penetration = 20
 	sundering = 10
 
@@ -685,7 +685,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 5
 
 /datum/ammo/bullet/rifle/tx8/impact/on_hit_mob(mob/M, obj/projectile/P)
-	staggerstun(M, P, max_range = 20, slowdown = 1, shake = 0)
+	staggerstun(M, P, max_range = 20, slowdown = 2, shake = 0)
 
 /datum/ammo/bullet/rifle/mpi_km
 	name = "crude heavy rifle bullet"
@@ -774,8 +774,8 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	penetration = 20
 	sundering = 7.5
 
-//datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
-//	staggerstun(M, P, weaken = 1, stagger = 2, knockback = 1, slowdown = 2)
+datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
+	staggerstun(M, P, weaken = 1, stagger = 3, knockback = 0, slowdown = 3)
 
 
 /datum/ammo/bullet/shotgun/beanbag
@@ -938,8 +938,8 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	damage = 40
 	penetration = 20
 
-//datum/ammo/bullet/shotgun/sx16_slug/on_hit_mob(mob/M, obj/projectile/P)
-//	staggerstun(M, P, slowdown = 1, knockback = 1)
+datum/ammo/bullet/shotgun/sx16_slug/on_hit_mob(mob/M, obj/projectile/P)
+	staggerstun(M, P, stagger = 1, slowdown = 1, knockback = 0)
 
 /datum/ammo/bullet/shotgun/tx15_flechette
 	name = "shotgun flechette shell"
@@ -975,8 +975,8 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	penetration = 30
 	sundering = 3.5
 
-//datum/ammo/bullet/shotgun/tx15_slug/on_hit_mob(mob/M, obj/projectile/P)
-//	staggerstun(M, P, slowdown = 2, knockback = 1)
+datum/ammo/bullet/shotgun/tx15_slug/on_hit_mob(mob/M, obj/projectile/P)
+	staggerstun(M, P, stagger = 1, slowdown = 2, knockback = 0)
 
 /datum/ammo/bullet/shotgun/mbx900_buckshot
 	name = "light shotgun buckshot shell" // If .410 is the smallest shotgun shell, then...
@@ -1067,8 +1067,8 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	damage_falloff = 2
 	sundering = 10
 
-//datum/ammo/bullet/shotgun/mech/on_hit_mob(mob/M, obj/projectile/proj)
-//	staggerstun(M, proj, weaken = 1, stagger = 1, knockback = 2, slowdown = 0.5, max_range = 3)
+datum/ammo/bullet/shotgun/mech/on_hit_mob(mob/M, obj/projectile/proj)
+	staggerstun(M, proj, weaken = 1, stagger = 1, knockback = 2, slowdown = 0.5, max_range = 3)
 
 /*
 //================================================
@@ -1129,11 +1129,11 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	handful_amount = 5
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
 	damage = 120
-	penetration = 20
-	sundering = 10
+	penetration = 40
+	sundering = 20
 
-//datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
-//	staggerstun(M, P, weaken = 1, stagger = 1, knockback = 2, slowdown = 0.5, max_range = 5)
+datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
+	staggerstun(M, P, weaken = 1, stagger = 1, knockback = 2, slowdown = 0.5, max_range = 5)
 
 /datum/ammo/bullet/sniper/elite
 	name = "supersonic sniper bullet"
@@ -1416,8 +1416,8 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 3
 	damage_falloff = 0
 
-//datum/ammo/bullet/tx54_spread/on_hit_mob(mob/M, obj/projectile/proj)
-//	staggerstun(M, proj, max_range = 3, stagger = 0.3, slowdown = 0.3, shake = 0)
+datum/ammo/bullet/tx54_spread/on_hit_mob(mob/M, obj/projectile/proj)
+	staggerstun(M, proj, max_range = 3, stagger = 0.3, slowdown = 0.3, shake = 0)
 
 /datum/ammo/bullet/tx54_spread/incendiary
 	name = "incendiary flechette"
@@ -1472,8 +1472,8 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	penetration = 50
 	sundering = 10
 
-//datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
-//	staggerstun(M, proj, max_range = 3, stagger = 0, slowdown = 0.2, shake = 0)
+datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
+	staggerstun(M, proj, max_range = 3, stagger = 0, slowdown = 0.2, shake = 0)
 
 //10-gauge Micro rail shells - aka micronades
 /datum/ammo/bullet/micro_rail
