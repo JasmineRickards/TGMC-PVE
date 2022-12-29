@@ -765,7 +765,7 @@
 		/obj/item/attachable/reddot,
 		/obj/item/weapon/gun/smg/standard_machinepistol,
 	)
-	attachable_offset = list("muzzle_x" = 45, "muzzle_y" = 18,"rail_x" = 26, "rail_y" = 22, "under_x" = 14, "under_y" = 16, "stock_x" = 14, "stock_y" = 16)
+	attachable_offset = list("muzzle_x" = 45, "muzzle_y" = 18,"rail_x" = 26, "rail_y" = 22, "under_x" = 37, "under_y" = 16, "stock_x" = 14, "stock_y" = 16)
 
 	fire_delay = 0.45 SECONDS
 	accuracy_mult = 1.15
@@ -784,7 +784,8 @@
 /obj/item/weapon/gun/shotgun/som/support
 	default_ammo_type = /datum/ammo/bullet/shotgun/flechette
 	starting_attachment_types = list(/obj/item/attachable/bayonet, /obj/item/attachable/magnetic_harness)
-
+//-------------------------------------------------------
+//v-51 but better
 /obj/item/weapon/gun/shotgun/som/burst
 	name = "\improper V-51B assault shotgun"
 	desc = "V-51B custom. An upgraded version of the standard SOM shotgun with a burst fire mode and a snazzy paintjob. Rare as it is deadly."
