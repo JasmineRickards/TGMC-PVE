@@ -85,7 +85,7 @@
 	akimbo_additional_delay = 0.6 // Ends up as 0.249, so it'll get moved up to 0.25.
 	accuracy_mult_unwielded = 0.85
 	accuracy_mult = 1
-	damage_mult = 3
+	damage_mult = 2
 	scatter_unwielded = 15
 	scatter = -1
 	recoil = 0
@@ -121,7 +121,7 @@
 	)
 	attachable_offset = list("muzzle_x" = 28, "muzzle_y" = 21,"rail_x" = 14, "rail_y" = 23, "under_x" = 24, "under_y" = 19, "stock_x" = 24, "stock_y" = 19)
 
-	damage_mult = 3
+	damage_mult = 2
 	recoil = 0
 	recoil_unwielded = 0
 
@@ -235,7 +235,7 @@
 	burst_amount = 3
 	burst_delay = 0.1 SECONDS
 	scatter_unwielded = 20
-	damage_mult = 3
+	damage_mult = 2
 
 //-------------------------------------------------------
 //The Judge, a shotgun and revolver in one
@@ -271,7 +271,7 @@
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 22,"rail_x" = 17, "rail_y" = 22, "under_x" = 22, "under_y" = 17, "stock_x" = 22, "stock_y" = 19)
 
 	fire_delay = 0.35 SECONDS
-	damage_mult = 3
+	damage_mult = 2
 	recoil = 0
 	scatter = 8 // Only affects buckshot considering marksman has -15 scatter.
 	damage_falloff_mult = 1.2
@@ -323,3 +323,4 @@
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 22,"rail_x" = 17, "rail_y" = 22, "under_x" = 22, "under_y" = 17, "stock_x" = 22, "stock_y" = 19)
 
 	fire_delay = 0.15 SECONDS
+	damage_mult = 2
