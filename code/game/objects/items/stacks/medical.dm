@@ -138,7 +138,7 @@
 	singular_name = "medical gauze"
 	desc = "Some sterile gauze to wrap around bloody stumps."
 	icon_state = "brutepack"
-	heal_brute = 3
+	heal_brute = 5
 	heal_flags = BANDAGE
 
 /obj/item/stack/medical/heal_pack/gauze/generate_treatment_messages(mob/user, mob/patient, datum/limb/target_limb, success)
@@ -154,7 +154,7 @@
 	gender = PLURAL
 	singular_name = "ointment"
 	icon_state = "ointment"
-	heal_burn = 3
+	heal_burn = 5
 	heal_flags = SALVE
 
 /obj/item/stack/medical/heal_pack/ointment/generate_treatment_messages(mob/user, mob/patient, datum/limb/target_limb, success)
@@ -202,7 +202,7 @@
 	singular_name = "advanced trauma kit"
 	desc = "An advanced trauma kit for severe injuries."
 	icon_state = "traumakit"
-	heal_brute = 12
+	heal_brute = 15
 	heal_flags = BANDAGE | DISINFECT
 
 /obj/item/stack/medical/heal_pack/advanced/bruise_pack/generate_treatment_messages(mob/user, mob/patient, datum/limb/target_limb, success)
@@ -217,7 +217,7 @@
 	singular_name = "advanced burn kit"
 	desc = "An advanced treatment kit for severe burns."
 	icon_state = "burnkit"
-	heal_burn = 12
+	heal_burn = 15
 	heal_flags = SALVE | DISINFECT
 
 /obj/item/stack/medical/heal_pack/advanced/burn_pack/generate_treatment_messages(mob/user, mob/patient, datum/limb/target_limb, success)
@@ -234,7 +234,7 @@
 	amount = 5
 	max_amount = 5
 	skill_level_needed = SKILL_MEDICAL_PRACTICED
-	unskilled_delay = SKILL_TASK_TOUGH
+	unskilled_delay = SKILL_TASK_EASY
 	///How much splint health per medical skill is applied
 	var/applied_splint_health = 15
 

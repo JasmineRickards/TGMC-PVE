@@ -12,7 +12,7 @@
 	throw_speed = 5
 	throw_range = 20
 	attack_verb = list("hit", "whacked", "sliced")
-	max_amount = 20
+	max_amount = 25
 	merge_type = /obj/item/stack/barbed_wire
 
 //small stack
@@ -25,7 +25,7 @@
 
 //full stack
 /obj/item/stack/barbed_wire/full
-	amount = 20
+	amount = 25
 
 /obj/item/stack/barbed_wire/attackby(obj/item/I, mob/user, params)
 	. = ..()
