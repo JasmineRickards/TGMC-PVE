@@ -35,7 +35,7 @@
 		if(!do_after(user, do_after_time * (SKILL_MEDICAL_PRACTICED - skill), TRUE, target, BUSY_ICON_UNSKILLED))
 			return
 	user.visible_message(span_notice("[user] starts searching for shrapnel in [target] with the [removaltool]."), span_notice("You start searching for shrapnel in [target] with the [removaltool]."))
-	if(!do_after(user, do_after_time, TRUE, target, BUSY_ICON_MEDICAL))
+	if(!do_after(user, do_after_time / (skill + 0.5), TRUE, target, BUSY_ICON_MEDICAL))
 		to_chat(user, span_notice("You stop searching for shrapnel in [target]"))
 		return
 	remove_shrapnel(user, target, targetlimb, skill)
@@ -62,8 +62,8 @@
 		I.unembed_ourself(FALSE)
 		if(skill < SKILL_MEDICAL_PRACTICED)
 			user.visible_message(span_notice("[user] violently rips out [I] from [target]!"), span_notice("You violently rip out [I] from [target]!"))
-			targetlimb.take_damage_limb(30 * (SKILL_MEDICAL_PRACTICED - skill), 0, FALSE, FALSE)
+			targetlimb.take_damage_limb(50 - (skill * 5), 0, FALSE, FALSE)
 		else
 			user.visible_message(span_notice("[user] pulls out [I] from [target]!"), span_notice("You pull out [I] from [target]!"))
-			targetlimb.take_damage_limb(15, 0, FALSE, FALSE)
+			targetlimb.take_damage_limb(25 - (skill * 5), 0, FALSE, FALSE)
 		break

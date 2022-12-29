@@ -254,6 +254,7 @@
 			/obj/item/binoculars = -1,
 			/obj/item/compass = -1,
 			/obj/item/tool/hand_labeler = -1,
+			/obj/item/stack/sandbags_empty/full = -1,
 		),
 	)
 
@@ -485,6 +486,7 @@
 			/obj/item/assembly/signaler = -1,
 			/obj/item/binoculars = -1,
 			/obj/item/compass = -1,
+			/obj/item/stack/sandbags_empty/full = -1,
 		),
 	)
 
@@ -702,6 +704,7 @@
 			/obj/item/assembly/signaler = -1,
 			/obj/item/binoculars = -1,
 			/obj/item/compass = -1,
+			/obj/item/stack/sandbags_empty/full = -1,
 		),
 	)
 
@@ -870,6 +873,7 @@
 			/obj/item/assembly/signaler = -1,
 			/obj/item/binoculars = -1,
 			/obj/item/compass = -1,
+			/obj/item/stack/sandbags_empty/full = -1,
 		),
 	)
 
@@ -1171,11 +1175,12 @@
 			/obj/item/stack/medical/heal_pack/gauze = -1,
 			/obj/item/stack/medical/heal_pack/ointment = -1,
 			/obj/item/stack/medical/splint = -1,
+			/obj/item/tweezers = -1,
 			/obj/item/stack/medical/heal_pack/advanced/bruise_pack = 50,
 			/obj/item/stack/medical/heal_pack/advanced/burn_pack = 50,
 		),
 		"Misc" = list(
-			/obj/item/defibrillator = 8,
+			/obj/item/defibrillator = 10,
 			/obj/item/healthanalyzer = 16,
 			/obj/item/bodybag/cryobag = 24,
 			/obj/item/tool/surgery/solderingtool = 10,
@@ -1219,6 +1224,7 @@
 			/obj/item/stack/medical/heal_pack/advanced/bruise_pack = -1,
 			/obj/item/stack/medical/heal_pack/advanced/burn_pack = -1,
 			/obj/item/stack/medical/splint = -1,
+			/obj/item/tweezers = -1,
 		),
 		"Misc" = list(
 			/obj/item/healthanalyzer = -1,
@@ -1411,6 +1417,21 @@
 		"Freelancer" = list(
 			/obj/item/clothing/suit/storage/faction/freelancer = -1,
 			/obj/item/clothing/head/frelancer = -1,
+
+		),
+		"Mercenary" = list(
+			/obj/item/clothing/suit/storage/marine/veteran/wolves = -1,
+			/obj/item/clothing/suit/storage/marine/veteran/dutch = -1,
+			/obj/item/clothing/suit/storage/marine/veteran/mercenary = -1,
+			/obj/item/clothing/suit/storage/marine/veteran/mercenary/miner = -1,
+			/obj/item/clothing/suit/storage/marine/veteran/mercenary/engineer = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/dutch = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/dutch/cap = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/dutch/band = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/wolves = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/mercenary = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/mercenary/miner = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/mercenary/engineer = -1,
 
 		),
 		"Civilian" = list(
@@ -1607,12 +1628,25 @@
 			/obj/item/clothing/under/marine/veteran/UPP = -1,
 			/obj/item/clothing/shoes/marine = -1,
 			/obj/item/storage/backpack/lightpack = -1,
+			/obj/item/clothing/mask/gas/PMC/upp = -1,
 		),
 		"Freelancer" = list(
 			/obj/item/clothing/gloves/marine/veteran/PMC = -1,
 			/obj/item/clothing/under/marine/veteran/freelancer = -1,
 			/obj/item/clothing/mask/rebreather/scarf/freelancer = -1,
-			/obj/item/clothing/shoes/marine = -1,
+			/obj/item/clothing/shoes/veteran/PMC = -1,
+			/obj/item/storage/backpack/lightpack = -1,
+		),
+		"Mercenary" = list(
+			/obj/item/clothing/gloves/marine/veteran/PMC = -1,
+			/obj/item/clothing/under/marine/veteran/wolves = -1,
+			/obj/item/clothing/under/marine/veteran/dutch = -1,
+			/obj/item/clothing/under/marine/veteran/dutch/ranger = -1,
+			/obj/item/clothing/under/marine/veteran/mercenary = -1,
+			/obj/item/clothing/under/marine/veteran/mercenary/miner = -1,
+			/obj/item/clothing/under/marine/veteran/mercenary/engineer = -1,
+			/obj/item/clothing/mask/gas/wolves = -1,
+			/obj/item/clothing/shoes/marine/clf/full = -1,
 			/obj/item/storage/backpack/lightpack = -1,
 		),
 		"Pizza time" = list(

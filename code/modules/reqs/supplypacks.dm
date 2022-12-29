@@ -1054,14 +1054,6 @@ MEDICAL
 	containertype = /obj/structure/closet/crate/secure/surgery
 	access = ACCESS_MARINE_MEDBAY
 
-/datum/supply_packs/medical/tweezers
-	name = "tweezers"
-	notes = "contains a pair of tweezers."
-	contains = list(/obj/item/tweezers)
-	cost = 20  //shouldn't be easy to get
-	containertype = /obj/structure/closet/crate/secure/surgery
-	access = ACCESS_MARINE_MEDBAY
-
 /*******************************************************************************
 ENGINEERING
 *******************************************************************************/
@@ -1074,11 +1066,6 @@ ENGINEERING
 	contains = list(/obj/vehicle/ridden/powerloader)
 	cost = 20
 	containertype = null
-
-/datum/supply_packs/engineering/sandbags
-	name = "50 empty sandbags"
-	contains = list(/obj/item/stack/sandbags_empty/full)
-	cost = 10
 
 /datum/supply_packs/engineering/metal50
 	name = "50 metal sheets"

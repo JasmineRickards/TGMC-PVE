@@ -291,6 +291,7 @@
 
 
 /obj/item/clothing/under/marine/veteran/dutch/ranger
+	name = "\improper Dutch's Dozen ranger uniform"
 	icon_state = "dutch_jumpsuit2"
 
 /*===========================HELGHAST - MERCENARY================================*/

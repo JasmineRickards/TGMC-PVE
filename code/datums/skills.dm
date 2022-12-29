@@ -214,7 +214,7 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	engineer = SKILL_ENGINEER_ENGI //to hack airlocks so they're never stuck in a room.
 	firearms = SKILL_FIREARMS_DEFAULT
 	construction = SKILL_CONSTRUCTION_METAL
-	medical = SKILL_MEDICAL_NOVICE
+	medical = SKILL_MEDICAL_PRACTICED
 
 /datum/skills/civilian/survivor/master
 	name = "Survivor"
@@ -273,12 +273,15 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	construction = SKILL_CONSTRUCTION_ADVANCED
 	leadership = SKILL_LEAD_BEGINNER
 	powerloader = SKILL_POWERLOADER_DABBLING
+	heavy_weapons = SKILL_HEAVY_WEAPONS_TRAINED
 
 /datum/skills/combat_medic
 	name = "Combat Medic"
 	leadership = SKILL_LEAD_BEGINNER
-	medical = SKILL_MEDICAL_PRACTICED
-	surgery = SKILL_SURGERY_TRAINED
+	medical = SKILL_MEDICAL_COMPETENT
+	surgery = SKILL_SURGERY_PROFESSIONAL
+	pistols = SKILL_PISTOLS_TRAINED
+	smgs = SKILL_SMGS_TRAINED
 
 /datum/skills/combat_medic/crafty
 	name = "Crafty Combat Medic"
@@ -289,8 +292,8 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	name = "Doctor"
 	cqc = SKILL_CQC_WEAK
 	firearms = SKILL_FIREARMS_UNTRAINED
-	medical = SKILL_MEDICAL_EXPERT
-	surgery = SKILL_SURGERY_EXPERT
+	medical = SKILL_MEDICAL_MASTER
+	surgery = SKILL_SURGERY_MASTER
 	melee_weapons = SKILL_MELEE_WEAK
 
 /datum/skills/cmo
@@ -298,8 +301,8 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	cqc = SKILL_CQC_WEAK
 	firearms = SKILL_FIREARMS_UNTRAINED
 	leadership = SKILL_LEAD_TRAINED
-	medical = SKILL_MEDICAL_EXPERT
-	surgery = SKILL_SURGERY_EXPERT
+	medical = SKILL_MEDICAL_MASTER
+	surgery = SKILL_SURGERY_MASTER
 	melee_weapons = SKILL_MELEE_WEAK
 	police = SKILL_POLICE_MP
 
@@ -425,6 +428,8 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	name = "Crafty Private"
 	construction = SKILL_CONSTRUCTION_METAL
 	engineer = SKILL_ENGINEER_METAL
+	medical = SKILL_MEDICAL_PRACTICED
+	surgery = SKILL_SURGERY_TRAINED
 
 /datum/skills/special_forces_standard
 	name = "Special Force Standard"
@@ -438,8 +443,8 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	construction = SKILL_CONSTRUCTION_PLASTEEL
 	engineer = SKILL_ENGINEER_PLASTEEL
 	leadership = SKILL_LEAD_EXPERT
-	medical = SKILL_MEDICAL_NOVICE
-	surgery = SKILL_SURGERY_AMATEUR
+	medical = SKILL_MEDICAL_PRACTICED
+	surgery = SKILL_SURGERY_TRAINED
 
 /datum/skills/sl/clf
 	name = "CLF leader"
