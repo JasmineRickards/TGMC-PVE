@@ -357,7 +357,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 2
 
 /datum/ammo/bullet/pistol/hollow/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, stagger = 1, slowdown = 0.5, knockback = 1)
+	staggerstun(M, P, stagger = 1, slowdown = 1, knockback = 0)
 
 /datum/ammo/bullet/pistol/ap
 	name = "armor-piercing pistol bullet"
@@ -383,7 +383,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 3.5
 
 /datum/ammo/bullet/pistol/superheavy/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, stagger = 1, slowdown = 1, shake = 0)
+	staggerstun(M, P, weaken = 1, stagger = 2, slowdown = 3, shake = 0)
 
 /datum/ammo/bullet/pistol/superheavy/derringer
 	handful_amount = 2
@@ -453,7 +453,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 3
 
 /datum/ammo/bullet/revolver/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, stagger = 1, slowdown = 0.5, knockback = 1)
+	staggerstun(M, P, stagger = 2, slowdown = 2, knockback = 0)
 
 /datum/ammo/bullet/revolver/tp44
 	name = "standard revolver bullet"
@@ -462,7 +462,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 1
 
 /datum/ammo/bullet/revolver/tp44/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, stagger = 0, slowdown = 0, knockback = 1, shake = 0)
+	staggerstun(M, P, stagger = 2, slowdown = 2, knockback = 0, shake = 0)
 
 /datum/ammo/bullet/revolver/small
 	name = "small revolver bullet"
@@ -498,7 +498,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 3
 
 /datum/ammo/bullet/revolver/highimpact/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, weaken = 1, stagger = 1, slowdown = 1, knockback = 1, shake = 0.5)
+	staggerstun(M, P, weaken = 1, stagger = 2, slowdown = 3, knockback = 1, shake = 0.5)
 
 /datum/ammo/bullet/revolver/ricochet
 	bonus_projectiles_type = /datum/ammo/bullet/revolver/small
@@ -631,7 +631,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 5
 
 /datum/ammo/bullet/rifle/repeater/on_hit_mob(mob/M, obj/projectile/P)
-	staggerstun(M, P, max_range = 3, slowdown = 2, stagger = 1, shake = 0.5)
+	staggerstun(M, P, max_range = 3, slowdown = 2, stagger = 2, shake = 0.5)
 
 /datum/ammo/bullet/rifle/incendiary
 	name = "incendiary rifle bullet"
@@ -685,7 +685,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 5
 
 /datum/ammo/bullet/rifle/tx8/impact/on_hit_mob(mob/M, obj/projectile/P)
-	staggerstun(M, P, max_range = 20, slowdown = 1, shake = 0)
+	staggerstun(M, P, max_range = 20, slowdown = 2, shake = 0)
 
 /datum/ammo/bullet/rifle/mpi_km
 	name = "crude heavy rifle bullet"
@@ -774,8 +774,8 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	penetration = 20
 	sundering = 7.5
 
-//datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
-//	staggerstun(M, P, weaken = 1, stagger = 2, knockback = 1, slowdown = 2)
+datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
+	staggerstun(M, P, weaken = 1, stagger = 3, knockback = 0, slowdown = 3)
 
 
 /datum/ammo/bullet/shotgun/beanbag
@@ -858,8 +858,8 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	penetration = 0
 
 
-datum/ammo/bullet/shotgun/buckshot/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, weaken = 1, stagger = 1, knockback = 2, slowdown = 0.5, max_range = 3)
+//datum/ammo/bullet/shotgun/buckshot/on_hit_mob(mob/M,obj/projectile/P)
+//	staggerstun(M, P, weaken = 1, stagger = 1, knockback = 2, slowdown = 0.5, max_range = 3)
 
 /datum/ammo/bullet/shotgun/spread
 	name = "additional buckshot"
@@ -939,7 +939,7 @@ datum/ammo/bullet/shotgun/buckshot/on_hit_mob(mob/M,obj/projectile/P)
 	penetration = 20
 
 datum/ammo/bullet/shotgun/sx16_slug/on_hit_mob(mob/M, obj/projectile/P)
-	staggerstun(M, P, slowdown = 1, knockback = 1)
+	staggerstun(M, P, stagger = 1, slowdown = 1, knockback = 0)
 
 /datum/ammo/bullet/shotgun/tx15_flechette
 	name = "shotgun flechette shell"
@@ -976,7 +976,7 @@ datum/ammo/bullet/shotgun/sx16_slug/on_hit_mob(mob/M, obj/projectile/P)
 	sundering = 3.5
 
 datum/ammo/bullet/shotgun/tx15_slug/on_hit_mob(mob/M, obj/projectile/P)
-	staggerstun(M, P, slowdown = 2, knockback = 1)
+	staggerstun(M, P, stagger = 1, slowdown = 2, knockback = 0)
 
 /datum/ammo/bullet/shotgun/mbx900_buckshot
 	name = "light shotgun buckshot shell" // If .410 is the smallest shotgun shell, then...
