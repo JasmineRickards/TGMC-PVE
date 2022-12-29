@@ -669,12 +669,12 @@
 
 	flags_item_map_variant = NONE
 
-	fire_delay = 20
+	fire_delay = 8 //If your muscle memory is good enough, it's almost like slamfire. Still not quite as fast as other shotguns.
 	scatter_unwielded = 10
 	recoil = -1
 	recoil_unwielded = 4
 	aim_slowdown = 0.45
-	cock_delay = 14
+	cock_delay = 8
 
 	placed_overlay_iconstate = "t35"
 
