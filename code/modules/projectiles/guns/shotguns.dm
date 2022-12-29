@@ -256,7 +256,7 @@
 	fire_sound = 'sound/weapons/guns/fire/shotgun.ogg'
 	cocked_sound = 'sound/weapons/guns/interact/shotgun_pump.ogg'
 	max_chamber_items = 15
-	cock_delay = 1.4 SECONDS
+	cock_delay = 0.8 SECONDS
 
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
