@@ -100,7 +100,7 @@ GLOBAL_LIST_INIT(medic_gear_listed_products, list(
 		/obj/item/reagent_containers/hypospray/advanced/big = list(CAT_MEDSUP, "Big hypospray", 5, "orange"),
 		/obj/item/clothing/glasses/hud/health = list(CAT_MEDSUP, "Medical HUD glasses", 1, "black"),
 		/obj/item/defibrillator/gloves = list(CAT_MEDSUP, "Advanced medical gloves", 3, "black"),
-		GLOB.medic_gear_listed_products = list(CAT_ESS, "Experimental treatment kit", 5, "white"),
+		/obj/item/stack/medical/heal_pack/gauze/sectoid = list(CAT_ESS, "Experimental treatment kit", 5, "white"),
 	))
 
 GLOBAL_LIST_INIT(leader_gear_listed_products, list(
