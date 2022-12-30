@@ -317,7 +317,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state = "pistol"
 	hud_state_empty = "pistol_empty"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
-	damage = 40
+	damage = 30
 	penetration = 5
 	accurate_range = 5
 	sundering = 1
@@ -332,7 +332,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/pistol/tiny/ap
 	name = "light pistol bullet"
 	hud_state = "pistol_lightap"
-	damage = 45
+	damage = 35
 	penetration = 25 //So it can actually hurt something.
 	sundering = 0.5
 	damage_falloff = 1.5
@@ -362,7 +362,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/pistol/ap
 	name = "armor-piercing pistol bullet"
 	hud_state = "pistol_ap"
-	damage = 40
+	damage = 30
 	penetration = 12.5
 	shrapnel_chance = 25
 	sundering = 2
@@ -370,7 +370,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/pistol/heavy
 	name = "heavy pistol bullet"
 	hud_state = "pistol_heavy"
-	damage = 60
+	damage = 50
 	penetration = 5
 	shrapnel_chance = 25
 	sundering = 2.15
@@ -378,7 +378,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/pistol/superheavy
 	name = "high impact pistol bullet"
 	hud_state = "pistol_hollow"
-	damage = 80
+	damage = 60
 	penetration = 15
 	sundering = 3.5
 
@@ -448,26 +448,26 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state_empty = "revolver_empty"
 	handful_amount = 7
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
-	damage = 70
+	damage = 60
 	penetration = 10
 	sundering = 3
 
 /datum/ammo/bullet/revolver/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, stagger = 2, slowdown = 2, knockback = 0)
+	staggerstun(M, P, stagger = 1, slowdown = 2, knockback = 0)
 
 /datum/ammo/bullet/revolver/tp44
 	name = "standard revolver bullet"
-	damage = 80
+	damage = 60
 	penetration = 15
 	sundering = 1
 
 /datum/ammo/bullet/revolver/tp44/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, stagger = 2, slowdown = 2, knockback = 0, shake = 0)
+	staggerstun(M, P, stagger = 1, slowdown = 2, knockback = 0, shake = 0)
 
 /datum/ammo/bullet/revolver/small
 	name = "small revolver bullet"
 	hud_state = "revolver_small"
-	damage = 60
+	damage = 50
 
 /datum/ammo/bullet/revolver/small/on_hit_mob(mob/M,obj/projectile/P)
 	staggerstun(M, P, slowdown = 0.5)
@@ -479,13 +479,13 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	damage_falloff = 0
 	accuracy = 15
 	accurate_range = 15
-	damage = 60
+	damage = 50
 	penetration = 10
 
 /datum/ammo/bullet/revolver/heavy
 	name = "heavy revolver bullet"
 	hud_state = "revolver_heavy"
-	damage = 100
+	damage = 70
 	penetration = 5
 	accuracy = -10
 
@@ -493,12 +493,12 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "high-impact revolver bullet"
 	hud_state = "revolver_impact"
 	handful_amount = 6
-	damage = 80
+	damage = 60
 	penetration = 20
 	sundering = 3
 
 /datum/ammo/bullet/revolver/highimpact/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, weaken = 1, stagger = 2, slowdown = 3, knockback = 1, shake = 0.5)
+	staggerstun(M, P, weaken = 1, stagger = 2, slowdown = 3, shake = 0.5)
 
 /datum/ammo/bullet/revolver/ricochet
 	bonus_projectiles_type = /datum/ammo/bullet/revolver/small
