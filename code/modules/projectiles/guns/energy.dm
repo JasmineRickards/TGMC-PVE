@@ -1025,7 +1025,6 @@
 	fire_delay = 0.11 SECONDS
 	damage_falloff_mult = 0.6
 	wield_delay	= 0.4 SECONDS
-	fire_delay = 0.25 SECONDS
 
 /obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/caliver/magharness
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness)
