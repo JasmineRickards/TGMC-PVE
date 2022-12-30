@@ -677,6 +677,9 @@
 		/obj/item/reagent_containers/hypospray/advanced/oxycodone,
 		/obj/item/storage/firstaid/adv,
 		/obj/item/clothing/glasses/hud/health,
+		/obj/item/stack/medical/heal_pack/gauze/sectoid,
+		/obj/item/stack/medical/heal_pack/gauze/sectoid,
+
 	)
 
 /obj/effect/essentials_set/engi

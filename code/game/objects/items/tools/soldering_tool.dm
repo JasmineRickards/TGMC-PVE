@@ -38,3 +38,4 @@
 		if(affecting.heal_limb_damage(10, 10, robo_repair = TRUE, updating_health = TRUE))
 			H.UpdateDamageIcon()
 	return TRUE
+
