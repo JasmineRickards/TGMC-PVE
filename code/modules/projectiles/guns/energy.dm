@@ -947,7 +947,7 @@
 	icon_state = "charger"
 	item_state = "charger"
 	max_shots = 45
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.13 SECONDS
 	rounds_per_shot = 32
 	ammo_datum_type = /datum/ammo/energy/volkite/medium
 	allowed_ammo_types = list(
@@ -1022,7 +1022,7 @@
 	attachable_offset = list("muzzle_x" = 38, "muzzle_y" = 13,"rail_x" = 9, "rail_y" = 24, "under_x" = 45, "under_y" = 11, "stock_x" = 22, "stock_y" = 12)
 	accuracy_mult = 1.1
 	aim_slowdown = 0.65
-	fire_delay = 0.12 SECONDS
+	fire_delay = 0.11 SECONDS
 	damage_falloff_mult = 0.6
 	wield_delay	= 0.4 SECONDS
 	fire_delay = 0.25 SECONDS
@@ -1044,7 +1044,7 @@
 	desc = "Volkite weapons are the pride of Martian weapons manufacturing, their construction being a tightly guarded secret. Infamous for its ability to deflagrate organic targets with its tremendous thermal energy, explosively burning flesh in a fiery blast that can be deadly to anyone unfortunate enough to be nearby. The culverin is the largest man portable example of volkite weaponry, and can lay down a staggering torrent of fire due to its linked back-mounted powerpack. Drag click the powerpack to the gun to load."
 	icon_state = "culverin"
 	item_state = "culverin"
-	fire_delay = 0.13 SECONDS
+	fire_delay = 0.1 SECONDS
 	inhand_x_dimension = 64
 	inhand_y_dimension = 32
 	item_icons = list(

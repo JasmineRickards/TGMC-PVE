@@ -31,11 +31,29 @@ OPERATIONS
 	group = "Operations"
 	containertype = /obj/structure/closet/crate
 
-/datum/supply_packs/imports/loot_pack
+/datum/supply_packs/operations/loot_pack
 	name = "TGMC Loot Pack"
 	notes = "Contains a random, but curated set of items, these packs are valued around 150 to 200 points. Some items can only be acquired from these. Spend responsibly."
 	contains = list(/obj/item/loot_box/tgmclootbox)
 	cost = 100
+
+/datum/supply_packs/operations/specpyro
+	name = "Pyro spec kit"
+	notes = "Contains a full flame protection kit and flamer."
+	contains = list(/obj/item/storage/box/spec/pyro)
+	cost = 100
+
+/datum/supply_packs/operations/fobkit
+	name = "Fob Materials"
+	notes = "Contains materials for most sized fobs."
+	contains = list(/obj/item/storage/box/loot/materials_pack)
+	cost = 150
+
+/datum/supply_packs/operations/bulksentries
+	name = "Bulk sentries"
+	notes = "Contains 4 FOB defence dentries and 1 point defence sentry."
+	contains = list(/obj/item/storage/box/loot/sentry_pack)
+	cost = 120
 
 /datum/supply_packs/operations/beacons_supply
 	name = "supply beacon"
