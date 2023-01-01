@@ -314,8 +314,8 @@
 	desc = "The M276 is the standard load-bearing equipment of the TGMC. It consists of a modular belt with various clips. This configuration is commonly seen among TGMC Military Police and peacekeepers, though it can hold some light munitions."
 	icon_state = "securitybelt"
 	item_state = "security"//Could likely use a better one.
-	storage_slots = 7
-	max_w_class = 3
+	storage_slots = 14
+	max_w_class = 4
 	can_hold = list(
 		/obj/item/explosive/grenade/flashbang,
 		/obj/item/explosive/grenade/chem_grenade/teargas,
@@ -336,10 +336,44 @@
 		/obj/item/tool/taperoll/police,
 	)
 
-	cant_hold = list(
-		/obj/item/weapon/gun,
+/obj/item/storage/belt/security/MP
+	name = "\improper M276 pattern ship security rig"
+	desc = "The M276 is the standard load-bearing equipment of the TGMC. It consists of a modular belt with various clips. This configuration is commonly seen among TGMC Military Police and peacekeepers, though it can hold some light munitions."
+	icon_state = "securitybelt"
+	item_state = "security"//Could likely use a better one.
+	storage_slots = 16
+	max_w_class = 4
+	can_hold = list(
+		/obj/item/explosive/grenade/flashbang,
+		/obj/item/explosive/grenade/chem_grenade/teargas,
+		/obj/item/reagent_containers/spray/pepper,
+		/obj/item/restraints/handcuffs,
+		/obj/item/flash,
+		/obj/item/clothing/glasses,
+		/obj/item/ammo_magazine/pistol,
+		/obj/item/ammo_magazine/handful,
+		/obj/item/reagent_containers/food/snacks/donut,
+		/obj/item/weapon/baton,
+		/obj/item/weapon/gun/energy/taser,
+		/obj/item/tool/lighter/zippo,
+		/obj/item/storage/fancy/cigarettes,
+		/obj/item/clothing/glasses/hud/security,
+		/obj/item/flashlight,
+		/obj/item/radio/headset,
+		/obj/item/tool/taperoll/police,
+		/obj/item/weapon/gun/pistol,
+//	cant_hold = list(
+//		/obj/item/weapon/gun,
 	)
-
+/obj/item/storage/belt/security/MP/full/Initialize()  //The belt, with all it's magic inside!
+	. = ..()
+	new /obj/item/reagent_containers/spray/pepper(src)
+	new	/obj/item/restraints/handcuffs(src)
+	new	/obj/item/restraints/handcuffs(src)
+	new	/obj/item/weapon/gun/energy/taser(src)
+	new	/obj/item/weapon/baton(src)
+	new	/obj/item/flash(src)
+	new /obj/item/hailer(src)
 
 
 /obj/item/storage/belt/security/tactical
@@ -348,7 +382,7 @@
 	icon_state = "swatbelt"
 	item_state = "swatbelt"
 	storage_slots = 24
-	max_w_class = 3
+	max_w_class = 4
 
 /obj/item/storage/belt/marine
 	name = "\improper M276 pattern ammo load rig"

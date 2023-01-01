@@ -325,10 +325,10 @@
 	icon_state = "mecha_uac2"
 	equip_cooldown = 10
 	ammotype = /datum/ammo/bullet/minigun
-	projectiles = 300
-	projectiles_cache = 300
-	projectiles_cache_max = 1200
-	variance = 6
+	projectiles = 600
+	projectiles_cache = 600
+	projectiles_cache_max = 2400
+	variance = 3
 	projectile_delay = 2
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_LMG

@@ -200,12 +200,12 @@ WEAPONS
 /datum/supply_packs/weapons/m56d_emplacement
 	name = "HSG-102 Mounted Heavy Smartgun"
 	contains = list(/obj/item/storage/box/tl102)
-	cost = 80
+	cost = 60
 
 /datum/supply_packs/weapons/m56d
 	name = "HSG-102 mounted heavy smartgun ammo"
 	contains = list(/obj/item/ammo_magazine/tl102)
-	cost = 10
+	cost = 3
 
 /datum/supply_packs/weapons/antitankgun
 	name = "AT-36 Anti Tank Gun"
@@ -1540,9 +1540,23 @@ Imports
 /*******************************************************************************
 VEHICLES
 *******************************************************************************/
-
 /datum/supply_packs/vehicles
 	group = "Vehicles"
+
+/datum/supply_packs/vehicles/mechscout
+	name = "FS-M Mobile suit"
+	cost = 40
+	contains = list(/obj/vehicle/sealed/mecha/combat/gygax)
+
+/datum/supply_packs/vehicles/mechlmg
+	name = "FS-M Mobile suit LMG"
+	cost = 20
+	contains = list(/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg)
+
+/datum/supply_packs/vehicles/mechlmgammo
+	name = "FS-M Mobile suit LMG ammo"
+	cost = 5
+	contains = list(/obj/item/mecha_ammo/lmg)
 
 /datum/supply_packs/vehicles/motorbike
 	name = "All-Terrain Motorbike"

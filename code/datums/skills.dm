@@ -203,6 +203,25 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 		"powerloader" = powerloader,\
 		"large_vehicle" = large_vehicle)
 
+/datum/skills/MP
+	name = "Military Police"
+	cqc = SKILL_CQC_MP
+	police = SKILL_POLICE_MP
+	construction = SKILL_CONSTRUCTION_METAL
+	engineer = SKILL_ENGINEER_METAL
+	medical = SKILL_MEDICAL_PRACTICED
+	surgery = SKILL_SURGERY_TRAINED
+
+/datum/skills/CMP
+	name = COMMAND_MASTER_AT_ARMS
+	cqc = SKILL_CQC_MP
+	police = SKILL_POLICE_MP
+	medical = SKILL_MEDICAL_EXPERT
+	surgery = SKILL_SURGERY_EXPERT
+	construction = SKILL_CONSTRUCTION_MASTER
+	engineer = SKILL_ENGINEER_MASTER
+	powerloader = SKILL_POWERLOADER_MASTER
+
 /datum/skills/civilian
 	name = "Civilian"
 	cqc = SKILL_CQC_WEAK

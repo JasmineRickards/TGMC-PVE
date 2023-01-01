@@ -200,7 +200,7 @@
 	name = "\improper PAS-N2 pattern MA armor"
 	desc = "A standard TerraGov Navy N2 Personal Armor System. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage."
 	icon_state = "mp"
-	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 45, BOMB = 45, BIO = 45, FIRE = 45, ACID = 50)
+	soft_armor = list(MELEE = 40, BULLET = 90, LASER = 90, ENERGY = 90, BOMB = 45, BIO = 45, FIRE = 45, ACID = 50)
 	slowdown = 0.5
 	flags_item_map_variant = NONE
 	allowed = list(
@@ -232,7 +232,7 @@
 	name = "\improper PAS-N3 pattern admiral armor"
 	desc = "A well-crafted suit of Personal Armor System with a gold shine. It looks very expensive, but shockingly fairly easy to carry and wear."
 	w_class = WEIGHT_CLASS_NORMAL
-	soft_armor = list(MELEE = 40, BULLET = 65, LASER = 60, ENERGY = 45, BOMB = 45, BIO = 45, FIRE = 45, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 95, LASER = 95, ENERGY = 55, BOMB = 45, BIO = 45, FIRE = 45, ACID = 50)
 
 /obj/item/clothing/suit/storage/marine/MP/RO
 	icon_state = "officer"

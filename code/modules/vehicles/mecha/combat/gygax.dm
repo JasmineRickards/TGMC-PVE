@@ -1,6 +1,6 @@
 /obj/vehicle/sealed/mecha/combat/gygax
-	desc = "A lightweight, security exosuit. Popular among private and corporate security."
-	name = "\improper Gygax"
+	desc = "A TGMC experimental field suit, designated the Field Support - Mobile variant. Lightly armored and easy to use."
+	name = "\improper FS-M"
 	icon_state = "gygax"
 	base_icon_state = "gygax"
 	allow_diagonal_movement = TRUE
