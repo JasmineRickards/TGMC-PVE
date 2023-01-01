@@ -153,6 +153,12 @@
 	icon_state = "medicbag_upp"
 	item_state = "medicbag_upp"
 
+/obj/item/storage/belt/lifesaver/upp
+	name ="\improper Type 41 pattern lifesaver bag"
+	desc = "The Type 41 load rig is the standard-issue LBE of the UPP military. This configuration mounts a satchel filled with a range of injectors and light medical supplies, common among medics and partisans."
+	icon_state = "medicbag_upp"
+	item_state = "medicbag_upp"
+
 
 /obj/item/storage/belt/lifesaver/som
 	name = "\improper S17 lifesaver bag"

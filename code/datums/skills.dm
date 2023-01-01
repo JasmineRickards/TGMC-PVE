@@ -381,16 +381,25 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	name = STAFF_OFFICER
 	construction = SKILL_CONSTRUCTION_PLASTEEL
 	leadership = SKILL_LEAD_EXPERT
+	engineer = SKILL_ENGINEER_ENGI //to fix CIC apc.
+	construction = SKILL_CONSTRUCTION_PLASTEEL
+//	leadership = SKILL_LEAD_MASTER
 	medical = SKILL_MEDICAL_PRACTICED
 	surgery = SKILL_SURGERY_AMATEUR
 	police = SKILL_POLICE_MP
+	powerloader = SKILL_POWERLOADER_TRAINED
+	cqc = SKILL_CQC_TRAINED
 
 /datum/skills/pilot
 	name = PILOT_OFFICER
-	engineer = SKILL_ENGINEER_ENGI // Juuuust below ship tech
-	pilot = SKILL_PILOT_TRAINED
-	powerloader = SKILL_POWERLOADER_PRO
-	leadership = SKILL_LEAD_TRAINED
+	engineer = SKILL_ENGINEER_ENGI //to fix CIC apc.
+	construction = SKILL_CONSTRUCTION_PLASTEEL
+	leadership = SKILL_LEAD_MASTER
+	medical = SKILL_MEDICAL_PRACTICED
+	surgery = SKILL_SURGERY_AMATEUR
+	police = SKILL_POLICE_MP
+	powerloader = SKILL_POWERLOADER_TRAINED
+	cqc = SKILL_CQC_TRAINED
 
 /datum/skills/mech_pilot
 	name = MECH_PILOT
@@ -408,10 +417,14 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 
 /datum/skills/ro
 	name = "Requisition Officer"
+	engineer = SKILL_ENGINEER_ENGI //to fix CIC apc.
 	construction = SKILL_CONSTRUCTION_PLASTEEL
-	leadership = SKILL_LEAD_TRAINED
-	powerloader = SKILL_POWERLOADER_MASTER
+	leadership = SKILL_LEAD_MASTER
+	medical = SKILL_MEDICAL_PRACTICED
+	surgery = SKILL_SURGERY_AMATEUR
 	police = SKILL_POLICE_MP
+	powerloader = SKILL_POWERLOADER_TRAINED
+	cqc = SKILL_CQC_TRAINED
 
 /datum/skills/st
 	name = SHIP_TECH

@@ -1535,7 +1535,7 @@ Imports
 		/obj/item/clothing/suit/storage/marine/imperial/sergeant/veteran,
 		/obj/item/clothing/head/helmet/marine/imperial/sergeant/veteran,
 		/obj/item/weapon/chainsword,)
-	cost = 120
+	cost = 180
 
 /*******************************************************************************
 VEHICLES

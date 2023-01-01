@@ -1185,6 +1185,8 @@
 			/obj/item/bodybag/cryobag = 24,
 			/obj/item/tool/surgery/solderingtool = 10,
 			/obj/item/storage/belt/rig/medical = 10,
+			/obj/item/storage/belt/lifesaver/full/upp = 5,
+			/obj/item/storage/belt/lifesaver/full = 5,
 		),
 	)
 
@@ -1629,6 +1631,9 @@
 			/obj/item/clothing/shoes/marine = -1,
 			/obj/item/storage/backpack/lightpack = -1,
 			/obj/item/clothing/mask/gas/PMC/upp = -1,
+			/obj/item/storage/belt/marine/upp = -1,
+			/obj/item/storage/belt/lifesaver/upp = -1,
+
 		),
 		"Freelancer" = list(
 			/obj/item/clothing/gloves/marine/veteran/PMC = -1,
