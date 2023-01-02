@@ -91,9 +91,10 @@
 	item_state = "bulletproof"
 	blood_overlay_type = "armor"
 	flags_armor_protection = CHEST
-	soft_armor = list(MELEE = 30, BULLET = 55, LASER = 0, ENERGY = 0, BOMB = 30, BIO = 0, FIRE = 0, ACID = 15)
-	hard_armor = list(MELEE = 0, BULLET = 20, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 5)
+	soft_armor = list(MELEE = 15, BULLET = 95, LASER = 95, ENERGY = 36, BOMB = 75, BIO = 0, FIRE = 75, ACID = 15)
+//	hard_armor = list(MELEE = 0, BULLET = 20, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 5)
 	siemens_coefficient = 0.7
+	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
 	permeability_coefficient = 0.9
 	time_to_unequip = 20
 	time_to_equip = 20
@@ -112,7 +113,7 @@
 	item_state = "swat"
 	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
 	slowdown = 1.2
-	soft_armor = list(MELEE = 65, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 0, BIO = 0, FIRE = 10, ACID = 10)
+	soft_armor = list(MELEE = 82, BULLET = 15, LASER = 10, ENERGY = 10, BOMB = 0, BIO = 0, FIRE = 10, ACID = 10)
 	flags_inventory = BLOCKSHARPOBJ
 	flags_inv_hide = HIDEJUMPSUIT
 	flags_item = SYNTH_RESTRICTED
@@ -131,7 +132,7 @@
 	flags_armor_protection = CHEST|GROIN|LEGS|FEET|ARMS
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/baton,/obj/item/restraints/handcuffs,/obj/item/tank/emergency_oxygen)
 	slowdown = 1
-	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 50, ENERGY = 25, BOMB = 50, BIO = 100, FIRE = 25, ACID = 25)
+	soft_armor = list(MELEE = 65, BULLET = 60, LASER = 50, ENERGY = 25, BOMB = 50, BIO = 100, FIRE = 25, ACID = 25)
 	flags_inventory = BLOCKSHARPOBJ|NOPRESSUREDMAGE
 	flags_item = SYNTH_RESTRICTED
 	flags_inv_hide = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT

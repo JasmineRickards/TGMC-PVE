@@ -244,6 +244,8 @@
 		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/gyro,
 		/obj/item/attachable/stock/t19stock,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/stock/t19stock,
 	)
 
 	flags_item_map_variant = NONE
@@ -251,12 +253,12 @@
 	burst_amount = 4
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 1
-	damage_mult = 1.2
+	damage_mult = 1.4
 	aim_slowdown = 0.2
 	scatter = 3
 
 /obj/item/weapon/gun/smg/m25/elite/pmc
-	starting_attachment_types = list(/obj/item/attachable/magnetic_harness)
+	starting_attachment_types = list(/obj/item/attachable/magnetic_harness,/obj/item/attachable/heavy_barrel,/obj/item/attachable/stock/t19stock,)
 
 /obj/item/weapon/gun/smg/m25/elite/suppressed
 	icon_state = "m25"

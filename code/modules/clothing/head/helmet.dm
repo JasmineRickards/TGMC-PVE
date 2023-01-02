@@ -5,7 +5,7 @@
 	icon_state = "helmet"
 	item_state = "helmet"
 	accuracy_mod = 0
-	soft_armor = list(MELEE = 50, BULLET = 15, LASER = 50, ENERGY = 10, BOMB = 25, BIO = 0, FIRE = 10, ACID = 10)
+	soft_armor = list(MELEE = 25, BULLET = 90, LASER = 65, ENERGY = 65, BOMB = 75, BIO = 0, FIRE = 75, ACID = 10)
 	flags_atom = CONDUCT
 	flags_inventory = COVEREYES|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES
@@ -536,7 +536,7 @@
 	name = "\improper Dutch's Dozen helmet"
 	desc = "A protective helmet worn by some seriously experienced mercs."
 	icon_state = "dutch_helmet"
-	soft_armor = list(MELEE = 70, BULLET = 70, LASER = 0, ENERGY = 20, BOMB = 0, BIO = 0, FIRE = 20, ACID = 20)
+	soft_armor = list(MELEE = 70, BULLET = 70, LASER = 0, ENERGY = 20, BOMB = 75, BIO = 0, FIRE = 20, ACID = 20)
 	flags_marine_helmet = HELMET_GARB_OVERLAY|HELMET_DAMAGE_OVERLAY|HELMET_STORE_GARB
 
 /obj/item/clothing/head/helmet/marine/veteran/dutch/cap
@@ -559,7 +559,7 @@
 	name = "\improper Steel Wolves helmet"
 	desc = "Is good for winter, because it has hole to put vodka through."
 	icon_state = "dutch_helmet"
-	soft_armor = list(MELEE = 90, BULLET = 65, LASER = 40, ENERGY = 35, BOMB = 35, BIO = 5, FIRE = 35, ACID = 35)
+	soft_armor = list(MELEE = 90, BULLET = 65, LASER = 40, ENERGY = 35, BOMB = 75, BIO = 5, FIRE = 75, ACID = 45)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_marine_helmet = HELMET_GARB_OVERLAY|HELMET_DAMAGE_OVERLAY|HELMET_STORE_GARB
 
@@ -573,7 +573,7 @@
 		slot_r_hand_str = 'icons/mob/items_righthand_1.dmi',)
 	icon_state = "upp_helmet1"
 	flags_item = SYNTH_RESTRICTED
-	soft_armor = list(MELEE = 70, BULLET = 55, LASER = 40, ENERGY = 35, BOMB = 35, BIO = 5, FIRE = 35, ACID = 35)
+	soft_armor = list(MELEE = 70, BULLET = 55, LASER = 40, ENERGY = 35, BOMB = 75, BIO = 5, FIRE = 75, ACID = 45)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/UPP/heavy
@@ -631,7 +631,7 @@
 	desc = "A sturdy helmet worn by an unknown mercenary group."
 	icon_state = "mercenary_heavy_helmet"
 	flags_armor_protection = HEAD|FACE|EYES
-	soft_armor = list(MELEE = 80, BULLET = 80, LASER = 50, ENERGY = 60, BOMB = 70, BIO = 10, FIRE = 60, ACID = 60)
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 65, ENERGY = 65, BOMB = 75, BIO = 10, FIRE = 60, ACID = 60)
 	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
 	flags_marine_helmet = HELMET_DAMAGE_OVERLAY
@@ -641,7 +641,7 @@
 	desc = "A sturdy helmet worn by an unknown mercenary group."
 	icon_state = "mercenary_miner_helmet"
 	flags_armor_protection = HEAD|FACE|EYES
-	soft_armor = list(MELEE = 55, BULLET = 55, LASER = 45, ENERGY = 55, BOMB = 55, BIO = 10, FIRE = 55, ACID = 55)
+	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 65, ENERGY = 65, BOMB = 55, BIO = 10, FIRE = 55, ACID = 55)
 
 
 /obj/item/clothing/head/helmet/marine/veteran/mercenary/engineer

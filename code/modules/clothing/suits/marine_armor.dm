@@ -111,7 +111,7 @@
 	name = "\improper M3-H pattern marine armor"
 	desc = "A standard Marine M3 Heavy Build Pattern Chestplate. Increased protection at the cost of slowdown."
 	icon_state = "1"
-	soft_armor = list(MELEE = 65, BULLET = 70, LASER = 70, ENERGY = 30, BOMB = 60, BIO = 50, FIRE = 50, ACID = 55)
+	soft_armor = list(MELEE = 65, BULLET = 75, LASER = 75, ENERGY = 45, BOMB = 75, BIO = 50, FIRE = 50, ACID = 55)
 	slowdown = SLOWDOWN_ARMOR_HEAVY
 
 /obj/item/clothing/suit/storage/marine/M3LB
@@ -148,13 +148,13 @@
 	name = "\improper M3-E pattern marine armor"
 	desc = "A standard Marine M3 Edge Pattern Chestplate. High protection against cuts and slashes, but very little padding against bullets or explosions."
 	icon_state = "5"
-	soft_armor = list(MELEE = 70, BULLET = 10, LASER = 15, ENERGY = 20, BOMB = 15, BIO = 10, FIRE = 10, ACID = 10)
+	soft_armor = list(MELEE = 75, BULLET = 25, LASER = 25, ENERGY = 25, BOMB = 15, BIO = 10, FIRE = 10, ACID = 10)
 
 /obj/item/clothing/suit/storage/marine/M3P
 	name = "\improper M3-P pattern marine armor"
 	desc = "A standard Marine M3 Padded Pattern Chestplate. Better protection against bullets and explosions, with limited thermal shielding against energy weapons, but worse against melee."
 	icon_state = "6"
-	soft_armor = list(MELEE = 20, BULLET = 80, LASER = 25, ENERGY = 10, BOMB = 60, BIO = 10, FIRE = 20, ACID = 65)
+	soft_armor = list(MELEE = 25, BULLET = 90, LASER = 85, ENERGY = 60, BOMB = 85, BIO = 10, FIRE = 60, ACID = 65)
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
@@ -639,7 +639,7 @@
 	desc = "An extremely heavy duty set of body armor in service with the USL pirates, the UH7 (United Heavy MK7) is known for being a rugged set of armor, capable of taking immesnse punishment."
 	icon_state = "upp_armor_heavy"
 	slowdown = SLOWDOWN_ARMOR_HEAVY
-	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 65, ENERGY = 60, BOMB = 60, BIO = 10, FIRE = 60, ACID = 60)
+	soft_armor = list(MELEE = 65, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 10, FIRE = 60, ACID = 60)
 
 /// Modified version of the armor for HvH combat. Stats are based on heavy armor, with tyr mark 2.
 /obj/item/clothing/suit/storage/faction/UPP/heavy/hvh
@@ -784,7 +784,7 @@
 	name = "\improper K12 ceramic plated armor"
 	desc = "A set of grey, heavy ceramic armor with dark blue highlights. It is the standard uniform of a unknown mercenary group working in the sector"
 	icon_state = "mercenary_heavy_armor"
-	soft_armor = list(MELEE = 75, BULLET = 62, LASER = 42, ENERGY = 38, BOMB = 40, BIO = 15, FIRE = 38, ACID = 38)
+	soft_armor = list(MELEE = 75, BULLET = 65, LASER = 42, ENERGY = 38, BOMB = 40, BIO = 15, FIRE = 38, ACID = 50)
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	allowed = list(
 		/obj/item/weapon/gun,
@@ -805,7 +805,7 @@
 	name = "\improper Y8 armored miner vest"
 	desc = "A set of beige, light armor built for protection while mining. It is a specialized uniform of a unknown mercenary group working in the sector"
 	icon_state = "mercenary_miner_armor"
-	soft_armor = list(MELEE = 50, BULLET = 42, LASER = 42, ENERGY = 38, BOMB = 25, BIO = 15, FIRE = 38, ACID = 38)
+	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 65, ENERGY = 65, BOMB = 65, BIO = 15, FIRE = 65, ACID = 50)
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	allowed = list(
 		/obj/item/weapon/gun,
@@ -826,7 +826,7 @@
 	name = "\improper Z7 armored engineer vest"
 	desc = "A set of blue armor with yellow highlights built for protection while building in highly dangerous environments. It is a specialized uniform of a unknown mercenary group working in the sector"
 	icon_state = "mercenary_engineer_armor"
-	soft_armor = list(MELEE = 55, BULLET = 52, LASER = 42, ENERGY = 38, BOMB = 30, BIO = 15, FIRE = 38, ACID = 38)
+	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 65, ENERGY = 65, BOMB = 75, BIO = 15, FIRE = 75, ACID = 50)
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	allowed = list(
 		/obj/item/weapon/gun,
