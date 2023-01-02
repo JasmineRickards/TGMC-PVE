@@ -26,7 +26,7 @@
 	scatter_unwielded = 10
 	recoil = -1
 	recoil_unwielded = 4
-	damage_falloff_mult = 5
+	damage_falloff_mult = 1
 	damage_mult = 2
 	movement_acc_penalty_mult = 2
 	akimbo_additional_delay = 0.15 SECONDS
@@ -69,7 +69,7 @@
 	fire_delay = 0.35 SECONDS //one shot every 1.5 seconds.
 	accuracy_mult_unwielded = 0.5 //you need to wield this gun for any kind of accuracy
 	scatter_unwielded = 10
-	damage_falloff_mult = 5
+	damage_falloff_mult = 1
 	akimbo_additional_delay = 0.2 SECONDS
 	damage_mult = 1  //normalizing gun for vendors; damage reduced by 25% to compensate for faster fire rate; still higher DPS than T-32.
 	recoil = -1
@@ -140,7 +140,7 @@
 	flags_gun_features = GUN_IS_ATTACHMENT|GUN_AMMO_COUNTER|GUN_ATTACHMENT_FIRE_ONLY|GUN_WIELDED_STABLE_FIRING_ONLY|GUN_CAN_POINTBLANK|GUN_WIELDED_FIRING_ONLY
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
 	damage_mult = 1 // 40% less damage, but MUCH higher falloff.
-	damage_falloff_mult = 5
+//	damage_falloff_mult = 1
 	scatter = 1
 	fire_delay = 0.8 SECONDS // Base shotgun fire delay.
 	pixel_shift_x = 14
