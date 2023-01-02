@@ -380,7 +380,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	desc = "A lengthened barrel allows for lessened scatter, greater accuracy and muzzle velocity due to increased stabilization and shockwave exposure."
 	slot = ATTACHMENT_SLOT_MUZZLE
 	icon_state = "ebarrel"
-	attach_shell_speed_mod = 1
+	attach_shell_speed_mod = 1.2
 	accuracy_mod = 0.15
 	accuracy_unwielded_mod = 0.1
 	scatter_mod = -1
@@ -394,7 +394,8 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	slot = ATTACHMENT_SLOT_MUZZLE
 	icon_state = "hbarrel"
 	attach_shell_speed_mod = 2
-	accuracy_mod = -0.05
+	accuracy_mod = -0.15
+	damage_mod = 1.25
 
 
 /obj/item/attachable/compensator
@@ -403,10 +404,10 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	slot = ATTACHMENT_SLOT_MUZZLE
 	icon_state = "comp"
 	pixel_shift_x = 17
-	scatter_mod = -3
-	recoil_mod = -2
-	scatter_unwielded_mod = -3
-	recoil_unwielded_mod = -2
+	scatter_mod = -4
+	recoil_mod = -3
+	scatter_unwielded_mod = -4
+	recoil_unwielded_mod = -3
 	variants_by_parent_type = list(/obj/item/weapon/gun/rifle/som = "comp_big", /obj/item/weapon/gun/smg/som = "comp_big", /obj/item/weapon/gun/shotgun/som = "comp_big")
 
 
