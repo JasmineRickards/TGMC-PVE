@@ -303,8 +303,8 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	pixel_shift_y = 16
 	attach_shell_speed_mod = -1
 	accuracy_mod = 0.1
-	recoil_mod = -2
-	scatter_mod = -2
+	recoil_mod = -3
+	scatter_mod = -3
 	recoil_unwielded_mod = -3
 	scatter_unwielded_mod = -2
 	damage_falloff_mod = 0.1
@@ -330,12 +330,12 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	attach_delay = 10 //Bayonets attach/detach quickly.
 	detach_delay = 10
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	melee_mod = 25
+	melee_mod = 45
 	slot = ATTACHMENT_SLOT_MUZZLE
 	pixel_shift_x = 14 //Below the muzzle.
 	pixel_shift_y = 18
-	accuracy_mod = -0.05
-	accuracy_unwielded_mod = -0.1
+	accuracy_mod = 0.05
+	accuracy_unwielded_mod = 0.1
 	size_mod = 1
 	sharp = IS_SHARP_ITEM_ACCURATE
 
@@ -406,8 +406,9 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	pixel_shift_x = 17
 	scatter_mod = -4
 	recoil_mod = -3
-	scatter_unwielded_mod = -4
+	accuracy_unwielded_mod = 0.25
 	recoil_unwielded_mod = -3
+	scatter_unwielded_mod = -4
 	variants_by_parent_type = list(/obj/item/weapon/gun/rifle/som = "comp_big", /obj/item/weapon/gun/smg/som = "comp_big", /obj/item/weapon/gun/shotgun/som = "comp_big")
 
 
@@ -893,10 +894,13 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	icon_state = "tactical_stock"
 	flags_attach_features = ATTACH_REMOVABLE
 	wield_delay_mod = 0.05 SECONDS
-	accuracy_mod = 1.2
-	recoil_mod = -2
-	scatter_mod = -2
+	accuracy_mod = 0.5
+	recoil_mod = -3
+	scatter_mod = -3
 	melee_mod = 5
+	accuracy_unwielded_mod = 0.15
+	recoil_unwielded_mod = -2
+	scatter_unwielded_mod = -1
 
 /obj/item/attachable/stock/mosin
 	name = "mosin wooden stock"
@@ -1005,6 +1009,8 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	accuracy_mod = 1.2
 	recoil_mod = -2
 	scatter_mod = -2
+	accuracy_unwielded_mod = 0.15
+	recoil_unwielded_mod = -2
 	scatter_unwielded_mod = -3
 
 /obj/item/attachable/stock/t35stock
@@ -1070,9 +1076,9 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	size_mod = 1
 	slot = ATTACHMENT_SLOT_UNDER
 	pixel_shift_x = 20
-	accuracy_mod = 0.1
-	recoil_mod = -2
-	scatter_mod = -3
+	accuracy_mod = 0.5
+	recoil_mod = -3
+	scatter_mod = -4
 	burst_scatter_mod = -1
 	accuracy_unwielded_mod = -0.05
 	scatter_unwielded_mod = 3
@@ -1089,9 +1095,10 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	slot = ATTACHMENT_SLOT_UNDER
 	pixel_shift_x = 20
 	recoil_mod = -1
-	scatter_mod = 2
-	accuracy_unwielded_mod = -0.1
-	scatter_unwielded_mod = 1
+	scatter_mod = -2
+	accuracy_unwielded_mod = 0.15
+	recoil_unwielded_mod = -1
+	scatter_unwielded_mod = -1
 
 
 
@@ -1116,7 +1123,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	slot = ATTACHMENT_SLOT_UNDER
 	pixel_shift_x = 17
 	pixel_shift_y = 17
-	accuracy_mod = 0.1
+	accuracy_mod = 0.25
 	accuracy_unwielded_mod = 0.15
 
 
