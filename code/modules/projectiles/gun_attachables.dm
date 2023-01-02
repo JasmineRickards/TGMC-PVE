@@ -395,7 +395,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	icon_state = "hbarrel"
 	attach_shell_speed_mod = 2
 	accuracy_mod = -0.15
-	damage_mod = 1.25
+	damage_mod = 0.25
 
 
 /obj/item/attachable/compensator
