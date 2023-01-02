@@ -887,12 +887,12 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	melee_mod = 5
 
 /obj/item/attachable/stock/tactical
-	name = "\improper SH-221 tactical stock"
-	desc = "A sturdy polymer stock for the SH-221 shotgun. Supplied in limited numbers and moderately encumbering, it provides an ergonomic surface to ease perceived recoil and usability."
+	name = "\improper Skeleton stock"
+	desc = "A sturdy polymer stock for most rifles and longarms. Supplied in limited numbers, it provides an ergonomic surface to ease perceived recoil and usability."
 	icon_state = "tactical_stock"
 	flags_attach_features = ATTACH_REMOVABLE
-	wield_delay_mod = 0.2 SECONDS
-	accuracy_mod = 0.1
+	wield_delay_mod = 0.05 SECONDS
+	accuracy_mod = 1.2
 	recoil_mod = -2
 	scatter_mod = -2
 	melee_mod = 5
@@ -992,16 +992,16 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	pixel_shift_y = 13
 
 /obj/item/attachable/stock/t19stock
-	name = "\improper MP-19 machinepistol stock"
-	desc = "A submachinegun stock distributed in small numbers to TGMC forces. Compatible with the MP-19, this stock reduces recoil and improves accuracy, but at a reduction to handling and agility. Seemingly a bit more effective in a brawl."
+	name = "\improper Adjustable SMG stock"
+	desc = "A submachinegun stock distributed in small numbers to TGMC forces. Compatible with most SMG, this stock is adjustable to fit the shoulders of most marines easily."
 	flags_attach_features = ATTACH_REMOVABLE
-	wield_delay_mod = 0.1 SECONDS
+	wield_delay_mod = 0.05 SECONDS
 	melee_mod = 5
 	size_mod = 1
 	icon_state = "t19stock"
 	pixel_shift_x = 39
 	pixel_shift_y = 11
-	accuracy_mod = 0.1
+	accuracy_mod = 1.2
 	recoil_mod = -2
 	scatter_mod = -2
 	scatter_unwielded_mod = -3
