@@ -485,7 +485,7 @@
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC, GUN_FIREMODE_BURSTFIRE, GUN_FIREMODE_AUTOBURST)
-//	starting_attachment_types = list(/obj/item/attachable/stock/irremoveable/m41a, /obj/item/weapon/gun/grenade_launcher/underslung/invisible)
+	starting_attachment_types = list(/obj/item/attachable/stock/irremoveable/m41a)
 	attachable_offset = list("muzzle_x" = 41, "muzzle_y" = 19,"rail_x" = 12, "rail_y" = 24, "under_x" = 24, "under_y" = 13, "stock_x" = 22, "stock_y" = 16)
 
 	burst_amount = 4
@@ -496,7 +496,7 @@
 	scatter = 0
 	fire_delay = 0.1 SECONDS
 
-
+// Incase you wish to re-add the invisible grenade launcher to this gun: /obj/item/weapon/gun/grenade_launcher/underslung/invisible)
 
 //-------------------------------------------------------
 

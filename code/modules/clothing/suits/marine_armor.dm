@@ -556,16 +556,14 @@
 	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	allowed = list(
 		/obj/item/weapon/gun,
-		/obj/item/tank/emergency_oxygen,
-		/obj/item/flashlight,
-		/obj/item/ammo_magazine,
-		/obj/item/explosive/grenade,
-		/obj/item/binoculars,
-		/obj/item/weapon/combat_knife,
-		/obj/item/attachable/bayonetknife,
+		/obj/item/instrument,
 		/obj/item/storage/belt/sparepouch,
 		/obj/item/storage/holster/blade,
+		/obj/item/weapon/claymore,
+		/obj/item/storage/belt/gun,
+		/obj/item/storage/belt/knifepouch,
 		/obj/item/weapon/twohanded,
+		/obj/item/tool/pickaxe/plasmacutter,
 	)
 	flags_armor_features = ARMOR_LAMP_OVERLAY
 	flags_item = SYNTH_RESTRICTED

@@ -949,6 +949,14 @@ MEDICAL
 	)
 	cost = 30
 
+/datum/supply_packs/medical/advanced_medical
+	name = "Russian Red pill bottles"
+	contains = list(
+		/obj/item/storage/pill_bottle/russian_red,
+		/obj/item/storage/pill_bottle/russian_red,
+	)
+	cost = 100
+
 /datum/supply_packs/medical/biomass
 	name = "biomass crate"
 	contains = list(

@@ -563,7 +563,7 @@
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_marine_helmet = HELMET_GARB_OVERLAY|HELMET_DAMAGE_OVERLAY|HELMET_STORE_GARB
 
-/obj/item/clothing/head/helmet/UPP
+/obj/item/clothing/head/helmet/marine/UPP
 	name = "\improper UM4 helmet"
 	desc = "A skirted helmet designed for use with the UM/UH system."
 	icon = 'icons/obj/clothing/cm_hats.dmi'
@@ -576,7 +576,7 @@
 	soft_armor = list(MELEE = 70, BULLET = 55, LASER = 40, ENERGY = 35, BOMB = 35, BIO = 5, FIRE = 35, ACID = 35)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/head/helmet/UPP/heavy
+/obj/item/clothing/head/helmet/marine/UPP/heavy
 	name = "\improper UH7 helmet"
 	icon = 'icons/obj/clothing/cm_hats.dmi'
 	item_icons = list(
