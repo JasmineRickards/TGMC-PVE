@@ -975,7 +975,7 @@
 		/obj/item/attachable/suppressor/unremovable/invisible,
 		/obj/item/attachable/scope/unremovable,
 		/obj/item/weapon/gun/smg/standard_machinepistol,
-		/obj/item/attachable/stock/tactical;
+		/obj/item/attachable/stock/tactical,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
