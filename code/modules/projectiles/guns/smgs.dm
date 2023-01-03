@@ -207,9 +207,10 @@
 		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/gyro,
 		/obj/item/attachable/stock/t19stock,
+		/obj/item/weapon/gun/grenade_launcher/underslung, //MY. ASS.IS. HEAVY!
 	)
 
-	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 17,"rail_x" = 14, "rail_y" = 20, "under_x" = 24, "under_y" = 13, "stock_x" = 24, "stock_y" = 16)
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 17,"rail_x" = 14, "rail_y" = 20, "under_x" = 23, "under_y" = 14, "stock_x" = 24, "stock_y" = 16)
 
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 0.95
