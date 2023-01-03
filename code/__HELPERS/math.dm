@@ -59,7 +59,7 @@
 
 
 ///Checks if ending atom is viewable by starting atom, uses bresenham line algorithm but checks some extra tiles on a diagonal next tile
-/proc/line_of_sight(atom/starting_atom, atom/ending_atom, maximum_dist = 7, ignore_target_opacity = FALSE)
+/proc/line_of_sight(atom/starting_atom, atom/ending_atom, maximum_dist = 34, ignore_target_opacity = FALSE)
 	if(get_dist(starting_atom, ending_atom) > maximum_dist)
 		return FALSE
 	var/current_x_step = starting_atom.x//start at x and y, then add 1 or -1 to these to get every turf from starting_atom to ending_atom
