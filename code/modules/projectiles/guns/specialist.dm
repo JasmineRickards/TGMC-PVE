@@ -411,13 +411,13 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	aim_slowdown = 0.8
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
-	attachable_allowed = list(/obj/item/attachable/flashlight, /obj/item/attachable/magnetic_harness)
+	attachable_allowed = list(/obj/item/attachable/flashlight, /obj/item/attachable/magnetic_harness,/obj/item/attachable/lasersight)
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 10, "rail_y" = 21, "under_x" = 24, "under_y" = 14, "stock_x" = 24, "stock_y" = 12)
 	actions_types = list(/datum/action/item_action/aim_mode)
 	aim_fire_delay = 0.1 SECONDS
 	aim_speed_modifier = 12
 
-	fire_delay = 0.07 SECONDS //It's a fucking minigun.
+	fire_delay = 0.05 SECONDS //It's a fucking minigun.
 	windup_delay = 0.2 SECONDS
 	damage_mult = 1.15
 	windup_sound = 'sound/weapons/guns/fire/tank_minigun_start.ogg'
