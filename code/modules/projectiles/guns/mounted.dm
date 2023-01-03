@@ -41,6 +41,7 @@
 	accuracy_mult = 1.2 //it's got a bipod
 	burst_accuracy_mult = 2
 	burst_scatter_mult = 0
+	damage_mult = 1.5
 
 	flags_item = IS_DEPLOYABLE|TWOHANDED
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_DEPLOYED_FIRE_ONLY|GUN_WIELDED_FIRING_ONLY|GUN_IFF
@@ -106,7 +107,7 @@
 
 	scatter = 10
 	deployed_scatter_change = -8
-	fire_delay = 0.15 SECONDS
+	fire_delay = 0.6 SECONDS
 	windup_delay = 0.4 SECONDS
 	windup_sound = 'sound/weapons/guns/fire/tank_minigun_start.ogg'
 
@@ -146,7 +147,7 @@
 
 	scatter = 10
 	deployed_scatter_change = -10
-	fire_delay = 0.4 SECONDS
+	fire_delay = 0.18 SECONDS
 
 	flags_item = IS_DEPLOYABLE|TWOHANDED|DEPLOYED_NO_PICKUP|DEPLOY_ON_INITIALIZE
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_DEPLOYED_FIRE_ONLY|GUN_WIELDED_FIRING_ONLY|GUN_IFF
@@ -184,7 +185,7 @@
 
 	scatter = 10
 	deployed_scatter_change = -10
-	fire_delay = 0.7 SECONDS
+	fire_delay = 0.2 SECONDS
 
 	flags_item = IS_DEPLOYABLE|TWOHANDED|DEPLOYED_NO_PICKUP|DEPLOY_ON_INITIALIZE
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_DEPLOYED_FIRE_ONLY|GUN_WIELDED_FIRING_ONLY
@@ -226,7 +227,7 @@
 	scatter = 10
 	deployed_scatter_change = -10
 	windup_delay = 1 SECONDS
-	fire_delay = 3 SECONDS
+	fire_delay = 2 SECONDS
 
 	flags_item = IS_DEPLOYABLE|TWOHANDED|DEPLOYED_NO_PICKUP|DEPLOY_ON_INITIALIZE
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_DEPLOYED_FIRE_ONLY|GUN_WIELDED_FIRING_ONLY
@@ -284,7 +285,7 @@
 
 	scatter = 10
 	deployed_scatter_change = -8
-	fire_delay = 0.2 SECONDS
+	fire_delay = 0.1 SECONDS
 	accuracy_mult = 1.1 //it's mounted
 
 	burst_amount = 1
@@ -364,7 +365,8 @@
 	recoil = 2
 	scatter_unwielded = 45
 	accuracy_mult = 1.1 //it's got a bipod
-	fire_delay = 0.1 SECONDS
+	damage_mult = 1.3
+	fire_delay = 0.8 SECONDS
 	burst_amount = 5
 	deploy_time = 1 SECONDS
 	undeploy_time = 0.5 SECONDS
