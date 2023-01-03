@@ -185,8 +185,8 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/mainship/equipped(mob/living/carbon/human/user, slot)
 	if(slot == SLOT_EARS)
-		if(GLOB.faction_to_data_hud[user.faction] != hud_type && user.faction != FACTION_NEUTRAL)
-			safety_protocol(user)
+//		if(GLOB.faction_to_data_hud[user.faction] != hud_type && user.faction != FACTION_NEUTRAL)
+//			safety_protocol(user)
 		wearer = user
 		squadhud = GLOB.huds[hud_type]
 		enable_squadhud()
@@ -200,11 +200,11 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	return ..()
 
 /// Make the headset lose its keysloy
-/obj/item/radio/headset/mainship/proc/safety_protocol(mob/living/carbon/human/user)
-	to_chat(user, span_warning("[src] violently buzzes and explodes in your face as its tampering mechanisms are triggered!"))
-	playsound(user, 'sound/effects/explosion_small1.ogg', 50, 1)
-	user.ex_act(EXPLODE_LIGHT)
-	qdel(src)
+//obj/item/radio/headset/mainship/proc/safety_protocol(mob/living/carbon/human/user)
+//	to_chat(user, span_warning("[src] violently buzzes and explodes in your face as its tampering mechanisms are triggered!"))
+//	playsound(user, 'sound/effects/explosion_small1.ogg', 50, 1)
+//	user.ex_act(EXPLODE_LIGHT)
+//	qdel(src)
 
 /obj/item/radio/headset/mainship/dropped(mob/living/carbon/human/user)
 	if(istype(user) && headset_hud_on)

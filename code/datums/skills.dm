@@ -613,13 +613,25 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	powerloader = SKILL_POWERLOADER_TRAINED
 
 /datum/skills/admiral
-	name = "Admiral"
-	construction = SKILL_CONSTRUCTION_PLASTEEL
+	name = "admiral"
+	engineer = SKILL_ENGINEER_MASTER
+	construction = SKILL_CONSTRUCTION_MASTER
+	firearms = SKILL_FIREARMS_TRAINED
+	smartgun = SKILL_SMART_TRAINED
+	medical = SKILL_MEDICAL_MASTER
+	cqc = SKILL_CQC_MASTER
+	surgery = SKILL_SURGERY_EXPERT
+	melee_weapons = SKILL_MELEE_SUPER
 	leadership = SKILL_LEAD_MASTER
-	medical = SKILL_MEDICAL_PRACTICED
-	surgery = SKILL_SURGERY_AMATEUR
-	police = SKILL_POLICE_FLASH
-	powerloader = SKILL_POWERLOADER_TRAINED
+	pilot = SKILL_PILOT_TRAINED
+	pistols = SKILL_PISTOLS_TRAINED
+	smgs = SKILL_SMGS_TRAINED
+	rifles = SKILL_RIFLES_TRAINED
+	shotguns = SKILL_SHOTGUNS_TRAINED
+	heavy_weapons = SKILL_HEAVY_WEAPONS_TRAINED
+	police = SKILL_POLICE_MP
+	powerloader = SKILL_POWERLOADER_MASTER
+	large_vehicle = SKILL_LARGE_VEHICLE_TRAINED
 
 /datum/skills/ninja
 	name = "Ninja"
