@@ -1510,8 +1510,8 @@ Imports
 	contains = list(
 		/obj/item/weapon/gun/rifle/tx55/freelancer,
 		/obj/item/clothing/suit/storage/faction/freelancer/leader,
-		/obj/item/clothing/head/frelancer/beret
-		/obj/item/clothing/mask/rebreather/scarf/freelancer
+		/obj/item/clothing/head/frelancer/beret,
+		/obj/item/clothing/mask/rebreather/scarf/freelancer,
 		/obj/item/ammo_magazine/rifle/tx55,
 		/obj/item/ammo_magazine/rifle/tx55,
 		/obj/item/ammo_magazine/rifle/tx55,)
