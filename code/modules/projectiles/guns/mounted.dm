@@ -107,7 +107,7 @@
 
 	scatter = 10
 	deployed_scatter_change = -8
-	fire_delay = 0.6 SECONDS
+	fire_delay = 0.5 SECONDS
 	windup_delay = 0.4 SECONDS
 	windup_sound = 'sound/weapons/guns/fire/tank_minigun_start.ogg'
 
