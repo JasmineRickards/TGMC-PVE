@@ -949,6 +949,14 @@ MEDICAL
 	)
 	cost = 30
 
+/datum/supply_packs/medical/advanced_medical
+	name = "Russian Red pill bottles"
+	contains = list(
+		/obj/item/storage/pill_bottle/russian_red,
+		/obj/item/storage/pill_bottle/russian_red,
+	)
+	cost = 100
+
 /datum/supply_packs/medical/biomass
 	name = "biomass crate"
 	contains = list(
@@ -1496,6 +1504,24 @@ Imports
 	name = "Highpower Automag Ammo"
 	contains = list(/obj/item/ammo_magazine/pistol/highpower)
 	cost = 1
+
+/datum/supply_packs/imports/freelancertx55bundle
+	name = "AR-55 Rental pack"
+	contains = list(
+		/obj/item/weapon/gun/rifle/tx55/freelancer,
+		/obj/item/clothing/suit/storage/faction/freelancer/leader,
+		/obj/item/clothing/head/frelancer/beret,
+		/obj/item/clothing/mask/rebreather/scarf/freelancer,
+		/obj/item/ammo_magazine/rifle/tx55,
+		/obj/item/ammo_magazine/rifle/tx55,
+		/obj/item/ammo_magazine/rifle/tx55,)
+	cost = 45
+
+/datum/supply_packs/imports/tx55ammo
+	name = "AR-55 Carbine ammo."
+	contains = list(
+		/obj/item/ammo_magazine/rifle/tx55)
+	cost = 5
 
 /datum/supply_packs/imports/strawhat
 	name = "Straw hat"

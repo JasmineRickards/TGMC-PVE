@@ -4,6 +4,53 @@
 	supervisors = "the acting captain"
 	exp_type_department = EXP_TYPE_COMMAND
 
+/datum/job/terragov/command/admiral
+	title = CAPTAIN
+	req_admin_notify = TRUE
+	paygrade = "O7"
+	comm_title = "ADM"
+	supervisors = "TGMC high command"
+	selection_color = "#ccccff"
+	total_positions = 1
+	skills_type = /datum/skills/admiral
+	access = ALL_MARINE_ACCESS
+	minimal_access = ALL_MARINE_ACCESS
+	display_order = JOB_DISPLAY_ORDER_CAPTAIN
+	outfit = /datum/outfit/job/command/admiral
+	exp_requirements = XP_REQ_EXPERT
+	exp_type = EXP_TYPE_REGULAR_ALL
+	job_flags = JOB_FLAG_LATEJOINABLE|JOB_FLAG_ROUNDSTARTJOINABLE|JOB_FLAG_ALLOWS_PREFS_GEAR|JOB_FLAG_PROVIDES_BANK_ACCOUNT|JOB_FLAG_ADDTOMANIFEST|JOB_FLAG_ISCOMMAND|JOB_FLAG_BOLD_NAME_ON_SELECTION|JOB_FLAG_PROVIDES_SQUAD_HUD|JOB_FLAG_ALWAYS_VISIBLE_ON_MINIMAP
+	jobworth = list(
+		/datum/job/xenomorph = LARVA_POINTS_SHIPSIDE,
+		/datum/job/terragov/squad/smartgunner = SMARTIE_POINTS_REGULAR,
+		/datum/job/terragov/silicon/synthetic = SYNTH_POINTS_REGULAR,
+		/datum/job/terragov/command/mech_pilot = MECH_POINTS_REGULAR,
+	)
+	html_description = {"
+		<b>Difficulty</b>: Hard<br /><br />
+		<b>You answer to</b> TGMC High Command<br /><br />
+		<b>Unlock Requirement</b>: Starting Role<br /><br />
+		<b>Gamemode Availability</b>: Distress<br /><br /><br />
+		<b>Duty</b>: Lead the TGMC platoon and complete your mission. Support the marines and communicate with your command staff, execute orders.
+	"}
+	minimap_icon = "captain"
+
+/datum/outfit/job/command/admiral
+	name = CAPTAIN
+	jobtype = /datum/job/terragov/command/captain
+
+	id = /obj/item/card/id/gold
+	belt = /obj/item/storage/belt/gun/pistol/smart_pistol/full
+	ears = /obj/item/radio/headset/mainship/mcom
+	w_uniform = /obj/item/clothing/under/marine/officer/admiral
+	wear_suit =	/obj/item/clothing/suit/armor/vest/admiral
+	shoes = /obj/item/clothing/shoes/marinechief/captain
+	gloves = /obj/item/clothing/gloves/marine/techofficer/captain
+	head = /obj/item/clothing/head/admiral
+	r_store = /obj/item/storage/pouch/general/large/command
+	l_store = /obj/item/hud_tablet/leadership
+	back = /obj/item/storage/backpack/marine/satchel
+
 
 //Captain
 /datum/job/terragov/command/captain

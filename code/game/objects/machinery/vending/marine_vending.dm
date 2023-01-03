@@ -1411,8 +1411,8 @@
 			/obj/item/clothing/suit/storage/faction/UPP/heavy = -1,
 			/obj/item/clothing/head/uppcap/beret = -1,
 			/obj/item/clothing/suit/storage/faction/UPP = -1,
-			/obj/item/clothing/head/helmet/UPP = -1,
-			/obj/item/clothing/head/helmet/UPP/heavy = -1,
+			/obj/item/clothing/head/helmet/marine/UPP = -1,
+			/obj/item/clothing/head/helmet/marine/UPP/heavy = -1,
 
 
 		),

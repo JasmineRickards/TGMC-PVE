@@ -1125,6 +1125,8 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	pixel_shift_y = 17
 	accuracy_mod = 0.25
 	accuracy_unwielded_mod = 0.15
+	scatter_unwielded_mod = -2
+	recoil_unwielded_mod = -1
 
 
 /obj/item/attachable/bipod

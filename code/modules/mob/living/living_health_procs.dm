@@ -418,9 +418,9 @@
 		notify_ghost(ghost, "<font size=3>Your body slowly regenerated. Return to it if you want to be resurrected!</font>", ghost_sound = 'sound/effects/adminhelp.ogg', enter_text = "Enter", enter_link = "reentercorpse=1", source = src, action = NOTIFY_JUMP)
 	do_jitter_animation(1000)
 	ADD_TRAIT(src, TRAIT_IS_RESURRECTING, REVIVE_TO_CRIT_TRAIT)
-	if(should_zombify && (istype(wear_ear, /obj/item/radio/headset/mainship)))
-		var/obj/item/radio/headset/mainship/radio = wear_ear
-		radio.safety_protocol(src)
+//	if(should_zombify && (istype(wear_ear, /obj/item/radio/headset/mainship)))
+//		var/obj/item/radio/headset/mainship/radio = wear_ear
+//		radio.safety_protocol(src)
 	addtimer(CALLBACK(src, .proc/finish_revive_to_crit, should_offer_to_ghost, should_zombify), 10 SECONDS)
 
 ///Check if we have a mind, and finish the revive if we do
