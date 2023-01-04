@@ -147,7 +147,6 @@
 	desc = "The pinnacle of tacticool technology."
 	icon_state = "booniehat"
 	item_state = "booniehat"
-	species_exception = list(/datum/species/robot) //robo cowboy
 	soft_armor = list(MELEE = 15, BULLET = 15, LASER = 15, ENERGY = 15, BOMB = 10, BIO = 5, FIRE = 5, ACID = 5)
 
 /obj/item/clothing/head/slouch
@@ -155,7 +154,6 @@
 	desc = "A nice slouch hat worn by some TGMC troopers while on planets with hot weather, or just for style. While it has limited combat functionality, some prefer to wear it instead of the standard issue helmet."
 	icon_state = "slouch_hat"
 	icon = 'icons/obj/clothing/cm_hats.dmi'
-	species_exception = list(/datum/species/robot) //robo cowboy
 	soft_armor = list(MELEE = 15, BULLET = 15, LASER = 15, ENERGY = 15, BOMB = 10, BIO = 5, FIRE = 5, ACID = 5)
 
 /obj/item/clothing/head/headband

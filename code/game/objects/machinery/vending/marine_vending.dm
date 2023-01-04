@@ -1529,7 +1529,6 @@
 		),
 		"Headwear" = list(
 			/obj/item/clothing/head/slouch = -1,
-			/obj/item/clothing/head/boonie = -1,
 			/obj/item/clothing/head/headband/red = -1,
 			/obj/item/clothing/head/headband/rambo = -1,
 			/obj/item/clothing/head/headband/snake = -1,
