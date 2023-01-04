@@ -26,7 +26,7 @@
 	scatter_unwielded = 10
 	recoil = -1
 	recoil_unwielded = 4
-	damage_falloff_mult = 1
+//	damage_falloff_mult = 1
 	damage_mult = 2
 	movement_acc_penalty_mult = 2
 	akimbo_additional_delay = 0.15 SECONDS
@@ -118,6 +118,7 @@
 	fire_delay = 0.35 SECONDS //one shot every 1.4 seconds.
 	accuracy_mult = 1.20
 	accuracy_mult_unwielded = 0.65
+	damage_falloff_mult = 1
 	scatter = 3
 	scatter_unwielded = 12
 	damage_mult = 1  //30% less damage. Faster firerate.
@@ -135,6 +136,7 @@
 	attachable_allowed = list()
 	starting_attachment_types = list()
 	slot = ATTACHMENT_SLOT_UNDER
+	damage_falloff_mult = 1
 	attach_delay = 3 SECONDS
 	detach_delay = 3 SECONDS
 	flags_gun_features = GUN_IS_ATTACHMENT|GUN_AMMO_COUNTER|GUN_ATTACHMENT_FIRE_ONLY|GUN_WIELDED_STABLE_FIRING_ONLY|GUN_CAN_POINTBLANK|GUN_WIELDED_FIRING_ONLY
@@ -181,6 +183,7 @@
 
 	fire_delay = 2
 	burst_delay = 2
+	damage_falloff_mult = 1
 	scatter = 4
 	scatter_unwielded = 8
 	recoil = -1
@@ -289,8 +292,10 @@
 	cock_locked_message = "The pump is locked! Fire it first!"
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 10, "rail_y" = 21, "under_x" = 20, "under_y" = 14, "stock_x" = 20, "stock_y" = 14)
 
-	fire_delay = 0.4 SECONDS
+	fire_delay = 1.4 SECONDS
+	damage_mult = 2
 	scatter_unwielded = 10
+	damage_falloff_mult = 1
 	recoil = -1
 	recoil_unwielded = 4
 	aim_slowdown = 0.45
@@ -334,9 +339,10 @@
 		/obj/item/attachable/stock/irremoveable/pal12,
 	)
 
-	fire_delay = 0.4 SECONDS
+	fire_delay = 1.5 SECONDS
 	damage_mult = 2.2
 	accuracy_mult = 1
+	damage_falloff_mult = 1
 	accuracy_mult_unwielded = 1
 	scatter_unwielded = 10
 	recoil = -1 // It has a stock. It's on the sprite.
@@ -682,8 +688,10 @@
 
 	flags_item_map_variant = NONE
 
-	fire_delay = 8 //If your muscle memory is good enough, it's almost like slamfire. Still not quite as fast as other shotguns.
+	fire_delay = 1.4 SECONDS //If your muscle memory is good enough, it's almost like slamfire. Still not quite as fast as other shotguns.
 	scatter_unwielded = 10
+	damage_falloff_mult = 1
+	damage_mult = 2
 	recoil = -1
 	recoil_unwielded = 4
 	aim_slowdown = 0.45
