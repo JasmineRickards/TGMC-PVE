@@ -1024,7 +1024,7 @@
 		/obj/item/weapon/gun/pistol,
 		/obj/item/ammo_magazine/pistol,
 	)
-
+//standard belt for pistol and revolver
 /obj/item/storage/belt/gun/pistol/standard_pistol
 	name = "\improper T457 pattern pistol holster rig"
 	desc = "The T457 is the standard load-bearing equipment of the TGMC. It consists of a modular belt with various clips."
@@ -1043,7 +1043,34 @@
 		/obj/item/weapon/gun/revolver,
 		/obj/item/ammo_magazine/revolver,
 	)
+//smg belts -- bye bye shitty t-19 holster!
+/obj/item/storage/belt/gun/smg/standard_smg
+	name = "\improper M276-B pattern MP-19 belt rig"
+	desc = "A modified M276 rig consisting of a modular belt with numerous magazine pouches."
+	icon_state = "t19_holster"
+	item_state = "t19_holster"
+	bypass_w_limit = list(
+		/obj/item/weapon/gun/smg/standard_machinepistol,
+	)
+	can_hold = list(
+		/obj/item/weapon/gun/smg/standard_machinepistol,
+		/obj/item/ammo_magazine/smg,
+	)
 
+/obj/item/storage/belt/gun/smg/m25
+	name = "\improper M276-B pattern SMG-25 belt rig"
+	desc = "A modified M276 rig consisting of a modular belt with numerous magazine pouches. this ones for the SMG-25!"
+	icon_state = "m25_holster"
+	item_state = "m25_holster"
+	bypass_w_limit = list(
+		/obj/item/weapon/gun/smg/m25,
+	)
+	can_hold = list(
+		/obj/item/weapon/gun/smg/m25,
+		/obj/item/ammo_magazine/smg,
+	)
+
+//revolvers and sheeeit
 /obj/item/storage/belt/gun/m44
 	name = "\improper M276 pattern M44 holster rig"
 	desc = "The M276 is the standard load-bearing equipment of the TGMC. It consists of a modular belt with various clips. This version is for the M44 magnum revolver, along with three pouches for speedloaders."
