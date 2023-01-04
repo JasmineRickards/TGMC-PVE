@@ -12,13 +12,14 @@
 /datum/chemical_reaction/dexalin
 	name = "Dexalin"
 	results = list(/datum/reagent/medicine/dexalin = 1)
-	required_reagents = list(/datum/reagent/oxygen = 2, /datum/reagent/toxin/phoron = 0.1)
+	required_reagents = list(/datum/reagent/oxygen = 2, /datum/reagent/iron = 1)
 	required_catalysts = list(/datum/reagent/toxin/phoron = 5)
 
 /datum/chemical_reaction/dermalime
 	name = "Dermaline"
 	results = list(/datum/reagent/medicine/dermaline = 3)
-	required_reagents = list(/datum/reagent/oxygen = 1, /datum/reagent/phosphorus = 1, /datum/reagent/medicine/kelotane = 1, /datum/reagent/medicine/lemoline = 1)
+	required_reagents = list(/datum/reagent/oxygen = 1, /datum/reagent/phosphorus = 1, /datum/reagent/medicine/kelotane = 1, /datum/reagent/medicine/clonexadone = 1)
+	required_catalysts = list(/datum/reagent/toxin/phoron = 5)
 
 /datum/chemical_reaction/dexalinplus
 	name = "Dexalin Plus"
@@ -33,12 +34,13 @@
 /datum/chemical_reaction/meralyne
 	name = "Meralyne"
 	results = list(/datum/reagent/medicine/meralyne = 3)
-	required_reagents = list(/datum/reagent/medicine/inaprovaline = 1, /datum/reagent/medicine/bicaridine = 1, /datum/reagent/iron = 1, /datum/reagent/medicine/lemoline = 1)
+	required_reagents = list(/datum/reagent/medicine/inaprovaline = 1, /datum/reagent/medicine/bicaridine = 1, /datum/reagent/iron = 1, /datum/reagent/medicine/clonexadone = 1)
+	required_catalysts = list(/datum/reagent/toxin/phoron = 5)
 
 /datum/chemical_reaction/ryetalyn
 	name = "Ryetalyn"
 	results = list(/datum/reagent/medicine/ryetalyn = 2)
-	required_reagents = list(/datum/reagent/medicine/arithrazine = 1, /datum/reagent/carbon = 1, /datum/reagent/medicine/lemoline = 1)
+	required_reagents = list(/datum/reagent/medicine/arithrazine = 1, /datum/reagent/carbon = 1, /datum/reagent/sterilizine = 1)
 
 /datum/chemical_reaction/cryoxadone
 	name = "Cryoxadone"
@@ -48,7 +50,7 @@
 /datum/chemical_reaction/clonexadone
 	name = "Clonexadone"
 	results = list(/datum/reagent/medicine/clonexadone = 2)
-	required_reagents = list(/datum/reagent/medicine/cryoxadone = 1, /datum/reagent/sodium = 1, /datum/reagent/toxin/phoron = 0.1)
+	required_reagents = list(/datum/reagent/medicine/cryoxadone = 1, /datum/reagent/sodium = 1, /datum/reagent/blood = 1)
 	required_catalysts = list(/datum/reagent/toxin/phoron = 5)
 
 /datum/chemical_reaction/spaceacillin
@@ -142,7 +144,8 @@
 /datum/chemical_reaction/peridaxon_plus
 	name = "Peridaxon Plus"
 	results = list(/datum/reagent/medicine/peridaxon_plus = 1)
-	required_reagents = list(/datum/reagent/medicine/ryetalyn = 5, /datum/reagent/toxin/phoron = 5)
+	required_reagents = list(/datum/reagent/medicine/ryetalyn = 5, /datum/reagent/medicine/clonexadone = 5)
+	required_catalysts = list(/datum/reagent/toxin/phoron = 5)
 
 /datum/chemical_reaction/quickclot
 	name = "Quick-Clot"
@@ -170,6 +173,12 @@
 	name = "Lemoline catalysis"
 	results = list(/datum/reagent/medicine/lemoline = 5) //4 to one multiplication ratio
 	required_reagents = list(/datum/reagent/medicine/lemoline = 1, /datum/reagent/consumable/larvajelly = 1)
+
+/datum/chemical_reaction/russian_red
+	name = "Russian Red"
+	results = list(/datum/reagent/medicine/russian_red = 6)//Combines all the physical damage healing chems with inaprovaline and opium. Lemoline no longer required, but is complicated and time consuming to make so that you don't have corpsmen filling their pill cases with nothing but Russian Red at roundstart.
+	required_reagents = list(/datum/chemical_reaction/bicaridine = 1, /datum/reagent/medicine/meralyne = 1, /datum/chemical_reaction/kelotane = 1, /datum/reagent/medicine/dermaline = 1, /datum/reagent/medicine/inaprovaline = 1, /datum/reagent/medicine/oxycodone = 1,)
+	required_catalysts = list(/datum/reagent/toxin/phoron = 5)//Prevents you and others from mixing it in your blood by accident and instantly overdosing.
 
 // Cloning chemicals
 /datum/chemical_reaction/expanded_biomass
