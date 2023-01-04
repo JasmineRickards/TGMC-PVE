@@ -568,7 +568,7 @@
 		L.jitter(10)
 		for(var/datum/internal_organ/I AS in H.internal_organs)
 			if(I.damage)
-				if(I.damage < 29)
+				if(I.damage > 29)//not a replacement for surgery or peridaxon in most cases, but can probably fix broken bones if you're in crit now.
 					return
 				I.heal_organ_damage((I.damage-29) *effect_str)
 		TIMER_COOLDOWN_START(L, name, 300 SECONDS)
