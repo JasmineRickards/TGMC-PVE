@@ -449,7 +449,7 @@
 	input_tag = "waste_lower_in";
 	name = "Lower Deck Waste Tank Control";
 	output_tag = "waste_lower_out";
-	sensors = list("waste_sensor"="Tank")
+	sensors = list("waste_sensor" = "Tank")
 	},
 /turf/open/floor/mainship/orange,
 /area/mainship/hull/starboard_hull)
@@ -673,7 +673,6 @@
 /area/mainship/command/telecomms)
 "acz" = (
 /obj/machinery/light/mainship,
-/obj/machinery/chem_dispenser,
 /turf/open/floor/mainship/red,
 /area/mainship/shipboard/starboard_point_defense)
 "acA" = (
@@ -720,7 +719,7 @@
 /obj/machinery/computer/general_air_control/large_tank_control{
 	name = "Lower Oxygen Supply Console";
 	output_tag = "oxygen_lower_out";
-	sensors = list("oxy_sensor"="Tank")
+	sensors = list("oxy_sensor" = "Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -736,7 +735,7 @@
 /obj/machinery/computer/general_air_control/large_tank_control{
 	name = "Lower Nitrogen Control Console";
 	output_tag = "nit_lower_out";
-	sensors = list("nit_sensor"="Tank")
+	sensors = list("nit_sensor" = "Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -759,7 +758,7 @@
 	input_tag = "mix_lower_in";
 	name = "Lower Mixed Air Control";
 	output_tag = "mix_lower_out";
-	sensors = list("mix_sensor"="Tank")
+	sensors = list("mix_sensor" = "Tank")
 	},
 /turf/open/floor/mainship/orange{
 	dir = 5
@@ -7763,6 +7762,7 @@
 /obj/machinery/light/mainship,
 /obj/structure/rack,
 /obj/item/storage/toolbox/mechanical,
+/obj/item/assembly/infra,
 /turf/open/floor/mainship/black,
 /area/mainship/living/tankerbunks)
 "cgD" = (
@@ -14551,10 +14551,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/mainship/mono,
 /area/mainship/hallways/starboard_hallway)
-"nAC" = (
-/obj/structure/table,
-/turf/open/floor/mainship/red,
-/area/mainship/shipboard/starboard_point_defense)
 "nAX" = (
 /obj/structure/prop/mainship/sensor_computer2/sd,
 /turf/open/floor/mainship/tcomms,
@@ -14785,7 +14781,6 @@
 	},
 /area/mainship/medical/lower_medical)
 "nRj" = (
-/obj/machinery/vending/ordnance,
 /turf/open/floor/mainship/red{
 	dir = 10
 	},
@@ -59230,7 +59225,7 @@ aaM
 aaM
 uij
 mLz
-nAC
+smO
 aam
 rbR
 aXM

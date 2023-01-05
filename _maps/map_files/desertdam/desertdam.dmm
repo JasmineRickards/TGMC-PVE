@@ -12367,6 +12367,7 @@
 /area/desert_dam/interior/dam_interior/engine_west_wing)
 "bwk" = (
 /obj/structure/table,
+/obj/item/assembly/infra,
 /obj/item/assembly/voice,
 /turf/open/floor/prison/darkyellow{
 	dir = 1
@@ -52428,6 +52429,7 @@
 /area/desert_dam/exterior/valley/valley_hydro)
 "qfF" = (
 /obj/structure/table,
+/obj/item/assembly/infra,
 /obj/item/assembly/voice,
 /obj/machinery/power/apc{
 	start_charge = 0

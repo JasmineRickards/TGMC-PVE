@@ -218,12 +218,12 @@ GLOBAL_LIST_EMPTY(autolathe_categories)
 	name = "signaler"
 	path = /obj/item/assembly/signaler
 	category = "Devices and Components"
-/*
+
 /datum/autolathe/recipe/sensor_infra
 	name = "infrared sensor"
 	path = /obj/item/assembly/infra
 	category = "Devices and Components"
-*/
+
 /datum/autolathe/recipe/timer
 	name = "timer"
 	path = /obj/item/assembly/timer

@@ -255,7 +255,6 @@
 			/obj/item/compass = -1,
 			/obj/item/tool/hand_labeler = -1,
 			/obj/item/stack/sandbags_empty/full = -1,
-			/obj/item/book/manual/ordtech = -1,
 		),
 	)
 
@@ -488,7 +487,6 @@
 			/obj/item/binoculars = -1,
 			/obj/item/compass = -1,
 			/obj/item/stack/sandbags_empty/full = -1,
-			/obj/item/book/manual/ordtech = -1,
 		),
 	)
 
@@ -707,7 +705,6 @@
 			/obj/item/binoculars = -1,
 			/obj/item/compass = -1,
 			/obj/item/stack/sandbags_empty/full = -1,
-			/obj/item/book/manual/ordtech = -1,
 		),
 	)
 
@@ -877,7 +874,6 @@
 			/obj/item/binoculars = -1,
 			/obj/item/compass = -1,
 			/obj/item/stack/sandbags_empty/full = -1,
-			/obj/item/book/manual/ordtech = -1,
 		),
 	)
 
@@ -1868,26 +1864,3 @@
 
 /obj/machinery/vending/tool/nopower
 	use_power = NO_POWER_USE
-
-/obj/machinery/vending/ordnance
-	name = "Explosives Workshop"
-	desc = "All the components you'll ever need to set the world on fire."
-	icon_state = "marinerequisitions"
-	req_access = list(ACCESS_MARINE_ORDNANCE)
-	products = list(
-		/obj/item/book/manual/ordtech = -1,
-		/obj/item/tool/hand_labeler = -1,
-		/obj/item/stack/cable_coil = -1,
-		/obj/item/tool/screwdriver = -1,
-		/obj/item/multitool = -1,
-		/obj/item/assembly/igniter = -1,
-		/obj/item/assembly/prox_sensor = -1,
-		/obj/item/assembly/signaler = -1,
-		/obj/item/assembly/timer = -1,
-		/obj/item/assembly/voice = -1,
-		/obj/item/explosive/grenade/chem_grenade = -1,
-		/obj/item/explosive/grenade/chem_grenade/large = -1,
-		/obj/item/explosive/grenade/chem_grenade/large/detpack = -1,
-		/obj/item/reagent_containers/glass/beaker = -1,
-		/obj/item/reagent_containers/glass/beaker/large = -1,
-	)
