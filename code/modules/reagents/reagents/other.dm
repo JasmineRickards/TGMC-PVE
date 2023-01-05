@@ -190,6 +190,14 @@
 	custom_metabolism = REAGENTS_METABOLISM * 0.05
 	taste_multi = 0
 
+/datum/reagent/smokepowder
+	name = "Smoke Powder"
+	description = "A colorless, odorless, nonmetallic, tasteless, solid that makes a thick cloud of smoke when ignited."
+	reagent_state = SOLID
+	color = "#808080" // rgb: 128, 128, 128
+	custom_metabolism = REAGENTS_METABOLISM * 0.05
+	taste_multi = 0
+
 /datum/reagent/potassium
 	name = "Potassium"
 	description = "A soft, low-melting solid that can easily be cut with a knife. Reacts violently with water."
