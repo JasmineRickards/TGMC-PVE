@@ -247,7 +247,7 @@
 
 #define issignaler(O) (istype(O, /obj/item/assembly/signaler))
 
-//#define isinfared(O) (istype(O, /obj/item/assembly/infra))
+#define isinfared(O) (istype(O, /obj/item/assembly/infra))
 
 #define istimer(O) (istype(O, /obj/item/assembly/timer))
 

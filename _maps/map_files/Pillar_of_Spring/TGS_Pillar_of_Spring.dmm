@@ -3499,6 +3499,7 @@
 /obj/effect/spawner/random/toolbox,
 /obj/item/stack/cable_coil,
 /obj/item/assembly/timer,
+/obj/item/assembly/infra,
 /turf/open/floor/mainship/black{
 	dir = 1
 	},
@@ -6229,7 +6230,6 @@
 /obj/machinery/power/apc{
 	dir = 4
 	},
-/obj/machinery/chem_dispenser,
 /turf/open/floor/mainship/mono,
 /area/mainship/hallways/port_umbilical)
 "rL" = (
@@ -11559,7 +11559,6 @@
 /obj/machinery/firealarm{
 	dir = 4
 	},
-/obj/structure/table,
 /turf/open/floor/mainship/mono,
 /area/mainship/hallways/port_umbilical)
 "GA" = (
@@ -15217,7 +15216,6 @@
 /obj/machinery/alarm{
 	dir = 4
 	},
-/obj/machinery/vending/ordnance,
 /turf/open/floor/mainship/mono,
 /area/mainship/hallways/port_umbilical)
 "QZ" = (

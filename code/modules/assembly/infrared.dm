@@ -1,4 +1,4 @@
-/*obj/item/assembly/infra
+/obj/item/assembly/infra
 	name = "infrared emitter"
 	desc = "Emits a visible or invisible beam and is triggered when the beam is interrupted."
 	icon_state = "infrared"
@@ -270,4 +270,4 @@
 		var/obj/item/I = AM
 		if(I.flags_item & ITEM_ABSTRACT)
 			return
-	master.trigger_beam(AM, get_turf(src))*/
+	master.trigger_beam(AM, get_turf(src))

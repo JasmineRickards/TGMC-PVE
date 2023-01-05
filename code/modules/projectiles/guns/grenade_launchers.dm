@@ -158,7 +158,6 @@ The Grenade Launchers
 		/obj/item/explosive/grenade/impact,
 		/obj/item/explosive/grenade/sticky,
 		/obj/item/explosive/grenade/flashbang/stun,
-		/obj/item/explosive/grenade/chem_grenade,
 	)
 
 	wield_delay_mod	= 0.2 SECONDS

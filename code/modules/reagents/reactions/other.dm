@@ -63,22 +63,16 @@
 	results = list(/datum/reagent/glycerol = 1)
 	required_reagents = list(/datum/reagent/consumable/cornoil = 3, /datum/reagent/toxin/acid = 1)
 
-/datum/chemical_reaction/smokepowder
-	name = "Smoke Powder"
-	results = list(/datum/reagent/smokepowder = 3)
-	required_reagents = list(/datum/reagent/potassium = 1, /datum/reagent/phosphorus = 1, /datum/reagent/consumable/sugar = 1)
-
 /datum/chemical_reaction/chemsmoke
 	name = "Chemsmoke"
-	required_reagents = list(/datum/reagent/smokepowder = 1)
-	required_temp = 1000
+	required_reagents = list(/datum/reagent/potassium = 1, /datum/reagent/consumable/sugar = 1, /datum/reagent/phosphorus = 1)
 
 /datum/chemical_reaction/chemsmoke/on_reaction(datum/reagents/holder, created_volume)
-	var/smoke_radius = round(sqrt(created_volume), 1)
+	var/smoke_radius = round(sqrt(created_volume * 0.8), 1)
 	var/location = get_turf(holder.my_atom)
 	var/datum/effect_system/smoke_spread/chem/S = new(location)
 	playsound(location, 'sound/effects/smoke.ogg', 50, 1, -3)
-	S?.set_up(holder, (smoke_radius / 2), location)
+	S?.set_up(holder, smoke_radius, location)
 	S?.start()
 	if(holder?.my_atom)
 		holder.clear_reagents()
@@ -142,9 +136,15 @@
 ///////////////////////////////////////////////////////////////////////////////////
 // foam and foam precursor
 
+/datum/chemical_reaction/surfactant
+	name = "Foam surfactant"
+	results = list(/datum/reagent/fluorosurfactant = 5)
+	required_reagents = list(/datum/reagent/fluorine = 2, /datum/reagent/carbon = 2, /datum/reagent/toxin/acid = 1)
+
+
 /datum/chemical_reaction/foam
-	name = "Chemical Foam"
-	required_reagents = list(/datum/reagent/foaming_agent = 1, /datum/reagent/water = 1)
+	name = "Foam"
+	required_reagents = list(/datum/reagent/fluorosurfactant = 1, /datum/reagent/water = 1)
 	mob_react = FALSE
 
 /datum/chemical_reaction/foam/on_reaction(datum/reagents/holder, created_volume)
@@ -158,7 +158,7 @@
 
 /datum/chemical_reaction/metalfoam
 	name = "Metal Foam"
-	required_reagents = list(/datum/reagent/aluminum = 2, /datum/reagent/foaming_agent = 1, /datum/reagent/toxin/acid = 1)
+	required_reagents = list(/datum/reagent/aluminum = 3, /datum/reagent/foaming_agent = 1, /datum/reagent/toxin/acid/polyacid = 1)
 	mob_react = FALSE
 
 /datum/chemical_reaction/metalfoam/on_reaction(datum/reagents/holder, created_volume)
@@ -173,7 +173,7 @@
 
 /datum/chemical_reaction/ironfoam
 	name = "Iron Foam"
-	required_reagents = list(/datum/reagent/iron = 2, /datum/reagent/foaming_agent = 1, /datum/reagent/toxin/acid = 1)
+	required_reagents = list(/datum/reagent/iron = 3, /datum/reagent/foaming_agent = 1, /datum/reagent/toxin/acid = 1)
 	mob_react = FALSE
 
 /datum/chemical_reaction/ironfoam/on_reaction(datum/reagents/holder, created_volume)
@@ -252,19 +252,17 @@
 
 /datum/chemical_reaction/napalm
 	name = "Napalm"
-	required_reagents = list(/datum/reagent/aluminum = 1, /datum/reagent/fuel = 2, /datum/reagent/toxin/acid = 1 )
+	required_reagents = list(/datum/reagent/aluminum = 1, /datum/reagent/toxin/phoron = 2, /datum/reagent/toxin/acid = 1 )
 
 /datum/chemical_reaction/napalm/on_reaction(datum/reagents/holder, created_volume, radius)
-	radius = round(sqrt(created_volume * 0.33), 1)//Not as effective as WP, but more effective than HIDP and without the deadly smoke
-	flame_radius((radius - 1), get_turf(holder.my_atom))
+	radius = round(sqrt(created_volume * 0.15)) //allows a nice, healthy 3-tile fire if using 2 120u beakers fully filled up.
+	flame_radius(radius, get_turf(holder.my_atom))
 
 /datum/chemical_reaction/wpsmoke
 	name = "White Phosphorous smoke"
 	required_reagents = list(/datum/reagent/phosphorus = 2, /datum/reagent/silicon = 1, /datum/reagent/chlorine = 1)
 
-/datum/chemical_reaction/wpsmoke/on_reaction(datum/reagents/holder, created_volume, radius)
-	radius = round(sqrt(created_volume * 0.66), 1)
-	flame_radius(radius, get_turf(holder.my_atom))
+/datum/chemical_reaction/wpsmoke/on_reaction(datum/reagents/holder, created_volume)
 	var/smoke_radius = round(sqrt(created_volume * 0.66), 1)
 	var/datum/effect_system/smoke_spread/phosphorus/smoke = new
 	smoke.set_up(smoke_radius, get_turf(holder.my_atom), 11)
@@ -281,3 +279,26 @@
 	smoke.set_up(smoke_radius, get_turf(holder.my_atom), 11)
 	smoke.start()
 	playsound(get_turf(holder.my_atom), 'sound/effects/smoke.ogg', 50, 1, -3)
+
+/datum/chemical_reaction/explosive/gunpowder
+	name = "Gunpowder"
+	required_reagents = list(/datum/reagent/potassium = 1, /datum/reagent/oxygen = 3, /datum/reagent/sulfur = 1, /datum/reagent/carbon = 1)
+
+/datum/chemical_reaction/explosive/gunpowder/on_reaction(datum/reagents/holder, created_volume)
+	var/radius = round(sqrt(created_volume* 0.5), 1) // should be about equal to the M15, maybe one tile more
+	var/datum/effect_system/smoke_spread/bad/smoke = new
+	smoke.set_up((radius - 1), get_turf(holder.my_atom), 2)
+	smoke.start()
+	explosion(get_turf(holder.my_atom), light_impact_range = radius, small_animation = TRUE)
+
+
+/datum/chemical_reaction/explosive/anfo
+	name = "ANFO"
+	required_reagents = list(/datum/reagent/ammonia = 1, /datum/reagent/fuel = 3)
+
+/datum/chemical_reaction/explosive/anfo/on_reaction(datum/reagents/holder, created_volume)
+	var/radius = round(sqrt(created_volume* 0.25), 1) // should be a max of 2 tiles
+	if(radius > 2)
+		radius = 2 //enforced by a hardcap. Sorry!
+	explosion(get_turf(holder.my_atom), heavy_impact_range = radius, small_animation = TRUE)
+

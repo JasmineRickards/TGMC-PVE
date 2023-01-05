@@ -56,7 +56,7 @@
 #define CHIEF_MEDICAL_OFFICER "Chief Medical Officer"
 #define CORPORATE_LIAISON "Corporate Liaison"
 #define SYNTHETIC "Synthetic"
-#define SHIP_TECH "Ordnance Technician"
+#define SHIP_TECH "Ship Technician"
 #define MEDICAL_DOCTOR "Medical Doctor"
 #define MEDICAL_RESEARCHER "Medical Researcher"
 #define SQUAD_LEADER "Squad Leader"

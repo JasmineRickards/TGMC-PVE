@@ -43,6 +43,7 @@
 /obj/item/assembly/proc/holder_movement() //Called when the holder is moved
 	if(!holder)
 		return FALSE
+	setDir(holder.dir)
 	return TRUE
 
 

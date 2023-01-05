@@ -74,14 +74,14 @@
 	if(a_right)
 		a_right.on_found(finder)
 
-/*
+
 /obj/item/assembly_holder/setDir()
 	. = ..()
 	if(a_left)
 		a_left.holder_movement()
 	if(a_right)
 		a_right.holder_movement()
-*/
+
 
 /obj/item/assembly_holder/dropped(mob/user)
 	. = ..()
