@@ -13414,8 +13414,6 @@
 /area/sulaco/cargo)
 "fCq" = (
 /obj/structure/rack,
-/obj/item/assembly/infra,
-/obj/item/assembly/infra,
 /turf/open/floor/prison,
 /area/sulaco/hangar/storage)
 "fCQ" = (
@@ -15959,7 +15957,6 @@
 	dir = 1
 	},
 /obj/structure/rack,
-/obj/item/assembly/infra,
 /obj/item/assembly/timer,
 /obj/item/storage/toolbox/mechanical,
 /obj/machinery/camera/autoname{
@@ -23422,6 +23419,7 @@
 /turf/open/floor/wood,
 /area/sulaco/liaison/quarters)
 "sXi" = (
+/obj/machinery/vending/ordnance,
 /turf/open/floor/prison/red{
 	dir = 6
 	},
@@ -25848,6 +25846,7 @@
 /turf/open/floor/prison/sterilewhite,
 /area/sulaco/cafeteria)
 "wjX" = (
+/obj/structure/table,
 /turf/open/floor/prison/red{
 	dir = 4
 	},
@@ -25920,6 +25919,7 @@
 /obj/machinery/firealarm{
 	dir = 8
 	},
+/obj/machinery/chem_dispenser,
 /turf/open/floor/prison/red{
 	dir = 4
 	},

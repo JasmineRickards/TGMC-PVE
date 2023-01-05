@@ -47,7 +47,8 @@
 		/datum/reagent/sodium,
 		/datum/reagent/consumable/sugar,
 		/datum/reagent/sulfur,
-		/datum/reagent/water
+		/datum/reagent/water,
+		/datum/reagent/toxin/sleeptoxin,
 	)
 
 	var/list/emagged_reagents = list()
@@ -470,6 +471,33 @@
 	qdel(cell)
 	cell = new /obj/item/cell/infinite
 
+//subtype for an OT lab in Valhalla
+/obj/machinery/chem_dispenser/valhalla/ordnance
+	dispensable_reagents = list(
+		/datum/reagent/aluminum,
+		/datum/reagent/carbon,
+		/datum/reagent/chlorine,
+		/datum/reagent/copper,
+		/datum/reagent/consumable/ethanol,
+		/datum/reagent/fluorine,
+		/datum/reagent/hydrogen,
+		/datum/reagent/iron,
+		/datum/reagent/lithium,
+		/datum/reagent/mercury,
+		/datum/reagent/nitrogen,
+		/datum/reagent/oxygen,
+		/datum/reagent/phosphorus,
+		/datum/reagent/potassium,
+		/datum/reagent/radium,
+		/datum/reagent/toxin/acid,
+		/datum/reagent/silicon,
+		/datum/reagent/sodium,
+		/datum/reagent/consumable/sugar,
+		/datum/reagent/sulfur,
+		/datum/reagent/water,
+		/datum/reagent/toxin/phoron,
+		/datum/reagent/toxin/sleeptoxin,
+	)
 /obj/machinery/chem_dispenser/soda/nopower
 	use_power = NO_POWER_USE
 

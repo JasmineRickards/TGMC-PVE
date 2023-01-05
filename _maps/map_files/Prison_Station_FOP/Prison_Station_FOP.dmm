@@ -30630,7 +30630,6 @@
 "bRG" = (
 /obj/structure/table/reinforced,
 /obj/item/tool/extinguisher,
-/obj/item/assembly/infra,
 /obj/effect/spawner/random/powercell,
 /obj/structure/cable,
 /turf/open/floor/prison,

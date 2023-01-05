@@ -450,6 +450,7 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	engineer = SKILL_ENGINEER_MASTER
 	construction = SKILL_CONSTRUCTION_MASTER
 	powerloader = SKILL_POWERLOADER_MASTER
+	medical = SKILL_MEDICAL_PRACTICED // Allows use of chem dispenser, needed for Ordnance.
 
 /datum/skills/pmc
 	name = "PMC Private"
