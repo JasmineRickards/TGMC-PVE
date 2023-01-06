@@ -1586,7 +1586,7 @@ VEHICLES
 
 /datum/supply_packs/vehicles/mechassault
 	name = "Assault Mobile Suit"
-	cost = 100
+	cost = 140
 	contains = list(/obj/vehicle/sealed/mecha/combat/marauder/seraphtgmc)
 
 /datum/supply_packs/vehicles/mechlmg
@@ -1610,9 +1610,14 @@ VEHICLES
 	contains = list(/obj/item/mecha_ammo/missiles_br)
 
 /datum/supply_packs/vehicles/mechshottie
-	name = "67mm AP-HE autocannon"
+	name = "Mobile suit scattergun"
 	cost = 35
 	contains = list(/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot)
+
+/datum/supply_packs/vehicles/mechshottieammo
+	name = "Mobile suit scattergun ammo"
+	cost = 5
+	contains = list(/obj/item/mecha_ammo/scattershot)
 
 /datum/supply_packs/vehicles/mechrepair
 	name = "Mobile suit repair module"

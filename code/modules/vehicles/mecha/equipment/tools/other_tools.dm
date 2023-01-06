@@ -47,12 +47,12 @@
 	name = "exosuit repair droid"
 	desc = "An automated repair droid for exosuits. Scans for damage and repairs it. Can fix almost all types of external or internal damage."
 	icon_state = "repair_droid"
-	energy_drain = 50
+	energy_drain = 1000
 	range = 0
 	activated = FALSE
 	equipment_slot = MECHA_UTILITY
 	/// Repaired health per second
-	var/health_boost = 0.5
+	var/health_boost = 10
 	///overlay to show on the mech
 	var/image/droid_overlay
 	var/list/repairable_damage = list(MECHA_INT_TEMP_CONTROL,MECHA_INT_TANK_BREACH)

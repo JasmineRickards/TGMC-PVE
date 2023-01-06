@@ -133,21 +133,21 @@
 	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "trashmelt"
 	item_state = "trashmelt"
-	maxcharge = 5000
+	maxcharge = 15000
 	self_recharge = TRUE
 	charge_amount = 100
 	charge_delay = 2 SECONDS //One hit on a resin thingy every 4 seconds, or one actual wall every 40 seconds.
 
 /obj/item/cell/mecha/medium
 	name = "medium radiotope cell"
-	maxcharge = 10000
+	maxcharge = 22500
 	self_recharge = TRUE
 	charge_amount = 250
 	charge_delay = 2 SECONDS //One hit on a resin thingy every 4 seconds, or one actual wall every 40 seconds.
 
 /obj/item/cell/mecha/large
 	name = "large radiotope cell"
-	maxcharge = 15000
+	maxcharge = 30000
 	self_recharge = TRUE
 	charge_amount = 500
 	charge_delay = 2 SECONDS //One hit on a resin thingy every 4 seconds, or one actual wall every 40 seconds.
