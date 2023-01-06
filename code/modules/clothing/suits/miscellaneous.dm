@@ -263,52 +263,7 @@
 	icon_state = "neocoat"
 	item_state = "neocoat"
 
-/obj/item/clothing/suit/xenos
-	name = "xenos suit"
-	desc = "A suit made out of chitinous alien hide."
-	icon_state = "xenos"
-	item_state = "xenos_helm"
-//	flags_armor_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-//	flags_inv_hide = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
-//	siemens_coefficient = 2.0
-flags_atom = CONDUCT
-	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
-	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
-	flags_heat_protection = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
-	blood_overlay_type = "armor"
-	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 45, BOMB = 45, BIO = 45, FIRE = 45, ACID = 50)
-	siemens_coefficient = 0.7
-	permeability_coefficient = 0.8
-	slowdown = 0.5
-	allowed = list(
-		/obj/item/weapon/gun,
-		/obj/item/instrument,
-		/obj/item/storage/belt/sparepouch,
-		/obj/item/storage/holster/blade,
-		/obj/item/weapon/claymore,
-		/obj/item/storage/belt/gun,
-		/obj/item/storage/belt/knifepouch,
-		/obj/item/weapon/twohanded,
-		/obj/item/tool/pickaxe/plasmacutter,
-		/obj/item/tank/emergency_oxygen,
-		/obj/item/flashlight,
-		/obj/item/ammo_magazine,
-		/obj/item/explosive/grenade,
-		/obj/item/binoculars,
-		/obj/item/weapon/combat_knife,
-		/obj/item/attachable/bayonetknife,
-	)
-	var/locate_cooldown = 0 //Cooldown for SL locator
-	var/list/armor_overlays
-	actions_types = list(/datum/action/item_action/toggle/suit_toggle)
-	flags_armor_features = ARMOR_LAMP_OVERLAY
-	flags_item = SYNTH_RESTRICTED|IMPEDE_JETPACK
-	w_class = WEIGHT_CLASS_HUGE
-	time_to_unequip = 2 SECONDS
-	time_to_equip = 2 SECONDS
-	pockets = /obj/item/storage/internal/suit/marine
+
 //swimsuit
 /obj/item/clothing/under/swimsuit/
 	siemens_coefficient = 1
