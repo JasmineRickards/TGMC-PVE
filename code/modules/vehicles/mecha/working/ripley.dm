@@ -17,7 +17,7 @@
 	)
 	wreckage = /obj/structure/mecha_wreckage/ripley
 	mech_type = EXOSUIT_MODULE_RIPLEY
-	possible_int_damage = MECHA_INT_FIRE|MECHA_INT_CONTROL_LOST|MECHA_INT_SHORT_CIRCUIT
+//	possible_int_damage = MECHA_INT_FIRE|MECHA_INT_CONTROL_LOST|MECHA_INT_SHORT_CIRCUIT
 	enclosed = FALSE //Normal ripley has an open cockpit design
 	enter_delay = 10 //can enter in a quarter of the time of other mechs
 	exit_delay = 10
@@ -66,7 +66,7 @@
 	move_delay = 4
 	max_temperature = 30000
 	max_integrity = 250
-	possible_int_damage = MECHA_INT_FIRE|MECHA_INT_TEMP_CONTROL|MECHA_INT_TANK_BREACH|MECHA_INT_CONTROL_LOST|MECHA_INT_SHORT_CIRCUIT
+//	possible_int_damage = MECHA_INT_FIRE|MECHA_INT_TEMP_CONTROL|MECHA_INT_TANK_BREACH|MECHA_INT_CONTROL_LOST|MECHA_INT_SHORT_CIRCUIT
 	soft_armor = list(MELEE = 40, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 60, BIO = 0, FIRE = 100, ACID = 100)
 	wreckage = /obj/structure/mecha_wreckage/ripley/mk2
 	enclosed = TRUE

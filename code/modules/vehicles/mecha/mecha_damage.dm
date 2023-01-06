@@ -23,15 +23,15 @@
 	return facing_modifiers[MECHA_SIDE_ARMOUR] //if its not a front hit or back hit then assume its from the side
 
 ///tries to deal internal damaget depending on the damage amount
-/obj/vehicle/sealed/mecha/proc/try_deal_internal_damage(damage)
-	if(damage < internal_damage_threshold)
-		return
-	if(!prob(internal_damage_probability))
-		return
-	var/internal_damage_to_deal = possible_int_damage
-	internal_damage_to_deal &= ~mecha_flags
-	if(internal_damage_to_deal)
-		set_internal_damage(pick(bitfield2list(internal_damage_to_deal)))
+//obj/vehicle/sealed/mecha/proc/try_deal_internal_damage(damage)
+//	if(damage < internal_damage_threshold)
+//		return
+//	if(!prob(internal_damage_probability))
+//		return
+//	var/internal_damage_to_deal = possible_int_damage
+//	internal_damage_to_deal &= ~mecha_flags
+//	if(internal_damage_to_deal)
+//		set_internal_damage(pick(bitfield2list(internal_damage_to_deal)))
 
 /// tries to repair any internal damage and plays fluff for it
 /obj/vehicle/sealed/mecha/proc/try_repair_int_damage(mob/user, flag_to_heal)

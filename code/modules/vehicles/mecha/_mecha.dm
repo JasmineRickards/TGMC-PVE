@@ -95,13 +95,13 @@
 	///Bitflags for internal damage
 	var/internal_damage = NONE
 	/// damage amount above which we can take internal damages
-	var/internal_damage_threshold = 15
+//	var/internal_damage_threshold = 15
 	/// % chance for internal damage to occur
-	var/internal_damage_probability = 20
+//	var/internal_damage_probability = 20
 	/// list of possibly dealt internal damage for this mech type
-	var/possible_int_damage = MECHA_INT_FIRE|MECHA_INT_TEMP_CONTROL|MECHA_INT_TANK_BREACH|MECHA_INT_CONTROL_LOST|MECHA_INT_SHORT_CIRCUIT
+//	var/possible_int_damage = MECHA_INT_FIRE|MECHA_INT_TEMP_CONTROL|MECHA_INT_TANK_BREACH|MECHA_INT_CONTROL_LOST|MECHA_INT_SHORT_CIRCUIT
 	/// damage threshold above which we take component damage
-	var/component_damage_threshold = 10
+//	var/component_damage_threshold = 10
 
 	///required access level for mecha operation
 	var/list/operation_req_access = list()

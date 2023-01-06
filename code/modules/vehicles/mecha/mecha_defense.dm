@@ -14,37 +14,37 @@
  */
 
 /// tries to damage mech equipment depending on damage and where is being targetted
-/obj/vehicle/sealed/mecha/proc/try_damage_component(damage, def_zone)
-	if(damage < component_damage_threshold)
-		return
-	var/obj/item/mecha_parts/mecha_equipment/gear
-	switch(def_zone)
-		if(BODY_ZONE_L_ARM)
-			gear = equip_by_category[MECHA_L_ARM]
-		if(BODY_ZONE_R_ARM)
-			gear = equip_by_category[MECHA_R_ARM]
-	if(!gear)
-		return
-	// always leave at least 1 health
-	var/damage_to_deal = min(obj_integrity - 1, damage)
-	if(damage_to_deal <= 0)
-		return
+//obj/vehicle/sealed/mecha/proc/try_damage_component(damage, def_zone)
+//	if(damage < component_damage_threshold)
+//		return
+//	var/obj/item/mecha_parts/mecha_equipment/gear
+//	switch(def_zone)
+//		if(BODY_ZONE_L_ARM)
+//			gear = equip_by_category[MECHA_L_ARM]
+//		if(BODY_ZONE_R_ARM)
+//			gear = equip_by_category[MECHA_R_ARM]
+//	if(!gear)
+//		return
+//	// always leave at least 1 health
+//	var/damage_to_deal = min(obj_integrity - 1, damage)
+//	if(damage_to_deal <= 0)
+//		return
 
-	gear.take_damage(damage_to_deal)
-	if(gear.obj_integrity <= 1)
-		to_chat(occupants, "[icon2html(src, occupants)][span_danger("[gear] is critically damaged!")]")
-		playsound(src, gear.destroy_sound, 50)
+//	gear.take_damage(damage_to_deal)
+//	if(gear.obj_integrity <= 1)
+//		to_chat(occupants, "[icon2html(src, occupants)][span_danger("[gear] is critically damaged!")]")
+//		playsound(src, gear.destroy_sound, 50)
 
 /obj/vehicle/sealed/mecha/take_damage(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = TRUE, attack_dir, armour_penetration)
 	var/damage_taken = ..()
 	if(damage_taken <= 0 || obj_integrity < 0)
 		return damage_taken
 
-	spark_system.start()
-	try_deal_internal_damage(damage_taken)
-	if(damage_taken >= 5 || prob(33))
-		to_chat(occupants, "[icon2html(src, occupants)][span_userdanger("Taking damage!")]")
-	log_message("Took [damage_taken] points of damage. Damage type: [damage_type]", LOG_MECHA)
+//	spark_system.start()
+//	try_deal_internal_damage(damage_taken)
+//	if(damage_taken >= 5 || prob(33))
+//		to_chat(occupants, "[icon2html(src, occupants)][span_userdanger("Taking damage!")]")
+//	log_message("Took [damage_taken] points of damage. Damage type: [damage_type]", LOG_MECHA)
 
 	return damage_taken
 
@@ -68,13 +68,13 @@
 /obj/vehicle/sealed/mecha/bullet_act(obj/projectile/hitting_projectile, def_zone, piercing_hit) //wrapper
 	log_message("Hit by projectile. Type: [hitting_projectile]([hitting_projectile.ammo.damage_type]).", LOG_MECHA, color="red")
 	// yes we *have* to run the armor calc proc here I love tg projectile code too
-	try_damage_component(run_obj_armor(
-		damage_amount = hitting_projectile.damage,
-		damage_type = hitting_projectile.ammo.damage_type,
-		damage_flag = hitting_projectile.ammo.armor_type,
-		attack_dir = REVERSE_DIR(hitting_projectile.dir),
-		armour_penetration = hitting_projectile.ammo.penetration,
-	), hitting_projectile.def_zone)
+//	try_damage_component(run_obj_armor(
+//		damage_amount = hitting_projectile.damage,
+//		damage_type = hitting_projectile.ammo.damage_type,
+//		damage_flag = hitting_projectile.ammo.armor_type,
+//		attack_dir = REVERSE_DIR(hitting_projectile.dir),
+//		armour_penetration = hitting_projectile.ammo.penetration,
+//	), hitting_projectile.def_zone)
 	return ..()
 
 /obj/vehicle/sealed/mecha/ex_act(severity, target)
@@ -204,7 +204,7 @@
 		return
 
 	var/damage_taken = take_damage(attacking_item.force, attacking_item.damtype, MELEE, 1)
-	try_damage_component(damage_taken, user.zone_selected)
+//	try_damage_component(damage_taken, user.zone_selected)
 
 	var/hit_verb = length(attacking_item.attack_verb) ? "[pick(attacking_item.attack_verb)]" : "hit"
 	user.visible_message(
@@ -217,10 +217,10 @@
 	log_combat(user, src, "attacked", attacking_item)
 	log_message("Attacked by [user]. Item - [attacking_item], Damage - [damage_taken]", LOG_MECHA)
 
-/obj/vehicle/sealed/mecha/attack_generic(mob/user, damage_amount, damage_type, damage_flag, effects, armor_penetration)
-	. = ..()
-	if(.)
-		try_damage_component(., user.zone_selected)
+//obj/vehicle/sealed/mecha/attack_generic(mob/user, damage_amount, damage_type, damage_flag, effects, armor_penetration)
+//	. = ..()
+//	if(.)
+//		try_damage_component(., user.zone_selected)
 
 /obj/vehicle/sealed/mecha/wrench_act(mob/living/user, obj/item/I)
 	..()
