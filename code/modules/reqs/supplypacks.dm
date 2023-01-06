@@ -1517,11 +1517,20 @@ Imports
 		/obj/item/ammo_magazine/rifle/tx55,)
 	cost = 45
 
-/datum/supply_packs/imports/tx55ammo
+/datum/supply_packs/imports/tx55/ammo
 	name = "AR-55 Carbine ammo."
 	contains = list(
 		/obj/item/ammo_magazine/rifle/tx55)
 	cost = 5
+
+/datum/supply_packs/imports/pmcb18
+	name = "Commando Armor Set"
+	contains = list(
+		/obj/item/clothing/suit/storage/marine/specialist/PMC,
+		/obj/item/clothing/head/helmet/marine/specialist/PMC,
+		/obj/item/clothing/gloves/marine/specialist/PMC,
+		/obj/item/clothing/under/marine/veteran/PMC/commando/vendor,)
+	cost = B18_PRICE
 
 /datum/supply_packs/imports/strawhat
 	name = "Straw hat"

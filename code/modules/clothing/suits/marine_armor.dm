@@ -459,6 +459,12 @@
 	AddComponent(/datum/component/suit_autodoc)
 	AddElement(/datum/element/limb_support, supporting_limbs)
 
+/obj/item/clothing/suit/storage/marine/specialist/PMC
+	name = "\improper PMC commando armor"
+	desc = "A heavily armored suit built by who-knows-what for elite operations. It is a fully self-contained system and is heavily corrosion resistant."
+	icon_state = "commando_armor"
+	flags_item_map_variant = NONE
+
 /*===========================DISTRESS================================*/
 
 /obj/item/clothing/suit/storage/marine/veteran/wolves
