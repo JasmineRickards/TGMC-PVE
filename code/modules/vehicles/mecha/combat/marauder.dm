@@ -5,6 +5,7 @@
 	iff_signal = TGMC_LOYALIST_IFF
 	base_icon_state = "marauder"
 	move_delay = 5
+//	minimap_icon = "mech_pilot"
 	max_integrity = 500
 	soft_armor = list(MELEE = 50, BULLET = 75, LASER = 40, ENERGY = 30, BOMB = 30, BIO = 0, FIRE = 100, ACID = 100)
 	max_temperature = 60000
