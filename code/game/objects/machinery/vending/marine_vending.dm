@@ -1434,7 +1434,13 @@
 			/obj/item/clothing/head/helmet/marine/veteran/mercenary = -1,
 			/obj/item/clothing/head/helmet/marine/veteran/mercenary/miner = -1,
 			/obj/item/clothing/head/helmet/marine/veteran/mercenary/engineer = -1,
-
+			/obj/item/clothing/head/helmet/marine/veteran/mercenary = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/mercenary/miner = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/mercenary/engineer = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/PMC = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/PMC/leader = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/PMC/sniper = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/PMC/gunner = -1,
 		),
 		"Civilian" = list(
 			/obj/item/clothing/suit/armor/riot = -1,
