@@ -1532,7 +1532,6 @@ Imports
 		/obj/item/clothing/under/marine/veteran/PMC/commando/vendor,)
 	cost = B18_PRICE
 
-
 /datum/supply_packs/imports/strawhat
 	name = "Straw hat"
 	contains = list(/obj/item/clothing/head/strawhat)
