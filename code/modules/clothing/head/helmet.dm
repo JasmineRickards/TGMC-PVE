@@ -486,6 +486,13 @@
 	anti_hug = 50
 	resistance_flags = UNACIDABLE
 
+/obj/item/clothing/head/helmet/marine/specialist/PMC
+	name = "\improper PMC commando helmet"
+	desc = "A fully enclosed, armored helmet made for Nanotrasen elite commandos."
+	icon_state = "commando_helmet"
+	flags_item_map_variant = NONE
+
+
 /*==========================DISTRESS=================================
 =======================================================================*/
 
