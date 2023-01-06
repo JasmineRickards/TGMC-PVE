@@ -62,6 +62,12 @@
 	soft_armor = list(MELEE = 35, BULLET = 15, LASER = 15, ENERGY = 15, BOMB = 25, BIO = 15, FIRE = 15, ACID = 20)
 	resistance_flags = UNACIDABLE
 
+/obj/item/clothing/gloves/marine/specialist/PMC
+	name = "\improper PMC commando gloves"
+	desc = "A pair of heavily armored, acid-resistant gloves."
+	icon_state = "brown"
+	item_state = "browngloves"
+
 /obj/item/clothing/gloves/marine/veteran/PMC
 	name = "armored gloves"
 	desc = "Armored gloves used in special operations. They are also insulated against electrical shock."

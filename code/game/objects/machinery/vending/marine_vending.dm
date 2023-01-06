@@ -1655,6 +1655,11 @@
 			/obj/item/clothing/mask/gas/wolves = -1,
 			/obj/item/clothing/shoes/marine/clf/full = -1,
 			/obj/item/storage/backpack/lightpack = -1,
+			/obj/item/clothing/mask/gas/PMC/leader = -1,
+			/obj/item/clothing/under/marine/veteran/PMC = -1,
+			/obj/item/clothing/under/marine/veteran/PMC/leader = -1,
+			/obj/item/clothing/shoes/veteran/PMC = -1,
+			/obj/item/reagent_containers/food/snacks/sliceable/meatbread = -1,
 		),
 		"Pizza time" = list(
 			/obj/item/pizzabox/margherita = -1,

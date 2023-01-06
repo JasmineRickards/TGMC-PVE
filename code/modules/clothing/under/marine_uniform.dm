@@ -245,6 +245,11 @@
 	soft_armor = list(MELEE = 10, BULLET = 10, LASER = 10, ENERGY = 20, BOMB = 10, BIO = 10, FIRE = 20, ACID = 20)
 	has_sensor = 0
 
+/obj/item/clothing/under/marine/veteran/PMC/commando/vendor
+	desc = "A well worn uniform used by Nanotrasen elite commandos. Whatever protection it would've provided having faded."
+	soft_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+	has_sensor = 2
+
 /obj/item/clothing/under/marine/veteran/wolves
 	name = "\improper Steel Wolves uniform"
 	desc = "A uniform worn by Steel Wolves mercenaries in the service of Mother Russia. Smells a little like an actual bear."
