@@ -9,6 +9,7 @@
 		/obj/structure/closet,
 		/mob/living/carbon/human,
 		/obj/machinery,
+		/obj/vehicle/sealed/mecha,
 	)
 	///List of banned teleportable types
 	var/static/list/blacklisted_types = list(

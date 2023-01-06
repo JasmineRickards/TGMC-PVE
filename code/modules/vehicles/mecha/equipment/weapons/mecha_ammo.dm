@@ -59,13 +59,13 @@
 	ammo_type = MECHA_AMMO_LMG
 
 /obj/item/mecha_ammo/missiles_br
-	name = "breaching missiles"
-	desc = "A box of large missiles, ready for loading into a BRM-6 exosuit missile rack."
+	name = "AP-HE rounds"
+	desc = "A box of cannon shells, used for the mobile suit's Heavy weapons, or the AP-HE cannon to be specific."
 	icon_state = "missile_br"
-	rounds = 6
+	rounds = 12
 	direct_load = TRUE
 	load_audio = 'sound/mecha/mag_bullet_insert.ogg'
-	ammo_type = MECHA_AMMO_MISSILE_HE
+	ammo_type = MECHA_AMMO_MISSILE_AP
 
 /obj/item/mecha_ammo/missiles_he
 	name = "anti-armor missiles"

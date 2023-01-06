@@ -1,11 +1,11 @@
 /obj/vehicle/sealed/mecha/combat/marauder
-	desc = "Heavy-duty, combat exosuit, developed after the Durand model. Rarely found among civilian populations."
-	name = "\improper Marauder"
+	desc = "Heavy-duty, combat exosuit, developed for FOB defence operations or escorts."
+	name = "\improper Defensive Mobile Suit mk.1"
 	icon_state = "marauder"
 	base_icon_state = "marauder"
 	move_delay = 5
 	max_integrity = 500
-	soft_armor = list(MELEE = 50, BULLET = 55, LASER = 40, ENERGY = 30, BOMB = 30, BIO = 0, FIRE = 100, ACID = 100)
+	soft_armor = list(MELEE = 50, BULLET = 75, LASER = 40, ENERGY = 30, BOMB = 30, BIO = 0, FIRE = 100, ACID = 100)
 	max_temperature = 60000
 	wreckage = /obj/structure/mecha_wreckage/marauder
 	mecha_flags = CANSTRAFE | IS_ENCLOSED | HAS_HEADLIGHTS
@@ -67,8 +67,8 @@
 	update_button_icon()
 
 /obj/vehicle/sealed/mecha/combat/marauder/seraph
-	desc = "Heavy-duty, command-type exosuit. This is a custom model, utilized only by high-ranking military personnel."
-	name = "\improper Seraph"
+	desc = "Heavy-duty,Front line assault suit, intended for heavy duty attacks."
+	name = "\improper Heavy Combat Suit"
 	icon_state = "seraph"
 	base_icon_state = "seraph"
 	move_delay = 3
@@ -86,6 +86,20 @@
 		MECHA_UTILITY = list(),
 		MECHA_POWER = list(),
 		MECHA_ARMOR = list(/obj/item/mecha_parts/mecha_equipment/armor/antiproj_armor_booster),
+	)
+/obj/vehicle/sealed/mecha/combat/marauder/seraphtgmc
+	desc = "Heavy-duty,Front line assault suit, intended for heavy duty attacks."
+	name = "\improper Heavy Combat Suit"
+	icon_state = "seraph"
+	base_icon_state = "seraph"
+	move_delay = 3
+	max_integrity = 550
+	wreckage = /obj/structure/mecha_wreckage/seraph
+	force = 55
+	max_equip_by_category = list(
+		MECHA_UTILITY = 3,
+		MECHA_POWER = 2,
+		MECHA_ARMOR = 3,
 	)
 
 /obj/vehicle/sealed/mecha/combat/marauder/mauler

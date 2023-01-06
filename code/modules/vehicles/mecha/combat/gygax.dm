@@ -1,13 +1,13 @@
 /obj/vehicle/sealed/mecha/combat/gygax
 	desc = "A TGMC experimental field suit, designated the Field Support - Mobile variant. Lightly armored and easy to use."
-	name = "\improper FS-M"
+	name = "\improper Mobile Scout Suit mk.1"
 	icon_state = "gygax"
 	base_icon_state = "gygax"
 	allow_diagonal_movement = TRUE
 	move_delay = 3
 	dir_in = 1 //Facing North.
 	max_integrity = 250
-	soft_armor = list(MELEE = 25, BULLET = 20, LASER = 30, ENERGY = 15, BOMB = 0, BIO = 0, FIRE = 100, ACID = 100)
+	soft_armor = list(MELEE = 25, BULLET = 50, LASER = 30, ENERGY = 15, BOMB = 0, BIO = 0, FIRE = 100, ACID = 100)
 	max_temperature = 25000
 	leg_overload_coeff = 80
 	force = 25
@@ -61,12 +61,12 @@
 	update_button_icon()
 
 /obj/vehicle/sealed/mecha/combat/gygax/dark
-	desc = "A lightweight exosuit, painted in a dark scheme. This model appears to have some modifications."
-	name = "\improper Dark Gygax"
+	desc = "The second iteration of the Mobile suit scouting series, with more armor."
+	name = "\improper Mobile Scout suit mk.2"
 	icon_state = "darkgygax"
 	base_icon_state = "darkgygax"
 	max_integrity = 300
-	soft_armor = list(MELEE = 40, BULLET = 40, LASER = 50, ENERGY = 35, BOMB = 20, BIO = 0, FIRE = 100, ACID = 100)
+	soft_armor = list(MELEE = 40, BULLET = 50, LASER = 50, ENERGY = 35, BOMB = 20, BIO = 0, FIRE = 100, ACID = 100)
 	max_temperature = 35000
 	leg_overload_coeff = 70
 	force = 30
@@ -91,3 +91,21 @@
 	. = ..()
 	max_ammo()
 
+/obj/vehicle/sealed/mecha/combat/gygax/darkTGMC
+	desc = "The second iteration of the Mobile suit scouting series, with more armor."
+	name = "\improper Mobile Scout suit mk.2"
+	icon_state = "darkgygax"
+	base_icon_state = "darkgygax"
+	max_integrity = 300
+	soft_armor = list(MELEE = 40, BULLET = 50, LASER = 50, ENERGY = 35, BOMB = 20, BIO = 0, FIRE = 100, ACID = 100)
+	max_temperature = 35000
+	leg_overload_coeff = 70
+	force = 30
+	operation_req_access = list()
+	internals_req_access = list()
+	wreckage = /obj/structure/mecha_wreckage/gygax/dark
+	max_equip_by_category = list(
+		MECHA_UTILITY = 2,
+		MECHA_POWER = 1,
+		MECHA_ARMOR = 3,
+	)

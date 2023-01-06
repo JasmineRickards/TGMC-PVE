@@ -1570,9 +1570,24 @@ VEHICLES
 	group = "Vehicles"
 
 /datum/supply_packs/vehicles/mechscout
-	name = "FS-M Mobile suit"
+	name = "Scout Mobile suit"
 	cost = 40
 	contains = list(/obj/vehicle/sealed/mecha/combat/gygax)
+
+/datum/supply_packs/vehicles/mechscout2
+	name = "Scout mk.2 Mobile suit"
+	cost = 60
+	contains = list(/obj/vehicle/sealed/mecha/combat/gygax/darkTGMC)
+
+/datum/supply_packs/vehicles/mechdefence
+	name = "Defensive Mobile Suit"
+	cost = 80
+	contains = list(/obj/vehicle/sealed/mecha/combat/marauder)
+
+/datum/supply_packs/vehicles/mechassault
+	name = "Assault Mobile Suit"
+	cost = 100
+	contains = list(/obj/vehicle/sealed/mecha/combat/marauder/seraphtgmc)
 
 /datum/supply_packs/vehicles/mechlmg
 	name = "FS-M Mobile suit LMG"
@@ -1583,6 +1598,51 @@ VEHICLES
 	name = "FS-M Mobile suit LMG ammo"
 	cost = 5
 	contains = list(/obj/item/mecha_ammo/lmg)
+
+/datum/supply_packs/vehicles/mechaphegun
+	name = "67mm AP-HE autocannon"
+	cost = 75
+	contains = list(/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/breaching)
+
+/datum/supply_packs/vehicles/mechaphe
+	name = "AP-HE shells"
+	cost = 5
+	contains = list(/obj/item/mecha_ammo/missiles_br)
+
+/datum/supply_packs/vehicles/mechshottie
+	name = "67mm AP-HE autocannon"
+	cost = 35
+	contains = list(/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot)
+
+/datum/supply_packs/vehicles/mechrepair
+	name = "Mobile suit repair module"
+	cost = 25
+	contains = list(/obj/item/mecha_parts/mecha_equipment/repair_droid)
+
+/datum/supply_packs/vehicles/mechrarmor
+	name = "Mobile suit ranged armor"
+	cost = 25
+	contains = list(/obj/item/mecha_parts/mecha_equipment/armor/antiproj_armor_booster)
+
+/datum/supply_packs/vehicles/mechrarmor
+	name = "Mobile suit claw protection"
+	cost = 25
+	contains = list(/obj/item/mecha_parts/mecha_equipment/armor/anticcw_armor_booster)
+
+/datum/supply_packs/vehicles/mechscell
+	name = "Low-Duty suit powercell"
+	cost = 5
+	contains = list(/obj/item/cell/mecha)
+
+/datum/supply_packs/vehicles/mechmcell
+	name = "Medium-Duty suit powercell"
+	cost = 25
+	contains = list(/obj/item/cell/mecha/medium)
+
+/datum/supply_packs/vehicles/mechhcell
+	name = "Heavy-Duty suit powercell"
+	cost = 50
+	contains = list(/obj/item/cell/mecha/large)
 
 /datum/supply_packs/vehicles/motorbike
 	name = "All-Terrain Motorbike"
