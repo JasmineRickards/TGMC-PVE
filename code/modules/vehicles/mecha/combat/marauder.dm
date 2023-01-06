@@ -18,7 +18,7 @@
 		MECHA_POWER = 2,
 		MECHA_ARMOR = 3,
 	)
-	bumpsmash = TRUE
+	bumpsmash = FALSE
 
 /obj/vehicle/sealed/mecha/combat/marauder/generate_actions()
 	. = ..()

@@ -1627,7 +1627,6 @@ VEHICLES
 	name = "Mobile suit scattergun ammo"
 	cost = 5
 	contains = list(/obj/item/mecha_ammo/scattershot)
-	/obj/item/mecha_ammo/missiles_sabot
 
 /datum/supply_packs/vehicles/mechshsabot
 	name = "Mobile suit SABOT launcher"
