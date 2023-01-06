@@ -1405,6 +1405,7 @@
 		"Imperial Guard" = list(
 			/obj/item/clothing/head/helmet/marine/imperial = -1,
 			/obj/item/clothing/suit/storage/marine/imperial = -1,
+			/obj/item/clothing/suit/storage/marine/imperial/medicae = -1,
 
 		),
 		"USL" = list(
@@ -1427,6 +1428,10 @@
 			/obj/item/clothing/suit/storage/marine/veteran/mercenary = -1,
 			/obj/item/clothing/suit/storage/marine/veteran/mercenary/miner = -1,
 			/obj/item/clothing/suit/storage/marine/veteran/mercenary/engineer = -1,
+			/obj/item/clothing/suit/storage/marine/veteran/PMC = -1,
+			/obj/item/clothing/suit/storage/marine/veteran/PMC/leader = -1,
+			/obj/item/clothing/suit/storage/marine/veteran/PMC/sniper = -1,
+			/obj/item/clothing/suit/storage/marine/smartgunner/veteran/PMC = -1,
 			/obj/item/clothing/head/helmet/marine/veteran/dutch = -1,
 			/obj/item/clothing/head/helmet/marine/veteran/dutch/cap = -1,
 			/obj/item/clothing/head/helmet/marine/veteran/dutch/band = -1,
@@ -1636,6 +1641,7 @@
 		"USL" = list(
 			/obj/item/clothing/gloves/marine/veteran/PMC = -1,
 			/obj/item/clothing/under/marine/veteran/UPP = -1,
+			/obj/item/clothing/under/marine/veteran/UPP/medic = -1,
 			/obj/item/clothing/shoes/marine = -1,
 			/obj/item/storage/backpack/lightpack = -1,
 			/obj/item/clothing/mask/gas/PMC/upp = -1,
