@@ -46,6 +46,7 @@
 #define MECHA_SNOWFLAKE_ID_EJECTOR "ejector_snowflake"
 
 #define MECHA_AMMO_INCENDIARY "Incendiary bullet"
+#define MECHA_AMMO_MISSILE_SABOT "Discarding sabot"
 #define MECHA_AMMO_BUCKSHOT "Buckshot shell"
 #define MECHA_AMMO_LMG "LMG bullet"
 #define MECHA_AMMO_MISSILE_HE "HE missile"

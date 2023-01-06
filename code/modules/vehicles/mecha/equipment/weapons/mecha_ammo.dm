@@ -52,7 +52,7 @@
 	ammo_type = MECHA_AMMO_BUCKSHOT
 
 /obj/item/mecha_ammo/lmg
-	name = "machine gun ammo box"
+	name = "12.7mm ammunition"
 	desc = "A box of linked ammunition, designed for the Ultra AC 2 exosuit weapon."
 	icon_state = "lmg"
 	rounds = 900
@@ -76,6 +76,14 @@
 	load_audio = 'sound/mecha/mag_bullet_insert.ogg'
 	ammo_type = MECHA_AMMO_MISSILE_AP
 
+/obj/item/mecha_ammo/missiles_sabot
+	name = "anti-armor sabots"
+	desc = "A box of large missiles, ready for loading into an SRM-8 exosuit missile rack."
+	icon_state = "missile_he"
+	rounds = 8
+	direct_load = TRUE
+	load_audio = 'sound/mecha/mag_bullet_insert.ogg'
+	ammo_type = MECHA_AMMO_MISSILE_SABOT
 
 /obj/item/mecha_ammo/flashbang
 	name = "launchable flashbangs"

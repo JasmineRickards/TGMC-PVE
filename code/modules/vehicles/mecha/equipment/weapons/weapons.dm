@@ -322,12 +322,12 @@
 	ammo_type = MECHA_AMMO_BUCKSHOT
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
-	name = "\improper Ultra AC 2"
+	name = "\improper 12.7mm autocannon"
 	fire_sound = 'sound/weapons/guns/fire/GPMG.ogg'
 	desc = "A weapon for combat exosuits. Shoots a rapid, three shot burst."
 	icon_state = "mecha_uac2"
 	equip_cooldown = 10
-	ammotype = /datum/ammo/bullet/minigun
+	ammotype = /datum/ammo/bullet/minigunmech
 	projectiles = 600
 	fire_delay = 0.1 SECONDS
 	projectiles_cache = 600
@@ -365,6 +365,19 @@
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_MISSILE_AP
 
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/sabot
+	name = "\improper AT-12 arm mounted SABOT cannon"
+	desc = "A weapon for combat exosuits. Launches explosive armor piercing cannon shells via 67mm Autocannon."
+	icon_state = "mecha_missilerack_six"
+	ammotype = /datum/ammo/rocket/atgun_shell/apcr
+	fire_sound = 'sound/weapons/guns/fire/tat36.ogg'
+	projectiles = 6
+	projectiles_cache = 12
+	projectiles_cache_max = 34
+	disabledreload = TRUE
+	equip_cooldown = 60
+	harmful = TRUE
+	ammo_type = MECHA_AMMO_MISSILE_SABOT
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher
 	var/missile_speed = 2

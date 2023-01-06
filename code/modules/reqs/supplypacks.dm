@@ -1591,7 +1591,7 @@ VEHICLES
 
 /datum/supply_packs/vehicles/mechlmg
 	name = "FS-M Mobile suit LMG"
-	cost = 20
+	cost = 35
 	contains = list(/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg)
 
 /datum/supply_packs/vehicles/mechlmgammo
@@ -1618,6 +1618,17 @@ VEHICLES
 	name = "Mobile suit scattergun ammo"
 	cost = 5
 	contains = list(/obj/item/mecha_ammo/scattershot)
+	/obj/item/mecha_ammo/missiles_sabot
+
+/datum/supply_packs/vehicles/mechshsabot
+	name = "Mobile suit SABOT launcher"
+	cost = 85
+	contains = list(/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/sabot)
+
+/datum/supply_packs/vehicles/mechshsabotammo
+	name = "Mobile suit SABOT ammo"
+	cost = 10
+	contains = list(/obj/item/mecha_ammo/missiles_sabot)
 
 /datum/supply_packs/vehicles/mechrepair
 	name = "Mobile suit repair module"

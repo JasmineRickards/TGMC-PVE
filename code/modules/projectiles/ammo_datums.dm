@@ -1262,6 +1262,18 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	shrapnel_chance = 25
 	sundering = 2.5
 
+/datum/ammo/bullet/minigunmech
+	name = "12.7mm bullet"
+	hud_state = "minigun"
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	accuracy_var_low = 3
+	accuracy_var_high = 3
+	accurate_range = 5
+	damage = 85
+	penetration = 35
+	shrapnel_chance = 25
+	sundering = 5
+
 /datum/ammo/bullet/minigun/mech
 	name = "vulcan bullet"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_IFF
