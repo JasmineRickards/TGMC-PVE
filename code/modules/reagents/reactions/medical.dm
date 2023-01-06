@@ -177,7 +177,7 @@
 /datum/chemical_reaction/russian_red
 	name = "Russian Red"
 	results = list(/datum/reagent/medicine/russian_red = 6)//Combines all the physical damage healing chems with inaprovaline and opium. Lemoline no longer required, but is complicated and time consuming to make so that you don't have corpsmen filling their pill cases with nothing but Russian Red at roundstart.
-	required_reagents = list(/datum/chemical_reaction/bicaridine = 1, /datum/reagent/medicine/meralyne = 1, /datum/chemical_reaction/kelotane = 1, /datum/reagent/medicine/dermaline = 1, /datum/reagent/medicine/inaprovaline = 1, /datum/reagent/medicine/oxycodone = 1,)
+	required_reagents = list(/datum/reagent/medicine/bicaridine = 1, /datum/reagent/medicine/meralyne = 1, /datum/chemical_reaction/kelotane = 1, /datum/reagent/medicine/dermaline = 1, /datum/reagent/medicine/inaprovaline = 1, /datum/reagent/medicine/oxycodone = 1,)
 	required_catalysts = list(/datum/reagent/toxin/phoron = 5)//Prevents you and others from mixing it in your blood by accident and instantly overdosing.
 
 // Cloning chemicals
