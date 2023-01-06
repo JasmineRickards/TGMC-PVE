@@ -1640,7 +1640,7 @@ VEHICLES
 	cost = 25
 	contains = list(/obj/item/mecha_parts/mecha_equipment/armor/antiproj_armor_booster)
 
-/datum/supply_packs/vehicles/mechrarmor
+/datum/supply_packs/vehicles/mechmarmor
 	name = "Mobile suit claw protection"
 	cost = 25
 	contains = list(/obj/item/mecha_parts/mecha_equipment/armor/anticcw_armor_booster)
