@@ -208,7 +208,7 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	cqc = SKILL_CQC_MP
 	police = SKILL_POLICE_MP
 	construction = SKILL_CONSTRUCTION_METAL
-	engineer = SKILL_ENGINEER_METAL
+	engineer = SKILL_ENGINEER_ENGI
 	medical = SKILL_MEDICAL_PRACTICED
 	surgery = SKILL_SURGERY_TRAINED
 
