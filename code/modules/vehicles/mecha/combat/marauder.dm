@@ -2,6 +2,7 @@
 	desc = "Heavy-duty, combat exosuit, developed for FOB defence operations or escorts."
 	name = "\improper Defensive Mobile Suit mk.1"
 	icon_state = "marauder"
+	iff_signal = TGMC_LOYALIST_IFF
 	base_icon_state = "marauder"
 	move_delay = 5
 	max_integrity = 500

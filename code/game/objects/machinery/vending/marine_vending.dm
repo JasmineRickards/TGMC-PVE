@@ -1665,6 +1665,11 @@
 			/obj/item/reagent_containers/food/drinks/cans/dr_gibb = -1,
 
 		),
+		"???" = list(
+			/obj/item/clothing/head/xenos = 2,
+			/obj/item/clothing/suit/xenos = 2,
+
+		),
 	)
 	prices = list()
 

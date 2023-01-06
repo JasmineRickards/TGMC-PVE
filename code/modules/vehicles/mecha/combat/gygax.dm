@@ -2,6 +2,7 @@
 	desc = "A TGMC experimental field suit, designated the Field Support - Mobile variant. Lightly armored and easy to use."
 	name = "\improper Mobile Scout Suit mk.1"
 	icon_state = "gygax"
+	iff_signal = TGMC_LOYALIST_IFF
 	base_icon_state = "gygax"
 	allow_diagonal_movement = TRUE
 	move_delay = 3

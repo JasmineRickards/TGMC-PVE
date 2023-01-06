@@ -38,6 +38,7 @@
 	mouse_pointer = 'icons/mecha/mecha_mouse.dmi'
 	///What direction will the mech face when entered/powered on? Defaults to South.
 	var/dir_in = SOUTH
+	var/iff_signal = TGMC_LOYALIST_IFF
 	///How much energy the mech will consume each time it moves. This variable is a backup for when leg actuators affect the energy drain.
 	var/normal_step_energy_drain = 10
 	///How much energy the mech will consume each time it moves. this is the current active energy consumed

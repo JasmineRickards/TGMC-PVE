@@ -243,9 +243,21 @@
 	desc = "A helmet made out of chitinous alien hide."
 	flags_inventory = COVERMOUTH|COVEREYES|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEALLHAIR
-	siemens_coefficient = 2.0
+//	siemens_coefficient = 2.0
 	flags_armor_protection = HEAD|FACE|EYES
 	anti_hug = 10 //Lel
+	soft_armor = list(MELEE = 25, BULLET = 90, LASER = 65, ENERGY = 65, BOMB = 75, BIO = 0, FIRE = 75, ACID = 10)
+	flags_atom = CONDUCT
+//	flags_inventory = COVEREYES|BLOCKSHARPOBJ
+//	flags_inv_hide = HIDEEARS|HIDEEYES
+	flags_cold_protection = HEAD
+	flags_heat_protection = HEAD
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
+	siemens_coefficient = 0.7
+	w_class = WEIGHT_CLASS_NORMAL
+	flags_armor_features = ARMOR_NO_DECAP
+//	flags_item = SYNTH_RESTRICTED
 
 /obj/item/clothing/head/white_dress
 	name = "Dress White Cap"
