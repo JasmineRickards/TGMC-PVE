@@ -403,7 +403,7 @@
 	name = "\improper M4 pattern PMC armor"
 	desc = "A common armor vest that is designed for high-profile security operators and corporate mercenaries in mind. All M4 pattern armors are notable for light weight, broad effectiveness against ranged weaponry, and a particular resistance to acid."
 	icon_state = "pmc_armor"
-	soft_armor = list(MELEE = 50, BULLET = 80, LASER = 70, ENERGY = 70, BOMB = 70, BIO = 50, FIRE = 70, ACID = 85)
+	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 50, BIO = 50, FIRE = 50, ACID = 85)
 	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
 	allowed = list(
 		/obj/item/weapon/gun,
@@ -424,29 +424,22 @@
 	name = "\improper M4 pattern PMC leader armor"
 	desc = "A modification of the M4 body armor, it is designed for high-profile security operators and corporate mercenaries in mind. This particular suit looks like it belongs to a high-ranking officer."
 	icon_state = "officer_armor"
-	soft_armor = list(MELEE = 50, BULLET = 80, LASER = 70, ENERGY = 70, BOMB = 70, BIO = 50, FIRE = 70, ACID = 85)
+	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 50, BIO = 50, FIRE = 50, ACID = 85)
 
 
 /obj/item/clothing/suit/storage/marine/veteran/PMC/sniper
 	name = "\improper M4 pattern PMC sniper armor"
 	icon_state = "pmc_sniper"
-	soft_armor = list(MELEE = 50, BULLET = 80, LASER = 70, ENERGY = 70, BOMB = 70, BIO = 50, FIRE = 70, ACID = 85)
+	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 50, BIO = 50, FIRE = 50, ACID = 85)
 	flags_inventory = BLOCKSHARPOBJ
 	flags_inv_hide = HIDELOWHAIR
-
-/obj/item/clothing/suit/storage/marine/veteran/PMC/commando/vendor
-	name = "\improper declassified PMC commando armor"
-	desc = "A heavily worn suit made for Nanotrasen commandos that once saw use in elite operations. The old, damaged interior plating has been stripped down and replaced with edge armor to protect corporate secrets, but the Autodoc miraculously still works and its outer shell retains a remarkable resistance to laser and volkite weapons."
-	soft_armor = list(MELEE = 70, BULLET = 80, LASER = 100, ENERGY = 100, BOMB = 70, BIO = 50, FIRE = 70, ACID = 85)
-	slowdown = SLOWDOWN_ARMOR_MEDIUM
-	resistance_flags = NONE
 
 /obj/item/clothing/suit/storage/marine/smartgunner/veteran/PMC
 	name = "\improper PMC gunner armor"
 	desc = "A modification of the standard M4 body armor. Hooked up with harnesses and straps allowing the user to carry a smartgun."
 	icon_state = "pmc_heavyarmor"
-	slowdown = SLOWDOWN_ARMOR_LIGHT
-	soft_armor = list(MELEE = 50, BULLET = 80, LASER = 70, ENERGY = 70, BOMB = 70, BIO = 50, FIRE = 70, ACID = 85)
+	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
+	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 50, BIO = 50, FIRE = 50, ACID = 85)
 	flags_item_map_variant = NONE
 
 /*===========================Death Commando============================*/

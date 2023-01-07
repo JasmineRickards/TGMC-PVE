@@ -474,12 +474,6 @@
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
 	flags_marine_helmet = HELMET_DAMAGE_OVERLAY
 
-/obj/item/clothing/head/helmet/marine/veteran/PMC/commando/vendor
-	name = "\improper declassified PMC commando helmet"
-	desc = "A heavily worn, armored helmet made for Nanotrasen elite commandos. This one has had its damaged internal plating replaced with standard issue to protect corporate secrets, but the outer shell retains a remarkable resistance to laser and volkite weaponry and the interior is still environmentally sealed."
-	soft_armor = list(MELEE = 70, BULLET = 80, LASER = 100, ENERGY = 100, BOMB = 70, BIO = 50, FIRE = 70, ACID = 95)
-	resistance_flags = NONE
-
 /obj/item/clothing/head/helmet/marine/veteran/PMC/commando
 	name = "\improper PMC commando helmet"
 	desc = "A fully enclosed, armored helmet made for Nanotrasen elite commandos."
