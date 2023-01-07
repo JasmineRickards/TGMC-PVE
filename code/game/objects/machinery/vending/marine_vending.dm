@@ -1392,7 +1392,7 @@
 			/obj/item/armor_module/module/chemsystem = -1,
 			/obj/item/armor_module/module/eshield = -1,
 			/obj/item/armor_module/storage/integrated = -1,
-      /obj/item/armor_module/module/fire_proof = -1, //SoM version is available, now this is too.
+      		/obj/item/armor_module/module/fire_proof = -1, //SoM version is available, now this is too.
 		),
 		"SOM Suits" = list(
 			/obj/item/clothing/suit/modular/som/light = -1,
@@ -1427,7 +1427,7 @@
 		),
 		"USL" = list(
 			/obj/item/clothing/suit/storage/faction/UPP/heavy = -1,
-			/obj/item/clothing/head/uppcap = -1
+			/obj/item/clothing/head/uppcap = -1,
 			/obj/item/clothing/head/uppcap/beret = -1,
 			/obj/item/clothing/suit/storage/faction/UPP = -1,
 			/obj/item/clothing/suit/storage/faction/UPP/commando = -1,
