@@ -554,7 +554,6 @@
 					/obj/item/ammo_magazine/pistol/vp70,\
 					/obj/item/ammo_magazine/pistol/plasma_pistol,\
 					/obj/item/ammo_magazine/pistol/derringer,\
-					/obj/item/ammo_magazine/rifle/pepperball,\
 					/obj/item/ammo_magazine/shotgun/flechette,\
 					/obj/item/ammo_magazine/rifle/tx15_slug)
 
@@ -661,7 +660,7 @@
 		list(/obj/item/weapon/gun/pistol/vp70, /obj/item/ammo_magazine/pistol/vp70, /obj/item/ammo_magazine/pistol/vp70, /obj/item/ammo_magazine/pistol/vp70,),
 		list(/obj/item/weapon/gun/pistol/plasma_pistol, /obj/item/ammo_magazine/pistol/plasma_pistol, /obj/item/ammo_magazine/pistol/plasma_pistol, /obj/item/ammo_magazine/pistol/plasma_pistol,),
 		list(/obj/item/weapon/gun/shotgun/double/derringer, /obj/item/ammo_magazine/pistol/derringer, /obj/item/ammo_magazine/pistol/derringer, /obj/item/ammo_magazine/pistol/derringer,),
-		list(/obj/item/weapon/gun/rifle/pepperball, /obj/item/ammo_magazine/rifle/pepperball, /obj/item/ammo_magazine/rifle/pepperball, /obj/item/ammo_magazine/rifle/pepperball,),
+		//list(/obj/item/weapon/gun/rifle/pepperball, /obj/item/ammo_magazine/rifle/pepperball, /obj/item/ammo_magazine/rifle/pepperball, /obj/item/ammo_magazine/rifle/pepperball,),
 		list(/obj/item/weapon/gun/shotgun/pump/lever/repeater, /obj/item/ammo_magazine/packet/p4570, /obj/item/ammo_magazine/packet/p4570, /obj/item/ammo_magazine/packet/p4570,),
 		list(/obj/item/weapon/gun/shotgun/double/marine, /obj/item/ammo_magazine/shotgun/buckshot, /obj/item/ammo_magazine/shotgun/buckshot, /obj/item/ammo_magazine/shotgun/buckshot,),
 		list(/obj/item/weapon/gun/rifle/standard_autoshotgun, /obj/item/ammo_magazine/rifle/tx15_slug, /obj/item/ammo_magazine/rifle/tx15_slug, /obj/item/ammo_magazine/rifle/tx15_slug,),
