@@ -437,7 +437,7 @@
 /obj/item/clothing/suit/storage/marine/veteran/PMC/commando/vendor
 	name = "\improper declassified PMC commando armor"
 	desc = "A heavily worn suit made for Nanotrasen commandos that once saw use in elite operations. The old, damaged interior plating has been stripped down and replaced with edge armor to protect corporate secrets, but the Autodoc miraculously still works and its outer shell retains a remarkable resistance to laser and volkite weapons."
-	soft_armor = list(MELEE = 70, BULLET = 80, LASER = 100, ENERGY = 100, BOMB = 50, BIO = 50, FIRE = 50, ACID = 85)
+	soft_armor = list(MELEE = 70, BULLET = 80, LASER = 100, ENERGY = 100, BOMB = 70, BIO = 50, FIRE = 70, ACID = 85)
 	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	resistance_flags = NONE
 
