@@ -1672,8 +1672,8 @@
 			/obj/item/clothing/mask/gas/PMC = -1,
 			/obj/item/clothing/mask/gas/PMC/leader = -1,
 			/obj/item/clothing/shoes/marine/clf/full = -1,
-			/obj/item/clothing/under/marine/veteran/PMC = -1
-			/obj/item/clothing/under/marine/veteran/PMC/leader = -1
+			/obj/item/clothing/under/marine/veteran/PMC = -1,
+			/obj/item/clothing/under/marine/veteran/PMC/leader = -1,
 			/obj/item/storage/box/nt_mre = -1,
 		),
 		"Mercenary" = list(
