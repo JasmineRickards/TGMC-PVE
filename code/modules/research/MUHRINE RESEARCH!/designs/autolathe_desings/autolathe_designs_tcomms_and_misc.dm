@@ -160,7 +160,7 @@
 	materials = list(/datum/material/metal = 500, /datum/material/glass = 50)
 	build_path = /obj/item/assembly/igniter
 	category = list("initial", "Misc")
-
+/*
 /datum/design/infrared_emitter
 	name = "Infrared Emitter"
 	id = "infrared_emitter"
@@ -168,7 +168,7 @@
 	materials = list(/datum/material/metal = 1000, /datum/material/glass = 500)
 	build_path = /obj/item/assembly/infra
 	category = list("initial", "Misc")
-
+*/
 /datum/design/timer
 	name = "Timer"
 	id = "timer"
