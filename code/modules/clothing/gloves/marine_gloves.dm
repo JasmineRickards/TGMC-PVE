@@ -79,7 +79,7 @@
 
 /obj/item/clothing/gloves/marine/veteran/PMC/commando
 	name = "\improper PMC commando gloves"
-	desc = "A pair of heavily armored, insulated, acid-resistant gloves."
+	desc = "A pair of armored, insulated, acid-resistant gloves."
 	icon_state = "brown"
 	item_state = "browngloves"
 	soft_armor = list(MELEE = 40, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 30, BIO = 20, FIRE = 20, ACID = 25)
