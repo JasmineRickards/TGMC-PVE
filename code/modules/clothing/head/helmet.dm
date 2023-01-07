@@ -5,7 +5,7 @@
 	icon_state = "helmet"
 	item_state = "helmet"
 	accuracy_mod = 0
-	soft_armor = list(MELEE = 25, BULLET = 90, LASER = 65, ENERGY = 65, BOMB = 75, BIO = 0, FIRE = 75, ACID = 10)
+	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
 	flags_atom = CONDUCT
 	flags_inventory = COVEREYES|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES
@@ -39,7 +39,7 @@
 	name = "riot helmet"
 	desc = "It's a helmet specifically designed to protect against close range attacks. It covers your ears."
 	icon_state = "riot"
-	soft_armor = list(MELEE = 82, BULLET = 15, LASER = 5, ENERGY = 5, BOMB = 5, BIO = 2, FIRE = 5, ACID = 5)
+	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
 	flags_inventory = COVEREYES|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDETOPHAIR
 	flags_item = SYNTH_RESTRICTED
@@ -105,7 +105,7 @@
 	desc = "They're often used by highly trained Swat Members."
 	icon_state = "swat"
 	item_state = "swat"
-	soft_armor = list(MELEE = 80, BULLET = 60, LASER = 50, ENERGY = 25, BOMB = 50, BIO = 10, FIRE = 25, ACID = 25)
+	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
 	flags_inventory = COVEREYES|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES
 	flags_cold_protection = HEAD

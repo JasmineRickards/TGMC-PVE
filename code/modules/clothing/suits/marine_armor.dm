@@ -694,7 +694,7 @@
 	desc = "A heavy duty set of body armor in service with the USL pirates, the UH7 (United Heavy MK7) is known for being a rugged set of armor. This version is fitted for smartgunners"
 	icon_state = "upp_armor_heavy"
 	slowdown = SLOWDOWN_ARMOR_LIGHT
-	soft_armor = list(MELEE = 65, BULLET = 85, LASER = 85, ENERGY = 85, BOMB = 85, BIO = 50, FIRE = 50, ACID = 60)
+	soft_armor = list(MELEE = 75, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 80, BIO = 50, FIRE = 50, ACID = 75)
 
 /// Modified version of the armor for HvH combat. Stats are based on heavy armor, with tyr mark 2.
 /obj/item/clothing/suit/storage/marine/smartgunner/UPP/hvh
@@ -706,7 +706,7 @@
 	name = "\improper freelancer cuirass"
 	desc = "A armored protective chestplate scrapped together from various plates. It keeps up remarkably well, as the craftsmanship is solid, and the design mirrors such armors in the UPP and the TGMC."
 	icon_state = "freelancer_armor"
-	slowdown = SLOWDOWN_ARMOR_LIGHT
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection =CHEST|GROIN|ARMS|LEGS|FEET|HANDS
@@ -738,19 +738,19 @@
 //this one is for CLF
 /obj/item/clothing/suit/storage/faction/militia
 	name = "\improper colonial militia hauberk"
-	desc = "The hauberk of a colonist militia member, created from boiled leather and some modern armored plates. While primitive compared to most modern suits of armor, it gives the wearer almost perfect mobility, which suits the needs of the local colonists. "
+	desc = "The hauberk of a colonist militia member, created from boiled leather, Cimex chitin, and some modern armored plates. While primitive in construction compared to most modern suits of armor, it matches the protection levels of CMB riot armor, which the local colonists cannot otherwise replace. "
 	icon = 'icons/obj/clothing/cm_suits.dmi'
 	icon_state = "rebel_armor"
 	item_icons = list(
 		slot_wear_suit_str = 'icons/mob/suit_1.dmi',
 		slot_l_hand_str = 'icons/mob/items_lefthand_1.dmi',
 		slot_r_hand_str = 'icons/mob/items_righthand_1.dmi')
-	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection =CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_item = SYNTH_RESTRICTED
-	soft_armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 30, BOMB = 60, BIO = 30, FIRE = 30, ACID = 30)
+	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
 	allowed = list(
 		/obj/item/weapon/twohanded,
 		/obj/item/weapon/gun,
