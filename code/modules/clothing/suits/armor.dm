@@ -109,12 +109,12 @@
 
 /obj/item/clothing/suit/armor/riot
 	name = "riot suit"
-	desc = "A suit of armor with heavy padding to protect against melee attacks. Looks like it might impair movement."
+	desc = "A suit of armor with heavy padding to protect against melee and ballistic attacks. Layers of Cimex chitin help against acid."
 	icon_state = "riot"
 	item_state = "swat"
 	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
-	slowdown = SLOWDOWN_ARMOR_HEAVY
-	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
+	soft_armor = list(MELEE = 70, BULLET = 70, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
 	flags_inventory = BLOCKSHARPOBJ
 	flags_inv_hide = HIDEJUMPSUIT
 	flags_item = SYNTH_RESTRICTED
@@ -125,7 +125,7 @@
 
 /obj/item/clothing/suit/armor/swat
 	name = "swat suit"
-	desc = "A heavily armored suit that protects against moderate damage. Used in special operations."
+	desc = "A heavily armored, environmentally sealed suit that protects against melee, acid and ballistic damage. Used in special operations."
 	icon_state = "deathsquad"
 	item_state = "swat"
 	gas_transfer_coefficient = 0.01
@@ -133,7 +133,7 @@
 	flags_armor_protection = CHEST|GROIN|LEGS|FEET|ARMS
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/baton,/obj/item/restraints/handcuffs,/obj/item/tank/emergency_oxygen)
 	slowdown = SLOWDOWN_ARMOR_HEAVY
-	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 100, FIRE = 25, ACID = 80)
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 100, FIRE = 25, ACID = 70)
 	flags_inventory = BLOCKSHARPOBJ|NOPRESSUREDMAGE
 	flags_item = SYNTH_RESTRICTED
 	flags_inv_hide = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
