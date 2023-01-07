@@ -405,8 +405,6 @@
 	flags_item_map_variant = null
 	var/list/datum/ammopacktype/caliber_types = list(
 		"10x24 Caseless" = /datum/ammopacktype/p10x24,
-		"10x24mm Armor Piercing" = /datum/ammopacktype/p10x24ap,
-		"10x24 10x24mm Incendiary" = /datum/ammopacktype/p10x24inc,
 		"10x25 Caseless" = /datum/ammopacktype/p10x25, //This is partially a joke, included only because the ALF-51B is belt-fed
 		"10x26 Caseless" = /datum/ammopacktype/p10x26
 		)
@@ -427,22 +425,6 @@
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "10x24"
 	caliber_label = "10x24mm Caseless"
-
-/datum/ammopacktype/p10x24ap
-	default_ammo = /datum/ammo/bullet/rifle
-	max_rounds = 4500
-	caliber = CALIBER_10X24_CASELESS
-	radial_icon = 'icons/mob/radial.dmi'
-	radial_icon_state = "10x24AP"
-	caliber_label = "10x24mm Armor Piercing"
-
-/datum/ammopacktype/p10x24inc
-	default_ammo = /datum/ammo/bullet/rifle
-	max_rounds = 4500
-	caliber = CALIBER_10X24_CASELESS
-	radial_icon = 'icons/mob/radial.dmi'
-	radial_icon_state = "10x24INC"
-	caliber_label = "10x24mm Incendiary"
 
 /datum/ammopacktype/p10x25
 	default_ammo = /datum/ammo/bullet/rifle/heavy
@@ -495,8 +477,6 @@
 	caliber_types = list(
 		"10x20 Caseless" = /datum/ammopacktype/p10x20b,
 		"10x24 Caseless" = /datum/ammopacktype/p10x24b,
-		"10x24 Armor Piercing" = /datum/ammopacktype/p10x24bap,
-		"10x24 Incendiary" = /datum/ammopacktype/p10x24binc,
 		"10x25 Caseless" = /datum/ammopacktype/p10x25b,
 		"10x26.5 Caseless" = /datum/ammopacktype/p10x265b,
 		"492x34mm Caseless" = /datum/ammopacktype/p492x34b,
@@ -525,22 +505,6 @@
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "10x24"
 	caliber_label = "10x24mm Caseless"
-
-/datum/ammopacktype/p10x24bap
-	default_ammo = /datum/ammo/bullet/rifle/ap
-	max_rounds = 3000
-	caliber = CALIBER_10X24_CASELESS
-	radial_icon = 'icons/mob/radial.dmi'
-	radial_icon_state = "10x24AP"
-	caliber_label = "10x24mm Armor Piercing"
-
-/datum/ammopacktype/p10x24binc
-	default_ammo = /datum/ammo/bullet/rifle/incendiary
-	max_rounds = 3000
-	caliber = CALIBER_10X24_CASELESS
-	radial_icon = 'icons/mob/radial.dmi'
-	radial_icon_state = "10x24INC"
-	caliber_label = "10x24mm Incendiary"
 
 /datum/ammopacktype/p10x25b
 	default_ammo = /datum/ammo/bullet/rifle/heavy
@@ -580,14 +544,6 @@
 	caliber = CALIBER_10X20_CASELESS
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "10x20"
-	caliber_label = "10x20mm Caseless"
-
-/datum/ammopacktype/p10x20ap
-	default_ammo = /datum/ammo/bullet/smg/ap
-	max_rounds = 3000
-	caliber = CALIBER_10X20_CASELESS
-	radial_icon = 'icons/mob/radial.dmi'
-	radial_icon_state = "10x20AP"
 	caliber_label = "10x20mm Caseless"
 
 /datum/ammopacktype/p492x34b

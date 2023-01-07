@@ -15,24 +15,6 @@
 	current_rounds = 1500
 	max_rounds = 1500
 
-/obj/item/ammo_magazine/packet/p10x24mm/ap
-	name = "box of armor piercing 10x24mm"
-	desc = "A box containing 1500 rounds of armor piercing 10x24mm caseless."
-	caliber = CALIBER_10X24_CASELESS
-	icon_state = "box_10x24APmm"
-	default_ammo = /datum/ammo/bullet/rifle/ap
-	current_rounds = 1500
-	max_rounds = 1500
-
-/obj/item/ammo_magazine/packet/p10x24mm/incendiary
-	name = "box of incendiary 10x24mm"
-	desc = "A box containing 1500 rounds of incendiary 10x24mm caseless."
-	caliber = CALIBER_10X24_CASELESS
-	icon_state = "box_10x24mmINC"
-	default_ammo = /datum/ammo/bullet/rifle/incendiary
-	current_rounds = 1500
-	max_rounds = 1500
-
 /obj/item/ammo_magazine/packet/p10x265mm
 	name = "box of 10x26.5mm"
 	desc = "A box containing 1000 rounds of 10x26.5mm caseless."
@@ -162,16 +144,6 @@
 	icon_state = "box_10x20mm"
 	caliber = CALIBER_10X20_CASELESS
 	default_ammo = /datum/ammo/bullet/smg
-	w_class = WEIGHT_CLASS_SMALL
-	current_rounds = 1500
-	max_rounds = 1500
-
-/obj/item/ammo_magazine/packet/p10x20mm/AP
-	name = "packet of armor piercing 10x20mm"
-	desc = "A packet containing 1500 rounds of armor piercing 10x20mm caseless."
-	icon_state = "box_10x20mmAP"
-	caliber = CALIBER_10X20_CASELESS
-	default_ammo = /datum/ammo/bullet/smg/ap
 	w_class = WEIGHT_CLASS_SMALL
 	current_rounds = 1500
 	max_rounds = 1500

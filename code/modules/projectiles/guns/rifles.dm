@@ -333,7 +333,7 @@
 
 /obj/item/weapon/gun/rifle/m412
 	name = "\improper PR-412 pulse rifle"
-	desc = "The PR-412 rifle is a Pulse Industries rifle, billed as a pulse rifle due to its use of electronic firing for faster velocity. A rather common sight in most systems, with a balanced weight to allow faster movement even when aiming down sights. Uses 10x24mm caseless ammunition."
+	desc = "The PR-412 rifle is a Pulse Industries rifle, billed as a pulse rifle due to its use of electronic firing for faster velocity. A rather common sight in most systems. Uses 10x24mm caseless ammunition."
 	icon = 'icons/Marine/gun64.dmi'
 	icon_state = "m412"
 	item_state = "m412"
@@ -390,11 +390,11 @@
 	fire_delay = 0.1 SECONDS
 	burst_delay = 0.1 SECONDS
 	accuracy_mult = 1.1
-	aim_fire_delay = 0.1 SECONDS
+	aim_fire_delay = 0.13 SECONDS
 	scatter = -1
 	wield_delay = 0.3 SECONDS
 	burst_amount = 3
-	aim_slowdown = 0.2
+	aim_slowdown = 0.4
 	damage_mult = 1.05 //Has smaller magazines
 
 
@@ -403,8 +403,8 @@
 //PR-412 PMC VARIANT
 
 /obj/item/weapon/gun/rifle/m412/elite
-	name = "\improper PR-412B2 Commando rifle"
-	desc = "The RivArms PR-412 pulse rifle, B2 Variant. Features a lighter composite body, an extended barrel, and an integrated barrel charger. This reliable weapon typically comes with armor piercing 10x20mm rounds and is standard issue for elite troops."
+	name = "\improper PR-412E battle rifle"
+	desc = "An \"Elite\" modification of the PR-412 pulse rifle series, given to special operation units. It has been given a stock and a longer barrel with an integrated barrel charger, with a red skull stenciled on the body for some reason."
 	icon_state = "m412e"
 	item_state = "m412e"
 	default_ammo_type = /obj/item/ammo_magazine/rifle/ap
@@ -442,7 +442,6 @@
 	burst_delay = 0.15 SECONDS
 	accuracy_mult = 1.5
 	damage_mult = 2
-	aim_slowdown = 0
 	scatter = -2
 	force = 20
 
