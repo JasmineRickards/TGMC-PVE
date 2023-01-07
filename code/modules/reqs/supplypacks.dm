@@ -1243,45 +1243,45 @@ Imports
 	group = "Imports"
 	containertype = /obj/structure/closet/crate/weapon
 
-/datum/supply_packs/imports/m412e
-	name = "PR-412B2 Commando Rifle"
-	contains = list(/obj/item/weapon/gun/rifle/m412/elite)
-	cost = 20
-
-/datum/supply_packs/imports/m412/AP_ammo
-	name = "PR-412 Pulse Rifle Armor Piercing Ammo"
-	contains = list(/obj/item/ammo_magazine/rifle/ap = 10)
-	cost = 1
-
-/datum/supply_packs/imports/m412/INC_ammo
-	name = "PR-412 Pulse Rifle Incendiary Ammo"
-	contains = list(/obj/item/ammo_magazine/rifle/incendiary = 10)
-	cost = 1
-
-/datum/supply_packs/imports/m412/AP_ammoboxes
-	name = "10x24mm Caseless Armor Piercing Ammoboxes"
-	contains = list(/obj/item/ammo_magazine/packet/p10x24mm/ap = 6)
+/datum/supply_packs/imports/m41a
+	name = "PR-11 Pulse Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/m41a)
 	cost = 5
 
-/datum/supply_packs/imports/m412/INC_ammoboxes
-	name = "10x24mm Caseless Incendiary Ammoboxes"
-	contains = list(/obj/item/ammo_magazine/packet/p10x24mm/incendiary = 6)
-	cost = 5
-
-/datum/supply_packs/imports/smg25e
-	name = "SMG-25B2 Commando Submachinegun"
-	contains = list(/obj/item/weapon/gun/smg/m25/elite)
-	cost = 20
-
-/datum/supply_packs/imports/smg25/AP_ammo
-	name = "SMG-25 Armor Piercing Ammo"
-	contains = list(/obj/item/ammo_magazine/rifle/ap = 10)
+/datum/supply_packs/imports/m41a/ammo
+	name = "PR-11 Pulse Rifle Ammo"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a)
 	cost = 1
 
-/datum/supply_packs/imports/smg25/AP_ammoboxes
-	name = "10x20mm Caseless Armor Piercing Ammoboxes"
-	contains = list(/obj/item/ammo_magazine/packet/p10x20mm/AP = 6)
+/datum/supply_packs/imports/m412
+	name = "PR-412 Pulse Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/m412)
 	cost = 5
+
+/datum/supply_packs/imports/m41a2/ammo
+	name = "PR-412 Pulse Rifle Ammo"
+	contains = list(/obj/item/ammo_magazine/rifle)
+	cost = 1
+
+/datum/supply_packs/imports/m412l1
+	name = "PR-412L1 Heavy Pulse Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/m412l1_hpr)
+	cost = 15
+
+/datum/supply_packs/imports/m412l1/ammo
+	name = "PR-412L1 Heavy Pulse Rifle Ammo"
+	contains = list(/obj/item/ammo_magazine/m412l1_hpr)
+	cost = 5
+
+/datum/supply_packs/imports/type71	//Moff gun
+	name = "Type 71 Pulse Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/type71/seasonal)
+	cost = 5
+
+/datum/supply_packs/imports/type71/ammo
+	name = "Type 71 Pulse Rifle Ammo"
+	contains = list(/obj/item/ammo_magazine/rifle/type71)
+	cost = 1
 
 /datum/supply_packs/imports/mp7
 	name = "SMG-27 SMG"
@@ -1291,6 +1291,16 @@ Imports
 /datum/supply_packs/imports/mp7/ammo
 	name = "SMG-27 SMG Ammo"
 	contains = list(/obj/item/ammo_magazine/smg/mp7)
+	cost = 1
+
+/datum/supply_packs/imports/m25
+	name = "SMG-25 SMG"
+	contains = list(/obj/item/weapon/gun/smg/m25)
+	cost = 5
+
+/datum/supply_packs/imports/m25/ammo
+	name = "SMG-25 SMG Ammo"
+	contains = list(/obj/item/ammo_magazine/smg/m25)
 	cost = 1
 
 /datum/supply_packs/imports/skorpion
