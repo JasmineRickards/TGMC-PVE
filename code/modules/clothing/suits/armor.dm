@@ -113,7 +113,7 @@
 	icon_state = "riot"
 	item_state = "swat"
 	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
-	slowdown = SLOWDOWN_ARMOR_MEDIUM
+	slowdown = SLOWDOWN_ARMOR_HEAVY
 	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
 	flags_inventory = BLOCKSHARPOBJ
 	flags_inv_hide = HIDEJUMPSUIT
@@ -132,7 +132,7 @@
 	permeability_coefficient = 0.01
 	flags_armor_protection = CHEST|GROIN|LEGS|FEET|ARMS
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/baton,/obj/item/restraints/handcuffs,/obj/item/tank/emergency_oxygen)
-	slowdown = SLOWDOWN_ARMOR_MEDIUM
+	slowdown = SLOWDOWN_ARMOR_HEAVY
 	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 100, FIRE = 25, ACID = 80)
 	flags_inventory = BLOCKSHARPOBJ|NOPRESSUREDMAGE
 	flags_item = SYNTH_RESTRICTED

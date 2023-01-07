@@ -738,19 +738,19 @@
 //this one is for CLF
 /obj/item/clothing/suit/storage/faction/militia
 	name = "\improper colonial militia hauberk"
-	desc = "The hauberk of a colonist militia member, created from boiled leather, Cimex chitin, and some modern armored plates. While primitive in construction compared to most modern suits of armor, it matches the protection levels of CMB riot armor, which the local colonists cannot otherwise replace. "
+	desc = "The hauberk of a colonist militia member, created from boiled leather, Cimex chitin, and some modern armored plates. While primitive in construction compared to most modern suits of armor, it nevertheless remains robust against ballistics, melee, and acid"
 	icon = 'icons/obj/clothing/cm_suits.dmi'
 	icon_state = "rebel_armor"
 	item_icons = list(
 		slot_wear_suit_str = 'icons/mob/suit_1.dmi',
 		slot_l_hand_str = 'icons/mob/items_lefthand_1.dmi',
 		slot_r_hand_str = 'icons/mob/items_righthand_1.dmi')
-	slowdown = SLOWDOWN_ARMOR_MEDIUM
+	slowdown = SLOWDOWN_ARMOR_LIGHT
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection =CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_item = SYNTH_RESTRICTED
-	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
 	allowed = list(
 		/obj/item/weapon/twohanded,
 		/obj/item/weapon/gun,
