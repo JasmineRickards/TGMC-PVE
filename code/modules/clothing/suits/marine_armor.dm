@@ -493,7 +493,7 @@
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection =CHEST|GROIN|ARMS|LEGS|FEET|HANDS
-	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 50)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 25)
 	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	flags_item_map_variant = NONE
 
@@ -504,7 +504,7 @@
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection =CHEST|GROIN|ARMS|LEGS|FEET|HANDS
-	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 50)
+	soft_armor = list(MELEE = 65, BULLET = 45, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 25)
 	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	flags_item_map_variant = NONE
 
@@ -515,17 +515,19 @@
 	name = "\improper Imperial Guard flak armour"
 	desc = "A cheap, mass produced armour worn by the Imperial Guard, which are also cheap and mass produced. You can make out what appears to be <i>Cadia stands</i> carved into the armour."
 	icon_state = "m_guardarmor"
-	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 50)
+	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 35)
 	flags_item_map_variant = NONE
+	slowdown = SLOWDOWN_ARMOR_HEAVY
 
 /obj/item/clothing/suit/storage/marine/imperial/sergeant
 	// SL armour, better than flak, covers more
 	name = "\improper Imperial Guard sergeant armour"
-	desc = "A body armour that offers much better protection than the flak armour."
+	desc = "A body armour that offers much better acid protection than the flak armour."
 	icon_state = "m_guardSLarmor"
-	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 85, ENERGY = 85, BOMB = 85, BIO = 25, FIRE = 85, ACID = 85)
+	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 85, ENERGY = 85, BOMB = 85, BIO = 25, FIRE = 85, ACID = 75)
 	light_range = 9 // better light
 	pockets = /obj/item/storage/internal/suit/imperial
+	slowdown = SLOWDOWN_ARMOR_HEAVY
 
 /obj/item/storage/internal/suit/imperial
 	storage_slots = 3
