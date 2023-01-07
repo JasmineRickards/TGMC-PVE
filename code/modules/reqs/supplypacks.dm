@@ -1530,7 +1530,7 @@ Imports
 		/obj/item/clothing/head/helmet/marine/specialist/PMC,
 		/obj/item/clothing/gloves/marine/specialist/PMC,
 		/obj/item/clothing/under/marine/veteran/PMC/commando/vendor,)
-	cost = B18_PRICE
+	cost = 220
 
 /datum/supply_packs/imports/strawhat
 	name = "Straw hat"
