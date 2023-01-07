@@ -175,7 +175,7 @@
 
 /obj/item/weapon/gun/smg/m25
 	name = "\improper SMG-25 submachinegun"
-	desc = "The RivArms SMG-25 submachinegun, an update to a classic design. A light firearm capable of effective one-handed use that is ideal for close to medium range engagements. Uses 10x20mm rounds in a high capacity magazine."
+	desc = "The RivArms SMG-25 submachinegun, an update to a classic design. A light firearm capable of effective one-handed use that is ideal for close to medium range engagements. Its low recoil and balanced frame allow for a quick refire rate even when aiming down the sights. Uses 10x20mm rounds in a high capacity magazine."
 	icon = 'icons/Marine/gun64.dmi'
 	icon_state = "m25"
 	item_state = "m25"
@@ -185,6 +185,7 @@
 	unload_sound = 'sound/weapons/guns/interact/mp5_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/mp5_reload.ogg'
 	flags_equip_slot = ITEM_SLOT_BACK
+	actions_types = list(/datum/action/item_action/aim_mode)
 	type_of_casings = null
 	default_ammo_type = /obj/item/ammo_magazine/smg/m25
 	allowed_ammo_types = list(
@@ -216,6 +217,7 @@
 	accuracy_mult_unwielded = 0.95
 	scatter = 4
 	fire_delay = 0.08 SECONDS
+	aim_fire_delay = 0.08 SECONDS
 	scatter_unwielded = 10
 	aim_slowdown = 0.15
 	burst_amount = 3
@@ -227,8 +229,8 @@
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/compensator, /obj/item/attachable/gyro)
 
 /obj/item/weapon/gun/smg/m25/elite
-	name = "\improper SMG-25B2 submachinegun"
-	desc = "The RivArms SMG-25 submachinegun, B2 variant. Has an integrated barrel charger. This reliable weapon fires armor piercing 10x20mm rounds and is used by elite troops."
+	name = "\improper SMG-25B2 Commando submachinegun"
+	desc = "The RivArms SMG-25 submachinegun, B2 variant. Features a lighter composite body, hevy barrel, and integrated barrel charger. This reliable weapon typically comes with armor piercing 10x20mm rounds and is standard issue for elite troops."
 	icon_state = "m25b2"
 	item_state = "m25b2"
 	fire_sound = 'sound/weapons/guns/fire/smg_heavy.ogg'
@@ -245,7 +247,6 @@
 		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/gyro,
 		/obj/item/attachable/stock/t19stock,
-		/obj/item/attachable/heavy_barrel,
 		/obj/item/attachable/stock/t19stock,
 	)
 
@@ -254,12 +255,12 @@
 	burst_amount = 4
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 1
-	damage_mult = 1.4
-	aim_slowdown = 0.2
-	scatter = 3
+	damage_mult = 2
+	aim_slowdown = 0
+	scatter = -4
 
 /obj/item/weapon/gun/smg/m25/elite/pmc
-	starting_attachment_types = list(/obj/item/attachable/magnetic_harness,/obj/item/attachable/heavy_barrel,/obj/item/attachable/stock/t19stock,)
+	starting_attachment_types = list(/obj/item/attachable/magnetic_harness,/obj/item/attachable/stock/t19stock,)
 
 /obj/item/weapon/gun/smg/m25/elite/suppressed
 	icon_state = "m25"
