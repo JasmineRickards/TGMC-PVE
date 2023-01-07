@@ -398,6 +398,25 @@
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection =CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_item_map_variant = NONE
+	pockets = null
+	attachments_by_slot = list(
+		ATTACHMENT_SLOT_STORAGE,
+		ATTACHMENT_SLOT_MODULE,
+		ATTACHMENT_SLOT_BADGE,
+	)
+	attachments_allowed = list(
+	/obj/item/armor_module/module/better_shoulder_lamp,
+	/obj/item/armor_module/storage/general,
+	/obj/item/armor_module/storage/ammo_mag,
+	/obj/item/armor_module/storage/engineering,
+	/obj/item/armor_module/storage/medical,
+	/obj/item/armor_module/storage/medical/basic,
+	/obj/item/armor_module/storage/injector,
+	/obj/item/armor_module/storage/grenade,
+	/obj/item/armor_module/storage/integrated,
+	/obj/item/armor_module/armor/badge,
+	)
+	starting_attachments = list(/obj/item/armor_module/module/better_shoulder_lamp)
 
 /obj/item/clothing/suit/storage/marine/veteran/PMC
 	name = "\improper M4 pattern PMC armor"
@@ -474,8 +493,8 @@
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection =CHEST|GROIN|ARMS|LEGS|FEET|HANDS
-	soft_armor = list(MELEE = 70, BULLET = 70, LASER = 50, ENERGY = 60, BOMB = 50, BIO = 10, FIRE = 60, ACID = 60)
-	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 50)
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	flags_item_map_variant = NONE
 
 /obj/item/clothing/suit/storage/marine/veteran/dutch
@@ -485,8 +504,8 @@
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection =CHEST|GROIN|ARMS|LEGS|FEET|HANDS
-	soft_armor = list(MELEE = 55, BULLET = 55, LASER = 55, ENERGY = 65, BOMB = 70, BIO = 10, FIRE = 65, ACID = 30)
-	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 50)
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	flags_item_map_variant = NONE
 
 
@@ -496,7 +515,7 @@
 	name = "\improper Imperial Guard flak armour"
 	desc = "A cheap, mass produced armour worn by the Imperial Guard, which are also cheap and mass produced. You can make out what appears to be <i>Cadia stands</i> carved into the armour."
 	icon_state = "m_guardarmor"
-	soft_armor = list(MELEE = 75, BULLET = 65, LASER = 60, ENERGY = 60, BOMB = 50, BIO = 0, FIRE = 60, ACID = 60)
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 50)
 	flags_item_map_variant = NONE
 
 /obj/item/clothing/suit/storage/marine/imperial/sergeant
@@ -631,11 +650,18 @@
 
 /obj/item/clothing/suit/storage/faction/UPP
 	name = "\improper UM5 personal armor"
-	desc = "Standard body armor of the USL pirates, the UM5 (United Medium MK5) is a medium body armor, roughly on par with the venerable M3 pattern body armor in service with the TGMC."
+	desc = "Standard body armor of the USL pirates, the UM5 (United Medium MK5) is a medium body armor with reduced weight, offering robust protection from most human weaponry."
 	icon_state = "upp_armor"
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
-	soft_armor = list(MELEE = 55, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 55, BIO = 10, FIRE = 60, ACID = 60)
+	soft_armor = list(MELEE = 60, BULLET = 80, LASER = 70, ENERGY = 70, BOMB = 65, BIO = 50, FIRE = 50, ACID = 60)
+	pockets = null
+	attachments_by_slot = list(
+		ATTACHMENT_SLOT_STORAGE,
+		ATTACHMENT_SLOT_MODULE,
+	)
+	attachments_allowed = list(/obj/item/armor_module/module/better_shoulder_lamp)
+	starting_attachments = list(/obj/item/armor_module/module/better_shoulder_lamp)
 
 /// Modified version of the armor for HvH combat. Stats are based on medium armor, with tyr mark 2.
 /obj/item/clothing/suit/storage/faction/UPP/hvh
@@ -653,22 +679,22 @@
 	soft_armor = list(MELEE = 55, BULLET = 75, LASER = 75, ENERGY = 60, BOMB = 60, BIO = 45, FIRE = 60, ACID = 65)
 
 /obj/item/clothing/suit/storage/faction/UPP/heavy
-	name = "\improper UH7 heavy plated armor"
-	desc = "An extremely heavy duty set of body armor in service with the USL pirates, the UH7 (United Heavy MK7) is known for being a rugged set of armor, capable of taking immesnse punishment."
+	name = "\improper UH7 plated armor"
+	desc = "A heavy duty set of body armor in service with the USL pirates, the UH7 (United Heavy MK7) is known for being a rugged set of armor adapted for the fight against the Cimex bugs. It trades some ballistics protection for added shielding against melee weapons, concussive force, and acid."
 	icon_state = "upp_armor_heavy"
 	slowdown = SLOWDOWN_ARMOR_LIGHT
-	soft_armor = list(MELEE = 65, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 10, FIRE = 60, ACID = 60)
+	soft_armor = list(MELEE = 75, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 80, BIO = 50, FIRE = 50, ACID = 75)
 
 /// Modified version of the armor for HvH combat. Stats are based on heavy armor, with tyr mark 2.
 /obj/item/clothing/suit/storage/faction/UPP/heavy/hvh
 	soft_armor = list(MELEE = 60, BULLET = 80, LASER = 80, ENERGY = 65, BOMB = 60, BIO = 60, FIRE = 60, ACID = 70)
 
 /obj/item/clothing/suit/storage/marine/smartgunner/UPP
-	name = "\improper UH7 heavy plated armor"
-	desc = "An extremely heavy duty set of body armor in service with the USL pirates, the UH7 (United Heavy MK7) is known for being a rugged set of armor, capable of taking immesnse punishment."
+	name = "\improper UH7-S heavy plated armor"
+	desc = "A heavy duty set of body armor in service with the USL pirates, the UH7 (United Heavy MK7) is known for being a rugged set of armor. This version is fitted for smartgunners"
 	icon_state = "upp_armor_heavy"
 	slowdown = SLOWDOWN_ARMOR_LIGHT
-	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 65, ENERGY = 60, BOMB = 60, BIO = 10, FIRE = 60, ACID = 60)
+	soft_armor = list(MELEE = 65, BULLET = 85, LASER = 85, ENERGY = 85, BOMB = 85, BIO = 50, FIRE = 50, ACID = 60)
 
 /// Modified version of the armor for HvH combat. Stats are based on heavy armor, with tyr mark 2.
 /obj/item/clothing/suit/storage/marine/smartgunner/UPP/hvh
@@ -684,59 +710,27 @@
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection =CHEST|GROIN|ARMS|LEGS|FEET|HANDS
-	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 50, ENERGY = 60, BOMB = 40, BIO = 10, FIRE = 60, ACID = 50)
-	attachments_by_slot = list(ATTACHMENT_SLOT_MODULE)
-	attachments_allowed = list(/obj/item/armor_module/module/better_shoulder_lamp)
-	starting_attachments = list(/obj/item/armor_module/module/better_shoulder_lamp)
-
-/obj/item/clothing/suit/storage/faction/freelancer/leader
-	pockets = null
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 50)
 	attachments_by_slot = list(
 		ATTACHMENT_SLOT_STORAGE,
 		ATTACHMENT_SLOT_MODULE,
 	)
 	attachments_allowed = list(
-		/obj/item/armor_module/module/valkyrie_autodoc,
-		/obj/item/armor_module/storage/ammo_mag/freelancer,
+		/obj/item/armor_module/module/better_shoulder_lamp,
 	)
-	starting_attachments = list(
-		/obj/item/armor_module/module/valkyrie_autodoc,
-		/obj/item/armor_module/storage/ammo_mag/freelancer,
-	)
+	starting_attachments = list(/obj/item/armor_module/module/better_shoulder_lamp)
+
+/obj/item/clothing/suit/storage/faction/freelancer/leader
 
 /obj/item/clothing/suit/storage/faction/freelancer/leader/two
-	attachments_allowed = list(
-		/obj/item/armor_module/module/valkyrie_autodoc,
-		/obj/item/armor_module/storage/ammo_mag/freelancer_two,
-	)
-	starting_attachments = list(
-		/obj/item/armor_module/module/valkyrie_autodoc,
-		/obj/item/armor_module/storage/ammo_mag/freelancer_two,
-	)
 
 /obj/item/clothing/suit/storage/faction/freelancer/leader/three
-	attachments_allowed = list(
-		/obj/item/armor_module/module/valkyrie_autodoc,
-		/obj/item/armor_module/storage/ammo_mag/freelancer_three,
-	)
-	starting_attachments = list(
-		/obj/item/armor_module/module/valkyrie_autodoc,
-		/obj/item/armor_module/storage/ammo_mag/freelancer_three,
-	)
 
 /obj/item/clothing/suit/storage/faction/freelancer/medic
 	pockets = null
 	attachments_by_slot = list(
 		ATTACHMENT_SLOT_STORAGE,
 		ATTACHMENT_SLOT_MODULE,
-	)
-	attachments_allowed = list(
-		/obj/item/armor_module/module/better_shoulder_lamp,
-		/obj/item/armor_module/storage/medical/freelancer,
-	)
-	starting_attachments = list(
-		/obj/item/armor_module/module/better_shoulder_lamp,
-		/obj/item/armor_module/storage/medical/freelancer,
 	)
 
 
@@ -802,8 +796,8 @@
 	name = "\improper K12 ceramic plated armor"
 	desc = "A set of grey, heavy ceramic armor with dark blue highlights. It is the standard uniform of a unknown mercenary group working in the sector"
 	icon_state = "mercenary_heavy_armor"
-	soft_armor = list(MELEE = 75, BULLET = 65, LASER = 42, ENERGY = 38, BOMB = 40, BIO = 15, FIRE = 38, ACID = 50)
-	slowdown = SLOWDOWN_ARMOR_LIGHT
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 50)
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	allowed = list(
 		/obj/item/weapon/gun,
 		/obj/item/tank/emergency_oxygen,
@@ -823,8 +817,8 @@
 	name = "\improper Y8 armored miner vest"
 	desc = "A set of beige, light armor built for protection while mining. It is a specialized uniform of a unknown mercenary group working in the sector"
 	icon_state = "mercenary_miner_armor"
-	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 65, ENERGY = 65, BOMB = 65, BIO = 15, FIRE = 65, ACID = 50)
-	slowdown = SLOWDOWN_ARMOR_LIGHT
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 50)
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	allowed = list(
 		/obj/item/weapon/gun,
 		/obj/item/tank/emergency_oxygen,
@@ -844,8 +838,8 @@
 	name = "\improper Z7 armored engineer vest"
 	desc = "A set of blue armor with yellow highlights built for protection while building in highly dangerous environments. It is a specialized uniform of a unknown mercenary group working in the sector"
 	icon_state = "mercenary_engineer_armor"
-	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 65, ENERGY = 65, BOMB = 75, BIO = 15, FIRE = 75, ACID = 50)
-	slowdown = SLOWDOWN_ARMOR_LIGHT
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 50)
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	allowed = list(
 		/obj/item/weapon/gun,
 		/obj/item/tank/emergency_oxygen,
@@ -863,12 +857,12 @@
 
 /obj/item/clothing/suit/storage/marine/som
 	name = "\improper S12 hauberk"
-	desc = "A heavily modified piece of mining equipment remade for general purpose combat use. It's light but practically gives no armor."
+	desc = "A heavily modified piece of mining equipment remade for general purpose combat use. It's almost the equivalent of mercenary armor, but sacrifices melee protection for ranged protection."
 	icon_state = "som_armor"
 	item_state = "som_armor"
-	slowdown = SLOWDOWN_ARMOR_LIGHT
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
-	soft_armor = list(MELEE = 50, BULLET = 55, LASER = 55, ENERGY = 55, BOMB = 55, BIO = 55, FIRE = 55, ACID = 55)
+	soft_armor = list(MELEE = 60, BULLET = 85, LASER = 80, ENERGY = 85, BOMB = 70, BIO = 70, FIRE = 70, ACID = 60)
 	flags_item_map_variant = NONE
 
 

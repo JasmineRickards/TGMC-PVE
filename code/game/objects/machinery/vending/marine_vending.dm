@@ -1427,6 +1427,7 @@
 		),
 		"USL" = list(
 			/obj/item/clothing/suit/storage/faction/UPP/heavy = -1,
+			/obj/item/clothing/head/uppcap = -1
 			/obj/item/clothing/head/uppcap/beret = -1,
 			/obj/item/clothing/suit/storage/faction/UPP = -1,
 			/obj/item/clothing/head/helmet/marine/UPP = -1,
@@ -1442,14 +1443,7 @@
 			/obj/item/clothing/head/helmet/marine/veteran/PMC/leader = -1,
 			/obj/item/clothing/head/helmet/marine/veteran/PMC/sniper = -1,
 			/obj/item/clothing/head/helmet/marine/veteran/PMC/gunner = -1,
-			/obj/item/clothing/gloves/marine/veteran/PMC/commando = -1,
-			/obj/item/clothing/shoes/veteran/PMC/commando = -1,
 			/obj/item/clothing/under/marine/veteran/PMC/commando/vendor = -1,
-		),
-		"Freelancer" = list(
-			/obj/item/clothing/suit/storage/faction/freelancer = -1,
-			/obj/item/clothing/head/frelancer = -1,
-
 		),
 		"Mercenary" = list(
 			/obj/item/clothing/suit/storage/marine/veteran/wolves = -1,
@@ -1467,6 +1461,8 @@
 			/obj/item/clothing/head/helmet/marine/veteran/mercenary = -1,
 			/obj/item/clothing/head/helmet/marine/veteran/mercenary/miner = -1,
 			/obj/item/clothing/head/helmet/marine/veteran/mercenary/engineer = -1,
+			/obj/item/clothing/suit/storage/faction/freelancer = -1,
+			/obj/item/clothing/head/frelancer = -1,
 		),
 		"Civilian" = list(
 			/obj/item/clothing/suit/armor/riot = -1,
@@ -1679,13 +1675,6 @@
 			/obj/item/clothing/under/marine/veteran/PMC/leader = -1
 			/obj/item/storage/box/nt_mre = -1,
 		),
-		"Freelancer" = list(
-			/obj/item/clothing/gloves/marine/veteran/PMC = -1,
-			/obj/item/clothing/under/marine/veteran/freelancer = -1,
-			/obj/item/clothing/mask/rebreather/scarf/freelancer = -1,
-			/obj/item/clothing/shoes/marine/clf/full = -1,
-			/obj/item/storage/backpack/lightpack = -1,
-		),
 		"Mercenary" = list(
 			/obj/item/clothing/gloves/marine/veteran/PMC = -1,
 			/obj/item/clothing/under/marine/veteran/wolves = -1,
@@ -1698,6 +1687,8 @@
 			/obj/item/clothing/shoes/marine/clf/full = -1,
 			/obj/item/storage/backpack/lightpack = -1,
 			/obj/item/reagent_containers/food/snacks/sliceable/meatbread = -1,
+			/obj/item/clothing/under/marine/veteran/freelancer = -1,
+			/obj/item/clothing/mask/rebreather/scarf/freelancer = -1,
 		),
 		"Pizza time" = list(
 			/obj/item/pizzabox/margherita = -1,
