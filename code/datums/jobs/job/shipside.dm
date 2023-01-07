@@ -658,15 +658,15 @@ You are also next in the chain of command, should the bridge crew fall in the li
 	H.equip_to_slot_or_del(new /obj/item/stack/sandbags/large_stack, SLOT_IN_R_POUCH)
 	H.equip_to_slot_or_del(new /obj/item/stack/barbed_wire/full, SLOT_IN_R_POUCH)
 
-//Ship Engineer
+//Ship Engineer, now the Ordnance Tech
 /datum/job/terragov/engineering/tech
 	title = SHIP_TECH
-	comm_title = "ST"
+	comm_title = "OT"
 	paygrade = "PO3"
 	total_positions = 5
 	supervisors = "the chief ship engineer and the requisitions officer"
-	access = list(ACCESS_MARINE_ENGINEERING, ACCESS_MARINE_PREP, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CARGO, ACCESS_CIVILIAN_ENGINEERING)
-	minimal_access = list(ACCESS_MARINE_ENGINEERING, ACCESS_MARINE_PREP, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_CARGO, ACCESS_CIVILIAN_ENGINEERING)
+	access = list(ACCESS_MARINE_ENGINEERING, ACCESS_MARINE_PREP, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CARGO, ACCESS_CIVILIAN_ENGINEERING, ACCESS_MARINE_ORDNANCE)
+	minimal_access = list(ACCESS_MARINE_ENGINEERING, ACCESS_MARINE_PREP, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_CARGO, ACCESS_CIVILIAN_ENGINEERING, ACCESS_MARINE_ORDNANCE)
 	skills_type = /datum/skills/st
 	display_order = JOB_DISPLAY_ORDER_SHIP_TECH
 	outfit = /datum/outfit/job/engineering/tech
@@ -682,7 +682,7 @@ You are also next in the chain of command, should the bridge crew fall in the li
 		<b>You answer to the</b> Chief Ship Engineer<br /><br />
 		<b>Unlock Requirement</b>: Starting Role<br /><br />
 		<b>Gamemode Availability</b>: Distress<br /><br /><br />
-		<b>Duty</b>: Maintain the ship, be in charge of the engines. Be the secondary engineer to a forward operating base, prepare the shipside defenses if needed. Help the Pilot Officer in preparing the dropship.
+		<b>Duty</b>: Ensure the Orbital Bombardment battery is loaded to the specifications of the Field Commander, or one of the Squad Leaders if there's no FC. Produce a wide variety of grenades and satchel charges using the workshop vendor and chemistry dispenser in your lab, ranging from the explosive to the gaseus. Label your explosives appropriately and distribute them to marines with an understanding of their capabilities. Being well-informed can be the difference between obliterating most of a swarm and obliterating most of the marine forces.
 	"}
 	minimap_icon = "st"
 
@@ -718,8 +718,7 @@ You are also next in the chain of command, should the bridge crew fall in the li
 
 /datum/job/terragov/engineering/tech/radio_help_message(mob/M)
 	. = ..()
-	to_chat(M, {"Your job is to make sure the ship is operational, you should firstly focus on manning the
-requisitions line and later on to be ready to send supplies for marines who are groundside."})
+	to_chat(M, {"Your job is to make sure the OB is loaded according to the specifications of command officers or the squad leaders. You also produce large and small grenades, as well as satchel charges, using a variety of chemicals to determine their effects. There is a handy guidebook, which explains several components and explosive recipes, in your workshop vendor."})
 
 
 /datum/outfit/job/engineering/tech

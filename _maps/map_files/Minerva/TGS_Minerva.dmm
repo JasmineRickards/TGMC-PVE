@@ -4420,6 +4420,10 @@
 /obj/structure/cable,
 /turf/open/floor/mainship/cargo/arrow,
 /area/mainship/living/cryo_cells)
+"mQ" = (
+/obj/structure/table,
+/turf/open/floor/mainship/floor,
+/area/mainship/shipboard/weapon_room)
 "mR" = (
 /turf/open/floor/mainship/cargo,
 /area/mainship/hallways/hangar)
@@ -6079,7 +6083,6 @@
 /obj/effect/spawner/random/toolbox,
 /obj/item/stack/cable_coil,
 /obj/item/assembly/timer,
-/obj/item/assembly/infra,
 /turf/open/floor/mainship/research,
 /area/mainship/medical/medical_science)
 "rS" = (
@@ -16513,10 +16516,10 @@
 /turf/open/floor/mainship/floor,
 /area/mainship/shipboard/weapon_room)
 "Wd" = (
-/obj/structure/prop/mainship/mission_planning_system,
 /obj/machinery/light/mainship{
 	dir = 4
 	},
+/obj/machinery/vending/ordnance,
 /turf/open/floor/mainship/floor,
 /area/mainship/shipboard/weapon_room)
 "We" = (
@@ -16796,10 +16799,10 @@
 /turf/open/floor/engine,
 /area/mainship/engineering/port_atmos)
 "WZ" = (
-/obj/structure/prop/mainship/mission_planning_system,
 /obj/machinery/camera/autoname/mainship{
 	dir = 8
 	},
+/obj/machinery/chem_dispenser,
 /turf/open/floor/mainship/floor,
 /area/mainship/shipboard/weapon_room)
 "Xa" = (
@@ -19968,7 +19971,7 @@ SJ
 Un
 Ns
 Ns
-Ns
+mQ
 LX
 Le
 fD

@@ -17,11 +17,11 @@
 	var/affected_area = 3
 	var/obj/item/assembly_holder/nadeassembly = null
 	var/assemblyattacher
-	var/ignition_temp = 10 // The amount of heat added to the reagents when this grenade goes off.
+	var/ignition_temp = 1000 // The amount of heat added to the reagents when this grenade goes off.
 	var/threatscale = 1 // Used by advanced grenades to make them slightly more worthy.
 	var/no_splash = FALSE //If the grenade deletes even if it has no reagents to splash with. Used for slime core reactions.
 	var/casedesc = "This basic model accepts both beakers and bottles. It heats contents by 10°K upon ignition." // Appears when examining empty casings.
-
+	var/max_beakers = 2
 
 /obj/item/explosive/grenade/chem_grenade/Initialize()
 	. = ..()
@@ -69,7 +69,7 @@
 		if(is_type_in_list(I, banned_containers))
 			to_chat(user, span_warning("[src] is too small to fit [I]!")) // this one hits home huh anon?
 			return
-		if(length(beakers) == 2)
+		if(length(beakers) == max_beakers)
 			to_chat(user, span_warning("[src] can not hold more containers!"))
 			return
 		else
@@ -94,6 +94,8 @@
 		nadeassembly = A
 		A.master = src
 		assemblyattacher = user.ckey
+		A.a_left.forceMove(src)
+		A.a_right.forceMove(src)
 
 		stage_change(CG_WIRED)
 		to_chat(user, span_notice("You add [A] to the [initial(name)] assembly."))
@@ -145,16 +147,17 @@
 				for(var/datum/reagent/R in G.reagents.reagent_list)
 					. += span_notice("[R.volume] units of [R.name] in the [G.name].")
 			if(length(beakers) == 1)
-				. += span_notice("You detect no second beaker in the grenade.")
+				. += span_notice("You see one beaker in the [src.name].")
 		else
 			. += span_notice("You scan the grenade, but detect nothing.")
 	else if(stage != CG_READY && length(beakers))
-		if(length(beakers) == 2 && beakers[1].name == beakers[2].name)
-			. += span_notice("You see two [beakers[1].name]s inside the grenade.")
-		else
-			for(var/obj/item/reagent_containers/glass/G in beakers)
-				. += span_notice("You see a [G.name] inside the grenade.")
-
+		if(length(beakers) == 2)
+			. += span_notice("You see two beakers inside the [src.name].")
+		if(length(beakers) == 3)
+			. += span_notice("You see three beakers inside the [src.name].")
+		if(length(beakers) == 4)
+			. += span_notice("You see four beakers inside the [src.name].")
+		return ..()
 
 /obj/item/explosive/grenade/chem_grenade/proc/stage_change(N)
 	if(N)
@@ -211,11 +214,38 @@
 
 /obj/item/explosive/grenade/chem_grenade/large
 	name = "Large Chem Grenade"
-	desc = "An oversized grenade that affects a larger area."
+	desc = "An upsized grenade that affects a larger area."
 	icon_state = "large_grenade"
 	allowed_containers = list(/obj/item/reagent_containers/glass)
-	affected_area = 4
+	banned_containers = list(/obj/item/reagent_containers/glass/beaker/bluespace)//This is not what the bluespace beakers are for.
+	affected_area = 6
+	ignition_temp = 1001//Specifically designed to set off Ordnance chem explosions
 
+/obj/item/explosive/grenade/chem_grenade/large/detpack
+	name = "Satchel Charge"
+	desc = "An improvised explosive device crafted by an Ordnance Technician, which must be armed before it can detonate and can only be primed by a remote signal. You feel uneasy just by looking at it."
+	icon_state = "detpack"
+	max_beakers = 4
+	affected_area = 9
+	var/armed = FALSE
+
+/obj/item/explosive/grenade/chem_grenade/large/detpack/receive_signal()
+	if(armed != TRUE)
+		return FALSE
+	prime()
+
+/obj/item/explosive/grenade/chem_grenade/large/detpack/attack_self(mob/user)
+	if(stage == CG_READY && !active)
+		if(armed != TRUE)
+			to_chat(user, span_warning("You activate the arming switch!"))
+			armed = TRUE
+			playsound(src.loc, 'sound/weapons/mine_armed.ogg', 25, 1)
+			icon_state = "[initial(icon_state)]_armed"
+		else
+			to_chat(user, span_warning("You deactivate the arming switch!"))
+			armed = FALSE
+			icon_state = "[initial(icon_state)]_locked"
+			return ..()
 
 /obj/item/explosive/grenade/chem_grenade/metalfoam
 	name = "Metal-Foam Grenade"
