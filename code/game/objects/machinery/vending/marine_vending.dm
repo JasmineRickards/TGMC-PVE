@@ -1532,6 +1532,7 @@
 			/obj/item/storage/belt/marine = -1,
 			/obj/item/storage/belt/shotgun = -1,
 			/obj/item/storage/belt/shotgun/martini = -1,
+			/obj/item/storage/belt/shotgun/quickshell = -1,
 			/obj/item/storage/belt/grenade = -1,
 			/obj/item/storage/belt/knifepouch = -1,
 			/obj/item/belt_harness/marine = -1,
