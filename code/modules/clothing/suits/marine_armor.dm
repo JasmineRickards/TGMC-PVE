@@ -256,14 +256,22 @@
 	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 35, BOMB = 35, BIO = 30, FIRE = 35, ACID = 45)
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	allowed = list(
+		/obj/item/weapon/gun,
+		/obj/item/instrument,
+		/obj/item/storage/belt/sparepouch,
+		/obj/item/storage/holster/blade,
+		/obj/item/weapon/claymore,
+		/obj/item/storage/belt/gun,
+		/obj/item/storage/belt/knifepouch,
+		/obj/item/weapon/twohanded,
+		/obj/item/tool/pickaxe/plasmacutter,
 		/obj/item/tank/emergency_oxygen,
 		/obj/item/flashlight,
 		/obj/item/ammo_magazine,
-		/obj/item/explosive/mine,
+		/obj/item/explosive/grenade,
+		/obj/item/binoculars,
 		/obj/item/weapon/combat_knife,
 		/obj/item/attachable/bayonetknife,
-		/obj/item/weapon/gun/rifle/standard_smartmachinegun,
-		/obj/item/storage/belt/sparepouch,
 	)
 	pockets = /obj/item/storage/internal/suit/marine/smartgunner
 
