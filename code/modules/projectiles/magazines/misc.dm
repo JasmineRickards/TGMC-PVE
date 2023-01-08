@@ -19,7 +19,7 @@
 	name = "box of armor piercing 10x24mm"
 	desc = "A box containing 1500 rounds of armor piercing 10x24mm caseless."
 	caliber = CALIBER_10X24_CASELESS
-	icon_state = "box_10x24APmm"
+	icon_state = "box_10x24mmap"
 	default_ammo = /datum/ammo/bullet/rifle/ap
 	current_rounds = 1500
 	max_rounds = 1500
@@ -28,7 +28,7 @@
 	name = "box of incendiary 10x24mm"
 	desc = "A box containing 1500 rounds of incendiary 10x24mm caseless."
 	caliber = CALIBER_10X24_CASELESS
-	icon_state = "box_10x24mmINC"
+	icon_state = "box_10x24mminc"
 	default_ammo = /datum/ammo/bullet/rifle/incendiary
 	current_rounds = 1500
 	max_rounds = 1500
