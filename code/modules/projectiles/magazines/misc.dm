@@ -166,10 +166,10 @@
 	current_rounds = 1500
 	max_rounds = 1500
 
-/obj/item/ammo_magazine/packet/p10x20mm/AP
+/obj/item/ammo_magazine/packet/p10x20mm/ap
 	name = "packet of armor piercing 10x20mm"
 	desc = "A packet containing 1500 rounds of armor piercing 10x20mm caseless."
-	icon_state = "box_10x20mmAP"
+	icon_state = "box_10x20mmap"
 	caliber = CALIBER_10X20_CASELESS
 	default_ammo = /datum/ammo/bullet/smg/ap
 	w_class = WEIGHT_CLASS_SMALL
