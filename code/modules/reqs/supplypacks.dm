@@ -1505,7 +1505,7 @@ Imports
 		/obj/item/ammo_magazine/rifle/tx55,
 		/obj/item/ammo_magazine/rifle/tx55,
 		/obj/item/ammo_magazine/rifle/tx55,)
-	cost = 45
+	cost = 20
 
 /datum/supply_packs/imports/tx55/ammo
 	name = "AR-55 Carbine ammo."
