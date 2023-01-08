@@ -703,7 +703,7 @@
 		return
 	icon_state = initial(icon_state)
 
-	var/holding = round((contents.len + 1) / 2)
+	var/holding = round((contents.len + 1) / 4)
 	setDir(holding + round(holding/3))
 
 /obj/item/storage/belt/shotgun/martini/attackby(obj/item/I, mob/user, params)
@@ -738,6 +738,55 @@
 		return
 
 	existing_handful.create_handful(user, 1)
+	update_icon()
+
+/obj/item/storage/belt/shotgun/quickshell
+	name = "williams shell bandolier"
+	desc = "A shotgun shell bandolier that can fit on a marine's back or belt. Each tiny nook holds two shells. Likely intended for guns with two barrels."
+	icon_state = "dbshellbelt"
+	item_state = "dbshellbelt"
+	storage_slots = 24
+	flags_equip_slot = ITEM_SLOT_BELT|ITEM_SLOT_BACK
+	can_hold = list(/obj/item/ammo_magazine/handful)
+
+	flags_atom = DIRLOCK
+
+/obj/item/storage/belt/shotgun/quickshell/Initialize(mapload, ...)
+	. = ..()
+	update_icon()
+
+/obj/item/storage/belt/shotgun/quickshell/update_icon()
+	if(!contents.len)
+		icon_state = initial(icon_state) + "_e"
+		return
+	icon_state = initial(icon_state)
+
+	var/holding = round((contents.len + 1) / 4)
+	setDir(holding + round(holding/3))
+
+/obj/item/storage/belt/shotgun/quickshell/attack_hand(mob/living/user)
+	if (loc != user)
+		. = ..()
+		for(var/mob/M in content_watchers)
+			close(M)
+
+	if(!draw_mode || !ishuman(user) && !contents.len)
+		open(user)
+
+	if(!length(contents))
+		return
+
+	var/obj/item/I = contents[contents.len]
+	if(!istype(I, /obj/item/ammo_magazine/handful))
+		return
+
+	var/obj/item/ammo_magazine/handful/existing_handful = I
+
+	if(existing_handful.current_rounds == 2)
+		user.put_in_hands(existing_handful)
+		return
+
+	existing_handful.create_handful(user, 2)
 	update_icon()
 
 
