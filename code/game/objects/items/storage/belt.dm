@@ -742,7 +742,7 @@
 
 /obj/item/storage/belt/shotgun/quickshell
 	name = "williams shell bandolier"
-	desc = "A shotgun shell bandolier that can fit on the belt each tiny nook holds two shells. Likely intended for guns with two barrels."
+	desc = "A shotgun shell bandolier that can fit on a marine's back or belt. Each tiny nook holds two shells. Likely intended for guns with two barrels."
 	icon_state = "dbshellbelt"
 	item_state = "dbshellbelt"
 	storage_slots = 24
