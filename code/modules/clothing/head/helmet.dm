@@ -312,17 +312,22 @@
 
 
 /obj/item/clothing/head/helmet/marine/standard
-	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
-
+	flags_item_map_variant = NONE
+	//flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 /obj/item/clothing/head/helmet/marine/tech
 	name = "\improper M10 technician helmet"
-	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
-
+	icon_state = "techhelmet"
+	flags_item_map_variant = NONE
+	//flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+	attachments_by_slot = list(ATTACHMENT_SLOT_HEAD_MODULE)
+	attachments_allowed = list(/obj/item/armor_module/module/welding)
+	starting_attachments = list(/obj/item/armor_module/module/welding)
 
 /obj/item/clothing/head/helmet/marine/corpsman
 	name = "\improper M10 corpsman helmet"
-	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
-
+	icon_state = "corpshelmet"
+	flags_item_map_variant = NONE
+	//flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 /obj/item/clothing/head/helmet/marine/heavy
 	name = "\improper M10E pattern marine helmet"
 	desc = "A standard M10E Pattern Helmet. This is a modified version of the standard M10 helmet, offering an enclosed visor apparatus. It doesn't look to be any more protective damage wise."
