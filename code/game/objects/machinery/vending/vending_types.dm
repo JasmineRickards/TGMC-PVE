@@ -206,6 +206,7 @@
 
 /obj/machinery/vending/medical/shipside
 	isshared = TRUE
+	resistance_flags = INDESTRUCTIBLE
 	wrenchable = FALSE
 
 

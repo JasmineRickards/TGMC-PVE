@@ -4,6 +4,7 @@
 	icon_state = "marinearmory"
 	icon_vend = "marinearmory-vend"
 	icon_deny = "marinearmory"
+	resistance_flags = INDESTRUCTIBLE
 	wrenchable = FALSE
 	product_ads = "If it moves, it's hostile!;How many enemies have you killed today?;Shoot first, perform autopsy later!;Your ammo is right here.;Guns!;Die, scumbag!;Don't shoot me bro!;Shoot them, bro.;Why not have a donut?"
 	isshared = TRUE
@@ -1128,6 +1129,7 @@
 	name = "\improper Marine Food and Drinks Vendor"
 	desc = "Standard Issue Food and Drinks Vendor, containing standard military food and drinks."
 	icon_state = "sustenance"
+	resistance_flags = INDESTRUCTIBLE
 	wrenchable = FALSE
 	isshared = TRUE
 	products = list(
@@ -1166,6 +1168,7 @@
 	icon_deny = "marinemed-deny"
 	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;All natural chemicals!;This stuff saves lives.;Don't you want some?;Ping!"
 	req_one_access = ALL_MARINE_ACCESS
+	resistance_flags = INDESTRUCTIBLE
 	wrenchable = FALSE
 	isshared = TRUE
 	products = list(
@@ -1306,6 +1309,8 @@
 	icon_vend = "surplus-vend"
 	icon_deny = "surplus-deny"
 	isshared = TRUE
+	resistance_flags = INDESTRUCTIBLE
+	wrenchable = FALSE
 	product_ads = "If it moves, it's hostile!;How many enemies have you killed today?;Shoot first, perform autopsy later!;Your ammo is right here.;Guns!;Die, scumbag!;Don't shoot me bro!;Shoot them, bro.;Why not have a donut?"
 	products = list(
 		"Armors" = list(
@@ -1506,6 +1511,8 @@
 	icon_vend = "surplus-vend"
 	icon_deny = "surplus-deny"
 	isshared = TRUE
+	resistance_flags = INDESTRUCTIBLE
+	wrenchable = FALSE
 	product_ads = "If it moves, it's hostile!;How many enemies have you killed today?;Shoot first, perform autopsy later!;Your ammo is right here.;Guns!;Die, scumbag!;Don't shoot me bro!;Shoot them, bro.;Why not have a donut?"
 	products = list(
 		"Standard" = list(

@@ -8,6 +8,7 @@
 	layer = BELOW_OBJ_LAYER
 	req_access = null
 	req_one_access = null
+	resistance_flags = INDESTRUCTIBLE
 	///The faction of this loadout vendor
 	var/faction = FACTION_NEUTRAL
 
