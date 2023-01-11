@@ -555,7 +555,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 		light_on = FALSE
 		REMOVE_TRAIT(master_gun, TRAIT_GUN_FLASHLIGHT_ON, GUN_TRAIT)
 	else if(toggle_on & !light_on)
-		icon_state = "flashlight-on"
+		icon_state = "flashlight_on"
 		master_gun.set_light_range(light_mod)
 		master_gun.set_light_power(3)
 		master_gun.set_light_on(TRUE)
@@ -1227,7 +1227,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 		master_gun.scatter_unwielded += deployment_scatter_mod
 		master_gun.burst_scatter_mult += deployment_burst_scatter_mod
 		master_gun.add_aim_mode_fire_delay(name, initial(master_gun.aim_fire_delay) * deployment_aim_mode_delay_mod)
-		icon_state = "bipod-on"
+		icon_state = "bipod_on"
 
 	for(var/i in master_gun.actions)
 		var/datum/action/action_to_update = i
