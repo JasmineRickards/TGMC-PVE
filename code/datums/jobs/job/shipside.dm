@@ -341,9 +341,7 @@ You are in charge of logistics and the overwatch system. You are also in line to
 
 /datum/job/terragov/police/officer/radio_help_message(mob/M)
 	. = ..()
-	to_chat(M, {"You are held by a higher standard and are required to not abuse your position to severely hinder the progress of the round.
-Failure to do so may result in a job ban.
-Your primary job is to uphold the <a href='https://tgstation13.org/wiki/TGMC:Military_Law'>Military Law</a>, and peace and stability aboard the ship. Marines can get rowdy after a few weeks of cryosleep!
+	to_chat(M, {"Your primary job is to make sure the groundside HQ remains in a useable condition.
 In addition, you are tasked with the security of high-ranking personnel, including the command staff. Keep them safe!"})
 
 
@@ -387,7 +385,7 @@ In addition, you are tasked with the security of high-ranking personnel, includi
 	. = ..()
 	to_chat(M, {"You are held by a higher standard and are required to not abuse your position to severely hinder the progress of the round.
 Failure to do so may result in a job ban.
-You lead the Military Police, ensure your officers uphold the <a href='https://tgstation13.org/wiki/TGMC:Military_Law'>Military Law</a>, and maintain peace and stability aboard the ship. Marines can get rowdy after a few weeks of cryosleep!
+You lead the Masters at Arms, ensure that the ship and FOB does not fall, no matter what!
 In addition, you are tasked with the security of high-ranking personnel, including the command staff. Keep them safe!"})
 
 /datum/outfit/job/police/chief
