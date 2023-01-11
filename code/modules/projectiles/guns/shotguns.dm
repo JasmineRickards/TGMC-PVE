@@ -292,7 +292,7 @@
 	cock_locked_message = "The pump is locked! Fire it first!"
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 10, "rail_y" = 21, "under_x" = 20, "under_y" = 14, "stock_x" = 20, "stock_y" = 14)
 
-	fire_delay = 1.4 SECONDS
+	fire_delay = 1 SECONDS
 	damage_mult = 2
 	scatter_unwielded = 10
 	damage_falloff_mult = 1
@@ -339,7 +339,7 @@
 		/obj/item/attachable/stock/irremoveable/pal12,
 	)
 
-	fire_delay = 1.5 SECONDS
+	fire_delay = 1 SECONDS
 	damage_mult = 2.2
 	accuracy_mult = 1
 	damage_falloff_mult = 1
@@ -694,7 +694,7 @@
 	fire_delay = 0.4 SECONDS //If your muscle memory is good enough, it's almost like slamfire. Still not quite as fast as other shotguns.
 	scatter_unwielded = 10
 	damage_falloff_mult = 1
-	damage_mult = 2
+	damage_mult = 1.25
 	recoil = -1
 	recoil_unwielded = 4
 	aim_slowdown = 0.45
