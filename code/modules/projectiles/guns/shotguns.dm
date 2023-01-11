@@ -691,7 +691,7 @@
 
 	flags_item_map_variant = NONE
 
-	fire_delay = 1.4 SECONDS //If your muscle memory is good enough, it's almost like slamfire. Still not quite as fast as other shotguns. (NOT ANYMORE!!!!!!!)
+	fire_delay = 0.4 SECONDS //If your muscle memory is good enough, it's almost like slamfire. Still not quite as fast as other shotguns.
 	scatter_unwielded = 10
 	damage_falloff_mult = 1
 	damage_mult = 2
