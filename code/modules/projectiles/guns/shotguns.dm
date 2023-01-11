@@ -659,6 +659,7 @@
 	desc = "The Terran Armories SH-35 is the shotgun used by the TerraGov Marine Corps. It's used as a close quarters tool when someone wants something more suited for close range than most people, or as an odd sidearm on your back for emergencies. Uses 12 gauge shells.\n<b>Requires a pump, which is the Unique Action key.</b>"
 	icon = 'icons/Marine/gun64.dmi'
 	flags_equip_slot = ITEM_SLOT_BACK
+	icon = 'icons/Marine/gun64.dmi'
 	icon_state = "t35"
 	item_state = "t35"
 	cock_animation = "t35_pump"
@@ -678,17 +679,19 @@
 		/obj/item/attachable/compensator,
 		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/stock/t35stock,
+		/obj/item/attachable/stock/t35crane,
 		/obj/item/attachable/motiondetector,
 		/obj/item/attachable/buildasentry,
 		/obj/item/attachable/shoulder_mount,
 		/obj/item/attachable/stock/tactical,
 	)
 
-	attachable_offset = list("muzzle_x" = 35, "muzzle_y" = 17,"rail_x" = 15, "rail_y" = 20, "under_x" = 23, "under_y" = 8, "stock_x" = 7, "stock_y" = 12)
+	starting_attachment_types = list(/obj/item/attachable/stock/t35crane)
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 9, "rail_y" = 21, "under_x" = 18, "under_y" = 12, "stock_x" = -3, "stock_y" = 16)
 
 	flags_item_map_variant = NONE
 
-	fire_delay = 1.4 SECONDS //If your muscle memory is good enough, it's almost like slamfire. Still not quite as fast as other shotguns.
+	fire_delay = 1.4 SECONDS //If your muscle memory is good enough, it's almost like slamfire. Still not quite as fast as other shotguns. (NOT ANYMORE!!!!!!!)
 	scatter_unwielded = 10
 	damage_falloff_mult = 1
 	damage_mult = 2

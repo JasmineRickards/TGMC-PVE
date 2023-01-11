@@ -67,7 +67,7 @@
 		/obj/item/attachable/motiondetector,
 	)
 
-	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 19,"rail_x" = 9, "rail_y" = 20, "under_x" = 21, "under_y" = 14, "stock_x" = 24, "stock_y" = 10)
+	attachable_offset = list("muzzle_x" = 29, "muzzle_y" = 19,"rail_x" = 9, "rail_y" = 21, "under_x" = 21, "under_y" = 15, "stock_x" = 24, "stock_y" = 10)
 
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 0.9
@@ -111,7 +111,6 @@
 /obj/item/weapon/gun/smg/standard_smg
 	name = "\improper SMG-90 submachinegun"
 	desc = "The SMG-90 is the TerraGov Marine Corps standard issue SMG. Its known for it's compact size and ease of use inside the field. It's usually carried by troops who want a lightweight firearm to rush with. It uses 10x20mm caseless rounds."
-	icon = 'icons/Marine/gun64.dmi'
 	fire_sound = 'sound/weapons/guns/fire/t90.ogg'
 	icon_state = "t90"
 	item_state = "t90"
@@ -145,7 +144,7 @@
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
-	attachable_offset = list("muzzle_x" = 31, "muzzle_y" = 15,"rail_x" = 22, "rail_y" = 22, "under_x" = 26, "under_y" = 12, "stock_x" = 24, "stock_y" = 10)
+	attachable_offset = list("muzzle_x" = 31, "muzzle_y" = 17,"rail_x" = 9, "rail_y" = 20, "under_x" = 24, "under_y" = 14, "stock_x" = 24, "stock_y" = 16)
 	actions_types = list(/datum/action/item_action/aim_mode)
 	aim_fire_delay = 0.12 SECONDS
 	aim_speed_modifier = 0.55
@@ -300,11 +299,12 @@
 	damage_mult = 1.2
 
 //-------------------------------------------------------
-//SKORPION //Based on the same thing.
+//SKORPION //Based on the same thing. (chezk gun for evil people)
 
 /obj/item/weapon/gun/smg/skorpion
 	name = "\improper CZ-81 submachinegun"
 	desc = "A robust, 20th century firearm that's a combination of pistol and submachinegun. Fires .32ACP caliber rounds from a 20 round magazine."
+	icon = 'icons/Marine/gun64.dmi'
 	icon_state = "skorpion"
 	item_state = "skorpion"
 	caliber = CALIBER_32ACP //codex
@@ -316,7 +316,7 @@
 	cocked_sound = 'sound/weapons/guns/interact/skorpion_cocked.ogg'
 	default_ammo_type = /obj/item/ammo_magazine/smg/skorpion
 	allowed_ammo_types = list(/obj/item/ammo_magazine/smg/skorpion)
-	attachable_offset = list("muzzle_x" = 29, "muzzle_y" = 18,"rail_x" = 12, "rail_y" = 22, "under_x" = 23, "under_y" = 15, "stock_x" = 23, "stock_y" = 15)
+	attachable_offset = list("muzzle_x" = 29, "muzzle_y" = 21,"rail_x" = 10, "rail_y" = 24, "under_x" = 23, "under_y" = 15, "stock_x" = 23, "stock_y" = 15)
 
 	burst_delay = 0.1 SECONDS
 	accuracy_mult = 1.1
