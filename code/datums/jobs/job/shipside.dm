@@ -328,7 +328,7 @@ You are in charge of logistics and the overwatch system. You are also in line to
 /datum/job/terragov/police/officer
 	title = MASTER_AT_ARMS
 	paygrade = "PO"
-	comm_title = "MA"
+	comm_title = "MAA"
 	total_positions = 5
 	access = list(ACCESS_MARINE_BRIG, ACCESS_MARINE_BRIDGE, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_LOGISTICS, ACCESS_MARINE_PREP)
 	minimal_access = list(ACCESS_MARINE_BRIG, ACCESS_MARINE_BRIDGE, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_LOGISTICS, ACCESS_MARINE_PREP, ACCESS_MARINE_CARGO, ACCESS_MARINE_MEDBAY)
