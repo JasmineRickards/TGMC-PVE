@@ -1031,7 +1031,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	flags_attach_features = ATTACH_REMOVABLE
 	icon_state = "t35stock"
 	pixel_shift_x = 19
-	pixel_shift_y = 15
+	pixel_shift_y = 16
 
 
 /obj/item/attachable/stock/t39stock
