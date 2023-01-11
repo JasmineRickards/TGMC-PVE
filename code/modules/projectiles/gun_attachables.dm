@@ -701,11 +701,11 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 
 /obj/item/attachable/scope/unremovable/tl127
 	name = "T-45 rail scope"
-	icon_state = "sniperscope_invisible"
+	icon_state = "tl127_scope"
 	aim_speed_mod = 0
 	wield_delay_mod = 0
-	desc = "A rail mounted zoom sight scope specialized for the AR-127 sniper rifle. Allows zoom by activating the attachment. Use F12 if your HUD doesn't come back."
-	flags_attach_features = ATTACH_ACTIVATION
+	desc = "A rail mounted zoom sight scope specialized for the SR-127 sniper rifle. Allows zoom by activating the attachment. Use F12 if your HUD doesn't come back."
+	flags_attach_features = ATTACH_REMOVABLE|ATTACH_ACTIVATION
 
 /obj/item/attachable/scope/unremovable/heavymachinegun
 	name = "HMG-08 long range ironsights"
@@ -992,6 +992,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 /obj/item/attachable/stock/tl127stock
 	name = "\improper SR-127 stock"
 	desc = "A irremovable SR-127 sniper rifle stock."
+	flags_attach_features = ATTACH_REMOVABLE
 	icon_state = "tl127stock"
 	pixel_shift_x = 32
 	pixel_shift_y = 13
@@ -1023,12 +1024,49 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	recoil_mod = -3
 	scatter_mod = -2
 
+/obj/item/attachable/stock/t35crane
+	name = "\improper SH-35 crane stock"
+	desc = "A standard stock for the SH-35 shotgun made for easier shooting outside of cars... not that we have those around here."
+	icon = 'icons/Marine/attachments_64.dmi'
+	flags_attach_features = ATTACH_REMOVABLE
+	icon_state = "t35stock"
+	pixel_shift_x = 19
+	pixel_shift_y = 15
+
+
 /obj/item/attachable/stock/t39stock
 	name = "\improper SH-39 stock"
-	desc = "A specialized stock for the SH-35."
+	desc = "A specialized stock for the SH-39."
 	icon_state = "t39stock"
 	pixel_shift_x = 32
 	pixel_shift_y = 13
+
+/obj/item/attachable/stock/t64stock
+	name = "\improper BR-64 stock"
+	desc = "A specialized stock for the BR-64."
+	icon_state = "t64stock"
+
+/obj/item/attachable/stock/t18stock
+	name = "\improper AR-18 stock"
+	desc = "A specialized stock for the AR-18."
+	icon_state = "t18stock"
+	pixel_shift_x = 32
+	pixel_shift_y = 13
+
+/obj/item/attachable/stock/t12stock
+	name = "\improper AR-12 stock"
+	desc = "A specialized stock for the AR-12."
+	icon_state = "t12stock"
+	pixel_shift_x = 32
+	pixel_shift_y = 13
+
+/obj/item/attachable/stock/t42stock
+	name = "\improper MG-42 stock"
+	desc = "A specialized stock for the MG-42."
+	icon_state = "t42stock"
+	pixel_shift_x = 32
+	pixel_shift_y = 13
+
 
 /obj/item/attachable/stock/t60stock
 	name = "MG-60 stock"
