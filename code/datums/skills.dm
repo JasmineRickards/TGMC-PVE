@@ -298,6 +298,7 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	name = "Combat Medic"
 	leadership = SKILL_LEAD_BEGINNER
 	medical = SKILL_MEDICAL_COMPETENT
+	engineer = SKILL_ENGINEER_METAL
 	surgery = SKILL_SURGERY_PROFESSIONAL
 	pistols = SKILL_PISTOLS_TRAINED
 	smgs = SKILL_SMGS_TRAINED
@@ -532,6 +533,10 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 
 /datum/skills/smartgunner
 	name = SQUAD_SMARTGUNNER
+	construction = SKILL_CONSTRUCTION_METAL
+	engineer = SKILL_ENGINEER_METAL
+	medical = SKILL_MEDICAL_PRACTICED
+	surgery = SKILL_SURGERY_TRAINED
 	smartgun = SKILL_SMART_TRAINED
 	leadership = SKILL_LEAD_BEGINNER
 
