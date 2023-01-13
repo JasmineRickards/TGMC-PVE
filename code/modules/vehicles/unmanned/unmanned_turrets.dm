@@ -8,9 +8,9 @@
 	///Ammo typepath we use when attached
 	var/ammo_type = /datum/ammo/bullet/smg
 	/// Amount of projectiles in this turret
-	var/current_rounds = 150
+	var/current_rounds = 2500
 	/// The max amount of projectiles in this turret
-	var/max_rounds = 150
+	var/max_rounds = 4500
 	///This var must match the unmanned vehicles turret_pattern then be added
 	var/turret_pattern = PATTERN_TRACKED
 	/// The fire rate of this turret in byond tick
@@ -25,8 +25,8 @@
 	turret_type = TURRET_TYPE_HEAVY
 	ammo_type = /datum/ammo/bullet/machinegun
 	fire_delay = 2
-	current_rounds = 50
-	max_rounds = 50
+	current_rounds = 1500
+	max_rounds = 2200
 	magazine_type = /obj/item/ammo_magazine/box12x40mm //I think this is the correct one?
 
 /obj/item/uav_turret/droid
