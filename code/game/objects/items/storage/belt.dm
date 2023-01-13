@@ -409,6 +409,21 @@
 		/obj/item/reagent_containers/food/snacks,
 	)
 
+/obj/item/storage/belt/marine/attackby_alternate(obj/item/I, mob/user, params)
+	if(!istype(I, /obj/item/weapon/gun))
+		return ..()
+	var/obj/item/weapon/gun/gun = I
+	for(var/obj/item/ammo_magazine/mag in contents)
+		if(!(mag.type in gun.allowed_ammo_types))
+			continue
+		if(user.l_hand && user.r_hand || length(gun.chamber_items))
+			gun.tactical_reload(mag, user)
+		else
+			gun.reload(mag, user)
+		orient2hud()
+		return
+
+
 /obj/item/storage/belt/marine/t18/Initialize()
 	. = ..()
 	new /obj/item/ammo_magazine/rifle/standard_carbine(src)
@@ -1093,6 +1108,11 @@
 		/obj/item/ammo_magazine/revolver,
 	)
 //smg belts -- bye bye shitty t-19 holster!
+
+/obj/item/storage/belt/gun/smg//Added a base type for tac reload, in case anyone feels like adding a SoM version for the V-21 later.
+	name = "\improper Abstract smg belt rig"
+	desc = "Yell at coders if you're seeing this, it's only meant to hold the proc for belt-based tac-reload."
+
 /obj/item/storage/belt/gun/smg/standard_smg
 	name = "\improper M276-B pattern MP-19 belt rig"
 	desc = "A modified M276 rig consisting of a modular belt with numerous magazine pouches."
@@ -1105,6 +1125,20 @@
 		/obj/item/weapon/gun/smg/standard_machinepistol,
 		/obj/item/ammo_magazine/smg,
 	)
+
+/obj/item/storage/belt/gun/smg/attackby_alternate(obj/item/I, mob/user, params)
+	if(!istype(I, /obj/item/weapon/gun/smg))
+		return ..()
+	var/obj/item/weapon/gun/smg/gun = I
+	for(var/obj/item/ammo_magazine/mag in contents)
+		if(!(mag.type in gun.allowed_ammo_types))
+			continue
+		if(user.l_hand && user.r_hand || length(gun.chamber_items))
+			gun.tactical_reload(mag, user)
+		else
+			gun.reload(mag, user)
+		orient2hud()
+		return
 
 /obj/item/storage/belt/gun/smg/m25
 	name = "\improper M276-B pattern SMG-25 belt rig"
