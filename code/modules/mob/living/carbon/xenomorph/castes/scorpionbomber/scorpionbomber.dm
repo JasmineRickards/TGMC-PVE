@@ -4,8 +4,8 @@
 	desc = "An eerie, four-legged alien with a hollow tail. A red, jelly-like texture characterizes its eyes and underbelly."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Sanguine Scorpion Walking"
-	health = 300
-	maxHealth = 300
+	health = 130
+	maxHealth = 130 //Should not have MORE HP than a standard scorpion, especially since it can do MORE
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16
