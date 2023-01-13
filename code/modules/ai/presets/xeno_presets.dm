@@ -70,6 +70,12 @@
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
 
+/mob/living/carbon/xenomorph/scorpionbomber
+
+/mob/living/carbon/xenomorph/scorpionbomber/ai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/sidestepper)
+
 /mob/living/carbon/xenomorph/sentinel/ai
 
 /mob/living/carbon/xenomorph/sentinel/ai/Initialize()
