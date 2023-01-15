@@ -1508,6 +1508,8 @@
 #include "code\modules\mob\living\carbon\xenomorph\castes\runner\runner.dm"
 #include "code\modules\mob\living\carbon\xenomorph\castes\scorpion\castedatum_scorpion.dm"
 #include "code\modules\mob\living\carbon\xenomorph\castes\scorpion\scorpion.dm"
+#include "code\modules\mob\living\carbon\xenomorph\castes\scorpionbomber\castedatum_scorpionbomber.dm"
+#include "code\modules\mob\living\carbon\xenomorph\castes\scorpionbomber\scorpionbomber.dm"
 #include "code\modules\mob\living\carbon\xenomorph\castes\sentinel\abilities_sentinel.dm"
 #include "code\modules\mob\living\carbon\xenomorph\castes\sentinel\castedatum_sentinel.dm"
 #include "code\modules\mob\living\carbon\xenomorph\castes\sentinel\sentinel.dm"
