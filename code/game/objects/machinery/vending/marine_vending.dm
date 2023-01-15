@@ -1524,6 +1524,8 @@
 			/obj/item/clothing/under/marine/camo/snow = -1,
 			/obj/item/clothing/under/marine/orion_fatigue = -1,
 			/obj/item/clothing/under/marine/jaeger = -1,
+			/obj/item/clothing/under/rank/security = -1,
+			/obj/item/clothing/under/rank/security2 = -1,
 			/obj/item/clothing/gloves/marine = -1,
 			/obj/item/clothing/shoes/marine/full = -1,
 			/obj/item/clothing/shoes/cowboy = -1,
