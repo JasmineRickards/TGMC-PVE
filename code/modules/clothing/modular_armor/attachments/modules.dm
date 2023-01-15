@@ -272,7 +272,8 @@
 	soft_armor = list(MELEE = 15, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = -10)
 	icon_state = "mod_chemsystem"
 	item_state = "mod_chemsystem_a"
-	slowdown = 0.2
+	slowdown = 0.3
+	
 
 /obj/item/armor_module/module/eshield
 	name = "Arrowhead Energy Shield System"
