@@ -94,6 +94,7 @@
 		/obj/item/armor_module/module/eshield,
 		/obj/item/armor_module/module/eshield/mk2,
 		/obj/item/armor_module/module/fire_proof/mk2,
+		/obj/item/armor_module/module/chemsystem/mk2,
 
 		/obj/item/armor_module/storage/general,
 		/obj/item/armor_module/storage/ammo_mag,
@@ -813,7 +814,8 @@
 		/obj/item/armor_module/armor/badge,
 		/obj/item/armor_module/module/eshield/mk2,
 		/obj/item/armor_module/module/fire_proof/mk2,
-        /obj/item/armor_module/module/chemsystem,
+    /obj/item/armor_module/module/chemsystem,
+    /obj/item/armor_module/module/chemsystem/mk2,
 	)
 
 	icon_state_variants = list(
@@ -889,7 +891,8 @@
 		/obj/item/armor_module/module/fire_proof/mk2,
 		/obj/item/armor_module/module/tyr_extra_armor,
 		/obj/item/armor_module/module/tyr_extra_armor/mark1,
-        /obj/item/armor_module/module/chemsystem,
+		/obj/item/armor_module/module/chemsystem,
+    /obj/item/armor_module/module/chemsystem/mk2,
 	)
 
 /obj/item/clothing/suit/modular/som/heavy/leader/valk

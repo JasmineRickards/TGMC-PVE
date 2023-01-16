@@ -266,6 +266,14 @@
 	chemsystem.RemoveComponent()
 	return ..()
 
+/obj/item/armor_module/module/chemsystem/mk2
+	name = "\improper Vail chemical enhancement module Mark 2"
+	desc = "Designed for mounting on modular armor. This experimental module runs on green blood taken from xenos with harvester class weapons; Green blood heals the user and boosts any chems in the suit injection system.This seems like the Second Verison built with more armor. \nUse the suit menu to connect harvester class weapons, control the injection system, find chem boost information, and more Also it can be used on SOM Armor"
+	soft_armor = list(MELEE = 15, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = -10)
+	icon_state = "mod_chemsystem"
+	item_state = "mod_chemsystem_a"
+	slowdown = 0.3
+	
 
 /obj/item/armor_module/module/eshield
 	name = "Arrowhead Energy Shield System"
