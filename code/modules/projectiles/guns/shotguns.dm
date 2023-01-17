@@ -339,7 +339,7 @@
 		/obj/item/attachable/stock/irremoveable/pal12,
 	)
 
-	fire_delay = 1.1 SECONDS
+	fire_delay = 0.8 SECONDS
 	damage_mult = 2.2
 	accuracy_mult = 1
 	damage_falloff_mult = 1
