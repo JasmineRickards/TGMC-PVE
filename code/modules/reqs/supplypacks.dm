@@ -816,8 +816,7 @@ ARMOR
 		/obj/item/armor_module/module/better_shoulder_lamp,
 		/obj/item/armor_module/module/hlin_explosive_armor,
 		/obj/item/armor_module/module/eshield/mk2,
-        /obj/item/armor_module/module/chemsystem/mk2
-        
+        /obj/item/armor_module/module/chemsystem/mk2,
 	)
 	cost = 40
 
@@ -862,8 +861,8 @@ datum/supply_packs/armor/modular/attachments/mk2eshield
 	contains = list(/obj/item/armor_module/module/hlin_explosive_armor)
 	cost = 12
 
-/datum/supply_packs/armor_module/attachments/chemsystem/mk2
-	name = "Chemical Vail System Mark 2"
+/datum/supply_packs/armor/modular/attachments/chemsystem_mk2
+	name = "Jaegar Vali Chemical System Mark 2"
 	contains = list(/obj/item/armor_module/module/chemsystem/mk2)
 	cost = 8
 
