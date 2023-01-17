@@ -264,7 +264,7 @@
 	fire_sound = 'sound/weapons/guns/fire/shotgun.ogg'
 	cocked_sound = 'sound/weapons/guns/interact/shotgun_pump.ogg'
 	max_chamber_items = 15
-	cock_delay = 0.8 SECONDS
+	cock_delay = 0.3 SECONDS
 
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
@@ -292,8 +292,8 @@
 	cock_locked_message = "The pump is locked! Fire it first!"
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 10, "rail_y" = 21, "under_x" = 20, "under_y" = 14, "stock_x" = 20, "stock_y" = 14)
 
-	fire_delay = 1 SECONDS
-	damage_mult = 2
+	fire_delay = 0.8 SECONDS
+	damage_mult = 1.8
 	scatter_unwielded = 10
 	damage_falloff_mult = 1
 	recoil = -1
@@ -339,7 +339,7 @@
 		/obj/item/attachable/stock/irremoveable/pal12,
 	)
 
-	fire_delay = 1 SECONDS
+	fire_delay = 1.1 SECONDS
 	damage_mult = 2.2
 	accuracy_mult = 1
 	damage_falloff_mult = 1
@@ -347,7 +347,7 @@
 	scatter_unwielded = 10
 	recoil = -1 // It has a stock. It's on the sprite.
 	recoil_unwielded = 0
-	cock_delay = 12
+	cock_delay = 4
 	aim_slowdown = 0.4
 
 /obj/item/weapon/gun/shotgun/pump/cmb/mag_harness
@@ -416,7 +416,7 @@
 	scatter_unwielded = 12
 	recoil = -3
 	recoil_unwielded = 4
-	cock_delay = 12
+	cock_delay = 2
 	aim_slowdown = 1
 	wield_delay = 0.3 SECONDS
 	movement_acc_penalty_mult = 4.5
@@ -558,7 +558,7 @@
 	scatter_unwielded = 7
 	recoil = 2
 	recoil_unwielded = 4
-	cock_delay = 6
+	cock_delay = 3
 
 
 // ***********************************************
@@ -691,14 +691,14 @@
 
 	flags_item_map_variant = NONE
 
-	fire_delay = 0.4 SECONDS //If your muscle memory is good enough, it's almost like slamfire. Still not quite as fast as other shotguns.
+	fire_delay = 1 SECONDS //If your muscle memory is good enough, it's almost like slamfire. Still not quite as fast as other shotguns.
 	scatter_unwielded = 10
 	damage_falloff_mult = 1
-	damage_mult = 1.25
+	damage_mult = 2
 	recoil = -1
 	recoil_unwielded = 4
 	aim_slowdown = 0.45
-	cock_delay = 8
+	cock_delay = 2
 
 	placed_overlay_iconstate = "t35"
 

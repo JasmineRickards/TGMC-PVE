@@ -82,6 +82,7 @@
 		),
 		"Shotgun" = list(
 			/obj/item/weapon/gun/shotgun/pump/t35 = -1,
+			/obj/item/weapon/gun/shotgun/pump = -1,
 			/obj/item/weapon/gun/shotgun/combat/standardmarine = -1,
 			/obj/item/weapon/gun/shotgun/double/marine = -1,
 			/obj/item/weapon/gun/shotgun/combat = -1,
@@ -342,6 +343,7 @@
 		),
 		"Shotgun" = list(
 			/obj/item/weapon/gun/shotgun/pump/t35 = -1,
+			/obj/item/weapon/gun/shotgun/pump = -1,
 			/obj/item/weapon/gun/shotgun/combat/standardmarine = -1,
 			/obj/item/weapon/gun/shotgun/double/marine = -1,
 			/obj/item/storage/belt/gun/ts34/full = -1,
@@ -578,6 +580,7 @@
 		),
 		"Shotgun" = list(
 			/obj/item/weapon/gun/shotgun/pump/t35 = -1,
+			/obj/item/weapon/gun/shotgun/pump = -1,
 			/obj/item/weapon/gun/shotgun/combat/standardmarine = -1,
 			/obj/item/weapon/gun/shotgun/double/marine = -1,
 			/obj/item/weapon/gun/shotgun/combat = -1,
