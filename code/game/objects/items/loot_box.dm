@@ -47,10 +47,10 @@
 		/obj/item/weapon/karambit/case_hardened,
 	)
 	rare_list = list(
-		/obj/vehicle/unmanned,
+//		/obj/vehicle/unmanned,
 		/obj/item/weapon/gun/rifle/sniper/antimaterial,
 		/obj/item/weapon/gun/rifle/tx8,
-		/obj/item/weapon/gun/minigun,
+//		/obj/item/weapon/gun/minigun,
 		/obj/item/weapon/gun/launcher/rocket/sadar,
 		/obj/item/weapon/gun/rifle/railgun,
 		/obj/item/weapon/gun/rifle/standard_autosniper,
@@ -62,19 +62,32 @@
 		/obj/item/storage/fancy/crayons,
 		/obj/item/weapon/claymore,
 		/obj/vehicle/ridden/motorbike,
-		/obj/item/weapon/gun/launcher/rocket/oneuse,
+//		/obj/item/weapon/gun/launcher/rocket/oneuse,
 		/obj/item/weapon/gun/rifle/m412l1_hpr,
 		/obj/item/weapon/gun/shotgun/som,
 		/obj/item/loot_box/marine, //reroll time
+		/obj/effect/supply_drop/muhrinearmor,
 	)
 	common_list = list(
-		/obj/item/clothing/head/strawhat,
-		/obj/item/storage/bag/trash,
-		/obj/item/toy/bikehorn,
-		/obj/item/clothing/tie/horrible,
-		/obj/item/toy/spinningtoy,
-		/obj/item/toy/sword,
-		/obj/item/weapon/banhammer,
+//		/obj/effect/supply_drop/armor_upgrades,
+		/obj/effect/supply_drop/medical_basic,
+		/obj/item/storage/pouch/firstaid/combat_patrol,
+		/obj/item/storage/pouch/medical_injectors/firstaid,
+		/obj/item/storage/pouch/medical_injectors/medic,
+		/obj/effect/supply_drop/standard_carbine,
+		/obj/effect/supply_drop/standard_rifle,
+		/obj/effect/supply_drop/combat_rifle,
+		/obj/effect/supply_drop/laser_rifle,
+		/obj/effect/supply_drop/standard_shotgun,
+		/obj/effect/supply_drop/m41a,
+		/obj/effect/supply_drop/belts
+//		/obj/item/clothing/head/strawhat,
+//		/obj/item/storage/bag/trash,
+//		/obj/item/toy/bikehorn,
+//		/obj/item/clothing/tie/horrible,
+//		/obj/item/toy/spinningtoy,
+//		/obj/item/toy/sword,
+//		/obj/item/weapon/banhammer,
 	)
 
 //Supply drop boxes
@@ -84,20 +97,20 @@
 	icon = 'icons/obj/items/items.dmi'
 	w_class = WEIGHT_CLASS_GIGANTIC
 	slowdown = 1 //You won't be running off with this
-	rolls = 4
+	rolls = 2
 	weight_list = list(rare_list = 20, uncommon_list = 30, common_list = 40)
 
 	rare_list = list(
-		/obj/effect/supply_drop/heavy_armor,
+//		/obj/effect/supply_drop/heavy_armor,
 		/obj/effect/supply_drop/grenadier,
-		/obj/effect/supply_drop/minigun,
+//		/obj/effect/supply_drop/minigun,
 		/obj/effect/supply_drop/zx_shotgun,
 	)
 	uncommon_list = list(
 		/obj/effect/supply_drop/marine_sentry,
 		/obj/effect/supply_drop/recoilless_rifle,
 		/obj/effect/supply_drop/scout,
-		/obj/effect/supply_drop/oicw,
+//		/obj/effect/supply_drop/oicw,
 		/obj/item/storage/belt/lifesaver/quick,
 		/obj/item/storage/belt/rig/medical,
 		/obj/effect/supply_drop/mmg,
@@ -120,11 +133,12 @@
 	desc = "A rugged box composed of valuable SOM military materiel."
 	icon = 'icons/obj/items/items.dmi'
 	w_class = WEIGHT_CLASS_GIGANTIC
-	rolls = 4
+	rolls = 2
 
 	rare_list = list(
 		/obj/effect/supply_drop/culverin,
 		/obj/effect/supply_drop/caliver,
+		/obj/effect/supply_drop/gorgun,
 		/obj/effect/supply_drop/som_shotgun_burst,
 	)
 	uncommon_list = list(
@@ -171,6 +185,39 @@
 	return INITIALIZE_HINT_QDEL
 
 //The actual drop sets
+/obj/effect/supply_drop/gorgun/Initialize()
+	. = ..()
+	new /obj/item/clothing/suit/modular/som/heavy/leader/valk(loc)
+	new /obj/item/clothing/head/modular/som/leader(loc)
+	new /obj/item/storage/belt/marine(loc)
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/supply_drop/belts/Initialize()
+	. = ..()
+	new /obj/item/storage/belt/shotgun/mixed(loc)
+	new /obj/item/storage/belt/gun/pistol/smart_pistol/full(loc)
+	new /obj/item/storage/belt/marine(loc)
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/supply_drop/muhrinearmor/Initialize()
+	. = ..()
+	new /obj/item/clothing/suit/modular/xenonauten/heavy(loc)
+	new /obj/item/clothing/suit/modular/xenonauten(loc)
+	new /obj/item/clothing/suit/modular/xenonauten/light(loc)
+	new /obj/item/clothing/head/modular/marine/m10x(loc)
+	new /obj/item/clothing/head/modular/marine/m10x(loc)
+	new /obj/item/clothing/head/modular/marine/m10x(loc)
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/supply_drop/m41a/Initialize()
+	. = ..()
+	new /obj/item/weapon/gun/rifle/m41a(loc)
+	new /obj/item/ammo_magazine/rifle/m41a(loc)
+	new /obj/item/ammo_magazine/rifle/m41a(loc)
+	new /obj/item/ammo_magazine/rifle/m41a(loc)
+	new /obj/item/ammo_magazine/rifle/m41a(loc)
+	return INITIALIZE_HINT_QDEL
+
 /obj/effect/supply_drop/medical_basic/Initialize()
 	. = ..()
 	new /obj/item/storage/firstaid/adv(loc)
@@ -383,6 +430,7 @@
 
 // 150 to 200 points of value packs, spend 100 points get 150 to 200 in value, basically. Ideally, commons are variety packs, uncommons maybe shake up the round a bit, rares a bit more. Legendaries make the round go wacko. You get a crate of stuff dropped on spawn.
 /obj/item/loot_box/tgmclootbox
+	rolls = 2
 	name = "TGMC pack box"
 	desc = "A box of gear sent over by the TGMC on request, nobody knows what's in it. You just know it'll probably be good."
 	icon = 'icons/obj/items/items.dmi'
@@ -417,7 +465,7 @@
 		/obj/item/storage/box/loot/autosniper_pack,
 		/obj/item/storage/box/loot/thermobaric_pack,
 		/obj/item/storage/box/loot/sentry_pack,
-		/obj/item/storage/box/loot/tx54_pack,
+//		/obj/item/storage/box/loot/tx54_pack,
 	)
 
 // Crates the lootbox uses.
