@@ -881,7 +881,7 @@
 /obj/item/storage/belt/sparepouch
 	name= "\improper G8 general utility pouch"
 	desc= "A small, lightweight pouch that can be clipped onto Armat Systems M3 Pattern armor or your belt to provide additional storage for miscellaneous gear or box and drum magazines."
-	storage_slots = 3
+	storage_slots = 9
 	w_class = WEIGHT_CLASS_BULKY
 	max_w_class = 3
 	icon_state= "sparepouch"
