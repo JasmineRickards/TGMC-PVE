@@ -7,7 +7,26 @@
 	rounds_per_shot = 10 //100 shots.
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_AMMO_COUNT_BY_SHOTS_REMAINING|GUN_NO_PITCH_SHIFT_NEAR_EMPTY
 	general_codex_key = "energy weapons"
-
+	attachable_allowed = list(
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonetknife,
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/verticalgrip,
+		/obj/item/attachable/angledgrip,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/gyro,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/bipod,
+		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/scope,
+		/obj/item/attachable/scope/marine,
+		/obj/item/attachable/scope/mini,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
+		/obj/item/weapon/gun/pistol/plasma_pistol,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
+	)
 	placed_overlay_iconstate = "laser"
 	reciever_flags = AMMO_RECIEVER_MAGAZINES|AMMO_RECIEVER_DO_NOT_EJECT_HANDFULS|AMMO_RECIEVER_CYCLE_ONLY_BEFORE_FIRE
 	default_ammo_type = /obj/item/cell/lasgun
@@ -183,6 +202,11 @@
 		/obj/item/attachable/efflens,
 		/obj/item/attachable/pulselens,
 		/obj/item/attachable/stock/lasgun,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
+		/obj/item/weapon/gun/pistol/plasma_pistol,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
 	)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_ENERGY|GUN_AMMO_COUNT_BY_SHOTS_REMAINING|GUN_NO_PITCH_SHIFT_NEAR_EMPTY|GUN_SHOWS_AMMO_REMAINING
@@ -1007,13 +1031,24 @@
 		/obj/item/cell/lasgun/volkite/powerpack,
 	)
 	attachable_allowed = list(
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonetknife,
 		/obj/item/attachable/reddot,
+		/obj/item/attachable/verticalgrip,
+		/obj/item/attachable/angledgrip,
 		/obj/item/attachable/lasersight,
+		/obj/item/attachable/gyro,
 		/obj/item/attachable/flashlight,
+		/obj/item/attachable/bipod,
 		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/scope,
-		/obj/item/attachable/scope/mini,
 		/obj/item/attachable/scope/marine,
+		/obj/item/attachable/scope/mini,
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/gyro,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/motiondetector,
 		/obj/item/attachable/buildasentry,
 		/obj/item/attachable/shoulder_mount,
@@ -1058,7 +1093,24 @@
 	default_ammo_type = null
 	allowed_ammo_types = list(/obj/item/cell/lasgun/volkite/powerpack)
 	attachable_allowed = list(
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonetknife,
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/verticalgrip,
+		/obj/item/attachable/angledgrip,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/gyro,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/bipod,
 		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/scope,
+		/obj/item/attachable/scope/marine,
+		/obj/item/attachable/scope/mini,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
+		/obj/item/weapon/gun/pistol/plasma_pistol,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
 	)
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_ENERGY|GUN_AMMO_COUNT_BY_SHOTS_REMAINING|GUN_WIELDED_FIRING_ONLY|GUN_SHOWS_LOADED
 	reciever_flags = AMMO_RECIEVER_MAGAZINES|AMMO_RECIEVER_DO_NOT_EJECT_HANDFULS|AMMO_RECIEVER_CYCLE_ONLY_BEFORE_FIRE

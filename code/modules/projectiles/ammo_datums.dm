@@ -1198,7 +1198,18 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	accurate_range = 12
 	damage = 35
 	penetration = 15
-	sundering = 2
+	sundering = 6
+
+/datum/ammo/bullet/smartmachineguncannon
+	name = "Smart cannon round"
+	icon_state = "redbullet" //Red bullets to indicate friendly fire restriction
+	hud_state = "smartgun"
+	hud_state_empty = "smartgun_empty"
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	accurate_range = 12
+	damage = 35
+	penetration = 15
+	sundering =15
 
 /datum/ammo/bullet/smart_minigun
 	name = "smartminigun bullet"
@@ -1209,7 +1220,7 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	accurate_range = 12
 	damage = 15
 	penetration = 25
-	sundering = 1
+	sundering = 4
 	damage_falloff = 0.1
 
 /datum/ammo/bullet/turret

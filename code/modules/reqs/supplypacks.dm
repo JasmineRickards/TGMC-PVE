@@ -484,7 +484,7 @@ WEAPONS
 /datum/supply_packs/weapons/smartgun
 	name = "SG-29 Smart Machinegun"
 	contains = list(/obj/item/weapon/gun/rifle/standard_smartmachinegun)
-	cost = 40
+	cost = 25
 
 /datum/supply_packs/weapons/smartgun_ammo
 	name = "SG-29 smartmachinegun ammo"
@@ -494,12 +494,28 @@ WEAPONS
 /datum/supply_packs/weapons/smart_minigun
 	name = "SG-85 Smart Handheld Gatling Gun"
 	contains = list(/obj/item/weapon/gun/minigun/smart_minigun)
-	cost = 40
+	cost = 25
+
+/datum/supply_packs/weapons/smart_minigunbulk
+	name = "SG-86 Smart Handheld rail assisted Gatling Gun"
+	contains = list(/obj/item/weapon/gun/minigun/smart_minigunbulk)
+	cost = 65
 
 /datum/supply_packs/weapons/smart_minigun_ammo
 	name = "SG-85 ammo bin"
 	contains = list(/obj/item/ammo_magazine/packet/smart_minigun)
 	cost = 5
+
+/datum/supply_packs/weapons/smart_autocannon
+	name = "SG-30 Smart Handheld cannon system"
+	contains = list(/obj/item/weapon/gun/rifle/standard_smartautocannon)
+	cost = 75
+
+/datum/supply_packs/weapons/smartguncannonammo
+	name = "SG-30 autocannon ammo"
+	contains = list(/obj/item/ammo_magazine/standard_smartmachineguncannon)
+	cost = 4
+
 
 /datum/supply_packs/weapons/flamethrower
 	name = "FL-84 Flamethrower"

@@ -458,7 +458,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	actions_types = list()
 
 	fire_delay = 0.06 SECONDS
-	damage_mult = 1.15
+	damage_mult = 1.5
 	windup_delay = 0.2 SECONDS
 	scatter = -5
 	recoil = 0
@@ -466,6 +466,30 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 
 /obj/item/weapon/gun/minigun/smart_minigun/motion_detector
 	starting_attachment_types = list(/obj/item/attachable/motiondetector)
+
+/obj/item/weapon/gun/minigun/smart_minigunbulk
+	name = "\improper SG-86 smart heavy duty handheld gatling gun"
+	desc = "A true monster of providing supportive suppresing fire, the SG-85 is the TGMC's newest IFF-capable weapon. Boasting an integrated barrel charger in each barrel, alongside patented rail round assistance. It is chambered in 10x26 caseless."
+	icon_state = "minigun_sg"
+	item_state = "minigun_sg"
+	fire_animation = "minigun_sg_fire"
+	max_shells = 1000 //codex
+	caliber = CALIBER_10x26_CASELESS //codex
+	allowed_ammo_types = list(/obj/item/ammo_magazine/minigun_powerpack/smartgun)
+	wield_delay = 1.5 SECONDS
+	flags_gun_features = GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY|GUN_IFF
+	gun_skill_category = GUN_SKILL_SMARTGUN
+	attachable_allowed = list(/obj/item/attachable/flashlight, /obj/item/attachable/magnetic_harness, /obj/item/attachable/motiondetector)
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 19, "rail_y" = 29, "under_x" = 24, "under_y" = 14, "stock_x" = 24, "stock_y" = 12) //Only has rail attachments so only the rail variables are properly aligned
+	aim_slowdown = 1.5
+	actions_types = list()
+
+	fire_delay = 0.08 SECONDS
+	damage_mult = 3.5
+	windup_delay = 0.2 SECONDS
+	scatter = -5
+	recoil = 0
+	recoil_unwielded = 4
 
 // PEPPERBALL GUN
 

@@ -42,7 +42,7 @@
 #define CALIBER_10X27_INCENDIARY_CASELESS "10x27mm incendiary caseless"
 #define CALIBER_10x26_CASELESS "10x26mm caseless" //GPMG and SG
 #define CALIBER_ALIEN "alien alloy"
-
+#define CALIBER_10x30_CASELESS "10x85mm caseless cannon ammo"//New SG
 // --- Shotguns ---
 #define CALIBER_12G "12 gauge"
 #define CALIBER_410 ".410 bore"

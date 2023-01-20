@@ -62,6 +62,7 @@
 		/obj/item/attachable/scope,
 		/obj/item/attachable/scope/marine,
 		/obj/item/attachable/scope/mini,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
 		/obj/item/weapon/gun/pistol/plasma_pistol,
 		/obj/item/weapon/gun/shotgun/combat/masterkey,
 		/obj/item/weapon/gun/flamer/mini_flamer,
@@ -70,7 +71,6 @@
 		/obj/item/attachable/buildasentry,
 		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
 		/obj/item/attachable/shoulder_mount,
-		/obj/item/weapon/gun/smg/standard_machinepistol,
 		/obj/item/attachable/stock/tactical,
 		/obj/item/attachable/stock/t18stock,
 	)
@@ -1145,7 +1145,7 @@
 	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
 	unload_sound = 'sound/weapons/guns/interact/T42_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/T42_reload.ogg'
-	default_ammo_type = /obj/item/ammo_magazine/standard_smartmachinegun
+	default_ammo_type = /datum/ammo/bullet/smartmachinegun
 	allowed_ammo_types = list(
 		/obj/item/ammo_magazine/standard_smartmachinegun)
 	attachable_allowed = list(
@@ -1180,6 +1180,55 @@
 
 	placed_overlay_iconstate = "smartgun"
 
+/obj/item/weapon/gun/rifle/standard_smartautocannon
+	name = "\improper SG-30 Pierkarp cannon"
+	desc = "The Raummetall-KT SG-30 is the TGMC's current high power IFF-capable heavy machinegun. It's known for its ability to lay down heavy fire support very well. It is generally used when someone wants to hold a position or provide fire support. Requires special training and it cannot turn off IFF. It uses 10x85mm ammunition."
+	icon_state = "sg29"
+	item_state = "sg29"
+	caliber = CALIBER_10x30_CASELESS //codex
+//	max_shells = 300 //codex
+	force = 45
+	aim_slowdown = 0.95
+	wield_delay = 0.6 SECONDS
+	fire_sound = "sound/weapons/guns/fire/tl127.ogg"
+	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
+	unload_sound = 'sound/weapons/guns/interact/T42_unload.ogg'
+	reload_sound = 'sound/weapons/guns/interact/T42_reload.ogg'
+	default_ammo_type = /datum/ammo/bullet/smartmachineguncannon
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/standard_smartmachineguncannon)
+	attachable_allowed = list(
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/verticalgrip,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/bipod,
+		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/scope/mini,
+		/obj/item/attachable/motiondetector,
+		/obj/item/attachable/buildasentry,
+		/obj/item/attachable/stock/sgstock,
+		/obj/item/attachable/sgbarrel,
+		/obj/item/attachable/shoulder_mount,
+		/obj/item/weapon/gun/smg/standard_machinepistol,
+		/obj/item/attachable/stock/tactical,
+	)
+
+	flags_gun_features = GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY|GUN_IFF
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
+	starting_attachment_types = list(/obj/item/attachable/stock/sgstock, /obj/item/attachable/sgbarrel)
+	gun_skill_category = GUN_SKILL_SMARTGUN //Uses SG skill for the penalties.
+	attachable_offset = list("muzzle_x" = 42, "muzzle_y" = 17,"rail_x" = 15, "rail_y" = 21, "under_x" = 24, "under_y" = 14, "stock_x" = 12, "stock_y" = 13)
+	fire_delay = 0.15 SECONDS
+	damage_mult = 4
+	burst_amount = 0
+	accuracy_mult_unwielded = 0.5
+	accuracy_mult = 2
+	scatter = -5
+	scatter_unwielded = 40
+	movement_acc_penalty_mult = 4
+
+	placed_overlay_iconstate = "smartgun"
 /obj/item/weapon/gun/rifle/standard_smartmachinegun/pmc
 	starting_attachment_types = list(/obj/item/attachable/stock/sgstock, /obj/item/attachable/sgbarrel, /obj/item/attachable/magnetic_harness)
 
