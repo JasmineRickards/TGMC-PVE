@@ -222,6 +222,7 @@
 	. = ..()
 	new /obj/item/storage/firstaid/adv(loc)
 	new /obj/item/storage/firstaid/regular(loc)
+	new /obj/item/storage/pill_bottle/packet/russian_red(loc)
 	return INITIALIZE_HINT_QDEL
 
 /obj/effect/supply_drop/heavy_armor/Initialize()
