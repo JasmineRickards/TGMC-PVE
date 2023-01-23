@@ -14,6 +14,7 @@
 	icon_state = "captain"
 	desc = "It's good being the king."
 	item_state = "caphat"
+	species_exception = list(/datum/species/robot)
 	siemens_coefficient = 0.9
 	anti_hug = 1
 
@@ -22,6 +23,7 @@
 	name = "captain's cap"
 	desc = "You fear to wear it for the negligence it brings."
 	icon_state = "capcap"
+	species_exception = list(/datum/species/robot)
 	flags_inventory = NONE
 	flags_inv_hide = NONE
 	flags_armor_protection = NONE
@@ -54,6 +56,7 @@
 	name = "beret"
 	desc = "A beret, an artists favorite headwear."
 	icon_state = "beret"
+	species_exception = list(/datum/species/robot)
 	siemens_coefficient = 0.9
 	soft_armor = list(MELEE = 15, BULLET = 15, LASER = 15, ENERGY = 15, BOMB = 10, BIO = 5, FIRE = 5, ACID = 5)
 	flags_armor_features = ARMOR_NO_DECAP
@@ -113,6 +116,7 @@
 	name = "hat"
 	desc = "Someone who wears this will look very smart."
 	icon_state = "detective"
+	species_exception = list(/datum/species/robot)
 	allowed = list(/obj/item/reagent_containers/food/snacks/candy_corn, /obj/item/tool/pen)
 	soft_armor = list(MELEE = 50, BULLET = 5, LASER = 25, ENERGY = 10, BOMB = 0, BIO = 0, FIRE = 10, ACID = 10)
 	siemens_coefficient = 0.9
