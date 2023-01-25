@@ -447,13 +447,20 @@
 		/obj/item/weapon/combat_knife,
 	)
 
+/obj/item/clothing/suit/storage/marine/veteran/PMC/b
+	name = "\improper M4B pattern PMC armor"
+	icon_state = "pmc_armorb"
+	
 /obj/item/clothing/suit/storage/marine/veteran/PMC/leader
 	name = "\improper M4 pattern PMC leader armor"
 	desc = "A modification of the M4 body armor, it is designed for high-profile security operators and corporate mercenaries in mind. This particular suit looks like it belongs to a high-ranking officer."
 	icon_state = "officer_armor"
 	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 50, BIO = 50, FIRE = 50, ACID = 85)
 
-
+/obj/item/clothing/suit/storage/marine/veteran/PMC/leader/b
+	name = "\improper M4B pattern PMC leader armor"
+	icon_state = "officer_armorb"
+	
 /obj/item/clothing/suit/storage/marine/veteran/PMC/sniper
 	name = "\improper M4 pattern PMC sniper armor"
 	icon_state = "pmc_sniper"
@@ -461,13 +468,40 @@
 	flags_inventory = BLOCKSHARPOBJ
 	flags_inv_hide = HIDELOWHAIR
 
+/obj/item/clothing/suit/storage/marine/veteran/PMC/sniper/b
+	name = "\improper M4B pattern PMC sniper armor"
+	icon_state = "pmc_sniperb"
+
 /obj/item/clothing/suit/storage/marine/smartgunner/veteran/PMC
-	name = "\improper PMC gunner armor"
+	name = "\improper M4 PMC gunner armor"
 	desc = "A modification of the standard M4 body armor. Hooked up with harnesses and straps allowing the user to carry a smartgun."
 	icon_state = "pmc_heavyarmor"
 	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
 	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 50, BIO = 50, FIRE = 50, ACID = 85)
 	flags_item_map_variant = NONE
+	pockets = null
+	attachments_by_slot = list(
+		ATTACHMENT_SLOT_STORAGE,
+		ATTACHMENT_SLOT_MODULE,
+		ATTACHMENT_SLOT_BADGE,
+	)
+	attachments_allowed = list(
+	/obj/item/armor_module/module/better_shoulder_lamp,
+	/obj/item/armor_module/storage/general,
+	/obj/item/armor_module/storage/ammo_mag,
+	/obj/item/armor_module/storage/engineering,
+	/obj/item/armor_module/storage/medical,
+	/obj/item/armor_module/storage/medical/basic,
+	/obj/item/armor_module/storage/injector,
+	/obj/item/armor_module/storage/grenade,
+	/obj/item/armor_module/storage/integrated,
+	/obj/item/armor_module/armor/badge,
+	)
+	starting_attachments = list(/obj/item/armor_module/module/better_shoulder_lamp)
+
+/obj/item/clothing/suit/storage/marine/smartgunner/veteran/PMC/b
+	name = "\improper M4B PMC gunner armor"
+	icon_state = "pmc_heavyarmorb"
 
 /*===========================Death Commando============================*/
 /obj/item/clothing/suit/storage/marine/veteran/PMC/commando
@@ -670,7 +704,18 @@
 		ATTACHMENT_SLOT_STORAGE,
 		ATTACHMENT_SLOT_MODULE,
 	)
-	attachments_allowed = list(/obj/item/armor_module/module/better_shoulder_lamp)
+	attachments_allowed = list(
+	/obj/item/armor_module/module/better_shoulder_lamp,
+	/obj/item/armor_module/storage/general,
+	/obj/item/armor_module/storage/ammo_mag,
+	/obj/item/armor_module/storage/engineering,
+	/obj/item/armor_module/storage/medical,
+	/obj/item/armor_module/storage/medical/basic,
+	/obj/item/armor_module/storage/injector,
+	/obj/item/armor_module/storage/grenade,
+	/obj/item/armor_module/storage/integrated,
+	/obj/item/armor_module/armor/badge,
+	)
 	starting_attachments = list(/obj/item/armor_module/module/better_shoulder_lamp)
 
 /// Modified version of the armor for HvH combat. Stats are based on medium armor, with tyr mark 2.
@@ -726,7 +771,16 @@
 		ATTACHMENT_SLOT_MODULE,
 	)
 	attachments_allowed = list(
-		/obj/item/armor_module/module/better_shoulder_lamp,
+	/obj/item/armor_module/module/better_shoulder_lamp,
+	/obj/item/armor_module/storage/general,
+	/obj/item/armor_module/storage/ammo_mag,
+	/obj/item/armor_module/storage/engineering,
+	/obj/item/armor_module/storage/medical,
+	/obj/item/armor_module/storage/medical/basic,
+	/obj/item/armor_module/storage/injector,
+	/obj/item/armor_module/storage/grenade,
+	/obj/item/armor_module/storage/integrated,
+	/obj/item/armor_module/armor/badge,
 	)
 	starting_attachments = list(/obj/item/armor_module/module/better_shoulder_lamp)
 
