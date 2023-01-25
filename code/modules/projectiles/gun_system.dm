@@ -317,6 +317,8 @@
 	var/undeploy_time = 0
 	///If the gun is deployed, change the scatter amount by this number. Negative reduces scatter, positive adds.
 	var/deployed_scatter_change = 0
+	///If the gun should fire faster/slower when deployed
+	var/deployed_fire_delay = 0
 	///List of turf/objects/structures that will be ignored in the sentries targeting.
 	var/list/ignored_terrains
 	///Flags that the deployed sentry uses upon deployment.
@@ -1691,7 +1693,6 @@
 
 	if(. <= 0)
 		return 0
-
 
 /obj/item/weapon/gun/proc/simulate_recoil(recoil_bonus = 0, firing_angle)
 	if(CHECK_BITFIELD(flags_item, IS_DEPLOYED) || !gun_user)

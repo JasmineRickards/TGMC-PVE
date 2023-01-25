@@ -403,13 +403,14 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	reload_sound = 'sound/weapons/guns/interact/minigun_reload.ogg'
 	cocked_sound = 'sound/weapons/guns/interact/minigun_cocked.ogg'
 	default_ammo_type = null
-	allowed_ammo_types = list(/obj/item/ammo_magazine/minigun_powerpack)
+	allowed_ammo_types = list(/obj/item/ammo_magazine/minigun_powerpack,/obj/item/ammo_magazine/heavy_minigun)
 	w_class = WEIGHT_CLASS_HUGE
 	force = 20
 	wield_delay = 12
 	gun_skill_category = GUN_SKILL_FIREARMS
 	aim_slowdown = 0.8
-	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER
+	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER|IS_DEPLOYABLE
+	deployable_item = /obj/machinery/deployable/mounted
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
 	attachable_allowed = list(/obj/item/attachable/flashlight, /obj/item/attachable/magnetic_harness,/obj/item/attachable/lasersight)
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 10, "rail_y" = 21, "under_x" = 24, "under_y" = 14, "stock_x" = 24, "stock_y" = 12)
@@ -418,6 +419,8 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	aim_speed_modifier = 12
 
 	fire_delay = 0.05 SECONDS //It's a fucking minigun.
+	deployed_scatter_change = -70
+//	deployed_fire_delay_change = -0.01
 	windup_delay = 0.2 SECONDS
 	damage_mult = 1.15
 	windup_sound = 'sound/weapons/guns/fire/tank_minigun_start.ogg'

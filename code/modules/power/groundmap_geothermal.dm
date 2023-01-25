@@ -26,6 +26,29 @@
 	///whether they should generate corruption if corrupted
 	var/corruption_on = FALSE
 
+/obj/machinery/power/geothermal/backupgen
+	name = "\improper AC-12 power breaker"
+	icon = 'icons/turf/geothermal.dmi'
+	icon_state = "weld"
+	desc = "A device used to gradually activate a distant or closeby bank of reserve powercells or RTG power supplies."
+	anchored = TRUE
+	density = TRUE
+	resistance_flags = RESIST_ALL | DROPSHIP_IMMUNE
+	power_gen_percent = 0 //100,000W at full capacity
+	power_generation_max = 100000 //Full capacity
+	buildstate = GEOTHERMAL_NO_DAMAGE //What state of building it are we on, 0-3, 1 is "broken", the default
+	is_on = FALSE  //Is this damn thing on or what?
+	///% chance of failure each fail_tick check
+	fail_rate = 0
+	fail_check_ticks = 100 //Check for failure every this many ticks
+	cur_tick = 0 //Tick updater
+	///Hive it should be powering and whether it should be generating hive psycic points instead of power on process()
+//	var/corrupted = XENO_HIVE_NORMAL
+	///whether we wil allow these to be corrupted
+	is_corruptible = FALSE
+	///whether they should generate corruption if corrupted
+//	var/corruption_on = FALSE
+
 /obj/machinery/power/geothermal/Initialize()
 	. = ..()
 	RegisterSignal(SSdcs, list(COMSIG_GLOB_OPEN_TIMED_SHUTTERS_LATE, COMSIG_GLOB_OPEN_TIMED_SHUTTERS_XENO_HIVEMIND, COMSIG_GLOB_OPEN_SHUTTERS_EARLY, COMSIG_GLOB_TADPOLE_LAUNCHED), .proc/activate_corruption)

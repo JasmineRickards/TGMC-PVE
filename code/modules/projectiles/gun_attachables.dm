@@ -447,7 +447,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	pixel_shift_x = 17
 	pixel_shift_y = 13
 	ammo_mod = /datum/ammo/energy/lasgun/M43/overcharge
-	damage_mod = -1.2
+	damage_mod = 1.4
 
 /obj/item/attachable/widelens
 	name = "M43 wide lens"
@@ -457,7 +457,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	pixel_shift_x = 18
 	pixel_shift_y = 15
 	ammo_mod = /datum/ammo/energy/lasgun/M43/blast
-	damage_mod = -0.15
+//	damage_mod = -0.15
 
 /obj/item/attachable/heatlens
 	name = "M43 heat lens"
@@ -467,7 +467,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	pixel_shift_x = 18
 	pixel_shift_y = 16
 	ammo_mod = /datum/ammo/energy/lasgun/M43/heat
-	damage_mod = -0.15
+//	damage_mod = -0.15
 
 /obj/item/attachable/efflens
 	name = "M43 efficient lens"
@@ -476,7 +476,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	icon_state = "efficient"
 	pixel_shift_x = 18
 	pixel_shift_y = 14
-	charge_mod = -12
+//	charge_mod = -12
 
 /obj/item/attachable/sx16barrel
 	name = "SX-16 barrel"
@@ -492,7 +492,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	icon_state = "pulse"
 	pixel_shift_x = 18
 	pixel_shift_y = 15
-	damage_mod = -0.15
+//	damage_mod = -0.15
 	gun_firemode_list_mod = list(GUN_FIREMODE_AUTOMATIC)
 
 /obj/item/attachable/sgbarrel

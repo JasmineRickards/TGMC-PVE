@@ -457,9 +457,15 @@ WEAPONS
 	cost = MINIGUN_PRICE
 
 /datum/supply_packs/weapons/minigun
-	name = "Minigun Powerpack"
+	name = "Minigun MG-100 Powerpack"
 	contains = list(/obj/item/ammo_magazine/minigun_powerpack)
 	cost = 5
+
+/datum/supply_packs/weapons/minigun_ammo
+	name = "Mounted Minigun/MG-100 box Vindicator ammo"
+	contains = list(/obj/item/ammo_magazine/heavy_minigun)
+	cost = 3
+	containertype = /obj/structure/closet/crate/ammo
 
 /datum/supply_packs/weapons/mmg
 	name = "MG-27 Medium Machinegun"
@@ -1789,7 +1795,7 @@ VEHICLES
 	containertype = /obj/structure/closet/crate/ammo
 
 /datum/supply_packs/vehicles/minigun_ammo
-	name = "Mounted Minigun ammo"
+	name = "Mounted Minigun/MG-100 Vindicator ammo"
 	contains = list(/obj/item/ammo_magazine/heavy_minigun)
 	cost = 3
 	containertype = /obj/structure/closet/crate/ammo

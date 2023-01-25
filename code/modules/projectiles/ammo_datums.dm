@@ -773,6 +773,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	damage = 100
 	penetration = 20
 	sundering = 7.5
+	on_pierce_multiplier = 0.4
 
 datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
 	staggerstun(M, P, weaken = 1, stagger = 3, knockback = 0, slowdown = 3)
@@ -827,6 +828,7 @@ datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
 	damage_falloff = 0.5
 	penetration = 15
 	sundering = 7
+	on_pierce_multiplier = 0.4
 
 /datum/ammo/bullet/shotgun/flechette_spread
 	name = "additional flechette"
@@ -839,6 +841,7 @@ datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
 	damage_falloff = 1
 	penetration = 25
 	sundering = 5
+	on_pierce_multiplier = 0.4
 
 /datum/ammo/bullet/shotgun/buckshot
 	name = "shotgun buckshot shell"
@@ -918,6 +921,7 @@ datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
 	damage = 15
 	damage_falloff = 0.5
 	penetration = 15
+	on_pierce_multiplier = 0.4
 
 /datum/ammo/bullet/shotgun/sx16_flechette/spread
 	name = "additional flechette"
@@ -928,6 +932,7 @@ datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
 	damage = 15
 	damage_falloff = 0.5
 	penetration = 15
+	on_pierce_multiplier = 0.4
 
 /datum/ammo/bullet/shotgun/sx16_slug
 	name = "shotgun slug"
@@ -937,6 +942,7 @@ datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
 	max_range = 15
 	damage = 40
 	penetration = 20
+	on_pierce_multiplier = 0.4
 
 datum/ammo/bullet/shotgun/sx16_slug/on_hit_mob(mob/M, obj/projectile/P)
 	staggerstun(M, P, stagger = 1, slowdown = 1, knockback = 0)
@@ -955,6 +961,7 @@ datum/ammo/bullet/shotgun/sx16_slug/on_hit_mob(mob/M, obj/projectile/P)
 	damage_falloff = 0.25
 	penetration = 15
 	sundering = 1.5
+	on_pierce_multiplier = 0.4
 
 /datum/ammo/bullet/shotgun/tx15_flechette/spread
 	name = "additional flechette"
@@ -963,6 +970,7 @@ datum/ammo/bullet/shotgun/sx16_slug/on_hit_mob(mob/M, obj/projectile/P)
 	damage = 17
 	damage_falloff = 0.25
 	penetration = 15
+	on_pierce_multiplier = 0.4
 
 /datum/ammo/bullet/shotgun/tx15_slug
 	name = "shotgun slug"
@@ -974,6 +982,7 @@ datum/ammo/bullet/shotgun/sx16_slug/on_hit_mob(mob/M, obj/projectile/P)
 	damage = 60
 	penetration = 30
 	sundering = 3.5
+	on_pierce_multiplier = 0.4
 
 datum/ammo/bullet/shotgun/tx15_slug/on_hit_mob(mob/M, obj/projectile/P)
 	staggerstun(M, P, stagger = 1, slowdown = 2, knockback = 0)
@@ -1199,6 +1208,7 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	damage = 35
 	penetration = 15
 	sundering = 6
+	on_pierce_multiplier = 0.4
 
 /datum/ammo/bullet/smartmachineguncannon
 	name = "Smart cannon round"
@@ -1210,6 +1220,7 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	damage = 35
 	penetration = 15
 	sundering =15
+	on_pierce_multiplier = 0.4
 
 /datum/ammo/bullet/smart_minigun
 	name = "smartminigun bullet"
@@ -1222,6 +1233,7 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	penetration = 25
 	sundering = 4
 	damage_falloff = 0.1
+	on_pierce_multiplier = 0.4
 
 /datum/ammo/bullet/turret
 	name = "autocannon bullet"
@@ -1327,7 +1339,7 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	penetration = 100
 	sundering = 20
 	bullet_color = COLOR_PULSE_BLUE
-	on_pierce_multiplier = 0.85
+	on_pierce_multiplier = 1
 
 /datum/ammo/bullet/railgun/on_hit_mob(mob/M, obj/projectile/P)
 	staggerstun(M, P, weaken = 1, stagger = 3, slowdown = 2, knockback = 2, shake = 0)
@@ -1364,7 +1376,7 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	penetration = 100
 	sundering = 20
 	bullet_color = COLOR_PULSE_BLUE
-	on_pierce_multiplier = 0.85
+	on_pierce_multiplier = 1
 
 /datum/ammo/tx54
 	name = "20mm airburst grenade"
