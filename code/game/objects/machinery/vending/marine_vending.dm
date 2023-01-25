@@ -1455,13 +1455,20 @@
 
 		"Nanotrasen" = list(
 			/obj/item/clothing/suit/storage/marine/veteran/PMC = -1,
+			/obj/item/clothing/suit/storage/marine/veteran/PMC/b = -1,
 			/obj/item/clothing/suit/storage/marine/veteran/PMC/leader = -1,
+			/obj/item/clothing/suit/storage/marine/veteran/PMC/leader/b = -1,
 			/obj/item/clothing/suit/storage/marine/veteran/PMC/sniper = -1,
+			/obj/item/clothing/suit/storage/marine/veteran/PMC/sniper/b = -1,
 			/obj/item/clothing/suit/storage/marine/smartgunner/veteran/PMC = -1,
+			/obj/item/clothing/suit/storage/marine/smartgunner/veteran/PMC/b = -1,
 			/obj/item/clothing/head/helmet/marine/veteran/PMC = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/PMC/b = -1,
 			/obj/item/clothing/head/helmet/marine/veteran/PMC/leader = -1,
 			/obj/item/clothing/head/helmet/marine/veteran/PMC/sniper = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/PMC/sniper/b = -1,
 			/obj/item/clothing/head/helmet/marine/veteran/PMC/gunner = -1,
+			/obj/item/clothing/head/helmet/marine/veteran/PMC/gunner/b = -1,
 			/obj/item/clothing/under/marine/veteran/PMC/commando/vendor = -1,
 		),
 		"Mercenary" = list(

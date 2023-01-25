@@ -453,6 +453,10 @@
 	flags_inv_hide = NONE
 	flags_marine_helmet = NONE
 
+/obj/item/clothing/head/helmet/marine/veteran/PMC/b
+	name = "\improper PMC tactical cap"
+	icon_state = "pmc_helmetb"
+
 /obj/item/clothing/head/helmet/marine/veteran/PMC/leader
 	name = "\improper PMC beret"
 	desc = "The pinacle of fashion for any aspiring mercenary leader. Designed to protect the head from light impacts."
@@ -469,6 +473,10 @@
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
 	flags_marine_helmet = HELMET_DAMAGE_OVERLAY
 
+/obj/item/clothing/head/helmet/marine/veteran/PMC/sniper/b
+	name = "\improper PMC M4-S helmet"
+	icon_state = "pmc_sniper_hatb"
+
 /obj/item/clothing/head/helmet/marine/veteran/PMC/gunner
 	name = "\improper PMC gunner helmet"
 	desc = "A modification of the standard helmet used by a lot of security firms, has a visor for added protection."
@@ -478,6 +486,10 @@
 	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
 	flags_marine_helmet = HELMET_DAMAGE_OVERLAY
+
+/obj/item/clothing/head/helmet/marine/veteran/PMC/gunner/b
+	name = "\improper PMC M4-G helmet"
+	icon_state = "pmc_heavyhelmetb"
 
 /obj/item/clothing/head/helmet/marine/veteran/PMC/commando
 	name = "\improper PMC commando helmet"
