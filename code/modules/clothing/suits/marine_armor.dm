@@ -450,16 +450,17 @@
 /obj/item/clothing/suit/storage/marine/veteran/PMC/b
 	name = "\improper M4B pattern PMC armor"
 	icon_state = "pmc_armorb"
+	
 /obj/item/clothing/suit/storage/marine/veteran/PMC/leader
 	name = "\improper M4 pattern PMC leader armor"
 	desc = "A modification of the M4 body armor, it is designed for high-profile security operators and corporate mercenaries in mind. This particular suit looks like it belongs to a high-ranking officer."
 	icon_state = "officer_armor"
 	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 50, BIO = 50, FIRE = 50, ACID = 85)
 
-
 /obj/item/clothing/suit/storage/marine/veteran/PMC/leader/b
 	name = "\improper M4B pattern PMC leader armor"
 	icon_state = "officer_armorb"
+	
 /obj/item/clothing/suit/storage/marine/veteran/PMC/sniper
 	name = "\improper M4 pattern PMC sniper armor"
 	icon_state = "pmc_sniper"
