@@ -565,6 +565,8 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	penetration = 5
 
 /datum/ammo/bullet/smg/ap
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
+	on_pierce_multiplier = 0.2
 	name = "armor-piercing submachinegun bullet"
 	hud_state = "smg_ap"
 	damage = 15
@@ -603,9 +605,11 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 0.5
 
 /datum/ammo/bullet/rifle/ap
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
 	name = "armor-piercing rifle bullet"
 	hud_state = "rifle_ap"
-	damage = 20
+	on_pierce_multiplier = 0.2
+	damage = 25
 	penetration = 30
 	sundering = 3
 
@@ -662,7 +666,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	damage_falloff = 0
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
 	accurate_range = 15
-	accurate_range_min = 6
+//	accurate_range_min = 6
 	damage = 70
 	penetration = 20
 	sundering = 10
@@ -702,7 +706,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	damage_falloff = 0.5
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
 	accurate_range = 25
-	accurate_range_min = 6
+//	accurate_range_min = 6
 	max_range = 40
 	damage = 65
 	penetration = 15
@@ -1090,8 +1094,9 @@ datum/ammo/bullet/shotgun/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	hud_state = "sniper"
 	hud_state_empty = "sniper_empty"
 	damage_falloff = 0
-	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SNIPER|AMMO_SUNDERING
-	accurate_range_min = 7
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SNIPER|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
+	on_pierce_multiplier = 0.5
+//	accurate_range_min = 7
 	shell_speed = 4
 	accurate_range = 30
 	max_range = 40
@@ -1148,7 +1153,7 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 /datum/ammo/bullet/sniper/elite
 	name = "supersonic sniper bullet"
 	hud_state = "sniper_supersonic"
-	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
 	accuracy = 20
 	damage = 100
 	penetration = 60
@@ -2429,7 +2434,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	hud_state = "laser_sniper"
 	damage = 60
 	penetration = 30
-	accurate_range_min = 5
+//	accurate_range_min = 5
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING|AMMO_HITSCAN|AMMO_SNIPER
 	sundering = 4
 	max_range = 40
@@ -2443,7 +2448,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	shell_speed = 2.5
 	damage = 40
 	penetration = 0
-	accurate_range_min = 5
+//	accurate_range_min = 5
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_SUNDERING|AMMO_HITSCAN|AMMO_SNIPER
 	sundering = 1
 	hitscan_effect_icon = "u_laser_beam"

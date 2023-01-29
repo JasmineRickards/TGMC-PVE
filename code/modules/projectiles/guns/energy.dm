@@ -182,6 +182,7 @@
 		/obj/item/cell/lasgun/lasrifle,
 		)
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC,GUN_FIREMODE_SEMIAUTO)
 	ammo_diff = null
 	rounds_per_shot = ENERGY_STANDARD_AMMO_COST
 	attachable_allowed = list(

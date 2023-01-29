@@ -41,6 +41,7 @@
 	qdel(src)
 
 /obj/item/loot_box/marine
+	rolls = 2
 	legendary_list = list(
 		/obj/item/weapon/karambit,
 		/obj/item/weapon/karambit/fade,

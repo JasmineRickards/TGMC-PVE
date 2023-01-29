@@ -84,7 +84,7 @@
 /obj/item/ammo_magazine/heavy_minigun
 	name = "MG-2005 box magazine (7.62x51mm)"
 	desc = "A box of 2000 rounds for the MG-2005 mounted minigun."
-	w_class = WEIGHT_CLASS_BULKY
+	w_class = WEIGHT_CLASS_NORMAL
 	icon = 'icons/obj/items/ammo.dmi'
 	icon_state = "minigun"
 	flags_magazine = NONE

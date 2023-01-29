@@ -68,7 +68,7 @@
 		return
 	if(windup_delay && windup_checked == WEAPON_WINDUP_NOT_CHECKED)
 		windup_checked = WEAPON_WINDUP_CHECKING
-		playsound(chassis.loc, windup_sound, 30, TRUE)
+		playsound(chassis.loc, windup_sound, 60, TRUE)
 		if(!do_after(source, windup_delay, TRUE, chassis, BUSY_ICON_DANGER, BUSY_ICON_DANGER, extra_checks = CALLBACK(src, .proc/do_after_checks, current_target)))
 			windup_checked = WEAPON_WINDUP_NOT_CHECKED
 			return
@@ -169,7 +169,7 @@
 	apply_weapon_modifiers(projectile_to_fire, current_firer)
 	var/firing_angle = get_angle_with_scatter(chassis, current_target, projectile_to_fire.scatter, projectile_to_fire.p_x, projectile_to_fire.p_y)
 
-	playsound(chassis, fire_sound, 25, TRUE)
+	playsound(chassis, fire_sound, 86, TRUE)
 	projectile_to_fire.fire_at(current_target, chassis, null, projectile_to_fire.ammo.max_range, projectile_to_fire.projectile_speed, firing_angle, suppress_light = HAS_TRAIT(src, TRAIT_GUN_SILENCED))
 
 	chassis.use_power(energy_drain)

@@ -253,6 +253,7 @@
 
 	burst_amount = 4
 	accuracy_mult = 1.1
+	damage_mult = 2
 	accuracy_mult_unwielded = 1
 	damage_mult = 2
 	aim_slowdown = 0

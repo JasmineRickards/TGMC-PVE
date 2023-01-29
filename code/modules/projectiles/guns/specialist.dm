@@ -259,6 +259,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	damage_mult = 3
 	accuracy_mult = 1.2
 	scatter = 3
+	damage_mult = 2
 	recoil = 5
 	burst_amount = 1
 	movement_acc_penalty_mult = 7
@@ -473,9 +474,9 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 /obj/item/weapon/gun/minigun/smart_minigunbulk
 	name = "\improper SG-86 smart heavy duty handheld gatling gun"
 	desc = "A true monster of providing supportive suppresing fire, the SG-85 is the TGMC's newest IFF-capable weapon. Boasting an integrated barrel charger in each barrel, alongside patented rail round assistance. It is chambered in 10x26 caseless."
-	icon_state = "minigun_sg"
-	item_state = "minigun_sg"
-	fire_animation = "minigun_sg_fire"
+	icon_state = "minigun_sg86"
+	item_state = "minigun_sg86"
+	fire_animation = "minigun_sg86_fire"
 	max_shells = 1000 //codex
 	caliber = CALIBER_10x26_CASELESS //codex
 	allowed_ammo_types = list(/obj/item/ammo_magazine/minigun_powerpack/smartgun)

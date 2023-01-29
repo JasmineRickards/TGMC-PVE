@@ -196,6 +196,12 @@ WEAPONS
 	)
 	cost = 25
 
+/datum/supply_packs/weapons/shouldergun
+	name = "Shoulder attatchment point"
+	contains = list(
+		/obj/item/attachable/shoulder_mount,
+	)
+	cost = 25
 
 /datum/supply_packs/weapons/m56d_emplacement
 	name = "HSG-102 Mounted Heavy Smartgun"
@@ -1271,6 +1277,16 @@ Imports
 	group = "Imports"
 	containertype = /obj/structure/closet/crate/weapon
 
+/datum/supply_packs/imports/sniperelite //(haha, punny)
+	name = "SR-42 anti-tank sniper rifle"
+	contains = list(/obj/item/weapon/gun/rifle/sniper/elite)
+	cost = 45
+
+/datum/supply_packs/imports/snipereliteammo //(haha, punny)
+	name = "SR-42 anti-tank sniper rifle"
+	contains = list(/obj/item/ammo_magazine/sniper/elite = 3)
+	cost = 5
+
 /datum/supply_packs/imports/m412e
 	name = "PR-412B2 Commando Rifle"
 	contains = list(/obj/item/weapon/gun/rifle/m412/elite)
@@ -1279,7 +1295,7 @@ Imports
 /datum/supply_packs/imports/m412/AP_ammo
 	name = "PR-412 Pulse Rifle Armor Piercing Ammo"
 	contains = list(/obj/item/ammo_magazine/rifle/ap = 10)
-	cost = 1
+	cost = 3
 
 /datum/supply_packs/imports/m412/INC_ammo
 	name = "PR-412 Pulse Rifle Incendiary Ammo"
@@ -1289,7 +1305,7 @@ Imports
 /datum/supply_packs/imports/m412/AP_ammoboxes
 	name = "10x24mm Caseless Armor Piercing Ammoboxes"
 	contains = list(/obj/item/ammo_magazine/packet/p10x24mm/ap = 6)
-	cost = 5
+	cost = 25
 
 /datum/supply_packs/imports/m412/INC_ammoboxes
 	name = "10x24mm Caseless Incendiary Ammoboxes"
@@ -1304,12 +1320,12 @@ Imports
 /datum/supply_packs/imports/smg25/AP_ammo
 	name = "SMG-25 Armor Piercing Ammo"
 	contains = list(/obj/item/ammo_magazine/rifle/ap = 10)
-	cost = 1
+	cost = 2
 
 /datum/supply_packs/imports/smg25/AP_ammoboxes
 	name = "10x20mm Caseless Armor Piercing Ammoboxes"
 	contains = list(/obj/item/ammo_magazine/packet/p10x20mm/AP = 6)
-	cost = 5
+	cost = 8
 
 /datum/supply_packs/imports/m43
 	name = "M43 Imperial Lasrifle"
