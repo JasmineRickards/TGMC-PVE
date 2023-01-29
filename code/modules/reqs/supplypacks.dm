@@ -1311,7 +1311,21 @@ Imports
 	contains = list(/obj/item/ammo_magazine/packet/p10x20mm/AP = 6)
 	cost = 5
 
-/datum/supply_packs/imports/mp7
+/datum/supply_packs/imports/m43
+	name = "M43 Imperial Lasrifle"
+	contains = list(/obj/item/weapon/gun/energy/lasgun/M43)
+	cost = 35
+
+/datum/supply_packs/imports/m43focuslens
+	name = "M43 Focusing lense"
+	contains = list(/obj/item/attachable/focuslens)
+	cost = 35
+
+/datum/supply_packs/imports/m43scatterlense
+	name = "M43 Wide scattering lense"
+	contains = list(/obj/item/attachable/widelens)
+	cost = 45
+/*/datum/supply_packs/imports/mp7
 	name = "SMG-27 SMG"
 	contains = list(/obj/item/weapon/gun/smg/mp7)
 	cost = 5
@@ -1356,7 +1370,7 @@ Imports
 	contains = list(/obj/item/weapon/gun/shotgun/double/sawn)
 	cost = 15
 	available_against_xeno_only = TRUE
-
+*/
 /datum/supply_packs/imports/leveraction
 	name = "Lever Action Rifle"
 	contains = list(/obj/item/weapon/gun/shotgun/pump/lever)
@@ -1407,7 +1421,7 @@ Imports
 	contains = list(/obj/item/ammo_magazine/sniper/svd)
 	cost = 5
 	available_against_xeno_only = TRUE
-
+/*
 /datum/supply_packs/imports/mpi_km
 	name = "MPi-KM Assault Rifle"
 	contains = list(/obj/item/weapon/gun/rifle/mpi_km)
@@ -1492,7 +1506,7 @@ Imports
 	name = "P-22 Handgun Ammo"
 	contains = list(/obj/item/ammo_magazine/pistol/g22)
 	cost = 1
-
+*/
 /datum/supply_packs/imports/deagle
 	name = "Desert Eagle Handgun"
 	contains = list(/obj/item/weapon/gun/pistol/heavy)

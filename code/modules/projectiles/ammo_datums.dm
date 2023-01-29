@@ -644,7 +644,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/rifle/machinegun
 	name = "machinegun bullet"
 	hud_state = "rifle_heavy"
-	damage = 20
+	damage = 25
 	penetration = 10
 
 /datum/ammo/bullet/rifle/som_machinegun

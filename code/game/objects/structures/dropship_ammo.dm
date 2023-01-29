@@ -13,7 +13,7 @@
 	resistance_flags = XENO_DAMAGEABLE
 	coverage = 20
 	///Time before the ammo impacts
-	var/travelling_time = 10 SECONDS
+	var/travelling_time = 1 SECONDS
 	///type of equipment that accept this type of ammo.
 	var/equipment_type
 	var/ammo_count
@@ -206,12 +206,12 @@
 	icon_state = "30mm_crate"
 	desc = "A crate full of 30mm bullets used on the dropship heavy guns. Moving this will require some sort of lifter."
 	equipment_type = /obj/structure/dropship_equipment/weapon/heavygun
-	travelling_time =  6 SECONDS
-	ammo_count = 200
-	max_ammo_count = 200
+	travelling_time =  1 SECONDS
+	ammo_count = 400
+	max_ammo_count = 400
 	transferable_ammo = TRUE
 	ammo_used_per_firing = 20
-	point_cost = 25
+	point_cost = 15
 	///Radius of the square that the bullets will strafe
 	var/bullet_spread_range = 2
 	///Width of the square we are attacking, so you can make rectangular attacks later
@@ -267,7 +267,7 @@
 	name = "high-velocity 30mm ammo crate"
 	icon_state = "30mm_crate_hv"
 	desc = "A crate full of 30mm high-velocity bullets used on the dropship heavy guns. Moving this will require some sort of lifter."
-	travelling_time = 3 SECONDS
+	travelling_time = 1 SECONDS
 	point_cost = 50
 
 
@@ -315,9 +315,9 @@
 	name = "high-capacity laser battery"
 	icon_state = "laser_battery"
 	desc = "A high-capacity laser battery used to power laser beam weapons. Moving this will require some sort of lifter."
-	travelling_time = 1 SECONDS
-	ammo_count = 100
-	max_ammo_count = 100
+	travelling_time = 0.3 SECONDS
+	ammo_count = 200
+	max_ammo_count = 200
 	ammo_used_per_firing = 40
 	equipment_type = /obj/structure/dropship_equipment/weapon/laser_beam_gun
 	ammo_name = "charge"
@@ -364,7 +364,7 @@
 /obj/structure/ship_ammo/laser_battery/proc/laser_burn(turf/T)
 	playsound(T, 'sound/effects/pred_vision.ogg', 30, 1)
 	for(var/mob/living/L in T)
-		L.adjustFireLoss(120)
+		L.adjustFireLoss(320)
 		L.adjust_fire_stacks(20)
 		L.IgniteMob()
 	T.ignite(5, 30) //short but intense
@@ -383,7 +383,7 @@
 	ammo_id = ""
 	bound_width = 64
 	bound_height = 32
-	travelling_time = 4 SECONDS
+	travelling_time = 1 SECONDS
 	point_cost = 0
 	ammo_type = CAS_MISSILE
 
@@ -396,7 +396,7 @@
 	name = "\improper AIM-224 'Widowmaker'"
 	desc = "The AIM-224 is the latest in air to air missile technology. Earning the nickname of 'Widowmaker' from various dropship pilots after improvements to its guidence warhead prevents it from being jammed leading to its high kill rate. Not well suited for ground bombardment, but its high velocity makes it reach its target quickly. Moving this will require some sort of lifter."
 	icon_state = "single"
-	travelling_time = 3 SECONDS //not powerful, but reaches target fast
+	travelling_time = 1 SECONDS //not powerful, but reaches target fast
 	ammo_id = ""
 	point_cost = 25
 	devastating_explosion_range = 2
@@ -511,11 +511,11 @@
 	ammo_count = 6
 	max_ammo_count = 6
 	ammo_name = "minirocket"
-	travelling_time = 4 SECONDS
+	travelling_time = 1 SECONDS
 	transferable_ammo = TRUE
 	point_cost = 25
 	ammo_type = CAS_MINI_ROCKET
-	devastating_explosion_range = 0
+	devastating_explosion_range = 1
 	heavy_explosion_range = 2
 	light_explosion_range = 4
 	prediction_type = CAS_AMMO_EXPLOSIVE

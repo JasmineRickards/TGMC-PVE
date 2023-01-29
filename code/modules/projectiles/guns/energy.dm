@@ -172,7 +172,7 @@
 	force = 20 //Large and hefty! Includes stock bonus.
 	icon_state = "m43"
 	item_state = "m43"
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.13 SECONDS
 	max_shots = 50 //codex stuff
 	load_method = CELL //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/M43
@@ -181,6 +181,7 @@
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
 		)
+	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	ammo_diff = null
 	rounds_per_shot = ENERGY_STANDARD_AMMO_COST
 	attachable_allowed = list(
@@ -214,8 +215,8 @@
 	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18,"rail_x" = 12, "rail_y" = 23, "under_x" = 23, "under_y" = 15, "stock_x" = 22, "stock_y" = 12)
 	ammo_level_icon = "m43"
 	accuracy_mult_unwielded = 0.5 //Heavy and unwieldy; you don't one hand this.
-	scatter_unwielded = 100 //Heavy and unwieldy; you don't one hand this.
-	damage_falloff_mult = 0.25
+	scatter_unwielded = 2 //Heavy and unwieldy; you don't one hand this.
+	damage_falloff_mult = 0.1
 
 //variant without ugl attachment
 /obj/item/weapon/gun/energy/lasgun/M43/stripped
@@ -236,6 +237,7 @@
 	unload_sound = 'sound/weapons/guns/interact/m41a_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/m4ra_reload.ogg'
 	max_shots = 100//codex stuff
+	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	load_method = CELL //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/pulsebolt
 	muzzleflash_iconstate = "muzzle_flash_pulse"
