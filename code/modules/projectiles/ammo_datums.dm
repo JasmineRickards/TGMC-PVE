@@ -767,7 +767,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "shotgun slug"
 	handful_icon_state = "shotgun slug"
 	hud_state = "shotgun_slug"
-	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
 	shell_speed = 3
 	max_range = 15
 	damage = 100
@@ -817,7 +817,7 @@ datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
 	handful_icon_state = "shotgun flechette shell"
 	icon_state = "flechette"
 	hud_state = "shotgun_flechette"
-	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/flechette_spread
 	bonus_projectiles_amount = 2
 	bonus_projectiles_scatter = 3
@@ -833,7 +833,7 @@ datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
 /datum/ammo/bullet/shotgun/flechette_spread
 	name = "additional flechette"
 	icon_state = "flechette"
-	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
 	accuracy_var_low = 8
 	accuracy_var_high = 8
 	max_range = 15
@@ -952,7 +952,7 @@ datum/ammo/bullet/shotgun/sx16_slug/on_hit_mob(mob/M, obj/projectile/P)
 	handful_icon_state = "shotgun flechette shell"
 	icon_state = "flechette"
 	hud_state = "shotgun_flechette"
-	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/tx15_flechette/spread
 	bonus_projectiles_amount = 4
 	bonus_projectiles_scatter = 2
@@ -976,13 +976,13 @@ datum/ammo/bullet/shotgun/sx16_slug/on_hit_mob(mob/M, obj/projectile/P)
 	name = "shotgun slug"
 	handful_icon_state = "shotgun slug"
 	hud_state = "shotgun_slug"
-	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
 	shell_speed = 3
 	max_range = 15
 	damage = 60
 	penetration = 30
 	sundering = 3.5
-	on_pierce_multiplier = 0.4
+	on_pierce_multiplier = 0.6
 
 datum/ammo/bullet/shotgun/tx15_slug/on_hit_mob(mob/M, obj/projectile/P)
 	staggerstun(M, P, stagger = 1, slowdown = 2, knockback = 0)
@@ -1136,10 +1136,11 @@ datum/ammo/bullet/shotgun/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	handful_icon_state = "crude heavy sniper bullet"
 	hud_state = "sniper_crude"
 	handful_amount = 5
-	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
 	damage = 120
 	penetration = 40
 	sundering = 20
+	on_pierce_multiplier = 0.6
 
 datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	staggerstun(M, P, weaken = 1, stagger = 1, knockback = 2, slowdown = 0.5, max_range = 5)
@@ -1203,7 +1204,7 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	icon_state = "redbullet" //Red bullets to indicate friendly fire restriction
 	hud_state = "smartgun"
 	hud_state_empty = "smartgun_empty"
-	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
 	accurate_range = 12
 	damage = 35
 	penetration = 15
@@ -1215,12 +1216,12 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	icon_state = "redbullet" //Red bullets to indicate friendly fire restriction
 	hud_state = "smartgun"
 	hud_state_empty = "smartgun_empty"
-	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
 	accurate_range = 12
 	damage = 35
 	penetration = 15
 	sundering =15
-	on_pierce_multiplier = 0.4
+	on_pierce_multiplier = 0.8
 
 /datum/ammo/bullet/smart_minigun
 	name = "smartminigun bullet"
