@@ -495,6 +495,7 @@
 	return TRUE
 
 /obj/machinery/deployable/mounted/sentry/buildasentry
+	density = FALSE
 	name = "broken build-a-sentry"
 	desc = "You should not be seeing this unless a mapper, coder or admin screwed up."
 
