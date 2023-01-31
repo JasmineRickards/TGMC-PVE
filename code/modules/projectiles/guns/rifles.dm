@@ -1181,6 +1181,7 @@
 	placed_overlay_iconstate = "smartgun"
 
 /obj/item/weapon/gun/rifle/standard_smartautocannon
+	fire_animation = "minigun_sg30_fire"
 	icon = 'icons/marine/gun64.dmi'
 	name = "\improper SG-30 Pierkarp cannon"
 	desc = "The Raummetall-KT SG-30 is the TGMC's current high power IFF-capable heavy machinegun. It's known for its ability to lay down heavy fire support very well. It is generally used when someone wants to hold a position or provide fire support. Requires special training and it cannot turn off IFF. It uses 10x85mm ammunition."
