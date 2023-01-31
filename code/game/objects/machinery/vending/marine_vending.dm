@@ -1498,6 +1498,8 @@
 			/obj/item/clothing/head/helmet/swat = -1,
 			/obj/item/clothing/suit/armor/swat/officer = -1,
 			/obj/item/clothing/suit/armor/swat = -1,
+			/obj/item/clothing/head/helmet/space/deathsquad/beret = -1,
+			/obj/item/clothing/head/helmet/space/deathsquad = -1,
 			/obj/item/clothing/head/militia = -1,
 			/obj/item/clothing/suit/storage/faction/militia = 1,
 		),

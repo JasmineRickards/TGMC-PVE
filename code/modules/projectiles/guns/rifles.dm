@@ -1181,10 +1181,11 @@
 	placed_overlay_iconstate = "smartgun"
 
 /obj/item/weapon/gun/rifle/standard_smartautocannon
+	icon = 'icons/marine/gun64.dmi'
 	name = "\improper SG-30 Pierkarp cannon"
 	desc = "The Raummetall-KT SG-30 is the TGMC's current high power IFF-capable heavy machinegun. It's known for its ability to lay down heavy fire support very well. It is generally used when someone wants to hold a position or provide fire support. Requires special training and it cannot turn off IFF. It uses 10x85mm ammunition."
-	icon_state = "sg29"
-	item_state = "sg29"
+	icon_state = "minigun_sg30"
+	item_state = "minigun_sg30"
 	caliber = CALIBER_10x30_CASELESS //codex
 //	max_shells = 300 //codex
 	force = 45
@@ -1216,7 +1217,7 @@
 
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY|GUN_IFF
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
-	starting_attachment_types = list(/obj/item/attachable/stock/sgstock, /obj/item/attachable/sgbarrel)
+//	starting_attachment_types = list(/obj/item/attachable/stock/sgstock, /obj/item/attachable/sgbarrel)
 	gun_skill_category = GUN_SKILL_SMARTGUN //Uses SG skill for the penalties.
 	attachable_offset = list("muzzle_x" = 42, "muzzle_y" = 17,"rail_x" = 15, "rail_y" = 21, "under_x" = 24, "under_y" = 14, "stock_x" = 12, "stock_y" = 13)
 	fire_delay = 0.15 SECONDS

@@ -257,7 +257,7 @@
 	name = "\improper SG-30 drum magazine"
 	desc = "A wide drum magazine carefully filled to capacity with 10x85mm specialized smart rounds."
 	caliber = CALIBER_10x30_CASELESS
-	icon_state = "sg29"
+	icon_state = "sg30ammo"
 	w_class = WEIGHT_CLASS_NORMAL
 	default_ammo = /datum/ammo/bullet/smartmachineguncannon
 	max_rounds = 250

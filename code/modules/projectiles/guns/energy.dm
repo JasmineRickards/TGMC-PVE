@@ -216,7 +216,7 @@
 	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18,"rail_x" = 12, "rail_y" = 23, "under_x" = 23, "under_y" = 15, "stock_x" = 22, "stock_y" = 12)
 	ammo_level_icon = "m43"
 	accuracy_mult_unwielded = 0.5 //Heavy and unwieldy; you don't one hand this.
-	scatter_unwielded = 2 //Heavy and unwieldy; you don't one hand this.
+	scatter_unwielded = 5 //Heavy and unwieldy; you don't one hand this.
 	damage_falloff_mult = 0.1
 
 //variant without ugl attachment
@@ -294,10 +294,6 @@
 	rounds_per_shot = 12
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
-	allowed_ammo_types = list(
-		/obj/item/cell/lasgun/lasrifle,
-		/obj/item/cell/lasgun/volkite/powerpack,
-		)
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
 		/obj/item/attachable/bayonetknife,
