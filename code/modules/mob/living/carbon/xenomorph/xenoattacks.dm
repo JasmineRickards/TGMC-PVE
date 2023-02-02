@@ -129,3 +129,64 @@
 			X.do_attack_animation(src, ATTACK_EFFECT_REDSLASH)
 			playsound(loc, "alien_claw_flesh", 25, 1)
 			apply_damage(damage, BRUTE, updating_health = TRUE)
+
+//////// UV VARIANT /////////
+
+/mob/living/carbon/xenomorph/attack_uv(mob/living/carbon/xenomorph/zhumans/Z, damage_amount = Z.xeno_caste.melee_damage, damage_type = BRUTE, damage_flag = "", effects = TRUE, armor_penetration = 0, isrightclick = FALSE)
+	if(status_flags & INCORPOREAL || Z.status_flags & INCORPOREAL) //Incorporeal xenos cannot attack or be attacked
+		return
+
+	if(src == Z)
+		return TRUE
+
+	switch(Z.a_intent)
+		if(INTENT_HELP)
+			if(on_fire)
+				fire_stacks = max(fire_stacks - 1, 0)
+				playsound(loc, 'sound/weapons/thudswoosh.ogg', 25, 1, 7)
+				Z.visible_message(span_danger("[Z] tries to put out the fire on [src]!"), \
+					span_warning("We try to put out the fire on [src]!"), null, 5)
+				if(fire_stacks <= 0)
+					Z.visible_message(span_danger("[Z] has successfully extinguished the fire on [src]!"), \
+						span_notice("We extinguished the fire on [src]."), null, 5)
+					ExtinguishMob()
+				return TRUE
+			Z.visible_message(span_notice("\The [Z] harmlessly bumps into \the [src] ."), \
+			span_notice("We harmlessly bump into \the [src]."), null, 5)
+
+		if(INTENT_GRAB)
+			if(anchored)
+				return FALSE
+			if(!Z.start_pulling(src))
+				return FALSE
+			Z.visible_message(span_warning("[Z] tows \the [src]!"), \
+			span_warning("We tow \the [src]!"), null, 5)
+			playsound(loc, 'sound/weapons/thudswoosh.ogg', 25, 1, 7)
+
+		if(INTENT_HARM, INTENT_DISARM)//Can't slash other xenos for now. SORRY  // You can now! --spookydonut
+			if(issamexenohive(Z))
+				Z.do_attack_animation(src)
+				Z.visible_message(span_warning("\The [Z] honks at \the [src]."), \
+				span_warning("We honk at \the [src]."), null, 5)
+				playsound(loc, 'sound/items/bikehorn.ogg', 25, 1, 7)
+				return TRUE
+			// copypasted from attack_alien.dm
+			//From this point, we are certain a full attack will go out. Calculate damage and modifiers
+			var/damage = Z.xeno_caste.melee_damage
+
+			//Somehow we will deal no damage on this attack
+			if(!damage)
+				Z.do_attack_animation(src)
+				playsound(Z.loc, 'sound/weapons/punchmiss.ogg', 25, 1)
+				Z.visible_message(span_danger("\The [Z] lunges at [src]!"), \
+				span_danger("We lunge at [src]!"), null, 5)
+				return FALSE
+
+			Z.visible_message(span_danger("\The [Z] runs into [src]!"), \
+			span_danger("We smash [src]!"), null, 5)
+			log_combat(Z, src, "slashed")
+
+			Z.do_attack_animation(src, ATTACK_EFFECT_SMASH)
+			playsound(loc, "punch", 25, 1)
+			apply_damage(damage, BRUTE, updating_health = TRUE)
+
