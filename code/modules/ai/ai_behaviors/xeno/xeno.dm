@@ -248,3 +248,8 @@
 	sidestep_prob = 75
 	distance_to_maintain = 5
 	minimum_health = 0.3
+
+/datum/ai_behavior/xeno/ranged/strafer
+	sidestep_prob = 100
+	distance_to_maintain = 3
+	minimum_health = 0.1

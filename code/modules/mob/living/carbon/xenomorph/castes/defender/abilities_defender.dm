@@ -101,6 +101,8 @@
 	var/range = 4
 	///How long is the windup before charging
 	var/windup_time = 0.8 SECONDS
+	//Emote that's used.
+	var/charge_emote = "roar"
 
 /datum/action/xeno_action/activable/forward_charge/proc/charge_complete()
 	SIGNAL_HANDLER
@@ -154,7 +156,7 @@
 
 	X.visible_message(span_danger("[X] charges towards \the [A]!"), \
 	span_danger("We charge towards \the [A]!") )
-	X.emote("roar")
+	X.emote(charge_emote)
 	succeed_activate()
 
 	RegisterSignal(X, COMSIG_XENO_OBJ_THROW_HIT, .proc/obj_hit,)

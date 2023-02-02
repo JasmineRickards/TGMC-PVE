@@ -896,6 +896,10 @@ TUNNEL
 	var/light_initial_color = LIGHT_COLOR_GREEN
 	///For minimap icon change if sentry is firing
 	var/firing
+	//Noise it makes on death.
+	var/turret_death_noise = 'sound/effects/xeno_turret_death.ogg'
+	//Other Vars.
+	var/death_type = 1
 
 ///Change minimap icon if its firing or not firing
 /obj/structure/xeno/xeno_turret/proc/update_minimap_icon()
@@ -923,7 +927,7 @@ TUNNEL
 	qdel(src)
 
 /obj/structure/xeno/xeno_turret/obj_destruction(damage_amount, damage_type, damage_flag)
-	if(damage_amount) //Spawn the gas only if we actually get destroyed by damage
+	if(death_type == 1) //Spawn the gas only if we actually get destroyed by damage
 		var/datum/effect_system/smoke_spread/xeno/smoke = new /datum/effect_system/smoke_spread/xeno/acid(src)
 		smoke.set_up(1, get_turf(src))
 		smoke.start()
@@ -934,7 +938,7 @@ TUNNEL
 	set_hostile(null)
 	set_last_hostile(null)
 	STOP_PROCESSING(SSobj, src)
-	playsound(loc,'sound/effects/xeno_turret_death.ogg', 70)
+	playsound(loc, turret_death_noise, 70)
 	return ..()
 
 /obj/structure/xeno/xeno_turret/ex_act(severity)
@@ -1127,6 +1131,47 @@ TUNNEL
 	light_initial_color = LIGHT_COLOR_BROWN
 	ammo = /datum/ammo/xeno/hugger
 	firerate = 5 SECONDS
+
+/obj/structure/xeno/xeno_turret/human
+	name = "Hijacked ST-491 sentry gun"
+	icon_state = "stolen_turret"
+	desc = "A deployable, fully automatic turret with AI targeting capabilities. Armed with an outdated M-25 autocannon and a near bottomless drum magazine. It doesn't like you"
+	obj_integrity = 800
+	max_integrity = 800
+	light_initial_color = LIGHT_COLOR_RED
+	ammo = /datum/ammo/bullet/turret/enemyturret
+
+	turret_death_noise = 'sound/effects/metal_crash.ogg'
+	death_type = 2
+
+/obj/structure/xeno/xeno_turret/human/Initialize(mapload, hivenumber = XENO_HIVE_HUMAN)
+	. = ..()
+	potential_hostiles = list()
+	associated_hive = GLOB.hive_datums[hivenumber]
+	GLOB.xeno_resin_turrets += src
+	START_PROCESSING(SSobj, src)
+	AddComponent(/datum/component/automatedfire/xeno_turret_autofire, firerate)
+	RegisterSignal(src, COMSIG_AUTOMATIC_SHOOTER_SHOOT, .proc/shoot)
+	RegisterSignal(SSdcs, COMSIG_GLOB_DROPSHIP_HIJACKED, .proc/destroy_on_hijack)
+	if(light_initial_color)
+		set_light(2, 2, light_initial_color)
+	update_minimap_icon()
+	update_icon()
+
+/obj/structure/xeno/xeno_turret/human/obj_destruction(damage_amount, damage_type, damage_flag)
+	if(death_type == 2)
+		explosion(loc, light_impact_range = 3)
+	return ..()
+
+/obj/structure/xeno/xeno_turret/human/riot
+	name = "VC-98 sentry gun"
+	icon_state = "vc98_turret"
+	desc = "An automated turret with AI targeting capabilities. This is an aftermarket model meant for riot suppression and is armed with a shotgun. It seems to hate both you and the xenomorphs equally."
+	obj_integrity = 600
+	max_integrity = 600
+	ammo = /datum/ammo/bullet/shotgun/slug/enemyturret
+	firerate = 1 SECONDS
+
 
 /obj/structure/xeno/evotower
 	name = "evolution tower"

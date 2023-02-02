@@ -727,6 +727,8 @@
 	///Current target that the xeno is targeting. This is for aiming.
 	var/current_target
 
+	var/sound/spit_sound = list ('sound/voice/alien_spitacid.ogg' , 'sound/voice/alien_spitacid2.ogg')
+
 /datum/action/xeno_action/activable/xeno_spit/give_action(mob/living/L)
 	. = ..()
 	owner.AddComponent(/datum/component/automatedfire/autofire, get_cooldown(), _fire_mode = GUN_FIREMODE_AUTOMATIC,  _callback_reset_fire = CALLBACK(src, .proc/reset_fire), _callback_fire = CALLBACK(src, .proc/fire))
@@ -812,12 +814,12 @@
 /datum/action/xeno_action/activable/xeno_spit/proc/fire()
 	var/mob/living/carbon/xenomorph/X = owner
 	var/turf/current_turf = get_turf(owner)
-	var/sound_to_play = pick(1, 2) == 1 ? 'sound/voice/alien_spitacid.ogg' : 'sound/voice/alien_spitacid2.ogg'
+	var/sound_to_play = pick(spit_sound)
 	playsound(X.loc, sound_to_play, 25, 1)
 
 	var/obj/projectile/newspit = new /obj/projectile(current_turf)
 	plasma_cost = X.ammo.spit_cost
-	newspit.generate_bullet(X.ammo, X.ammo.damage * SPIT_UPGRADE_BONUS(X))
+	newspit.generate_bullet(X.ammo, X.ammo.iff_signal, X.ammo.damage * SPIT_UPGRADE_BONUS(X))
 	newspit.def_zone = X.get_limbzone_target()
 	newspit.fire_at(current_target, X, null, X.ammo.max_range, X.ammo.shell_speed)
 

@@ -141,3 +141,24 @@
 	to_chat(owner, span_xenodanger("Our auxiliary sacks fill to bursting; we can use scatter spit again."))
 	owner.playsound_local(owner, 'sound/voice/alien_drool1.ogg', 25, 0, 1)
 	return ..()
+
+/datum/action/xeno_action/activable/scatter_spit/ai_should_start_consider()
+	return TRUE
+
+/datum/action/xeno_action/activable/scatter_spit/ai_should_use(atom/target)
+	if(!iscarbon(target))
+		return FALSE
+	if(!line_of_sight(owner, target))
+		return FALSE
+	if(!can_use_action(override_flags = XACT_IGNORE_SELECTED_ABILITY))
+		return FALSE
+	if(target.get_xeno_hivenumber() == owner.get_xeno_hivenumber())
+		return FALSE
+	action_activate()
+	LAZYINCREMENT(owner.do_actions, target)
+	addtimer(CALLBACK(src, .proc/decrease_do_action, target), 0.5)
+	return TRUE
+
+	///Decrease the do_actions of the owner
+/datum/action/xeno_action/activable/scatter_spit/proc/decrease_do_action(atom/target)
+	LAZYDECREMENT(owner.do_actions, target)

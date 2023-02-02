@@ -1368,6 +1368,18 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/king/Zeta
 	hivenumber = XENO_HIVE_ZETA
 
+/datum/hive_status/humanfaction
+	hivenumber = XENO_HIVE_HUMAN
+
+/datum/hive_status/humanfaction/post_add(mob/living/carbon/xenomorph/X)
+	. = ..()
+	X.grant_language(/datum/language/trader)
+	X.remove_language(/datum/language/xenocommon)
+
+/datum/hive_status/humanfaction/post_removal(mob/living/carbon/xenomorph/X)
+	. = ..()
+	X.remove_language(/datum/language/trader)
+	X.grant_language(/datum/language/xenocommon)
 /datum/hive_status/admeme
 	name = "Admeme"
 	hivenumber = XENO_HIVE_ADMEME
