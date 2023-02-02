@@ -144,6 +144,7 @@
 #define XENO_HIVE_ALPHA "alpha_hive"
 #define XENO_HIVE_BETA "beta_hive"
 #define XENO_HIVE_ZETA "zeta_hive"
+#define XENO_HIVE_HUMAN "human_hive"
 #define XENO_HIVE_ADMEME "admeme_hive"
 
 // =============================

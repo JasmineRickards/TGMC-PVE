@@ -126,6 +126,15 @@
 	key = "tail3"
 	sound = 'sound/effects/alien_tail_swipe3.ogg'
 
+/datum/emote/living/carbon/xenomorph/honk
+	key = "honk"
+	key_third_person = "honks"
+	message = "honks it's horn!"
+	emote_type = EMOTE_AUDIBLE
+	sound = 'sound/effects/uvhonk.ogg'
+
+
+
 
 /datum/emote/living/carbon/xenomorph/run_emote(mob/user, params, type_override, intentional = FALSE, prefix)
 	if(istype(user, /mob/living/carbon/xenomorph/larva))

@@ -38,6 +38,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	var/barricade_clear_distance	= 1			// How far the bullet can travel before incurring a chance of hitting barricades; normally 1.
 	var/armor_type					= "bullet"	// Does this have an override for the armor type the ammo should test? Bullet by default
 	var/sundering					= 0 		// How many stacks of sundering to apply to a mob on hit
+	var/iff_signal 					= NONE 		//Essentially allows xenos to use IFF bullets.
 	///how much damage airbursts do to mobs around the target, multiplier of the bullet's damage
 	var/airburst_multiplier	= 0.1
 	var/flags_ammo_behavior = NONE
@@ -782,7 +783,14 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
 	staggerstun(M, P, weaken = 1, stagger = 3, knockback = 0, slowdown = 3)
 
+/datum/ammo/bullet/shotgun/slug/enemyturret
+	armor_type = ACID
+	shell_speed = 2
+	damage = 40
+	penetration = 0
 
+datum/ammo/bullet/shotgun/slug/enemyturret/on_hit_mob(mob/M,obj/projectile/P)
+	staggerstun(M, P, weaken = 0.5, stagger = 1, knockback = 2, slowdown = 0)
 /datum/ammo/bullet/shotgun/beanbag
 	name = "beanbag slug"
 	handful_icon_state = "beanbag slug"
@@ -1225,7 +1233,7 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	accurate_range = 12
 	damage = 35
 	penetration = 15
-	sundering =15
+	sundering = 15
 	on_pierce_multiplier = 0.8
 
 /datum/ammo/bullet/smart_minigun
@@ -1251,6 +1259,13 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	damage = 25
 	penetration = 20
 	damage_falloff = 0.25
+
+/datum/ammo/bullet/turret/enemyturret
+	armor_type = ACID
+	shell_speed = 2
+	damage = 12
+	penetration = 0
+	sundering = 2
 
 /datum/ammo/bullet/turret/dumb
 	icon_state = "bullet"
@@ -2656,6 +2671,14 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	accuracy_var_high = 3
 	penetration = 5
 
+/datum/ammo/energy/volkite/uv
+	penetration = 0
+	damage = 15
+	armor_type = ACID
+	deflagrate_multiplier = 8
+	fire_burst_damage = 5
+	shell_speed = 2
+
 /*
 //================================================
 					Xeno Spits
@@ -3221,6 +3244,28 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 /// This spawns a leash ball and checks if the turf is dense before doing so
 /datum/ammo/xeno/leash_ball/proc/drop_leashball(turf/T)
 	new /obj/structure/xeno/aoe_leash(get_turf(T))
+
+// For human type PvE enemies, because I'm a lazy git.
+/datum/ammo/xeno/acid/passthrough/uv
+	name = "Machinegun bullet"
+	icon_state = "bullet"
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_IFF
+	damage_type = BRUTE
+	sound_hit 	 = "ballistic_hit"
+	sound_armor  = "ballistic_armor"
+	sound_miss	 = "ballistic_miss"
+	sound_bounce = "ballistic_bounce"
+	damage = 20
+	sundering = 4
+	shrapnel_chance = 5
+	bullet_color = COLOR_VERY_SOFT_YELLOW
+	iff_signal = PIRATE_IFF
+
+
+/datum/ammo/xeno/acid/passthrough/uv/light
+	name = "Submachinegun bullet"
+	damage = 8
+	sundering = 2
 /*
 //================================================
 					Misc Ammo

@@ -260,6 +260,8 @@
 
 	var/hivenumber = XENO_HIVE_NORMAL
 
+	var/iff_signal = NONE
+
 	var/datum/hive_status/hive
 
 	///State tracking of hive status toggles

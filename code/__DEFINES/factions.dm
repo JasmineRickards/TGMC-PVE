@@ -54,6 +54,7 @@ GLOBAL_LIST_INIT(faction_to_alignement, list(
 #define SON_OF_MARS_IFF (1 << 1)
 #define TGMC_REBEL_IFF (1 << 2)
 #define DEATHSQUAD_IFF (1 << 3)
+#define PIRATE_IFF (1 << 4)
 
 //Iff for each faction that is able to use iff
 GLOBAL_LIST_INIT(faction_to_iff, list(
@@ -62,8 +63,9 @@ GLOBAL_LIST_INIT(faction_to_iff, list(
 	FACTION_TERRAGOV_REBEL = TGMC_REBEL_IFF,
 	FACTION_NANOTRASEN = TGMC_LOYALIST_IFF,
 	FACTION_FREELANCERS = TGMC_LOYALIST_IFF,
-	FACTION_DEATHSQUAD = DEATHSQUAD_IFF,
 	FACTION_SOM = SON_OF_MARS_IFF,
+	FACTION_DEATHSQUAD = DEATHSQUAD_IFF,
+	FACTION_UNKN_MERCS = PIRATE_IFF,
 ))
 
 //List of correspond factions to data hud

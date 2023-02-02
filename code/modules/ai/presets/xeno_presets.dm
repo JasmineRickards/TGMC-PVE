@@ -70,7 +70,7 @@
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
 
-/mob/living/carbon/xenomorph/scorpionbomber
+/mob/living/carbon/xenomorph/scorpionbomber/ai
 
 /mob/living/carbon/xenomorph/scorpionbomber/ai/Initialize()
 	. = ..()
@@ -99,4 +99,31 @@
 /mob/living/carbon/xenomorph/boiler/ai/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+
+/mob/living/carbon/xenomorph/zhumans/ai
+
+/mob/living/carbon/xenomorph/zhumans/ai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+
+/mob/living/carbon/xenomorph/zhumans/ai/closeranged
+
+/mob/living/carbon/xenomorph/zhumans/ai/closeranged/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/strafer)
+	color = "#5a4b4b"
+
+
+/mob/living/carbon/xenomorph/zhumans/hunmannedv/ai
+
+/mob/living/carbon/xenomorph/zhumans/hunmannedv/ai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+
+/mob/living/carbon/xenomorph/zhumans/hunmannedv/ai/closeranged
+
+/mob/living/carbon/xenomorph/zhumans/hunmannedv/ai/closeranged/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/strafer)
+	color = "#5a4b4b"
 
