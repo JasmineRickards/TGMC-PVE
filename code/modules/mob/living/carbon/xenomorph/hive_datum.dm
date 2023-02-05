@@ -1380,6 +1380,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 	. = ..()
 	X.remove_language(/datum/language/trader)
 	X.grant_language(/datum/language/xenocommon)
+
 /datum/hive_status/admeme
 	name = "Admeme"
 	hivenumber = XENO_HIVE_ADMEME

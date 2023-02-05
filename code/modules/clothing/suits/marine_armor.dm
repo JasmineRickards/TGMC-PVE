@@ -450,7 +450,7 @@
 /obj/item/clothing/suit/storage/marine/veteran/PMC/b
 	name = "\improper M4B pattern PMC armor"
 	icon_state = "pmc_armorb"
-	
+
 /obj/item/clothing/suit/storage/marine/veteran/PMC/leader
 	name = "\improper M4 pattern PMC leader armor"
 	desc = "A modification of the M4 body armor, it is designed for high-profile security operators and corporate mercenaries in mind. This particular suit looks like it belongs to a high-ranking officer."
@@ -460,7 +460,7 @@
 /obj/item/clothing/suit/storage/marine/veteran/PMC/leader/b
 	name = "\improper M4B pattern PMC leader armor"
 	icon_state = "officer_armorb"
-	
+
 /obj/item/clothing/suit/storage/marine/veteran/PMC/sniper
 	name = "\improper M4 pattern PMC sniper armor"
 	icon_state = "pmc_sniper"
@@ -591,7 +591,7 @@
 	// Should this maybe require recharging?
 	name = "\improper salvaged Space Marine power armour"
 	desc = "A power armour that was once broken, is functional once again. However this version isn't as powerful as the real power armour."
-	//icon_state
+	icon_state = "m_beserker"
 	soft_armor = list(MELEE = 75, BULLET = 60, LASER = 55, ENERGY = 40, BOMB = 45, BIO = 15, FIRE = 40, ACID = 40)
 	light_range = 9
 	pockets = /obj/item/storage/internal/suit/imperial
@@ -600,7 +600,7 @@
 	// This should either be admin only or only given to one person
 	name = "\improper Space Marine power armour"
 	desc = "You feel a chill running down your spine just looking at this. This is the power armour that the Space Marines wear themselves. The servos inside the power armour allow you to move at incredible speeds."
-	//icon_state
+	icon_state = "m_beserker"
 	slowdown = SLOWDOWN_ARMOR_LIGHT // beefed up space marine inside an armor that boosts speed
 	soft_armor = list(MELEE = 95, BULLET = 95, LASER = 95, ENERGY = 95, BOMB = 95, BIO = 95, FIRE = 95, ACID = 95)
 

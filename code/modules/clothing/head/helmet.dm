@@ -543,14 +543,14 @@
 /obj/item/clothing/head/helmet/marine/imperial/power
 	name = "\improper salvaged Space Marine helmet"
 	desc = "A helmet that goes with the Space Marine power armour, this one has been salvaged from the battlefield."
-	//icon_state
+	icon_state = "beserkerhelm"
 	soft_armor = list(MELEE = 75, BULLET = 60, LASER = 55, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 	pockets = /obj/item/storage/internal/imperialhelmet
 
 /obj/item/clothing/head/helmet/marine/imperial/power/astartes
 	name = "\improper Space Marine helmet"
 	desc = "You are intimidated by the appearance of the helmet. This is the helmet that goes with the powerful Space Marine power armour."
-	//icon_state
+	icon_state = "beserkerhelm"
 	soft_armor = list(MELEE = 95, BULLET = 95, LASER = 95, ENERGY = 95, BOMB = 95, BIO = 95, FIRE = 95, ACID = 95)
 
 
