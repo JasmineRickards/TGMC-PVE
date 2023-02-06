@@ -100,30 +100,62 @@
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
 
-/mob/living/carbon/xenomorph/zhumans/ai
+/mob/living/carbon/xenomorph/zuv/ai
 
-/mob/living/carbon/xenomorph/zhumans/ai/Initialize()
+/mob/living/carbon/xenomorph/zuv/ai/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
 
-/mob/living/carbon/xenomorph/zhumans/ai/closeranged
+/mob/living/carbon/xenomorph/zuv/ai/closeranged
 
-/mob/living/carbon/xenomorph/zhumans/ai/closeranged/Initialize()
+/mob/living/carbon/xenomorph/zuv/ai/closeranged/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/strafer)
 	color = "#5a4b4b"
 
+/mob/living/carbon/xenomorph/zuv/komodo/ai
 
-/mob/living/carbon/xenomorph/zhumans/hunmannedv/ai
-
-/mob/living/carbon/xenomorph/zhumans/hunmannedv/ai/Initialize()
+/mob/living/carbon/xenomorph/zuv/komodo/ai/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
 
-/mob/living/carbon/xenomorph/zhumans/hunmannedv/ai/closeranged
+/mob/living/carbon/xenomorph/zuv/komodo/ai/closeranged
 
-/mob/living/carbon/xenomorph/zhumans/hunmannedv/ai/closeranged/Initialize()
+/mob/living/carbon/xenomorph/zuv/komodo/ai/closeranged/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/strafer)
 	color = "#5a4b4b"
+
+/mob/living/carbon/xenomorph/zuv/komodo/gigakomodo/ai
+
+/mob/living/carbon/xenomorph/zuv/komodo/gigakomodo/ai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/gigakomodo)
+	color = "#ff1313"
+
+	pixel_y = 44
+	resize = RESIZE_GIANT_SIZE
+	update_transform()
+
+/mob/living/carbon/xenomorph/zuv/gecko/ai
+
+/mob/living/carbon/xenomorph/zuv/gecko/ai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+
+/mob/living/carbon/xenomorph/zuv/gecko/smartgun/ai
+
+/mob/living/carbon/xenomorph/zuv/gecko/smartgun/ai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+	color = "#a8a1a1"
+
+/mob/living/carbon/xenomorph/zuv/gecko/laser/ai
+
+/mob/living/carbon/xenomorph/zuv/gecko/laser/ai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/strafer)
+	color = "#df8888"
+
+
 

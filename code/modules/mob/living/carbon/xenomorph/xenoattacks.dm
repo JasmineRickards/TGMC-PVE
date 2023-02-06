@@ -132,7 +132,7 @@
 
 //////// UV VARIANT /////////
 
-/mob/living/carbon/xenomorph/attack_uv(mob/living/carbon/xenomorph/zhumans/Z, damage_amount = Z.xeno_caste.melee_damage, damage_type = BRUTE, damage_flag = "", effects = TRUE, armor_penetration = 0, isrightclick = FALSE)
+/mob/living/carbon/xenomorph/attack_uv(mob/living/carbon/xenomorph/zuv/Z, damage_amount = Z.xeno_caste.melee_damage, damage_type = BRUTE, damage_flag = "", effects = TRUE, armor_penetration = 0, isrightclick = FALSE)
 	if(status_flags & INCORPOREAL || Z.status_flags & INCORPOREAL) //Incorporeal xenos cannot attack or be attacked
 		return
 

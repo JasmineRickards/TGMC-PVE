@@ -253,6 +253,9 @@
 /mob/living/carbon/xenomorph/get_blood_color()
 	return "#dffc00"
 
+/mob/living/carbon/xenomorph/zuv/get_blood_color()
+	return "#292927"
+
 /mob/living/carbon/human/get_blood_color()
 	return species.blood_color
 
@@ -379,3 +382,14 @@
 	var/obj/effect/decal/cleanable/blood/xeno/XB = locate() in T.contents
 	if(!XB)
 		XB = new(T)
+
+/mob/living/carbon/xenomorph/zuv/add_splatter_floor(turf/T, small_drip, b_color)
+	if(!T)
+		T = get_turf(src)
+
+	if(!T.can_bloody)
+		return
+
+	var/obj/effect/decal/cleanable/liquid_fuel/XV = locate() in T.contents
+	if(!XV)
+		XV = new(T)

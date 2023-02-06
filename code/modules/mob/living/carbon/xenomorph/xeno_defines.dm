@@ -215,6 +215,9 @@
 	///Whether the caste enters and crawls through vents silently
 	var/silent_vent_crawl = FALSE
 
+	//Hopefully allows the M-UV to change sprites.
+	var/geckoturret = ""
+
 ///Add needed component to the xeno
 /datum/xeno_caste/proc/on_caste_applied(mob/xenomorph)
 	xenomorph.AddComponent(/datum/component/bump_attack)

@@ -253,3 +253,7 @@
 	sidestep_prob = 100
 	distance_to_maintain = 3
 	minimum_health = 0.1
+
+
+/datum/ai_behavior/xeno/ranged/gigakomodo
+	target_distance = 12

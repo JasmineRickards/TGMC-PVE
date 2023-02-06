@@ -29,9 +29,9 @@
 			icon_state = "[xeno_caste.caste_name][is_a_rouny ? " rouny" : ""] Knocked Down"
 	else if(!handle_special_state())
 		if(m_intent == MOVE_INTENT_RUN)
-			icon_state = "[xeno_caste.caste_name][is_a_rouny ? " rouny" : ""] Running"
+			icon_state = "[xeno_caste.caste_name][xeno_caste.geckoturret][is_a_rouny ? " rouny" : ""] Running"
 		else
-			icon_state = "[xeno_caste.caste_name][is_a_rouny ? " rouny" : ""] Walking"
+			icon_state = "[xeno_caste.caste_name][xeno_caste.geckoturret][is_a_rouny ? " rouny" : ""] Walking"
 	update_fire() //the fire overlay depends on the xeno's stance, so we must update it.
 	update_wounds()
 

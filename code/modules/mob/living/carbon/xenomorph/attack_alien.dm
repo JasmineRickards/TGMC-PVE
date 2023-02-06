@@ -228,7 +228,7 @@
 
 /// UV_SHITCODE_VARIANT ///
 
-/mob/living/proc/attack_uv_grab(mob/living/carbon/xenomorph/zhumans/Z)
+/mob/living/proc/attack_uv_grab(mob/living/carbon/xenomorph/zuv/Z)
 	if(Z == src || anchored || buckled || Z.buckled)
 		return FALSE
 
@@ -238,7 +238,7 @@
 	Z.start_pulling(src)
 	return TRUE
 
-/mob/living/carbon/human/attack_uv_grab(mob/living/carbon/xenomorph/zhumans/Z)
+/mob/living/carbon/human/attack_uv_grab(mob/living/carbon/xenomorph/zuv/Z)
 	if(check_shields(COMBAT_TOUCH_ATTACK, Z.xeno_caste.melee_damage, "melee"))
 		return ..()
 	Z.visible_message(span_danger("\The [Z]'s grab is blocked by [src]'s shield!"),
@@ -247,7 +247,7 @@
 	return FALSE
 
 
-/mob/living/proc/attack_uv_disarm(mob/living/carbon/xenomorph/zhumans/Z, dam_bonus)
+/mob/living/proc/attack_uv_disarm(mob/living/carbon/xenomorph/zuv/Z, dam_bonus)
 
 	SEND_SIGNAL(src, COMSIG_LIVING_MELEE_ALIEN_DISARMED, Z)
 	Z.do_attack_animation(src, ATTACK_EFFECT_DISARM2)
@@ -256,7 +256,7 @@
 	span_warning("We shove [src]!"), null, 5)
 	return TRUE
 
-/mob/living/proc/can_uv_slash(mob/living/carbon/xenomorph/zhumans/Z)
+/mob/living/proc/can_uv_slash(mob/living/carbon/xenomorph/zuv/Z)
 	if(CHECK_BITFIELD(Z.xeno_caste.caste_flags, CASTE_IS_INTELLIGENT)) // intelligent ignore restrictions
 		return TRUE
 	else if(isnestedhost(src))
@@ -267,15 +267,15 @@
 			return FALSE
 	return TRUE
 
-/mob/living/carbon/human/can_uv_slash(mob/living/carbon/xenomorph/zhumans/Z)
+/mob/living/carbon/human/can_uv_slash(mob/living/carbon/xenomorph/zuv/Z)
 	. = ..()
 	if(!.)
 		return FALSE
 
-/mob/living/proc/get_uv_slash_zone(mob/living/carbon/xenomorph/zhumans/Z, set_location = FALSE, random_location = FALSE, no_head = FALSE)
+/mob/living/proc/get_uv_slash_zone(mob/living/carbon/xenomorph/zuv/Z, set_location = FALSE, random_location = FALSE, no_head = FALSE)
 	return
 
-/mob/living/carbon/get_uv_slash_zone(mob/living/carbon/xenomorph/zhumans/Z, set_location = FALSE, random_location = FALSE, no_head = FALSE, ignore_destroyed = TRUE)
+/mob/living/carbon/get_uv_slash_zone(mob/living/carbon/xenomorph/zuv/Z, set_location = FALSE, random_location = FALSE, no_head = FALSE, ignore_destroyed = TRUE)
 	var/datum/limb/affecting
 	if(set_location)
 		affecting = get_limb(set_location)
@@ -289,7 +289,7 @@
 		affecting = get_limb("chest")
 	return affecting
 
-/mob/living/proc/attack_uv_harm(mob/living/carbon/xenomorph/zhumans/Z, dam_bonus, set_location = FALSE, random_location = FALSE, no_head = FALSE, no_crit = FALSE, force_intent = null)
+/mob/living/proc/attack_uv_harm(mob/living/carbon/xenomorph/zuv/Z, dam_bonus, set_location = FALSE, random_location = FALSE, no_head = FALSE, no_crit = FALSE, force_intent = null)
 
 	if(!can_uv_slash(Z))
 		return FALSE
@@ -356,7 +356,7 @@
 
 	return TRUE
 
-/mob/living/silicon/attack_uv_harm(mob/living/carbon/xenomorph/zhumans/Z, dam_bonus, set_location = FALSE, random_location = FALSE, no_head = FALSE, no_crit = FALSE, force_intent = null)
+/mob/living/silicon/attack_uv_harm(mob/living/carbon/xenomorph/zuv/Z, dam_bonus, set_location = FALSE, random_location = FALSE, no_head = FALSE, no_crit = FALSE, force_intent = null)
 
 	if(stat == DEAD) //A bit of visual flavor for attacking Cyborgs. Sparks!
 		return FALSE
@@ -371,7 +371,7 @@
 	playsound(loc, "alien_claw_metal", 25, TRUE)
 
 
-/mob/living/carbon/xenomorph/attack_uv_harm(mob/living/carbon/xenomorph/zhumans/Z, dam_bonus, set_location = FALSE, random_location = FALSE, no_head = FALSE, no_crit = FALSE, force_intent = null)
+/mob/living/carbon/xenomorph/attack_uv_harm(mob/living/carbon/xenomorph/zuv/Z, dam_bonus, set_location = FALSE, random_location = FALSE, no_head = FALSE, no_crit = FALSE, force_intent = null)
 	if(issamexenohive(Z))
 		Z.visible_message(span_warning("\The [Z] nibbles [src]."),
 		span_warning("We nibble [src]."), null, 5)
@@ -379,7 +379,7 @@
 	return ..()
 
 
-/mob/living/carbon/human/attack_uv_harm(mob/living/carbon/xenomorph/zhumans/Z, dam_bonus, set_location = FALSE, random_location = FALSE, no_head = FALSE, no_crit = FALSE, force_intent = null)
+/mob/living/carbon/human/attack_uv_harm(mob/living/carbon/xenomorph/zuv/Z, dam_bonus, set_location = FALSE, random_location = FALSE, no_head = FALSE, no_crit = FALSE, force_intent = null)
 
 	if(stat == DEAD)
 		if(istype(wear_ear, /obj/item/radio/headset/mainship))
@@ -406,7 +406,7 @@
 	if(!.)
 		return FALSE
 
-/mob/living/attack_uv(mob/living/carbon/xenomorph/zhumans/Z, damage_amount = Z.xeno_caste.melee_damage, damage_type = BRUTE, damage_flag = "", effects = TRUE, armor_penetration = 0, isrightclick = FALSE)
+/mob/living/attack_uv(mob/living/carbon/xenomorph/zuv/Z, damage_amount = Z.xeno_caste.melee_damage, damage_type = BRUTE, damage_flag = "", effects = TRUE, armor_penetration = 0, isrightclick = FALSE)
 	if(Z.status_flags & INCORPOREAL)
 		return FALSE
 
