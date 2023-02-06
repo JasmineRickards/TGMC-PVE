@@ -8,6 +8,11 @@
 		return ..()
 	return ..() //Just a different standard deathmessage
 
+/mob/living/carbon/xenomorph/zuv/death(gibbing, deathmessage = "sparks violently whilst spitting out error text before stopping completely, their visual sensor darkening.", silent)
+	if(stat == DEAD)
+		return ..()
+	return ..()
+
 
 /mob/living/carbon/xenomorph/on_death()
 	GLOB.alive_xeno_list -= src
@@ -98,6 +103,10 @@
 
 /mob/living/carbon/xenomorph/spawn_gibs()
 	xgibs(get_turf(src))
+
+/mob/living/carbon/xenomorph/zuv/spawn_gibs()
+	robogibs(get_turf(src))
+	playsound(loc, 'sound/effects/metal_crash.ogg', 65)
 
 /mob/living/carbon/xenomorph/dust_animation()
 	new /obj/effect/overlay/temp/dust_animation(loc, 0, src, "dust-a")

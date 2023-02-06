@@ -133,11 +133,28 @@
 	emote_type = EMOTE_AUDIBLE
 	sound = 'sound/effects/uvhonk.ogg'
 
-
-
+/datum/emote/living/carbon/xenomorph/uvwarn
+	key = "warn"
+	key_third_person = "warn"
+	message = "delivers an automated damage warning"
+	emote_type = EMOTE_AUDIBLE
+	sound = 'sound/vox/!buzzer.ogg'
 
 /datum/emote/living/carbon/xenomorph/run_emote(mob/user, params, type_override, intentional = FALSE, prefix)
 	if(istype(user, /mob/living/carbon/xenomorph/larva))
 		playsound(user.loc, "alien_roar_larva", 15)
+	else
+		return ..()
+
+
+/datum/emote/living/carbon/xenomorph/roar/run_emote(mob/user, params, type_override, intentional = TRUE, prefix)
+	if(istype(user, /mob/living/carbon/xenomorph/zuv))
+		playsound(user.loc, 'sound/vox/!buzwarn.ogg', 45)
+	else
+		return ..()
+
+/datum/emote/living/carbon/xenomorph/hiss/run_emote(mob/user, params, type_override, intentional = TRUE, prefix)
+	if(istype(user, /mob/living/carbon/xenomorph/zuv))
+		playsound(user.loc, 'sound/vox/!buzzer.ogg', 45)
 	else
 		return ..()

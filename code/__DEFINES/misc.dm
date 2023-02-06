@@ -42,6 +42,7 @@
 #define subtypesof(typepath) ( typesof(typepath) - typepath )
 
 #define RESIZE_DEFAULT_SIZE 1
+#define RESIZE_GIANT_SIZE 3
 
 GLOBAL_VAR_INIT(global_unique_id, 1)
 #define UNIQUEID (GLOB.global_unique_id++)

@@ -211,3 +211,6 @@
 		M.adjust_stagger(2)
 		M.add_slowdown(2)
 		M.adjust_ear_damage(rand(0, 1),6)
+
+/obj/item/explosive/grenade/flashbang/stun/uv
+	det_time = 80

@@ -1170,7 +1170,7 @@ TUNNEL
 	obj_integrity = 600
 	max_integrity = 600
 	ammo = /datum/ammo/bullet/shotgun/slug/enemyturret
-	firerate = 1 SECONDS
+	firerate = 1.5 SECONDS
 
 
 /obj/structure/xeno/evotower

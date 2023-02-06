@@ -786,11 +786,11 @@ datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
 /datum/ammo/bullet/shotgun/slug/enemyturret
 	armor_type = ACID
 	shell_speed = 2
-	damage = 40
+	damage = 15
 	penetration = 0
 
 datum/ammo/bullet/shotgun/slug/enemyturret/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, weaken = 0.5, stagger = 1, knockback = 2, slowdown = 0)
+	staggerstun(M, P, weaken = 2, stagger = 1, knockback = 2, slowdown = 1)
 /datum/ammo/bullet/shotgun/beanbag
 	name = "beanbag slug"
 	handful_icon_state = "beanbag slug"
@@ -2088,6 +2088,12 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 /datum/ammo/rocket/atgun_shell/apcr/on_hit_turf(turf/T, obj/projectile/P)
 	P.proj_max_range -= 5
 
+/datum/ammo/rocket/atgun_shell/apcr/uv
+	name = "Komodo Tungsten Shell"
+	armor_type = ACID
+	damage = 50
+	penetration = 0
+
 /datum/ammo/rocket/atgun_shell/he
 	name = "high velocity high explosive shell"
 	hud_state = "shell_he"
@@ -2516,6 +2522,13 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	max_range = 10
 	hitscan_effect_icon = "xray_beam"
 
+/datum/ammo/energy/lasgun/marine/xray/piercing/uv
+	icon_state = "ice_2"
+	flags_ammo_behavior = AMMO_ENERGY|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
+	damage = 30
+	penetration = 0
+	armor_type = ACID
+
 /datum/ammo/energy/lasgun/marine/heavy_laser
 	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_ENERGY|AMMO_SUNDERING|AMMO_HITSCAN|AMMO_INCENDIARY
 	damage = 60
@@ -2541,6 +2554,13 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 
 /datum/ammo/energy/lasgun/marine/heavy_laser/do_at_max_range(turf/T, obj/projectile/P)
 	drop_nade(T.density ? P.loc : T)
+
+
+/datum/ammo/energy/lasgun/marine/heavy_laser/uv
+	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_ENERGY|AMMO_SUNDERING|AMMO_HITSCAN|AMMO_INCENDIARY
+	damage = 20
+	penetration = 0
+	armor_type = ACID
 
 /datum/ammo/energy/lasgun/marine/mech
 	name = "superheated laser bolt"
@@ -3249,6 +3269,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 /datum/ammo/xeno/acid/passthrough/uv
 	name = "Machinegun bullet"
 	icon_state = "bullet"
+	ping = "ping_b"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_IFF
 	damage_type = BRUTE
 	sound_hit 	 = "ballistic_hit"
@@ -3266,6 +3287,26 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "Submachinegun bullet"
 	damage = 8
 	sundering = 2
+
+
+/datum/ammo/xeno/acid/passthrough/uv/smartgecko
+	name = "Smartmachinegun bullet"
+	damage = 15
+	added_spit_delay = 0
+
+/datum/ammo/xeno/acid/passthrough/uv/lasergecko
+	name = "laser bolt"
+	icon_state = "bluelaserstandard"
+	ping = "ping_s"
+	sound_hit 	 	= "energy_hit"
+	sound_miss		= "energy_miss"
+	sound_bounce	= "energy_bounce"
+	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING
+	damage = 30 // Slower firing, no IFF
+	damage_type = BURN
+	sundering = 3
+	max_range = 30
+
 /*
 //================================================
 					Misc Ammo
