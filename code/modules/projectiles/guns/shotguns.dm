@@ -685,7 +685,7 @@
 	)
 
 	starting_attachment_types = list(/obj/item/attachable/foldable/t35stock)
-	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 9, "rail_y" = 21, "under_x" = 18, "under_y" = 12, "stock_x" = -3, "stock_y" = 16)
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 9, "rail_y" = 21, "under_x" = 18, "under_y" = 12, "stock_x" = 1, "stock_y" = 16)
 
 	flags_item_map_variant = NONE
 

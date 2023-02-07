@@ -1234,7 +1234,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	desc = "A foldable wire stock for a Skorpion submachinegun"
 	icon = 'icons/Marine/attachments_64.dmi'
 	icon_state = "skorpion"
-	flags_attach_features = ATTACH_ACTIVATION
+	flags_attach_features = ATTACH_REMOVABLE|ATTACH_ACTIVATION
 	pixel_shift_x = 0
 	pixel_shift_y = 0
 	size_mod = 2
@@ -1248,7 +1248,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 /obj/item/attachable/foldable/t19stock
 	name = "\improper MP-19 machinepistol stock"
 	desc = "A submachinegun stock distributed in small numbers to TGMC forces. Compatible with the MP-19, this stock reduces recoil and improves accuracy, but at a reduction to handling and agility. Seemingly a bit more effective in a brawl."
-	flags_attach_features = ATTACH_ACTIVATION
+	flags_attach_features = ATTACH_REMOVABLE|ATTACH_ACTIVATION
 	wield_delay_mod = 0.1 SECONDS
 	melee_mod = 5
 	size_mod = 1
@@ -1264,7 +1264,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	desc = "A non-standard heavy stock for the SH-35 shotgun. Less quick and more cumbersome than the standard issue stakeout, but reduces recoil and improves accuracy. Allegedly makes a pretty good club in a fight too."
 	icon = 'icons/Marine/attachments_64.dmi'
 	icon_state = "t35stock"
-	flags_attach_features = ATTACH_ACTIVATION
+	flags_attach_features = ATTACH_REMOVABLE|ATTACH_ACTIVATION
 	wield_delay_mod = 0.2 SECONDS
 	accuracy_mod = 0.15
 	recoil_mod = -3
