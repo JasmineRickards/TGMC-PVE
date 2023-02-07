@@ -1,5 +1,3 @@
-// LASER GECKO WALL PIERCING CANNON OF DOOM//
-
 /datum/action/xeno_action/activable/scatter_spit/uv/lasergecko
 	name = "Xray Cannon"
 	action_icon_state = "scatter_spit"

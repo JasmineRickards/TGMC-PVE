@@ -278,7 +278,6 @@
 		/obj/item/attachable/heavy_barrel,
 		/obj/item/attachable/compensator,
 		/obj/item/attachable/magnetic_harness,
-		/obj/item/attachable/stock/shotgun,
 		/obj/item/weapon/gun/shotgun/combat/masterkey,
 		/obj/item/weapon/gun/grenade_launcher/underslung,
 		/obj/item/weapon/gun/flamer/mini_flamer,
@@ -326,7 +325,7 @@
 		/obj/item/attachable/scope/mini,
 		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/motiondetector,
-		/obj/item/attachable/stock/irremoveable/pal12,
+		/obj/item/attachable/stock/pal12,
 		/obj/item/weapon/gun/shotgun/combat/masterkey,
 		/obj/item/weapon/gun/grenade_launcher/underslung,
 		/obj/item/weapon/gun/flamer/mini_flamer,
@@ -336,7 +335,7 @@
 	flags_item_map_variant = NONE
 	attachable_offset = list("muzzle_x" = 38, "muzzle_y" = 19,"rail_x" = 14, "rail_y" = 19, "under_x" = 37, "under_y" = 16, "stock_x" = 15, "stock_y" = 14)
 	starting_attachment_types = list(
-		/obj/item/attachable/stock/irremoveable/pal12,
+		/obj/item/attachable/stock/pal12,
 	)
 
 	fire_delay = 0.8 SECONDS
@@ -352,7 +351,7 @@
 
 /obj/item/weapon/gun/shotgun/pump/cmb/mag_harness
 	starting_attachment_types = list(
-		/obj/item/attachable/stock/irremoveable/pal12,
+		/obj/item/attachable/stock/pal12,
 		/obj/item/attachable/magnetic_harness,
 	)
 
@@ -384,7 +383,7 @@
 		/obj/item/attachable/scope/mosin,
 		/obj/item/attachable/scope/marine,
 		/obj/item/attachable/flashlight,
-		/obj/item/attachable/bipod,
+		/obj/item/attachable/foldable/bipod,
 		/obj/item/attachable/bayonet,
 		/obj/item/attachable/motiondetector,
 		/obj/item/attachable/buildasentry,
@@ -611,7 +610,7 @@
 //------------------------------------------------------
 //MBX900 Lever Action Shotgun
 /obj/item/weapon/gun/shotgun/pump/lever/mbx900
-	name = "\improper MBX lever action shotgun"
+	name = "\improper MBX lever action shotgun" //Why it can take a bipod is beyond me. - Skye
 	desc = "A .410 bore lever action shotgun that fires nearly as fast as you can operate the lever. Renowed due to its devastating and extremely reliable design."
 	icon_state = "mbx900"
 	item_state = "mbx900"
@@ -628,7 +627,7 @@
 	attachable_allowed = list(
 		/obj/item/attachable/angledgrip,
 		/obj/item/attachable/bayonet,
-		/obj/item/attachable/bipod,
+		/obj/item/attachable/foldable/bipod,
 		/obj/item/attachable/compensator,
 		/obj/item/attachable/extended_barrel,
 		/obj/item/attachable/flashlight,
@@ -678,15 +677,14 @@
 		/obj/item/attachable/heavy_barrel,
 		/obj/item/attachable/compensator,
 		/obj/item/attachable/magnetic_harness,
-		/obj/item/attachable/stock/t35stock,
-		/obj/item/attachable/stock/t35crane,
+		/obj/item/attachable/foldable/t35stock,
 		/obj/item/attachable/motiondetector,
 		/obj/item/attachable/buildasentry,
 		/obj/item/attachable/shoulder_mount,
 		/obj/item/attachable/stock/tactical,
 	)
 
-	starting_attachment_types = list(/obj/item/attachable/stock/t35crane)
+	starting_attachment_types = list(/obj/item/attachable/foldable/t35stock)
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 9, "rail_y" = 21, "under_x" = 18, "under_y" = 12, "stock_x" = -3, "stock_y" = 16)
 
 	flags_item_map_variant = NONE
@@ -709,7 +707,7 @@
 
 /obj/item/weapon/gun/shotgun/pump/t35/nonstandard
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
-	starting_attachment_types = list(/obj/item/attachable/stock/t35stock, /obj/item/attachable/angledgrip, /obj/item/attachable/magnetic_harness)
+	starting_attachment_types = list(/obj/item/attachable/foldable/t35stock, /obj/item/attachable/angledgrip, /obj/item/attachable/magnetic_harness)
 
 //-------------------------------------------------------
 //THE MYTH, THE GUN, THE LEGEND, THE DEATH, THE ZX
