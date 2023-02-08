@@ -1,6 +1,6 @@
 /datum/xeno_caste/gecko
 	caste_name = "Gecko"
-	display_name = "Hostile UV-M Gecko"
+	display_name = "UV-M Gecko"
 	upgrade_name = ""
 	caste_desc = ""
 	wound_type = ""
@@ -19,11 +19,11 @@
 	melee_damage = 10
 
 	// *** Speed *** //
-	speed = 0.3
+	speed = -0.2
 
 	// *** Plasma *** //
 	plasma_max = 1500
-	plasma_gain = 0
+	plasma_gain = 50
 
 	// *** Health *** //
 	max_health = 300
@@ -45,7 +45,6 @@
 	actions = list(
 		/datum/action/xeno_action/xeno_resting,
 		/datum/action/xeno_action/activable/ravage/slow,
-		/datum/action/xeno_action/activable/neurogas_grenade/uvstun,
 	)
 
 /datum/xeno_caste/gecko/smartgun
@@ -55,10 +54,18 @@
 	spit_types = list (/datum/ammo/xeno/acid/passthrough/uv/smartgecko)
 	geckoturret = " smartgun"
 
+	// *** Speed *** //
+	speed = 0.3
+
+	// *** Abilities *** //
 	actions = list(
 		/datum/action/xeno_action/xeno_resting,
 		/datum/action/xeno_action/activable/xeno_spit/human,
 	)
+
+/datum/xeno_caste/gecko/smartgun/Corrupted
+	caste_type_path = /mob/living/carbon/xenomorph/zuv/gecko/smartgun/Corrupted
+	spit_types = list (/datum/ammo/xeno/acid/passthrough/uv/smartgecko/ally)
 
 /datum/xeno_caste/gecko/laser
 	caste_type_path = /mob/living/carbon/xenomorph/zuv/gecko/laser
@@ -67,8 +74,23 @@
 	spit_types = list (/datum/ammo/xeno/acid/passthrough/uv/lasergecko)
 	geckoturret = " laser"
 
+	// *** Speed *** //
+	speed = 0.3
+
+	// *** Abilities *** //
 	actions = list(
 		/datum/action/xeno_action/xeno_resting,
 		/datum/action/xeno_action/activable/xeno_spit/human/laser,
 		/datum/action/xeno_action/activable/scatter_spit/uv/lasergecko,
+	)
+
+/datum/xeno_caste/gecko/flashbang //Unsurprisingly, letting the main melee version all have flashbangs was a tad bit silly. Shocker.
+	// *** Speed *** //
+	speed = 0.3
+
+	// *** Abilities *** //
+	actions = list(
+		/datum/action/xeno_action/xeno_resting,
+		/datum/action/xeno_action/activable/ravage/slow,
+		/datum/action/xeno_action/activable/neurogas_grenade/uvstun,
 	)

@@ -145,6 +145,21 @@ Stepping directly on the mine will also blow it up
 	INVOKE_ASYNC(src, .proc/trigger_explosion)
 	return TRUE
 
+/obj/item/explosive/mine/trip_mine(mob/living/carbon/xenomorph/X)
+	if(!armed || triggered)
+		return FALSE
+	if((X.status_flags & INCORPOREAL))
+		return FALSE
+	if(X.iff_signal & iff_signal)
+		return FALSE
+	X.visible_message(span_danger("[icon2html(src, viewers(X))] \The [src] clicks as [X] moves in front of it."), \
+	span_danger("[icon2html(src, viewers(X))] \The [src] clicks as you move in front of it."), \
+	span_danger("You hear a click."))
+
+	playsound(loc, 'sound/weapons/mine_tripped.ogg', 25, 1)
+	INVOKE_ASYNC(src, .proc/trigger_explosion)
+	return TRUE
+
 /// Alien attacks trigger the explosive to instantly detonate
 /obj/item/explosive/mine/attack_alien(mob/living/carbon/xenomorph/X, damage_amount = X.xeno_caste.melee_damage, damage_type = BRUTE, damage_flag = "", effects = TRUE, armor_penetration = 0, isrightclick = FALSE)
 	if(X.status_flags & INCORPOREAL)

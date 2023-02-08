@@ -3,7 +3,7 @@
 	name = "Zuv"
 	desc = "A small remote-controllable vehicle, usually owned by the TGMC and other major armies. Notably, this isn't one of yours."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
-	icon_state = "Zuv Moving"
+	icon_state = "Zuv Running"
 	health = 150
 	maxHealth = 150
 	plasma_stored = 50
@@ -40,6 +40,3 @@
 	///We QDEL them as cleanup and preventing them from being sold
 	QDEL_IN(src, TIME_TO_DISSOLVE)
 	return ..()
-
-
-//// SHITCODINGLY CHANGES CERTAIN NOISES, INCLUDING SLASH AND DAMAGE TAKEN. AVERT THYNE EYES IF YOU KNOW WHAT YOU'RE DOING!!

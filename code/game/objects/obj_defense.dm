@@ -145,6 +145,22 @@
 	L.visible_message(span_danger("[L] nudges its head against [src]."), \
 	span_danger("You nudge your head against [src]."))
 
+/obj/attack_uv(mob/living/carbon/xenomorph/zuv/Z, damage_amount = Z.xeno_caste.melee_damage, damage_type = BRUTE, damage_flag = "", effects = TRUE, armor_penetration = 0, isrightclick = FALSE)
+	if(Z.status_flags & INCORPOREAL) //Ghosts can't attack machines
+		return
+	// SHOULD_CALL_PARENT(TRUE) // TODO: fix this
+	if(SEND_SIGNAL(src, COMSIG_OBJ_ATTACK_ALIEN, Z) & COMPONENT_NO_ATTACK_ALIEN)
+		return
+	if(!(resistance_flags & XENO_DAMAGEABLE))
+		to_chat(Z, span_warning("We beep at \the [src] cluelessly."))
+		return
+	if(effects)
+		Z.visible_message(span_danger("[Z] has bashed [src]!"),
+		span_danger("We bash [src]!"))
+		Z.do_attack_animation(src, ATTACK_EFFECT_SMASH)
+		playsound(loc, "punch", 25)
+	attack_generic(Z, damage_amount, damage_type, damage_flag, effects, armor_penetration)
+
 
 ///the obj is deconstructed into pieces, whether through careful disassembly or when destroyed.
 /obj/proc/deconstruct(disassembled = TRUE)

@@ -1075,79 +1075,197 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /datum/hive_status/corrupted/post_add(mob/living/carbon/xenomorph/X)
 	. = ..()
 	X.grant_language(/datum/language/common)
+	X.iff_signal = TGMC_LOYALIST_IFF
+	X.faction = FACTION_TERRAGOV
 
 /datum/hive_status/corrupted/post_removal(mob/living/carbon/xenomorph/X)
 	. = ..()
 	X.remove_language(/datum/language/common)
+	X.iff_signal = NONE
+	X.faction = FACTION_XENO
 
 /datum/hive_status/corrupted/can_xeno_message()
 	return TRUE // can always talk in hivemind
 
-/mob/living/carbon/xenomorph/queen/Corrupted
+/mob/living/carbon/xenomorph/beetle/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
-/mob/living/carbon/xenomorph/boiler/Corrupted
-	hivenumber = XENO_HIVE_CORRUPTED
-
-/mob/living/carbon/xenomorph/bull/Corrupted
-	hivenumber = XENO_HIVE_CORRUPTED
-
-/mob/living/carbon/xenomorph/carrier/Corrupted
-	hivenumber = XENO_HIVE_CORRUPTED
+/mob/living/carbon/xenomorph/beetle/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
 
 /mob/living/carbon/xenomorph/crusher/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
-/mob/living/carbon/xenomorph/gorger/Corrupted
-	hivenumber = XENO_HIVE_CORRUPTED
+/mob/living/carbon/xenomorph/crusher/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
 
 /mob/living/carbon/xenomorph/defender/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
-/mob/living/carbon/xenomorph/defiler/Corrupted
-	hivenumber = XENO_HIVE_CORRUPTED
+/mob/living/carbon/xenomorph/defender/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
 
 /mob/living/carbon/xenomorph/drone/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
+/mob/living/carbon/xenomorph/drone/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+
 /mob/living/carbon/xenomorph/hivelord/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
-/mob/living/carbon/xenomorph/hivemind/Corrupted
-	hivenumber = XENO_HIVE_CORRUPTED
+/mob/living/carbon/xenomorph/hivelord/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
 
 /mob/living/carbon/xenomorph/hunter/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
-/mob/living/carbon/xenomorph/larva/Corrupted
-	hivenumber = XENO_HIVE_CORRUPTED
+/mob/living/carbon/xenomorph/hunter/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
 
 /mob/living/carbon/xenomorph/praetorian/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
+/mob/living/carbon/xenomorph/praetorian/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+
+/mob/living/carbon/xenomorph/queen/Corrupted
+	hivenumber = XENO_HIVE_CORRUPTED
+
+/mob/living/carbon/xenomorph/queen/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+
+/mob/living/carbon/xenomorph/king/Corrupted
+	hivenumber = XENO_HIVE_CORRUPTED
+
+/mob/living/carbon/xenomorph/king/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+
+/mob/living/carbon/xenomorph/mantis/Corrupted
+	hivenumber = XENO_HIVE_CORRUPTED
+
+/mob/living/carbon/xenomorph/mantis/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+
 /mob/living/carbon/xenomorph/ravager/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
+
+/mob/living/carbon/xenomorph/ravager/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
 
 /mob/living/carbon/xenomorph/runner/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
+/mob/living/carbon/xenomorph/runner/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+
+/mob/living/carbon/xenomorph/scorpion/Corrupted
+	hivenumber = XENO_HIVE_CORRUPTED
+
+/mob/living/carbon/xenomorph/scorpion/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+
+/mob/living/carbon/xenomorph/scorpionbomber/Corrupted
+	hivenumber = XENO_HIVE_CORRUPTED
+
+/mob/living/carbon/xenomorph/scorpionbomber/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/sidestepper)
+
 /mob/living/carbon/xenomorph/sentinel/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
-/mob/living/carbon/xenomorph/shrike/Corrupted
-	hivenumber = XENO_HIVE_CORRUPTED
+/mob/living/carbon/xenomorph/sentinel/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
 
 /mob/living/carbon/xenomorph/spitter/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
+/mob/living/carbon/xenomorph/spitter/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+
 /mob/living/carbon/xenomorph/warrior/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
-/mob/living/carbon/xenomorph/wraith/Corrupted
+/mob/living/carbon/xenomorph/warrior/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+
+/mob/living/carbon/xenomorph/boiler/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
-/mob/living/carbon/xenomorph/king/Corrupted
+/mob/living/carbon/xenomorph/boiler/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	color = "#81ABC1"
+
+/mob/living/carbon/xenomorph/zuv/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
+	caste_base_type = /mob/living/carbon/xenomorph/zuv/komodo/Corrupted
+
+/mob/living/carbon/xenomorph/zuv/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+	color = "#81ABC1"
+
+/mob/living/carbon/xenomorph/zuv/komodo/Corrupted
+	hivenumber = XENO_HIVE_CORRUPTED
+	caste_base_type = /mob/living/carbon/xenomorph/zuv/komodo/Corrupted
+
+/mob/living/carbon/xenomorph/zuv/komodo/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+	color = "#81ABC1"
+
+/mob/living/carbon/xenomorph/zuv/komodo/gigakomodo/Corrupted
+	hivenumber = XENO_HIVE_CORRUPTED
+	iff_signal = TGMC_LOYALIST_IFF
+	faction = FACTION_TERRAGOV
+
+
+/mob/living/carbon/xenomorph/zuv/komodo/gigakomodo/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/gigakomodo)
+	color = "#81ABC1"
+
+	pixel_y = 44
+	resize = RESIZE_GIANT_SIZE
+	update_transform()
+
+/mob/living/carbon/xenomorph/zuv/gecko/smartgun/Corrupted
+	hivenumber = XENO_HIVE_CORRUPTED
+	caste_base_type = /mob/living/carbon/xenomorph/zuv/gecko/smartgun/Corrupted
+
+/mob/living/carbon/xenomorph/zuv/gecko/smartgun/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+	color = "#81ABC1"
+
+/mob/living/carbon/xenomorph/zuv/gecko/laser/Corrupted
+	hivenumber = XENO_HIVE_CORRUPTED
+	iff_signal = TGMC_LOYALIST_IFF
+	faction = FACTION_TERRAGOV
+
+
+/mob/living/carbon/xenomorph/zuv/gecko/laser/Corrupted/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/strafer)
+	color = "#81ABC1"
 
 // ***************************************
 // *********** Misc Xenos
@@ -1368,8 +1486,10 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/king/Zeta
 	hivenumber = XENO_HIVE_ZETA
 
+//STANDARD UGV FACTION//
 /datum/hive_status/humanfaction
 	hivenumber = XENO_HIVE_HUMAN
+	prefix = "Hostile"
 
 /datum/hive_status/humanfaction/post_add(mob/living/carbon/xenomorph/X)
 	. = ..()
@@ -1434,6 +1554,8 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/human/get_xeno_hivenumber()
 	if(faction == FACTION_ZOMBIE)
 		return FACTION_ZOMBIE
+	if(faction == FACTION_TERRAGOV)
+		return XENO_HIVE_CORRUPTED
 	return FALSE
 
 

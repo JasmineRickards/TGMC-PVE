@@ -113,11 +113,12 @@
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_SCATTER_SPIT,
 	)
+	var/windup_time = 0.5 SECONDS
 
 /datum/action/xeno_action/activable/scatter_spit/use_ability(atom/target)
 	var/mob/living/carbon/xenomorph/X = owner
 
-	if(!do_after(X, 0.5 SECONDS, TRUE, target, BUSY_ICON_DANGER))
+	if(!do_after(X, windup_time, FALSE, X, BUSY_ICON_DANGER,))
 		return fail_activate()
 
 	//Shoot at the thing
@@ -156,7 +157,7 @@
 		return FALSE
 	action_activate()
 	LAZYINCREMENT(owner.do_actions, target)
-	addtimer(CALLBACK(src, .proc/decrease_do_action, target), 0.5)
+	addtimer(CALLBACK(src, .proc/decrease_do_action, target), windup_time)
 	return TRUE
 
 	///Decrease the do_actions of the owner

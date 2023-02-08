@@ -3,7 +3,7 @@
 	name = "Komodo"
 	desc = "A small remote-controllable vehicle, usually owned by the TGMC and other major armies. Notably, this isn't one of yours."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
-	icon_state = "Komodo Moving"
+	icon_state = "Komodo Running"
 	health = 300
 	maxHealth = 300
 	plasma_stored = 50

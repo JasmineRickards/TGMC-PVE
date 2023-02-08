@@ -49,6 +49,8 @@
 	. = ..()
 	if(!.)
 		return FALSE
+	if (wear_id?.iff_signal & X.iff_signal)
+		return FALSE
 
 /mob/living/proc/get_xeno_slash_zone(mob/living/carbon/xenomorph/X, set_location = FALSE, random_location = FALSE, no_head = FALSE)
 	return
@@ -270,6 +272,8 @@
 /mob/living/carbon/human/can_uv_slash(mob/living/carbon/xenomorph/zuv/Z)
 	. = ..()
 	if(!.)
+		return FALSE
+	if (wear_id?.iff_signal & Z.iff_signal)
 		return FALSE
 
 /mob/living/proc/get_uv_slash_zone(mob/living/carbon/xenomorph/zuv/Z, set_location = FALSE, random_location = FALSE, no_head = FALSE)

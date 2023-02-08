@@ -1,6 +1,6 @@
 /datum/xeno_caste/komodo
 	caste_name = "Komodo"
-	display_name = "Hostile UV-H Komodo"
+	display_name = "UV-H Komodo"
 	upgrade_name = ""
 	caste_desc = ""
 	wound_type = ""
@@ -46,10 +46,13 @@
 		/datum/action/xeno_action/activable/scatter_spit/uv,
 	)
 
+/datum/xeno_caste/zuv/komodo/Corrupted
+	caste_type_path = /mob/living/carbon/xenomorph/zuv/komodo/Corrupted
+	spit_types = list (/datum/ammo/xeno/acid/passthrough/uv/ally)
 
 /datum/xeno_caste/komodo/gigakomodo
 
-	display_name = "Overly large Komodo"
+	display_name = "UV Dragon"
 	caste_type_path = /mob/living/carbon/xenomorph/zuv/komodo/gigakomodo
 	sunder_max = 50 // Essentially, double the armor as usual, can only be reduced to the normal version's max armor.
 
