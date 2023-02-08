@@ -1,6 +1,6 @@
 /datum/xeno_caste/zuv
 	caste_name = "Zuv"
-	display_name = "Hostile UV-L Iguana"
+	display_name = "UV-L Iguana"
 	upgrade_name = ""
 	caste_desc = ""
 	wound_type = ""
@@ -20,8 +20,8 @@
 	speed = 0
 
 	// *** Plasma *** //
-	plasma_max = 1500// 20 spits
-	plasma_gain = 10
+	plasma_max = 1500
+	plasma_gain = 50
 
 	// *** Health *** //
 	max_health = 150
@@ -47,3 +47,7 @@
 		/datum/action/xeno_action/activable/xeno_spit/human,
 		/datum/action/xeno_action/activable/forward_charge/unprecise/human,
 	)
+
+/datum/xeno_caste/zuv/Corrupted
+	caste_type_path = /mob/living/carbon/xenomorph/zuv/Corrupted
+	spit_types = list(/datum/ammo/xeno/acid/passthrough/uv/light/ally)

@@ -127,6 +127,18 @@
 	SEND_SIGNAL(X, COMSIG_XENOMORPH_ATTACK_BARRICADE)
 	return ..()
 
+/obj/structure/barricade/attack_uv(mob/living/carbon/xenomorph/zuv/Z, damage_amount = Z.xeno_caste.melee_damage, damage_type = BRUTE, damage_flag = "", effects = TRUE, armor_penetration = 0, isrightclick = FALSE)
+	if(Z.status_flags & INCORPOREAL)
+		return FALSE
+
+	if(is_wired)
+		Z.visible_message(span_danger("The barbed wire scratches [Z]'s paint!"),
+		span_danger("The barbed wire slices into us!"), null, 5)
+		Z.apply_damage(10, updating_health = TRUE) //Yeah, it doesn't make sense, but it seems more fun to reward wire.
+
+	SEND_SIGNAL(Z, COMSIG_XENOMORPH_ATTACK_BARRICADE)
+	return ..()
+
 /obj/structure/barricade/attackby(obj/item/I, mob/user, params)
 	. = ..()
 

@@ -64,7 +64,7 @@ export const Sentry = (props, context) => {
                 </Button>
               }
               label="Weapon Safety">
-              {safety_toggle ? 'Only Xenos' : 'Everything'}
+              {safety_toggle ? 'Safety On' : 'Safety Off'}
             </LabeledList.Item>
             <LabeledList.Item
               buttons={

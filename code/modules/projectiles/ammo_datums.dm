@@ -3282,18 +3282,23 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	bullet_color = COLOR_VERY_SOFT_YELLOW
 	iff_signal = PIRATE_IFF
 
-
+/datum/ammo/xeno/acid/passthrough/uv/ally
+	iff_signal = TGMC_LOYALIST_IFF
 /datum/ammo/xeno/acid/passthrough/uv/light
 	name = "Submachinegun bullet"
 	damage = 8
 	sundering = 2
 
+/datum/ammo/xeno/acid/passthrough/uv/light/ally
+	iff_signal = TGMC_LOYALIST_IFF
 
 /datum/ammo/xeno/acid/passthrough/uv/smartgecko
 	name = "Smartmachinegun bullet"
 	damage = 15
 	added_spit_delay = 0
 
+/datum/ammo/xeno/acid/passthrough/uv/smartgecko/ally
+	iff_signal = TGMC_LOYALIST_IFF
 /datum/ammo/xeno/acid/passthrough/uv/lasergecko
 	name = "laser bolt"
 	icon_state = "bluelaserstandard"

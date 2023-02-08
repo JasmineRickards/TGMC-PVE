@@ -143,6 +143,14 @@
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
 
+/mob/living/carbon/xenomorph/zuv/gecko/ai/sneaky
+
+/mob/living/carbon/xenomorph/zuv/gecko/ai/sneaky/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	alpha = 125
+	update_transform()
+
 /mob/living/carbon/xenomorph/zuv/gecko/smartgun/ai
 
 /mob/living/carbon/xenomorph/zuv/gecko/smartgun/ai/Initialize()
@@ -157,5 +165,11 @@
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/strafer)
 	color = "#df8888"
 
+/mob/living/carbon/xenomorph/zuv/gecko/flashbang/ai
+
+/mob/living/carbon/xenomorph/zuv/gecko/flashbang/ai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	color = "#ec1f1f"
 
 

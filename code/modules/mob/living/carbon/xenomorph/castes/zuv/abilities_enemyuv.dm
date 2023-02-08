@@ -20,11 +20,12 @@
 	mechanics_text = "Shoots a single volkite projectile."
 	ability_name = "volkite blast"
 	cooldown_timer = 8 SECONDS
+	windup_time = 0.5 SECONDS
 
 /datum/action/xeno_action/activable/scatter_spit/uv/use_ability(atom/target)
 	var/mob/living/carbon/xenomorph/X = owner
 
-	if(!do_after(X, 0.5 SECONDS, TRUE, target, BUSY_ICON_DANGER))
+	if(!do_after(X, windup_time, FALSE, X, BUSY_ICON_DANGER,))
 		return fail_activate()
 
 	//Shoot at the thing
@@ -46,6 +47,7 @@
 /datum/action/xeno_action/activable/scatter_spit/uv/gigakomodo
 	cooldown_timer = 3 SECONDS
 	plasma_cost = 5
+	windup_time = 0 SECONDS // As it inherits the new wind_up time.
 
 /datum/action/xeno_action/activable/scatter_spit/uv/gigakomodo/use_ability(atom/target)
 	var/mob/living/carbon/xenomorph/X = owner
@@ -70,11 +72,12 @@
 	mechanics_text = "ohgodohfuck."
 	ability_name = "heavy laser blast"
 	cooldown_timer = 10 SECONDS
+	windup_time = 2 SECONDS
 
 /datum/action/xeno_action/activable/scatter_spit/uv/gigakomodo/laser/use_ability(atom/target)
 	var/mob/living/carbon/xenomorph/X = owner
 
-	if(!do_after(X, 2 SECONDS, TRUE, target, BUSY_ICON_DANGER))
+	if(!do_after(X, windup_time, FALSE, X, BUSY_ICON_DANGER,))
 		return fail_activate()
 
 	//Shoot at the thing
@@ -97,13 +100,14 @@
 	mechanics_text = "ohgodohfuck."
 	ability_name = "cannon blast"
 	cooldown_timer = 20 SECONDS
+	windup_time = 5 SECONDS
 
 /datum/action/xeno_action/activable/scatter_spit/uv/gigakomodo/tungsten/use_ability(atom/target)
 	var/mob/living/carbon/xenomorph/X = owner
 
 	playsound(X.loc, 'sound/weapons/guns/interact/launcher_reload.ogg', 75, 1)
 
-	if(!do_after(X, 5 SECONDS, TRUE, target, BUSY_ICON_DANGER))
+	if(!do_after(X, windup_time, FALSE, X, BUSY_ICON_DANGER,))
 		return fail_activate()
 
 	//Shoot at the thing
