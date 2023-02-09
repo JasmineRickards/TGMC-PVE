@@ -1407,6 +1407,55 @@ TUNNEL
 	SSminimaps.remove_marker(src)
 	SSminimaps.add_marker(src, z, MINIMAP_FLAG_XENO, "spawner[warning ? "_warn" : "_passive"]")
 
+/obj/structure/xeno/spawner/uv
+	name = "Stolen TAV - Basilisk"
+	desc = "A stolen APC, The brakes are on and UGVs are coming out of the entrances."
+	icon = 'icons/Marine/apc_prop.dmi'
+	icon_state = "UGVspawner"
+	bound_width = 128
+	bound_height = 128
+	max_integrity = 500
+	resistance_flags = UNACIDABLE | DROPSHIP_IMMUNE
+	xeno_structure_flags = IGNORE_WEED_REMOVAL | CRITICAL_STRUCTURE
+	///For minimap icon change if silo takes damage or nearby hostile
+
+/obj/structure/xeno/spawner/uv/Initialize()
+	. = ..()
+	if(dir == EAST || dir == WEST)
+		bound_height = 64
+		pixel_y = -20
+	else
+		bound_width = 64
+		pixel_x = -34
+
+	GLOB.xeno_spawner += src
+	SSspawning.registerspawner(src, INFINITY, GLOB.uv_ai_spawnable, 0, 0, null)
+	SSspawning.spawnerdata[src].required_increment = max(2 SECONDS, 1 MINUTES - SSmonitor.maximum_connected_players_count * SPAWN_RATE_PER_PLAYER)/SSspawning.wait
+	SSspawning.spawnerdata[src].max_allowed_mobs = max(14, MAX_SPAWNABLE_MOB_PER_PLAYER * SSmonitor.maximum_connected_players_count)
+	for(var/turfs in RANGE_TURFS(XENO_SILO_DETECTION_RANGE, src))
+		RegisterSignal(turfs, COMSIG_ATOM_ENTERED, .proc/spawner_proxy_alert)
+	update_minimap_icon()
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/structure/xeno/spawner/uv/LateInitialize()
+	. = ..()
+	associated_hive = GLOB.hive_datums[XENO_HIVE_HUMAN]
+
+/obj/structure/xeno/spawner/uv/examine(mob/user)
+	. = ..()
+	var/current_integrity = (obj_integrity / max_integrity) * 100
+	switch(current_integrity)
+		if(0 to 20)
+			. += span_warning("It's barely holding, there's sparks all around and dents all over.")
+		if(20 to 40)
+			. += span_warning("It looks severely damaged, The power from it's antennas are flickering.")
+		if(40 to 60)
+			. += span_warning("It's quite beat up, but it seems functional.")
+		if(60 to 80)
+			. += span_warning("It's slightly damaged.")
+		if(80 to 100)
+			. += span_info("It appears in good shape.")
+
 ///Those structures need time to grow and are supposed to be extremely weak healh-wise
 /obj/structure/xeno/plant
 	name = "Xeno Plant"

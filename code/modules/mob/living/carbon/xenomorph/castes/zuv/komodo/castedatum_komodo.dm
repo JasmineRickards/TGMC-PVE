@@ -46,7 +46,7 @@
 		/datum/action/xeno_action/activable/scatter_spit/uv,
 	)
 
-/datum/xeno_caste/zuv/komodo/Corrupted
+/datum/xeno_caste/komodo/Corrupted
 	caste_type_path = /mob/living/carbon/xenomorph/zuv/komodo/Corrupted
 	spit_types = list (/datum/ammo/xeno/acid/passthrough/uv/ally)
 

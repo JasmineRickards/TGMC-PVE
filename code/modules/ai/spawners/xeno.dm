@@ -106,3 +106,17 @@
 	spawnamount = 4
 	spawndelay = 10 SECONDS
 	maxamount = 10
+
+/////////////Minions
+
+/obj/effect/ai_node/spawner/xeno/minions
+	spawntypes = list(/mob/living/carbon/xenomorph/beetle/ai, /mob/living/carbon/xenomorph/mantis/ai, /mob/living/carbon/xenomorph/scorpion/ai, /mob/living/carbon/xenomorph/scorpionbomber/ai)
+	spawnamount = 8
+	spawndelay = 10 SECONDS
+	maxamount = 24
+
+/obj/effect/ai_node/spawner/xeno/minions/melee
+	spawntypes = list(/mob/living/carbon/xenomorph/beetle/ai, /mob/living/carbon/xenomorph/mantis/ai)
+
+/obj/effect/ai_node/spawner/xeno/minions/uv
+	spawntypes = list(/mob/living/carbon/xenomorph/zuv/komodo/ai, /mob/living/carbon/xenomorph/zuv/komodo/ai/closeranged, /mob/living/carbon/xenomorph/zuv/ai, /mob/living/carbon/xenomorph/zuv/ai/closeranged, /mob/living/carbon/xenomorph/zuv/gecko/ai)
