@@ -1,0 +1,378 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"b" = (
+/turf/closed/shuttle/ert{
+	icon_state = "stan20"
+	},
+/area/shuttle/ert/supply)
+"c" = (
+/obj/docking_port/mobile/ert,
+/turf/closed/shuttle/ert{
+	icon_state = "stan27"
+	},
+/area/shuttle/ert/supply)
+"d" = (
+/turf/closed/shuttle/ert{
+	icon_state = "stan25"
+	},
+/area/shuttle/ert/supply)
+"e" = (
+/turf/closed/shuttle/ert{
+	icon_state = "stan21"
+	},
+/area/shuttle/ert/supply)
+"f" = (
+/turf/closed/shuttle/ert{
+	icon_state = "stan22"
+	},
+/area/shuttle/ert/supply)
+"g" = (
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"h" = (
+/turf/closed/shuttle/ert{
+	icon_state = "stan23"
+	},
+/area/shuttle/ert/supply)
+"i" = (
+/turf/closed/shuttle/ert,
+/area/shuttle/ert/supply)
+"k" = (
+/obj/machinery/vending/nanomed,
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin6"
+	},
+/area/shuttle/ert/supply)
+"l" = (
+/turf/open/shuttle/dropship{
+	icon_state = "floor8"
+	},
+/area/shuttle/ert/supply)
+"m" = (
+/obj/machinery/vending/nanomed,
+/turf/open/shuttle/dropship/seven,
+/area/shuttle/ert/supply)
+"n" = (
+/obj/effect/landmark/distress_item,
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"o" = (
+/turf/closed/shuttle/ert{
+	icon_state = "stan5"
+	},
+/area/shuttle/ert/supply)
+"p" = (
+/obj/machinery/door/poddoor/shutters/transit/open,
+/obj/machinery/door/airlock/mainship/generic/ert,
+/turf/open/shuttle/dropship/three,
+/area/shuttle/ert/supply)
+"s" = (
+/obj/structure/bed/chair/dropship/passenger{
+	dir = 4
+	},
+/obj/effect/landmark/distress,
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"t" = (
+/obj/structure/bed/chair/dropship/passenger{
+	dir = 8
+	},
+/obj/effect/landmark/distress,
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"u" = (
+/obj/structure/rack,
+/obj/item/storage/firstaid/regular,
+/obj/item/ammo_magazine/dual_cannon,
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"v" = (
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin4"
+	},
+/area/shuttle/ert/supply)
+"w" = (
+/turf/open/shuttle/dropship/eight,
+/area/shuttle/ert/supply)
+"x" = (
+/turf/closed/shuttle/ert{
+	icon_state = "stan_leftengine"
+	},
+/area/shuttle/ert/supply)
+"y" = (
+/turf/closed/shuttle/ert{
+	icon_state = "stan8"
+	},
+/area/shuttle/ert/supply)
+"z" = (
+/turf/open/shuttle/dropship/three,
+/area/shuttle/ert/supply)
+"A" = (
+/turf/closed/shuttle/ert{
+	icon_state = "stan9"
+	},
+/area/shuttle/ert/supply)
+"B" = (
+/turf/closed/shuttle/ert{
+	icon_state = "stan_rightengine"
+	},
+/area/shuttle/ert/supply)
+"C" = (
+/obj/effect/landmark/distress_item,
+/turf/open/shuttle/dropship/three,
+/area/shuttle/ert/supply)
+"D" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/landmark/distress_item,
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"E" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/effect/landmark/distress_item,
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"F" = (
+/obj/machinery/computer/communications,
+/obj/structure/table/reinforced,
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"G" = (
+/turf/closed/shuttle/ert{
+	icon_state = "leftengine_3";
+	opacity = 0
+	},
+/area/shuttle/ert/supply)
+"H" = (
+/turf/closed/shuttle/ert{
+	icon_state = "stan1"
+	},
+/area/shuttle/ert/supply)
+"I" = (
+/obj/machinery/door/poddoor/shutters/transit/open{
+	dir = 2
+	},
+/obj/machinery/door/airlock/mainship/generic/ert{
+	dir = 2
+	},
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"J" = (
+/obj/machinery/door/poddoor/shutters/transit/open{
+	dir = 2
+	},
+/obj/item/weapon/gun/dual_cannon,
+/turf/open/shuttle/dropship/three,
+/area/shuttle/ert/supply)
+"K" = (
+/turf/closed/shuttle/ert{
+	icon_state = "stan3"
+	},
+/area/shuttle/ert/supply)
+"L" = (
+/obj/machinery/door/poddoor/shutters/transit/open{
+	dir = 2
+	},
+/obj/item/weapon/gun/dual_cannon{
+	dir = 4
+	},
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"M" = (
+/obj/machinery/door/poddoor/shutters/transit/open{
+	dir = 2
+	},
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"N" = (
+/turf/closed/shuttle/ert{
+	icon_state = "rightengine_3";
+	opacity = 0
+	},
+/area/shuttle/ert/supply)
+"O" = (
+/turf/closed/shuttle/ert{
+	icon_state = "leftengine_2";
+	opacity = 0
+	},
+/area/shuttle/ert/supply)
+"P" = (
+/obj/machinery/door/poddoor/shutters/transit/open{
+	dir = 2
+	},
+/obj/item/weapon/gun/dual_cannon{
+	dir = 8
+	},
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"Q" = (
+/turf/closed/shuttle/ert{
+	icon_state = "rightengine_1";
+	opacity = 0
+	},
+/area/shuttle/ert/supply)
+"R" = (
+/turf/closed/shuttle/ert{
+	icon_state = "leftengine_1";
+	opacity = 0
+	},
+/area/shuttle/ert/supply)
+"S" = (
+/turf/closed/shuttle/ert{
+	icon_state = "rightengine_2";
+	opacity = 0
+	},
+/area/shuttle/ert/supply)
+"U" = (
+/obj/structure/bed/chair/dropship/passenger{
+	dir = 8
+	},
+/obj/effect/landmark/distress,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"V" = (
+/obj/machinery/autodoc,
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+"W" = (
+/obj/machinery/door/poddoor/shutters/transit/open{
+	dir = 2
+	},
+/turf/open/shuttle/dropship/three,
+/area/shuttle/ert/supply)
+"X" = (
+/obj/structure/bed/chair/dropship/pilot{
+	dir = 1
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "floor8"
+	},
+/area/shuttle/ert/supply)
+"Y" = (
+/obj/machinery/autodoc_console,
+/turf/open/shuttle/dropship/three,
+/area/shuttle/ert/supply)
+"Z" = (
+/obj/structure/bed/chair/dropship/passenger{
+	dir = 4
+	},
+/obj/effect/landmark/distress,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/shuttle/dropship/floor,
+/area/shuttle/ert/supply)
+
+(1,1,1) = {"
+a
+b
+i
+p
+i
+P
+i
+p
+i
+x
+G
+O
+R
+"}
+(2,1,1) = {"
+a
+e
+Z
+g
+s
+g
+s
+g
+u
+y
+i
+i
+H
+"}
+(3,1,1) = {"
+b
+f
+k
+z
+z
+z
+z
+z
+v
+M
+D
+n
+I
+"}
+(4,1,1) = {"
+c
+F
+X
+n
+n
+n
+n
+V
+l
+W
+C
+C
+J
+"}
+(5,1,1) = {"
+d
+h
+m
+z
+z
+z
+z
+Y
+w
+M
+E
+n
+I
+"}
+(6,1,1) = {"
+a
+e
+U
+g
+t
+g
+t
+g
+u
+A
+o
+o
+K
+"}
+(7,1,1) = {"
+a
+d
+o
+p
+o
+L
+o
+p
+o
+B
+N
+S
+Q
+"}
