@@ -85,6 +85,8 @@
 	)
 
 /datum/xeno_caste/gecko/flashbang //Unsurprisingly, letting the main melee version all have flashbangs was a tad bit silly. Shocker.
+	caste_type_path = /mob/living/carbon/xenomorph/zuv/gecko/flashbang
+
 	// *** Speed *** //
 	speed = 0.3
 

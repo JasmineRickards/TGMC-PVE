@@ -1076,13 +1076,11 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 	. = ..()
 	X.grant_language(/datum/language/common)
 	X.iff_signal = TGMC_LOYALIST_IFF
-	X.faction = FACTION_TERRAGOV
 
 /datum/hive_status/corrupted/post_removal(mob/living/carbon/xenomorph/X)
 	. = ..()
 	X.remove_language(/datum/language/common)
 	X.iff_signal = NONE
-	X.faction = FACTION_XENO
 
 /datum/hive_status/corrupted/can_xeno_message()
 	return TRUE // can always talk in hivemind
@@ -1093,6 +1091,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/beetle/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/crusher/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
@@ -1100,6 +1099,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/crusher/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/defender/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
@@ -1107,34 +1107,43 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/defender/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/drone/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
+
 /mob/living/carbon/xenomorph/drone/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/hivelord/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
+
 /mob/living/carbon/xenomorph/hivelord/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/hunter/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
+
 /mob/living/carbon/xenomorph/hunter/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/praetorian/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
+
 /mob/living/carbon/xenomorph/praetorian/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/queen/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
@@ -1142,6 +1151,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/queen/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/king/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
@@ -1149,6 +1159,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/king/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/mantis/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
@@ -1156,6 +1167,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/mantis/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/ravager/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
@@ -1163,6 +1175,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/ravager/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/runner/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
@@ -1170,6 +1183,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/runner/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/scorpion/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
@@ -1177,6 +1191,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/scorpion/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/scorpionbomber/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
@@ -1184,6 +1199,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/scorpionbomber/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/sidestepper)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/sentinel/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
@@ -1191,6 +1207,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/sentinel/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/spitter/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
@@ -1198,6 +1215,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/spitter/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/warrior/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
@@ -1205,6 +1223,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/warrior/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/boiler/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
@@ -1212,6 +1231,7 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/boiler/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	faction = FACTION_TERRAGOV
 	color = "#81ABC1"
 
 /mob/living/carbon/xenomorph/zuv/Corrupted
@@ -1221,11 +1241,13 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/zuv/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+	faction = FACTION_TERRAGOV
 	color = "#81ABC1"
 
 /mob/living/carbon/xenomorph/zuv/komodo/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 	caste_base_type = /mob/living/carbon/xenomorph/zuv/komodo/Corrupted
+	faction = FACTION_TERRAGOV
 
 /mob/living/carbon/xenomorph/zuv/komodo/Corrupted/Initialize()
 	. = ..()
@@ -1234,13 +1256,11 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 
 /mob/living/carbon/xenomorph/zuv/komodo/gigakomodo/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
-	iff_signal = TGMC_LOYALIST_IFF
-	faction = FACTION_TERRAGOV
-
 
 /mob/living/carbon/xenomorph/zuv/komodo/gigakomodo/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/gigakomodo)
+	faction = FACTION_TERRAGOV
 	color = "#81ABC1"
 
 	pixel_y = 44
@@ -1254,17 +1274,16 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 /mob/living/carbon/xenomorph/zuv/gecko/smartgun/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)
+	faction = FACTION_TERRAGOV
 	color = "#81ABC1"
 
 /mob/living/carbon/xenomorph/zuv/gecko/laser/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
-	iff_signal = TGMC_LOYALIST_IFF
-	faction = FACTION_TERRAGOV
-
 
 /mob/living/carbon/xenomorph/zuv/gecko/laser/Corrupted/Initialize()
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged/strafer)
+	faction = FACTION_TERRAGOV
 	color = "#81ABC1"
 
 // ***************************************

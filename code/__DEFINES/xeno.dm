@@ -120,6 +120,12 @@ GLOBAL_LIST_INIT(xeno_ai_spawnable, list(
 	/mob/living/carbon/xenomorph/scorpion/ai,
 ))
 
+GLOBAL_LIST_INIT(uv_ai_spawnable, list(
+	/mob/living/carbon/xenomorph/zuv/ai,
+	/mob/living/carbon/xenomorph/zuv/komodo/ai,
+	/mob/living/carbon/xenomorph/zuv/gecko/ai,
+))
+
 ///Heals a xeno, respecting different types of damage
 #define HEAL_XENO_DAMAGE(xeno, amount, passive) do { \
 	var/fire_loss = xeno.getFireLoss(); \

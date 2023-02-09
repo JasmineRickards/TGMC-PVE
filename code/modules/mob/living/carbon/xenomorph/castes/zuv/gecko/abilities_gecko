@@ -4,11 +4,12 @@
 	mechanics_text = "Shoots a single xray projectile."
 	ability_name = "xray blast"
 	cooldown_timer = 8 SECONDS
+	windup_time = 1.5 SECONDS
 
 /datum/action/xeno_action/activable/scatter_spit/uv/lasergecko/use_ability(atom/target)
 	var/mob/living/carbon/xenomorph/X = owner
 
-	if(!do_after(X, 1.5 SECONDS, TRUE, target, BUSY_ICON_DANGER))
+	if(!do_after(X, windup_time, FALSE, target, BUSY_ICON_DANGER))
 		return fail_activate()
 
 	//Shoot at the thing
