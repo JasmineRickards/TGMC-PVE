@@ -324,10 +324,6 @@
 	max_shield_health = 120
 	///Amount to recharge per tick, processes once every two seconds.
 	recharge_rate = 20
-
-	///Spark system used to generate sparks when the armor takes damage
-	datum/effect_system/spark_spread/spark_system
-
 	///Shield color when the shield is 0 - 33% full
 	shield_color_low = COLOR_MAROON
 	///Shield color when the shield is 33 - 66% full

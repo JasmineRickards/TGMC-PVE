@@ -338,3 +338,9 @@
 /obj/item/defibrillator/gloves/update_icon_state()
 	return
 
+/obj/item/defibrillator/gloves/moebius
+	name = "Moebius combat gloves"
+	desc = "Advanced medical gloves, these include small electrodes to defibrilate a patiant. This seems to be a variant used by Moebius employees."
+	species_exception = list(/datum/species/robot)
+	icon_state = "moebius_gloves"
+	item_state = "moebius_gloves"

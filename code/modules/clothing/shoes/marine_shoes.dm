@@ -82,7 +82,7 @@
 	name = "flame-resistant combat boots"
 	desc = "Protects you from fire and even contains a pouch for your knife!"
 	icon_state = "marine_armored"
-	hard_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 100, ACID = 0)
+	hard_armor = list(MELEE = 25, BULLET = 15, LASER = 5, ENERGY = 5, BOMB = 5, BIO = 5, FIRE = 100, ACID = 20)
 
 
 /obj/item/clothing/shoes/marinechief
@@ -136,8 +136,6 @@
 /obj/item/clothing/shoes/marine/imperial
 	name = "guardsmen combat boots"
 	desc = "A pair of boots issued to the Imperial Guard, just like anything else they use, they are mass produced."
-	//icon_state = ""
-	soft_armor = list(MELEE = 30, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 30, BIO = 20, FIRE = 20, ACID = 25)
 
 
 /obj/item/clothing/shoes/marine/som
@@ -172,3 +170,12 @@
 
 /obj/item/clothing/shoes/marine/clf/full
 	pockets = /obj/item/storage/internal/shoes/boot_knife/full
+
+//MISC//
+
+/obj/item/clothing/shoes/marine/moebius
+	name = "Moebius exo boots"
+	desc = "Special boots offered to select operatives."
+	species_exception = list(/datum/species/robot)
+	icon_state = "moebius"
+	item_state = "moebius"

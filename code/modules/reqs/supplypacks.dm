@@ -855,7 +855,7 @@ ARMOR
 	)
 	cost = 12
 
-datum/supply_packs/armor/modular/attachments/mk2eshield
+/datum/supply_packs/armor/modular/attachments/eshield
 	name = "Jaeger Arrowhead mk.2"
 	contains = list(
 		/obj/item/armor_module/module/eshield/mk2,

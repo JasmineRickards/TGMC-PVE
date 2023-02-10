@@ -545,6 +545,7 @@
 	desc = "A helmet that goes with the Space Marine power armour, this one has been salvaged from the battlefield."
 	icon_state = "beserkerhelm"
 	soft_armor = list(MELEE = 75, BULLET = 60, LASER = 55, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
 	pockets = /obj/item/storage/internal/imperialhelmet
 
 /obj/item/clothing/head/helmet/marine/imperial/power/astartes
@@ -675,6 +676,13 @@
 	flags_armor_protection = HEAD|FACE|EYES
 	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 50)
 
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/moebius
+	name = "\improper Moebius helmet"
+	desc = "A sturdy hardsuit helmet worn by Moebius corporation operatives."
+	icon_state = "moebius_helmet"
+	flags_armor_protection = HEAD|FACE|EYES
+	soft_armor = list(MELEE = 75, BULLET = 60, LASER = 55, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	pockets = /obj/item/storage/internal/imperialhelmet
 
 
 /obj/item/clothing/head/helmet/marine/som
