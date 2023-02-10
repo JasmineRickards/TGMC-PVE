@@ -113,6 +113,9 @@
 /obj/effect/attach_point/crew_weapon/minidropship
 	ship_tag = SHUTTLE_TADPOLE
 
+/obj/effect/attach_point/crew_weapon/distress
+	ship_tag = SHUTTLE_DISTRESS_SUPPLY
+
 /obj/effect/attach_point/crew_weapon/dropship1
 	ship_tag = SHUTTLE_ALAMO
 

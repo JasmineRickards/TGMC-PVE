@@ -132,6 +132,10 @@
 	shuttle_id = SHUTTLE_DISTRESS
 	name = "Distress"
 
+/datum/map_template/shuttle/small_ert/supply
+	shuttle_id = SHUTTLE_DISTRESS_SUPPLY
+	name = "Modified Distress Shuttle"
+
 /datum/map_template/shuttle/small_ert/pmc
 	shuttle_id = SHUTTLE_DISTRESS_PMC
 	name = "Distress PMC"

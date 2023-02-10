@@ -112,6 +112,7 @@
 #define SHUTTLE_DISTRESS_UFO "distress_ufo"
 #define SHUTTLE_DISTRESS_UPP "distress_upp"
 #define SHUTTLE_DISTRESS_PMC "distress_pmc"
+#define SHUTTLE_DISTRESS_SUPPLY "distress_upgrade"
 #define SHUTTLE_DISTRESS "distress"
 #define SHUTTLE_ESCAPE_POD "escape_pod"
 #define SHUTTLE_SUPPLY "supply"

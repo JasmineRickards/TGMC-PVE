@@ -38,11 +38,12 @@
 
 
 /datum/emergency_call/supplies
-	name = "Supply Drop"
+	name = "Supply Drop (And a modified shuttle!)"
 	mob_max = 0
 	mob_min = 0
 	base_probability = 0
-	auto_shuttle_launch = TRUE
+	auto_shuttle_launch = FALSE
+	shuttle_id = SHUTTLE_DISTRESS_SUPPLY
 
 
 /datum/emergency_call/supplies/spawn_items()

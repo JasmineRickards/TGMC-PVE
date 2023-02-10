@@ -58,6 +58,9 @@
 /area/shuttle/ert/pmc
 	name = "PMC ERT"
 
+/area/shuttle/ert/supply
+	name = "ERT Gunship"
+
 /area/shuttle/big_ert
 	name = "Big ERT Ship"
 
