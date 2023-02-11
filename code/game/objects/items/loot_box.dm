@@ -429,6 +429,16 @@
 	new /obj/item/cell/lasgun/volkite/powerpack(loc)
 	return INITIALIZE_HINT_QDEL
 
+/obj/effect/supply_drop/moebius/Initialize()
+	. = ..()
+	new /obj/item/clothing/shoes/marine/moebius(loc)
+	new /obj/item/defibrillator/gloves/moebius(loc)
+	new /obj/item/clothing/suit/storage/marine/specialist/moebius(loc)
+	new /obj/item/clothing/head/helmet/marine/veteran/mercenary/moebius(loc)
+	new /obj/item/armor_module/module/better_shoulder_lamp(loc)
+	new /obj/item/armor_module/module/eshield(loc)
+	new /obj/item/armor_module/module/eshield/mk2(loc)
+	return INITIALIZE_HINT_QDEL
 
 // 150 to 200 points of value packs, spend 100 points get 150 to 200 in value, basically. Ideally, commons are variety packs, uncommons maybe shake up the round a bit, rares a bit more. Legendaries make the round go wacko. You get a crate of stuff dropped on spawn.
 /obj/item/loot_box/tgmclootbox
