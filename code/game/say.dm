@@ -27,6 +27,11 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	"[FREQ_COMMAND_SOM]" = "comradio",
 	"[FREQ_ENGINEERING_SOM]" = "engradio",
 	"[FREQ_MEDICAL_SOM]" = "medradio",
+	"[FREQ_MEDICAL_SOM]" = "supradio",
+	"[FREQ_ALPHA_COLONY]" = "xrayradio",
+	"[FREQ_COMMAND_COLONY]" = "alpharadio",
+	"[FREQ_ENGINEERING_COLONY]" = "engradio",
+	"[FREQ_MEDICAL_COLONY]" = "medradio",
 	))
 
 

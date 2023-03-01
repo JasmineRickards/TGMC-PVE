@@ -16,6 +16,7 @@
 		/obj/item/seeds,
 		/obj/item/reagent_containers/glass/fertilizer,
 		/obj/item/tool/minihoe,
+		/obj/item/tool/hatchet,
 		/obj/item/flashlight,
 		/obj/item/binoculars,
 		/obj/item/weapon/combat_knife,
@@ -33,7 +34,7 @@
 	allowed = list(
 		/obj/item/tank/emergency_oxygen,
 		/obj/item/healthanalyzer,
-		/obj/item/flashlight/pen,
+		/obj/item/flashlight,
 		/obj/item/reagent_containers/dropper,
 		/obj/item/reagent_containers/syringe,
 		/obj/item/reagent_containers/hypospray,

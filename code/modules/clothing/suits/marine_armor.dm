@@ -316,6 +316,11 @@
 	)
 	flags_item_map_variant = NONE
 
+/obj/item/clothing/suit/storage/marine/security
+	name = "\improper TG-M1 body armor"
+	desc = "Based on the M-3 pattern employed by the TGMC, the UA-M1 body armor is employed by TG security, riot control and union-busting teams."
+	icon_state = "ua_riot"
+	flags_item_map_variant = NONE //Redundant, but if we ever get around to getting the camo sprites ported, yay.
 //===========================SPECIALIST================================
 
 
@@ -836,7 +841,7 @@
 	desc = "A green jacket worn by crew on the Colonial Marshals."
 	icon_state = "CMB_jacket"
 	blood_overlay_type = "coat"
-	soft_armor = list(MELEE = 10, BULLET = 10, LASER = 10, ENERGY = 20, BOMB = 10, BIO = 10, FIRE = 10, ACID = 10)
+	soft_armor = list(MELEE = 20, BULLET = 20, LASER = 20, ENERGY = 40, BOMB = 20, BIO = 20, FIRE = 20, ACID = 20)
 	allowed = list(
 		/obj/item/weapon/gun/,
 		/obj/item/tank/emergency_oxygen,

@@ -153,11 +153,11 @@
 	icon_state = "butch"
 	desc = "A huge thing used for chopping and chopping up meat. This includes clowns and clown-by-products."
 	flags_atom = CONDUCT
-	force = 15.0
+	force = 60
 	w_class = WEIGHT_CLASS_SMALL
-	throwforce = 8.0
-	throw_speed = 3
-	throw_range = 6
+	throwforce = 100
+	throw_speed = 5
+	throw_range = 8
 	attack_verb = list("cleaved", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	sharp = IS_SHARP_ITEM_ACCURATE
 	edge = 1

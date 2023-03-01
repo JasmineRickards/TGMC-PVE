@@ -108,6 +108,7 @@
 	new /obj/item/tool/surgery/bonesetter(src)
 	new /obj/item/tool/surgery/FixOVein(src)
 	new /obj/item/tool/surgery/suture(src)
+	new /obj/item/tweezers(src)
 
 /obj/item/armor_module/storage/uniform/holster
 	name = "shoulder holster"

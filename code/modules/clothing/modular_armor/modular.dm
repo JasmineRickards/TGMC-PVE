@@ -308,6 +308,9 @@
 		/obj/item/storage/belt/gun,
 	)
 
+/obj/item/clothing/suit/modular/xenonauten/pilot/nam
+	current_variant = "drab"
+
 /obj/item/clothing/suit/modular/xenonauten/light
 	name = "\improper Xenonauten-L pattern armored vest"
 	desc = "A XN-L vest, also known as Xenonauten, a set vest with modular attachments made to work in many enviroments. This one seems to be a light variant. Alt-Click to remove attached items. Use it to toggle the built-in flashlight."

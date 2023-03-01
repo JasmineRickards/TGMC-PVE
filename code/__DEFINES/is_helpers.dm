@@ -79,7 +79,7 @@
 #define ismarinecaptainjob(J) (istype(J, /datum/job/terragov/command/captain))
 #define iscorporateliaisonjob(J) (istype(J, /datum/job/terragov/civilian/liaison))
 #define issurvivorjob(J) (istype(J, /datum/job/survivor))
-#define ischaplainjob(J) (istype(J, /datum/job/survivor/chaplain))
+#define ischaplainjob(J) (istype(J, /datum/job/survivor/armed/chaplain))
 #define isxenosjob(J) (istype(J, /datum/job/xenomorph))
 
 //Monkey sub-species
@@ -257,6 +257,7 @@
 
 //Gamemode
 #define isdistressgamemode(O) (istype(O, /datum/game_mode/infestation/distress))
+#define iscolonysurvivalgamemode(O) (istype(O, /datum/game_mode/infestation/colony_survival))
 #define ishuntgamemode(O) (istype(O, /datum/game_mode/infestation/hunt))
 #define iscrashgamemode(O) (istype(O, /datum/game_mode/infestation/crash))
 #define isinfestationgamemode(O) (istype(O, /datum/game_mode/infestation))

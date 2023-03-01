@@ -85,6 +85,9 @@
 	item_state = "w_suit"
 	permeability_coefficient = 0.50
 
+/obj/item/clothing/under/rank/medical/survivor
+	starting_attachments = list(/obj/item/armor_module/storage/uniform/surgery_webbing)
+
 /obj/item/clothing/under/rank/medical/blue
 	name = "medical scrubs"
 	desc = "It's made of a special fiber that provides minor protection against biohazards. This one is in baby blue."

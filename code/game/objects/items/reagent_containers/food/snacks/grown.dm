@@ -102,6 +102,8 @@
 	filling_color = "#A332AD"
 	plantname = "grapes"
 
+/obj/item/reagent_containers/food/snacks/grown/grapes/shand
+	plantname = "shand"
 /obj/item/reagent_containers/food/snacks/grown/greengrapes
 	name = "bunch of green grapes"
 	desc = "Nutritious!"
@@ -109,6 +111,9 @@
 	potency = 25
 	filling_color = "#A6FFA3"
 	plantname = "greengrapes"
+
+/obj/item/reagent_containers/food/snacks/grown/greengrapes/mtear
+	plantname = "mtear"
 
 /obj/item/reagent_containers/food/snacks/grown/peanut
 	name = "peanut"

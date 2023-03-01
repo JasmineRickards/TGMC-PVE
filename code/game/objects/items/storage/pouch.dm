@@ -181,6 +181,10 @@
 	. = ..()
 	new /obj/item/weapon/gun/pistol/rt3(src)
 
+/obj/item/storage/pouch/pistol/hi_pwr/Initialize()
+	. = ..()
+	new /obj/item/weapon/gun/pistol/highpower/security(src)
+
 /obj/item/storage/pouch/pistol/som
 	desc = "It can contain a pistol or revolver. Useful for emergencies, and made out of stylish leather in the old SOM tradition."
 	icon_state = "pistol_som"
@@ -240,6 +244,9 @@
 		/obj/item/ammo_magazine/rifle/pepperball/pepperball_mini,
 	)
 
+/obj/item/storage/pouch/magazine/pistol/hi_pwr
+	fill_type = /obj/item/ammo_magazine/pistol/highpower
+	fill_number = 4
 /obj/item/storage/pouch/magazine/pistol/large
 	name = "pistol magazine pouch"
 	desc = "This pouch can contain six pistol and revolver ammo magazines."
@@ -537,6 +544,7 @@
 	new /obj/item/tool/surgery/bonesetter(src)
 	new /obj/item/tool/surgery/FixOVein(src)
 	new /obj/item/tool/surgery/suture(src)
+	new /obj/item/tweezers(src)
 
 /obj/item/storage/pouch/document
 	name = "document pouch"
@@ -631,6 +639,12 @@
 	new /obj/item/radio (src)
 	new /obj/item/binoculars/tactical (src)
 
+/obj/item/storage/pouch/field_pouch/jnr_rsr/Initialize()
+	. = ..()
+	new /obj/item/radio (src)
+	new /obj/item/flashlight (src)
+	new /obj/item/binoculars (src)
+	new /obj/item/attachable/motiondetector (src)
 
 /obj/item/storage/pouch/electronics
 	name = "electronics pouch"
@@ -649,6 +663,13 @@
 	new /obj/item/cell/high (src)
 
 
+/obj/item/storage/pouch/electronics/miner/Initialize()
+	. = ..()
+	new /obj/item/cell/apc (src)
+	new /obj/item/cell/apc (src)
+	new /obj/item/cell/apc (src)
+	new /obj/item/cell/apc (src)
+	new /obj/item/cell/rtg/small/cutter (src)
 /obj/item/storage/pouch/construction
 	name = "construction pouch"
 	desc = "It's designed to hold construction materials - glass/metal sheets, metal rods, barbed wire, cable coil, and empty sandbags. It also has a hook for an entrenching tool."

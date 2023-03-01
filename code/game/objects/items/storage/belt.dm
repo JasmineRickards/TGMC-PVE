@@ -276,6 +276,26 @@
 	new /obj/item/tool/research/xeno_analyzer(src)
 	new /obj/item/healthanalyzer(src)
 
+/obj/item/storage/belt/rig/survivor/Initialize()  //The belt, with all it's magic inside!
+	. = ..()
+	new /obj/item/reagent_containers/hypospray/autoinjector/virilyth(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/virilyth(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/virilyth(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/bicaridine(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/kelotane(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/tricordrazine(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/combat_advanced(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/combat_advanced(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/quickclot(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/spaceacillin(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/imidazoline(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/alkysine(src)
+	new /obj/item/defibrillator(src)
+	new /obj/item/roller(src)
+	new /obj/item/roller(src)
+	new /obj/item/reagent_containers/glass/beaker/large(src)
+	new /obj/item/healthanalyzer(src)
+
 /obj/item/storage/belt/hypospraybelt
 	name = "\improper M276 pattern hypospray belt"
 	desc = "The M276 is the standard load-bearing equipment of the TGMC. It consists of a modular belt with various clips. This version is a less common configuration, designed to transport hyposprays and reagent containers."
@@ -354,6 +374,8 @@
 		/obj/item/ammo_magazine/handful,
 		/obj/item/reagent_containers/food/snacks/donut,
 		/obj/item/weapon/baton,
+		/obj/item/weapon/telebaton,
+		/obj/item/weapon/classic_baton,
 		/obj/item/weapon/gun/energy/taser,
 		/obj/item/tool/lighter/zippo,
 		/obj/item/storage/fancy/cigarettes,
@@ -374,6 +396,16 @@
 	new	/obj/item/weapon/baton(src)
 	new	/obj/item/flash(src)
 	new /obj/item/hailer(src)
+
+/obj/item/storage/belt/security/MP/survivor/Initialize()
+	. = ..()
+	new /obj/item/ammo_magazine/pistol/g22(src)
+	new	/obj/item/ammo_magazine/pistol/g22(src)
+	new	/obj/item/ammo_magazine/pistol/g22(src)
+	new	/obj/item/ammo_magazine/pistol/g22(src)
+	new	/obj/item/weapon/classic_baton(src)
+	new	/obj/item/reagent_containers/food/snacks/donut/normal(src)
+	new /obj/item/reagent_containers/food/snacks/donut/normal(src)
 
 
 /obj/item/storage/belt/security/tactical
@@ -804,6 +836,22 @@
 	existing_handful.create_handful(user, 2)
 	update_icon()
 
+/obj/item/storage/belt/shotgun/quickshell/loaded/Initialize()
+	. = ..()
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
 
 /obj/item/storage/belt/knifepouch
 	name="\improper M276 pattern knife rig"
@@ -1107,6 +1155,16 @@
 		/obj/item/weapon/gun/revolver,
 		/obj/item/ammo_magazine/revolver,
 	)
+
+/obj/item/storage/belt/gun/revolver/standard_revolver/marshall/Initialize()
+	. = ..()
+	new /obj/item/weapon/gun/revolver/cmb(src)
+	new /obj/item/ammo_magazine/revolver/cmb(src)
+	new /obj/item/ammo_magazine/revolver/cmb(src)
+	new /obj/item/ammo_magazine/revolver/cmb(src)
+	new /obj/item/ammo_magazine/revolver/cmb(src)
+	new /obj/item/ammo_magazine/revolver/cmb(src)
+	new /obj/item/ammo_magazine/revolver/cmb(src)
 //smg belts -- bye bye shitty t-19 holster!
 
 /obj/item/storage/belt/gun/smg//Added a base type for tac reload, in case anyone feels like adding a SoM version for the V-21 later.

@@ -54,6 +54,14 @@
 	icon_state_mini = "mag_cell_te"
 	maxcharge = 2850
 
+/obj/item/cell/lasgun/lasrifle/survivor
+	name = "\improper Aftermarket T.E battery"
+	desc = "An NT aftermarket knock-off of a certain other cell. Shodilly crafted and prone to briefly malfunctioning if overused."
+	maxcharge = 425
+	self_recharge = TRUE
+	charge_amount = 10
+	charge_delay = 2 SECONDS
+
 /obj/item/cell/lasgun/fob_sentry/cell
 	maxcharge = INFINITY
 

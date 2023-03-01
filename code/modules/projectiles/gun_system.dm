@@ -1565,7 +1565,14 @@
 	var/added_delay = fire_delay
 	if(user)
 		if(!user.skills.getRating("firearms")) //no training in any firearms
-			added_delay += 3 //untrained humans fire more slowly.
+			added_delay += 3
+			switch(gun_skill_category)
+				if(GUN_SKILL_HEAVY_WEAPONS)
+					if(fire_delay > 1 SECONDS) //long delay to fire
+						added_delay = max(fire_delay - 3 * user.skills.getRating(gun_skill_category), 6)
+				if(GUN_SKILL_SMARTGUN)
+					if(user.skills.getRating(gun_skill_category) < 0)
+						added_delay -= 2 * user.skills.getRating(gun_skill_category)
 		else
 			switch(gun_skill_category)
 				if(GUN_SKILL_HEAVY_WEAPONS)
@@ -1654,7 +1661,7 @@
 		// Apply any skill-based bonuses to accuracy
 		var/skill_accuracy = 0
 		if(!user.skills.getRating("firearms")) //no training in any firearms
-			skill_accuracy = -1
+			skill_accuracy = (user.skills.getRating(gun_skill_category) -1)
 		else
 			skill_accuracy = user.skills.getRating(gun_skill_category)
 		if(skill_accuracy)
@@ -1706,7 +1713,9 @@
 		. += deployed_scatter_change
 
 	if(!user?.skills.getRating("firearms")) //no training in any firearms
-		. += 10
+		var/scatter_tweak = user.skills.getRating(gun_skill_category)
+		if(scatter_tweak > 1)
+			. -= ((scatter_tweak * 2) - 10)
 	else
 		var/scatter_tweak = user.skills.getRating(gun_skill_category)
 		if(scatter_tweak > 1)
@@ -1727,7 +1736,8 @@
 			total_recoil += 1
 	if(!gun_user.skills.getRating("firearms")) //no training in any firearms
 		total_recoil += 2
-	else
+
+	if(gun_user.skills.getRating(gun_skill_category) > 0)
 		var/recoil_tweak = gun_user.skills.getRating(gun_skill_category)
 		if(recoil_tweak)
 			total_recoil -= recoil_tweak * 2

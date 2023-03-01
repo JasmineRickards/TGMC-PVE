@@ -36,9 +36,26 @@
 	desc = "A special space suit for environments that might pose hazards beyond just the vacuum of space. Provides more protection than a standard space suit."
 	icon_state = "rig-engineering"
 	item_state = "eng_hardsuit"
-	slowdown = 1
+	slowdown = 0.5
 	soft_armor = list(MELEE = 40, BULLET = 5, LASER = 20, ENERGY = 5, BOMB = 35, BIO = 100, FIRE = 5, ACID = 5)
-	allowed = list(/obj/item/flashlight,/obj/item/tank,/obj/item/suit_cooling_unit)
+	allowed = list(
+		/obj/item/weapon/gun,
+		/obj/item/instrument,
+		/obj/item/storage/belt/sparepouch,
+		/obj/item/storage/holster/blade,
+		/obj/item/weapon/claymore,
+		/obj/item/storage/belt/gun,
+		/obj/item/storage/belt/knifepouch,
+		/obj/item/weapon/twohanded,
+		/obj/item/tool/pickaxe/plasmacutter,
+		/obj/item/tank/emergency_oxygen,
+		/obj/item/flashlight,
+		/obj/item/ammo_magazine,
+		/obj/item/explosive/grenade,
+		/obj/item/binoculars,
+		/obj/item/weapon/combat_knife,
+		/obj/item/attachable/bayonetknife,
+	)
 	flags_heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
@@ -285,14 +302,14 @@
 	icon_state = "rig0-mining"
 	item_state = "mining_helm"
 	rig_color = "mining"
-	soft_armor = list(MELEE = 50, BULLET = 5, LASER = 20, ENERGY = 5, BOMB = 55, BIO = 100, FIRE = 5, ACID = 5)
+	soft_armor = list(MELEE = 50, BULLET = 5, LASER = 20, ENERGY = 5, BOMB = 55, BIO = 100, FIRE = 5, ACID = 30)
 
 /obj/item/clothing/suit/space/rig/mining
 	icon_state = "rig-mining"
 	name = "mining hardsuit"
 	desc = "A special suit that protects against hazardous, low pressure environments. Has reinforced plating."
 	item_state = "mining_hardsuit"
-	soft_armor = list(MELEE = 50, BULLET = 5, LASER = 20, ENERGY = 5, BOMB = 55, BIO = 100, FIRE = 5, ACID = 5)
+	soft_armor = list(MELEE = 50, BULLET = 5, LASER = 20, ENERGY = 5, BOMB = 55, BIO = 100, FIRE = 5, ACID = 30)
 
 
 //Syndicate rig

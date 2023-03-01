@@ -2,13 +2,23 @@
 GLOBAL_LIST_INIT(channel_tokens, list(
 	RADIO_CHANNEL_REQUISITIONS = RADIO_TOKEN_REQUISITIONS,
 	RADIO_CHANNEL_COMMAND = RADIO_TOKEN_COMMAND,
+	RADIO_CHANNEL_COMMAND_SOM = RADIO_TOKEN_COMMAND,
+	RADIO_CHANNEL_COMMAND_COLONY = RADIO_TOKEN_COMMAND,
 	RADIO_CHANNEL_MEDICAL = RADIO_TOKEN_MEDICAL,
+	RADIO_CHANNEL_MEDICAL_SOM = RADIO_TOKEN_MEDICAL,
 	RADIO_CHANNEL_ENGINEERING = RADIO_TOKEN_ENGINEERING,
+	RADIO_CHANNEL_ENGINEERING_SOM = RADIO_TOKEN_ENGINEERING,
+	RADIO_CHANNEL_ENGINEERING_COLONY = RADIO_TOKEN_ENGINEERING,
 	RADIO_CHANNEL_CAS = RADIO_TOKEN_CAS,
 	RADIO_CHANNEL_ALPHA = RADIO_TOKEN_ALPHA,
+	RADIO_CHANNEL_ALPHA_COLONY = RADIO_TOKEN_ALPHA,
+	RADIO_CHANNEL_ZULU = RADIO_TOKEN_ALPHA,
 	RADIO_CHANNEL_BRAVO = RADIO_TOKEN_BRAVO,
+	RADIO_CHANNEL_YANKEE = RADIO_TOKEN_BRAVO,
 	RADIO_CHANNEL_CHARLIE = RADIO_TOKEN_CHARLIE,
-	RADIO_CHANNEL_DELTA = RADIO_TOKEN_DELTA
+	RADIO_CHANNEL_XRAY = RADIO_TOKEN_CHARLIE,
+	RADIO_CHANNEL_DELTA = RADIO_TOKEN_DELTA,
+	RADIO_CHANNEL_WHISKEY = RADIO_TOKEN_DELTA,
 ))
 
 
@@ -149,11 +159,9 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	channels[RADIO_CHANNEL_REQUISITIONS] = !channels[RADIO_CHANNEL_REQUISITIONS]
 	to_chat(user, span_notice("You toggle supply comms [channels[RADIO_CHANNEL_REQUISITIONS] ? "on" : "off"]."))
 
-
 /obj/item/radio/headset/survivor
 	freqlock = TRUE
 	frequency = FREQ_CIV_GENERAL
-
 
 //MARINE HEADSETS
 /obj/item/radio/headset/mainship
@@ -476,6 +484,13 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	hud_type = DATA_HUD_SQUAD_REBEL
 	minimap_type = /datum/action/minimap/marine/rebel
 
+
+/obj/item/radio/headset/mainship/mcom/som
+	frequency = RADIO_CHANNEL_SOM
+	keyslot = /obj/item/encryptionkey/mcom/som
+	hud_type = DATA_HUD_SQUAD_SOM
+	minimap_type = /datum/action/minimap/som
+
 /obj/item/radio/headset/mainship/mcom/silicon
 	name = "silicon radio"
 	keyslot = /obj/item/encryptionkey/mcom/ai
@@ -539,7 +554,6 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 /obj/item/radio/headset/mainship/marine/alpha/med
 	name = "marine alpha corpsman radio headset"
 	keyslot2 = /obj/item/encryptionkey/med
-
 
 
 /obj/item/radio/headset/mainship/marine/bravo
@@ -753,6 +767,54 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "marine fire support specialist headset"
 	icon_state = "sec_headset"
 	keyslot2 = /obj/item/encryptionkey/cas/rebel
+
+/obj/item/radio/headset/mainship/survivor
+	name = "colonist headset"
+	desc = "A worker's headset, it only has a basic minimap."
+	frequency = FREQ_COLONIST //Basic stand-in for the time being. Achieves the effect of seperating Colonist/Marine comms.
+	hud_type = DATA_HUD_BASIC
+	freerange = TRUE
+	minimap_type = /datum/action/minimap/survivor
+	keyslot = /obj/item/encryptionkey/general/colony
+
+/obj/item/radio/headset/mainship/survivor/sec
+	name = "security headset"
+	desc = "A security guard's headset, it only has a basic minimap."
+	icon_state = "sec_headset_alt"
+	keyslot2 = /obj/item/encryptionkey/squadlead/colony
+
+/obj/item/radio/headset/mainship/survivor/sec/command
+	name = "CMB headset"
+	desc = "A CMB member's headset, it only has a basic minimap."
+	icon_state = "sec_headset_alt"
+	keyslot2 = /obj/item/encryptionkey/mcom/colony
+	use_command = TRUE
+	command = TRUE
+
+/obj/item/radio/headset/mainship/survivor/med
+	name = "medical headset"
+	desc = "A doctor's headset, it only has a basic minimap."
+	icon_state = "com_headset_alt"
+	keyslot2 = /obj/item/encryptionkey/med/colony
+
+/obj/item/radio/headset/mainship/survivor/res
+	name = "researcher headset"
+	desc = "A researcher's headset, with a working minimap!"
+	icon_state = "com_headset_alt"
+	minimap_type = /datum/action/minimap/researcher
+	keyslot2 = /obj/item/encryptionkey/med/colony
+
+/obj/item/radio/headset/mainship/survivor/mining
+	name = "maintenance headset"
+	desc = "A maintenance staff member's headset, it only has a basic minimap."
+	icon_state = "headset_marine_zulu"
+	keyslot2 = /obj/item/encryptionkey/engi/colony
+
+/obj/item/radio/headset/mainship/survivor/other
+	name = "service headset"
+	desc = "A service staff member's headset, it only has a basic minimap."
+	icon_state = "headset_marine_xray"
+	keyslot2 = /obj/item/encryptionkey/alpha/colony
 
 //Distress headsets.
 /obj/item/radio/headset/distress

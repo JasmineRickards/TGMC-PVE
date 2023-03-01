@@ -11,6 +11,10 @@ mode Distress Signal
 	requiredplayers 2
 endmode
 
+mode Colony Survival
+	requiredplayers 2
+endmode
+
 mode Nuclear War
 	requiredplayers 2
 endmode

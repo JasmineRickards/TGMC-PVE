@@ -54,6 +54,9 @@
 	icon_state = "sec_corporate"
 	adjustment_variants = list()
 
+/obj/item/clothing/under/rank/security/corp/survivor
+	starting_attachments = list(/obj/item/armor_module/storage/uniform/webbing)
+
 /obj/item/clothing/under/rank/warden/corp
 	icon_state = "warden_corporate"
 	adjustment_variants = list()
@@ -63,6 +66,9 @@
 	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
 	icon_state = "swatunder"
 	siemens_coefficient = 0.9
+
+/obj/item/clothing/under/tactical/survivor
+	starting_attachments = list(/obj/item/armor_module/storage/uniform/holster/freelancer)
 
 /*
 * Detective

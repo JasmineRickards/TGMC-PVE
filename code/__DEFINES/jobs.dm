@@ -26,6 +26,12 @@
 #define JOB_DISPLAY_ORDER_SUQAD_ENGINEER 22
 #define JOB_DISPLAY_ORDER_SQUAD_MARINE 23
 #define JOB_DISPLAY_ORDER_SURVIVOR 24
+#define JOB_DISPLAY_ORDER_ARMEDSURV 25
+#define JOB_DISPLAY_ORDER_CMB 26
+#define JOB_DISPLAY_ORDER_FIGHTER_SEC 27
+#define JOB_DISPLAY_ORDER_FIGHTER 28
+#define JOB_DISPLAY_ORDER_SUPPORT 29
+#define JOB_DISPLAY_ORDER_MISC 30
 
 #define JOB_FLAG_SPECIALNAME (1<<0)
 #define JOB_FLAG_LATEJOINABLE (1<<1) //Can this job be selected for prefs to join as?
@@ -95,6 +101,11 @@
 #define SOM_SQUAD_ENGINEER "SOM Squad Engineer"
 #define SOM_SQUAD_VETERAN "SOM Squad Veteran"
 #define SOM_SQUAD_MARINE "SOM Squad Standard"
+//COLONY - Even more placeholder. Organising is not my strong suit.
+#define JOB_COL_COMMAND "CMB"
+#define JOB_COL_SUPPORT "Support Colonists"
+#define JOB_COL_FIGHTERS "Fighting Colonists"
+#define JOB_COL_ETC "Misc. Colonists"
 
 #define JOB_CAT_COMMAND "Command"
 #define JOB_CAT_SILICON "Silicon"

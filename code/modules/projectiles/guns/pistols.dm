@@ -133,7 +133,7 @@
 
 
 /obj/item/weapon/gun/pistol/plasma_pistol/guardsman_pistol
-	name = "\improper Guardsman\'s plasma pistol"
+	name = "\improper Guardsman's plasma pistol"
 	desc = "FOR THE EMPEROR!"
 	icon_state = "tx7w"
 	item_state = "tx7"
@@ -498,6 +498,9 @@
 	accuracy_mult_unwielded = 0.7
 	scatter = 3
 	scatter_unwielded = 6
+
+/obj/item/weapon/gun/pistol/highpower/security
+	starting_attachment_types = list(/obj/item/attachable/gyro)
 
 //-------------------------------------------------------
 //VP70
