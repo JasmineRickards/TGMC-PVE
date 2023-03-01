@@ -343,11 +343,11 @@ Good luck, but do not expect to survive."})
 	name = "Research Assistant"
 	jobtype = /datum/job/survivor/junior_rsr
 
+	belt = /obj/item/storage/belt/hypospraybelt
 	ears = /obj/item/radio/headset/mainship/survivor/res
 	w_uniform = /obj/item/clothing/under/rank/scientist
 	shoes = /obj/item/clothing/shoes/black
 	wear_suit = /obj/item/clothing/suit/storage/labcoat
-	belt = /obj/item/storage/belt/rig/research
 	back = /obj/item/storage/backpack/satchel/tox
 	r_store = /obj/item/storage/pouch/field_pouch/jnr_rsr
 
