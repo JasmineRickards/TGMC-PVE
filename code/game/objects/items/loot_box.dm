@@ -450,6 +450,7 @@
 	new /obj/item/ammo_magazine/smg/m25(loc)
 	new /obj/item/ammo_magazine/smg/m25(loc)
 	new /obj/item/clothing/mask/gas(loc)
+	new /obj/item/clothing/under/tactical/supply_drop(loc)
 	return INITIALIZE_HINT_QDEL
 
 /obj/effect/supply_drop/rig/Initialize()

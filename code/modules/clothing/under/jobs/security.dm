@@ -70,6 +70,8 @@
 /obj/item/clothing/under/tactical/survivor
 	starting_attachments = list(/obj/item/armor_module/storage/uniform/holster/freelancer)
 
+/obj/item/clothing/under/tactical/supply_drop
+	starting_attachments = list(/obj/item/armor_module/storage/uniform/black_vest)
 /*
 * Detective
 */

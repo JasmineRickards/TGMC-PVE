@@ -27,11 +27,15 @@
 	new /obj/item/spacecash(src)
 	new /obj/item/spacecash(src)
 
+/obj/item/storage/bible/guide/Initialize(mapload, ...)
+	. = ..()
+	new /obj/item/paper/bible(src)
+
 /obj/item/storage/bible/afterattack(atom/A, mob/user, proximity)
 	if(!proximity || !isliving(user))
 		return
 	var/mob/living/living_user = user
-	if(ischaplainjob(living_user.job))
+	if(ischaplainjob(living_user.job) || ispriestjob(living_user.job))
 		if(A.reagents && A.reagents.has_reagent(/datum/reagent/water)) //blesses all the water in the holder
 			to_chat(user, span_notice("You bless [A]."))
 			var/water2holy = A.reagents.get_reagent_amount(/datum/reagent/water)

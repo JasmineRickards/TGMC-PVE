@@ -80,6 +80,7 @@
 #define iscorporateliaisonjob(J) (istype(J, /datum/job/terragov/civilian/liaison))
 #define issurvivorjob(J) (istype(J, /datum/job/survivor))
 #define ischaplainjob(J) (istype(J, /datum/job/survivor/armed/chaplain))
+#define ispriestjob(J) (istype(J, /datum/job/survivor/priest))
 #define isxenosjob(J) (istype(J, /datum/job/xenomorph))
 
 //Monkey sub-species

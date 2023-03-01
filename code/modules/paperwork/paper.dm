@@ -515,3 +515,7 @@ then, for every time you included a field, increment fields. */
 /obj/item/paper/memorial
 	name = "Memorial Note"
 	info = {"May the souls of our fallen brothers be at rest; not that we may find solace in their passing, but that we should take our due initiative to press on in their memory."}
+
+/obj/item/paper/bible
+	name = "The Bibble"
+	info = {"Hey-o, just to make sure you know, you can bless water or inaprovaline by bonking the container with a bible...Assuming this is the chaplain or priest reading it. -Skye."}

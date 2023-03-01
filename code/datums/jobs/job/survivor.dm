@@ -225,7 +225,7 @@ Good luck, but do not expect to survive."})
 	name = "Chaplain"
 	jobtype = /datum/job/survivor/armed/chaplain
 
-	belt = /obj/item/storage/bible
+	belt = /obj/item/storage/bible/guide
 	ears = /obj/item/radio/headset/mainship/survivor/other
 	w_uniform = /obj/item/clothing/under/rank/chaplain
 	wear_suit = /obj/item/clothing/suit/armor/bulletproof
@@ -567,7 +567,7 @@ Good luck, but do not expect to survive."})
 	name = "Priest"
 	jobtype = /datum/job/survivor/priest
 
-	belt = /obj/item/storage/bible/booze
+	belt = /obj/item/storage/bible/guide
 	ears = /obj/item/radio/headset/mainship/survivor/other
 	w_uniform = /obj/item/clothing/under/rank/chaplain
 	wear_suit = /obj/item/clothing/suit/chaplain_hoodie
