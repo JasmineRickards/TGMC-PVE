@@ -83,7 +83,7 @@ Good luck, but do not expect to survive."})
 	name = "Scientist"
 	jobtype = /datum/job/survivor/armed/scientist
 
-	ears = /obj/item/radio/headset/mainship/survivor/res
+	ears = /obj/item/radio/headset/mainship/survivor/minimap
 	w_uniform = /obj/item/clothing/under/rank/scientist
 	wear_suit = /obj/item/clothing/suit/armor/bulletproof
 	shoes = /obj/item/clothing/shoes/black
@@ -128,7 +128,7 @@ Good luck, but do not expect to survive."})
 	name = "Corporate Executive"
 	jobtype = /datum/job/survivor/armed/executive
 
-	ears = /obj/item/radio/headset/mainship/survivor/sec/command
+	ears = /obj/item/radio/headset/mainship/survivor/minimap/cl
 	w_uniform = /obj/item/clothing/under/liaison_suit
 	wear_suit = /obj/item/clothing/suit/armor/bulletproof
 	shoes = /obj/item/clothing/shoes/black
@@ -344,7 +344,7 @@ Good luck, but do not expect to survive."})
 	jobtype = /datum/job/survivor/junior_rsr
 
 	belt = /obj/item/storage/belt/hypospraybelt
-	ears = /obj/item/radio/headset/mainship/survivor/res
+	ears = /obj/item/radio/headset/mainship/survivor/minimap
 	w_uniform = /obj/item/clothing/under/rank/scientist
 	shoes = /obj/item/clothing/shoes/black
 	wear_suit = /obj/item/clothing/suit/storage/labcoat
@@ -396,7 +396,7 @@ Good luck, but do not expect to survive."})
 	name = "Liaison"
 	jobtype = /datum/job/survivor/liaison
 
-	ears = /obj/item/radio/headset/mainship/survivor/sec/command
+	ears = /obj/item/radio/headset/mainship/survivor/minimap/cl
 	w_uniform = /obj/item/clothing/under/liaison_suit
 	shoes = /obj/item/clothing/shoes/black
 	back = /obj/item/storage/backpack/satchel/norm
@@ -604,6 +604,10 @@ Good luck, but do not expect to survive."})
 	l_store = /obj/item/storage/pouch/electronics/miner
 	r_store = /obj/item/storage/pouch/construction
 
+/datum/outfit/job/survivor/prospector/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+
+	H.equip_to_slot_or_del(new /obj/item/pinpointer SLOT_IN_BACKPACK)
 
 //Salesman
 /datum/job/survivor/salesman

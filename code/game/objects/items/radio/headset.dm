@@ -791,19 +791,6 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	use_command = TRUE
 	command = TRUE
 
-/obj/item/radio/headset/mainship/survivor/med
-	name = "medical headset"
-	desc = "A doctor's headset, it only has a basic minimap."
-	icon_state = "com_headset_alt"
-	keyslot2 = /obj/item/encryptionkey/med/colony
-
-/obj/item/radio/headset/mainship/survivor/res
-	name = "researcher headset"
-	desc = "A researcher's headset, with a working minimap!"
-	icon_state = "com_headset_alt"
-	minimap_type = /datum/action/minimap/researcher
-	keyslot2 = /obj/item/encryptionkey/med/colony
-
 /obj/item/radio/headset/mainship/survivor/mining
 	name = "maintenance headset"
 	desc = "A maintenance staff member's headset, it only has a basic minimap."
@@ -815,6 +802,24 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	desc = "A service staff member's headset, it only has a basic minimap."
 	icon_state = "headset_marine_xray"
 	keyslot2 = /obj/item/encryptionkey/alpha/colony
+
+/obj/item/radio/headset/mainship/survivor/med
+	name = "medical headset"
+	desc = "A doctor's headset, it only has a basic minimap."
+	icon_state = "com_headset_alt"
+	keyslot2 = /obj/item/encryptionkey/med/colony
+
+/obj/item/radio/headset/mainship/survivor/minimap
+	name = "researcher headset"
+	desc = "A researcher's headset, with a working minimap!"
+	icon_state = "com_headset_alt"
+	minimap_type = /datum/action/minimap/researcher
+	keyslot2 = /obj/item/encryptionkey/med/colony
+
+/obj/item/radio/headset/mainship/survivor/minimap/cl
+	name = "liaison headset"
+	desc = "A corporate supervisor's headset, with a working minimap!"
+	keyslot2 = /obj/item/encryptionkey/mcom/colony
 
 //Distress headsets.
 /obj/item/radio/headset/distress
