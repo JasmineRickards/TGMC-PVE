@@ -607,7 +607,7 @@ Good luck, but do not expect to survive."})
 /datum/outfit/job/survivor/prospector/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 
-	H.equip_to_slot_or_del(new /obj/item/pinpointer SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/pinpointer, SLOT_IN_BACKPACK)
 
 //Salesman
 /datum/job/survivor/salesman
