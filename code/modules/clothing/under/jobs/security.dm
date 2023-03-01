@@ -54,6 +54,9 @@
 	icon_state = "sec_corporate"
 	adjustment_variants = list()
 
+/obj/item/clothing/under/rank/security/corp/survivor
+	starting_attachments = list(/obj/item/armor_module/storage/uniform/webbing)
+
 /obj/item/clothing/under/rank/warden/corp
 	icon_state = "warden_corporate"
 	adjustment_variants = list()
@@ -64,6 +67,11 @@
 	icon_state = "swatunder"
 	siemens_coefficient = 0.9
 
+/obj/item/clothing/under/tactical/survivor
+	starting_attachments = list(/obj/item/armor_module/storage/uniform/holster/freelancer)
+
+/obj/item/clothing/under/tactical/supply_drop
+	starting_attachments = list(/obj/item/armor_module/storage/uniform/black_vest)
 /*
 * Detective
 */

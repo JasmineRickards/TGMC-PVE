@@ -86,12 +86,15 @@
 
 #define SURVIVOR_WEAPONS list(\
 				list(/obj/item/weapon/gun/smg/mp7, /obj/item/ammo_magazine/smg/mp7),\
-				list(/obj/item/weapon/gun/shotgun/double/sawn, /obj/item/ammo_magazine/handful/buckshot),\
 				list(/obj/item/weapon/gun/smg/uzi, /obj/item/ammo_magazine/smg/uzi),\
 				list(/obj/item/weapon/gun/smg/m25, /obj/item/ammo_magazine/smg/m25),\
+				list(/obj/item/weapon/gun/smg/skorpion, /obj/item/ammo_magazine/smg/skorpion),\
 				list(/obj/item/weapon/gun/rifle/m16, /obj/item/ammo_magazine/rifle/m16),\
-				list(/obj/item/weapon/gun/shotgun/pump/bolt, /obj/item/ammo_magazine/rifle/bolt),\
-				list(/obj/item/weapon/gun/shotgun/pump/lever, /obj/item/ammo_magazine/packet/magnum))
+				list(/obj/item/weapon/gun/rifle/mkh, /obj/item/ammo_magazine/rifle/mkh),\
+				list(/obj/item/weapon/gun/rifle/famas, /obj/item/ammo_magazine/rifle/famas),\
+				list(/obj/item/weapon/gun/shotgun/pump/bolt, /obj/item/ammo_magazine/rifle/boltclip),\
+				list(/obj/item/weapon/gun/shotgun/pump/lever/mbx900, /obj/item/ammo_magazine/handful/mbxsabot),\
+				list(/obj/item/weapon/gun/shotgun/double/sawn, /obj/item/ammo_magazine/handful/buckshot))
 
 
 #define LATEJOIN_LARVA_DISABLED 0

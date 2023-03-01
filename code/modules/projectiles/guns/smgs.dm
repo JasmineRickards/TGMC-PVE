@@ -228,6 +228,9 @@
 /obj/item/weapon/gun/smg/m25/magharness
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/compensator, /obj/item/attachable/gyro)
 
+/obj/item/weapon/gun/smg/m25/tactical
+	starting_attachment_types = list(/obj/item/attachable/flashlight, /obj/item/attachable/verticalgrip)
+
 /obj/item/weapon/gun/smg/m25/elite
 	name = "\improper SMG-25B2 Commando submachinegun"
 	desc = "The RivArms SMG-25 submachinegun, B2 variant. Features a lighter composite body, hevy barrel, and integrated barrel charger. This reliable weapon typically comes with armor piercing 10x20mm rounds and is standard issue for elite troops."
@@ -407,7 +410,7 @@
 	desc = "A cheap, reliable design and manufacture make this ubiquitous submachinegun useful despite the age. Put the fire selector to full auto for maximum firepower. Use two if you really want to go ham."
 	icon_state = "uzi"
 	item_state = "uzi"
-	caliber = CALIBER_9X19 //codex
+	caliber = CALIBER_9X21 //codex
 	max_shells = 32 //codex
 	fire_sound = 'sound/weapons/guns/fire/uzi.ogg'
 	unload_sound = 'sound/weapons/guns/interact/uzi_unload.ogg'

@@ -139,7 +139,7 @@
 
 /obj/effect/landmark/start/job/survivor
 	icon_state = "Shaft Miner"
-	job = /datum/job/survivor/rambo
+	// job = /datum/job/survivor/rambo //Allows them to spawn shipside always. If reimplementation is wished, new typepath should be /datum/job/survivor/armed/rambo
 
 /obj/effect/landmark/start/job/fallen
 	job = /datum/job/fallen

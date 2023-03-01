@@ -107,6 +107,13 @@
 	charge_amount = 25
 	charge_delay = 2 SECONDS //One hit on a resin thingy every 8 seconds, or one actual wall every 80 seconds.
 
+/obj/item/cell/rtg/small/cutter
+	name = "plasma cutter cell"
+	desc = "This is a miniature radioisotope generator that can fit into APC's or mining tools, but not laser-based weapory."
+	maxcharge = 300
+	charge_amount = 50
+	charge_delay = 1.5 SECONDS
+
 /obj/item/cell/rtg/plasma_cutter
 	name = "plasma cutter cell"
 	desc = "You shouldn't be seeing this"

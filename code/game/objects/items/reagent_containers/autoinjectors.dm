@@ -191,13 +191,12 @@
 
 /obj/item/reagent_containers/hypospray/autoinjector/virilyth //not accessible during normal play, only for valhalla
 	name = "virilyth autoinjector"
-	desc = "A large auto-injector freshly loaded with virilynth."
-	icon_state = "autoinjector-8"
+	desc = "A large auto-injector loaded with virilynth. It will react with Bicardine, Kelotane, Tramadol or Dylovene to make more of the relevant chemical."
+	icon_state = "Evangelion"
 	amount_per_transfer_from_this = 10
 	volume = 50
-	list_reagents = list(
-		/datum/reagent/virilyth = 50,
-	)
+	list_reagents = list(/datum/reagent/virilyth = 50)
+	description_overlay = "Vi"
 
 /obj/item/reagent_containers/hypospray/autoinjector/rezadone //not accessible during normal play, only for valhalla
 	name = "rezadone autoinjector"

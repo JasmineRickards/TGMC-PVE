@@ -107,7 +107,7 @@
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
-		)
+	)
 	flags_equip_slot = ITEM_SLOT_BACK
 	muzzleflash_iconstate = "muzzle_flash_laser"
 	w_class = WEIGHT_CLASS_BULKY
@@ -180,7 +180,7 @@
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
-		)
+	)
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC,GUN_FIREMODE_SEMIAUTO)
 	ammo_diff = null
@@ -290,7 +290,7 @@
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
-		)
+	)
 	rounds_per_shot = 12
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
@@ -400,7 +400,7 @@
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
-		)
+	)
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_ENERGY|GUN_AMMO_COUNTER|GUN_AMMO_COUNT_BY_SHOTS_REMAINING|GUN_NO_PITCH_SHIFT_NEAR_EMPTY|GUN_SHOWS_AMMO_REMAINING
 	muzzle_flash_color = COLOR_TESLA_BLUE
 	ammo_level_icon = "tesla"
@@ -458,7 +458,7 @@
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
-		)
+	)
 	rounds_per_shot = 12
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
@@ -543,7 +543,8 @@
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
-		)
+		/obj/item/cell/lasgun/lasrifle/survivor
+	)
 
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
@@ -707,7 +708,7 @@
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
-		)
+	)
 	damage_falloff_mult = 0
 	gun_firemode = GUN_FIREMODE_SEMIAUTO
 	gun_firemode_list = list(GUN_FIREMODE_SEMIAUTO)
@@ -779,7 +780,7 @@
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
-		)
+	)
 	ammo_diff = null
 	rounds_per_shot = 4
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
@@ -846,7 +847,7 @@
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
-		)
+	)
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
 		/obj/item/attachable/bayonetknife,
@@ -912,7 +913,7 @@
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
-		)
+	)
 	rounds_per_shot = 24
 	default_ammo_type = /obj/item/cell/lasgun/volkite
 	allowed_ammo_types = list(/obj/item/cell/lasgun/volkite)
@@ -948,10 +949,11 @@
 	allowed_ammo_types = list(
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
+		/obj/item/cell/lasgun/volkite/small,
 		/obj/item/cell/lasgun/lasrifle,
-		)
+		/obj/item/cell/lasgun/lasrifle/survivor,
+	)
 	default_ammo_type = /obj/item/cell/lasgun/volkite/small
-	allowed_ammo_types = list(/obj/item/cell/lasgun/volkite/small)
 	fire_sound = 'sound/weapons/guns/fire/volkite_3.ogg'
 	gun_firemode = GUN_FIREMODE_SEMIAUTO
 	gun_firemode_list = list(GUN_FIREMODE_SEMIAUTO)
@@ -963,6 +965,12 @@
 	recoil_unwielded = 0
 	movement_acc_penalty_mult = 2
 	aim_slowdown = 0.1
+
+/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/serpenta/survivor
+	name = "Smuggled VX-12 Serpenta"
+	desc = "A poorly maintained Volkite weapon, no doubt owned by a liasion. The autoeject feature is broken, which could lead to problems if the gun jams."
+	default_ammo_type = /obj/item/cell/lasgun/lasrifle/survivor
+	reciever_flags = AMMO_RECIEVER_MAGAZINES|AMMO_RECIEVER_DO_NOT_EJECT_HANDFULS|AMMO_RECIEVER_CYCLE_ONLY_BEFORE_FIRE
 
 /obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/charger
 	name = "\improper VX-32 Charger"
@@ -1127,3 +1135,107 @@
 
 /obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/culverin/magharness
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness)
+
+//Survivor plasma cutter
+
+/obj/item/weapon/gun/energy/lasgun/lasrifle/plasmacutter
+	name = "\improper Modified Plasma Cutter"
+	desc = "A tool that cuts with deadly hot plasma. You could use it to cut limbs off of xenos! Try toggling the safety to save ammo while in melee."
+	attack_verb = list("dissolves", "disintegrates", "liquefies", "subliminates", "vaporizes")
+	force = 70
+	damtype = BURN
+	var/cutting_sound = 'sound/items/welder2.ogg'
+
+	reload_sound = 'sound/weapons/guns/interact/standard_laser_pistol_reload.ogg'
+	fire_sound = 'sound/weapons/guns/fire/Laser Sniper Standard.ogg'
+	icon_state = "pc"
+	item_state = "pc"
+	w_class = WEIGHT_CLASS_BULKY
+	gun_skill_category = GUN_SKILL_HEAVY_WEAPONS
+	flags_equip_slot = ITEM_SLOT_BELT|ITEM_SLOT_BACK
+	reciever_flags = AMMO_RECIEVER_MAGAZINES|AMMO_RECIEVER_DO_NOT_EJECT_HANDFULS|AMMO_RECIEVER_CYCLE_ONLY_BEFORE_FIRE
+	max_shots = 30 //codex stuff
+	default_ammo_type = /obj/item/cell/apc
+	ammo_datum_type = /datum/ammo/energy/lasgun/marine/cutter
+	ammo_diff = null
+	rounds_per_shot = 500
+	gun_firemode = GUN_FIREMODE_SEMIAUTO
+	gun_firemode_list = list(GUN_FIREMODE_SEMIAUTO)
+
+	allowed_ammo_types = list (
+		/obj/item/cell/apc,
+		/obj/item/cell/high,
+		/obj/item/cell/super,
+		/obj/item/cell/hyper,
+		/obj/item/cell/rtg/small/cutter,
+	)
+
+	attachable_allowed = list()
+
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_ENERGY|GUN_AMMO_COUNTER|GUN_NO_PITCH_SHIFT_NEAR_EMPTY|GUN_AMMO_COUNT_BY_SHOTS_REMAINING
+	attachable_offset = list("muzzle_x" = 23, "muzzle_y" = 22,"rail_x" = 12, "rail_y" = 22, "under_x" = 16, "under_y" = 14, "stock_x" = 22, "stock_y" = 12)
+
+	wield_delay = 0.3 SECONDS
+	scatter = 2
+	scatter_unwielded = 4
+	fire_delay = 0.25 SECONDS
+	accuracy_mult = 1
+	accuracy_mult_unwielded = 0.9
+	recoil = 1
+	recoil_unwielded = 3
+	damage_falloff_mult = 0.2
+	mode_list = list(
+		"Standard" = /datum/lasrifle/base/plasma_cutter_mode/standard,
+		"Heat" = /datum/lasrifle/base/plasma_cutter_mode/heat,
+		"Efficient" = /datum/lasrifle/base/plasma_cutter_mode/efficient,
+	)
+
+/datum/lasrifle/base/plasma_cutter_mode/standard
+	rounds_per_shot = 500
+	ammo_datum_type = /datum/ammo/energy/lasgun/marine/cutter
+	fire_delay = 0.2 SECONDS
+	fire_sound = 'sound/weapons/guns/fire/Laser Sniper Standard.ogg'
+	message_to_user = "You return the plasma cutter to it's standard settings."
+	fire_mode = GUN_FIREMODE_SEMIAUTO
+	icon_state = "pc"
+
+/datum/lasrifle/base/plasma_cutter_mode/efficient
+	rounds_per_shot = 500
+	ammo_datum_type = /datum/ammo/energy/lasgun/marine/cutter/efficient
+	fire_delay = 0.8 SECONDS
+	fire_sound = 'sound/weapons/guns/fire/disabler.ogg'
+	message_to_user = "You deactivate the plasma cutter's safety features."
+	fire_mode = GUN_FIREMODE_SEMIAUTO
+	icon_state = "pc"
+	radial_icon_state = "laser_spread"
+
+/datum/lasrifle/base/plasma_cutter_mode/heat
+	rounds_per_shot = 1000
+	ammo_datum_type = /datum/ammo/energy/lasgun/marine/cutter/heat
+	fire_delay = 1.2 SECONDS
+	fire_sound = 'sound/weapons/guns/fire/laser3.ogg'
+	message_to_user = "You disable the plasma cutter's heat sink."
+	fire_mode = GUN_FIREMODE_SEMIAUTO
+	icon_state = "pc"
+	radial_icon_state = "laser_heat"
+
+/obj/item/weapon/gun/energy/lasgun/lasrifle/plasmacutter/proc/fail_message(mob/user)
+	playsound(src, 'sound/machines/buzz-two.ogg', 25, 1)
+	balloon_alert(user, "No battery installed")
+
+
+/obj/item/weapon/gun/energy/lasgun/lasrifle/plasmacutter/attack(mob/living/M, mob/living/user)
+	if(!chamber_items)
+		fail_message(user)
+	else
+		playsound(M, cutting_sound, 25, 1)
+		var/datum/effect_system/spark_spread/spark_system
+		spark_system = new /datum/effect_system/spark_spread()
+		spark_system.set_up(5, 0, M)
+		spark_system.attach(M)
+		spark_system.start(M)
+		if(isxeno(M) && M.stat != DEAD)
+			var/mob/living/carbon/xenomorph/xeno = M
+			if(!CHECK_BITFIELD(xeno.xeno_caste.caste_flags, CASTE_PLASMADRAIN_IMMUNE))
+				xeno.use_plasma(round(xeno.xeno_caste.plasma_regen_limit * xeno.xeno_caste.plasma_max * 0.2)) //One fifth of the xeno's regeneratable plasma per hit.
+	return ..()

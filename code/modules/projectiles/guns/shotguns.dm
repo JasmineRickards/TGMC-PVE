@@ -345,7 +345,7 @@
 	accuracy_mult_unwielded = 1
 	scatter_unwielded = 10
 	recoil = -1 // It has a stock. It's on the sprite.
-	recoil_unwielded = 0
+	recoil_unwielded = 4
 	cock_delay = 4
 	aim_slowdown = 0.4
 

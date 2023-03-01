@@ -57,7 +57,7 @@
 /obj/machinery/telecomms/bus/preset_two
 	id = "Bus 2"
 	network = "tcommsat"
-	freq_listening = list(FREQ_PMC, FREQ_COLONIST, FREQ_USL, FREQ_DEATHSQUAD, FREQ_IMPERIAL, FREQ_SOM, FREQ_SECTOID, FREQ_ECHO)
+	freq_listening = list(FREQ_PMC, FREQ_COLONIST, FREQ_USL, FREQ_DEATHSQUAD, FREQ_IMPERIAL, FREQ_SOM, FREQ_SECTOID, FREQ_ALPHA_COLONY, FREQ_MEDICAL_COLONY, FREQ_COMMAND_COLONY, FREQ_ENGINEERING_COLONY, FREQ_ECHO)
 	autolinkers = list("processor2", "ert")
 
 

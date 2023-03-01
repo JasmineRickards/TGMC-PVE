@@ -211,6 +211,22 @@
 			. = size ? "CHO " : "Chief Health Officer"
 		if("CMO")
 			. = size ? "CMO " : "Chief Medical Officer"
+		if("OFC1")
+			. = size ? "OFC  " : "Patrol Officer"
+		if("OFC2")
+			. = size ? "OFC " : "Rapid Reponse Officer"
+		if("CHP")
+			. = size ? "Reverend " : "Chaplain"
+		if("ENG")
+			. = size ? "ENG  " : "Technician"
+		if("MNR1")
+			. = size ? "MNR " : "Prospector"
+		if("MNR2")
+			. = size ? "MNR " : "Miner"
+		if("CMB1")
+			. = size ? "DPT " : "CMB Deputy"
+		if("CMB2")
+			. = size ? "SHRF " : "CMB Marshal"
 		if("CMN")
 			. = size ? "CMN" : "Crewman"
 		if("PMC1")

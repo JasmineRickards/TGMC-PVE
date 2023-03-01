@@ -63,6 +63,14 @@
 	name = "glowberry seed"
 	seed_type = "glowberries"
 
+/obj/item/seeds/srandar
+	name = "s'randar grape seed"
+	seed_type = "shand"
+
+/obj/item/seeds/messa
+	name = "messa grape seeds"
+	seed_type = "mtear"
+
 /obj/item/seeds/bananaseed
 	name = "banana seed"
 	seed_type = "banana"

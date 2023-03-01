@@ -12,27 +12,31 @@
 //increase or decrase accuracy, recoil, and firing delay of pistols and revolvers.
 #define SKILL_PISTOLS_DEFAULT 0	//marines
 #define SKILL_PISTOLS_TRAINED 1	//special training
+#define SKILL_PISTOLS_SPECIALIZED 2	//offsets untrained users' penalties.
 
 //smgs skill
 //increase or decrase accuracy, recoil, and firing delay of submachineguns.
 #define SKILL_SMGS_DEFAULT 0	//marines
 #define SKILL_SMGS_TRAINED 1	//special training
+#define SKILL_SMGS_SPECIALIZED 2	//offsets untrained users' penalties.
 
 //rifles skill
 //increase or decrase accuracy, recoil, and firing delay of rifles.
 #define SKILL_RIFLES_DEFAULT 0	//marines
 #define SKILL_RIFLES_TRAINED 1	//special training
+#define SKILL_RIFLES_SPECIALIZED 2	//offsets untrained users' penalties.
 
 //shotguns skill
 //increase or decrase accuracy, recoil, and firing delay of shotguns.
 #define SKILL_SHOTGUNS_DEFAULT 0	//marines
 #define SKILL_SHOTGUNS_TRAINED 1	//special training
+#define SKILL_SHOTGUNS_SPECIALIZED 2	//offsets untrained users' penalties.
 
 //heavy weapons skill
 //increase or decrase accuracy, recoil, and firing delay of heavy weapons (non spec weapons, e.g. flamethrower).
 #define SKILL_HEAVY_WEAPONS_DEFAULT 0	//marines
 #define SKILL_HEAVY_WEAPONS_TRAINED 1	//special training
-
+#define SKILL_HEAVY_WEAPONS_SPECIALIZED 2	//offsets untrained users' penalties.
 
 
 //smartgun skill

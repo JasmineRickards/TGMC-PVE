@@ -163,6 +163,8 @@ GLOBAL_LIST_EMPTY(gene_tag_masks)   // Gene obfuscation for delicious trial and 
 		list("seed-cocoapod",           "cocoapod"),
 		list("seed-cherry",             "cherry"),
 		list("seed-kudzu",              "kudzu"),
+		list("seed-shand",              "shand"),
+		list("seed-mtear",              "mtear"),
 		list("seed-replicapod",         "replicapod")
 		))
 
@@ -1210,6 +1212,37 @@ GLOBAL_LIST_EMPTY(gene_tag_masks)   // Gene obfuscation for delicious trial and 
 	potency = 10
 	growth_stages = 1
 
+/datum/seed/shand
+	name = "shand"
+	seed_name = "S'randar grapes"
+	display_name = "S'randar's hand grapes"
+	packet_icon = "seed-shand"
+	products = list(/obj/item/reagent_containers/food/snacks/grown/grapes/shand)
+	plant_icon = "shand"
+	chems = list(/datum/reagent/medicine/bicaridine = list(3,10), /datum/reagent/medicine/meralyne = list(3,10))
+
+	lifespan = 50
+	maturation = 3
+	production = 5
+	yield = 4
+	potency = 10
+	growth_stages = 3
+
+/datum/seed/mtear
+	name = "mtear"
+	seed_name = "Messa's grapes"
+	display_name = "Messa's tear grapes"
+	packet_icon = "seed-mtear"
+	products = list(/obj/item/reagent_containers/food/snacks/grown/greengrapes/mtear)
+	plant_icon = "mtear"
+	chems = list(/datum/reagent/medicine/dermaline= list(3,10), /datum/reagent/medicine/kelotane = list(3,10))
+
+	lifespan = 50
+	maturation = 3
+	production = 5
+	yield = 4
+	potency = 10
+	growth_stages = 3
 /datum/seed/banana
 	name = "banana"
 	seed_name = "banana"

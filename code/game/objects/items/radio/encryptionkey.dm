@@ -105,6 +105,42 @@
 /obj/item/encryptionkey/general/rebel
 	channels = list(RADIO_CHANNEL_COMMON_REBEL = TRUE, RADIO_CHANNEL_REQUISITIONS_REBEL = TRUE)
 
+//COLONY
+/obj/item/encryptionkey/engi/colony
+	name = "\improper Mainten encryption key"
+	channels = list(RADIO_CHANNEL_ENGINEERING_COLONY = TRUE)
+	independent = TRUE
+
+/obj/item/encryptionkey/med/colony
+	name = "\improper Medical encryption key"
+	channels = list(RADIO_CHANNEL_MEDICAL_COLONY = TRUE)
+	independent = TRUE
+
+
+/obj/item/encryptionkey/mcom/colony
+	name = "\improper CMB encryption key"
+	channels = list(RADIO_CHANNEL_COMMAND_COLONY = TRUE, RADIO_CHANNEL_ALPHA_COLONY = TRUE, RADIO_CHANNEL_ENGINEERING_COLONY = TRUE, RADIO_CHANNEL_MEDICAL_COLONY = TRUE)
+	independent = TRUE
+
+// /obj/item/encryptionkey/mcom/ai/colony //To consider for a later date
+//	channels = list(RADIO_CHANNEL_COMMAND_COLONY = TRUE, RADIO_CHANNEL_CAS_COLONY = TRUE, RADIO_CHANNEL_ALPHA_COLONY = TRUE, RADIO_CHANNEL_BRAVO_COLONY = TRUE, RADIO_CHANNEL_CHARLIE_COLONY = TRUE, RADIO_CHANNEL_DELTA_COLONY = TRUE, RADIO_CHANNEL_ENGINEERING_COLONY = TRUE, RADIO_CHANNEL_MEDICAL_COLONY = TRUE, RADIO_CHANNEL_REQUISITIONS_COLONY = TRUE)
+
+
+/obj/item/encryptionkey/squadlead/colony
+	name = "\improper Security encryption key"
+	channels = list(RADIO_CHANNEL_COMMAND_COLONY = TRUE)
+	independent = TRUE
+
+/obj/item/encryptionkey/alpha/colony
+	name = "\improper Service encryption key"
+	channels = list(RADIO_CHANNEL_ALPHA_COLONY = TRUE)
+	independent = TRUE
+
+/obj/item/encryptionkey/general/colony
+	name = "\improper Colonist encryption key"
+	channels = list(RADIO_CHANNEL_COLONIST = TRUE)
+	independent = TRUE
+
 
 //ERT
 /obj/item/encryptionkey/dutch
@@ -162,7 +198,7 @@
 	channels = list(RADIO_CHANNEL_MEDICAL_SOM = TRUE)
 
 /obj/item/encryptionkey/mcom/som
-	channels = list(RADIO_CHANNEL_COMMAND_SOM = TRUE, RADIO_CHANNEL_ZULU = TRUE, RADIO_CHANNEL_YANKEE = TRUE, RADIO_CHANNEL_XRAY = TRUE, RADIO_CHANNEL_WHISKEY = TRUE, RADIO_CHANNEL_ENGINEERING_SOM = TRUE, RADIO_CHANNEL_MEDICAL_SOM = TRUE)
+	channels = list(RADIO_CHANNEL_SOM = TRUE, RADIO_CHANNEL_COMMAND_SOM = TRUE, RADIO_CHANNEL_ZULU = TRUE, RADIO_CHANNEL_YANKEE = TRUE, RADIO_CHANNEL_XRAY = TRUE, RADIO_CHANNEL_WHISKEY = TRUE, RADIO_CHANNEL_ENGINEERING_SOM = TRUE, RADIO_CHANNEL_MEDICAL_SOM = TRUE)
 
 /obj/item/encryptionkey/squadlead/som
 	channels = list(RADIO_CHANNEL_COMMAND_SOM = TRUE)

@@ -440,6 +440,44 @@
 	new /obj/item/armor_module/module/eshield/mk2(loc)
 	return INITIALIZE_HINT_QDEL
 
+/obj/effect/supply_drop/swat/Initialize()
+	. = ..()
+	new /obj/item/clothing/shoes/swat(loc)
+	new /obj/item/clothing/gloves/swat(loc)
+	new /obj/item/clothing/suit/storage/marine/security(loc)
+	new /obj/item/clothing/head/helmet/marine/security(loc)
+	new /obj/item/weapon/gun/smg/m25/tactical(loc)
+	new /obj/item/ammo_magazine/smg/m25(loc)
+	new /obj/item/ammo_magazine/smg/m25(loc)
+	new /obj/item/clothing/mask/gas(loc)
+	new /obj/item/clothing/under/tactical/supply_drop(loc)
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/supply_drop/rig/Initialize()
+	. = ..()
+	new /obj/item/clothing/suit/space/rig/mining(loc)
+	new /obj/item/clothing/head/helmet/space/rig/mining(loc)
+	new /obj/item/weapon/gun/energy/lasgun/lasrifle/plasmacutter(loc)
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/supply_drop/insurgent/Initialize()
+	. = ..()
+	new /obj/item/clothing/head/hardhat/rugged(loc)
+	new /obj/item/clothing/suit/storage/faction/militia(loc)
+	new /obj/item/weapon/gun/smg/skorpion(loc)
+	new /obj/item/ammo_magazine/smg/skorpion(loc)
+	new /obj/item/ammo_magazine/smg/skorpion(loc)
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/supply_drop/olympia/Initialize()
+	. = ..()
+	new /obj/item/clothing/head/helmet/marine/veteran/dutch(loc)
+	new /obj/item/clothing/suit/modular/xenonauten/pilot/nam(loc)
+	new /obj/item/weapon/gun/shotgun/double(loc)
+	new /obj/item/storage/belt/shotgun/quickshell/loaded(loc)
+	new /obj/item/storage/belt/gun/pistol/m4a3/fieldcommander(loc)
+	return INITIALIZE_HINT_QDEL
+
 // 150 to 200 points of value packs, spend 100 points get 150 to 200 in value, basically. Ideally, commons are variety packs, uncommons maybe shake up the round a bit, rares a bit more. Legendaries make the round go wacko. You get a crate of stuff dropped on spawn.
 /obj/item/loot_box/tgmclootbox
 	rolls = 2

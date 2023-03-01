@@ -231,7 +231,7 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 /datum/skills/civilian/survivor
 	name = "Survivor"
 	engineer = SKILL_ENGINEER_ENGI //to hack airlocks so they're never stuck in a room.
-	firearms = SKILL_FIREARMS_DEFAULT
+	firearms = SKILL_FIREARMS_UNTRAINED
 	construction = SKILL_CONSTRUCTION_METAL
 	medical = SKILL_MEDICAL_PRACTICED
 
@@ -249,27 +249,40 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	name = "Survivor Doctor"
 	medical = SKILL_MEDICAL_COMPETENT
 	surgery = SKILL_SURGERY_EXPERT
-	firearms = SKILL_FIREARMS_UNTRAINED
+
 
 /datum/skills/civilian/survivor/scientist
 	name = "Survivor Scientist"
 	medical = SKILL_MEDICAL_PRACTICED
 	surgery = SKILL_SURGERY_PROFESSIONAL
-	firearms = SKILL_FIREARMS_UNTRAINED
 
 /datum/skills/civilian/survivor/chef
 	name = "Survivor Chef"
-	melee_weapons = SKILL_MELEE_TRAINED
-	firearms = SKILL_FIREARMS_UNTRAINED
+	melee_weapons = SKILL_MELEE_SUPER
+
+/datum/skills/civilian/survivor/chaplain
+	name = "Survivor Chef"
+	shotguns = SKILL_SHOTGUNS_SPECIALIZED
+	melee_weapons = SKILL_MELEE_DEFAULT
 
 /datum/skills/civilian/survivor/miner
 	name = "Survivor Miner"
+
+	melee_weapons = SKILL_MELEE_DEFAULT
+	heavy_weapons = SKILL_HEAVY_WEAPONS_SPECIALIZED
 	powerloader = SKILL_POWERLOADER_TRAINED
 
 /datum/skills/civilian/survivor/atmos
 	name = "Survivor Atmos Tech"
 	engineer = SKILL_ENGINEER_MASTER
 	construction = SKILL_CONSTRUCTION_MASTER
+
+/datum/skills/civilian/survivor/security
+	name = "Survivor Security"
+	cqc = SKILL_CQC_MP
+	firearms = SKILL_FIREARMS_DEFAULT
+	melee_weapons = SKILL_MELEE_DEFAULT
+	police = SKILL_POLICE_FLASH
 
 /datum/skills/civilian/survivor/marshal
 	name = "Survivor Marshal"
@@ -278,6 +291,11 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	melee_weapons = SKILL_MELEE_DEFAULT
 	pistols = SKILL_PISTOLS_TRAINED
 	police = SKILL_POLICE_MP
+	leadership = SKILL_LEAD_MASTER
+
+/datum/skills/civilian/survivor/marshal/deputy
+	leadership = SKILL_LEAD_EXPERT
+	pistols = SKILL_PISTOLS_DEFAULT
 
 /datum/skills/civilian/survivor/prisoner
 	name = "Survivor Prisoner"

@@ -767,7 +767,6 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	shell_speed = 2
 	handful_amount = 5
 
-
 /datum/ammo/bullet/shotgun/slug
 	name = "shotgun slug"
 	handful_icon_state = "shotgun slug"
@@ -2503,6 +2502,49 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 /datum/ammo/energy/lasgun/pistol/disabler/on_hit_mob(mob/M,obj/projectile/P)
 	staggerstun(M, P, stagger = 0.5, slowdown = 0.75)
 
+/datum/ammo/energy/lasgun/marine/cutter
+	name = "plasma bolt clump"
+	damage = 40
+	penetration = 15
+	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING|AMMO_HITSCAN
+	sundering = 3
+	hitscan_effect_icon = "plasmacutter"
+
+/datum/ammo/energy/lasgun/marine/cutter/efficient
+	name = "plasma bolt"
+	icon_state = "pulse"
+	hud_state = "laser_spread"
+	damage = 18
+	penetration = 5
+	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING
+	bonus_projectiles_type = /datum/ammo/energy/lasgun/marine/cutter/spread
+	bonus_projectiles_amount = 2
+	bonus_projectiles_scatter = 2
+	sundering = 1
+
+/datum/ammo/energy/lasgun/marine/cutter/spread
+	name = "plasma bolt"
+	icon_state = "pulse"
+	hud_state = "laser_spread"
+	damage = 18
+	penetration = 5
+	sundering = 1
+
+/datum/ammo/energy/lasgun/marine/cutter/heat
+	name = "overcharged plasma bolt"
+	icon_state = "heavylaser"
+	hud_state = "laser_heat"
+	damage = 90
+	shell_speed = 2.5
+	penetration = 10
+	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_SUNDERING|AMMO_HITSCAN
+	sundering = 5
+	hitscan_effect_icon = "beam_heavy"
+
+
+/datum/ammo/energy/lasgun/marine/cutter/heat/on_hit_mob(mob/M,obj/projectile/P)
+	staggerstun(M, P, stagger = 0.5, slowdown = 1)
+
 /datum/ammo/energy/lasgun/marine/xray
 	name = "xray heat bolt"
 	icon_state = "u_laser"
@@ -3299,6 +3341,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 
 /datum/ammo/xeno/acid/passthrough/uv/smartgecko/ally
 	iff_signal = TGMC_LOYALIST_IFF
+
 /datum/ammo/xeno/acid/passthrough/uv/lasergecko
 	name = "laser bolt"
 	icon_state = "bluelaserstandard"
@@ -3311,7 +3354,8 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	damage_type = BURN
 	sundering = 3
 	max_range = 30
-
+	shrapnel_chance = 0
+	iff_signal = NONE
 /*
 //================================================
 					Misc Ammo

@@ -23,7 +23,7 @@
 	icon_state = "baton"
 	item_state = "classic_baton"
 	flags_equip_slot = ITEM_SLOT_BELT
-	force = 10
+	force = 50
 
 /obj/item/weapon/classic_baton/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -55,7 +55,7 @@
 		icon_state = "telebaton_1"
 		item_state = "telebaton_1"
 		w_class = WEIGHT_CLASS_NORMAL
-		force = 10
+		force = 50
 		attack_verb = list("smacked", "struck", "slapped")
 	else
 		user.visible_message(span_notice(" [user] collapses their telescopic baton."),\

@@ -21,7 +21,7 @@
 	icon_state = "nullrod"
 	item_state = "nullrod"
 	flags_equip_slot = ITEM_SLOT_BELT
-	force = 15
+	force = 50
 	throw_speed = 1
 	throw_range = 4
 	throwforce = 10
