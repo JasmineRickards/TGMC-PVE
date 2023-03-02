@@ -545,3 +545,13 @@
 		/datum/reagent/medicine/quickclot = 120,
 	)
 	description_overlay = "Qk"
+
+/obj/item/reagent_containers/hypospray/advanced/big/combat_advanced
+	name = "big advanced combat hypospray"
+	desc = "A hypospray loaded with several doses of advanced healing and painkilling chemicals. Intended for use in active combat."
+	list_reagents = list(
+		/datum/reagent/medicine/meralyne = 40,
+		/datum/reagent/medicine/dermaline = 40,
+		/datum/reagent/medicine/tramadol = 40,
+	)
+	description_overlay = "Av"

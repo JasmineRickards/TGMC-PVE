@@ -233,3 +233,9 @@
 	desc = "A small bottle. Contains Doctor's Delight."
 	icon_state = "bottle3"
 	list_reagents = list(/datum/reagent/consumable/drink/doctor_delight = 60)
+
+/obj/item/reagent_containers/glass/bottle/virilynth
+	name = "\improper Virilynth bottle"
+	desc = "A small bottle. Contains Virilynth, mix it with either Bicardine, Kelotane, Dylovene or Tramadol."
+	icon_state = "bottle1"
+	list_reagents = list(/datum/reagent/virilyth = 60)

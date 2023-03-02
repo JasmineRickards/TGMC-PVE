@@ -349,6 +349,15 @@
 	new /obj/item/explosive/grenade/chem_grenade/razorburn_smol(src)
 	new /obj/item/explosive/grenade/chem_grenade/razorburn_large(src)
 
+/obj/item/storage/pouch/explosive/probablyalawsuitwaitingtohappen/Initialize()
+	. = ..()
+	new /obj/item/explosive/grenade/spawnergrenade/allied/ugv(src)
+	new /obj/item/explosive/grenade/spawnergrenade/allied/ugv/komodo(src)
+	new /obj/item/explosive/grenade/spawnergrenade/allied/ugv/gecko(src)
+	new /obj/item/explosive/grenade/spawnergrenade/allied/ugv/gecko/b(src)
+	new /obj/item/explosive/grenade/spawnergrenade/allied/xeno(src)
+	new /obj/item/explosive/grenade/spawnergrenade/allied/xeno/mantis(src)
+
 /obj/item/storage/pouch/explosive/upp
 	fill_type = /obj/item/explosive/grenade/upp
 	fill_number = 4
@@ -416,6 +425,15 @@
 		/obj/item/storage/pill_bottle/packet,
 		/obj/item/reagent_containers/hypospray,
 	)
+
+/obj/item/storage/pouch/medkit/survivor/Initialize()
+	. = ..()
+	new /obj/item/reagent_containers/glass/bottle/virilynth(src)
+	new /obj/item/reagent_containers/glass/bottle/virilynth(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/elite(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/elite(src)
+	new /obj/item/reagent_containers/hypospray/advanced/big/combat_advanced(src)
+	new /obj/item/storage/pill_bottle/packet/russian_red(src)
 
 /obj/item/storage/pouch/medkit/firstaid
 	desc = "Standard marine first-aid pouch. Contains basic pills, splints, and a stabilizing injector."

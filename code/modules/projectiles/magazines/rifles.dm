@@ -393,6 +393,27 @@
 	greyscale_colors = "#fa7923"
 
 //-------------------------------------------------------
+//Garand
+/obj/item/ammo_magazine/rifle/garand
+	name = "C1 Garand enbloc clip"
+	desc = "A enbloc clip filled with .30 caliber rifle rounds for the C1 Garand."
+	caliber = CALIBER_3006
+	icon_state = "garand"
+	default_ammo = /datum/ammo/bullet/rifle/garand
+	max_rounds = 8
+	icon_state_mini = "mag_sniper"
+
+/obj/item/ammo_magazine/rifle/garand_grenade
+	name = "C1 Garand HE grenade"  //Yeah, I know it doesn't come with an adapter.
+	desc = "A grenade and a blank .30 cartdrige for the C1 Garand."
+	caliber = CALIBER_3006 //Technically true?
+	icon_state = "garand_grenade"
+	default_ammo = /datum/ammo/rocket/garand
+	max_rounds = 1
+	reload_delay = 1.5 SECONDS
+	bonus_overlay = "c1_rifle_grenade"
+
+//-------------------------------------------------------
 //V-31 SOM rifle
 
 /obj/item/ammo_magazine/rifle/som

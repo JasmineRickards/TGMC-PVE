@@ -41,6 +41,9 @@
 	flags_item_map_variant = NONE
 	flags_armor_features = ARMOR_NO_DECAP
 
+/obj/item/clothing/head/tgmcberet/cmb
+	desc = "A hat typically worn by low ranking members of the CMB. You can swear you saw this in some surplus Terragov pawn shops."
+
 /obj/item/clothing/head/tgmcberet/tan
 	name = "\improper Tan beret"
 	icon_state = "berettan"

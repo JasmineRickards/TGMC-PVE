@@ -6,7 +6,7 @@
 	item_state = "eng_helm"
 	soft_armor = list(MELEE = 40, BULLET = 5, LASER = 20, ENERGY = 5, BOMB = 35, BIO = 100, FIRE = 5, ACID = 5)
 	allowed = list(/obj/item/flashlight)
-	var/brightness_on = 4 //luminosity when on
+	var/brightness_on = 5 //luminosity when on
 	var/on = 0
 	var/rig_color = "engineering" //Determines used sprites: rig[on]-[color] and rig[on]-[color]2 (lying down sprite)
 	actions_types = list(/datum/action/item_action/toggle)
@@ -36,7 +36,7 @@
 	desc = "A special space suit for environments that might pose hazards beyond just the vacuum of space. Provides more protection than a standard space suit."
 	icon_state = "rig-engineering"
 	item_state = "eng_hardsuit"
-	slowdown = 0.5
+	slowdown = 0.75
 	soft_armor = list(MELEE = 40, BULLET = 5, LASER = 20, ENERGY = 5, BOMB = 35, BIO = 100, FIRE = 5, ACID = 5)
 	allowed = list(
 		/obj/item/weapon/gun,
@@ -302,14 +302,14 @@
 	icon_state = "rig0-mining"
 	item_state = "mining_helm"
 	rig_color = "mining"
-	soft_armor = list(MELEE = 50, BULLET = 5, LASER = 20, ENERGY = 5, BOMB = 55, BIO = 100, FIRE = 5, ACID = 30)
+	soft_armor = list(MELEE = 70, BULLET = 5, LASER = 20, ENERGY = 5, BOMB = 55, BIO = 100, FIRE = 30, ACID = 45)
 
 /obj/item/clothing/suit/space/rig/mining
 	icon_state = "rig-mining"
 	name = "mining hardsuit"
 	desc = "A special suit that protects against hazardous, low pressure environments. Has reinforced plating."
 	item_state = "mining_hardsuit"
-	soft_armor = list(MELEE = 50, BULLET = 5, LASER = 20, ENERGY = 5, BOMB = 55, BIO = 100, FIRE = 5, ACID = 30)
+	soft_armor = list(MELEE = 70, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 70, BIO = 100, FIRE = 30, ACID = 45)
 
 
 //Syndicate rig

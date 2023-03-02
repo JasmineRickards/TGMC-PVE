@@ -1575,6 +1575,8 @@ datum/hive_status/normal/handle_silo_death_timer(bypass_flag = FALSE)
 		return FACTION_ZOMBIE
 	if(faction == FACTION_TERRAGOV)
 		return XENO_HIVE_CORRUPTED
+	if(faction == FACTION_COLONY)
+		return XENO_HIVE_CORRUPTED
 	return FALSE
 
 

@@ -12,13 +12,16 @@
 	item_state = "atmos_suit"
 
 /obj/item/clothing/under/rank/atmospheric_technician/survivor
-	starting_attachments = list(/obj/item/armor_module/storage/uniform/brown_vest)
+	starting_attachments = list(/obj/item/storage/internal/toolvest)
 
 /obj/item/clothing/under/rank/engineer
 	desc = "It's an orange high visibility jumpsuit worn by engineers. It has minor radiation shielding."
 	name = "engineer's jumpsuit"
 	icon_state = "engine"
 	item_state = "engi_suit"
+
+/obj/item/clothing/under/rank/engineer/survivor
+	starting_attachments = list(/obj/item/armor_module/storage/uniform/brown_vest)
 
 /obj/item/clothing/under/rank/roboticist
 	desc = "It's a slimming black with reinforced seams; great for industrial work."

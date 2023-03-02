@@ -186,6 +186,10 @@
 	icon_state = "50ae"
 	max_rounds = 32
 
+/obj/item/ammo_magazine/pistol/vp78/ext
+	name = "\improper VP78 extended magazine (9mm)"
+	max_rounds = 45
+	icon_state = "50ae_ext"
 //-------------------------------------------------------
 //SOM pistol
 

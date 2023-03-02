@@ -569,6 +569,7 @@
 	default_ammo_type = /obj/item/ammo_magazine/pistol/vp78
 	allowed_ammo_types = list(
 		/obj/item/ammo_magazine/pistol/vp78,
+		/obj/item/ammo_magazine/pistol/vp78/ext,
 		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/pouch,
 	)
 	force = 8
@@ -581,6 +582,22 @@
 	accuracy_mult_unwielded = 0.85
 	recoil_unwielded = 3
 
+/obj/item/weapon/gun/pistol/vp78/director
+	name = "\improper VP78 combat pistol"
+	desc = "A well cared for and extensively modified 9mm handgun. Whoever originally owned this must have far reaching connections..."
+	default_ammo_type = /obj/item/ammo_magazine/pistol/vp78/ext
+	fire_delay = 0.12 SECONDS
+	burst_amount = 5 // + 2 = BRRRRRRRT
+	burst_delay = 0.08 SECONDS
+	accuracy_mult = 1.25
+	accuracy_mult_unwielded = 0.95
+	recoil_unwielded = 2
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
+	starting_attachment_types = list(
+		/obj/item/attachable/burstfire_assembly,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/compensator,
+	)
 //-------------------------------------------------------
 //SOM pistol
 

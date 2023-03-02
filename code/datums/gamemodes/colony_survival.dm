@@ -15,7 +15,8 @@
 		/datum/job/survivor/sec_patrol = 4,
 		/datum/job/survivor/liaison = 2,
 		/datum/job/survivor/nurse= 4,
-		/datum/job/survivor/junior_rsr = 4
+		/datum/job/survivor/junior_rsr = 4,
+		/datum/job/survivor/supervisor = 1
 	)
 	var/siloless_hive_timer
 

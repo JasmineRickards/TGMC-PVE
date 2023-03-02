@@ -478,6 +478,30 @@
 	new /obj/item/storage/belt/gun/pistol/m4a3/fieldcommander(loc)
 	return INITIALIZE_HINT_QDEL
 
+/obj/effect/supply_drop/garand/Initialize()
+	. = ..()
+	new /obj/item/clothing/head/helmet/marine/veteran/dutch(loc)
+	new /obj/item/clothing/suit/modular/xenonauten/pilot/nam(loc)
+	new /obj/item/storage/holster/backholster/garand/loaded(loc)
+	new /obj/item/storage/belt/gun/pistol/m4a3/fieldcommander(loc)
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/supply_drop/bombsuit_a/Initialize()
+	. = ..()
+	new /obj/item/clothing/suit/bomb_suit/security/extra(loc)
+	new /obj/item/clothing/head/bomb_hood/security/extra(loc)
+	new /obj/item/weapon/gun/shotgun/pump/cmb(loc)
+	new /obj/item/storage/belt/shotgun/buckshot(loc)
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/supply_drop/bombsuit_b/Initialize()
+	. = ..()
+	new /obj/item/clothing/suit/bomb_suit/security/extra/b(loc)
+	new /obj/item/clothing/head/bomb_hood/security/extra/b(loc)
+	new /obj/item/weapon/gun/rifle/standard_gpmg/gunner(loc)
+	new /obj/item/ammo_magazine/standard_gpmg(loc)
+	return INITIALIZE_HINT_QDEL
+
 // 150 to 200 points of value packs, spend 100 points get 150 to 200 in value, basically. Ideally, commons are variety packs, uncommons maybe shake up the round a bit, rares a bit more. Legendaries make the round go wacko. You get a crate of stuff dropped on spawn.
 /obj/item/loot_box/tgmclootbox
 	rolls = 2

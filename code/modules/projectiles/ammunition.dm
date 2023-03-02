@@ -232,7 +232,7 @@
 /obj/item/ammo_magazine/handful/buckshot
 	name = "handful of shotgun buckshot shells (12g)"
 	icon_state = "shotgun buckshot shell"
-	current_rounds = 5
+	current_rounds = 6
 	default_ammo = /datum/ammo/bullet/shotgun/buckshot
 	caliber = CALIBER_12G
 
@@ -259,10 +259,18 @@
 	icon_state = "micro_grenade_smoke"
 	default_ammo = /datum/ammo/bullet/micro_rail/smoke_burst
 
+/obj/item/ammo_magazine/handful/garand_grenade
+	name = "handful of C1 rifle grenades"
+	icon_state = "rifle_grenade"
+	default_ammo = /datum/ammo/rocket/garand
+	current_rounds = 2
+	max_rounds = 2
+	caliber = CALIBER_3006
+
 /obj/item/ammo_magazine/handful/flechette
 	name = "handful of shotgun flechette shells (12g)"
 	icon_state = "shotgun flechette shell"
-	current_rounds = 5
+	current_rounds = 6
 	default_ammo = /datum/ammo/bullet/shotgun/flechette
 	caliber = CALIBER_12G
 
