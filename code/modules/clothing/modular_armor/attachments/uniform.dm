@@ -146,9 +146,6 @@
 	new /obj/item/tool/wrench(src)
 	new /obj/item/stack/cable_coil(src)
 	new /obj/item/tool/extinguisher/mini(src)
-	new /obj/item/tool/surgery/FixOVein(src)
-	new /obj/item/tool/surgery/suture(src)
-	new /obj/item/tweezers(src)
 
 /obj/item/armor_module/storage/uniform/holster
 	name = "shoulder holster"
