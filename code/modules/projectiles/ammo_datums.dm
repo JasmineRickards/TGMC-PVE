@@ -2542,7 +2542,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "plasma bolt"
 	icon_state = "pulse"
 	hud_state = "laser_spread"
-	damage = 18
+	damage = 25
 	penetration = 5
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING
 	bonus_projectiles_type = /datum/ammo/energy/lasgun/marine/cutter/spread
@@ -2554,7 +2554,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "plasma bolt"
 	icon_state = "pulse"
 	hud_state = "laser_spread"
-	damage = 18
+	damage = 25
 	penetration = 5
 	sundering = 1
 

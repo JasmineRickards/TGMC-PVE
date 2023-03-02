@@ -1130,8 +1130,6 @@
 	. = ..()
 	var/obj/item/weapon/gun/new_gun = new /obj/item/weapon/gun/pistol/vp78/director(src)
 	new /obj/item/ammo_magazine/pistol/vp78/ext(src)
-	new /obj/item/ammo_magazine/pistol/vp78/ext(src)
-	new /obj/item/ammo_magazine/pistol/vp78/ext(src)
 	new /obj/item/ammo_magazine/pistol/vp78(src)
 	new /obj/item/ammo_magazine/pistol/vp78(src)
 	new /obj/item/ammo_magazine/pistol/vp78(src)
