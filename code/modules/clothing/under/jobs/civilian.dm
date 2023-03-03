@@ -88,6 +88,8 @@
 	name = "black Lawyer suit"
 	icon_state = "lawyer_black"
 
+/obj/item/clothing/under/lawyer/black/director
+	name = "supervisor's formal suit"
 /obj/item/clothing/under/lawyer/female
 	name = "black Lawyer suit"
 	icon_state = "black_suit_fem"

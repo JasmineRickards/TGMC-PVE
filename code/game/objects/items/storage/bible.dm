@@ -30,6 +30,10 @@
 /obj/item/storage/bible/guide/Initialize(mapload, ...)
 	. = ..()
 	new /obj/item/paper/bible(src)
+	new /obj/item/reagent_containers/food/drinks/bottle/wine(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
 
 /obj/item/storage/bible/afterattack(atom/A, mob/user, proximity)
 	if(!proximity || !isliving(user))

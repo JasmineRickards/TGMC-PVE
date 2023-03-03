@@ -123,7 +123,7 @@
 #define SKILL_LEAD_TRAINED 2 //PO, CMO, etc
 #define SKILL_LEAD_EXPERT 3 //SL, SO
 #define SKILL_LEAD_MASTER 4 //XO, CO
-
+#define SKILL_LEAD_OVERBOARD 5 //Colony Director. This could be either really good or downright stupid.
 
 //melee_weapons skill
 //buff to melee weapon attack damage(+30% dmg per level)

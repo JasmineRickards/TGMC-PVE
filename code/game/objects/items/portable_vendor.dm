@@ -13,6 +13,7 @@
 	throw_speed = 1
 	throw_range = 4
 	w_class = WEIGHT_CLASS_BULKY
+	flags_equip_slot = ITEM_SLOT_BELT
 	interaction_flags = INTERACT_OBJ_UI
 
 	var/req_role //to be compared with job.type to only allow those to use that machine.
@@ -182,16 +183,6 @@
 	if (prob(40*severity))
 		malfunction()
 
-/obj/item/portable_vendor/ex_act(severity)
-	switch(severity)
-		if(EXPLODE_DEVASTATE)
-			qdel(src)
-			return
-		if(EXPLODE_HEAVY)
-			if(prob(50))
-				qdel(src)
-
-
 /obj/item/portable_vendor/corporate
 	name = "\improper Nanotrasen Automated Storage Briefcase"
 	desc = "A suitcase-sized automated storage and retrieval system. Designed to efficiently store and selectively dispense small items. This one has the Nanotrasen logo stamped on its side."
@@ -206,6 +197,58 @@
 		list("Pulsar Gonne", 51, /obj/item/clothing/under/liaison_suit/galaxy_red, "white", "The latest in ultrafashion. for those with a fiery temper.")
 	)
 
+/obj/item/portable_vendor/corporate/survivor
+	name = "\improper Nanotrasen Automated Arms Storage Briefcase"
+	desc = "A suitcase-sized automated storage and retrieval system. Designed to efficiently store and selectively dispense small items. This one has a mercenary logo stamped on its side."
+
+	req_access = list(ACCESS_NT_CORPORATE)
+	req_role = /datum/job/survivor
+	listed_products = list(
+		list("ATTACHMENTS", 0, null, null, null),
+		list("Cash", 2, /obj/item/spacecash/c500, "white", "$500 USD, unmarked bills"),
+		list("Bayonet", 2,/obj/item/attachable/bayonet, "white", "A simple bayonet"),
+		list("RC", 20,/obj/item/attachable/compensator, "white", "A recoil compensator, should make your allies' lives much easier"),
+		list("EB", 20,/obj/item/attachable/extended_barrel, "white", "An extended barrel"),
+		list("Silencer", 20,/obj/item/attachable/suppressor, "white", "A suppressor, should make recoil less of a problem"),
+		list("BC", 40,/obj/item/attachable/heavy_barrel, "white", "A barrel charger, might be of worth to someone trained with weapons"),
+		list("Lace", 10,/obj/item/attachable/lace, "white", "Can't go wrong with a pistol lace, you can wrap it around your hand"),
+		list("Gun Light", 2,/obj/item/attachable/flashlight, "white", "A gun mounted flashlight"),
+		list("MagHarn", 20,/obj/item/attachable/magnetic_harness, "wh", "A magnetic harness, helpful for keeping your gun"),
+		list("RDS", 20,/obj/item/attachable/reddot, "white", "A red dot sight, great for using aim mode!"),
+		list("MD", 30,/obj/item/attachable/motiondetector, "white", "A motion detector, it can be used as a standalone"),
+		list("Scope", 20,/obj/item/attachable/scope/marine, "white", "A high powered scope, it has a better zoom"),
+		list("Miniscope", 20,/obj/item/attachable/scope/mini, "white", "A low powered scope, you can move while using it"),
+		list("A-grip", 20,/obj/item/attachable/angledgrip, "white", "A speedy grip, will surely help with wield times!"),
+		list("V-grip", 20,/obj/item/attachable/verticalgrip, "white", "A bulky grip, will surely help with recoil"),
+		list("Bipod", 20,/obj/item/attachable/foldable/bipod, "white", "A bipod, great for holding a posistion!"),
+		list("Gyro", 20,/obj/item/attachable/gyro, "white", "A gyroscoping stabilizer, will help with mobility while aiming"),
+		list("Laser Sight", 20,/obj/item/attachable/lasersight, "white", "A simple laser sight, good for most use cases"),
+		list("BFA", 20,/obj/item/attachable/burstfire_assembly, "white", "A BFA, will either improve a weapon's burst fire or grant it"),
+		list("Masterkey", 50,/obj/item/weapon/gun/shotgun/combat/masterkey, "white", "An underbarrel shotgun"),
+		list("UGL", 30,/obj/item/weapon/gun/grenade_launcher/underslung, "white", "An underbarrel grenade launcher"),
+		list("UGF", 50,/obj/item/weapon/gun/flamer/mini_flamer, "white", "An underbarrel flamethrower"),
+		list("Mini Flamer Tank", 10,/obj/item/ammo_magazine/flamer_tank/mini, "white", "Fuel tanks for an underbarrel flamethrower"),
+	)
+
+/obj/item/portable_vendor/corporate/survivor/director
+	name = "\improper Automated Flare Briefcase"
+	desc = "A suitcase-sized automated storage and retrieval system. Designed to efficiently store and selectively dispense small items."
+	icon = 'icons/obj/items/storage/storage.dmi'
+	icon_state = "fren_tablet"
+	req_access = list(ACCESS_NT_CORPORATE)
+	req_role = /datum/job/survivor
+	w_class = WEIGHT_CLASS_NORMAL
+	points = 20
+	max_points = 100
+	listed_products = list(
+		list("ALLY DEPLOYMENT SYSTEMS", 0, null, null, null),
+		list("Mantises", 17, /obj/item/explosive/grenade/spawnergrenade/allied/xeno/mantis, "white", "Two Mantises, weak but cheap!"),
+		list("Beetle", 25,  /obj/item/explosive/grenade/spawnergrenade/allied/xeno, "white", "A beetle"),
+		list("Iguana", 25, /obj/item/explosive/grenade/spawnergrenade/allied/ugv, "white", "A remotely controlled CMB Iguana"),
+		list("Komodo", 30, /obj/item/explosive/grenade/spawnergrenade/allied/ugv/komodo, "white", "A remotely controlled CMB Komodo"),
+		list("Gecko (laser)", 20, /obj/item/explosive/grenade/spawnergrenade/allied/ugv/gecko, "white", "A remotely controlled CMB Gecko, beware of friendly fire!"),
+		list("Gecko (smart gun)", 30, /obj/item/explosive/grenade/spawnergrenade/allied/ugv/gecko/b, "white", "A remotely controlled Gecko with IFF, unlikely to hit you."),
+	)
 // A marine version of the portable vendor, points are not regenerated.
 /obj/item/portable_vendor/marine
 	name = "\improper TerraGov Storage Backpack"

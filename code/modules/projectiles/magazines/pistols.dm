@@ -184,8 +184,12 @@
 	default_ammo = /datum/ammo/bullet/pistol/squash
 	caliber = CALIBER_9X19
 	icon_state = "50ae"
-	max_rounds = 32
+	max_rounds = 16
 
+/obj/item/ammo_magazine/pistol/vp78/ext
+	name = "\improper VP78 extended magazine (9mm)"
+	max_rounds = 28
+	icon_state = "50ae_ext"
 //-------------------------------------------------------
 //SOM pistol
 

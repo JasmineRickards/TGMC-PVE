@@ -276,7 +276,7 @@
 	new /obj/item/tool/research/xeno_analyzer(src)
 	new /obj/item/healthanalyzer(src)
 
-/obj/item/storage/belt/rig/survivor/Initialize()  //The belt, with all it's magic inside!
+/obj/item/storage/belt/rig/virilynth/Initialize()  //The belt, with all it's magic inside!
 	. = ..()
 	new /obj/item/reagent_containers/hypospray/autoinjector/virilyth(src)
 	new /obj/item/reagent_containers/hypospray/autoinjector/virilyth(src)
@@ -691,6 +691,23 @@
 	new /obj/item/ammo_magazine/handful/flechette(src)
 	new /obj/item/ammo_magazine/handful/flechette(src)
 	new /obj/item/ammo_magazine/handful/flechette(src)
+
+/obj/item/storage/belt/shotgun/buckshot/Initialize(mapload, ...)
+	. = ..()
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
+	new /obj/item/ammo_magazine/handful/buckshot(src)
 
 /obj/item/storage/belt/shotgun/som
 	desc = "An ammunition belt designed to hold shotgun shells or individual bullets. Made with traditional SOM leather."
@@ -1109,6 +1126,15 @@
 	new /obj/item/ammo_magazine/pistol/vp78(src)
 	INVOKE_ASYNC(src, .proc/handle_item_insertion, new_gun)
 
+/obj/item/storage/belt/gun/pistol/m4a3/vp78_director/Initialize()
+	. = ..()
+	var/obj/item/weapon/gun/new_gun = new /obj/item/weapon/gun/pistol/vp78/director(src)
+	new /obj/item/ammo_magazine/pistol/vp78/ext(src)
+	new /obj/item/ammo_magazine/pistol/vp78(src)
+	new /obj/item/ammo_magazine/pistol/vp78(src)
+	new /obj/item/ammo_magazine/pistol/vp78(src)
+	INVOKE_ASYNC(src, .proc/handle_item_insertion, new_gun)
+
 /obj/item/storage/belt/gun/pistol/m4a3/som
 	name = "\improper S19 holster rig"
 	desc = "A belt with origins dating back to old colony security holster rigs."
@@ -1158,13 +1184,15 @@
 
 /obj/item/storage/belt/gun/revolver/standard_revolver/marshall/Initialize()
 	. = ..()
-	new /obj/item/weapon/gun/revolver/cmb(src)
+	var/obj/item/weapon/gun/new_gun = new /obj/item/weapon/gun/revolver/cmb(src)
 	new /obj/item/ammo_magazine/revolver/cmb(src)
 	new /obj/item/ammo_magazine/revolver/cmb(src)
 	new /obj/item/ammo_magazine/revolver/cmb(src)
 	new /obj/item/ammo_magazine/revolver/cmb(src)
 	new /obj/item/ammo_magazine/revolver/cmb(src)
 	new /obj/item/ammo_magazine/revolver/cmb(src)
+	INVOKE_ASYNC(src, .proc/handle_item_insertion, new_gun)
+
 //smg belts -- bye bye shitty t-19 holster!
 
 /obj/item/storage/belt/gun/smg//Added a base type for tac reload, in case anyone feels like adding a SoM version for the V-21 later.

@@ -1191,7 +1191,7 @@
 	)
 
 /datum/lasrifle/base/plasma_cutter_mode/standard
-	rounds_per_shot = 500
+	rounds_per_shot = 325
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/cutter
 	fire_delay = 0.2 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/Laser Sniper Standard.ogg'
@@ -1200,7 +1200,7 @@
 	icon_state = "pc"
 
 /datum/lasrifle/base/plasma_cutter_mode/efficient
-	rounds_per_shot = 500
+	rounds_per_shot = 325
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/cutter/efficient
 	fire_delay = 0.8 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/disabler.ogg'
@@ -1210,7 +1210,7 @@
 	radial_icon_state = "laser_spread"
 
 /datum/lasrifle/base/plasma_cutter_mode/heat
-	rounds_per_shot = 1000
+	rounds_per_shot = 750
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/cutter/heat
 	fire_delay = 1.2 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/laser3.ogg'

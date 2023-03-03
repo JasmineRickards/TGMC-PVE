@@ -251,6 +251,8 @@
 			. = size ? "ANLST " : "Corporate Analyst"
 		if("NT5")
 			. = size ? "SPVR " : "Corporate Supervisor"
+		if("NT6")
+			. = size ? "Director " : "Corporate Director"
 		if("E1")
 			. = size ? "PVT " : "Private"
 		if("E2")

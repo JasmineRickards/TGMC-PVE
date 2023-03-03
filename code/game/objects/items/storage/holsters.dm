@@ -172,6 +172,38 @@
 	var/obj/item/new_item = new /obj/item/weapon/gun/launcher/rocket/som/rad(src)
 	INVOKE_ASYNC(src, .proc/handle_item_insertion, new_item)
 
+/obj/item/storage/holster/backholster/garand
+	name = "\improper Garand Rifle Bag"
+	desc = "This backpack can hold Garand clips, in addition to a rifle."
+	icon_state = "garand_bag"
+	item_state = "garand_bag"
+	base_icon = "garand_bag"
+	storage_slots = 8
+	max_w_class = 4
+	draw_mode = 0
+	access_delay = 0.5 SECONDS
+	holsterable_allowed = list(/obj/item/weapon/gun/rifle/garand)
+	bypass_w_limit = list(/obj/item/weapon/gun/rifle/garand)
+	storage_type_limits = list(/obj/item/weapon/gun/rifle/garand = 1)
+	can_hold = list(
+		/obj/item/ammo_magazine/rifle/garand,
+		/obj/item/weapon/gun/rifle/garand,
+		/obj/item/ammo_magazine/rifle/garand_grenade,
+		/obj/item/ammo_magazine/handful,
+	)
+
+/obj/item/storage/holster/backholster/garand/loaded/Initialize()
+	. = ..()
+	new /obj/item/ammo_magazine/rifle/garand(src)
+	new /obj/item/ammo_magazine/rifle/garand(src)
+	new /obj/item/ammo_magazine/rifle/garand(src)
+	new /obj/item/ammo_magazine/rifle/garand(src)
+	new /obj/item/ammo_magazine/rifle/garand_grenade(src)
+	new /obj/item/ammo_magazine/rifle/garand_grenade(src)
+	new /obj/item/ammo_magazine/handful/garand_grenade(src)
+	var/obj/item/new_item = new /obj/item/weapon/gun/rifle/garand/grenadier(src)
+	INVOKE_ASYNC(src, .proc/handle_item_insertion, new_item)
+
 //one slot holsters
 
 ///swords

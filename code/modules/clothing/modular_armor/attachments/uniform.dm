@@ -110,6 +110,43 @@
 	new /obj/item/tool/surgery/suture(src)
 	new /obj/item/tweezers(src)
 
+/obj/item/armor_module/storage/uniform/tool_vest
+	name = "blue utility vest"
+	desc = "Worn blueish synthcotton vest with lots of pockets for all your toolbox needs!"
+	icon_state = "vest_blue"
+	storage = /obj/item/storage/internal/toolvest
+
+/obj/item/storage/internal/toolvest
+	storage_slots = 9
+	max_storage_space = 24
+	can_hold = list(
+		/obj/item/tool/wirecutters,
+		/obj/item/tool/shovel/etool,
+		/obj/item/tool/screwdriver,
+		/obj/item/tool/crowbar,
+		/obj/item/tool/weldingtool,
+		/obj/item/multitool,
+		/obj/item/tool/wrench,
+		/obj/item/stack/cable_coil,
+		/obj/item/tool/extinguisher/mini,
+		/obj/item/tool/surgery/solderingtool,
+		/obj/item/stack/barbed_wire,
+		/obj/item/circuitboard,
+		/obj/item/cell,
+	)
+
+/obj/item/storage/internal/toolvest/Initialize()
+	. = ..()
+	new /obj/item/tool/wirecutters(src)
+	new /obj/item/tool/shovel/etool(src)
+	new /obj/item/tool/screwdriver(src)
+	new /obj/item/tool/crowbar(src)
+	new /obj/item/tool/weldingtool/experimental(src)
+	new /obj/item/multitool(src)
+	new /obj/item/tool/wrench(src)
+	new /obj/item/stack/cable_coil(src)
+	new /obj/item/tool/extinguisher/mini(src)
+
 /obj/item/armor_module/storage/uniform/holster
 	name = "shoulder holster"
 	desc = "A handgun holster"

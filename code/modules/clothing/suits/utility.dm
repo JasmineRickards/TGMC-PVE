@@ -55,7 +55,6 @@
 	flags_armor_protection = HEAD|FACE|EYES
 	siemens_coefficient = 0
 
-
 /obj/item/clothing/suit/bomb_suit
 	name = "bomb suit"
 	desc = "A suit designed for safety when handling explosives."
@@ -71,17 +70,60 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0
 
-
 /obj/item/clothing/head/bomb_hood/security
 	icon_state = "bombsuitsec"
 	item_state = "bombsuitsec"
 	flags_armor_protection = HEAD
 
+/obj/item/clothing/head/bomb_hood/security/extra
+	name = "high-tech bomb hood"
+	desc = "Use in case of xeno."
+	soft_armor = list(MELEE = 75, BULLET = 70, LASER = 60, ENERGY = 65, BOMB = 100, BIO = 60, FIRE = 65, ACID = 60)
+	flags_inv_hide = HIDEALLHAIR|HIDEEARS
+	max_heat_protection_temperature = HEAVYARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
+	resistance_flags = UNACIDABLE
+	flags_item = SYNTH_RESTRICTED
+	anti_hug = 4
+
+/obj/item/clothing/head/bomb_hood/security/extra/b
+	color = "#544a70"
+
 /obj/item/clothing/suit/bomb_suit/security
 	icon_state = "bombsuitsec"
 	item_state = "bombsuitsec"
-	allowed = list(/obj/item/weapon/gun,/obj/item/weapon/baton,/obj/item/restraints/handcuffs)
+	allowed = list(
+		/obj/item/weapon/gun,
+		/obj/item/instrument,
+		/obj/item/storage/belt/sparepouch,
+		/obj/item/storage/holster/blade,
+		/obj/item/weapon/claymore,
+		/obj/item/storage/belt/gun,
+		/obj/item/storage/belt/knifepouch,
+		/obj/item/weapon/twohanded,
+		/obj/item/tool/pickaxe/plasmacutter,
+		/obj/item/tank/emergency_oxygen,
+		/obj/item/flashlight,
+		/obj/item/ammo_magazine,
+		/obj/item/explosive/grenade,
+		/obj/item/binoculars,
+		/obj/item/weapon/combat_knife,
+		/obj/item/attachable/bayonetknife,
+	)
 	flags_armor_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+
+/obj/item/clothing/suit/bomb_suit/security/extra
+	name = "high-tech bomb suit"
+	desc = "A suit designed for safety when handling explosives and wildlife. Will slow you down a lot."
+	slowdown = 1.5
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 50, ENERGY = 55, BOMB = 100, BIO = 55, FIRE = 75, ACID = 65)
+	max_heat_protection_temperature = HEAVYARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
+	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
+	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
+	flags_heat_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
+	flags_item = SYNTH_RESTRICTED
+
+/obj/item/clothing/suit/bomb_suit/security/extra/b
+	color = "#544a70"
 
 /*
 * Radiation protection

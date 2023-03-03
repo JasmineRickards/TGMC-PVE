@@ -713,6 +713,14 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	penetration = 15
 	sundering = 2
 
+/datum/ammo/bullet/rifle/garand
+	name = "heavy marksman bullet"
+	handful_icon_state = "garand_bullet"
+	hud_state = "sniper"
+	damage = 90
+	penetration = 25
+	sundering = 1.25
+
 /datum/ammo/bullet/rifle/standard_br
 	name = "light marksman bullet"
 	hud_state = "hivelo"
@@ -765,7 +773,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/shotgun
 	hud_state_empty = "shotgun_empty"
 	shell_speed = 2
-	handful_amount = 5
+	handful_amount = 6
 
 /datum/ammo/bullet/shotgun/slug
 	name = "shotgun slug"
@@ -1001,6 +1009,7 @@ datum/ammo/bullet/shotgun/tx15_slug/on_hit_mob(mob/M, obj/projectile/P)
 /datum/ammo/bullet/shotgun/mbx900_buckshot
 	name = "light shotgun buckshot shell" // If .410 is the smallest shotgun shell, then...
 	handful_icon_state = "light shotgun buckshot shell"
+	handful_amount = 5
 	icon_state = "buckshot"
 	hud_state = "shotgun_buckshot"
 	flags_ammo_behavior = AMMO_BALLISTIC
@@ -1025,6 +1034,7 @@ datum/ammo/bullet/shotgun/tx15_slug/on_hit_mob(mob/M, obj/projectile/P)
 /datum/ammo/bullet/shotgun/mbx900_sabot
 	name = "light shotgun sabot shell"
 	handful_icon_state = "light shotgun sabot shell"
+	handful_amount = 5
 	icon_state = "shotgun_slug"
 	hud_state = "shotgun_slug"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
@@ -1037,6 +1047,7 @@ datum/ammo/bullet/shotgun/tx15_slug/on_hit_mob(mob/M, obj/projectile/P)
 /datum/ammo/bullet/shotgun/mbx900_tracker
 	name = "light shotgun tracker round"
 	handful_icon_state = "light shotgun tracker round"
+	handful_amount = 5
 	icon_state = "shotgun_slug"
 	hud_state = "shotgun_flechette"
 	shell_speed = 4
@@ -2046,6 +2057,22 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	victim.adjust_radiation(effective_strength * 20) //Radiation status effect, duration is in deciseconds
 	to_chat(victim, span_warning("Your body tingles as you suddenly feel the strength drain from your body!"))
 
+/datum/ammo/rocket/garand
+	name = "Carlford-1 rifle grenade"
+	hud_state = "grenade_he"
+	icon_state = "20mm_flight"
+	hud_state = "grenade_airburst"
+	hud_state_empty = "grenade_empty"
+	handful_icon_state = "rifle_grenade"
+	handful_amount = 2
+	damage = 80
+	penetration = 5 //bonk
+	sundering = 30
+	max_range = 15
+
+/datum/ammo/rocket/garand/drop_nade(turf/T)
+	explosion(T, 0, 1, 4, 1)
+
 /datum/ammo/rocket/atgun_shell
 	name = "high explosive ballistic cap shell"
 	icon_state = "atgun"
@@ -2211,6 +2238,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 
 /datum/ammo/mortar/rocket/mlrs/drop_nade(turf/T)
 	explosion(T, 0, 0, 4, 2, small_animation = TRUE)
+
 
 /*
 //================================================
@@ -2504,7 +2532,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 
 /datum/ammo/energy/lasgun/marine/cutter
 	name = "plasma bolt clump"
-	damage = 40
+	damage = 65
 	penetration = 15
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING|AMMO_HITSCAN
 	sundering = 3
@@ -2514,11 +2542,11 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "plasma bolt"
 	icon_state = "pulse"
 	hud_state = "laser_spread"
-	damage = 18
+	damage = 25
 	penetration = 5
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING
 	bonus_projectiles_type = /datum/ammo/energy/lasgun/marine/cutter/spread
-	bonus_projectiles_amount = 2
+	bonus_projectiles_amount = 3
 	bonus_projectiles_scatter = 2
 	sundering = 1
 
@@ -2526,7 +2554,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "plasma bolt"
 	icon_state = "pulse"
 	hud_state = "laser_spread"
-	damage = 18
+	damage = 25
 	penetration = 5
 	sundering = 1
 
@@ -2549,7 +2577,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "xray heat bolt"
 	icon_state = "u_laser"
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_SUNDERING|AMMO_HITSCAN
-	damage = 95
+	damage = 105
 	penetration = 15
 	sundering = 1
 	max_range = 18

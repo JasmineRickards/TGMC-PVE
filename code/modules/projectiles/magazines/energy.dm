@@ -57,7 +57,7 @@
 /obj/item/cell/lasgun/lasrifle/survivor
 	name = "\improper Aftermarket T.E battery"
 	desc = "An NT aftermarket knock-off of a certain other cell. Shodilly crafted and prone to briefly malfunctioning if overused."
-	maxcharge = 425
+	maxcharge = 850
 	self_recharge = TRUE
 	charge_amount = 10
 	charge_delay = 2 SECONDS

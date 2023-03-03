@@ -1433,6 +1433,16 @@ Imports
 	contains = list(/obj/item/ammo_magazine/sniper/svd)
 	cost = 5
 	available_against_xeno_only = TRUE
+
+/datum/supply_packs/imports/garand
+	name = "CAU C1 Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/garand)
+	cost = 5 //Not 1:1, but we don't use the X10 req system
+
+/datum/supply_packs/imports/garand/ammo
+	name = "CAU C1 Ammo"
+	contains = list(/obj/item/ammo_magazine/rifle/garand)
+	cost = 1
 /*
 /datum/supply_packs/imports/mpi_km
 	name = "MPi-KM Assault Rifle"

@@ -7,8 +7,9 @@
 	display_order = JOB_DISPLAY_ORDER_MISC
 	skills_type = /datum/skills/civilian/survivor
 	job_flags = JOB_FLAG_ROUNDSTARTJOINABLE|JOB_FLAG_LATEJOINABLE|JOB_FLAG_CAN_SEE_ORDERS|JOB_FLAG_ALWAYS_VISIBLE_ON_MINIMAP|JOB_FLAG_PROVIDES_BANK_ACCOUNT
-	faction = FACTION_COLONY
+	faction = FACTION_TERRAGOV
 	minimap_icon = "survivor_generic"
+
 
 /datum/job/survivor/armed
 	display_order = JOB_DISPLAY_ORDER_ARMEDSURV
@@ -95,6 +96,7 @@ Good luck, but do not expect to survive."})
 /datum/job/survivor/armed/doctor
 	title = "Doctor"
 	job_category = JOB_COL_SUPPORT
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY)
 	paygrade = "CD"
 	selection_color = "#99FF99"
 	skills_type = /datum/skills/civilian/survivor/doctor
@@ -105,20 +107,21 @@ Good luck, but do not expect to survive."})
 /datum/outfit/job/survivor/armed/doctor
 	name = "Doctor"
 	jobtype = /datum/job/survivor/armed/doctor
-
-	belt = /obj/item/storage/belt/rig/survivor
+	belt = /obj/item/storage/belt/rig/medical
 	ears = /obj/item/radio/headset/mainship/survivor/med
 	w_uniform = /obj/item/clothing/under/rank/medical/survivor
 	wear_suit = /obj/item/clothing/suit/armor/bulletproof
 	shoes = /obj/item/clothing/shoes/black
 	glasses = /obj/item/clothing/glasses/hud/health
 	back = /obj/item/storage/backpack/satchel/med
+	l_store = /obj/item/storage/pouch/medkit/survivor
 
 
 //Executive
 /datum/job/survivor/armed/executive
 	title = "Corporate Executive"
 	job_category = JOB_COL_COMMAND
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY, ACCESS_NT_CORPORATE)
 	paygrade = "SPVR"
 	selection_color = "#ffeedd"
 	outfit = /datum/outfit/job/survivor/armed/executive
@@ -135,10 +138,18 @@ Good luck, but do not expect to survive."})
 	suit_store = /obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/serpenta/survivor
 	back = /obj/item/storage/backpack/satchel/norm
 
+/datum/outfit/job/survivor/armed/executive/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+
+	H.put_in_hands(new /obj/item/portable_vendor/corporate/survivor(H))
+	H.equip_to_slot_or_del(new /obj/item/cell/lasgun/lasrifle/survivor, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/cell/lasgun/lasrifle/survivor, SLOT_IN_BACKPACK)
+
 
 //Security Guard
 /datum/job/survivor/armed/security
-	title = "Armed Guard"
+	title = "Armed Response Specialist"
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG)
 	job_category = JOB_COL_FIGHTERS
 	paygrade = "OFC2"
 	selection_color = "#BF2F2F"
@@ -182,7 +193,7 @@ Good luck, but do not expect to survive."})
 	wear_suit = /obj/item/clothing/suit/armor/bulletproof
 	head = /obj/item/clothing/head/chefhat
 	shoes = /obj/item/clothing/shoes/black
-	suit_store = /obj/item/storage/holster/blade/machete
+	suit_store = /obj/item/storage/holster/blade/machete/full
 	back = /obj/item/storage/backpack/satchel/norm
 
 
@@ -266,10 +277,12 @@ Good luck, but do not expect to survive."})
 
 //Colonial Marshal
 /datum/job/survivor/armed/marshal
-	job_category = JOB_COL_SUPPORT
+	job_category = JOB_COL_COMMAND
 	paygrade = "CMB2"
+	display_order = JOB_DISPLAY_ORDER_SURVIVOR
 	selection_color = "#ccccff"
 	title = "Colonial Marshal"
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG)
 	skills_type = /datum/skills/civilian/survivor/marshal
 	outfit = /datum/outfit/job/survivor/armed/marshal
 	minimap_icon = "marshal"
@@ -314,6 +327,7 @@ Good luck, but do not expect to survive."})
 	title = "Assistant"
 	paygrade = "C"
 	outfit = /datum/outfit/job/survivor/assistant
+	minimap_icon = "survivor_generic"
 
 
 /datum/outfit/job/survivor/assistant
@@ -356,6 +370,7 @@ Good luck, but do not expect to survive."})
 /datum/job/survivor/nurse
 	title = "Nurse"
 	job_category = JOB_COL_SUPPORT
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY)
 	paygrade = "RES"
 	display_order = JOB_DISPLAY_ORDER_SUPPORT
 	selection_color = "#99FF99"
@@ -385,6 +400,7 @@ Good luck, but do not expect to survive."})
 /datum/job/survivor/liaison
 	title = "Liaison"
 	job_category = JOB_COL_COMMAND
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_NT_CORPORATE)
 	paygrade = "NT2"
 	display_order = JOB_DISPLAY_ORDER_MISC
 	selection_color = "#ffeedd"
@@ -412,6 +428,7 @@ Good luck, but do not expect to survive."})
 /datum/job/survivor/sec_patrol
 	title = "Patrol Officer"
 	job_category = JOB_COL_FIGHTERS
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG)
 	paygrade = "OFC1"
 	display_order = JOB_DISPLAY_ORDER_FIGHTER_SEC
 	selection_color = "#BF2F2F"
@@ -443,6 +460,7 @@ Good luck, but do not expect to survive."})
 	job_category = JOB_COL_ETC
 	paygrade = "C"
 	outfit = /datum/outfit/job/survivor/civilian
+	minimap_icon = "survivor_generic"
 
 
 /datum/outfit/job/survivor/civilian
@@ -540,7 +558,7 @@ Good luck, but do not expect to survive."})
 
 	belt = /obj/item/storage/belt/utility/full
 	ears = /obj/item/radio/headset/mainship/survivor/mining
-	w_uniform = /obj/item/clothing/under/rank/atmospheric_technician/survivor
+	w_uniform = /obj/item/clothing/under/rank/engineer/survivor
 	wear_suit = /obj/item/clothing/suit/storage/hazardvest/blue
 	gloves = /obj/item/clothing/gloves/yellow
 	shoes = /obj/item/clothing/shoes/black
@@ -612,7 +630,9 @@ Good luck, but do not expect to survive."})
 //Salesman
 /datum/job/survivor/salesman
 	title = "Salesman"
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_NT_CORPORATE)
 	outfit = /datum/outfit/job/survivor/salesman
+
 
 
 /datum/outfit/job/survivor/salesman
@@ -624,12 +644,21 @@ Good luck, but do not expect to survive."})
 	wear_suit = /obj/item/clothing/suit/armor/vest
 	shoes = /obj/item/clothing/shoes/black
 	back = /obj/item/storage/backpack/satchel
+	l_store = /obj/item/storage/pouch/general/medium
 
 
-//Orderless Colonial Marshal
+/datum/outfit/job/survivor/salesman/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+
+	H.put_in_hands(new /obj/item/portable_vendor/corporate/survivor(H))
+	H.equip_to_slot_or_del(new /obj/item/flashlight, SLOT_IN_L_POUCH)
+
+
+//lesser Colonial Marshal
 /datum/job/survivor/deputy
 	job_category = JOB_COL_COMMAND
 	title = "Colonial Marshal Deputy"
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG)
 	paygrade = "CMB1"
 	display_order = JOB_DISPLAY_ORDER_CMB
 	selection_color = "#ccccff"
@@ -647,7 +676,42 @@ Good luck, but do not expect to survive."})
 	w_uniform = /obj/item/clothing/under/CM_uniform
 	wear_suit = /obj/item/clothing/suit/storage/CMB
 	shoes = /obj/item/clothing/shoes/jackboots
-	head = /obj/item/clothing/head/headset
+	head = /obj/item/clothing/head/tgmcberet/cmb
 	back = /obj/item/storage/backpack/satchel/sec
 	l_store = /obj/item/megaphone
 	r_store = /obj/item/flashlight
+
+
+/datum/job/survivor/supervisor
+	job_category = JOB_COL_COMMAND
+	title = "Colony Director"
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG, ACCESS_MARINE_BRIDGE, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY, ACCESS_NT_CORPORATE)
+	paygrade = "NT6"
+	display_order = JOB_DISPLAY_ORDER_DIRECTOR //Appears at the top, no matter what.
+	selection_color = "#ccccff"
+	skills_type = /datum/skills/civilian/survivor/director
+	outfit = /datum/outfit/job/survivor/director
+	minimap_icon = "fieldcommander"
+
+/datum/outfit/job/survivor/director
+	name = "Colony Director"
+	jobtype = /datum/job/survivor/supervisor
+
+	id = /obj/item/card/id/gold
+	belt = /obj/item/storage/belt/gun/pistol/m4a3/vp78_director
+	ears = /obj/item/radio/headset/mainship/survivor/sec/command
+	w_uniform = /obj/item/clothing/under/lawyer/black/director
+	wear_suit = /obj/item/clothing/suit/armor/hos
+	shoes = /obj/item/clothing/shoes/veteran/PMC
+	head = /obj/item/clothing/head/bowlerhat
+	back = /obj/item/storage/backpack/satchel
+	l_store = /obj/item/storage/pouch/explosive/probablyalawsuitwaitingtohappen
+	r_store = /obj/item/storage/pouch/general/medium
+
+/datum/outfit/job/survivor/director/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+
+	H.put_in_hands(new /obj/item/portable_vendor/corporate/survivor/director(H))
+	H.equip_to_slot_or_del(new /obj/item/megaphone, SLOT_IN_R_POUCH)
+	H.equip_to_slot_or_del(new /obj/item/flashlight, SLOT_IN_R_POUCH)
+	H.equip_to_slot_or_del(new /obj/item/storage/fancy/cigar, SLOT_IN_R_POUCH)
