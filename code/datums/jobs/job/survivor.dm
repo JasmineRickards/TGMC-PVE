@@ -73,6 +73,7 @@ Good luck, but do not expect to survive."})
 	title = "Scientist"
 	job_category = JOB_COL_SUPPORT
 	paygrade = "CD"
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_RESEARCH)
 	selection_color = "#99FF99"
 	skills_type = /datum/skills/civilian/survivor/scientist
 	outfit = /datum/outfit/job/survivor/armed/scientist
@@ -202,6 +203,7 @@ Good luck, but do not expect to survive."})
 	title = "Atmospherics Technician"
 	job_category = JOB_COL_SUPPORT
 	paygrade = "ENG"
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_ENGINEERING)
 	selection_color = "#FF6A00"
 	skills_type = /datum/skills/civilian/survivor/atmos
 	outfit = /datum/outfit/job/survivor/armed/atmos
@@ -346,6 +348,7 @@ Good luck, but do not expect to survive."})
 	title = "Research Assistant"
 	job_category = JOB_COL_SUPPORT
 	paygrade = "CD"
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_RESEARCH)
 	display_order = JOB_DISPLAY_ORDER_SUPPORT
 	selection_color = "#99FF99"
 	skills_type = /datum/skills/civilian/survivor/scientist
@@ -544,6 +547,7 @@ Good luck, but do not expect to survive."})
 	title = "Maintenance Technician"
 	job_category = JOB_COL_SUPPORT
 	paygrade = "ENG"
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_ENGINEERING)
 	comm_title = "MT"
 	display_order = JOB_DISPLAY_ORDER_SUPPORT
 	selection_color = "#FF6A00"
@@ -699,7 +703,7 @@ Good luck, but do not expect to survive."})
 
 	id = /obj/item/card/id/gold
 	belt = /obj/item/storage/belt/gun/pistol/m4a3/vp78_director
-	ears = /obj/item/radio/headset/mainship/survivor/sec/command
+	ears = /obj/item/radio/headset/mainship/survivor/minimap/director
 	w_uniform = /obj/item/clothing/under/lawyer/black/director
 	wear_suit = /obj/item/clothing/suit/armor/hos
 	shoes = /obj/item/clothing/shoes/veteran/PMC
