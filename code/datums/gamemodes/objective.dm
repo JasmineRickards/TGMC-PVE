@@ -75,12 +75,28 @@ GLOBAL_LIST(admin_objective_list) //Prefilled admin assignable objective list
  * Escaped includes minds with alive, non-exiled mobs generally.
  */
 
-/proc/considered_escaped(datum/mind/escapee)
+/proc/considered_escaped(datum/mind/escapee, admin_override = FALSE)
 	if(!considered_alive(escapee))
 		return FALSE
 	//if(SSticker.force_ending) // Just let them win.
 		//return TRUE
-	var/area/current_area = get_area(escapee)
+	var/area/current_area = get_area(escapee.current)
+	var/list/allowed_areas = list(
+		/area/shuttle/ert/pmc,
+		/area/shuttle/big_ert,
+		/area/shuttle/ert/ufo,
+		/area/shuttle/ert/upp,
+		/area/shuttle/pod_1,
+		/area/shuttle/pod_2,
+		/area/shuttle/pod_3,
+		/area/shuttle/pod_4,
+		/area/shuttle/escape_pod,
+	)
+	if(admin_override)
+		if(is_mainship_level(escapee.current.z))
+			return FALSE
+		if(current_area.type in allowed_areas) // Ship only
+			return TRUE
 	if(!current_area)
 		return FALSE
 	if(!istype(current_area, /area/shuttle/escape_pod)) //have to escape in a pod or escape shuttle, at least for the time being
@@ -191,6 +207,8 @@ GLOBAL_LIST(admin_objective_list) //Prefilled admin assignable objective list
 		/datum/objective/kill_zombies,
 		/datum/objective/seize_area,
 		/datum/objective/kill_other_factions,
+		/datum/objective/fixallgenerators,
+		/datum/objective/fixnumberofgenerators,
 		/datum/objective/custom,
 	),/proc/cmp_typepaths_asc)
 
@@ -213,25 +231,33 @@ GLOBAL_LIST(admin_objective_list) //Prefilled admin assignable objective list
 	name = "escape"
 	explanation_text = "Escape on a shuttle or an escape pod alive and without being in custody."
 	team_explanation_text = "Have all members of your team escape on a shuttle or pod alive, without being in custody."
+	///passed to considered_escaped, if true allows greentext by simply being on a shuttle not on ship level by round end
+	var/admin_event = FALSE
 
 /datum/objective/escape/check_completion()
-	if(!considered_escaped(owner))
+	if(!considered_escaped(owner, admin_event))
 		return FALSE
 	return TRUE
 
 /datum/objective/escape/find_target(dupe_search_range, blacklist)
 	return
 
+/datum/objective/escape/admin_edit(mob/admin)
+	if(tgui_alert(admin, "Relax escape requirements (recommended for admin events)?", "Continue?", list("Yes", "No")) != "No")
+		admin_event = TRUE
+
 /datum/objective/escape_with
 	name = "kidnap"
 	explanation_text = "Have both you and your target escape alive and unharmed on a shuttle or pod."
 	team_explanation_text = "Have both you and your target escape alive and unharmed on a shuttle or pod."
 	avoid_double_target = TRUE
+	///passed to considered_escaped, if true allows greentext by simply being on a shuttle not on ship level by round end
+	var/admin_event = FALSE
 
 /datum/objective/escape_with/check_completion()
-	if(!considered_escaped(owner))
+	if(!considered_escaped(owner, admin_event))
 		return FALSE
-	if(!considered_escaped(target))
+	if(!considered_escaped(target, admin_event))
 		return FALSE
 	for(var/mob/M in range(4)) //enough to cover the entirety of an escape shuttle
 		if(M.mind == null)
@@ -251,6 +277,8 @@ GLOBAL_LIST(admin_objective_list) //Prefilled admin assignable objective list
 
 /datum/objective/escape_with/admin_edit(mob/admin)
 	admin_simple_target_pick(admin)
+	if(tgui_alert(admin, "Relax escape requirements (recommended for admin events)?", "Continue?", list("Yes", "No")) != "No")
+		admin_event = TRUE
 
 /datum/objective/survive
 	name = "survive"
@@ -566,3 +594,41 @@ GLOBAL_LIST_EMPTY(possible_items)
 		else if(affectedmob.faction != currentfaction)
 			return FALSE
 	return TRUE
+
+/datum/objective/fixallgenerators
+	name = "fix all power generators"
+	explanation_text = "Fix all planetary power generators."
+	team_explanation_text = "Fix all planetary power generators."
+
+/datum/objective/fixallgenerators/check_completion()
+	for(var/obj/machinery/power/geothermal/generator in GLOB.generators)
+		if(generator.buildstate != 0) //we don't care about dead humans
+			return FALSE
+	return TRUE
+
+/datum/objective/fixnumberofgenerators
+	name = "fix number of generators"
+	explanation_text = "Fix number of generator as set by mission commander."
+	team_explanation_text = "Fix number of generator as set by mission commander."
+	var/numberofgenstobefixed = 0;
+
+/datum/objective/fixnumberofgenerators/check_completion()
+	var/numberofgensfixed = 0;
+	for(var/obj/machinery/power/geothermal/generator in GLOB.generators)
+		if(generator.buildstate != 0) //we don't care about dead humans
+			continue
+		++numberofgensfixed
+	if(numberofgensfixed >= numberofgenstobefixed)
+		return TRUE
+	return FALSE
+
+/datum/objective/fixnumberofgenerators/admin_edit(mob/admin)
+	numberofgenstobefixed = input(admin,"Set the amount of generators that are needed for completion of this objective", numberofgenstobefixed) as num
+	update_explanation_text()
+
+/datum/objective/fixnumberofgenerators/update_explanation_text()
+	..()
+	if(numberofgenstobefixed)
+		explanation_text = "Restore planetary power by fixing [numberofgenstobefixed] groundside."
+	else
+		explanation_text = "Repair generators groundside."

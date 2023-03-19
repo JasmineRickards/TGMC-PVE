@@ -404,7 +404,6 @@ GLOBAL_LIST_INIT(bioscan_locations, list(
 	for(var/recipient in GLOB.medal_awards)
 		var/datum/recipient_awards/RA = GLOB.medal_awards[recipient]
 		for(var/i in 1 to length(RA.medal_names))
-			for(var/i in 1 to length(RA.medal_names))
 			parts += "<br><b>[RA.recipient_rank] [recipient]</b> is awarded [RA.posthumous[i] ? "posthumously " : ""]the [span_boldnotice("[RA.medal_names[i]]")]: \'<i>[RA.medal_citations[i]]</i>\'."
 
 	if(parts.len)
