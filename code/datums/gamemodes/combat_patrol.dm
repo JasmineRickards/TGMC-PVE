@@ -288,6 +288,9 @@ Sensors indicate [num_som_delta || "no"] unknown lifeform signature[num_som_delt
 
 	log_game("[round_finished]\nGame mode: [name]\nRound time: [duration2text()]\nEnd round player population: [length(GLOB.clients)]\nTotal TGMC spawned: [GLOB.round_statistics.total_humans_created[FACTION_TERRAGOV]]\nTotal SOM spawned: [GLOB.round_statistics.total_humans_created[FACTION_SOM]]")
 
+	announce_medal_awards()
+	announce_round_stats()
+
 /datum/game_mode/combat_patrol/announce_round_stats()
 	//sets up some stats which are added if applicable
 	var/tgmc_survival_stat
