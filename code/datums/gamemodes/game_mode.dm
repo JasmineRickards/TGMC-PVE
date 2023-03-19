@@ -1,8 +1,3 @@
-#define PERSONAL_LAST_ROUND "personal last round"
-#define SERVER_LAST_ROUND "server last round"
-
-GLOBAL_VAR(common_report) //Contains common part of roundend report
-
 /datum/game_mode
 	var/name = ""
 	var/config_tag = null
@@ -195,7 +190,6 @@ GLOBAL_VAR(common_report) //Contains common part of roundend report
 
 
 /datum/game_mode/proc/declare_completion()
-	to_chat(world, span_round_body("Thus ends the story of the brave men and women of the [SSmapping.configs[SHIP_MAP].map_name] and their struggle on [SSmapping.configs[GROUND_MAP].map_name]."))
 	log_game("The round has ended.")
 	SSdbcore.SetRoundEnd()
 	if(time_between_round)
@@ -203,9 +197,7 @@ GLOBAL_VAR(common_report) //Contains common part of roundend report
 	//Collects persistence features
 	if(allow_persistence_save)
 		SSpersistence.CollectData()
-	display_report()
-	addtimer(CALLBACK(src, .proc/end_of_round_deathmatch), ROUNDEND_EORG_DELAY)
-	//end_of_round_deathmatch()
+	end_of_round_deathmatch()
 	return TRUE
 
 
@@ -399,113 +391,105 @@ GLOBAL_LIST_INIT(bioscan_locations, list(
 	if(!length(GLOB.medal_awards))
 		return
 
-	var/list/parts = list()
+	var/dat =  span_round_body("Medal Awards:")
 
 	for(var/recipient in GLOB.medal_awards)
 		var/datum/recipient_awards/RA = GLOB.medal_awards[recipient]
 		for(var/i in 1 to length(RA.medal_names))
-			for(var/i in 1 to length(RA.medal_names))
-			parts += "<br><b>[RA.recipient_rank] [recipient]</b> is awarded [RA.posthumous[i] ? "posthumously " : ""]the [span_boldnotice("[RA.medal_names[i]]")]: \'<i>[RA.medal_citations[i]]</i>\'."
+			dat += "<br><b>[RA.recipient_rank] [recipient]</b> is awarded [RA.posthumous[i] ? "posthumously " : ""]the [span_boldnotice("[RA.medal_names[i]]")]: \'<i>[RA.medal_citations[i]]</i>\'."
 
-	if(parts.len)
-		return "<div class='panel stationborder'>[parts.Join("<br>")]</div>"
-	else
-		return ""
-
+	to_chat(world, dat)
 
 
 /datum/game_mode/proc/announce_round_stats()
-	var/list/parts = list({"[span_round_body("The end of round statistics are:")]<br>
+	var/list/dat = list({"[span_round_body("The end of round statistics are:")]<br>
 		<br>There were [GLOB.round_statistics.total_projectiles_fired[FACTION_TERRAGOV]] total projectiles fired.
 		<br>[GLOB.round_statistics.total_projectile_hits[FACTION_TERRAGOV] ? GLOB.round_statistics.total_projectile_hits[FACTION_TERRAGOV] : "No"] projectiles managed to hit marines. For a [(GLOB.round_statistics.total_projectile_hits[FACTION_TERRAGOV] / max(GLOB.round_statistics.total_projectiles_fired[FACTION_TERRAGOV], 1)) * 100]% friendly fire rate!"})
 	if(GLOB.round_statistics.total_projectile_hits[FACTION_XENO])
-		parts += "[GLOB.round_statistics.total_projectile_hits[FACTION_XENO]] projectiles managed to hit xenomorphs. For a [(GLOB.round_statistics.total_projectile_hits[FACTION_XENO] / max(GLOB.round_statistics.total_projectiles_fired[FACTION_TERRAGOV], 1)) * 100]% accuracy total!"
+		dat += "[GLOB.round_statistics.total_projectile_hits[FACTION_XENO]] projectiles managed to hit xenomorphs. For a [(GLOB.round_statistics.total_projectile_hits[FACTION_XENO] / max(GLOB.round_statistics.total_projectiles_fired[FACTION_TERRAGOV], 1)) * 100]% accuracy total!"
 	if(GLOB.round_statistics.grenades_thrown)
-		parts += "[GLOB.round_statistics.grenades_thrown] total grenades exploding."
+		dat += "[GLOB.round_statistics.grenades_thrown] total grenades exploding."
 	else
-		parts += "No grenades exploded."
+		dat += "No grenades exploded."
 	if(GLOB.round_statistics.mortar_shells_fired)
-		parts += "[GLOB.round_statistics.mortar_shells_fired] mortar shells were fired."
+		dat += "[GLOB.round_statistics.mortar_shells_fired] mortar shells were fired."
 	if(GLOB.round_statistics.howitzer_shells_fired)
-		parts += "[GLOB.round_statistics.howitzer_shells_fired] howitzer shells were fired."
+		dat += "[GLOB.round_statistics.howitzer_shells_fired] howitzer shells were fired."
 	if(GLOB.round_statistics.rocket_shells_fired)
-		parts += "[GLOB.round_statistics.rocket_shells_fired] rocket artillery shells were fired."
+		dat += "[GLOB.round_statistics.rocket_shells_fired] rocket artillery shells were fired."
 	if(GLOB.round_statistics.total_human_deaths[FACTION_TERRAGOV])
-		parts += "[GLOB.round_statistics.total_human_deaths[FACTION_TERRAGOV]] people were killed, among which [GLOB.round_statistics.total_human_revives[FACTION_TERRAGOV]] were revived and [GLOB.round_statistics.total_human_respawns] respawned. For a [(GLOB.round_statistics.total_human_revives[FACTION_TERRAGOV] / max(GLOB.round_statistics.total_human_deaths[FACTION_TERRAGOV], 1)) * 100]% revival rate and a [(GLOB.round_statistics.total_human_respawns / max(GLOB.round_statistics.total_human_deaths[FACTION_TERRAGOV], 1)) * 100]% respawn rate."
+		dat += "[GLOB.round_statistics.total_human_deaths[FACTION_TERRAGOV]] people were killed, among which [GLOB.round_statistics.total_human_revives[FACTION_TERRAGOV]] were revived and [GLOB.round_statistics.total_human_respawns] respawned. For a [(GLOB.round_statistics.total_human_revives[FACTION_TERRAGOV] / max(GLOB.round_statistics.total_human_deaths[FACTION_TERRAGOV], 1)) * 100]% revival rate and a [(GLOB.round_statistics.total_human_respawns / max(GLOB.round_statistics.total_human_deaths[FACTION_TERRAGOV], 1)) * 100]% respawn rate."
 	if(SSevacuation.human_escaped)
-		parts += "[SSevacuation.human_escaped] marines manage to evacuate, among [SSevacuation.initial_human_on_ship] that were on ship when xenomorphs arrived."
+		dat += "[SSevacuation.human_escaped] marines manage to evacuate, among [SSevacuation.initial_human_on_ship] that were on ship when xenomorphs arrived."
 	if(GLOB.round_statistics.now_pregnant)
-		parts += "[GLOB.round_statistics.now_pregnant] people infected among which [GLOB.round_statistics.total_larva_burst] burst. For a [(GLOB.round_statistics.total_larva_burst / max(GLOB.round_statistics.now_pregnant, 1)) * 100]% successful delivery rate!"
+		dat += "[GLOB.round_statistics.now_pregnant] people infected among which [GLOB.round_statistics.total_larva_burst] burst. For a [(GLOB.round_statistics.total_larva_burst / max(GLOB.round_statistics.now_pregnant, 1)) * 100]% successful delivery rate!"
 	if(GLOB.round_statistics.queen_screech)
-		parts += "[GLOB.round_statistics.queen_screech] Queen screeches."
+		dat += "[GLOB.round_statistics.queen_screech] Queen screeches."
 	if(GLOB.round_statistics.warrior_lunges)
-		parts += "[GLOB.round_statistics.warrior_lunges] Warriors lunges."
+		dat += "[GLOB.round_statistics.warrior_lunges] Warriors lunges."
 	if(GLOB.round_statistics.crusher_stomp_victims)
-		parts += "[GLOB.round_statistics.crusher_stomp_victims] people stomped by crushers."
+		dat += "[GLOB.round_statistics.crusher_stomp_victims] people stomped by crushers."
 	if(GLOB.round_statistics.praetorian_spray_direct_hits)
-		parts += "[GLOB.round_statistics.praetorian_spray_direct_hits] people hit directly by Praetorian acid spray."
+		dat += "[GLOB.round_statistics.praetorian_spray_direct_hits] people hit directly by Praetorian acid spray."
 	if(GLOB.round_statistics.weeds_planted)
-		parts += "[GLOB.round_statistics.weeds_planted] weed nodes planted."
+		dat += "[GLOB.round_statistics.weeds_planted] weed nodes planted."
 	if(GLOB.round_statistics.weeds_destroyed)
-		parts += "[GLOB.round_statistics.weeds_destroyed] weed tiles removed."
+		dat += "[GLOB.round_statistics.weeds_destroyed] weed tiles removed."
 	if(GLOB.round_statistics.trap_holes)
-		parts += "[GLOB.round_statistics.trap_holes] holes for acid and huggers were made."
+		dat += "[GLOB.round_statistics.trap_holes] holes for acid and huggers were made."
 	if(GLOB.round_statistics.sentinel_neurotoxin_stings)
-		parts += "[GLOB.round_statistics.sentinel_neurotoxin_stings] number of times neurotoxin sting was used."
-	if(GLOB.round_statistics.ozelomelyn_stings)
-		parts += "[GLOB.round_statistics.ozelomelyn_stings] number of times ozelomelyn sting was used."
+		dat += "[GLOB.round_statistics.sentinel_neurotoxin_stings] number of times neurotoxin sting was used."
 	if(GLOB.round_statistics.defiler_defiler_stings)
-		parts += "[GLOB.round_statistics.defiler_defiler_stings] number of times Defilers stung."
+		dat += "[GLOB.round_statistics.defiler_defiler_stings] number of times Defilers stung."
 	if(GLOB.round_statistics.defiler_neurogas_uses)
-		parts += "[GLOB.round_statistics.defiler_neurogas_uses] number of times Defilers vented neurogas."
+		dat += "[GLOB.round_statistics.defiler_neurogas_uses] number of times Defilers vented neurogas."
 	if(GLOB.round_statistics.defiler_reagent_slashes)
-		parts += "[GLOB.round_statistics.defiler_reagent_slashes] number of times Defilers struck an enemy with their reagent slash."
+		dat += "[GLOB.round_statistics.defiler_reagent_slashes] number of times Defilers struck an enemy with their reagent slash."
 	if(GLOB.round_statistics.xeno_unarmed_attacks && GLOB.round_statistics.xeno_bump_attacks)
-		parts += "[GLOB.round_statistics.xeno_bump_attacks] bump attacks, which made up [(GLOB.round_statistics.xeno_bump_attacks / GLOB.round_statistics.xeno_unarmed_attacks) * 100]% of all attacks ([GLOB.round_statistics.xeno_unarmed_attacks])."
+		dat += "[GLOB.round_statistics.xeno_bump_attacks] bump attacks, which made up [(GLOB.round_statistics.xeno_bump_attacks / GLOB.round_statistics.xeno_unarmed_attacks) * 100]% of all attacks ([GLOB.round_statistics.xeno_unarmed_attacks])."
 	if(GLOB.round_statistics.xeno_rally_hive)
-		parts += "[GLOB.round_statistics.xeno_rally_hive] number of times xeno leaders rallied the hive."
+		dat += "[GLOB.round_statistics.xeno_rally_hive] number of times xeno leaders rallied the hive."
 	if(GLOB.round_statistics.hivelord_healing_infusions)
-		parts += "[GLOB.round_statistics.hivelord_healing_infusions] number of times Hivelords used Healing Infusion."
+		dat += "[GLOB.round_statistics.hivelord_healing_infusions] number of times Hivelords used Healing Infusion."
 	if(GLOB.round_statistics.spitter_acid_sprays)
-		parts += "[GLOB.round_statistics.spitter_acid_sprays] number of times Spitters spewed an Acid Spray."
+		dat += "[GLOB.round_statistics.spitter_acid_sprays] number of times Spitters spewed an Acid Spray."
 	if(GLOB.round_statistics.spitter_scatter_spits)
-		parts += "[GLOB.round_statistics.spitter_scatter_spits] number of times Spitters horked up scatter spits."
+		dat += "[GLOB.round_statistics.spitter_scatter_spits] number of times Spitters horked up scatter spits."
 	if(GLOB.round_statistics.ravager_endures)
-		parts += "[GLOB.round_statistics.ravager_endures] number of times Ravagers used Endure."
+		dat += "[GLOB.round_statistics.ravager_endures] number of times Ravagers used Endure."
 	if(GLOB.round_statistics.hunter_marks)
-		parts += "[GLOB.round_statistics.hunter_marks] number of times Hunters marked a target for death."
+		dat += "[GLOB.round_statistics.hunter_marks] number of times Hunters marked a target for death."
 	if(GLOB.round_statistics.ravager_rages)
-		parts += "[GLOB.round_statistics.ravager_rages] number of times Ravagers raged."
+		dat += "[GLOB.round_statistics.ravager_rages] number of times Ravagers raged."
 	if(GLOB.round_statistics.hunter_silence_targets)
-		parts += "[GLOB.round_statistics.hunter_silence_targets] number of targets silenced by Hunters."
+		dat += "[GLOB.round_statistics.hunter_silence_targets] number of targets silenced by Hunters."
 	if(GLOB.round_statistics.larva_from_psydrain)
-		parts += "[GLOB.round_statistics.larva_from_psydrain] larvas came from psydrain."
+		dat += "[GLOB.round_statistics.larva_from_psydrain] larvas came from psydrain."
 	if(GLOB.round_statistics.larva_from_silo)
-		parts += "[GLOB.round_statistics.larva_from_silo] larvas came from silos."
+		dat += "[GLOB.round_statistics.larva_from_silo] larvas came from silos."
 	if(GLOB.round_statistics.larva_from_cocoon)
-		parts += "[GLOB.round_statistics.larva_from_cocoon] larvas came from cocoons."
+		dat += "[GLOB.round_statistics.larva_from_cocoon] larvas came from cocoons."
 	if(GLOB.round_statistics.larva_from_marine_spawning)
-		parts += "[GLOB.round_statistics.larva_from_marine_spawning] larvas came from marine spawning."
+		dat += "[GLOB.round_statistics.larva_from_marine_spawning] larvas came from marine spawning."
 	if(GLOB.round_statistics.larva_from_siloing_body)
-		parts += "[GLOB.round_statistics.larva_from_siloing_body] larvas came from siloing bodies."
+		dat += "[GLOB.round_statistics.larva_from_siloing_body] larvas came from siloing bodies."
 	if(GLOB.round_statistics.points_from_mining)
-		parts += "[GLOB.round_statistics.points_from_mining] requisitions points gained from mining."
+		dat += "[GLOB.round_statistics.points_from_mining] requisitions points gained from mining."
 	if(GLOB.round_statistics.points_from_research)
-		parts += "[GLOB.round_statistics.points_from_research] requisitions points gained from research."
+		dat += "[GLOB.round_statistics.points_from_research] requisitions points gained from research."
 	if(length(GLOB.round_statistics.req_items_produced))
-		parts += "Requisitions produced: "
+		var/produced = "Requisitions produced: "
 		for(var/atom/movable/path AS in GLOB.round_statistics.req_items_produced)
-			parts += "[GLOB.round_statistics.req_items_produced[path]] [initial(path.name)]"
+			produced += "[GLOB.round_statistics.req_items_produced[path]] [initial(path.name)]"
 			if(path == GLOB.round_statistics.req_items_produced[length(GLOB.round_statistics.req_items_produced)]) //last element
-				parts += "."
+				produced += "."
 			else
-				parts += ","
+				produced += ","
 
-	if(parts.len)
-		return "<div class='panel stationborder'>[parts.Join("<br>")]</div>"
-	else
-		return ""
-
+	var/output = jointext(dat, "<br>")
+	for(var/mob/player in GLOB.player_list)
+		if(player?.client?.prefs?.toggles_chat & CHAT_STATISTICS)
+			to_chat(player, output)
 
 
 /datum/game_mode/proc/count_humans_and_xenos(list/z_levels = SSmapping.levels_by_any_trait(list(ZTRAIT_MARINE_MAIN_SHIP, ZTRAIT_GROUND, ZTRAIT_RESERVED)), count_flags)
@@ -719,206 +703,3 @@ GLOBAL_LIST_INIT(bioscan_locations, list(
 ///Return the list of joinable factions, with regards with the current round balance
 /datum/game_mode/proc/get_joinable_factions(should_look_balance)
 	return
-
-/datum/game_mode/proc/display_report()
-	GLOB.common_report = build_roundend_report()
-	log_roundend_report()
-	for(var/client/C in GLOB.clients)
-		show_roundend_report(C)
-		give_show_report_button(C)
-		CHECK_TICK
-
-/datum/game_mode/proc/build_roundend_report()
-	var/list/parts = list()
-
-	parts += antag_report()
-
-	parts += announce_round_stats()
-	parts += announce_xenomorphs()
-	CHECK_TICK
-
-	//Medals
-	parts += announce_medal_awards()
-
-	list_clear_nulls(parts)
-
-	return parts.Join()
-
-/datum/game_mode/proc/show_roundend_report(client/C, report_type = null)
-	var/datum/browser/roundend_report = new(C, "roundend")
-	roundend_report.width = 800
-	roundend_report.height = 600
-	var/content
-	var/filename = C.roundend_report_file()
-	if(report_type == PERSONAL_LAST_ROUND) //Look at this player's last round
-		content = file2text(filename)
-	else if(report_type == SERVER_LAST_ROUND) //Look at the last round that this server has seen
-		content = file2text("data/server_last_roundend_report.html")
-	else //report_type is null, so make a new report based on the current round and show that to the player
-		var/list/report_parts = list(personal_report(C), GLOB.common_report)
-		content = report_parts.Join()
-		fdel(filename)
-		text2file(content, filename)
-
-	roundend_report.set_content(content)
-	roundend_report.stylesheets = list()
-	roundend_report.add_stylesheet("roundend", 'html/browser/roundend.css')
-	roundend_report.add_stylesheet("font-awesome", 'html/font-awesome/css/all.min.css')
-	roundend_report.open(FALSE)
-
-///displays personalized round end data to each client listing survival status
-/datum/game_mode/proc/personal_report(client/C, popcount)
-	var/list/parts = list()
-	var/mob/M = C.mob
-	if(M.mind && !isnewplayer(M))
-		parts += span_round_header("<span class='body' style=font-size:20px;text-align:center valign='top'>Round Complete:[round_finished]</span>")
-		if(M.stat != DEAD && !isbrain(M))
-			if(ishuman(M))
-				var/turf/current_turf = get_turf(M)
-				if(!is_mainship_level(current_turf.z) && (round_finished == MODE_INFESTATION_X_MINOR))
-					parts += "<div class='panel stationborder'>"
-					parts += "<span class='marooned'>You managed to survive, but were marooned on [SSmapping.configs[GROUND_MAP].map_name]...</span>"
-				else if(!is_mainship_level(current_turf.z) && (round_finished == MODE_INFESTATION_X_MAJOR))
-					parts += "<div class='panel stationborder'>"
-					parts += "<span class='marooned'>You managed to survive, but were marooned on [SSmapping.configs[GROUND_MAP].map_name]...</span>"
-				else
-					parts += "<div class='panel greenborder'>"
-					parts += span_greentext("You managed to survive the events on [SSmapping.configs[GROUND_MAP].map_name] as [M.real_name].")
-			else
-				parts += "<div class='panel greenborder'>"
-				parts += span_greentext("You managed to survive the events on [SSmapping.configs[GROUND_MAP].map_name] as [M.real_name].")
-
-		else
-			parts += "<div class='panel redborder'>"
-			parts += span_redtext("You did not survive the events on [SSmapping.configs[GROUND_MAP].map_name]...")
-	else
-		parts += "<div class='panel stationborder'>"
-	parts += "<br>"
-	parts += "</div>"
-
-	return parts.Join()
-
-/datum/game_mode/proc/log_roundend_report()
-	var/roundend_file = file("[GLOB.log_directory]/round_end_data.html")
-	var/list/parts = list()
-	parts += "<div class='panel stationborder'>"
-	parts += "</div>"
-	parts += GLOB.common_report
-	var/content = parts.Join()
-	//Log the rendered HTML in the round log directory
-	fdel(roundend_file)
-	WRITE_FILE(roundend_file, content)
-	//Place a copy in the root folder, to be overwritten each round.
-	roundend_file = file("data/server_last_roundend_report.html")
-	fdel(roundend_file)
-	WRITE_FILE(roundend_file, content)
-
-/datum/game_mode/proc/give_show_report_button(client/C)
-	var/datum/action/report/R = new
-	C.player_details.player_actions += R
-	R.give_action(C.mob)
-	to_chat(C,"<span class='infoplain'><a href='?src=[REF(R)];report=1'>Show roundend report again</a></span>")
-
-/datum/action/report
-	name = "Show roundend report"
-	action_icon_state = "end_round"
-
-/datum/action/report/action_activate()
-	if(owner && GLOB.common_report && SSticker.current_state == GAME_STATE_FINISHED)
-		var/datum/game_mode/A = SSticker.mode
-		A.show_roundend_report(owner.client, PERSONAL_LAST_ROUND)
-
-/client/proc/roundend_report_file()
-	return "data/[ckey].html"
-
-/datum/game_mode/proc/announce_xenomorphs()
-	var/list/parts = list()
-	var/datum/hive_status/normal/HN = GLOB.hive_datums[XENO_HIVE_NORMAL]
-	if(!HN.living_xeno_ruler)
-		return
-
-	parts += span_round_body("The surviving xenomorph ruler was:<br>[HN.living_xeno_ruler.key] as [span_boldnotice("[HN.living_xeno_ruler]")]")
-
-	if(parts.len)
-		return "<div class='panel stationborder'>[parts.Join("<br>")]</div>"
-	else
-		return ""
-
-/datum/game_mode/proc/gather_antag_data()
-	for(var/datum/antagonist/A in GLOB.antagonists)
-		if(!A.owner)
-			continue
-		var/list/antag_info = list()
-		antag_info["key"] = A.owner.key
-		antag_info["name"] = A.owner.name
-		antag_info["antagonist_type"] = A.type
-		antag_info["antagonist_name"] = A.name //For auto and custom roles
-		antag_info["objectives"] = list()
-		if(A.objectives.len)
-			for(var/datum/objective/O in A.objectives)
-				var/result = O.check_completion() ? "SUCCESS" : "FAIL"
-				antag_info["objectives"] += list(list("objective_type"=O.type,"text"=O.explanation_text,"result"=result))
-		SSblackbox.record_feedback("associative", "antagonists", 1, antag_info)
-
-/proc/printobjectives(list/objectives)
-	if(!objectives || !objectives.len)
-		return
-	var/list/objective_parts = list()
-	var/count = 1
-	for(var/datum/objective/objective in objectives)
-		if(objective.check_completion())
-			objective_parts += "<b>[objective.objective_name] #[count]</b>: [objective.explanation_text] [span_greentext("Success!")]"
-		else
-			objective_parts += "<b>[objective.objective_name] #[count]</b>: [objective.explanation_text] [span_redtext("Fail.")]"
-		count++
-	return objective_parts.Join("<br>")
-
-/proc/printplayer(datum/mind/ply, fleecheck)
-	var/text = "<b>[ply.key]</b> was <b>[ply.name]</b> and"
-	if(ply.current)
-		if(ply.current.stat == DEAD)
-			text += " [span_redtext("died")]"
-		else
-			text += " [span_greentext("survived")]"
-		if(fleecheck)
-			var/turf/T = get_turf(ply.current)
-			if(!T || !is_station_level(T.z))
-				text += " while [span_redtext("fleeing the station")]"
-		if(ply.current.real_name != ply.name)
-			text += " as <b>[ply.current.real_name]</b>"
-	else
-		text += " [span_redtext("had their body destroyed")]"
-	return text
-
-/datum/game_mode/proc/antag_report()
-	var/list/result = list()
-	var/list/all_antagonists = list()
-	for(var/datum/antagonist/A in GLOB.antagonists)
-		if(!A.owner)
-			continue
-		all_antagonists |= A
-	var/currrent_category
-	var/datum/antagonist/previous_category
-	sortTim(all_antagonists, /proc/cmp_antag_category)
-	for(var/datum/antagonist/A in all_antagonists)
-		if(!A.show_in_roundend)
-			continue
-		if(A.roundend_category != currrent_category)
-			if(previous_category)
-				result += previous_category.roundend_report_footer()
-				result += "</div>"
-			result += "<div class='panel redborder'>"
-			result += A.roundend_report_header()
-			currrent_category = A.roundend_category
-			previous_category = A
-		result += A.roundend_report()
-		result += "<br><br>"
-		CHECK_TICK
-	if(all_antagonists.len)
-		var/datum/antagonist/last = all_antagonists[all_antagonists.len]
-		result += last.roundend_report_footer()
-		result += "</div>"
-	return result.Join()
-
-/proc/cmp_antag_category(datum/antagonist/A,datum/antagonist/B)
-	return sorttext(B.roundend_category,A.roundend_category)
