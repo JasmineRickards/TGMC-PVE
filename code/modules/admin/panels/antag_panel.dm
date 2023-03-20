@@ -75,7 +75,7 @@ GLOBAL_VAR(antag_prototypes)
 
 	var/out = "<B>[name]</B>[(current && (current.real_name!=name))?" (as [current.real_name])":""]<br>"
 	out += "Mind currently owned by key: [key] [active?"(synced)":"(not synced)"]<br>"
-	out += "Assigned role: [current.job.title]
+	out += "Assigned role: [current.job.title]<br>"
 
 	if(!GLOB.antag_prototypes)
 		GLOB.antag_prototypes = list()

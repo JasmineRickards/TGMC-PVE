@@ -200,8 +200,8 @@ GLOBAL_LIST(admin_objective_list) //Prefilled admin assignable objective list
 		/datum/objective/survive,
 		/datum/objective/escape,
 		/datum/objective/protect,
-		/datum/objective/marineswinoperation,
-		/datum/objective/marinesloseoperation,
+		/datum/objective/winoperation,
+		/datum/objective/loseoperation,
 		/datum/objective/escape_with,
 		/datum/objective/gather_cash,
 		/datum/objective/kill_zombies,
@@ -430,12 +430,12 @@ GLOBAL_LIST_EMPTY(possible_items)
 				return TRUE
 	return FALSE
 
-/datum/objective/marinesloseoperation
-	name = "lose operation"
-	explanation_text = "Make sure the operation is a failure, do not get your hands dirty."
+/datum/objective/loseoperation
+	name = "marines lose operation"
+	explanation_text = "Make sure the marines' operation ends in failure, do not get your hands dirty."
 	team_explanation_text = "Make sure the operation is a failure, do not get your hands dirty."
 
-/datum/objective/marinesloseoperation/check_completion()
+/datum/objective/loseoperation/check_completion()
 	if(SSticker.mode.round_finished == MODE_INFESTATION_X_MINOR)
 		return TRUE
 	else if(SSticker.mode.round_finished == MODE_INFESTATION_X_MAJOR)
@@ -443,12 +443,12 @@ GLOBAL_LIST_EMPTY(possible_items)
 	else
 		return FALSE
 
-/datum/objective/marineswinoperation
-	name = "win operation"
-	explanation_text = "Make sure the operation is a success."
+/datum/objective/winoperation
+	name = "marines win operation"
+	explanation_text = "Make sure the marines' operation is a success."
 	team_explanation_text = "Make sure the operation is a success."
 
-/datum/objective/marineswinoperation/check_completion()
+/datum/objective/winoperation/check_completion()
 	if(SSticker.mode.round_finished == MODE_INFESTATION_M_MINOR)
 		return TRUE
 	else if(SSticker.mode.round_finished == MODE_INFESTATION_M_MAJOR)
