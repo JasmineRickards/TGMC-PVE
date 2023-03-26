@@ -194,4 +194,10 @@ GLOBAL_LIST_EMPTY(goal_nodes)
 /obj/effect/ai_node/goal/pve/Initialize(loc, mob/creator)
 	. = ..()
 	for(var/turfs in RANGE_TURFS(XENO_GOAL_DETECTION_RANGE, src))
-		RegisterSignal(turfs, COMSIG_ATOM_ENTERED, .proc/clean_goal_node)
+		RegisterSignal(turfs, COMSIG_ATOM_ENTERED, .proc/clean_goal_node_pve)
+
+/obj/effect/ai_node/goal/proc/clean_goal_node_pve(datum/source, atom/movable/hostile)
+	if(!isxeno(hostile))
+		return
+	SIGNAL_HANDLER
+	qdel(src)
