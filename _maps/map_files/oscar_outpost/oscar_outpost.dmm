@@ -10524,6 +10524,7 @@
 "KR" = (
 /obj/structure/table/mainship,
 /obj/structure/cable,
+/obj/effect/ai_node/goal/pve,
 /turf/open/floor/tile/dark,
 /area/oscar_outpost/base)
 "KS" = (
