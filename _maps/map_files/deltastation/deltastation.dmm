@@ -11930,10 +11930,6 @@
 /turf/open/floor/iron/dark,
 /area/deltastation/security/checkpoint/customs/fore)
 "czu" = (
-/obj/structure/prop/camera{
-	dir = 9;
-	name = "medbay camera"
-	},
 /obj/effect/spawner/random/structure/photocopier,
 /turf/open/floor/iron/white,
 /area/deltastation/medical/medbay)
@@ -16961,10 +16957,18 @@
 	},
 /turf/open/floor/iron/white,
 /area/deltastation/medical/treatment_center)
+"dBU" = (
+/turf/open/floor/plating/icefloor/warnplate/corner{
+	dir = 8
+	},
+/area/deltastation/external/landingzone)
 "dCh" = (
 /obj/effect/landmark/weed_node,
 /turf/open/floor/iron/grimy,
 /area/deltastation/service/library)
+"dCj" = (
+/turf/open/floor/plating/icefloor/warnplate/corner,
+/area/deltastation/external/landingzone)
 "dCk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/weed_node,
@@ -85591,7 +85595,9 @@
 /obj/effect/decal/stripes/line{
 	dir = 10
 	},
-/obj/structure/sign/securearea,
+/obj/structure/sign/securearea{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/deltastation/security/processing)
 "rFL" = (
@@ -91472,9 +91478,6 @@
 /turf/open/floor/plating,
 /area/deltastation/maintenance/disposal/incinerator)
 "sPR" = (
-/obj/structure/sign/securearea{
-	pixel_y = 32
-	},
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/item/clothing/suit/storage/fr_jacket{
 	desc = "All the class of a trenchcoat without the security fibers.";
@@ -99081,6 +99084,11 @@
 /obj/effect/landmark/weed_node,
 /turf/open/floor/iron/white,
 /area/deltastation/science/lobby)
+"urp" = (
+/turf/open/floor/plating/icefloor/warnplate/corner{
+	dir = 4
+	},
+/area/deltastation/external/landingzone)
 "urq" = (
 /obj/effect/decal/siding/white{
 	dir = 1
@@ -110087,6 +110095,11 @@
 /obj/effect/landmark/weed_node,
 /turf/open/floor/iron,
 /area/deltastation/engineering/lobby)
+"wzn" = (
+/turf/open/floor/plating/icefloor/warnplate/corner{
+	dir = 1
+	},
+/area/deltastation/external/landingzone)
 "wzC" = (
 /obj/effect/spawner/random/structure/closet/regular,
 /turf/open/floor/plating,
@@ -161926,13 +161939,13 @@ vNR
 xuY
 toH
 toH
-sFr
+dCj
 pRp
 pRp
 pRp
 pRp
 pRp
-xoq
+dBU
 vNR
 cSG
 sbS
@@ -162182,7 +162195,7 @@ vNR
 xuY
 xuY
 toH
-sFr
+dCj
 liB
 toH
 toH
@@ -163210,7 +163223,7 @@ dfm
 xuY
 xuY
 toH
-voi
+wzn
 sfZ
 toH
 toH
@@ -163468,13 +163481,13 @@ xuY
 xuY
 toH
 toH
-voi
+wzn
 xoq
 xoq
 xoq
 xoq
 xoq
-pRp
+urp
 vNR
 cSG
 sbS

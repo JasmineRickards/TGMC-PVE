@@ -10,6 +10,17 @@
 	max_integrity = 20
 	var/propelled = 0 //Check for fire-extinguisher-driven chairs
 
+//directional variants mostly used for random spawners
+/obj/structure/bed/chair/east
+	dir = EAST
+
+/obj/structure/bed/chair/west
+	dir = WEST
+
+/obj/structure/bed/chair/north
+	dir = NORTH
+
+
 /obj/structure/bed/chair/alt
 	icon = 'icons/Marine/mainship_props.dmi'
 	icon_state = "chair_alt"

@@ -1141,6 +1141,55 @@
 	template_width = 29
 	template_height = 25
 
+/datum/map_template/modular/oscaroutzetabaseone
+	name = "Oscar outpost abandoned base"
+	mappath = "_maps/modularmaps/oscaroutpost/oscarsouthvar1.dmm"
+	modular_id = "oscarbase"
+	template_width = 79
+	template_height = 29
+
+/datum/map_template/modular/oscaroutzetabasetwo
+	name = "Oscar outpost abandoned base"
+	mappath = "_maps/modularmaps/oscaroutpost/oscarsouthvar2.dmm"
+	modular_id = "oscarbase"
+	template_width = 79
+	template_height = 29
+
+/datum/map_template/modular/oscaroutzetabasethree
+	name = "Oscar outpost abandoned base"
+	mappath = "_maps/modularmaps/oscaroutpost/oscarsouthvar3.dmm"
+	modular_id = "oscarbase"
+	template_width = 79
+	template_height = 29
+
+/datum/map_template/modular/oscaroutzetabasefour
+	name = "Oscar outpost abandoned base"
+	mappath = "_maps/modularmaps/oscaroutpost/oscarsouthvar4.dmm"
+	modular_id = "oscarbase"
+	template_width = 79
+	template_height = 29
+
+/datum/map_template/modular/oscaroutzetabasefive
+	name = "Oscar outpost abandoned base"
+	mappath = "_maps/modularmaps/oscaroutpost/oscarsouthvar5.dmm"
+	modular_id = "oscarbase"
+	template_width = 79
+	template_height = 29
+
+/datum/map_template/modular/oscaroutzetabasesix
+	name = "Oscar outpost abandoned base"
+	mappath = "_maps/modularmaps/oscaroutpost/oscarsouthvar6.dmm"
+	modular_id = "oscarbase"
+	template_width = 79
+	template_height = 29
+
+/datum/map_template/modular/oscaroutzetabaseseven
+	name = "Oscar outpost abandoned base"
+	mappath = "_maps/modularmaps/oscaroutpost/oscarsouthvar7.dmm"
+	modular_id = "oscarbase"
+	template_width = 79
+	template_height = 29
+
 /datum/map_template/modular/end_of_round/original
 	name = "Original EORG"
 	mappath = "_maps/modularmaps/EORG/original.dmm"
