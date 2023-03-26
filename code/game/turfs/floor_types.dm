@@ -339,6 +339,9 @@
 /turf/open/floor/cult/clock
 	icon_state = "clockwork"
 
+/turf/open/floor/foamplating
+	icon_state = "foam_plating"
+
 /turf/open/floor/engine
 	name = "reinforced floor"
 	icon_state = "engine"

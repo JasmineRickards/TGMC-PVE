@@ -339,6 +339,15 @@
 	max_integrity = 300
 	reinf = TRUE
 
+/obj/structure/window/reinforced/north
+	dir = NORTH
+
+/obj/structure/window/reinforced/west
+	dir = WEST
+
+/obj/structure/window/reinforced/east
+	dir = EAST
+
 //For the sulaco and POS AI core.
 /obj/structure/window/reinforced/extratoughened
 	name = "protective AI glass"
@@ -607,3 +616,6 @@
 	//icon_state = "rwindow0_debug" //Uncomment to check hull in the map editor
 	deconstructable = FALSE
 	max_integrity = 300
+
+/obj/structure/window/framed/mainship/escapeshuttle/prison
+	resistance_flags = RESIST_ALL

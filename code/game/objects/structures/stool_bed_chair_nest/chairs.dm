@@ -14,6 +14,25 @@
 	icon = 'icons/Marine/mainship_props.dmi'
 	icon_state = "chair_alt"
 
+//directional chairs for random spawners
+/obj/structure/bed/chair/office/light/north
+	dir = 1
+
+/obj/structure/bed/chair/office/light/east
+	dir = 4
+
+/obj/structure/bed/chair/office/light/west
+	dir = 8
+
+/obj/structure/bed/chair/office/dark/north
+	dir = 1
+
+/obj/structure/bed/chair/office/dark/east
+	dir = 4
+
+/obj/structure/bed/chair/office/dark/west
+	dir = 8
+
 /obj/structure/bed/chair/nometal
 	dropmetal = FALSE
 

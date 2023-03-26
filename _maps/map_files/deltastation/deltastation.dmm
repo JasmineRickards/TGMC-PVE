@@ -2337,6 +2337,10 @@
 /obj/effect/decal/stripes/line,
 /turf/open/floor/iron,
 /area/deltastation/cargo/storage)
+"azu" = (
+/obj/effect/mapping_helpers/area_flag_injector/droppod_immune,
+/turf/open/floor/plating/ground/mars/random/cave,
+/area/deltastation/asteroidcaves/exteriorasteroids)
 "azx" = (
 /obj/structure/rack,
 /obj/item/tool/wrench,
@@ -14440,7 +14444,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small,
 /obj/effect/landmark/weed_node,
-/turf/open/floor/placeholderturf,
+/turf/open/floor/foamplating,
 /area/deltastation/maintenance/department/science/xenobiology)
 "dcc" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -19140,7 +19144,7 @@
 /obj/structure/cable,
 /obj/effect/landmark/weed_node,
 /obj/effect/ai_node,
-/turf/open/floor/placeholderturf,
+/turf/open/floor/foamplating,
 /area/deltastation/maintenance/department/science/xenobiology)
 "dWz" = (
 /obj/effect/spawner/random/structure/status_display,
@@ -19838,7 +19842,7 @@
 /area/deltastation/maintenance/port/fore)
 "ecv" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/placeholderturf,
+/turf/open/floor/foamplating,
 /area/deltastation/maintenance/department/science/xenobiology)
 "ecx" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -21679,7 +21683,7 @@
 "evH" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/placeholderturf,
+/turf/open/floor/foamplating,
 /area/deltastation/maintenance/department/science/xenobiology)
 "evK" = (
 /obj/structure/prop/oresilo,
@@ -37459,7 +37463,7 @@
 "hGR" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/blood,
-/turf/open/floor/placeholderturf,
+/turf/open/floor/foamplating,
 /area/deltastation/maintenance/department/science/xenobiology)
 "hGY" = (
 /obj/machinery/door/airlock/maintenance_hatch{
@@ -38870,7 +38874,7 @@
 /area/deltastation/service/hydroponics)
 "hWR" = (
 /obj/effect/ai_node,
-/turf/open/floor/placeholderturf,
+/turf/open/floor/foamplating,
 /area/deltastation/maintenance/department/science/xenobiology)
 "hWX" = (
 /turf/closed/wall,
@@ -40316,7 +40320,7 @@
 /turf/open/floor/plating,
 /area/deltastation/maintenance/port/aft)
 "inY" = (
-/turf/open/floor/placeholderturf,
+/turf/open/floor/foamplating,
 /area/deltastation/maintenance/department/science/xenobiology)
 "ioc" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -57637,7 +57641,7 @@
 "lTW" = (
 /obj/structure/cable,
 /obj/effect/ai_node,
-/turf/open/floor/placeholderturf,
+/turf/open/floor/foamplating,
 /area/deltastation/maintenance/department/science/xenobiology)
 "lUe" = (
 /obj/effect/decal/tile/transparent/neutral,
@@ -63899,6 +63903,10 @@
 /obj/effect/spawner/random/clipboard,
 /turf/open/floor/wood,
 /area/deltastation/engineering/break_room)
+"nlJ" = (
+/obj/effect/mapping_helpers/area_flag_injector/droppod_immune,
+/turf/open/floor/prison/blackfloor,
+/area/deltastation/asteroidcaves/ship/two)
 "nlS" = (
 /obj/structure/table/woodentable,
 /obj/item/camera_film{
@@ -67614,7 +67622,7 @@
 /area/deltastation/service/library/abandoned)
 "oaD" = (
 /obj/structure/disposalpipe/segment,
-/turf/open/floor/placeholderturf,
+/turf/open/floor/foamplating,
 /area/deltastation/maintenance/department/science/xenobiology)
 "oaE" = (
 /obj/structure/sign/securearea,
@@ -70482,7 +70490,7 @@
 "oEO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/turf/open/floor/placeholderturf,
+/turf/open/floor/foamplating,
 /area/deltastation/maintenance/department/science/xenobiology)
 "oEQ" = (
 /obj/effect/decal/tile/transparent/neutral/fourcorners,
@@ -89941,6 +89949,10 @@
 	},
 /turf/open/floor/iron/white,
 /area/deltastation/medical/virology)
+"sAG" = (
+/obj/effect/mapping_helpers/area_flag_injector/droppod_immune,
+/turf/closed/wall,
+/area/storage/testroom)
 "sAI" = (
 /obj/machinery/door/airlock/multi_tile/mainship/maint,
 /turf/open/floor/plating,
@@ -90246,7 +90258,7 @@
 "sDo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/weed_node,
-/turf/open/floor/placeholderturf,
+/turf/open/floor/foamplating,
 /area/deltastation/maintenance/department/science/xenobiology)
 "sDx" = (
 /obj/effect/decal/cleanable/dirt,
@@ -108748,6 +108760,14 @@
 /obj/effect/decal/warning_stripes/box/empty,
 /turf/open/floor/iron,
 /area/deltastation/science/research)
+"wmF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/siding/purple{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/area_flag_injector/droppod_immune,
+/turf/open/floor/glass/reinforced,
+/area/deltastation/maintenance/space_hut/observatory)
 "wmK" = (
 /obj/effect/decal/tile/transparent/red{
 	dir = 4
@@ -110333,6 +110353,11 @@
 /obj/effect/spawner/random/structure/broken_window,
 /turf/open/floor/plating,
 /area/deltastation/maintenance/department/security)
+"wBW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mapping_helpers/area_flag_injector/droppod_immune,
+/turf/open/floor/plating,
+/area/deltastation/science/ordnance/bomb)
 "wBX" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -122625,7 +122650,7 @@ eMc
 pEO
 aIe
 xPx
-aIe
+sAG
 aIe
 aIe
 aIe
@@ -132546,7 +132571,7 @@ hvY
 wGr
 qPz
 qPz
-sIy
+wBW
 uVm
 sIy
 usZ
@@ -145705,7 +145730,7 @@ agF
 agF
 agF
 agF
-agF
+azu
 agF
 agF
 wxm
@@ -146506,7 +146531,7 @@ wxm
 mvB
 uyW
 ikg
-uFR
+nlJ
 uFR
 oZK
 uyW
@@ -178277,7 +178302,7 @@ iWn
 qgI
 rZR
 vZo
-vZo
+wmF
 vZo
 wXH
 qgI
