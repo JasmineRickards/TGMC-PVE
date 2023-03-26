@@ -67,3 +67,7 @@ endmap
 map deltastation
 	minplayers 2
 endmap
+
+map oscar_outpost
+	minplayers 2
+endmap
