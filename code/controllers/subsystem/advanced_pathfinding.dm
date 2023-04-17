@@ -1,5 +1,3 @@
-#define XENO_GOAL_DETECTION_RANGE 5
-
 SUBSYSTEM_DEF(advanced_pathfinding)
 	name = "Advanced_pathfinding"
 	priority = FIRE_PRIORITY_ADVANCED_PATHFINDING
@@ -190,14 +188,3 @@ GLOBAL_LIST_EMPTY(goal_nodes)
 /obj/effect/ai_node/goal/zombie
 	name = "Ai zombie goal"
 	identifier = IDENTIFIER_ZOMBIE
-
-/obj/effect/ai_node/goal/pve/Initialize(loc, mob/creator)
-	. = ..()
-	for(var/turfs in RANGE_TURFS(XENO_GOAL_DETECTION_RANGE, src))
-		RegisterSignal(turfs, COMSIG_ATOM_ENTERED, .proc/clean_goal_node_pve)
-
-/obj/effect/ai_node/goal/proc/clean_goal_node_pve(datum/source, atom/movable/hostile)
-	if(!isxeno(hostile))
-		return
-	SIGNAL_HANDLER
-	qdel(src)
