@@ -239,11 +239,3 @@
 	mapid = "EORG"
 	spawner_height = 46
 	spawner_width = 46
-
-
-/************OSCAR OUTPOST**********/
-
-/obj/effect/spawner/modularmap/oscaroutpostbase
-	mapid = "oscarbase"
-	spawner_width = 79
-	spawner_height = 29

@@ -60,9 +60,6 @@
 	. = ..()
 	set_light(brightness_on)
 
-/obj/machinery/floodlight/outpost/oscar
-	brightness_on = 30
-
 /obj/machinery/floodlight/landing/hq
 	name = "Installation Light"
 	desc = "A powerful light stationed on the base to provide better visibility."
