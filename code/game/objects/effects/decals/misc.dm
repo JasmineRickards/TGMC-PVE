@@ -186,7 +186,7 @@
 	return INITIALIZE_HINT_QDEL
 
 /obj/effect/decal/siding
-	icon = 'icons/turf/floors.dmi'
+	icon = 'icons/turf/decals.dmi'
 	icon_state = "siding"
 
 /obj/effect/decal/siding/alt

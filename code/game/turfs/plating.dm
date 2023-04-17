@@ -27,6 +27,8 @@
 	. = ..()
 	name = "plating"
 
+/turf/open/floor/plating/icefloor/warnplate/corner
+	icon_state = "warnplatecorner"
 
 /turf/open/floor/plating/icefloor/warnplate
 	icon_state = "warnplate"
