@@ -2648,8 +2648,8 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 
 /datum/ammo/energy/lasgun/marine/mech/smg
 	name = "superheated pulsed laser bolt"
-	damage = 70
-	penetration = 20
+	damage = 35
+	penetration = 0
 
 // Plasma //
 /datum/ammo/energy/plasma

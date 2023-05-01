@@ -1722,6 +1722,16 @@ VEHICLES
 	cost = 50
 	contains = list(/obj/item/cell/mecha/large)
 
+/datum/supply_packs/vehicles/mechburstlaser
+	name = "Mobile Suit Burst Laser burst cannon"
+	cost = 50
+	contains = list(/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_projector)
+
+/datum/supply_packs/vehicles/mechsmg
+	name = "Mobile Suit Laser SMG"
+	cost = 25
+	contains = list(/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_smg)
+
 /datum/supply_packs/vehicles/motorbike
 	name = "All-Terrain Motorbike"
 	cost = 40

@@ -1831,8 +1831,9 @@
 	unload_sound = 'sound/weapons/guns/interact/garand_ping.ogg'
 	reload_sound = 'sound/weapons/guns/interact/m41a_reload.ogg'
 	empty_sound = null
+	damage_mult = 1.8
 	caliber = CALIBER_3006 //codex
-	max_shells = 8 //codex
+	max_shells = 16 //codex
 	default_ammo_type = /obj/item/ammo_magazine/rifle/garand
 	allowed_ammo_types = list(
 		/obj/item/ammo_magazine/rifle/garand,
