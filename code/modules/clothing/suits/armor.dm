@@ -63,10 +63,29 @@
 
 /obj/item/clothing/suit/armor/vest/security
 	name = "security armor"
-	desc = "An armored vest that protects against some damage."
+	desc = "Standart colonial security's armored vest that protects against some damage."
 	icon_state = "armorsec"
 	item_state = "armorsec"
-	slowdown = SLOWDOWN_ARMOR_MEDIUM //prevents powergaming marine by swapping armor.
+	soft_armor = list(MELEE = 35, BULLET = 45, LASER = 45, ENERGY = 45, BOMB = 35, BIO = 20, FIRE = 30, ACID = 30)
+	slowdown = 0
+	allowed = list(
+		/obj/item/weapon/gun,
+		/obj/item/instrument,
+		/obj/item/storage/belt/sparepouch,
+		/obj/item/storage/holster/blade,
+		/obj/item/weapon/claymore,
+		/obj/item/storage/belt/gun,
+		/obj/item/storage/belt/knifepouch,
+		/obj/item/weapon/twohanded,
+		/obj/item/tool/pickaxe/plasmacutter,
+		/obj/item/tank/emergency_oxygen,
+		/obj/item/flashlight,
+		/obj/item/ammo_magazine,
+		/obj/item/explosive/grenade,
+		/obj/item/binoculars,
+		/obj/item/weapon/combat_knife,
+		/obj/item/attachable/bayonetknife,
+	)
 
 /obj/item/clothing/suit/armor/vest/warden
 	name = "Warden's jacket"
