@@ -300,11 +300,11 @@
 	light_range = 9
 
 /obj/item/clothing/suit/storage/marine/riot
-	name = "\improper M5 riot control armor"
-	desc = "A heavily modified suit of M2 MP Armor used to supress riots from buckethead marines and their guns. Slows you down a lot."
+	name = "\improper M5 xeno control armor"
+	desc = "A heavily modified suit of M2 MP Armor used to supress xenos. Thanks to the advanced kevlar platings, it protects you greatly but for the cost of very big weight"
 	icon_state = "marine_riot"
-	slowdown = 1.3
-	soft_armor = list(MELEE = 65, BULLET = 110, LASER = 110, ENERGY = 10, BOMB = 60, BIO = 50, FIRE = 50, ACID = 30)
+	slowdown = 1.5
+	soft_armor = list(MELEE = 92, BULLET = 50, LASER = 50, ENERGY = 25, BOMB = 50, BIO = 95, FIRE = 70, ACID = 95)
 	allowed = list(
 		/obj/item/weapon/gun,
 		/obj/item/storage/belt/sparepouch,
@@ -837,11 +837,25 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/storage/CMB
-	name = "\improper CMB jacket"
-	desc = "A green jacket worn by crew on the Colonial Marshals."
+	name = "\improper CMB deputy jacket"
+	desc = "An old looking jacket worn by some unfortunate deputies."
 	icon_state = "CMB_jacket"
 	blood_overlay_type = "coat"
 	soft_armor = list(MELEE = 20, BULLET = 20, LASER = 20, ENERGY = 40, BOMB = 20, BIO = 20, FIRE = 20, ACID = 20)
+	allowed = list(
+		/obj/item/weapon/gun/,
+		/obj/item/tank/emergency_oxygen,
+		/obj/item/storage/belt/sparepouch,
+		/obj/item/storage/holster/blade,
+		/obj/item/storage/belt/gun,
+	)
+
+/obj/item/clothing/suit/storage/CMB/b
+	name = "\improper CMB jacket"
+	desc = "Well made jacket worn by some colonial marshals. Light, armored and good looking."
+	icon_state = "CMB_jacket"
+	blood_overlay_type = "coat"
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 60, BIO = 50, FIRE = 50, ACID = 65)
 	allowed = list(
 		/obj/item/weapon/gun/,
 		/obj/item/tank/emergency_oxygen,

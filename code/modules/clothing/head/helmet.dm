@@ -101,11 +101,12 @@
 	flags_armor_protection = NONE
 
 /obj/item/clothing/head/helmet/swat
-	name = "\improper SWAT helmet"
-	desc = "They're often used by highly trained Swat Members."
+	name = "\improper bulletproof helmet"
+	desc = "Helmet that protects against high-velocity objects."
 	icon_state = "swat"
 	item_state = "swat"
-	soft_armor = list(MELEE = 35, BULLET = 85, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
+	soft_armor = list(MELEE = 50, BULLET = 95, LASER = 40, ENERGY = 30, BOMB = 75, BIO = 0, FIRE = 75, ACID = 50)
+	hard_armor = list(MELEE = 0, BULLET = 15, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 	flags_inventory = COVEREYES|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES
 	flags_cold_protection = HEAD
@@ -440,10 +441,10 @@
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/marine/riot
-	name = "M8 riot helmet"
-	desc = "It's a modified version of the widely used Riot Helmets for use against angry jarheads. Boasts high ballistic protection"
+	name = "M8 xeno control helmet"
+	desc = "It's a modified version of the widely used Riot Helmets for use against angry xenos. Boasts high melee and acid protection"
 	icon_state = "marine_riot"
-	soft_armor = list(MELEE = 65, BULLET = 110, LASER = 110, ENERGY = 5, BOMB = 50, BIO = 50, FIRE = 50, ACID = 30)
+	soft_armor = list(MELEE = 92, BULLET = 50, LASER = 50, ENERGY = 25, BOMB = 50, BIO = 95, FIRE = 70, ACID = 95)
 	flags_inventory = COVEREYES|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDETOPHAIR
 	flags_item = SYNTH_RESTRICTED
