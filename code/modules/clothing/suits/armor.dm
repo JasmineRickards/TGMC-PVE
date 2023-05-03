@@ -111,8 +111,8 @@
 	blood_overlay_type = "armor"
 	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT//It has only 30 melee armor
 	flags_armor_protection = CHEST
-	soft_armor = list(MELEE = 30, BULLET = 95, LASER = 95, ENERGY = 36, BOMB = 75, BIO = 0, FIRE = 75, ACID = 50)
-//	hard_armor = list(MELEE = 0, BULLET = 20, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 5)
+	soft_armor = list(MELEE = 30, BULLET = 95, LASER = 50, ENERGY = 30, BOMB = 75, BIO = 0, FIRE = 75, ACID = 50)
+	hard_armor = list(MELEE = 0, BULLET = 15, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 	siemens_coefficient = 0.7
 	flags_armor_protection = CHEST|GROIN|LEGS|ARMS|HANDS|FEET
 	permeability_coefficient = 0.9

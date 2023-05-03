@@ -298,7 +298,7 @@ Good luck, but do not expect to survive."})
 	belt = /obj/item/storage/belt/gun/pistol/m4a3/fieldcommander
 	ears = /obj/item/radio/headset/mainship/survivor/sec/command
 	w_uniform = /obj/item/clothing/under/CM_uniform
-	wear_suit = /obj/item/clothing/suit/storage/CMB
+	wear_suit = /obj/item/clothing/suit/storage/CMB/b
 	head = /obj/item/clothing/head/det_hat/black
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/sunglasses/fake
@@ -447,7 +447,7 @@ Good luck, but do not expect to survive."})
 	belt = /obj/item/belt_harness
 	ears = /obj/item/radio/headset/mainship/survivor/sec
 	w_uniform = /obj/item/clothing/under/rank/security/corp/survivor
-	wear_suit = /obj/item/clothing/suit/armor/bulletproof
+	wear_suit = /obj/item/clothing/suit/armor/vest/security
 	shoes = /obj/item/clothing/shoes/marine
 	gloves = /obj/item/clothing/gloves/black
 	head = /obj/item/clothing/head/soft/sec/corp
