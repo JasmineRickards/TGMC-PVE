@@ -484,6 +484,36 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	construction = SKILL_CONSTRUCTION_METAL
 	engineer = SKILL_ENGINEER_METAL
 
+/datum/skills/ert
+	name = "ERT Grunt"
+	cqc = 5
+	melee_weapons = 1
+	firearms = 2
+	engineer = 2
+	construction = 2
+	leadership = 1
+	medical = 2
+	surgery = 2
+	pilot = 0
+	police = 2
+	powerloader = 2
+
+/datum/skills/ert/leader
+	name = "ERT Leader"
+	leadership = 5
+	pilot = 1
+	medical = 4
+
+/datum/skills/ert/medic
+	name = "ERT Medic"
+	medical = 5
+	surgery = 5
+
+/datum/skills/ert/engi
+	name = "ERT Engineer"
+	engineer = 5
+	construction = 5
+
 /datum/skills/crafty
 	name = "Crafty Private"
 	construction = SKILL_CONSTRUCTION_METAL

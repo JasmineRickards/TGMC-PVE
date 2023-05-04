@@ -25,6 +25,15 @@
 	flags_item = SYNTH_RESTRICTED
 	siemens_coefficient = 0.6
 
+/obj/item/clothing/shoes/swat/ert
+	name = "\improper ERT armored shoes"
+	desc = "When you want to turn up the heat. Worn by some ERT member."
+	icon_state = "swat"
+	soft_armor = list(MELEE = 90, BULLET = 95, LASER = 150, ENERGY = 95, BOMB = 90, BIO = 90, FIRE = 90, ACID = 95)
+	flags_inventory = NOSLIPPING
+	flags_item = SYNTH_RESTRICTED
+	siemens_coefficient = 0.6
+
 /obj/item/clothing/shoes/ruggedboot
 	name = "Rugged Boots"
 	desc = "A pair of boots used by workers in dangerous environments."
