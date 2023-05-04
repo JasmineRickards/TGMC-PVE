@@ -851,7 +851,7 @@
 	)
 
 /obj/item/clothing/suit/storage/CMB/b
-	name = "\improper CMB jacket"
+	name = "\improper CMB armored jacket"
 	desc = "Well made jacket worn by some colonial marshals. Light, armored and good looking."
 	icon_state = "CMB_jacket"
 	blood_overlay_type = "coat"

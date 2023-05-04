@@ -150,35 +150,38 @@
 
 //Non-hardsuit ERT helmets.
 /obj/item/clothing/head/helmet/ert
-	name = "emergency response team helmet"
-	desc = "An in-atmosphere helmet worn by members of the Emergency Response Team. Protects the head from impacts."
+	name = "emergency response team HMK2 helmet"
+	desc = "An in-atmosphere helmet worn by members of the NT Emergency Response Team. Protects the head from impacts."
 	icon_state = "erthelmet_cmd"
 	item_state = "syndicate-helm-green"
-	soft_armor = list(MELEE = 62, BULLET = 50, LASER = 50, ENERGY = 35, BOMB = 10, BIO = 2, FIRE = 35, ACID = 35)
+	soft_armor = list(MELEE = 80, BULLET = 90, LASER = 150, ENERGY = 90, BOMB = 80, BIO = 80, FIRE = 80, ACID = 85)
+	hard_armor = list(MELEE = 5, BULLET = 10, LASER = 10, ENERGY = 5, BOMB = 10, BIO = 5, FIRE = 5, ACID = 5)
 	anti_hug = 5
 
 //Commander
 /obj/item/clothing/head/helmet/ert/command
-	name = "emergency response team commander helmet"
-	desc = "An in-atmosphere helmet worn by the commander of a Emergency Response Team. Has blue highlights."
+	name = "response team leader HMK3 helmet"
+	desc = "An in-atmosphere helmet worn by the team leaders of the NT Emergency Response Team. Has blue highlights."
+	soft_armor = list(MELEE = 85, BULLET = 95, LASER = 170, ENERGY = 95, BOMB = 90, BIO = 90, FIRE = 85, ACID = 90)
 
 //Security
 /obj/item/clothing/head/helmet/ert/security
-	name = "emergency response team security helmet"
-	desc = "An in-atmosphere helmet worn by security members of the Emergency Response Team. Has red highlights."
+	name = "responce team grunt HMK2 helmet"
+	desc = "An in-atmosphere helmet worn by regular members of the NT Emergency Response Team. Has red highlights."
 	icon_state = "erthelmet_sec"
 
 //Engineer
 /obj/item/clothing/head/helmet/ert/engineer
-	name = "emergency response team engineer helmet"
-	desc = "An in-atmosphere helmet worn by engineering members of the Emergency Response Team. Has orange highlights."
+	name = "response team field technician HMK2 helmet"
+	desc = "An in-atmosphere helmet worn by engineering members of NT the Emergency Response Team. Has orange highlights."
 	icon_state = "erthelmet_eng"
 
 //Medical
 /obj/item/clothing/head/helmet/ert/medical
-	name = "emergency response team medical helmet"
-	desc = "A set of armor worn by medical members of the Emergency Response Team. Has red and white highlights."
+	name = "response team combat medic HMK2L helmet"
+	desc = "A set of armor worn by medical members of the NT Emergency Response Team. Has red and white highlights. Lighter version with less protection."
 	icon_state = "erthelmet_med"
+	soft_armor = list(MELEE = 65, BULLET = 80, LASER = 150, ENERGY = 80, BOMB = 70, BIO = 70, FIRE = 70, ACID = 75)
 
 
 

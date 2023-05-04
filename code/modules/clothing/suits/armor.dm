@@ -66,7 +66,7 @@
 	desc = "Standart colonial security's armored vest that protects against some damage."
 	icon_state = "armorsec"
 	item_state = "armorsec"
-	soft_armor = list(MELEE = 35, BULLET = 45, LASER = 45, ENERGY = 45, BOMB = 35, BIO = 20, FIRE = 30, ACID = 30)
+	soft_armor = list(MELEE = 45, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 35, BIO = 20, FIRE = 30, ACID = 30)
 	slowdown = 0
 	allowed = list(
 		/obj/item/weapon/gun,
@@ -329,38 +329,67 @@
 
 //Non-hardsuit ERT armor.
 /obj/item/clothing/suit/armor/vest/ert
-	name = "emergency response team armor"
+	name = "emergency response team armor VMK2"
 	desc = "A set of armor worn by members of the NanoTrasen Emergency Response Team."
 	icon_state = "ertarmor_cmd"
 	item_state = "ertarmor_cmd"
 	flags_item = SYNTH_RESTRICTED
-	soft_armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 40, BOMB = 20, BIO = 0, FIRE = 40, ACID = 40)
+	soft_armor = list(MELEE = 80, BULLET = 90, LASER = 150, ENERGY = 90, BOMB = 80, BIO = 80, FIRE = 80, ACID = 85) //150 Laser to avoid FF
+	hard_armor = list(MELEE = 5, BULLET = 10, LASER = 10, ENERGY = 5, BOMB = 10, BIO = 5, FIRE = 5, ACID = 5)
+	allowed = list(
+		/obj/item/weapon/gun,
+		/obj/item/instrument,
+		/obj/item/storage/belt/sparepouch,
+		/obj/item/storage/holster/blade,
+		/obj/item/weapon/claymore,
+		/obj/item/storage/belt/gun,
+		/obj/item/storage/belt/knifepouch,
+		/obj/item/weapon/twohanded,
+		/obj/item/tool/pickaxe/plasmacutter,
+		/obj/item/tank/emergency_oxygen,
+		/obj/item/flashlight,
+		/obj/item/ammo_magazine,
+		/obj/item/explosive/grenade,
+		/obj/item/binoculars,
+		/obj/item/weapon/combat_knife,
+		/obj/item/attachable/bayonetknife,
+	)
+	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
+	time_to_equip = 20
+	time_to_unequip = 20
+	slowdown = 0.35
 
 //Captain
 /obj/item/clothing/suit/armor/vest/ert/command
-	name = "emergency response team commander armor"
-	desc = "A set of armor worn by the commander of a NanoTrasen Emergency Response Team. Has blue highlights."
+	name = "repsonce team leader armor VMK3"
+	desc = "A set of armor worn by the team leaders of the NanoTrasen Emergency Response Team. Has blue highlights. Newer version with better protection but slightly bigger weight."
+	soft_armor = list(MELEE = 85, BULLET = 95, LASER = 170, ENERGY = 95, BOMB = 90, BIO = 90, FIRE = 85, ACID = 90)
+	slowdown = 0.45
 
 //Security
 /obj/item/clothing/suit/armor/vest/ert/security
-	name = "emergency response team security armor"
-	desc = "A set of armor worn by security members of the NanoTrasen Emergency Response Team. Has red highlights."
+	name = "response team grunt armor VMK2"
+	desc = "A set of armor worn by regular members of the NanoTrasen Emergency Response Team. Has red highlights."
 	icon_state = "ertarmor_sec"
 	item_state = "ertarmor_sec"
 
 //Engineer
 /obj/item/clothing/suit/armor/vest/ert/engineer
-	name = "emergency response team engineer armor"
+	name = "response team field technician armor VMK2"
 	desc = "A set of armor worn by engineering members of the NanoTrasen Emergency Response Team. Has orange highlights."
 	icon_state = "ertarmor_eng"
 	item_state = "ertarmor_eng"
 
 //Medical
 /obj/item/clothing/suit/armor/vest/ert/medical
-	name = "emergency response team medical armor"
-	desc = "A set of armor worn by medical members of the NanoTrasen Emergency Response Team. Has red and white highlights."
+	name = "response team combat medic armor VMK2L"
+	desc = "A set of armor worn by medical members of the NanoTrasen Emergency Response Team. Has red and white highlights. It is lighter than regular vests."
 	icon_state = "ertarmor_med"
 	item_state = "ertarmor_med"
+	soft_armor = list(MELEE = 65, BULLET = 80, LASER = 150, ENERGY = 80, BOMB = 70, BIO = 70, FIRE = 70, ACID = 75)
+	slowdown = 0.1
+	time_to_equip = 10
+	time_to_unequip = 10
 
 
 /obj/item/clothing/suit/armor/hos

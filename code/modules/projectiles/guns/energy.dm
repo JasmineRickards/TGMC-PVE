@@ -230,7 +230,7 @@
 /obj/item/weapon/gun/energy/lasgun/pulse
 	name = "\improper M19C4 pulse energy rifle"
 	desc = "A heavy-duty, multifaceted energy weapon that uses pulse-based beam generation technology to emit powerful laser blasts. Because of its complexity and cost, it is rarely seen in use except by specialists and front-line combat personnel. This is a testing model issued only for Asset Protection units and offshore elite Nanotrasen squads."
-	force = 23 //Slightly more heftier than the M43, but without the stock.
+	force = 30 //Slightly more heftier than the M43, but without the stock.
 	icon_state = "m19c4"
 	item_state = "m19c4"
 	fire_sound = 'sound/weapons/guns/fire/pulseenergy.ogg'
@@ -239,6 +239,7 @@
 	reload_sound = 'sound/weapons/guns/interact/m4ra_reload.ogg'
 	max_shots = 100//codex stuff
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC,GUN_FIREMODE_SEMIAUTO)
 	load_method = CELL //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/pulsebolt
 	muzzleflash_iconstate = "muzzle_flash_pulse"
@@ -250,11 +251,12 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_ENERGY|GUN_AMMO_COUNT_BY_SHOTS_REMAINING|GUN_NO_PITCH_SHIFT_NEAR_EMPTY
 	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18,"rail_x" = 12, "rail_y" = 23, "under_x" = 23, "under_y" = 15, "stock_x" = 22, "stock_y" = 12)
 	ammo_level_icon = "m19c4"
-	fire_delay = 8
+	fire_delay = 2
 	burst_delay = 0.2 SECONDS
-	accuracy_mult = 1.15
+	accuracy_mult = 1.3
 	accuracy_mult_unwielded = 0.95
 	scatter_unwielded = 25
+	scatter = 3
 
 //-------------------------------------------------------
 //A practice version of M43, only for the marine hq map.
