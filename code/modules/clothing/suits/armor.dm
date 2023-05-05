@@ -329,8 +329,8 @@
 
 //Non-hardsuit ERT armor.
 /obj/item/clothing/suit/armor/vest/ert
-	name = "emergency response team armor VMK2"
-	desc = "A set of armor worn by members of the NanoTrasen Emergency Response Team."
+	name = "response team PCV MK2"
+	desc = "Protective combat vest worn by members of the NanoTrasen Emergency Response Team."
 	icon_state = "ertarmor_cmd"
 	item_state = "ertarmor_cmd"
 	flags_item = SYNTH_RESTRICTED
@@ -358,32 +358,41 @@
 	time_to_equip = 20
 	time_to_unequip = 20
 	slowdown = 0.35
+	supporting_limbs = CHEST | GROIN | ARM_LEFT | ARM_RIGHT | HAND_LEFT | HAND_RIGHT | LEG_LEFT | LEG_RIGHT | FOOT_LEFT | FOOT_RIGHT | HEAD
+	resistance_flags = UNACIDABLE
+	flags_cold_protection = CHEST|GROIN|ARMS|LEGS
+	flags_heat_protection = CHEST|GROIN|ARMS|LEGS
+
+/obj/item/clothing/suit/armor/vest/ert/Initialize(mapload, ...)
+	. = ..()
+	AddComponent(/datum/component/suit_autodoc)
+	AddElement(/datum/element/limb_support, supporting_limbs)
 
 //Captain
 /obj/item/clothing/suit/armor/vest/ert/command
-	name = "repsonce team leader armor VMK3"
-	desc = "A set of armor worn by the team leaders of the NanoTrasen Emergency Response Team. Has blue highlights. Newer version with better protection but slightly bigger weight."
+	name = "repsonce team leader PCV MK3-B"
+	desc = "Protective combat vest worn by the team leaders of the NanoTrasen Emergency Response Team. Has blue highlights. Newer version with better protection but slightly bigger weight."
 	soft_armor = list(MELEE = 85, BULLET = 95, LASER = 170, ENERGY = 95, BOMB = 90, BIO = 90, FIRE = 85, ACID = 90)
 	slowdown = 0.45
 
 //Security
 /obj/item/clothing/suit/armor/vest/ert/security
-	name = "response team grunt armor VMK2"
-	desc = "A set of armor worn by regular members of the NanoTrasen Emergency Response Team. Has red highlights."
+	name = "response team grunt PCV MK2-R"
+	desc = "Protective combat vest worn by regular members of the NanoTrasen Emergency Response Team. Has red highlights."
 	icon_state = "ertarmor_sec"
 	item_state = "ertarmor_sec"
 
 //Engineer
 /obj/item/clothing/suit/armor/vest/ert/engineer
-	name = "response team field technician armor VMK2"
-	desc = "A set of armor worn by engineering members of the NanoTrasen Emergency Response Team. Has orange highlights."
+	name = "response team field technician PCV MK2-Y"
+	desc = "Protective combat vest worn by engineering members of the NanoTrasen Emergency Response Team. Has orange highlights."
 	icon_state = "ertarmor_eng"
 	item_state = "ertarmor_eng"
 
 //Medical
 /obj/item/clothing/suit/armor/vest/ert/medical
-	name = "response team combat medic armor VMK2L"
-	desc = "A set of armor worn by medical members of the NanoTrasen Emergency Response Team. Has red and white highlights. It is lighter than regular vests."
+	name = "response team combat medic PCV MK2L-W"
+	desc = "Protective combat vest worn by medical members of the NanoTrasen Emergency Response Team. Has red and white highlights. It is lighter than regular vests."
 	icon_state = "ertarmor_med"
 	item_state = "ertarmor_med"
 	soft_armor = list(MELEE = 65, BULLET = 80, LASER = 150, ENERGY = 80, BOMB = 70, BIO = 70, FIRE = 70, ACID = 75)

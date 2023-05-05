@@ -78,6 +78,14 @@
 	. = ..()
 	. += jointext(codex_info, "<br>")
 
+/obj/item/weapon/claymore/harvester/advanced
+	name = "\improper HP-S Advanced Harvester blade"
+	desc = "TerraGov Marine Corps' experimental High Point-Singularity 'Harvester' blade. An advanced weapon that trades sheer force for the ability to apply a variety of debilitating effects when loaded with certain reagents. Activate after loading to prime a single use of an effect. It also harvests substances from alien lifeforms it strikes when connected to the Vali system. This version was improved with better material, sharpening technique and lighter handling."
+	icon_state = "energy_sword"
+	item_state = "energy_katana"
+	force = 180
+	attack_speed = 9
+
 /obj/item/weapon/claymore/mercsword
 	name = "combat sword"
 	desc = "A dusty sword commonly seen in historical museums. Where you got this is a mystery, for sure. Only a mercenary would be nuts enough to carry one of these. Sharpened to deal massive damage."

@@ -564,7 +564,7 @@ WEAPONS
 	name = "Mateba Autorevolver belt"
 	contains = list(/obj/item/storage/belt/gun/mateba/full)
 	notes = "Contains 6 speedloaders"
-	cost = 15
+	cost = 20
 	available_against_xeno_only = TRUE
 
 /datum/supply_packs/weapons/mateba_ammo
@@ -783,7 +783,7 @@ ARMOR
 	cost = 10
 
 /datum/supply_packs/armor/riot
-	name = "Heavy Riot Armor Set"
+	name = "Heavy Xeno Control Armor Set"
 	contains = list(
 		/obj/item/clothing/suit/storage/marine/riot,
 		/obj/item/clothing/head/helmet/marine/riot,
@@ -845,6 +845,7 @@ ARMOR
 		/obj/item/armor_module/module/hlin_explosive_armor,
 		/obj/item/armor_module/module/eshield/mk2,
         /obj/item/armor_module/module/chemsystem/mk2,
+        /obj/item/weapon/claymore/harvester/advanced,
 	)
 	cost = 40
 
@@ -891,8 +892,11 @@ ARMOR
 
 /datum/supply_packs/armor/modular/attachments/chemsystem_mk2
 	name = "Jaegar Vali Chemical System Mark 2"
-	contains = list(/obj/item/armor_module/module/chemsystem/mk2)
-	cost = 8
+	contains = list(
+	/obj/item/armor_module/module/chemsystem/mk2,
+	/obj/item/weapon/claymore/harvester/advanced,
+	)
+	cost = 12
 
 /*******************************************************************************
 CLOTHING
