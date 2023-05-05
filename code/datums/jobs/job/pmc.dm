@@ -216,7 +216,7 @@ datum/outfit/job/ert/leader
 	wear_suit = /obj/item/clothing/suit/armor/vest/ert/command
 	gloves = /obj/item/clothing/gloves/combat/ert
 	head = /obj/item/clothing/head/helmet/ert/command
-	mask = /obj/item/clothing/mask/gas/PMC/leader
+	mask = /obj/item/clothing/mask/gas/PMC
 	glasses = /obj/item/clothing/glasses/hud/xenohud/night/meson
 	suit_store = /obj/item/weapon/gun/energy/lasgun/pulse
 	r_store = /obj/item/storage/pouch/general/large/command
@@ -353,6 +353,12 @@ datum/outfit/job/ert/leader
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/reagent_containers/hypospray/autoinjector/peridaxon_plus, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/reagent_containers/hypospray/autoinjector/peridaxon_plus, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/reagent_containers/hypospray/autoinjector/peridaxon_plus, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/reagent_containers/hypospray/autoinjector/quickclotplus, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/reagent_containers/hypospray/autoinjector/quickclotplus, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/reagent_containers/hypospray/autoinjector/quickclotplus, SLOT_IN_BELT)
 
 
 //ERT Engineer
