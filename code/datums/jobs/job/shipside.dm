@@ -115,6 +115,7 @@ Godspeed, captain! And remember, you are not above the law."})
 	belt = /obj/item/storage/belt/gun/pistol/smart_pistol/full
 	ears = /obj/item/radio/headset/mainship/mcom
 	w_uniform = /obj/item/clothing/under/marine/officer/command
+	wear_suit = /obj/item/clothing/suit/storage/marine/smartgunner/fancy
 	shoes = /obj/item/clothing/shoes/marinechief/captain
 	gloves = /obj/item/clothing/gloves/marine/techofficer/captain
 	head = /obj/item/clothing/head/tgmcberet/tan
@@ -358,7 +359,7 @@ In addition, you are tasked with the security of high-ranking personnel, includi
 	shoes = /obj/item/clothing/shoes/marine
 	glasses = /obj/item/clothing/glasses/sunglasses/sechud
 	gloves = /obj/item/clothing/gloves/black
-	head = /obj/item/clothing/head/tgmcberet/red
+	head = /obj/item/clothing/head/tgmcberet/red/mp
 	r_store = /obj/item/storage/pouch/general/medium
 	back = /obj/item/storage/backpack/satchel/sec
 
@@ -396,7 +397,7 @@ In addition, you are tasked with the security of high-ranking personnel, includi
 	belt = /obj/item/storage/belt/security/MP/full
 	ears = /obj/item/radio/headset/mainship/mcom
 	w_uniform = /obj/item/clothing/under/marine/officer/warrant
-	wear_suit = /obj/item/clothing/suit/storage/marine/MP
+	wear_suit = /obj/item/clothing/suit/storage/marine/MP/WO
 	shoes = /obj/item/clothing/shoes/marine
 	glasses = /obj/item/clothing/glasses/sunglasses/sechud
 	gloves = /obj/item/clothing/gloves/black
@@ -822,7 +823,7 @@ A happy ship is a well-functioning ship."})
 	belt = /obj/item/storage/belt/gun/m44/full
 	ears = /obj/item/radio/headset/mainship/mcom
 	w_uniform = /obj/item/clothing/under/rank/ro_suit
-	wear_suit = /obj/item/clothing/suit/storage/marine/MP
+	wear_suit = /obj/item/clothing/suit/storage/marine/MP/RO
 	suit_store = /obj/item/weapon/gun/energy/taser
 	shoes = /obj/item/clothing/shoes/marine/full
 	gloves = /obj/item/clothing/gloves/yellow

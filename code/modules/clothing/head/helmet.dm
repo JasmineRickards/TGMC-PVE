@@ -321,10 +321,12 @@
 
 /obj/item/clothing/head/helmet/marine/standard
 	flags_item_map_variant = NONE
+	soft_armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 60, BIO = 60, FIRE = 60, ACID = 60)
 	//flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 /obj/item/clothing/head/helmet/marine/tech
 	name = "\improper M10 technician helmet"
 	icon_state = "techhelmet"
+	soft_armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 60, BIO = 60, FIRE = 60, ACID = 60)
 	flags_item_map_variant = NONE
 	//flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 	attachments_by_slot = list(ATTACHMENT_SLOT_HEAD_MODULE)
@@ -334,6 +336,7 @@
 /obj/item/clothing/head/helmet/marine/corpsman
 	name = "\improper M10 corpsman helmet"
 	icon_state = "corpshelmet"
+	soft_armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 60, BIO = 60, FIRE = 60, ACID = 60)
 	flags_item_map_variant = NONE
 	//flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
