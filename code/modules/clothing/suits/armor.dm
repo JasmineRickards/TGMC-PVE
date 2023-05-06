@@ -355,10 +355,10 @@
 		/obj/item/attachable/bayonetknife,
 	)
 	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
-	time_to_equip = 20
 	time_to_unequip = 20
+	time_to_equip = 20
 	slowdown = 0.35
-	supporting_limbs = CHEST | GROIN | ARM_LEFT | ARM_RIGHT | HAND_LEFT | HAND_RIGHT | LEG_LEFT | LEG_RIGHT | FOOT_LEFT | FOOT_RIGHT | HEAD
+	supporting_limbs = CHEST | GROIN | ARM_LEFT | ARM_RIGHT | LEG_LEFT | LEG_RIGHT
 	resistance_flags = UNACIDABLE
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS
 	flags_heat_protection = CHEST|GROIN|ARMS|LEGS
@@ -370,7 +370,7 @@
 
 //Captain
 /obj/item/clothing/suit/armor/vest/ert/command
-	name = "repsonce team leader PCV MK3-B"
+	name = "responce team leader PCV MK3-B"
 	desc = "Protective combat vest worn by the team leaders of the NanoTrasen Emergency Response Team. Has blue highlights. Newer version with better protection but slightly bigger weight."
 	soft_armor = list(MELEE = 85, BULLET = 95, LASER = 170, ENERGY = 95, BOMB = 90, BIO = 90, FIRE = 85, ACID = 90)
 	slowdown = 0.45
@@ -397,8 +397,8 @@
 	item_state = "ertarmor_med"
 	soft_armor = list(MELEE = 65, BULLET = 80, LASER = 150, ENERGY = 80, BOMB = 70, BIO = 70, FIRE = 70, ACID = 75)
 	slowdown = 0.1
-	time_to_equip = 10
 	time_to_unequip = 10
+	time_to_equip = 10
 
 
 /obj/item/clothing/suit/armor/hos
@@ -408,7 +408,7 @@
 	item_state = "hos"
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS
 	flags_item = SYNTH_RESTRICTED
-	soft_armor = list(MELEE = 65, BULLET = 30, LASER = 50, ENERGY = 10, BOMB = 25, BIO = 0, FIRE = 10, ACID = 10)
+	soft_armor = list(MELEE = 65, BULLET = 80, LASER = 80, ENERGY = 70, BOMB = 75, BIO = 50, FIRE = 60, ACID = 50)
 	flags_inventory = NONE
 	flags_inv_hide = HIDEJUMPSUIT
 	siemens_coefficient = 0.6
