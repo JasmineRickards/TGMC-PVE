@@ -337,6 +337,7 @@
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	supporting_limbs = CHEST | GROIN | ARM_LEFT | ARM_RIGHT | HAND_LEFT | HAND_RIGHT | LEG_LEFT | LEG_RIGHT | FOOT_LEFT | FOOT_RIGHT | HEAD //B18 effectively stabilizes these.
 	resistance_flags = UNACIDABLE
@@ -361,6 +362,7 @@
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	slowdown = SLOWDOWN_ARMOR_MEDIUM
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
 /obj/item/clothing/suit/storage/marine/B17/Initialize(mapload, ...)
 	. = ..()
@@ -377,13 +379,15 @@
 	soft_armor = list(MELEE = 55, BULLET = 75, LASER = 75, ENERGY = 50, BOMB = 100, BIO = 50, FIRE = 50, ACID = 60)
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	allowed = list(/obj/item/weapon/gun/launcher/rocket)
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
 /obj/item/clothing/suit/storage/marine/M3S
 	name = "\improper M3 pattern scout armor"
-	desc = "A custom set of M3 armor designed for TGMC Scouts." // advanced medium armor
-	icon_state = "scout_armor"
-	soft_armor = list(MELEE = 80, BULLET = 85, LASER = 85, ENERGY = 70, BOMB = 65, BIO = 65, FIRE = 70, ACID = 65)
-	slowdown = SLOWDOWN_ARMOR_LIGHT
+	desc = "A custom set of M3 armor designed for TGMC Scouts." // advanced light armor
+	icon_state = "marine_sniper"
+	soft_armor = list(MELEE = 60, BULLET = 70, LASER = 70, ENERGY = 55, BOMB = 55, BIO = 50, FIRE = 50, ACID = 55)
+	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
 /obj/item/clothing/suit/storage/marine/M35
 	name = "\improper M35 pattern pyrotechnician armor"
@@ -395,13 +399,15 @@
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
 /obj/item/clothing/suit/storage/marine/sniper
 	name = "\improper M3 pattern recon armor"
-	desc = "A custom modified set of M3 armor designed for recon missions." // advanced light armor
-	icon_state = "marine_sniper"
-	soft_armor = list(MELEE = 60, BULLET = 65, LASER = 65, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
-	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
+	desc = "A custom modified set of M3 armor designed for recon missions." // advanced medium armor
+	icon_state = "scout_armor"
+	soft_armor = list(MELEE = 80, BULLET = 85, LASER = 85, ENERGY = 70, BOMB = 65, BIO = 65, FIRE = 70, ACID = 65)
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
 /obj/item/clothing/suit/storage/marine/sniper/jungle
 	name = "\improper M3 pattern marksman armor"
