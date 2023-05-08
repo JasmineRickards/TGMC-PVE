@@ -400,7 +400,7 @@
 	caliber = CALIBER_3006
 	icon_state = "garand"
 	default_ammo = /datum/ammo/bullet/rifle/garand
-	max_rounds = 8
+	max_rounds = 24
 	icon_state_mini = "mag_sniper"
 
 /obj/item/ammo_magazine/rifle/garand_grenade
@@ -409,7 +409,7 @@
 	caliber = CALIBER_3006 //Technically true?
 	icon_state = "garand_grenade"
 	default_ammo = /datum/ammo/rocket/garand
-	max_rounds = 1
+	max_rounds = 3
 	reload_delay = 1.5 SECONDS
 	bonus_overlay = "c1_rifle_grenade"
 
