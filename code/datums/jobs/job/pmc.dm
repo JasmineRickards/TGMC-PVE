@@ -267,7 +267,7 @@ datum/outfit/job/ert/leader
 	mask = /obj/item/clothing/mask/gas/PMC
 	glasses = /obj/item/clothing/glasses/hud/xenohud/night/meson
 	suit_store = /obj/item/weapon/gun/rifle/m412/elite
-	r_store = /obj/item/storage/pouch/grenade/slightlyfull
+	r_store = /obj/item/storage/pouch/grenade/phosphorus
 	l_store = /obj/item/storage/pouch/medkit/survivor
 	back = /obj/item/storage/backpack/ert/security
 
@@ -331,8 +331,8 @@ datum/outfit/job/ert/leader
 	mask = /obj/item/clothing/mask/gas/PMC
 	glasses = /obj/item/clothing/glasses/hud/xenohud/night/meson
 	suit_store = /obj/item/weapon/gun/smg/m25/elite
-	r_store = /obj/item/storage/pouch/magazine/large/pmc_m25
-	l_store = /obj/item/storage/pouch/magazine/large/pmc_m25
+	r_store = /obj/item/storage/pouch/magazine/large/ert_m25/ap
+	l_store = /obj/item/storage/pouch/magazine/large/ert_m25/extended
 	back = /obj/item/storage/backpack/ert/medical
 
 
@@ -340,17 +340,9 @@ datum/outfit/job/ert/leader
 	. = ..()
 	H.equip_to_slot_or_del(new /obj/item/radio, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/tool/crowbar/red, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/storage/pill_bottle/russian_red, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/stack/sheet/metal/large_stack, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/stack/sheet/metal/large_stack, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/stack/sheet/plasteel/large_stack, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/defibrillator, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/ap, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/ap, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/ap, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/ap, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/ap, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/reagent_containers/hypospray/autoinjector/peridaxon_plus, SLOT_IN_BELT)
@@ -385,8 +377,8 @@ datum/outfit/job/ert/leader
 	mask = /obj/item/clothing/mask/gas/PMC
 	glasses = /obj/item/clothing/glasses/hud/xenohud/night/meson
 	suit_store = /obj/item/weapon/gun/smg/m25/elite
-	r_store = /obj/item/storage/pouch/magazine/large/pmc_m25
-	l_store = /obj/item/storage/pouch/construction/equippedengineer
+	r_store = /obj/item/storage/pouch/magazine/large/ert_m25/ap
+	l_store = /obj/item/storage/pouch/construction/ert
 	back = /obj/item/storage/backpack/ert/engineer
 
 
@@ -396,12 +388,11 @@ datum/outfit/job/ert/leader
 	H.equip_to_slot_or_del(new /obj/item/tool/crowbar/red, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/storage/pill_bottle/tricordrazine, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/weapon/gun/sentry/mini, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/weapon/gun/sentry/mini, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/minisentry, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/ap, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/ap, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/ap, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/ap, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/ap, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/minisentry, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/minisentry, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/minisentry, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)

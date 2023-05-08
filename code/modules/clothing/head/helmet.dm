@@ -387,30 +387,30 @@
 	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
 /obj/item/clothing/head/helmet/marine/scout
-	name = "\improper M3-S helmet"
+	name = "\improper M3 pattern scout helmet"
 	icon_state = "scout_helmet"
 	flags_item = SYNTH_RESTRICTED
 	desc = "A custom helmet designed for TGMC Scouts. Made of light weight, experimental materials to provide great protection while also having less weight than the standard helmet."
-	soft_armor = list(MELEE = 75, BULLET = 70, LASER = 40, ENERGY = 40, BOMB = 35, BIO = 40, FIRE = 40, ACID = 40)
+	soft_armor = list(MELEE = 80, BULLET = 85, LASER = 85, ENERGY = 70, BOMB = 65, BIO = 65, FIRE = 70, ACID = 65)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT)
 
 /obj/item/clothing/head/helmet/marine/sniper
-	name = "\improper M3-M helmet"
+	name = "\improper M3 pattern sniper helmet"
 	icon_state = "sniper_helmet"
 	flags_item = SYNTH_RESTRICTED
 	desc = "A custom helmet designed for TGMC Marksmen. Fitted with a host of sensors and analyzers to grasp all aspects of the battlefield."
-	soft_armor = list(MELEE = 75, BULLET = 70, LASER = 40, ENERGY = 40, BOMB = 35, BIO = 40, FIRE = 40, ACID = 40)
+	soft_armor = list(MELEE = 60, BULLET = 65, LASER = 65, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT)
 
 /obj/item/clothing/head/helmet/marine/pyro
-	name = "\improper M35 helmet"
+	name = "\improper M35 pattern pyrotechnician helmet"
 	icon_state = "pyro_helmet"
 	flags_item = SYNTH_RESTRICTED
 	desc = "A helmet designed for TGMC Pyrotechnicians. Contains heavy insulation, covered in nomex weave."
 	hard_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 100, ACID = 0)
-	soft_armor = list(MELEE = 85, BULLET = 80, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 40, FIRE = 90, ACID = 50)
+	soft_armor = list(MELEE = 70, BULLET = 75, LASER = 75, ENERGY = 65, BOMB = 70, BIO = 65, FIRE = 95, ACID = 65)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT)

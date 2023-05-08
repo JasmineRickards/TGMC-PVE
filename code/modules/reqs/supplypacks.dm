@@ -43,6 +43,30 @@ OPERATIONS
 	contains = list(/obj/item/storage/box/spec/pyro)
 	cost = 100
 
+/datum/supply_packs/operations/specsniper
+	name = "Sniper spec kit"
+	notes = "Contains a full sniper kit with advanced light armor."
+	contains = list(/obj/item/storage/box/spec/sniper)
+	cost = 100
+
+/datum/supply_packs/operations/specscout
+	name = "Scout spec kit"
+	notes = "Contains a full scout kit with advanced medium armor."
+	contains = list(/obj/item/storage/box/spec/scout)
+	cost = 100
+
+/datum/supply_packs/operations/specdemo
+	name = "Heavy demolitionist spec kit"
+	notes = "Contains a full heavy demolitionist kit with heavy EOD armor."
+	contains = list(/obj/item/storage/box/spec/heavy_grenadier)
+	cost = 100
+
+/datum/supply_packs/operations/specrocket
+	name = "Rocket demolitionist spec kit"
+	notes = "Contains a full rocket demolitionist kit with light EOD armor."
+	contains = list(/obj/item/storage/box/spec/demolitionist)
+	cost = 100
+
 /datum/supply_packs/operations/fobkit
 	name = "Fob Materials"
 	notes = "Contains materials for most sized fobs."

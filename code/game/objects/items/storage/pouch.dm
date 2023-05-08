@@ -218,6 +218,14 @@
 	icon_state = "large_ammo_mag"
 	storage_slots = 6
 
+/obj/item/storage/pouch/magazine/large/ert_m25/ap
+	fill_type = /obj/item/ammo_magazine/smg/m25/ap
+	fill_number = 6
+
+/obj/item/storage/pouch/magazine/large/ert_m25/extended
+	fill_type = /obj/item/ammo_magazine/smg/m25/extended
+	fill_number = 6
+
 /obj/item/storage/pouch/magazine/large/tx8full
 	fill_type = /obj/item/ammo_magazine/rifle/tx8
 	fill_number = 6
@@ -374,6 +382,10 @@
 /obj/item/storage/pouch/grenade/slightlyfull
 	fill_type = /obj/item/explosive/grenade
 	fill_number = 4
+
+/obj/item/storage/pouch/grenade/phosphorus
+	fill_type = /obj/item/explosive/grenade/phosphorus
+	fill_number = 12
 
 /obj/item/storage/pouch/grenade/combat_patrol/Initialize()
 	. = ..()
@@ -703,6 +715,17 @@
 		/obj/item/stack/sandbags_empty,
 		/obj/item/stack/sandbags,
 	)
+
+/obj/item/storage/pouch/construction/ert/Initialize()
+	. = ..()
+	new /obj/item/stack/sheet/metal/large_stack (src)
+	new /obj/item/stack/sheet/metal/large_stack (src)
+	new /obj/item/stack/sheet/metal/large_stack (src)
+	new /obj/item/stack/sheet/metal/large_stack (src)
+	new /obj/item/stack/sheet/plasteel/large_stack (src)
+	new /obj/item/stack/sheet/plasteel/large_stack (src)
+	new /obj/item/stack/barbed_wire/full (src)
+	new /obj/item/stack/barbed_wire/full (src)
 
 /obj/item/storage/pouch/construction/full/Initialize()
 	. = ..()
