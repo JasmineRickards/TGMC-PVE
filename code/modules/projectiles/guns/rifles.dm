@@ -1223,11 +1223,11 @@
 	gun_skill_category = GUN_SKILL_SMARTGUN //Uses SG skill for the penalties.
 	attachable_offset = list("muzzle_x" = 42, "muzzle_y" = 17,"rail_x" = 15, "rail_y" = 21, "under_x" = 24, "under_y" = 14, "stock_x" = 12, "stock_y" = 13)
 	fire_delay = 0.15 SECONDS
-	damage_mult = 4
+	damage_mult = 3
 	burst_amount = 0
 	accuracy_mult_unwielded = 0.5
 	accuracy_mult = 2
-	scatter = -5
+	scatter = 0
 	scatter_unwielded = 40
 	movement_acc_penalty_mult = 4
 
