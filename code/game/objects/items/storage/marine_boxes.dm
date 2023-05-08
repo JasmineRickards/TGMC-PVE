@@ -178,12 +178,10 @@
 	new /obj/item/weapon/gun/pistol/vp70(src)
 	new /obj/item/ammo_magazine/pistol/vp70(src)
 	new /obj/item/ammo_magazine/pistol/vp70(src)
-	new /obj/item/storage/backpack/marine/satchel/scout_cloak/sniper(src)
 	new /obj/item/weapon/gun/rifle/sniper/antimaterial(src)
 	new /obj/item/explosive/grenade/smokebomb/cloak(src)
 	new /obj/item/explosive/grenade/smokebomb/cloak(src)
 	new /obj/item/explosive/grenade/smokebomb/cloak(src)
-	new /obj/item/bodybag/tarp(src)
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
 		new /obj/item/clothing/head/modular/marine/m10x(src)
 	else
@@ -227,7 +225,7 @@
 	new /obj/item/explosive/grenade/smokebomb/cloak(src)
 	new /obj/item/explosive/grenade/smokebomb/cloak(src)
 	new /obj/item/explosive/grenade/smokebomb/cloak(src)
-	new /obj/item/bodybag/tarp(src)
+//	new /obj/item/bodybag/tarp(src)
 
 
 /obj/item/storage/box/spec/scoutshotgun

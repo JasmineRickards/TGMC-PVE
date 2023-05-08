@@ -355,7 +355,7 @@
 	name = "\improper B17 defensive armor"
 	desc = "The older brother of the B18. Practically an armored EOD suit made for use by close quarter explosive experts."
 	icon_state = "grenadier"
-	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 50, ENERGY = 55, BOMB = 100, BIO = 55, FIRE = 75, ACID = 65)
+	soft_armor = list(MELEE = 75, BULLET = 85, LASER = 85, ENERGY = 60, BOMB = 100, BIO = 55, FIRE = 75, ACID = 65)
 	max_heat_protection_temperature = HEAVYARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
@@ -371,26 +371,26 @@
 	return ..()
 
 /obj/item/clothing/suit/storage/marine/M3T
-	name = "\improper M3-T light armor"
-	desc = "A custom set of M3 armor designed for users of long ranged explosive weaponry."
+	name = "\improper M3 pattern demolitionist armor"
+	desc = "A custom set of M3 armor designed for users of long ranged explosive weaponry." // light EOD armor
 	icon_state = "demolitionist"
-	soft_armor = list(MELEE = 60, BULLET = 55, LASER = 45, ENERGY = 30, BOMB = 55, BIO = 35, FIRE = 30, ACID = 30)
+	soft_armor = list(MELEE = 55, BULLET = 75, LASER = 75, ENERGY = 50, BOMB = 100, BIO = 50, FIRE = 50, ACID = 60)
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	allowed = list(/obj/item/weapon/gun/launcher/rocket)
 
 /obj/item/clothing/suit/storage/marine/M3S
-	name = "\improper M3-S light armor"
-	desc = "A custom set of M3 armor designed for TGMC Scouts."
+	name = "\improper M3 pattern scout armor"
+	desc = "A custom set of M3 armor designed for TGMC Scouts." // advanced medium armor
 	icon_state = "scout_armor"
-	soft_armor = list(MELEE = 60, BULLET = 70, LASER = 70, ENERGY = 30, BOMB = 40, BIO = 35, FIRE = 30, ACID = 35)
+	soft_armor = list(MELEE = 80, BULLET = 85, LASER = 85, ENERGY = 70, BOMB = 65, BIO = 65, FIRE = 70, ACID = 65)
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 
 /obj/item/clothing/suit/storage/marine/M35
-	name = "\improper M35 armor"
+	name = "\improper M35 pattern pyrotechnician armor"
 	desc = "A custom set of M35 armor designed for use by TGMC Pyrotechnicians. Contains thick kevlar shielding, partial environmental shielding and thermal dissipators."
 	icon_state = "pyro_armor"
 	hard_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 100, ACID = 0)
-	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 65, ENERGY = 65, BOMB = 35, BIO = 35, FIRE = 95, ACID = 50)
+	soft_armor = list(MELEE = 70, BULLET = 75, LASER = 75, ENERGY = 65, BOMB = 70, BIO = 65, FIRE = 95, ACID = 65)
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
@@ -398,10 +398,10 @@
 
 /obj/item/clothing/suit/storage/marine/sniper
 	name = "\improper M3 pattern recon armor"
-	desc = "A custom modified set of M3 armor designed for recon missions."
+	desc = "A custom modified set of M3 armor designed for recon missions." // advanced light armor
 	icon_state = "marine_sniper"
-	soft_armor = list(MELEE = 60, BULLET = 65, LASER = 65, ENERGY = 30, BOMB = 35, BIO = 35, FIRE = 30, ACID = 30)
-	slowdown = SLOWDOWN_ARMOR_LIGHT
+	soft_armor = list(MELEE = 60, BULLET = 65, LASER = 65, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
+	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
 
 /obj/item/clothing/suit/storage/marine/sniper/jungle
 	name = "\improper M3 pattern marksman armor"
