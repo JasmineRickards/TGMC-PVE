@@ -38,6 +38,15 @@
 	icon_state_mini = "mag_rifle_big_green"
 	bonus_overlay = "m412_ap"
 
+/obj/item/ammo_magazine/rifle/explosive
+	name = "\improper PR-412 explosive magazine (10x24mm)"
+	desc = "A 10mm assault rifle magazine."
+	icon_state = "m412_incendiary"
+	default_ammo = /datum/ammo/bullet/rifle/explosive
+	icon_state_mini = "mag_rifle_big_red"
+	bonus_overlay = "m412_incend"
+
+
 //-------------------------------------------------------
 //T18 Carbine
 
@@ -391,6 +400,18 @@
 	default_ammo = /datum/ammo/tx54/incendiary
 	icon_state = "tx54_airburst"
 	greyscale_colors = "#fa7923"
+
+/obj/item/ammo_magazine/rifle/tx54/shell/he
+	name = "\improper 80mm airburst grenade magazine"
+	desc = "An 80mm magazine loaded with mortar shells. For use with the GL-55M."
+	caliber = CALIBER_20MM
+	icon_state = "tx54_airburst"
+	w_class = WEIGHT_CLASS_NORMAL
+	default_ammo = /datum/ammo/mortar
+	max_rounds = 25
+	icon_state_mini = "mag_sniper"
+	greyscale_config = /datum/greyscale_config/ammo
+	greyscale_colors = "#b02323"
 
 //-------------------------------------------------------
 //Garand

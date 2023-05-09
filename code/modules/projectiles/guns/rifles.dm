@@ -368,6 +368,7 @@
 		/obj/item/ammo_magazine/rifle/extended,
 		/obj/item/ammo_magazine/rifle/incendiary,
 		/obj/item/ammo_magazine/rifle/ap,
+		/obj/item/ammo_magazine/rifle/explosive,
 		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
 	)
 	attachable_allowed = list(
@@ -1711,6 +1712,22 @@
 	scatter = -2
 	aim_fire_delay = 0.2 SECONDS
 	aim_speed_modifier = 2
+
+/obj/item/weapon/gun/rifle/tx54/mortar
+	name = "GL-55M shell launcher"
+	desc = "A magazine fed, semiautomatic shell launcher designed to shoot big mortar shells. Requires a T49 scope for precision aiming."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "tx54"
+	item_state = "tx54" ///todo
+	max_shells = 5 //codex
+	max_chamber_items = 1
+	fire_delay = 1 SECONDS
+	gun_firemode = GUN_FIREMODE_AUTOMATIC
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC,GUN_FIREMODE_SEMIAUTO)
+	caliber = CALIBER_20MM
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/tx54/shell/he,
+	)
 
 //-------------------------------------------------------
 // AR-55 built in grenade launcher
