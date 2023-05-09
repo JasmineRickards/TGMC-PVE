@@ -295,6 +295,16 @@ WEAPONS
 	cost = 10
 	available_against_xeno_only = TRUE
 
+/datum/supply_packs/weapons/tx54/mortar
+	name = "GL-55M shell launcher"
+	contains = list(/obj/item/weapon/gun/rifle/tx54/mortar)
+	cost = 220
+
+/datum/supply_packs/weapons/tx54/mortar/shell_he
+	name = "GL-55M shell magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/tx54/shell/he)
+	cost = 20
+
 /datum/supply_packs/weapons/recoillesskit
 	name = "RL-160 Recoilless rifle kit"
 	contains = list(/obj/item/storage/holster/backholster/rpg/full)
@@ -1329,6 +1339,11 @@ Imports
 	name = "PR-412 Pulse Rifle Incendiary Ammo"
 	contains = list(/obj/item/ammo_magazine/rifle/incendiary = 10)
 	cost = 1
+
+/datum/supply_packs/imports/m412/EXPL_ammo
+	name = "PR412 Pulse Rifle Explosive Ammo"
+	contains = list(/obj/item/ammo_magazine/rifle/explosive)
+	cost = 20
 
 /datum/supply_packs/imports/m412/AP_ammoboxes
 	name = "10x24mm Caseless Armor Piercing Ammoboxes"

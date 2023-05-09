@@ -628,6 +628,31 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	penetration = 10
 	sundering = 1.25
 
+/datum/ammo/bullet/rifle/explosive
+	name = "explosive rifle bullet"
+	hud_state = "rifle"
+	hud_state_empty = "rifle_empty"
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_EXPLOSIVE
+	accurate_range = 12
+	damage = 75
+	penetration = 15
+	sundering = 0.5
+
+/datum/ammo/bullet/rifle/explosive/drop_nade(turf/T)
+	explosion(T, 2, 1, 1, 0)
+
+/datum/ammo/bullet/rifle/explosive/on_hit_mob(mob/M, obj/projectile/P)
+	drop_nade(get_turf(M))
+
+/datum/ammo/bullet/rifle/explosive/on_hit_obj(obj/O, obj/projectile/P)
+	drop_nade(get_turf(O))
+
+/datum/ammo/bullet/rifle/explosive/on_hit_turf(turf/T, obj/projectile/P)
+	drop_nade(T.density ? P.loc : T)
+
+/datum/ammo/bullet/rifle/explosive/do_at_max_range(turf/T, obj/projectile/P)
+	drop_nade(T.density ? P.loc : T)
+
 /datum/ammo/bullet/rifle/repeater
 	name = "heavy impact rifle bullet"
 	hud_state = "revolver_heavy"
