@@ -1,3 +1,53 @@
+/obj/machinery/vending/weaponciv
+	name = "\improper Automated Civilian grade Weapons Rack"
+	desc = "A automated weapon rack hooked up to a colossal storage of standard-issue weapons."
+	icon_state = "marinearmory"
+	icon_vend = "marinearmory-vend"
+	icon_deny = "marinearmory"
+	resistance_flags = INDESTRUCTIBLE
+	wrenchable = FALSE
+	product_ads = "If it moves, it's hostile!;How many enemies have you killed today?;Shoot first, perform autopsy later!;Your ammo is right here.;Guns!;Die, scumbag!;Don't shoot me bro!;Shoot them, bro.;Why not have a donut?"
+	isshared = TRUE
+
+	products = list(
+		"Rifles" = list(
+			/obj/item/weapon/gun/rifle/m41a = 2,
+			/obj/item/ammo_magazine/rifle/m41a = 30,
+			/obj/item/weapon/gun/rifle/m412 = 2,
+			/obj/item/ammo_magazine/rifle/extended = 20,
+			/obj/item/weapon/gun/rifle/m16 = 1,
+			/obj/item/ammo_magazine/rifle/m16 = 15,
+			/obj/item/ammo_magazine/packet/p10x24mm = 1,
+		),
+		"Shotguns" = list(
+			/obj/item/weapon/gun/shotgun/pump = 3,
+			/obj/item/weapon/gun/shotgun/double =2,
+			/obj/item/weapon/gun/shotgun/pump/cmb = 1,
+			/obj/item/ammo_magazine/shotgun = 4,
+			/obj/item/ammo_magazine/shotgun/buckshot = 4,
+			/obj/item/ammo_magazine/shotgun/beanbag = 2,
+		),
+		"SMGs" = list(
+			/obj/item/weapon/gun/smg/m25 = 3,
+			/obj/item/ammo_magazine/smg/m25 = 30,
+			/obj/item/weapon/gun/smg/mp7 = 3,
+			/obj/item/ammo_magazine/smg/mp7 = 30,
+		),
+		"Pistols" = list(
+			/obj/item/weapon/gun/pistol/vp70 = 5,
+			/obj/item/ammo_magazine/pistol/vp70 = 50,
+			/obj/item/weapon/gun/pistol/highpower = 5,
+			/obj/item/ammo_magazine/pistol/highpower = 50,
+			/obj/item/weapon/gun/pistol/m1911 = 5,
+			/obj/item/ammo_magazine/pistol/m1911 = 50,
+			/obj/item/weapon/gun/pistol/auto9 = 2,
+			/obj/item/ammo_magazine/pistol/auto9 =20
+		),
+	)
+
+
+
+
 /obj/machinery/vending/weapon
 	name = "\improper Automated Weapons Rack"
 	desc = "A automated weapon rack hooked up to a colossal storage of standard-issue weapons."
