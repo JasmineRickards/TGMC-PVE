@@ -2173,7 +2173,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	bullet_color = COLOR_WHITE
 
 /datum/ammo/mortar/drop_nade(turf/T)
-	explosion(T, 1, 2, 5, 3)
+	explosion(T, 3, 2, 5, 3)
 
 /datum/ammo/mortar/do_at_max_range(turf/T, obj/projectile/P)
 	drop_nade(T)
