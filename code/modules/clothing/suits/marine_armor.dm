@@ -623,8 +623,8 @@
 /obj/item/clothing/suit/storage/marine/imperial/commissar
 	name = "\improper commissar coat"
 	desc = "A armored coat worn by commissars of the Imperial Army."
-	icon_state = "commissar_coat"
-	item_state = "commissar_coat"
+	icon_state = "m_commissar_coat"
+	item_state = "m_commissar_coat"
 	soft_armor = list(MELEE = 75, BULLET = 60, LASER = 55, ENERGY = 40, BOMB = 45, BIO = 15, FIRE = 40, ACID = 40)
 
 /*===========================U.S.L================================*/
