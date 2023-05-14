@@ -115,5 +115,50 @@
 /obj/item/weapon/energy/sword/blue
 	sword_color = "blue"
 
+/obj/item/weapon/energy/sword/blue/nt
+	name = "NT combat energy sword"
+	desc = "Brand new NT combat energy sword, capable of slicing with ease nearly any badly armored target."
+
+
+/obj/item/weapon/energy/sword/blue/nt/attack_self(mob/living/user as mob)
+	toggle_active()
+	if (active)
+		force = 250
+		heat = 10000
+		if(base_sword_icon != "sword")
+			icon_state = "[base_sword_icon]1"
+		else
+			icon_state = "sword[sword_color]"
+		w_class = WEIGHT_CLASS_BULKY
+		playsound(user, 'sound/weapons/saberon.ogg', 25, 1)
+		to_chat(user, span_notice("[src] is now active."))
+
+	else
+		force = 3
+		heat = 0
+		icon_state = "[base_sword_icon]0"
+		w_class = WEIGHT_CLASS_SMALL
+		playsound(user, 'sound/weapons/saberoff.ogg', 25, 1)
+		to_chat(user, span_notice("[src] can now be concealed."))
+
+	if(istype(user,/mob/living/carbon/human))
+		var/mob/living/carbon/human/H = user
+		H.update_inv_l_hand(0)
+		H.update_inv_r_hand()
+
+
+/obj/item/weapon/energy/sword/blue/nt/AltClick(mob/user)
+	if(!can_interact(user))
+		return ..()
+	if(!ishuman(user))
+		return ..()
+	if(!(user.l_hand == src || user.r_hand == src))
+		return ..()
+	TOGGLE_BITFIELD(flags_item, NODROP)
+	if(CHECK_BITFIELD(flags_item, NODROP))
+		to_chat(user, span_warning("You tighten the grip of [src] in your hand!"))
+	else
+		to_chat(user, span_notice("You loosen the grip of [src] in your hand!"))
+
 
 

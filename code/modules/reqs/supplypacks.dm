@@ -852,6 +852,15 @@ ARMOR
 	)
 	cost = B17_PRICE
 
+/datum/supply_packs/imports/nt/rig
+	name = "Nanotrasen brand HEV suit"
+	contains = list(
+		/obj/item/clothing/suit/armor/rig/nt/heavy,
+		/obj/item/clothing/head/helmet/rig/nt/heavy,
+		/obj/item/clothing/glasses/hud/xenohud/night/meson,
+		/obj/item/weapon/energy/sword/blue/nt)
+	cost = 650
+
 //datum/supply_packs/armor/scout_cloak
 //	name = "Scout Cloak"
 ////	contains = list(/obj/item/storage/backpack/marine/satchel/scout_cloak/scout)
