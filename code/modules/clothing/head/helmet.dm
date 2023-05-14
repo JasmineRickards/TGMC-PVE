@@ -188,7 +188,15 @@
 	soft_armor = list(MELEE = 65, BULLET = 80, LASER = 150, ENERGY = 80, BOMB = 70, BIO = 70, FIRE = 70, ACID = 75)
 
 
-
+//NT Hazard Environment helmet
+/obj/item/clothing/head/helmet/rig/nt/heavy
+	name = "NT HEV-1 hardsuit helmet"
+	desc = "Helmet that comes with the HEV-1 hardsuit. Helmet has some special cleaning functions for the visor to see the area all the time."
+	icon_state = "rig0-hazardhardsuit"
+	item_state = "rig0-hazardhardsuit"
+	flags_item = SYNTH_RESTRICTED
+	soft_armor = list(MELEE = 85, BULLET = 90, LASER = 90, ENERGY = 90, BOMB = 95, BIO = 100, FIRE = 90, ACID = 100)
+	hard_armor = list(MELEE = 2, BULLET = 5, LASER = 5, ENERGY = 5, BOMB = 10, BIO = 100, FIRE = 20, ACID = 95)
 
 
 /*===========================MARINES HELMETS=================================
