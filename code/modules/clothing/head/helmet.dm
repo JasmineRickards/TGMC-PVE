@@ -5,7 +5,7 @@
 	icon_state = "helmet"
 	item_state = "helmet"
 	accuracy_mod = 0
-	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
+	soft_armor = list(MELEE = 65, BULLET = 75, LASER = 75, ENERGY = 50, BOMB = 60, BIO = 20, FIRE = 50, ACID = 55)
 	flags_atom = CONDUCT
 	flags_inventory = COVEREYES|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES
