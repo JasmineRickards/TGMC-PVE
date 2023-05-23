@@ -406,13 +406,25 @@
 	products = list(
 		/obj/item/restraints/handcuffs = 8,
 		/obj/item/restraints/handcuffs/zip = 10,
+		/obj/item/hailer = 3,
+		/obj/item/reagent_containers/spray/pepper = 5,
 		/obj/item/flash = 5,
-		/obj/item/reagent_containers/food/snacks/donut/normal = 12,
+		/obj/item/weapon/baton = 3,
+		/obj/item/weapon/gun/energy/taser = 3,
 		/obj/item/storage/box/evidence = 6,
 		/obj/item/clothing/glasses/sunglasses/sechud = 3,
-		/obj/item/radio/headset = 6,
+		/obj/item/clothing/head/helmet = 3,
+		/obj/item/clothing/suit/armor/vest/security = 3,
+		/obj/item/clothing/under/rank/security/corp = 3,
+		/obj/item/clothing/under/rank/security = 3,
+		/obj/item/clothing/gloves/marine/veteran/PMC = 3,
+		/obj/item/storage/backpack/security = 3,
+		/obj/item/storage/backpack/satchel/sec = 3,
+		/obj/item/storage/belt/security = 3,
+		/obj/item/radio/headset/mainship/survivor/sec = 3,
 		/obj/item/clothing/glasses/sunglasses = 2,
-		/obj/item/storage/donut_box = 2,
+		/obj/item/reagent_containers/food/snacks/donut/normal = 12,
+		/obj/item/storage/donut_box = 2
 	)
 
 /obj/machinery/vending/hydronutrients
