@@ -235,7 +235,7 @@
 	icon_state = "warrant_officer_mp"
 	name = "\improper PAS-N3 pattern MA armor"
 	desc = "A well-crafted suit of Personal Armor System typically distributed to Command Masters at Arms. Useful for letting your men know who is in charge."
-	soft_armor = list(MELEE = 80, BULLET = 95, LASER = 95, ENERGY = 95, BOMB = 85, BIO = 75, FIRE = 75, ACID = 80)
+	soft_armor = list(MELEE = 75, BULLET = 95, LASER = 95, ENERGY = 95, BOMB = 85, BIO = 75, FIRE = 75, ACID = 80)
 
 /obj/item/clothing/suit/storage/marine/MP/admiral
 	icon_state = "admiral"
@@ -248,6 +248,8 @@
 	icon_state = "officer"
 	name = "\improper PAS-N3 pattern officer armor"
 	desc = "A well-crafted suit of a Navy Personal Armor System typically found in the hands of higher-ranking officers. Useful for letting your men know who is in charge when taking to the field."
+	soft_armor = list(MELEE = 65, BULLET = 90, LASER = 90, ENERGY = 90, BOMB = 70, BIO = 50, FIRE = 65, ACID = 65)
+	hard_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 
 /obj/item/clothing/suit/storage/marine/smartgunner
 	name = "M26 combat harness"
