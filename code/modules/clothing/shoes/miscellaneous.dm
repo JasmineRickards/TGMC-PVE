@@ -110,6 +110,7 @@
 	icon_state = "jackboots"
 	item_state = "jackboots"
 	siemens_coefficient = 0.7
+	soft_armor = list(MELEE = 50, BULLET = 65, LASER = 65, ENERGY = 50, BOMB = 50, BIO = 30, FIRE = 40, ACID = 55)
 
 /obj/item/clothing/shoes/cult
 	name = "boots"

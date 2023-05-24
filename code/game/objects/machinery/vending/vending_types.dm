@@ -412,19 +412,32 @@
 		/obj/item/weapon/baton = 3,
 		/obj/item/weapon/gun/energy/taser = 3,
 		/obj/item/storage/box/evidence = 6,
+		/obj/item/reagent_containers/food/snacks/donut/normal = 12,
+		/obj/item/storage/donut_box = 2
+	)
+
+
+/obj/machinery/vending/security/drobe
+	name = "SecDrobe"
+	desc = "A security uniform vendor."
+	icon_state = "secdrobe"
+	icon_deny = "secdrobe-off"
+	products = list(
 		/obj/item/clothing/glasses/sunglasses/sechud = 3,
 		/obj/item/clothing/head/helmet = 3,
+		/obj/item/clothing/head/soft/sec/corp = 3,
+		/obj/item/clothing/head/beret/sec = 3,
 		/obj/item/clothing/suit/armor/vest/security = 3,
 		/obj/item/clothing/under/rank/security/corp = 3,
 		/obj/item/clothing/under/rank/security = 3,
+		/obj/item/clothing/shoes/jackboots = 3,
 		/obj/item/clothing/gloves/marine/veteran/PMC = 3,
 		/obj/item/storage/backpack/security = 3,
 		/obj/item/storage/backpack/satchel/sec = 3,
 		/obj/item/storage/belt/security = 3,
 		/obj/item/radio/headset/mainship/survivor/sec = 3,
-		/obj/item/clothing/glasses/sunglasses = 2,
-		/obj/item/reagent_containers/food/snacks/donut/normal = 12,
-		/obj/item/storage/donut_box = 2
+		/obj/item/armor_module/storage/uniform/black_vest = 2,
+		/obj/item/armor_module/storage/uniform/webbing = 2,
 	)
 
 /obj/machinery/vending/hydronutrients
