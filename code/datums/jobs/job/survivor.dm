@@ -448,8 +448,8 @@ Good luck, but do not expect to survive."})
 	ears = /obj/item/radio/headset/mainship/survivor/sec
 	w_uniform = /obj/item/clothing/under/rank/security/corp/survivor
 	wear_suit = /obj/item/clothing/suit/armor/vest/security
-	shoes = /obj/item/clothing/shoes/marine
-	gloves = /obj/item/clothing/gloves/black
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/marine/veteran/PMC
 	head = /obj/item/clothing/head/soft/sec/corp
 	suit_store = /obj/item/flashlight
 	back = /obj/item/storage/backpack/satchel/sec

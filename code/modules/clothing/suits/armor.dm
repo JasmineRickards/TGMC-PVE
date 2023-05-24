@@ -67,6 +67,7 @@
 	icon_state = "armorsec"
 	item_state = "armorsec"
 	soft_armor = list(MELEE = 45, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 35, BIO = 20, FIRE = 30, ACID = 30)
+	flags_armor_protection = CHEST|GROIN
 	slowdown = 0
 	allowed = list(
 		/obj/item/weapon/gun,
