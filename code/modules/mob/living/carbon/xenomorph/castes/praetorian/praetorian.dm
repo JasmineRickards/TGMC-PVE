@@ -14,3 +14,8 @@
 	tier = XENO_TIER_THREE
 	upgrade = XENO_UPGRADE_ZERO
 
+/mob/living/carbon/xenomorph/praetorian/on_death()
+	///We QDEL them as cleanup and preventing them from being sold
+	QDEL_IN(src, TIME_TO_DISSOLVE)
+	return ..()
+
