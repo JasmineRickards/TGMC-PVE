@@ -844,6 +844,20 @@ ARMOR
 	contains = list(/obj/item/weapon/shield/riot/marine/deployable)
 	cost = 3
 
+/datum/supply_packs/armor/marine_shield/deployablex10
+	name = "TL-182 Deployable Shields x10"
+	contains = list(/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,)
+	cost = 30
+
 /datum/supply_packs/armor/b18
 	name = "B18 Armor Set"
 	contains = list(
