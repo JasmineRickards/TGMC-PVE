@@ -655,6 +655,11 @@ WEAPONS
 	contains = list(/obj/item/big_ammo_box/smg)
 	cost = 5
 
+/datum/supply_packs/weapons/m46c/ammo
+	name = "M46C Pulse rifle ammo magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a/captain)
+	cost = 4
+
 /*******************************************************************************
 EXPLOSIVES
 *******************************************************************************/

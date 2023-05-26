@@ -558,7 +558,38 @@
 		)
 	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18, "rail_x" = 12, "rail_y" = 24, "under_x" = 24, "under_y" = 13, "stock_x" = 22, "stock_y" = 16)
 
-
+/obj/item/weapon/gun/rifle/m41a/captain
+	name = "\improper M46C pulse rifle"
+	desc = "Luxury version of the M41A pulse rifle made for high ranking officer. Uses IFF system like the smartgun."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "m46c"
+	item_state = "m46c"
+	caliber = CALIBER_10X24_CASELESS
+	fire_sound = "gun_pulse"
+	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
+	unload_sound = 'sound/weapons/guns/interact/m41a_unload.ogg'
+	reload_sound = 'sound/weapons/guns/interact/m41a_reload.ogg'
+	aim_slowdown = 0.4
+	wield_delay = 0.4 SECONDS
+	max_shells = 99 //codex
+	damage_mult = 1.25
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_IFF
+	default_ammo_type = /obj/item/ammo_magazine/rifle/m41a/captain
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/m41a/captain,
+		)
+	attachable_allowed = list(
+		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/suppressor,
+		/obj/item/attachable/reddot
+		)
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18, "rail_x" = 15, "rail_y" = 20, "under_x" = 24, "under_y" = 13, "stock_x" = 22, "stock_y" = 16)
 
 
 //-------------------------------------------------------

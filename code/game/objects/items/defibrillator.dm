@@ -297,7 +297,22 @@
 	name = "emergency defibrillator"
 	desc = "A handheld emergency defibrillator, used to restore fibrillating patients. Can optionally bring people back from the dead. Appears to be a civillian model."
 	icon_state = "civ_defib_full"
-	item_state = "defib"
+	item_state = "civ_defib"
+
+/obj/item/defibrillator/civi/update_icon_state()
+	icon_state = "civ_defib"
+	if(ready)
+		icon_state += "_out"
+	if(dcell?.charge)
+		switch(round(dcell.charge * 100 / dcell.maxcharge))
+			if(67 to INFINITY)
+				icon_state += "_full"
+			if(34 to 66)
+				icon_state += "_half"
+			if(1 to 33)
+				icon_state += "_low"
+	else
+		icon_state += "_empty"
 
 
 /obj/item/defibrillator/gloves
