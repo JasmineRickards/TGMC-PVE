@@ -143,6 +143,14 @@
 	icon_state = "m41a_mk1_ap"
 	default_ammo = /datum/ammo/bullet/rifle/heavy/ap
 
+/obj/item/ammo_magazine/rifle/m41a/captain
+	name = "\improper M46C magazine (10x24mm)"
+	desc = "A semi-rectangular box of rounds for the special M46C Captain's Pulse Rifle."
+	icon_state = "m46c_iff"
+	max_rounds = 150
+	icon_state_mini = "mag_rifle_big"
+	default_ammo = /datum/ammo/bullet/smartmachinegun/rifle
+
 
 //-------------------------------------------------------
 //MAR-40 AK CLONE //AK47 and FN FAL together as one.

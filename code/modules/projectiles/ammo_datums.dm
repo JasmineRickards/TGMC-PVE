@@ -1286,6 +1286,18 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	sundering = 15
 	on_pierce_multiplier = 0.8
 
+/datum/ammo/bullet/smartmachinegun/rifle
+	name = "smartmachinegun bullet"
+	bullet_color = COLOR_SOFT_RED //Red bullets to indicate friendly fire restriction
+	hud_state = "smartgun"
+	hud_state_empty = "smartgun_empty"
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
+	accurate_range = 12
+	damage = 50
+	penetration = 30
+	sundering = 5
+	on_pierce_multiplier = 0.4
+
 /datum/ammo/bullet/smart_minigun
 	name = "smartminigun bullet"
 	bullet_color = COLOR_SOFT_RED //Red bullets to indicate friendly fire restriction

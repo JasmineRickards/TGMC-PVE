@@ -207,7 +207,7 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	name = "Military Police"
 	cqc = SKILL_CQC_MP
 	police = SKILL_POLICE_MP
-	construction = SKILL_CONSTRUCTION_METAL
+	construction = 2
 	engineer = SKILL_ENGINEER_ENGI
 	medical = SKILL_MEDICAL_PRACTICED
 	surgery = SKILL_SURGERY_TRAINED
@@ -221,6 +221,7 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	construction = SKILL_CONSTRUCTION_MASTER
 	engineer = SKILL_ENGINEER_MASTER
 	powerloader = SKILL_POWERLOADER_MASTER
+	leadership = 4
 
 /datum/skills/civilian
 	name = "Civilian"
