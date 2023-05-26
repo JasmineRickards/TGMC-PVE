@@ -528,7 +528,7 @@
 	caliber_label = "10x24mm Caseless"
 
 /datum/ammopacktype/p10x24b/heavy
-	default_ammo = /datum/ammo/bullet/rifle/heavy
+	default_ammo = /datum/ammo/bullet/rifle/heavy/m41a
 	max_rounds = 2000
 	caliber = CALIBER_10X24_CASELESS
 	radial_icon = 'icons/mob/radial.dmi'
