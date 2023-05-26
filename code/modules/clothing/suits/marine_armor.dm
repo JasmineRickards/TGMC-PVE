@@ -180,6 +180,22 @@
 	soft_armor = list(MELEE = 40, BULLET = 55, LASER = 60, ENERGY = 45, BOMB = 60, BIO = 45, FIRE = 45, ACID = 65)
 	flags_item_map_variant = NONE
 
+/obj/item/clothing/suit/storage/marine/intel
+	name = "\improper XM12 pattern intelligence armor"
+	desc = "Newly reformed group of intel specialists required new type of armor. After some time, TGMC found blueprints of an old, reliable armor set. This armor is rather light, with a lot of pockets and good protection for all your needs."
+	icon_state = "io"
+	soft_armor = list(MELEE = 75, BULLET = 85, LASER = 85, ENERGY = 75, BOMB = 75, BIO = 50, FIRE = 75, ACID = 85)
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+	slowdown = 0.25
+	pockets = /obj/item/storage/internal/suit/marine/intel
+
+/obj/item/storage/internal/suit/marine/intel
+	bypass_w_limit = list()
+	storage_slots = null
+	max_storage_space = 18
+	max_w_class = 3
+
+
 
 /obj/item/clothing/suit/storage/marine/leader
 	name = "\improper PAS-10 pattern leader armor"

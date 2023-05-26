@@ -825,6 +825,15 @@ ARMOR
 	cost = 25
 	available_against_xeno_only = TRUE
 
+/datum/supply_packs/armor/intel
+	name = "Intelligence Officer armor set"
+	contains = list(
+		/obj/item/clothing/suit/storage/marine/intel,
+		/obj/item/clothing/head/helmet/marine/intel,
+		/obj/item/clothing/under/marine/officer/intel,
+	)
+	cost = 80
+
 /datum/supply_packs/armor/marine_shield
 	name = "TL-172 Defensive Shield"
 	contains = list(/obj/item/weapon/shield/riot/marine)
@@ -1495,6 +1504,37 @@ Imports
 	name = "CAU C1 Ammo"
 	contains = list(/obj/item/ammo_magazine/rifle/garand)
 	cost = 1
+
+/datum/supply_packs/imports/m41amk1
+	name = "M41A MK1 Pulse Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/m41a/old)
+	cost = 15
+
+/datum/supply_packs/imports/m41amk1/ammo
+	name = "M41A MK1 Pulse Rifle magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a/old)
+	cost = 2
+
+/datum/supply_packs/imports/m41amk1/ammo/ap
+	name = "M41A MK1 Pulse Rifle armor-piercing magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a/old/ap)
+	cost = 4
+
+/datum/supply_packs/imports/m41amk1/ammopacket
+	name = "10x24 Heavy Caseless ammo packet"
+	contains = list(/obj/item/ammo_magazine/packet/p10x24mm/heavy)
+	cost = 15
+
+/datum/supply_packs/imports/m41amk1/ammopacket/ap
+	name = "10x24 Heavy Armor-Piercing Caseless ammo packet"
+	contains = list(/obj/item/ammo_magazine/packet/p10x24mm/heavy/ap)
+	cost = 30
+
+/datum/supply_packs/imports/ammobelt/old
+	name = "T-72O Longevity Ammo Belt"
+	contains = list(/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old)
+	cost = 5
+
 /*
 /datum/supply_packs/imports/mpi_km
 	name = "MPi-KM Assault Rifle"

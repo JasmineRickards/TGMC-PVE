@@ -525,6 +525,34 @@
 
 // Incase you wish to re-add the invisible grenade launcher to this gun: /obj/item/weapon/gun/grenade_launcher/underslung/invisible)
 
+/obj/item/weapon/gun/rifle/m41a/old
+	name = "\improper M41A MK1 pulse rifle"
+	desc = "An old version of the electronic rifle. This one was used ages ago and still can be found on some colonies."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "m41amk1"
+	item_state = "m41amk1"
+	caliber = CALIBER_10X24_CASELESS
+	fire_sound = "gun_pulse"
+	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
+	unload_sound = 'sound/weapons/guns/interact/m41a_unload.ogg'
+	reload_sound = 'sound/weapons/guns/interact/m41a_reload.ogg'
+	aim_slowdown = 0.4
+	wield_delay = 0.4 SECONDS
+	max_shells = 99 //codex
+	default_ammo_type = /obj/item/ammo_magazine/rifle/m41a/old
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/m41a/old,
+		/obj/item/ammo_magazine/rifle/m41a/old/ap,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old,
+		)
+	attachable_allowed = list(
+		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/flashlight,
+	)
+
+
+
+
 //-------------------------------------------------------
 
 /obj/item/weapon/gun/rifle/mpi_km
