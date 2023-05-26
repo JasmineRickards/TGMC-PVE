@@ -11,8 +11,8 @@
 
 	products = list(
 		"Rifles" = list(
-			/obj/item/weapon/gun/rifle/m41a = 2,
-			/obj/item/ammo_magazine/rifle/m41a = 30,
+			/obj/item/weapon/gun/rifle/m41a/old = 2,
+			/obj/item/ammo_magazine/rifle/m41a/old = 30,
 			/obj/item/weapon/gun/rifle/m412 = 2,
 			/obj/item/ammo_magazine/rifle/extended = 20,
 			/obj/item/weapon/gun/rifle/m16 = 1,

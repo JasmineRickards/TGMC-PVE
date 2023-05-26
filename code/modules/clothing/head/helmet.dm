@@ -358,6 +358,13 @@
 	attachments_allowed = list(/obj/item/armor_module/module/tyr_head)
 	starting_attachments = list(/obj/item/armor_module/module/tyr_head)
 
+/obj/item/clothing/head/helmet/marine/intel
+	name = "\improper XM12 intelligence helmet"
+	icon_state = "io"
+	desc = "Specially made helmet, usually worn by some TGMC Intelligence Officers. Has greater protection for your fragile brain."
+	soft_armor = list(MELEE = 75, BULLET = 85, LASER = 85, ENERGY = 75, BOMB = 76, BIO = 50, FIRE = 75, ACID = 85)
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+
 /obj/item/clothing/head/helmet/marine/heavy
 	name = "\improper M10E pattern marine helmet"
 	desc = "A standard M10E Pattern Helmet. This is a modified version of the standard M10 helmet, offering an enclosed visor apparatus. It doesn't look to be any more protective damage wise."

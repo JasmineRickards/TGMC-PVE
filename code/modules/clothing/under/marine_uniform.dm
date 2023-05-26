@@ -188,6 +188,11 @@
 	desc = "A set of formal, yet comfy, clothing worn by scholars and researchers alike."
 	icon_state = "research_jumpsuit"
 
+/obj/item/clothing/under/marine/officer/intel
+	name = "intelligence officer uniform"
+	desc = "The most expensive suit you've ever seen. Required years of work to re-create it. It costs more than your ship, probably."
+	icon_state = "io"
+
 /obj/item/clothing/under/whites
 	name = "\improper TGMC white dress uniform"
 	desc = "A standard-issue TerraGov Marine Corps white dress uniform. The starch in the fabric chafes a small amount but it pales in comparison to the pride you feel when you first put it on during graduation from boot camp. Doesn't seem to fit perfectly around the waist though."

@@ -628,6 +628,13 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	penetration = 10
 	sundering = 1.25
 
+/datum/ammo/bullet/rifle/heavy/ap
+	name = "armor-piercing heavy rifle bullet"
+	hud_state = "rifle_ap"
+	damage = 40
+	penetration = 20
+	sundering = 1.25
+
 /datum/ammo/bullet/rifle/explosive
 	name = "explosive rifle bullet"
 	hud_state = "rifle"
