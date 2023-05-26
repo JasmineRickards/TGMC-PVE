@@ -548,7 +548,15 @@
 	attachable_allowed = list(
 		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/flashlight,
-	)
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/suppressor,
+		/obj/item/attachable/reddot
+		)
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18)
 
 
 
