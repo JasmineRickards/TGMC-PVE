@@ -1515,6 +1515,26 @@ Imports
 	contains = list(/obj/item/ammo_magazine/rifle/m41a/old)
 	cost = 2
 
+/datum/supply_packs/imports/m41amk1/ammo/ap
+	name = "M41A MK1 Pulse Rifle armor-piercing magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a/old/ap)
+	cost = 4
+
+/datum/supply_packs/imports/m41amk1/ammopacket
+	name = "10x24 Heavy Caseless ammo packet"
+	contains = list(/obj/item/ammo_magazine/packet/p10x24mm/heavy)
+	cost = 15
+
+/datum/supply_packs/imports/m41amk1/ammopacket/ap
+	name = "10x24 Heavy Armor-Piercing Caseless ammo packet"
+	contains = list(/obj/item/ammo_magazine/packet/p10x24mm/heavy/ap)
+	cost = 30
+
+/datum/supply_packs/imports/ammobelt/old
+	name = "T-72O Longevity Ammo Belt"
+	contains = list(/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old)
+	cost = 5
+
 /*
 /datum/supply_packs/imports/mpi_km
 	name = "MPi-KM Assault Rifle"

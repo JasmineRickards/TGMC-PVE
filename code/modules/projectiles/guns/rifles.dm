@@ -542,6 +542,8 @@
 	default_ammo_type = /obj/item/ammo_magazine/rifle/m41a/old
 	allowed_ammo_types = list(
 		/obj/item/ammo_magazine/rifle/m41a/old,
+		/obj/item/ammo_magazine/rifle/m41a/old/ap,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old,
 		)
 	attachable_allowed = list(
 		/obj/item/attachable/magnetic_harness,

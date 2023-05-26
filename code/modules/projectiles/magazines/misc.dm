@@ -15,6 +15,15 @@
 	current_rounds = 1500
 	max_rounds = 1500
 
+/obj/item/ammo_magazine/packet/p10x24mm/heavy
+	name = "box of heavy 10x24mm"
+	desc = "A box containing 1000 rounds of heavy 10x24mm caseless."
+	caliber = CALIBER_10X24_CASELESS
+	icon_state = "box_10x24mm"
+	default_ammo = /datum/ammo/bullet/rifle/heavy
+	current_rounds = 1000
+	max_rounds = 1000
+
 /obj/item/ammo_magazine/packet/p10x24mm/ap
 	name = "box of armor piercing 10x24mm"
 	desc = "A box containing 1500 rounds of armor piercing 10x24mm caseless."
@@ -23,6 +32,15 @@
 	default_ammo = /datum/ammo/bullet/rifle/ap
 	current_rounds = 1500
 	max_rounds = 1500
+
+/obj/item/ammo_magazine/packet/p10x24mm/heavy/ap
+	name = "box of heavy armor piercing 10x24mm"
+	desc = "A box containing 1000 rounds of heavy armor piercing 10x24mm caseless."
+	caliber = CALIBER_10X24_CASELESS
+	icon_state = "box_10x24mmap"
+	default_ammo = /datum/ammo/bullet/rifle/heavy/ap
+	current_rounds = 1000
+	max_rounds = 1000
 
 /obj/item/ammo_magazine/packet/p10x24mm/incendiary
 	name = "box of incendiary 10x24mm"

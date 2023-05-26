@@ -133,9 +133,15 @@
 	name = "\improper M41A MK1 magazine (10x24mm)"
 	desc = "A semi-rectangular box of older rounds for the M41A MK1 Pulse Rifle."
 	icon_state = "m41a_mk1"
-	default_ammo = /datum/ammo/bullet/rifle/heavy/ap
-	max_rounds = 99
+	default_ammo = /datum/ammo/bullet/rifle/heavy
+	max_rounds = 120
 	icon_state_mini = "mag_rifle_big"
+
+/obj/item/ammo_magazine/rifle/m41a/old/ap
+	name = "\improper M41A MK1 armor-piercing magazine (10x24mm)"
+	desc = "A semi-rectangular box of older armor-piercing rounds for the M41A MK1 Pulse Rifle."
+	icon_state = "m41a_mk1_ap"
+	default_ammo = /datum/ammo/bullet/rifle/heavy/ap
 
 
 //-------------------------------------------------------

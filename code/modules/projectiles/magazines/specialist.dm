@@ -496,6 +496,15 @@
 		"16 Gauge Slugs" = /datum/ammopacktype/tx15_slug,
 		)
 
+/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old
+	name = "\improper T-72O Pointman longevity belt"
+	desc = "An alternative version of the T-72 longevity belt. This model is made for some old weapons, either used by TGMC or other military groups."
+	flags_equip_slot = ITEM_SLOT_BELT
+	caliber_types = list(
+		"10x24 Heavy Caseless" = /datum/ammopacktype/p10x24b/heavy,
+		"10x24 Heavy Armor Piercing" = /datum/ammopacktype/p10x24bap/heavy/ap,
+		)
+
 /obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/pouch
 	name = "\improper T-73 Reiter Pouch"
 	desc = "Following the successful deployment of the T-72 Pointman, the T-73 Reiter was commissioned as an ammo feed system for magazine-compatible handguns which can be clipped onto one's pocket. Thanks to the compact size of pistol munitions, it holds two boxes worth of any pistol caliber and is a popular choice for Corpsmen, who may prefer mobility and to have a hand free at all times for search and rescue operations and performance of their typical duties, and for squad marines who find either the experience of wielding handguns akimbo or the experience of fighting with a pistol from the seat of a motorbike to be especially exhilarating."
@@ -518,6 +527,14 @@
 	radial_icon_state = "10x24"
 	caliber_label = "10x24mm Caseless"
 
+/datum/ammopacktype/p10x24b/heavy
+	default_ammo = /datum/ammo/bullet/rifle/heavy
+	max_rounds = 2000
+	caliber = CALIBER_10X24_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "10x24"
+	caliber_label = "10x24mm Heavy Caseless"
+
 /datum/ammopacktype/p10x24bap
 	default_ammo = /datum/ammo/bullet/rifle/ap
 	max_rounds = 3000
@@ -525,6 +542,14 @@
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "10x24AP"
 	caliber_label = "10x24mm Armor Piercing"
+
+/datum/ammopacktype/p10x24bap/heavy/ap
+	default_ammo = /datum/ammo/bullet/rifle/heavy/ap
+	max_rounds = 2000
+	caliber = CALIBER_10X24_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "10x24AP"
+	caliber_label = "10x24mm Heavy Armor Piercing"
 
 /datum/ammopacktype/p10x24binc
 	default_ammo = /datum/ammo/bullet/rifle/incendiary
