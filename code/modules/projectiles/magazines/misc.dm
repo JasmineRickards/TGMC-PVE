@@ -20,7 +20,7 @@
 	desc = "A box containing 1000 rounds of heavy 10x24mm caseless."
 	caliber = CALIBER_10X24_CASELESS
 	icon_state = "box_10x24mm"
-	default_ammo = /datum/ammo/bullet/rifle/heavy
+	default_ammo = /datum/ammo/bullet/rifle/heavy/m41a
 	current_rounds = 1000
 	max_rounds = 1000
 
