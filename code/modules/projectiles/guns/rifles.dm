@@ -556,7 +556,7 @@
 		/obj/item/attachable/suppressor,
 		/obj/item/attachable/reddot
 		)
-	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18)
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18, "rail_x" = 12, "rail_y" = 24, "under_x" = 24, "under_y" = 13, "stock_x" = 22, "stock_y" = 16)
 
 
 
