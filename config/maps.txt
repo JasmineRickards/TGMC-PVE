@@ -67,6 +67,6 @@ endmap
 map icy_caves_colony
 	minplayers 15
 endmap
-map Research Outpost_colony
+map Research_Outpost_colony
 	minplayers 15
 endmap
