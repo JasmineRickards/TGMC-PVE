@@ -36,9 +36,13 @@
 			HM.playsound_local(user, "gasbreath", 20, 1)
 			TIMER_COOLDOWN_START(src, COOLDOWN_GAS_BREATH, 10 SECONDS)
 
+/obj/item/clothing/mask/gas/old
+	name = "Old military gas mask"
+	icon_state = "gas_alt_new"
+
 /obj/item/clothing/mask/gas/tactical
 	name = "Tactical gas mask"
-	icon_state = "gas_alt_tactical"
+	icon_state = "gas_alt"
 
 /obj/item/clothing/mask/gas/tactical/coif
 	name = "Tactical coifed gas mask"

@@ -12,6 +12,24 @@
 		"Half" = "_h",
 	)
 
+/obj/item/clothing/under/marine/old
+	name = "\improper old TGMC uniform"
+	desc = "An old standard-issue, kevlar-weaved, hazmat-tested, EMF-augmented marine uniform. You suspect it's not as robust-proof as advertised."
+	icon_state = "marine_jumpsuit_old"
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+
+/obj/item/clothing/under/marine/old/medic
+	name = "\improper old TGMC corpsman fatigues"
+	desc = "An old standard-issue, kevlar-weaved, hazmat-tested, EMF-augmented combat corpsman fatigues. You suspect it's not as robust-proof as advertised."
+	icon_state = "marine_medic_old"
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+
+/obj/item/clothing/under/marine/old/engi
+	name = "\improper old TGMC engineer fatigues"
+	desc = "An old standard-issue, kevlar-weaved, hazmat-tested, EMF-augmented combat engineer fatigues. You suspect it's not as robust-proof as advertised."
+	icon_state = "marine_engineer_old"
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+
 /obj/item/clothing/under/marine/standard
 	flags_item_map_variant = null
 

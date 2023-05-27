@@ -1035,7 +1035,7 @@
 	muzzleflash_iconstate = "muzzle_flash_medium"
 	caliber = CALIBER_762X39 //codex
 	max_shells = 42 //codex
-	fire_sound = 'sound/weapons/guns/fire/type71.ogg'
+	fire_sound = 'sound/weapons/guns/fire/type71(CM).ogg'
 	unload_sound = 'sound/weapons/guns/interact/type71_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/type71_reload.ogg'
 	cocked_sound = 'sound/weapons/guns/interact/type71_cocked.ogg'

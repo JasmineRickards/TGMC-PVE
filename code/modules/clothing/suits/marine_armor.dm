@@ -21,6 +21,7 @@
 	soft_armor = list(MELEE = 65, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 60, BIO = 50, FIRE = 50, ACID = 50)
 	siemens_coefficient = 0.7
 	permeability_coefficient = 0.8
+	light_range = 6
 	slowdown = 0.5
 	allowed = list(
 		/obj/item/weapon/gun,
@@ -114,12 +115,16 @@
 		return FALSE
 	return TRUE //only give action button when armor is worn.
 
+/obj/item/clothing/suit/storage/marine/vending
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+
 /obj/item/clothing/suit/storage/marine/M3HB
 	name = "\improper M3-H pattern marine armor"
 	desc = "A standard Marine M3 Heavy Build Pattern Chestplate. Increased protection at the cost of slowdown."
 	icon_state = "1"
 	soft_armor = list(MELEE = 75, BULLET = 85, LASER = 85, ENERGY = 75, BOMB = 80, BIO = 75, FIRE = 75, ACID = 75)
 	slowdown = SLOWDOWN_ARMOR_HEAVY
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
 /obj/item/clothing/suit/storage/marine/M3LB
 	name = "\improper M3-LB pattern marine armor"
@@ -127,6 +132,7 @@
 	icon_state = "2"
 	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 60, ENERGY = 40, BOMB = 55, BIO = 45, FIRE = 45, ACID = 40)
 	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 	light_range = 9 //because it's LIGHT armor, get it?
 
 /obj/item/clothing/suit/storage/marine/harness
@@ -143,6 +149,7 @@
 	icon_state = "4"
 	slowdown = SLOWDOWN_ARMOR_HEAVY
 	pockets = /obj/item/storage/internal/suit/marine/M3IS
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
 /obj/item/storage/internal/suit/marine/M3IS
 	bypass_w_limit = list()
@@ -156,6 +163,7 @@
 	icon_state = "5"
 	soft_armor = list(MELEE = 95, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 15, BIO = 40, FIRE = 40, ACID = 10)
 	hard_armor = list(MELEE = 5, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
 /obj/item/clothing/suit/storage/marine/M3P
 	name = "\improper M3-P pattern marine armor"
@@ -166,12 +174,12 @@
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_heat_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
 /obj/item/clothing/suit/storage/marine/M3P/tanker
 	name = "\improper PAS-09 pattern tanker armor"
 	desc = "A somewhat outdated but robust armored vest, still in use despite the rise of exoskeleton armor due to ease of use and manufacturing. While the suit is a bit more encumbering to wear with the crewman uniform, it offers the loader a degree of protection that would otherwise not be enjoyed."
 	icon_state = "tanker"
-	flags_item_map_variant = (ITEM_JUNGLE_VARIANT)
 
 /obj/item/clothing/suit/storage/marine/M3P/tech
 	name = "\improper PAS-09 pattern technician armor"
@@ -252,6 +260,7 @@
 	name = "\improper PAS-N3 pattern MA armor"
 	desc = "A well-crafted suit of Personal Armor System typically distributed to Command Masters at Arms. Useful for letting your men know who is in charge."
 	soft_armor = list(MELEE = 75, BULLET = 95, LASER = 95, ENERGY = 95, BOMB = 85, BIO = 75, FIRE = 75, ACID = 80)
+	flags_item_map_variant = NONE
 
 /obj/item/clothing/suit/storage/marine/MP/admiral
 	icon_state = "admiral"
@@ -310,6 +319,7 @@
 	name = "M26 captain combat harness"
 	desc = "A heavy protective vest was designed to be worn with the M56 Smartgun System. Due to the new versions of smartgun, this armor used by some fancy high-ranking officers. \nIt has specially designed straps and reinforcement to carry the Smartgun and accessories. This luxury model appears to belong to the CO. You feel like you probably could get fired for touching this.."
 	icon_state = "8fancy"
+	flags_item_map_variant = NONE
 	soft_armor = list(MELEE = 75, BULLET = 95, LASER = 95, ENERGY = 95, BOMB = 80, BIO = 75, FIRE = 80, ACID = 80)
 
 // MARINE PAS-11 vests, the new armor. It is basically equivalent to a modular armor with general storage on it.
@@ -318,6 +328,7 @@
 	name = "\improper PAS-11 pattern armored vest"
 	desc = "A somewhat outdated but robust armored vest, still in use despite the rise of exoskeleton armor due to ease of use and manufacturing. Tougher than it looks. Use it to toggle the built-in flashlight."
 	icon_state = "2"
+	flags_item_map_variant = NONE
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 45, BOMB = 45, BIO = 45, FIRE = 45, ACID = 50)
 	slowdown = 0.5 //a bit less
 	light_range = 9
@@ -729,7 +740,7 @@
 /obj/item/clothing/suit/storage/faction/UPP
 	name = "\improper UM5 personal armor"
 	desc = "Standard body armor of the USL pirates, the UM5 (United Medium MK5) is a medium body armor with reduced weight, offering robust protection from most human weaponry."
-	icon_state = "upp_armor"
+	icon_state = "upp_armor_new"
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	soft_armor = list(MELEE = 60, BULLET = 80, LASER = 70, ENERGY = 70, BOMB = 65, BIO = 50, FIRE = 50, ACID = 60)
@@ -760,7 +771,7 @@
 /obj/item/clothing/suit/storage/faction/UPP/commando
 	name = "\improper UM5CU personal armor"
 	desc = "A modification of the UM5, designed for stealth operations."
-	icon_state = "upp_armor_commando"
+	icon_state = "upp_armor_commando_new"
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 
 /// Modified version of the armor for HvH combat. Stats are based on medium armor, with tyr mark 2.
@@ -770,7 +781,7 @@
 /obj/item/clothing/suit/storage/faction/UPP/heavy
 	name = "\improper UH7 plated armor"
 	desc = "A heavy duty set of body armor in service with the USL pirates, the UH7 (United Heavy MK7) is known for being a rugged set of armor adapted for the fight against the Cimex bugs. It trades some ballistics protection for added shielding against melee weapons, concussive force, and acid."
-	icon_state = "upp_armor_heavy"
+	icon_state = "upp_armor_heavy_new"
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	soft_armor = list(MELEE = 75, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 80, BIO = 50, FIRE = 50, ACID = 75)
 
@@ -781,7 +792,7 @@
 /obj/item/clothing/suit/storage/marine/smartgunner/UPP
 	name = "\improper UH7-S heavy plated armor"
 	desc = "A heavy duty set of body armor in service with the USL pirates, the UH7 (United Heavy MK7) is known for being a rugged set of armor. This version is fitted for smartgunners"
-	icon_state = "upp_armor_heavy"
+	icon_state = "upp_armor_heavy_new"
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	soft_armor = list(MELEE = 75, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 80, BIO = 50, FIRE = 50, ACID = 75)
 

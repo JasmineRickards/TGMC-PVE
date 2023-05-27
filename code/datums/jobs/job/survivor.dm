@@ -71,7 +71,7 @@ Good luck, but do not expect to survive."})
 //Scientist
 /datum/job/survivor/armed/scientist
 	title = "Scientist"
-	job_category = JOB_COL_SUPPORT
+	job_category = JOB_COL_SERVICE
 	paygrade = "CD"
 	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_RESEARCH)
 	selection_color = "#99FF99"
@@ -96,7 +96,7 @@ Good luck, but do not expect to survive."})
 //Doctor
 /datum/job/survivor/armed/doctor
 	title = "Doctor"
-	job_category = JOB_COL_SUPPORT
+	job_category = JOB_COL_SERVICE
 	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY)
 	paygrade = "CD"
 	selection_color = "#99FF99"
@@ -151,7 +151,7 @@ Good luck, but do not expect to survive."})
 /datum/job/survivor/armed/security
 	title = "Armed Response Specialist"
 	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG)
-	job_category = JOB_COL_FIGHTERS
+	job_category = JOB_COL_SEC
 	paygrade = "OFC2"
 	selection_color = "#BF2F2F"
 	skills_type = /datum/skills/civilian/survivor/security
@@ -177,7 +177,7 @@ Good luck, but do not expect to survive."})
 //Chef
 /datum/job/survivor/armed/chef
 	title = "Chef"
-	job_category = JOB_COL_FIGHTERS
+	job_category = JOB_COL_SERVICE
 
 	selection_color = "#008000"
 	skills_type = /datum/skills/civilian/survivor/chef
@@ -201,7 +201,7 @@ Good luck, but do not expect to survive."})
 //Atmospherics Technician
 /datum/job/survivor/armed/atmos
 	title = "Atmospherics Technician"
-	job_category = JOB_COL_SUPPORT
+	job_category = JOB_COL_SERVICE
 	paygrade = "ENG"
 	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_ENGINEERING)
 	selection_color = "#FF6A00"
@@ -226,7 +226,7 @@ Good luck, but do not expect to survive."})
 //Chaplain
 /datum/job/survivor/armed/chaplain
 	title = "Chaplain"
-	job_category = JOB_COL_ETC
+	job_category = JOB_COL_SERVICE
 	selection_color = "#008000"
 	paygrade = "CHP"
 	skills_type = /datum/skills/civilian/survivor/chaplain
@@ -250,7 +250,7 @@ Good luck, but do not expect to survive."})
 //Miner
 /datum/job/survivor/armed/miner
 	title = "Miner"
-	job_category = JOB_COL_FIGHTERS
+	job_category = JOB_COL_SERVICE
 	selection_color = "#FF6A00"
 	paygrade = "MNR2"
 	skills_type = /datum/skills/civilian/survivor/miner
@@ -346,7 +346,7 @@ Good luck, but do not expect to survive."})
 //Low gear Scientist
 /datum/job/survivor/junior_rsr
 	title = "Research Assistant"
-	job_category = JOB_COL_SUPPORT
+	job_category = JOB_COL_SERVICE
 	paygrade = "CD"
 	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_RESEARCH)
 	display_order = JOB_DISPLAY_ORDER_SUPPORT
@@ -372,7 +372,7 @@ Good luck, but do not expect to survive."})
 //Low gear Doctor
 /datum/job/survivor/nurse
 	title = "Nurse"
-	job_category = JOB_COL_SUPPORT
+	job_category = JOB_COL_SERVICE
 	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY)
 	paygrade = "RES"
 	display_order = JOB_DISPLAY_ORDER_SUPPORT
@@ -430,7 +430,7 @@ Good luck, but do not expect to survive."})
 //The 'ol beat cop
 /datum/job/survivor/sec_patrol
 	title = "Patrol Officer"
-	job_category = JOB_COL_FIGHTERS
+	job_category = JOB_COL_SEC
 	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG)
 	paygrade = "OFC1"
 	display_order = JOB_DISPLAY_ORDER_FIGHTER_SEC
@@ -484,7 +484,7 @@ Good luck, but do not expect to survive."})
 //Macheteless Chef
 /datum/job/survivor/sous_chef
 	title = "Sous Chef"
-	job_category = JOB_COL_FIGHTERS
+	job_category = JOB_COL_SERVICE
 	selection_color = "#008000"
 	display_order = JOB_DISPLAY_ORDER_FIGHTER
 	skills_type = /datum/skills/civilian/survivor/chef
@@ -509,7 +509,7 @@ Good luck, but do not expect to survive."})
 //Botanist
 /datum/job/survivor/botanist
 	title = "Botanist"
-	job_category = JOB_COL_SUPPORT
+	job_category = JOB_COL_SERVICE
 	selection_color = "#008000"
 	display_order = JOB_DISPLAY_ORDER_SUPPORT
 	outfit = /datum/outfit/job/survivor/botanist
@@ -544,7 +544,7 @@ Good luck, but do not expect to survive."})
 //Atmospherics Technician
 /datum/job/survivor/maint_tech
 	title = "Maintenance Technician"
-	job_category = JOB_COL_SUPPORT
+	job_category = JOB_COL_SERVICE
 	paygrade = "ENG"
 	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_ENGINEERING)
 	comm_title = "MT"
@@ -576,7 +576,7 @@ Good luck, but do not expect to survive."})
 /datum/job/survivor/priest
 	title = "Priest"
 	paygrade = "CHP"
-	job_category = JOB_COL_ETC
+	job_category = JOB_COL_SERVICE
 	display_order = JOB_DISPLAY_ORDER_MISC
 	selection_color = "#008000"
 	skills_type = /datum/skills/civilian/survivor/chaplain
@@ -602,7 +602,7 @@ Good luck, but do not expect to survive."})
 //Prospector
 /datum/job/survivor/prospector
 	title = "Prospector"
-	job_category = JOB_COL_FIGHTERS
+	job_category = JOB_COL_SERVICE
 	paygrade = "MNR2"
 	display_order = JOB_DISPLAY_ORDER_FIGHTER
 	selection_color = "#FF6A00"
@@ -659,12 +659,12 @@ Good luck, but do not expect to survive."})
 
 //lesser Colonial Marshal
 /datum/job/survivor/deputy
-	job_category = JOB_COL_COMMAND
+	job_category = JOB_COL_SEC
 	title = "Colonial Marshal Deputy"
 	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG)
 	paygrade = "CMB1"
 	display_order = JOB_DISPLAY_ORDER_CMB
-	selection_color = "#ccccff"
+	selection_color = "#BF2F2F"
 	skills_type = /datum/skills/civilian/survivor/marshal/deputy
 	outfit = /datum/outfit/job/survivor/deputy
 	minimap_icon = "deputy"

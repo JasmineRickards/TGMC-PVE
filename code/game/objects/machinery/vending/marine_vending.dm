@@ -1397,7 +1397,7 @@
 			/obj/item/clothing/suit/storage/marine/robot = -1,
 			/obj/item/clothing/suit/storage/marine/robot/heavy = -1,
 			/obj/item/clothing/suit/modular/robot = -1,
-			/obj/item/clothing/suit/storage/marine = -1,
+			/obj/item/clothing/suit/storage/marine/vending = -1,
 			/obj/item/clothing/suit/storage/marine/M3HB = -1,
 			/obj/item/clothing/suit/storage/marine/M3LB = -1,
 			/obj/item/clothing/suit/storage/marine/M3IS = -1,
@@ -1596,6 +1596,9 @@
 	products = list(
 		"Standard" = list(
 			/obj/item/clothing/under/marine/robotic = -1,
+			/obj/item/clothing/under/marine/old = -1,
+			/obj/item/clothing/under/marine/old/medic = -1,
+			/obj/item/clothing/under/marine/old/engi = -1,
 			/obj/item/clothing/under/marine = -1,
 			/obj/item/clothing/under/marine/standard = -1,
 			/obj/item/clothing/under/marine/camo = -1,
@@ -1694,6 +1697,7 @@
 			/obj/item/clothing/mask/rebreather = -1,
 			/obj/item/clothing/mask/breath = -1,
 			/obj/item/clothing/mask/gas = -1,
+			/obj/item/clothing/mask/gas/old = -1,
 			/obj/item/clothing/mask/gas/tactical = -1,
 			/obj/item/clothing/mask/gas/tactical/coif = -1,
 		),
