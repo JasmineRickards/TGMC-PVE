@@ -86,6 +86,7 @@
 		/obj/item/binoculars,
 		/obj/item/weapon/combat_knife,
 		/obj/item/attachable/bayonetknife,
+		/obj/item/weapon/baton,
 	)
 
 /obj/item/clothing/suit/armor/vest/warden
@@ -130,18 +131,27 @@
 /obj/item/clothing/suit/armor/riot
 	name = "riot suit"
 	desc = "A suit of armor with heavy padding to protect against melee and ballistic attacks. Layers of Cimex chitin help against acid."
-	icon_state = "riot"
-	item_state = "swat"
+	icon_state = "riot_new"
+	item_state = "swat_new"
 	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
 	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	soft_armor = list(MELEE = 82, BULLET = 15, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
 	flags_inventory = BLOCKSHARPOBJ
-	flags_inv_hide = HIDEJUMPSUIT
+	flags_inv_hide = NONE
 	flags_item = SYNTH_RESTRICTED
 	siemens_coefficient = 0.5
 	permeability_coefficient = 0.2
 	time_to_unequip = 20
 	time_to_equip = 20
+
+/obj/item/clothing/suit/armor/riot/old
+	name = "old riot suit"
+	desc = "An old suit of armor with heavy padding to protect against melee attacks. Barely withstands ranged weapons."
+	icon_state = "riot"
+	item_state = "swat"
+	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
+	slowdown = 0.8
+	soft_armor = list(MELEE = 80, BULLET = 30, LASER = 40, ENERGY = 50, BOMB = 40, BIO = 20, FIRE = 55, ACID = 30)
 
 /obj/item/clothing/suit/armor/swat
 	name = "swat suit"

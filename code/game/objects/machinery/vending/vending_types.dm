@@ -204,6 +204,55 @@
 	)
 	idle_power_usage = 211
 
+/obj/machinery/vending/medical/colonial
+	products = list(
+		"Hypospray" = list (
+			/obj/item/reagent_containers/hypospray/autoinjector/dexalinplus = 1,
+			/obj/item/reagent_containers/hypospray/autoinjector/sleeptoxin = 1,
+			/obj/item/reagent_containers/hypospray/advanced = 1,
+			/obj/item/reagent_containers/hypospray/advanced/bicaridine = 1,
+			/obj/item/reagent_containers/hypospray/advanced/kelotane = 1,
+			/obj/item/reagent_containers/hypospray/advanced/tramadol = 1,
+			/obj/item/reagent_containers/hypospray/advanced/tricordrazine = 1,
+			/obj/item/reagent_containers/hypospray/advanced/dylovene = 1,
+		),
+		"Reagent Bottle" = list(
+			/obj/item/reagent_containers/glass/bottle/bicaridine = 2,
+			/obj/item/reagent_containers/glass/bottle/kelotane = 2,
+			/obj/item/reagent_containers/glass/bottle/tramadol = 2,
+			/obj/item/reagent_containers/glass/bottle/dylovene = 2,
+			/obj/item/reagent_containers/glass/bottle/inaprovaline = 2,
+			/obj/item/reagent_containers/glass/bottle/dexalin = 2,
+			/obj/item/reagent_containers/glass/bottle/spaceacillin = 1,
+			/obj/item/reagent_containers/glass/bottle/oxycodone = 1,
+			/obj/item/reagent_containers/glass/bottle/sleeptoxin = 1,
+			/obj/item/reagent_containers/glass/bottle/polyhexanide = 1,
+		),
+		"Pill Bottle" = list(
+			/obj/item/storage/pill_bottle/bicaridine = 3,
+			/obj/item/storage/pill_bottle/kelotane = 3,
+			/obj/item/storage/pill_bottle/tramadol = 3,
+			/obj/item/storage/pill_bottle/tricordrazine = 3,
+			/obj/item/storage/pill_bottle/dylovene = 3,
+			/obj/item/storage/pill_bottle/inaprovaline = 3,
+			/obj/item/storage/pill_bottle/isotonic = 3,
+			/obj/item/storage/pill_bottle/dexalin = 2,
+			/obj/item/storage/pill_bottle/spaceacillin = 1,
+			/obj/item/storage/pill_bottle/alkysine = 1,
+			/obj/item/storage/pill_bottle/imidazoline = 1,
+			/obj/item/storage/pill_bottle/quickclot = 1,
+			/obj/item/storage/pill_bottle/hypervene = 1,
+			/obj/item/storage/pill_bottle/russian_red = 1,
+		),
+		"Misc" = list(
+			/obj/item/reagent_containers/syringe = 10,
+			/obj/item/storage/pouch/surgery = 1,
+			/obj/item/armor_module/storage/uniform/surgery_webbing = 1,
+			/obj/item/clothing/glasses/hud/health = 2,
+			/obj/item/roller = 2,
+		),
+	)
+
 /obj/machinery/vending/medical/shipside
 	isshared = TRUE
 	resistance_flags = INDESTRUCTIBLE
@@ -305,6 +354,48 @@
 		),
 	)
 
+
+/obj/machinery/vending/MarineMed/colonial
+	name = "\improper ColonyMed"
+	desc = "Colony Medical drug dispenser - Provided by Nanotrasen Pharmaceuticals Division(TM)."
+	icon_state = "marinemed"
+	icon_deny = "marinemed-deny"
+	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;All natural chemicals!;This stuff saves lives.;Don't you want some?;Ping!"
+	req_one_access = list(ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY)
+	resistance_flags = INDESTRUCTIBLE
+	wrenchable = FALSE
+	isshared = TRUE
+	products = list(
+		"Auto Injector" = list(
+			/obj/item/reagent_containers/hypospray/autoinjector/bicaridine = 5,
+			/obj/item/reagent_containers/hypospray/autoinjector/kelotane = 5,
+			/obj/item/reagent_containers/hypospray/autoinjector/tramadol = 5,
+			/obj/item/reagent_containers/hypospray/autoinjector/tricordrazine = 5,
+			/obj/item/reagent_containers/hypospray/autoinjector/dylovene = 5,
+			/obj/item/reagent_containers/hypospray/autoinjector/inaprovaline = 5,
+			/obj/item/reagent_containers/hypospray/autoinjector/oxycodone = 2,
+			/obj/item/reagent_containers/hypospray/autoinjector/hypervene = 5,
+			/obj/item/reagent_containers/hypospray/autoinjector/alkysine = 3,
+			/obj/item/reagent_containers/hypospray/autoinjector/imidazoline = 3,
+			/obj/item/reagent_containers/hypospray/autoinjector/isotonic = 5,
+			/obj/item/reagent_containers/hypospray/autoinjector/quickclot = 2,
+		),
+		"Heal Pack" = list(
+			/obj/item/stack/medical/heal_pack/gauze = 40,
+			/obj/item/stack/medical/heal_pack/ointment = 40,
+			/obj/item/stack/medical/splint = 10,
+			/obj/item/tweezers = 2,
+			/obj/item/stack/medical/heal_pack/advanced/bruise_pack = 10,
+			/obj/item/stack/medical/heal_pack/advanced/burn_pack = 10,
+		),
+		"Misc" = list(
+			/obj/item/defibrillator/civi = 5,
+			/obj/item/healthanalyzer = 8,
+			/obj/item/bodybag/cryobag = 10,
+			/obj/item/storage/belt/rig/medical = 5,
+			/obj/item/storage/belt/lifesaver/full = 2,
+		),
+	)
 
 //This one's from bay12
 /obj/machinery/vending/phoronresearch

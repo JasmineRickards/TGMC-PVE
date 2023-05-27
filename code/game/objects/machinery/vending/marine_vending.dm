@@ -1343,6 +1343,19 @@
 		/obj/item/reagent_containers/blood/empty = 10,
 	)
 
+/obj/machinery/vending/MarineMed/Blood/colonial
+	name = "\improper CM Blood Dispenser"
+	desc = "Colony Med brand Blood Pack dispensery."
+	products = list(
+		/obj/item/reagent_containers/blood/APlus = 2,
+		/obj/item/reagent_containers/blood/AMinus = 2,
+		/obj/item/reagent_containers/blood/BPlus = 2,
+		/obj/item/reagent_containers/blood/BMinus = 2,
+		/obj/item/reagent_containers/blood/OPlus = 2,
+		/obj/item/reagent_containers/blood/OMinus = 2,
+		/obj/item/reagent_containers/blood/empty = 5,
+	)
+
 /obj/machinery/vending/MarineMed/Blood/rebel
 	req_one_access = list(ACCESS_MARINE_MEDBAY_REBEL, ACCESS_MARINE_CHEMISTRY_REBEL)
 

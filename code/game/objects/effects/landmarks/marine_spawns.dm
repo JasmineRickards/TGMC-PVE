@@ -141,6 +141,23 @@
 	icon_state = "Shaft Miner"
 	// job = /datum/job/survivor/rambo //Allows them to spawn shipside always. If reimplementation is wished, new typepath should be /datum/job/survivor/armed/rambo
 
+/obj/effect/landmark/start/job/colonist
+	icon_state = "Shaft Miner"
+	job = list(/datum/outfit/job/survivor/director,
+		/datum/job/survivor/deputy,
+		/datum/job/survivor/prospector,
+		/datum/job/survivor/priest,
+		/datum/job/survivor/maint_tech,
+		/datum/job/survivor/botanist,
+		/datum/job/survivor/sous_chef,
+		/datum/job/survivor/civilian,
+		/datum/job/survivor/sec_patrol,
+		/datum/job/survivor/liaison,
+		/datum/job/survivor/nurse,
+		/datum/job/survivor/junior_rsr,
+		/datum/job/survivor/armed/marshal,
+	)
+
 /obj/effect/landmark/start/job/fallen
 	job = /datum/job/fallen
 
