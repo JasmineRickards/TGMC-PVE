@@ -103,10 +103,10 @@
 #define SOM_SQUAD_VETERAN "SOM Squad Veteran"
 #define SOM_SQUAD_MARINE "SOM Squad Standard"
 //COLONY - Even more placeholder. Organising is not my strong suit.
-#define JOB_COL_COMMAND "CMB"
-#define JOB_COL_SUPPORT "Support Colonists"
-#define JOB_COL_FIGHTERS "Fighting Colonists"
-#define JOB_COL_ETC "Misc. Colonists"
+#define JOB_COL_COMMAND "Local Command Staff"
+#define JOB_COL_SERVICE "Service Colonists"
+#define JOB_COL_SEC "Marshal Office"
+#define JOB_COL_ETC "Colonists"
 
 #define JOB_CAT_COMMAND "Command"
 #define JOB_CAT_SILICON "Silicon"

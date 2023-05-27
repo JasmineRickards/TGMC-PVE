@@ -217,7 +217,7 @@
 		slot_head_str = 'icons/mob/head_1.dmi',
 		slot_l_hand_str = 'icons/mob/items_lefthand_1.dmi',
 		slot_r_hand_str = 'icons/mob/items_righthand_1.dmi',)
-	icon_state = "helmet"
+	icon_state = "helmet_old"
 	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 	max_integrity = 5
 	var/list/helmet_overlays
@@ -336,23 +336,23 @@
 /obj/item/clothing/head/helmet/marine/standard
 	flags_item_map_variant = NONE
 	soft_armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 60, BIO = 60, FIRE = 60, ACID = 60)
-	//flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 /obj/item/clothing/head/helmet/marine/tech
 	name = "\improper M10 technician helmet"
 	icon_state = "techhelmet"
 	soft_armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 60, BIO = 60, FIRE = 60, ACID = 60)
 	flags_item_map_variant = NONE
-	//flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
-	attachments_by_slot = list(ATTACHMENT_SLOT_HEAD_MODULE)
-	attachments_allowed = list(/obj/item/armor_module/module/welding)
-	starting_attachments = list(/obj/item/armor_module/module/welding)
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+	//attachments_by_slot = list(ATTACHMENT_SLOT_HEAD_MODULE)
+	//attachments_allowed = list(/obj/item/armor_module/module/welding)
+	//starting_attachments = list(/obj/item/armor_module/module/welding)
 
 /obj/item/clothing/head/helmet/marine/corpsman
 	name = "\improper M10 corpsman helmet"
 	icon_state = "corpshelmet"
 	soft_armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 60, BIO = 60, FIRE = 60, ACID = 60)
 	flags_item_map_variant = NONE
-	//flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
 /obj/item/clothing/head/helmet/marine/security
 	name = "\improper RC6 helmet"
@@ -639,7 +639,7 @@
 		slot_head_str = 'icons/mob/head_1.dmi',
 		slot_l_hand_str = 'icons/mob/items_lefthand_1.dmi',
 		slot_r_hand_str = 'icons/mob/items_righthand_1.dmi',)
-	icon_state = "upp_helmet1"
+	icon_state = "upp_helmet_new"
 	flags_item = SYNTH_RESTRICTED
 	soft_armor = list(MELEE = 70, BULLET = 80, LASER = 70, ENERGY = 70, BOMB = 65, BIO = 50, FIRE = 50, ACID = 60)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
@@ -651,7 +651,7 @@
 		slot_head_str = 'icons/mob/head_1.dmi',
 		slot_l_hand_str = 'icons/mob/items_lefthand_1.dmi',
 		slot_r_hand_str = 'icons/mob/items_righthand_1.dmi',)
-	icon_state = "upp_helmet_heavy"
+	icon_state = "upp_helmet_heavy_new"
 	soft_armor = list(MELEE = 90, BULLET = 85, LASER = 60, ENERGY = 65, BOMB = 85, BIO = 5, FIRE = 65, ACID = 65)
 	resistance_flags = UNACIDABLE
 	anti_hug = 3
