@@ -479,7 +479,6 @@ Good luck, but do not expect to survive."})
 
 /datum/outfit/job/survivor/civilian/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
-	H.equip_to_slot_or_del(new /obj/item/storage/fancy/chemrettes, SLOT_IN_R_POUCH)
 	H.equip_to_slot_or_del(new /obj/item/flashlight, SLOT_IN_R_POUCH)
 
 //Macheteless Chef
@@ -709,13 +708,13 @@ Good luck, but do not expect to survive."})
 	shoes = /obj/item/clothing/shoes/veteran/PMC
 	head = /obj/item/clothing/head/bowlerhat
 	back = /obj/item/storage/backpack/satchel
-	l_store = /obj/item/storage/pouch/explosive/probablyalawsuitwaitingtohappen
+	//l_store = /obj/item/storage/pouch/explosive/probablyalawsuitwaitingtohappen
 	r_store = /obj/item/storage/pouch/general/medium
 
 /datum/outfit/job/survivor/director/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 
-	H.put_in_hands(new /obj/item/portable_vendor/corporate/survivor/director(H))
+	//H.put_in_hands(new /obj/item/portable_vendor/corporate/survivor/director(H))
 	H.equip_to_slot_or_del(new /obj/item/megaphone, SLOT_IN_R_POUCH)
 	H.equip_to_slot_or_del(new /obj/item/flashlight, SLOT_IN_R_POUCH)
 	H.equip_to_slot_or_del(new /obj/item/storage/fancy/cigar, SLOT_IN_R_POUCH)

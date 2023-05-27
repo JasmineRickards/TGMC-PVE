@@ -38,11 +38,17 @@
 /obj/item/clothing/head/helmet/riot
 	name = "riot helmet"
 	desc = "It's a helmet specifically designed to protect against close range attacks. It covers your ears."
-	icon_state = "riot"
+	icon_state = "riot_new"
 	soft_armor = list(MELEE = 85, BULLET = 25, LASER = 50, ENERGY = 50, BOMB = 25, BIO = 30, FIRE = 50, ACID = 80)
 	flags_inventory = COVEREYES|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDETOPHAIR
 	flags_item = SYNTH_RESTRICTED
+
+/obj/item/clothing/head/helmet/riot/old
+	name = "old riot helmet"
+	desc = "It's an old helmet specifically designed to protect against close range attacks. It covers your ears."
+	icon_state = "old_riot"
+	soft_armor = list(MELEE = 80, BULLET = 30, LASER = 40, ENERGY = 50, BOMB = 30, BIO = 20, FIRE = 50, ACID = 30)
 
 /obj/item/clothing/head/helmet/augment
 	name = "augment array"
