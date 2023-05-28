@@ -42,7 +42,7 @@
 
 /obj/item/clothing/mask/gas/tactical
 	name = "Tactical gas mask"
-	icon_state = "gas_alt"
+	icon_state = "gas_alt_tactical"
 
 /obj/item/clothing/mask/gas/tactical/coif
 	name = "Tactical coifed gas mask"
