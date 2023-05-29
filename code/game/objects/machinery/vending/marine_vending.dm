@@ -12,12 +12,13 @@
 	products = list(
 		"Rifles" = list(
 			/obj/item/weapon/gun/rifle/m41a/old = 2,
-			/obj/item/ammo_magazine/rifle/m41a/old = 30,
-			/obj/item/weapon/gun/rifle/m412 = 2,
-			/obj/item/ammo_magazine/rifle/extended = 20,
-			/obj/item/weapon/gun/rifle/m16 = 1,
-			/obj/item/ammo_magazine/rifle/m16 = 15,
-			/obj/item/ammo_magazine/packet/p10x24mm = 1,
+			/obj/item/ammo_magazine/rifle/m41a/old = 20,
+			/obj/item/weapon/gun/rifle/m16/ar10 = 2,
+			/obj/item/ammo_magazine/rifle/m16/ar10 = 30,
+			/obj/item/weapon/gun/rifle/m16/old = 2,
+			/obj/item/ammo_magazine/rifle/m16/old = 25,
+			/obj/item/ammo_magazine/rifle/m16/old/extended = 10,
+			/obj/item/ammo_magazine/packet/p10x24mm/heavy = 1,
 		),
 		"Shotguns" = list(
 			/obj/item/weapon/gun/shotgun/pump = 3,
