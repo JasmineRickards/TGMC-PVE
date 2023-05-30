@@ -566,6 +566,19 @@
 	flags_item = SYNTH_RESTRICTED
 	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 50)
 
+/obj/item/clothing/head/helmet/marine/imperial/krieg
+	name = "\improper Death Korp's Krieg standart helmet"
+	desc = "Special Death Korp's Krieg helmet with a fancy gasmask. Good for the wastelands."
+	icon_state = "krieg_standard_helmet"
+	item_state = "krieg_standard_helmet"
+	soft_armor = list(MELEE = 65, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 60, BIO = 90, FIRE = 70, ACID = 85)
+
+/obj/item/clothing/head/helmet/marine/imperial/krieg/medicae
+	name = "\improper Death Korp's Krieg medicae helmet"
+	desc = "Special Death Korp's Krieg helmet with a fancy gasmask. Good for the wastelands. This one is worn by medicaes"
+	icon_state = "krieg_medicae_helmet"
+	item_state = "krieg_medicae_helmet"
+
 /obj/item/clothing/head/helmet/marine/imperial/sergeant
 	name = "\improper Imperial Guard sergeant helmet"
 	desc = "A helmet that goes with the sergeant armour, unlike the flak variant, this one will actually protect you."

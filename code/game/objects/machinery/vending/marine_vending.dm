@@ -1508,6 +1508,10 @@
 			/obj/item/clothing/head/helmet/marine/imperial = -1,
 			/obj/item/clothing/suit/storage/marine/imperial = -1,
 			/obj/item/clothing/suit/storage/marine/imperial/medicae = -1,
+			/obj/item/clothing/head/helmet/marine/imperial/krieg = -1,
+			/obj/item/clothing/head/helmet/marine/imperial/krieg/medicae = -1,
+			/obj/item/clothing/suit/storage/marine/imperial/krieg = -1,
+			/obj/item/clothing/suit/storage/marine/imperial/krieg/medicae = -1,
 
 		),
 		"USL" = list(
@@ -1757,6 +1761,8 @@
 		),
 		"Imperial Guard" = list(
 			/obj/item/clothing/under/marine/imperial = -1,
+			/obj/item/clothing/under/marine/imperial/krieg = -1,
+			/obj/item/clothing/under/marine/imperial/krieg/medicae = -1,
 			/obj/item/reagent_containers/food/snacks/enrg_bar = -1,
 			/obj/item/clothing/shoes/marine/imperial = -1,
 			/obj/item/storage/backpack/lightpack = -1,

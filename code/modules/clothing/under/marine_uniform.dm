@@ -239,6 +239,18 @@
 	item_state = "guardjumpsuit"
 	soft_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 
+/obj/item/clothing/under/marine/imperial/krieg
+	name = "\improper Death Korp's Krieg standart uniform"
+	desc = "This uniform is given out to pretty much every soldier of the Death Korp's of Krieg."
+	icon_state = "krieg_standard_jumpsuit"
+	item_state = "krieg_standard_jumpsuit"
+
+/obj/item/clothing/under/marine/imperial/krieg/medicae
+	name = "\improper Death Korp's Krieg medicae uniform"
+	desc = "This uniform is given out to every medicae in the Death Korp's of Krieg."
+	icon_state = "krieg_medicae_jumpsuit"
+	item_state = "krieg_medicae_jumpsuit"
+
 /obj/item/clothing/under/marine/veteran
 	adjustment_variants = list()
 

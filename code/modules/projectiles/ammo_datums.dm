@@ -1287,7 +1287,7 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	on_pierce_multiplier = 0.8
 
 /datum/ammo/bullet/smartmachinegun/rifle
-	name = "smartmachinegun bullet"
+	name = "smartrifle bullet"
 	bullet_color = COLOR_SOFT_RED //Red bullets to indicate friendly fire restriction
 	hud_state = "smartgun"
 	hud_state_empty = "smartgun_empty"
