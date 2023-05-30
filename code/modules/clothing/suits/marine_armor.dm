@@ -602,9 +602,21 @@
 	name = "\improper Imperial Guard flak armour"
 	desc = "A cheap, mass produced armour worn by the Imperial Guard, which are also cheap and mass produced. You can make out what appears to be <i>Cadia stands</i> carved into the armour."
 	icon_state = "m_guardarmor"
-	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 35)
+	soft_armor = list(MELEE = 75, BULLET = 85, LASER = 85, ENERGY = 75, BOMB = 80, BIO = 75, FIRE = 75, ACID = 75)
 	flags_item_map_variant = NONE
 	slowdown = SLOWDOWN_ARMOR_HEAVY
+
+/obj/item/clothing/suit/storage/marine/imperial/krieg
+	name = "\improper Death Korp's Krieg standart flak armour"
+	desc = "A bit more special armor worn by some Death Korp's Krieg guardsmen. Has much better perfomance against biological threats."
+	icon_state = "krieg_standard_armor"
+	soft_armor = list(MELEE = 60, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 60, BIO = 90, FIRE = 70, ACID = 85)
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
+
+/obj/item/clothing/suit/storage/marine/imperial/krieg/medicae
+	name = "\improper Death Korp's Krieg medicae flak armour"
+	desc = "A bit more special armor worn by some Death Korp's Krieg medicaes. Has much better perfomance against biological threats."
+	icon_state = "krieg_medicae_armor"
 
 /obj/item/clothing/suit/storage/marine/imperial/sergeant
 	// SL armour, better than flak, covers more
