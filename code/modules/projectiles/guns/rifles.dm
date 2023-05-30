@@ -735,6 +735,66 @@
 /obj/item/weapon/gun/rifle/m16/somvet
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness)
 
+/obj/item/weapon/gun/rifle/m16/old
+	name = "\improper M16A1 assault rifle"
+	desc = "Older brother of the M16A4 assault rifle, the A1 model can be found on some colonies. Lacks full automatic."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "m16a1"
+	item_state = "m16a1"
+	flags_gun_features = GUN_CAN_POINTBLANK
+	gun_firemode_list = list(GUN_FIREMODE_AUTOBURST, GUN_FIREMODE_BURSTFIRE, GUN_FIREMODE_SEMIAUTO)
+	fire_sound = 'sound/weapons/guns/fire/gun_m16.ogg'
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 17,"rail_x" = 18, "rail_y" = 24, "under_x" = 27, "under_y" = 15, "stock_x" = 0, "stock_y" = 13)
+	default_ammo_type = /obj/item/ammo_magazine/rifle/m16/old
+	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/m16/old, /obj/item/ammo_magazine/rifle/m16/old/extended)
+	attachable_allowed = list(
+		/obj/item/attachable/suppressor,
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonetknife,
+		/obj/item/attachable/angledgrip,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/compensator,
+	)
+	fire_delay = 0.3 SECONDS
+	extra_delay = 0 SECONDS
+	scatter = 1
+	burst_delay = 0.1 SECONDS
+	autoburst_delay = 0.3 SECONDS
+	accuracy_mult = 1.5
+	wield_delay = 0.5 SECONDS
+	damage_mult = 3
+
+/obj/item/weapon/gun/rifle/m16/ar10
+	name = "\improper AR-10 assault rifle"
+	desc = "Older brother of the M16A1, the AR-10 is considered to be the relic. How is this thing appearing on some colonies is unknown."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "ar10"
+	item_state = "ar10"
+	flags_gun_features = GUN_CAN_POINTBLANK
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC, GUN_FIREMODE_SEMIAUTO)
+	fire_sound = 'sound/weapons/guns/fire/gun_ar10.ogg'
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 17,"rail_x" = 18, "rail_y" = 24, "under_x" = 27, "under_y" = 15, "stock_x" = 0, "stock_y" = 13)
+	default_ammo_type = /obj/item/ammo_magazine/rifle/m16/ar10
+	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/m16/ar10)
+	attachable_allowed = list(
+		/obj/item/attachable/suppressor,
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonetknife,
+		/obj/item/attachable/angledgrip,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/compensator,
+	)
+	fire_delay = 0.15 SECONDS
+	extra_delay = 0 SECONDS
+	scatter = 1
+	burst_delay = 0.1 SECONDS
+	autoburst_delay = 0.3 SECONDS
+	accuracy_mult = 1.5
+	wield_delay = 0.5 SECONDS
+	damage_mult = 2.5
+
 //-------------------------------------------------------
 //FAMAS rifle, based on the F1
 

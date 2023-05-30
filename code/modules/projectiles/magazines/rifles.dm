@@ -185,6 +185,28 @@
 	max_rounds = 60 //Also comes in 30 and 100 round Beta-C mag.
 	icon_state_mini = "mag_rifle_big"
 
+/obj/item/ammo_magazine/rifle/m16/old
+	name = "\improper M16 magazine (5.56x45mm)"
+	desc = "A 5.56x45mm magazine for the M16 assault rifle platform."
+	icon_state = "m16_old"
+	icon_state_mini = "mag_rifle_big"
+	default_ammo = /datum/ammo/bullet/rifle/heavy
+	max_rounds = 30
+
+/obj/item/ammo_magazine/rifle/m16/old/extended
+	name = "\improper extended M16 magazine (5.56x45mm)"
+	desc = "An extended 5.56x45mm magazine for the M16 assault rifle platform."
+	icon_state = "m16_ext_old"
+	max_rounds = 60
+
+/obj/item/ammo_magazine/rifle/m16/ar10
+	name = "\improper AR-10 magazine (5.56x45mm)"
+	desc = "An 5.56x45mm magazine for the AR-10 assault rifle platform."
+	icon_state = "ar10"
+	icon_state_mini = "mag_rifle_big"
+	default_ammo = /datum/ammo/bullet/rifle/heavy
+	max_rounds = 45
+
 //-------------------------------------------------------
 //FAMAS RIFLE
 
