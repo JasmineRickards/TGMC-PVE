@@ -639,7 +639,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "armor-piercing heavy rifle bullet"
 	hud_state = "rifle_ap"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
-	damage = 35
+	damage = 45
 	penetration = 30
 	sundering = 3
 
@@ -1293,10 +1293,10 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	hud_state_empty = "smartgun_empty"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
 	accurate_range = 12
-	damage = 50
+	damage = 70
 	penetration = 30
-	sundering = 5
-	on_pierce_multiplier = 0.4
+	sundering = 6
+	on_pierce_multiplier = 0.6
 
 /datum/ammo/bullet/smart_minigun
 	name = "smartminigun bullet"

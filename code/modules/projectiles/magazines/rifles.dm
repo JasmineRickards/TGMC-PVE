@@ -143,9 +143,32 @@
 	icon_state = "m41a_mk1_ap"
 	default_ammo = /datum/ammo/bullet/rifle/heavy/ap
 
+/obj/item/ammo_magazine/rifle/m41a/mk2
+	name = "\improper M41A MK2 magazine (10x24mm)"
+	desc = "A semi-rectangular box of rounds for the PR-11 Pulse Rifle."
+	icon_state = "m41a_mk2"
+	max_rounds = 99
+	default_ammo = /datum/ammo/bullet/rifle/heavy/m41a
+	icon_state_mini = "mag_rifle_big"
+
+/obj/item/ammo_magazine/rifle/m41a/mk2/extended
+	name = "\improper M41A MK2 extended magazine (10x24mm)"
+	desc = "An extended semi-rectangular box of rounds for the PR-11 Pulse Rifle."
+	icon_state = "m41a_mk2_extended"
+	max_rounds = 180
+	icon_state_mini = "mag_rifle_big"
+
+/obj/item/ammo_magazine/rifle/m41a/mk2/ap
+	name = "\improper M41A MK2 armor-piercing magazine (10x24mm)"
+	desc = "An armor-piercing semi-rectangular box of rounds for the PR-11 Pulse Rifle."
+	icon_state = "m41a_mk2_ap"
+	max_rounds = 99
+	default_ammo = /datum/ammo/bullet/rifle/heavy/ap
+	icon_state_mini = "mag_rifle_big"
+
 /obj/item/ammo_magazine/rifle/m41a/captain
-	name = "\improper M46C magazine (10x24mm)"
-	desc = "A semi-rectangular box of rounds for the special M46C Captain's Pulse Rifle."
+	name = "\improper M46C high-impact magazine (10x24mm)"
+	desc = "A semi-rectangular box of rounds for the M46C Pulse Rifle. This one is loaded with high-impact rounds."
 	icon_state = "m46c_iff"
 	max_rounds = 150
 	icon_state_mini = "mag_rifle_big"

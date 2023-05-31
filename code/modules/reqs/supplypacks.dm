@@ -658,7 +658,7 @@ WEAPONS
 /datum/supply_packs/weapons/m46c/ammo
 	name = "M46C Pulse rifle ammo magazine"
 	contains = list(/obj/item/ammo_magazine/rifle/m41a/captain)
-	cost = 4
+	cost = 6
 
 /*******************************************************************************
 EXPLOSIVES
@@ -1348,6 +1348,26 @@ Imports
 	contains = list(/obj/item/ammo_magazine/sniper/elite = 3)
 	cost = 5
 
+/datum/supply_packs/imports/m41a/elite
+	name = "M41A MK2/3 Pulse Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/m41a/old/elite)
+	cost = 35
+
+/datum/supply_packs/imports/m41a/elite/ammo
+	name = "M41A MK2/3 Pulse Rifle"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a/mk2)
+	cost = 1
+
+/datum/supply_packs/imports/m41a/elite/ammo/extended
+	name = "M41A MK2/3 Pulse Rifle"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a/mk2/extended)
+	cost = 2
+
+/datum/supply_packs/imports/m41a/elite/ammo/ap
+	name = "M41A MK2/3 Pulse Rifle"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a/mk2/ap)
+	cost = 4
+
 /datum/supply_packs/imports/m412e
 	name = "PR-412B2 Commando Rifle"
 	contains = list(/obj/item/weapon/gun/rifle/m412/elite)
@@ -1513,12 +1533,12 @@ Imports
 /datum/supply_packs/imports/m41amk1
 	name = "M41A MK1 Pulse Rifle"
 	contains = list(/obj/item/weapon/gun/rifle/m41a/old)
-	cost = 15
+	cost = 10
 
 /datum/supply_packs/imports/m41amk1/ammo
 	name = "M41A MK1 Pulse Rifle magazine"
 	contains = list(/obj/item/ammo_magazine/rifle/m41a/old)
-	cost = 2
+	cost = 1
 
 /datum/supply_packs/imports/m41amk1/ammo/ap
 	name = "M41A MK1 Pulse Rifle armor-piercing magazine"
@@ -1528,7 +1548,7 @@ Imports
 /datum/supply_packs/imports/m41amk1/ammopacket
 	name = "10x24 Heavy Caseless ammo packet"
 	contains = list(/obj/item/ammo_magazine/packet/p10x24mm/heavy)
-	cost = 15
+	cost = 10
 
 /datum/supply_packs/imports/m41amk1/ammopacket/ap
 	name = "10x24 Heavy Armor-Piercing Caseless ammo packet"
