@@ -291,8 +291,8 @@
 /area/outpost/arrivals/securitylz2)
 "by" = (
 /obj/vehicle/sealed/mecha/combat/gygax{
-	desc = "NT Brand new security vehicle. Usually used against some violent riots on the colonies.";
-	name = "\improper NT Brand Colonial "Gygax""
+	desc = "NT Brand new standart issue security vehicle. Usually used against some violent riots on the colonies.";
+	name = "\improper NT Brand Colonial Security Mobile Suit"
 	},
 /turf/open/floor/mech_bay_recharge_floor,
 /area/outpost/science/xenobiology)
@@ -2937,13 +2937,9 @@
 /area/outpost/caves/west)
 "nS" = (
 /obj/structure/table,
-/obj/item/stack/sheet/metal{
-	amount = 50;
-	pixel_x = 4;
-	pixel_y = 4
-	},
 /obj/item/stack/sheet/glass/large_stack,
 /obj/item/stack/sheet/mineral/phoron/medium_stack,
+/obj/item/stack/sheet/metal/medium_stack,
 /turf/open/floor/tile/dark/purple2,
 /area/outpost/science/research)
 "nU" = (
@@ -4881,7 +4877,6 @@
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/tile/dark/brown2{
 	dir = 4
 	},
@@ -6334,7 +6329,6 @@
 "DO" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden,
-/obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/tile/dark,
 /area/outpost/hallway/central)
 "DP" = (
@@ -10114,6 +10108,8 @@
 /area/outpost/lz2)
 "Vx" = (
 /obj/structure/table,
+/obj/item/stack/sheet/metal/medium_stack,
+/obj/item/stack/sheet/glass/large_stack,
 /turf/open/floor/tile/dark/purple2{
 	dir = 1
 	},
