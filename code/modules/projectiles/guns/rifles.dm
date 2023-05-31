@@ -558,6 +558,29 @@
 		)
 	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18, "rail_x" = 12, "rail_y" = 24, "under_x" = 24, "under_y" = 13, "stock_x" = 22, "stock_y" = 16)
 
+/obj/item/weapon/gun/rifle/m41a/old/elite
+	name = "\improper M41A MK2/3 pulse rifle"
+	desc = "An old version of the electronic rifle. This particular model was used by some elite forces. Has much better firepower compared to the standart version."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "m41a2"
+	item_state = "m41a2"
+	caliber = CALIBER_10X24_CASELESS
+	fire_sound = "gun_pulse"
+	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
+	unload_sound = 'sound/weapons/guns/interact/m41a_unload.ogg'
+	reload_sound = 'sound/weapons/guns/interact/m41a_reload.ogg'
+	aim_slowdown = 0.4
+	wield_delay = 0.4 SECONDS
+	max_shells = 99 //codex
+	damage_mult = 1.75
+	default_ammo_type = /obj/item/ammo_magazine/rifle/m41a/mk2
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/m41a/mk2,
+		/obj/item/ammo_magazine/rifle/m41a/mk2/extended,
+		/obj/item/ammo_magazine/rifle/m41a/mk2/ap,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old,
+		)
+
 /obj/item/weapon/gun/rifle/m41a/captain
 	name = "\improper M46C pulse rifle"
 	desc = "Luxury version of the M41A pulse rifle made for high ranking officer. Uses IFF system like the smartgun."
@@ -576,7 +599,11 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_IFF
 	default_ammo_type = /obj/item/ammo_magazine/rifle/m41a/captain
 	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/m41a/mk2,
+		/obj/item/ammo_magazine/rifle/m41a/mk2/extended,
+		/obj/item/ammo_magazine/rifle/m41a/mk2/ap,
 		/obj/item/ammo_magazine/rifle/m41a/captain,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old,
 		)
 	attachable_allowed = list(
 		/obj/item/attachable/magnetic_harness,
