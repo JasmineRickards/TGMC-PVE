@@ -6981,7 +6981,11 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/machinery/space_heater,
+/obj/structure/rack,
+/obj/item/clothing/suit/armor/bulletproof,
+/obj/item/clothing/suit/armor/bulletproof,
+/obj/item/clothing/head/helmet,
+/obj/item/clothing/head/helmet,
 /turf/open/floor/tile/dark,
 /area/icy_caves/outpost/security)
 "Ht" = (
@@ -23630,7 +23634,7 @@ li
 li
 li
 li
-az
+HA
 li
 li
 li

@@ -2105,7 +2105,7 @@
 /turf/open/floor/tile/dark,
 /area/outpost/medbay/security)
 "kd" = (
-/obj/structure/closet/secure_closet/marshal,
+/obj/structure/closet/bombclosetsecurity,
 /turf/open/floor/tile/dark/red2{
 	dir = 9
 	},
@@ -5838,7 +5838,7 @@
 /turf/open/floor/tile/dark,
 /area/outpost/cargo)
 "Bd" = (
-/obj/structure/closet/bombclosetsecurity,
+/obj/structure/closet/secure_closet/marshal,
 /turf/open/floor/tile/dark/red2{
 	dir = 1
 	},
@@ -5963,7 +5963,11 @@
 /turf/open/floor/plating/ground/mars/random/sand,
 /area/outpost/yard/south_east)
 "BL" = (
-/obj/structure/table,
+/obj/structure/rack,
+/obj/item/clothing/suit/armor/bulletproof,
+/obj/item/clothing/suit/armor/bulletproof,
+/obj/item/clothing/head/helmet,
+/obj/item/clothing/head/helmet,
 /turf/open/floor/tile/dark/red2{
 	dir = 8
 	},

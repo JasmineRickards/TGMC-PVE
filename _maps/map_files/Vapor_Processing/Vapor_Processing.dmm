@@ -8,6 +8,12 @@
 "af" = (
 /turf/open/ground,
 /area/space)
+"ag" = (
+/obj/machinery/vending/weaponciv,
+/turf/open/floor/tile/red/redtaupe{
+	dir = 9
+	},
+/area/space)
 "ah" = (
 /turf/open/ground/grass/grass2,
 /area/lv624/ground/compound/n)
@@ -172,6 +178,10 @@
 /obj/structure/barricade/wooden,
 /turf/open/floor/plating,
 /area/maintenance/apmaint)
+"aU" = (
+/obj/effect/landmark/xeno_resin_wall,
+/turf/open/floor/grass,
+/area/vapor_processing/east_compound)
 "aW" = (
 /obj/machinery/landinglight/ds2/delaytwo{
 	dir = 1
@@ -363,6 +373,10 @@
 /obj/structure/largecrate/random,
 /turf/open/floor/prison/sterilewhite,
 /area/lv624/lazarus/fitness)
+"bT" = (
+/obj/machinery/telecomms/relay/preset/telecomms,
+/turf/open/floor/grass,
+/area/lv624/lazarus/console)
 "bU" = (
 /obj/machinery/landinglight/ds1/delaytwo,
 /turf/open/floor/plating,
@@ -514,6 +528,10 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/turf/open/ground/grass/grass2,
+/area/lv624/ground/compound/n)
+"cJ" = (
+/obj/machinery/miner/damaged,
 /turf/open/ground/grass/grass2,
 /area/lv624/ground/compound/n)
 "cK" = (
@@ -820,11 +838,7 @@
 /turf/open/floor/tile/green/whitegreen,
 /area/medical/medbay2)
 "ef" = (
-/obj/structure/closet/secure_closet/medical2,
-/obj/item/storage/box/gloves{
-	pixel_x = -5;
-	pixel_y = -5
-	},
+/obj/machinery/vending/medical/colonial,
 /turf/open/floor/tile/green/whitegreen{
 	dir = 1
 	},
@@ -926,18 +940,22 @@
 /turf/open/floor/tile/white,
 /area/medical/medbay2)
 "eE" = (
-/obj/item/defibrillator,
 /obj/structure/table,
+/obj/item/storage/firstaid/fire,
+/obj/item/storage/firstaid/rad,
+/obj/item/storage/firstaid/toxin,
+/obj/item/storage/firstaid,
 /turf/open/floor/tile/green/whitegreen{
 	dir = 8
 	},
 /area/medical/medbay2)
 "eF" = (
-/obj/item/defibrillator,
 /obj/structure/table,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/item/storage/firstaid/adv,
+/obj/item/storage/firstaid/adv,
 /turf/open/floor/tile/green/whitegreen{
 	dir = 8
 	},
@@ -1051,8 +1069,8 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/item/defibrillator,
 /obj/structure/cable,
+/obj/item/defibrillator/civi,
 /turf/open/floor/tile/green/whitegreen{
 	dir = 6
 	},
@@ -1211,7 +1229,7 @@
 /turf/open/floor/prison/plate,
 /area/lv624/lazarus/engineering)
 "ga" = (
-/obj/machinery/vending/MarineMed/Blood,
+/obj/machinery/vending/MarineMed/Blood/colonial,
 /turf/open/floor/tile/green/whitegreen{
 	dir = 9
 	},
@@ -1292,6 +1310,10 @@
 	},
 /turf/open/ground,
 /area/vapor_processing/east_compound)
+"gA" = (
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/floor/grass,
+/area/vapor_processing/east_compound)
 "gF" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/tile/white,
@@ -1349,7 +1371,7 @@
 /turf/open/floor/prison/yellow,
 /area/lv624/lazarus/engineering)
 "ha" = (
-/obj/machinery/biogenerator,
+/obj/machinery/vending/MarineMed/Blood/colonial,
 /turf/open/floor/tile/green/whitegreen{
 	dir = 8
 	},
@@ -1413,7 +1435,7 @@
 /turf/open/floor/tile/green/whitegreen,
 /area/lv624/lazarus/medbay)
 "hx" = (
-/obj/machinery/vending/medical,
+/obj/machinery/vending/medical/colonial,
 /turf/open/floor/tile/green/whitegreen,
 /area/lv624/lazarus/medbay)
 "hy" = (
@@ -1506,10 +1528,10 @@
 /turf/closed/wall,
 /area/lv624/lazarus/security)
 "hU" = (
-/obj/structure/filingcabinet,
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/recharge_station,
 /turf/open/floor/tile/whiteyellow{
 	dir = 4
 	},
@@ -1541,10 +1563,10 @@
 /turf/open/floor/prison/yellow/full,
 /area/lv624/lazarus/engineering)
 "id" = (
-/obj/structure/closet/secure_closet/atmos_personal,
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/closet/secure_closet/hydroponics,
 /turf/open/floor/prison/whitepurple{
 	dir = 6
 	},
@@ -1561,17 +1583,19 @@
 "if" = (
 /obj/machinery/vending/security/drobe,
 /turf/open/floor/tile/red/redtaupe{
-	dir = 9
+	dir = 1
 	},
 /area/lv624/lazarus/security)
 "ih" = (
-/obj/structure/closet/secure_closet/marshal,
+/obj/structure/table/reinforced,
+/obj/item/clothing/head/helmet/marine/security,
+/obj/item/clothing/suit/storage/marine/security,
 /turf/open/floor/tile/red/redtaupe{
 	dir = 5
 	},
 /area/lv624/lazarus/security)
 "ii" = (
-/obj/machinery/recharge_station,
+/obj/structure/filingcabinet,
 /turf/open/floor/tile/whiteyellow/corner{
 	dir = 4
 	},
@@ -1597,9 +1621,7 @@
 /area/lv624/lazarus/engineering)
 "ip" = (
 /obj/structure/closet/secure_closet/security,
-/turf/open/floor/tile/red/redtaupe{
-	dir = 10
-	},
+/turf/open/floor/tile/red/redtaupe,
 /area/lv624/lazarus/security)
 "ir" = (
 /obj/machinery/vending/coffee,
@@ -1747,20 +1769,20 @@
 	},
 /area/lv624/lazarus/engineering)
 "jj" = (
-/obj/structure/closet/secure_closet/engineering_welding,
 /obj/structure/cable,
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/closet/toolcloset,
 /turf/open/floor/prison/whitepurple{
 	dir = 5
 	},
 /area/lv624/lazarus/engineering)
 "jk" = (
-/obj/structure/closet/secure_closet/engineering_electrical,
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/structure/closet/secure_closet/scientist,
 /turf/open/floor/prison/whitepurple{
 	dir = 9
 	},
@@ -1809,6 +1831,10 @@
 	},
 /turf/open/floor/tile/whiteyellow,
 /area/vapor_processing/cargo2)
+"jw" = (
+/obj/machinery/miner/damaged/platinum,
+/turf/open/ground/grass/grass2,
+/area/lv624/ground/compound/se)
 "jx" = (
 /turf/open/floor/tile/blue/whiteblue{
 	dir = 4
@@ -1844,19 +1870,18 @@
 /turf/open/floor/grass,
 /area/vapor_processing/caves/se)
 "jD" = (
-/obj/item/flash,
 /obj/structure/table/reinforced,
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/item/ammo_magazine/shotgun/flechette,
 /turf/open/floor/tile/red/redtaupe{
 	dir = 9
 	},
 /area/lv624/lazarus/security)
 "jE" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/shotgun/pump/cmb,
-/obj/item/ammo_magazine/shotgun/buckshot,
+/obj/item/ammo_magazine/shotgun/beanbag,
 /turf/open/floor/tile/red/redtaupe{
 	dir = 1
 	},
@@ -1938,6 +1963,7 @@
 /area/vapor_processing/cargo3)
 "jU" = (
 /obj/structure/table/reinforced,
+/obj/item/flash,
 /turf/open/floor/tile/red/redtaupe{
 	dir = 8
 	},
@@ -2042,9 +2068,9 @@
 	},
 /area/lv624/lazarus/security)
 "kk" = (
-/obj/item/weapon/gun/flamer/hydro_cannon,
-/turf/open/floor/tile/red/redtaupe,
-/area/lv624/lazarus/security)
+/obj/effect/landmark/weed_node,
+/turf/open/ground,
+/area/lv624/ground/caves/west1)
 "kl" = (
 /obj/item/folder/red,
 /turf/open/floor/tile/red/redtaupecorner{
@@ -2298,7 +2324,7 @@
 /area/vapor_processing/cargo_maint_s)
 "lF" = (
 /obj/structure/bed/chair/office/light{
-	dir = 1
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/vapor_processing/cargo_maint_s)
@@ -2314,9 +2340,9 @@
 /turf/open/floor/plating,
 /area/vapor_processing/cargo_maint_s)
 "lJ" = (
-/obj/item/weapon/gun/flamer/hydro_cannon,
-/turf/open/floor/plating,
-/area/vapor_processing/cargo_maint_s)
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/ground,
+/area/lv624/ground/caves/west1)
 "lK" = (
 /obj/machinery/door/airlock/multi_tile/mainship/generic{
 	dir = 1
@@ -2332,6 +2358,8 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/structure/table/flipped,
+/obj/effect/spawner/random/toolbox,
 /turf/open/floor,
 /area/storage/tools)
 "lP" = (
@@ -2353,6 +2381,10 @@
 /obj/structure/cable,
 /turf/open/floor,
 /area/storage/tools)
+"lW" = (
+/obj/machinery/miner/damaged/platinum,
+/turf/open/floor/grass,
+/area/lv624/ground/compound/se)
 "lY" = (
 /turf/open/floor/tile/blue/whiteblue{
 	dir = 9
@@ -2379,16 +2411,19 @@
 /turf/open/floor,
 /area/shuttle/drop1/lz1)
 "mf" = (
-/obj/item/weapon/gun/flamer/hydro_cannon,
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/structure/table/flipped,
+/obj/effect/spawner/random/toolbox,
 /turf/open/floor,
 /area/storage/tools)
 "mi" = (
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/structure/table/flipped,
+/obj/effect/spawner/random/powercell,
 /turf/open/floor,
 /area/storage/tools)
 "mj" = (
@@ -2491,10 +2526,6 @@
 	dir = 5
 	},
 /area/lv624/lazarus/engineering)
-"mK" = (
-/obj/structure/table/flipped,
-/turf/open/floor,
-/area/storage/tools)
 "mM" = (
 /obj/machinery/vending/nanomed,
 /turf/closed/wall,
@@ -2505,6 +2536,8 @@
 /area/lv624/lazarus/quart)
 "mP" = (
 /obj/machinery/light,
+/obj/structure/table/flipped,
+/obj/effect/spawner/random/powercell,
 /turf/open/floor,
 /area/storage/tools)
 "mQ" = (
@@ -2574,6 +2607,7 @@
 /area/lv624/lazarus/research)
 "nj" = (
 /obj/effect/ai_node,
+/obj/effect/landmark/weed_node,
 /turf/open/floor/grass,
 /area/vapor_processing/caves/se)
 "nm" = (
@@ -2589,8 +2623,9 @@
 /turf/open/floor,
 /area/maintenance/substation)
 "nr" = (
-/obj/structure/table/flipped,
-/obj/item/radio,
+/obj/structure/table/reinforced,
+/obj/item/clothing/suit/armor/riot/old,
+/obj/item/clothing/head/helmet/riot/old,
 /turf/open/floor/tile/red/redtaupe{
 	dir = 1
 	},
@@ -2609,6 +2644,7 @@
 /area/lv624/lazarus/research)
 "nv" = (
 /obj/structure/table,
+/obj/machinery/cell_charger,
 /turf/open/floor,
 /area/maintenance/substation)
 "nw" = (
@@ -2712,7 +2748,11 @@
 /turf/open/floor/wood,
 /area/crew_quarters/sleep/bedrooms)
 "og" = (
-/obj/structure/table/flipped,
+/obj/structure/table/reinforced,
+/obj/item/clothing/suit/armor/bulletproof,
+/obj/item/clothing/suit/armor/bulletproof,
+/obj/item/clothing/head/helmet,
+/obj/item/clothing/head/helmet,
 /turf/open/floor/tile/red/redtaupe{
 	dir = 1
 	},
@@ -2752,6 +2792,7 @@
 "ow" = (
 /obj/structure/table,
 /obj/structure/cable,
+/obj/effect/spawner/random/toolbox,
 /turf/open/floor,
 /area/maintenance/substation)
 "oz" = (
@@ -2767,11 +2808,10 @@
 /turf/open/floor/wood,
 /area/crew_quarters/sleep/bedrooms)
 "oF" = (
-/obj/structure/closet/secure_closet/security,
-/turf/open/floor/tile/red/redtaupe{
-	dir = 8
-	},
-/area/lv624/lazarus/security)
+/obj/effect/ai_node,
+/obj/effect/landmark/weed_node,
+/turf/open/ground,
+/area/lv624/ground/caves/west1)
 "oG" = (
 /obj/machinery/power/terminal,
 /obj/structure/cable,
@@ -2950,7 +2990,6 @@
 /turf/open/floor/wood,
 /area/crew_quarters/sleep_male)
 "pD" = (
-/obj/item/weapon/gun/flamer/hydro_cannon,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -3132,6 +3171,12 @@
 /obj/item/reagent_containers/food/drinks/bottle/bluecuracao,
 /turf/open/floor/carpet,
 /area/lv624/lazarus/canteen)
+"qv" = (
+/obj/structure/closet/secure_closet/security,
+/turf/open/floor/tile/red/redtaupe{
+	dir = 10
+	},
+/area/space)
 "qw" = (
 /obj/item/stool,
 /turf/open/floor/carpet,
@@ -3205,7 +3250,7 @@
 /area/vapor_processing/cargo_maint_s)
 "qO" = (
 /obj/structure/cable,
-/obj/structure/closet/secure_closet/scientist,
+/obj/structure/closet/toolcloset,
 /turf/open/floor/plating,
 /area/vapor_processing/cargo_maint_s)
 "qP" = (
@@ -3236,7 +3281,7 @@
 /obj/machinery/power/apc/drained,
 /obj/structure/cable,
 /obj/structure/bed/chair/office/light{
-	dir = 1
+	dir = 8
 	},
 /turf/open/floor/plating,
 /area/vapor_processing/cargo_maint_s)
@@ -3597,7 +3642,6 @@
 /area/lv624/lazarus/comms)
 "ss" = (
 /obj/structure/cable,
-/obj/structure/closet/secure_closet/captain,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -3903,6 +3947,9 @@
 	dir = 8
 	},
 /area/vapor_processing/cargo2)
+"tT" = (
+/turf/closed/wall,
+/area/space)
 "tX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/layer1{
 	dir = 8;
@@ -3930,10 +3977,11 @@
 /turf/open/floor,
 /area/maintenance/substation)
 "ud" = (
-/obj/structure/closet/toolcloset,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 8
 	},
+/obj/structure/table,
+/obj/effect/spawner/random/toolbox,
 /turf/open/floor/wood,
 /area/crew_quarters/sleep/bedrooms)
 "uf" = (
@@ -3962,10 +4010,11 @@
 /turf/open/floor/wood,
 /area/crew_quarters/sleep_male)
 "ul" = (
-/obj/structure/closet/jcloset,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 5
 	},
+/obj/structure/table,
+/obj/effect/spawner/random/toolbox,
 /turf/open/floor/wood/broken,
 /area/crew_quarters/sleep/bedrooms)
 "us" = (
@@ -4091,6 +4140,12 @@
 	dir = 1
 	},
 /area/medical/medbay2)
+"vv" = (
+/obj/machinery/light,
+/obj/structure/table/flipped,
+/obj/effect/spawner/random/bomb_supply,
+/turf/open/floor,
+/area/storage/tools)
 "vw" = (
 /obj/effect/landmark/corpsespawner/syndicatecommando,
 /turf/open/ground,
@@ -4147,7 +4202,6 @@
 /area/lv624/lazarus/research)
 "wh" = (
 /obj/structure/table/flipped,
-/obj/effect/spawner/random/tech_supply,
 /obj/machinery/power/apc/drained,
 /obj/structure/cable,
 /turf/open/floor/tile/whiteyellow/corner,
@@ -4167,6 +4221,11 @@
 /obj/effect/landmark/lv624/fog_blocker/xeno_spawn,
 /turf/open/ground,
 /area/lv624/ground/caves/east1)
+"wn" = (
+/obj/effect/ai_node,
+/obj/structure/largecrate/supply/machine,
+/turf/open/floor,
+/area/shuttle/drop2/lz2)
 "wp" = (
 /obj/effect/ai_node,
 /turf/open/ground/grass/grass2,
@@ -4221,6 +4280,10 @@
 /obj/effect/ai_node,
 /turf/open/floor/prison/yellow,
 /area/lv624/lazarus/engineering)
+"wY" = (
+/obj/structure/closet/secure_closet/security,
+/turf/open/floor/tile/red/redtaupe,
+/area/space)
 "wZ" = (
 /obj/effect/landmark/xeno_resin_door,
 /obj/effect/landmark/weed_node,
@@ -4228,9 +4291,10 @@
 /turf/open/ground,
 /area/lv624/ground/caves/central2)
 "xc" = (
-/obj/machinery/computer/nuke_disk_generator/red,
-/turf/open/floor/plating,
-/area/lv624/lazarus/hydroponics)
+/obj/effect/ai_node,
+/obj/effect/landmark/weed_node,
+/turf/open/ground,
+/area/lv624/ground/caves/central2)
 "xg" = (
 /obj/effect/spawner/random/toolbox,
 /obj/structure/table,
@@ -4241,6 +4305,12 @@
 /area/crew_quarters/sleep/bedrooms)
 "xm" = (
 /obj/structure/closet/secure_closet/detective,
+/obj/machinery/door/window{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
 /turf/open/floor/tile/red/redtaupe{
 	dir = 6
 	},
@@ -4258,6 +4328,7 @@
 /area/shuttle/drop1/lz1)
 "xF" = (
 /obj/effect/decal/cleanable/blood,
+/obj/machinery/computer/nuke_disk_generator/red,
 /turf/open/floor/wood,
 /area/crew_quarters/sleep/bedrooms)
 "xG" = (
@@ -4277,6 +4348,10 @@
 /obj/effect/ai_node,
 /turf/open/floor/prison/plate,
 /area/lv624/lazarus/engineering)
+"xP" = (
+/obj/effect/landmark/xeno_resin_wall,
+/turf/open/ground,
+/area/lv624/ground/caves/east1)
 "xR" = (
 /obj/effect/decal/cleanable/blood,
 /obj/structure/cable,
@@ -4301,12 +4376,21 @@
 	dir = 6
 	},
 /area/lv624/lazarus/engineering)
+"ye" = (
+/obj/machinery/miner/damaged/platinum,
+/turf/open/ground,
+/area/lv624/ground/caves/east1)
 "yg" = (
 /obj/machinery/door/airlock/glass,
 /turf/open/floor/tile/whiteyellow/corner{
 	dir = 1
 	},
 /area/lv624/lazarus/quart)
+"yn" = (
+/obj/effect/ai_node,
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/ground,
+/area/lv624/ground/caves/east1)
 "ys" = (
 /obj/structure/window/reinforced,
 /obj/effect/landmark/corpsespawner/chef,
@@ -4370,6 +4454,10 @@
 	},
 /turf/open/ground/grass/grass2,
 /area/lv624/ground/compound/sw)
+"yZ" = (
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/ground,
+/area/vapor_processing/caves/se)
 "za" = (
 /obj/effect/ai_node,
 /turf/open/floor/plating,
@@ -4406,6 +4494,10 @@
 	},
 /turf/open/floor/tile/white,
 /area/medical/medbay2)
+"zC" = (
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/ground,
+/area/lv624/ground/compound/n)
 "zD" = (
 /obj/effect/ai_node,
 /turf/open/ground,
@@ -4425,6 +4517,11 @@
 	},
 /turf/open/floor/tile/whiteyellow/full,
 /area/lv624/lazarus/quart)
+"Ab" = (
+/turf/open/floor/tile/red/redtaupe{
+	dir = 8
+	},
+/area/space)
 "Ac" = (
 /obj/machinery/light{
 	dir = 1
@@ -4531,6 +4628,10 @@
 /obj/effect/decal/cleanable/blood/xtracks,
 /turf/open/floor,
 /area/maintenance/substation)
+"Bp" = (
+/obj/structure/cable,
+/turf/open/ground,
+/area/lv624/ground/compound/c)
 "Br" = (
 /obj/effect/ai_node,
 /turf/open/ground,
@@ -4563,6 +4664,9 @@
 /obj/effect/ai_node,
 /turf/open/ground,
 /area/lv624/ground/compound/se)
+"BX" = (
+/turf/open/floor/tile/red,
+/area/space)
 "BZ" = (
 /obj/effect/landmark/patrol_point{
 	id = "TGMC_24";
@@ -4574,7 +4678,6 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/effect/spawner/random/tech_supply,
 /turf/open/floor/wood,
 /area/lv624/lazarus/canteen)
 "Cd" = (
@@ -4654,6 +4757,11 @@
 	dir = 8
 	},
 /area/lv624/lazarus/quart)
+"CZ" = (
+/obj/structure/table/flipped,
+/obj/effect/spawner/random/toolbox,
+/turf/open/floor,
+/area/storage/tools)
 "Db" = (
 /obj/structure/table/mainship,
 /obj/item/toy/deck,
@@ -4733,8 +4841,8 @@
 /turf/open/floor/tile/white,
 /area/lv624/lazarus/comms)
 "Eb" = (
-/obj/machinery/robotic_fabricator,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/secure_closet/medical2,
 /turf/open/floor/tile/green/whitegreen{
 	dir = 1
 	},
@@ -4796,6 +4904,12 @@
 /obj/effect/ai_node,
 /turf/open/floor/wood,
 /area/crew_quarters/sleep/bedrooms)
+"EL" = (
+/obj/machinery/vending/weaponciv,
+/turf/open/floor/tile/red/redtaupe{
+	dir = 1
+	},
+/area/space)
 "EO" = (
 /obj/effect/ai_node,
 /turf/open/floor/grimy,
@@ -4810,12 +4924,12 @@
 /area/storage/tools)
 "ES" = (
 /obj/structure/table/flipped,
-/obj/effect/spawner/random/bomb_supply,
 /obj/machinery/atmospherics/components/unary/vent_pump/layer1{
 	dir = 8;
 	on = 1
 	},
 /obj/effect/decal/cleanable/blood,
+/obj/effect/spawner/random/toolbox,
 /turf/open/floor,
 /area/storage/tools)
 "Fa" = (
@@ -4852,6 +4966,10 @@
 	},
 /turf/open/ground,
 /area/vapor_processing/west_compound)
+"Fo" = (
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/ground,
+/area/lv624/ground/caves/central1)
 "Fp" = (
 /obj/effect/ai_node,
 /turf/open/floor/prison/yellow/full,
@@ -4873,13 +4991,17 @@
 /obj/machinery/door/airlock/glass,
 /turf/open/floor/carpet,
 /area/lv624/lazarus/canteen)
+"FE" = (
+/obj/machinery/miner/damaged/platinum,
+/turf/open/floor/grass,
+/area/vapor_processing/east_compound)
 "FG" = (
 /obj/effect/landmark/lv624/fog_blocker,
 /turf/open/ground/grass/grass2,
 /area/lv624/ground/compound/sw)
 "FJ" = (
 /obj/docking_port/stationary/crashmode,
-/turf/open/floor/grass,
+/turf/open/ground,
 /area/lv624/ground/compound/se)
 "FQ" = (
 /obj/effect/ai_node,
@@ -4904,6 +5026,11 @@
 	},
 /turf/open/ground,
 /area/lv624/ground/caves/central2)
+"Ge" = (
+/obj/effect/landmark/weed_node,
+/obj/effect/ai_node,
+/turf/open/ground,
+/area/lv624/ground/caves/east1)
 "Gh" = (
 /obj/machinery/door/poddoor/mainship{
 	id = "secure_blast";
@@ -4942,12 +5069,14 @@
 /area/lv624/lazarus/quart)
 "GI" = (
 /obj/effect/landmark/lv624/fog_blocker/xeno_spawn,
+/obj/effect/landmark/xeno_resin_door,
 /turf/open/ground,
 /area/lv624/ground/caves/central1)
 "GM" = (
-/obj/machinery/miner/damaged,
-/turf/open/ground/grass/grass2,
-/area/lv624/ground/compound/n)
+/obj/effect/landmark/lv624/fog_blocker/xeno_spawn,
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/ground,
+/area/lv624/ground/caves/central2)
 "GO" = (
 /turf/closed/mineral/smooth,
 /area/vapor_processing/caves/se)
@@ -4968,6 +5097,10 @@
 /obj/structure/cable,
 /turf/open/floor/grass,
 /area/lv624/ground/compound/c)
+"GY" = (
+/obj/effect/landmark/weed_node,
+/turf/open/floor/grass,
+/area/vapor_processing/caves/se)
 "Hb" = (
 /obj/structure/rack,
 /obj/effect/landmark/itemspawner/butler,
@@ -4984,6 +5117,10 @@
 	dir = 4
 	},
 /area/lv624/lazarus/engineering)
+"Hj" = (
+/obj/machinery/biogenerator,
+/turf/open/floor,
+/area/lv624/lazarus/research)
 "Hm" = (
 /obj/machinery/light{
 	dir = 4
@@ -5008,6 +5145,12 @@
 /obj/item/weapon/gun/shotgun/pump/cmb,
 /turf/open/ground,
 /area/lv624/ground/caves/central2)
+"HM" = (
+/obj/structure/cable,
+/obj/structure/table/flipped,
+/obj/effect/spawner/random/tech_supply,
+/turf/open/floor,
+/area/storage/tools)
 "HY" = (
 /obj/machinery/door/poddoor/timed_late/containment/landing_zone/lz2{
 	dir = 2
@@ -5024,10 +5167,25 @@
 "Ii" = (
 /turf/closed/mineral/smooth/indestructible,
 /area/lv624/ground/caves/west1)
+"Ik" = (
+/obj/machinery/door/window{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/marshal,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/tile/red/redtaupe{
+	dir = 4
+	},
+/area/lv624/lazarus/security)
 "Iu" = (
 /obj/machinery/computer/nuke_disk_generator/green,
 /turf/open/floor/prison/yellow/full,
 /area/lv624/lazarus/engineering)
+"IG" = (
+/turf/closed/mineral/smooth/indestructible,
+/area/lv624/lazarus/console)
 "IH" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor,
@@ -5072,6 +5230,10 @@
 	dir = 4
 	},
 /area/lv624/lazarus/comms)
+"Jn" = (
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/ground,
+/area/vapor_processing/east_compound)
 "Jo" = (
 /obj/structure/table/flipped,
 /obj/effect/spawner/random/tech_supply,
@@ -5171,6 +5333,12 @@
 "KE" = (
 /turf/closed/mineral/smooth/indestructible,
 /area/vapor_processing/east_compound)
+"KG" = (
+/obj/structure/cable,
+/obj/structure/table/flipped,
+/obj/effect/spawner/random/bomb_supply,
+/turf/open/floor,
+/area/storage/tools)
 "KH" = (
 /turf/open/ground,
 /area/lv624/lazarus/quartstorage)
@@ -5413,6 +5581,11 @@
 "MT" = (
 /turf/open/floor/tile/blue/whitebluecorner,
 /area/lv624/lazarus/comms)
+"Nb" = (
+/obj/structure/table,
+/obj/effect/spawner/random/bomb_supply,
+/turf/open/floor,
+/area/maintenance/substation)
 "Nd" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/ground,
@@ -5431,6 +5604,10 @@
 /obj/effect/spawner/random/toolbox,
 /turf/open/floor/wood,
 /area/crew_quarters/sleep_male)
+"No" = (
+/obj/structure/closet/secure_closet/engineering_electrical,
+/turf/open/floor,
+/area/maintenance/substation)
 "Nt" = (
 /obj/structure/cable,
 /obj/machinery/vending/nanomed,
@@ -5446,6 +5623,12 @@
 /obj/item/weapon/gun/pistol/holdout,
 /turf/open/ground,
 /area/lv624/ground/caves/central2)
+"Ny" = (
+/obj/structure/table,
+/obj/structure/cable,
+/obj/effect/spawner/random/powercell,
+/turf/open/floor,
+/area/maintenance/substation)
 "NA" = (
 /obj/effect/decal/cleanable/blood/oil,
 /obj/structure/largecrate,
@@ -5519,6 +5702,11 @@
 	dir = 8
 	},
 /area/lv624/lazarus/comms)
+"Oo" = (
+/obj/structure/table/flipped,
+/obj/effect/spawner/random/toolbox,
+/turf/open/floor/grimy,
+/area/lv624/lazarus/internal_affairs)
 "Op" = (
 /turf/open/floor/prison/yellow{
 	dir = 4
@@ -5557,7 +5745,7 @@
 /obj/effect/decal/warning_stripes{
 	pixel_y = 30
 	},
-/turf/open/floor/tile/dark,
+/turf/open/floor,
 /area/maintenance/substation)
 "OB" = (
 /obj/machinery/light,
@@ -5588,6 +5776,15 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plating,
 /area/medical/medbay2)
+"OO" = (
+/obj/effect/ai_node,
+/obj/effect/landmark/xeno_resin_wall,
+/turf/open/ground/grass/grass2,
+/area/lv624/ground/compound/se)
+"OU" = (
+/obj/effect/landmark/xeno_resin_wall,
+/turf/open/ground,
+/area/lv624/ground/caves/central1)
 "Pd" = (
 /obj/structure/bed/chair{
 	dir = 8
@@ -5595,7 +5792,6 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/effect/spawner/random/tech_supply,
 /turf/open/floor/wood,
 /area/shuttle/drop2/lz2)
 "Pf" = (
@@ -5657,6 +5853,10 @@
 /obj/machinery/miner/damaged,
 /turf/open/floor/grass,
 /area/vapor_processing/south_compound)
+"PJ" = (
+/obj/effect/landmark/xeno_resin_wall,
+/turf/open/ground/grass/grass2,
+/area/lv624/ground/compound/se)
 "PK" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/grass,
@@ -5712,6 +5912,10 @@
 /obj/effect/landmark/xeno_silo_spawn,
 /turf/open/ground,
 /area/vapor_processing/caves/se)
+"Qo" = (
+/obj/effect/landmark/weed_node,
+/turf/open/ground/grass/grass2,
+/area/lv624/ground/compound/se)
 "Qp" = (
 /obj/structure/bed/chair{
 	dir = 8
@@ -5719,7 +5923,6 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/effect/spawner/random/tech_supply,
 /turf/open/floor/wood,
 /area/shuttle/drop1/lz1)
 "Qq" = (
@@ -5745,6 +5948,10 @@
 	dir = 8
 	},
 /area/lv624/lazarus/engineering)
+"QH" = (
+/obj/machinery/miner/damaged,
+/turf/open/ground/grass/grass2,
+/area/lv624/ground/compound/c)
 "QK" = (
 /obj/effect/landmark/corpsespawner/security{
 	corpseuniform = /obj/item/clothing/under/colonist;
@@ -5759,7 +5966,6 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/effect/spawner/random/tech_supply,
 /turf/open/floor/wood,
 /area/lv624/lazarus/canteen)
 "QS" = (
@@ -5774,6 +5980,10 @@
 /obj/structure/cable,
 /turf/open/floor/tile/blue/whitebluecorner,
 /area/lv624/lazarus/comms)
+"Rc" = (
+/obj/effect/landmark/xeno_resin_wall,
+/turf/open/floor/grass,
+/area/lv624/ground/compound/n)
 "Rg" = (
 /obj/effect/landmark/xeno_resin_wall,
 /turf/open/ground,
@@ -5782,7 +5992,6 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/effect/spawner/random/tech_supply,
 /turf/open/floor/wood,
 /area/shuttle/drop1/lz1)
 "Rj" = (
@@ -5827,6 +6036,10 @@
 	},
 /turf/open/ground,
 /area/lv624/ground/caves/central2)
+"RM" = (
+/obj/structure/closet/toolcloset,
+/turf/open/floor,
+/area/maintenance/substation)
 "RQ" = (
 /turf/open/floor/prison/yellow{
 	dir = 10
@@ -5873,6 +6086,11 @@
 "Sx" = (
 /turf/closed/mineral/smooth/indestructible,
 /area/vapor_processing/caves/se)
+"SA" = (
+/obj/structure/table/flipped,
+/obj/effect/spawner/random/powercell,
+/turf/open/floor,
+/area/storage/tools)
 "SB" = (
 /obj/structure/cable,
 /obj/effect/ai_node,
@@ -5991,6 +6209,14 @@
 /obj/effect/landmark/weed_node,
 /turf/open/ground,
 /area/lv624/ground/caves/central2)
+"TW" = (
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/ground,
+/area/lv624/ground/compound/se)
+"TZ" = (
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/ground,
+/area/lv624/ground/caves/east1)
 "Ud" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/scorched/two,
@@ -6010,9 +6236,13 @@
 /area/lv624/lazarus/engineering)
 "Um" = (
 /obj/structure/table/flipped,
-/obj/effect/spawner/random/powercell,
+/obj/machinery/cell_charger,
 /turf/open/floor,
 /area/storage/tools)
+"Up" = (
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/floor/grass,
+/area/lv624/ground/compound/se)
 "Uu" = (
 /obj/machinery/door/poddoor/mainship{
 	dir = 2;
@@ -6077,6 +6307,10 @@
 	dir = 4
 	},
 /area/lv624/ground/compound/c)
+"UR" = (
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/ground/grass/grass2,
+/area/vapor_processing/east_compound)
 "UV" = (
 /obj/effect/ai_node,
 /turf/open/ground,
@@ -6094,9 +6328,9 @@
 /turf/open/floor/tile/green/whitegreen,
 /area/lv624/lazarus/medbay)
 "Vh" = (
-/obj/item/defibrillator,
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/defibrillator/civi,
 /turf/open/floor/tile/green/whitegreen{
 	dir = 10
 	},
@@ -6176,6 +6410,10 @@
 	},
 /turf/open/floor/plating/ground/dirt,
 /area/lv624/ground/caves/central2)
+"VT" = (
+/obj/machinery/vending/MarineMed/colonial,
+/turf/open/floor/tile/white,
+/area/medical/medbay2)
 "VU" = (
 /obj/structure/table/flipped,
 /turf/open/floor/prison/yellow{
@@ -6202,7 +6440,6 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/effect/spawner/random/tech_supply,
 /turf/open/floor/wood,
 /area/shuttle/drop2/lz2)
 "Wh" = (
@@ -6240,6 +6477,10 @@
 /obj/effect/ai_node,
 /turf/open/floor/prison/yellow/full,
 /area/lv624/lazarus/engineering)
+"WA" = (
+/obj/effect/landmark/weed_node,
+/turf/open/ground,
+/area/lv624/ground/caves/central1)
 "WE" = (
 /obj/structure/table/mainship,
 /obj/item/toy/deck,
@@ -6397,15 +6638,11 @@
 /turf/open/floor,
 /area/storage/tools)
 "Yf" = (
-/obj/structure/closet/emcloset,
-/obj/effect/landmark/corpsespawner/security{
-	corpsebelt = /obj/item/weapon/gun/revolver/cmb;
-	corpsesuit = /obj/item/clothing/suit/storage/CMB;
-	corpseuniform = /obj/item/clothing/under/CM_uniform;
-	name = "Deputy Maxwell Ligis"
-	},
-/turf/open/floor/plating,
-/area/vapor_processing/cargo_maint_s)
+/obj/effect/landmark/weed_node,
+/obj/effect/landmark/lv624/fog_blocker/xeno_spawn,
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/ground,
+/area/lv624/ground/caves/central2)
 "Yg" = (
 /turf/open/floor/prison/yellow/corner{
 	dir = 4
@@ -6435,6 +6672,17 @@
 /obj/effect/ai_node,
 /turf/open/floor/plating/dmg3,
 /area/lv624/lazarus/research)
+"Yw" = (
+/obj/structure/table,
+/obj/effect/spawner/random/toolbox,
+/turf/open/floor,
+/area/maintenance/substation)
+"Yy" = (
+/obj/machinery/door/airlock/mainship/generic{
+	dir = 2
+	},
+/turf/open/floor/prison/sterilewhite,
+/area/lv624/lazarus/fitness)
 "YB" = (
 /obj/effect/landmark/weed_node,
 /turf/open/ground,
@@ -6505,6 +6753,19 @@
 "ZA" = (
 /turf/closed/mineral/smooth/indestructible,
 /area/lv624/ground/compound/se)
+"ZC" = (
+/obj/effect/landmark/corpsespawner/security{
+	corpsebelt = /obj/item/weapon/gun/revolver/cmb;
+	corpsesuit = /obj/item/clothing/suit/storage/CMB;
+	corpseuniform = /obj/item/clothing/under/CM_uniform;
+	name = "Deputy Maxwell Ligis"
+	},
+/turf/open/floor/plating,
+/area/vapor_processing/cargo_maint_s)
+"ZE" = (
+/obj/effect/landmark/xeno_resin_door,
+/turf/open/ground/grass/grass2,
+/area/lv624/ground/compound/se)
 "ZH" = (
 /obj/effect/landmark/patrol_point{
 	id = "TGMC_12";
@@ -6513,9 +6774,9 @@
 /turf/open/floor,
 /area/shuttle/drop2/lz2)
 "ZJ" = (
-/obj/machinery/miner/damaged/platinum,
-/turf/open/floor/grass,
-/area/vapor_processing/east_compound)
+/obj/effect/landmark/xeno_resin_wall,
+/turf/open/ground,
+/area/lv624/ground/caves/west1)
 "ZO" = (
 /obj/effect/landmark/corpsespawner/miner{
 	corpseback = null;
@@ -6533,7 +6794,6 @@
 /turf/open/ground,
 /area/lv624/ground/compound/n)
 "ZX" = (
-/obj/effect/landmark/xeno_resin_door,
 /obj/effect/landmark/xeno_resin_door,
 /obj/effect/ai_node,
 /turf/open/ground,
@@ -6667,8 +6927,8 @@ ad
 ad
 ad
 ad
-ad
-ad
+az
+az
 ad
 ad
 ad
@@ -6769,9 +7029,9 @@ ad
 ad
 az
 ad
-ad
-ad
 az
+az
+ad
 ad
 ad
 ad
@@ -6795,11 +7055,11 @@ PG
 PG
 PG
 PG
-PG
-PG
-PG
-PG
-PG
+tT
+tT
+tT
+tT
+tT
 hT
 hT
 hT
@@ -6873,7 +7133,7 @@ ad
 av
 ad
 ad
-az
+ad
 ad
 Ll
 ad
@@ -6897,11 +7157,11 @@ PG
 PG
 PG
 PG
-PG
-PG
-PG
-PG
-PG
+tT
+ag
+Ab
+Ab
+qv
 hT
 jD
 jU
@@ -6912,7 +7172,7 @@ ki
 ki
 mS
 qF
-lJ
+lv
 lt
 me
 me
@@ -6999,15 +7259,15 @@ PG
 PG
 PG
 PG
-PG
-PG
-PG
-PG
-PG
+tT
+EL
+BX
+BX
+wY
 hT
 jE
 jV
-kk
+it
 hT
 hT
 ki
@@ -7103,8 +7363,8 @@ PG
 PG
 hT
 if
-oF
-oF
+KW
+KW
 ip
 hT
 jF
@@ -7385,8 +7645,8 @@ aq
 aq
 aZ
 ad
-ad
-ad
+cO
+cO
 cT
 dd
 dp
@@ -7410,7 +7670,7 @@ eK
 hT
 ih
 iu
-iu
+Ik
 xm
 hT
 jG
@@ -7488,7 +7748,7 @@ aq
 aW
 ad
 ad
-ad
+cO
 cT
 de
 dq
@@ -7590,7 +7850,7 @@ aq
 aX
 Ll
 ad
-cO
+ad
 ad
 df
 df
@@ -7793,7 +8053,7 @@ aq
 aq
 aZ
 ad
-cO
+ad
 ad
 ad
 cZ
@@ -8007,7 +8267,7 @@ bd
 ZT
 cs
 dX
-Ou
+VT
 Ou
 Wy
 Ou
@@ -8202,8 +8462,8 @@ aq
 aZ
 ad
 ad
-cO
 ad
+cO
 ae
 du
 dv
@@ -8305,7 +8565,7 @@ ai
 Ll
 ad
 Ll
-ad
+cO
 ae
 dv
 dv
@@ -8378,7 +8638,7 @@ PG
 (19,1,1) = {"
 PG
 ad
-ad
+av
 ad
 ad
 ad
@@ -8404,10 +8664,10 @@ ad
 ad
 ad
 ad
-az
 ad
-ad
-ad
+cO
+cO
+cO
 ae
 aC
 dL
@@ -8481,9 +8741,9 @@ PG
 PG
 ad
 ad
-av
 ad
-av
+ad
+ad
 ad
 ad
 ad
@@ -8508,8 +8768,8 @@ ad
 ad
 ad
 cP
-ad
-ad
+cO
+cO
 ae
 ae
 dM
@@ -8600,18 +8860,18 @@ az
 az
 az
 ad
-az
 ad
 ad
 ad
 ad
-az
-az
 ad
 ad
 ad
-Ll
 ad
+ad
+ad
+wn
+cO
 ae
 aC
 dL
@@ -8683,7 +8943,7 @@ PG
 "}
 (22,1,1) = {"
 PG
-ad
+av
 ad
 aN
 ad
@@ -8698,9 +8958,9 @@ aN
 ad
 ad
 Ll
-ad
-ad
-ad
+cO
+cO
+cO
 aN
 ad
 Ll
@@ -8712,8 +8972,8 @@ Ll
 aN
 ad
 Ll
-ad
-ad
+cO
+cO
 ae
 ba
 dv
@@ -8983,7 +9243,7 @@ lt
 lC
 lv
 lv
-Yf
+lA
 lt
 PG
 "}
@@ -9083,7 +9343,7 @@ lv
 lL
 lt
 pD
-lv
+ZC
 lv
 qb
 lt
@@ -9206,7 +9466,7 @@ bm
 ah
 aO
 cl
-xc
+bu
 bw
 bA
 bL
@@ -9401,7 +9661,7 @@ Ii
 ah
 ah
 ah
-ah
+wp
 bk
 ah
 ah
@@ -9522,15 +9782,15 @@ cs
 cs
 cs
 ah
-GM
+ah
 ah
 bm
 ah
 ah
-wp
+Pf
 cs
 Pf
-ah
+cs
 cs
 Pf
 cs
@@ -9629,10 +9889,10 @@ ah
 ah
 ah
 wp
-ah
 cs
-ah
-ah
+cs
+cs
+cs
 cs
 cs
 cs
@@ -9672,7 +9932,7 @@ lH
 Qr
 lQ
 lQ
-mK
+Um
 lH
 ki
 ki
@@ -9681,10 +9941,10 @@ ki
 ki
 ki
 nd
+RM
 nx
 nx
-nx
-nx
+No
 ne
 ki
 ki
@@ -9715,7 +9975,7 @@ BN
 ah
 ah
 ah
-ah
+wp
 ah
 ah
 ah
@@ -9732,7 +9992,7 @@ bQ
 ah
 ah
 cs
-ah
+cs
 cV
 cV
 cV
@@ -9771,10 +10031,10 @@ yV
 ki
 lU
 mf
-Qr
+Vk
 WR
 lQ
-mK
+CZ
 mP
 lH
 ki
@@ -9782,7 +10042,7 @@ ki
 ki
 ki
 nd
-nv
+Nb
 nx
 Mv
 nx
@@ -9834,7 +10094,7 @@ bQ
 ah
 cs
 cs
-ah
+cs
 cV
 dg
 dx
@@ -9871,25 +10131,25 @@ lo
 iX
 ki
 lH
-lV
-lQ
-Qr
-lQ
-lQ
-mK
+HM
+Vk
 lQ
 lQ
+lQ
+lQ
+CZ
+Vk
 lH
 ki
 ki
 nd
 nv
-nv
+Yw
 nx
 nx
 nx
 nx
-ow
+Ny
 nv
 nd
 lg
@@ -9910,8 +10170,8 @@ Ii
 Ii
 Ii
 Ii
-bb
-bb
+lJ
+lJ
 Ii
 Ii
 bf
@@ -9950,11 +10210,11 @@ eq
 eq
 UM
 eu
-ep
-GV
-ep
-ep
-Kj
+eu
+Bp
+eu
+eu
+UM
 eu
 eu
 eu
@@ -9973,13 +10233,13 @@ sw
 sC
 lH
 lO
-lV
-Qr
-Qr
+KG
 lQ
 lQ
-mK
-mK
+lQ
+lQ
+lQ
+lQ
 lQ
 rq
 lH
@@ -10017,8 +10277,8 @@ bb
 Ii
 Ii
 Ii
-bb
-bb
+lJ
+lJ
 Ii
 Ii
 bf
@@ -10033,8 +10293,8 @@ vb
 cx
 cx
 cx
-cx
-cx
+vb
+Yy
 cs
 cs
 Pf
@@ -10053,11 +10313,11 @@ eq
 eu
 eu
 eu
-GV
-ep
-ep
-ep
-ep
+Bp
+eu
+eu
+eu
+eu
 eu
 eu
 eu
@@ -10125,8 +10385,8 @@ Ii
 Ii
 Ii
 bf
+ah
 bf
-bm
 ah
 bQ
 kI
@@ -10228,7 +10488,7 @@ Ii
 Ii
 Ii
 Ii
-bm
+ah
 bf
 bQ
 kn
@@ -10247,9 +10507,9 @@ cY
 di
 dz
 dz
-dy
-dy
-dy
+dz
+dz
+dz
 cV
 ep
 ep
@@ -10280,12 +10540,12 @@ dB
 lH
 wC
 Um
-Um
-Um
+lQ
+lQ
 So
 lQ
-Vk
-Vk
+lQ
+lQ
 Vk
 ES
 lH
@@ -10324,13 +10584,13 @@ Ii
 Ii
 bb
 bb
-bb
+kk
 Ii
 Ii
 Ii
 Ii
 Ii
-bm
+ah
 bf
 bQ
 bR
@@ -10349,9 +10609,9 @@ cV
 dk
 dA
 dA
-dA
-dA
-dA
+dy
+Oo
+Oo
 cV
 ep
 ep
@@ -10381,14 +10641,14 @@ sz
 dB
 dB
 lH
-lQ
-lQ
+CZ
+Vk
 PZ
 sQ
 lQ
 lQ
-lQ
-lQ
+CZ
+SA
 lH
 le
 le
@@ -10419,7 +10679,7 @@ PG
 Ii
 Ii
 bb
-bb
+kk
 Ii
 Ii
 Ii
@@ -10432,7 +10692,7 @@ Ii
 Ii
 bb
 Vy
-bb
+lJ
 BN
 bQ
 bQ
@@ -10489,7 +10749,7 @@ lQ
 sQ
 lQ
 QT
-mP
+vv
 lH
 le
 le
@@ -10523,7 +10783,7 @@ Ii
 Vy
 bb
 bb
-Vy
+oF
 bb
 bb
 bb
@@ -10534,12 +10794,12 @@ Ii
 bb
 bb
 bb
-bb
+ZJ
 Ii
 bf
 bf
 cs
-cs
+Pf
 cs
 bf
 bf
@@ -10634,15 +10894,15 @@ Vy
 bb
 bb
 bb
-bb
+kk
 Vy
 Ii
 Ii
 Ii
 Ii
-bb
-bb
-bb
+lJ
+lJ
+lJ
 Ii
 bm
 bm
@@ -10754,7 +11014,7 @@ Ii
 BN
 bf
 bf
-ah
+cJ
 ah
 ah
 BN
@@ -10844,7 +11104,7 @@ Ii
 Ii
 Ii
 bb
-bb
+kk
 Vy
 bb
 Ii
@@ -10855,7 +11115,7 @@ Ii
 Ii
 Ii
 Ii
-bf
+Rc
 bf
 bf
 wp
@@ -10931,7 +11191,7 @@ Ii
 Ii
 bb
 bb
-bb
+kk
 Fa
 Ii
 Ii
@@ -10957,7 +11217,7 @@ Ii
 Ii
 bb
 Vy
-cs
+zC
 cs
 BN
 bk
@@ -11059,7 +11319,7 @@ Ii
 Ii
 bb
 bb
-bb
+lJ
 bf
 bf
 ah
@@ -11159,7 +11419,7 @@ Ii
 Ii
 bb
 bb
-bb
+kk
 bb
 Ii
 bf
@@ -11247,7 +11507,7 @@ bb
 bb
 bb
 bb
-bb
+kk
 bb
 bb
 bb
@@ -11429,7 +11689,7 @@ lh
 lh
 le
 le
-le
+PI
 le
 le
 le
@@ -11541,7 +11801,7 @@ PG
 Ii
 Ii
 bb
-bb
+kk
 Fa
 Fa
 Fa
@@ -11657,16 +11917,16 @@ Ii
 Fa
 yF
 yF
-bb
-bb
-bb
-bb
+ZJ
+ZJ
+ZJ
+ZJ
 yF
 yF
 Fa
 bb
 bb
-bb
+kk
 bb
 Ii
 Ii
@@ -11750,21 +12010,21 @@ bc
 bc
 bc
 bc
-WF
+xc
 bc
 Pr
 Pr
 IT
 IT
 Fq
-bc
+FX
+OU
+OU
 bB
 bB
-bB
-bB
-bB
-bB
-bB
+OU
+OU
+OU
 LJ
 PD
 BP
@@ -11967,7 +12227,7 @@ bB
 bB
 nA
 bB
-bB
+WA
 bB
 bB
 LJ
@@ -12284,9 +12544,9 @@ bB
 bB
 bB
 bB
+WA
 bB
-bB
-bB
+Fo
 bB
 bB
 bB
@@ -12362,7 +12622,7 @@ IT
 IT
 bc
 bc
-bc
+TV
 bc
 Pr
 IT
@@ -12388,7 +12648,7 @@ UD
 bB
 bB
 bB
-bB
+Fo
 bB
 bB
 bB
@@ -12466,12 +12726,12 @@ bc
 bc
 bc
 bc
-bc
+FX
 IT
 IT
 IT
-bc
-bc
+FX
+FX
 PD
 LJ
 GI
@@ -12483,14 +12743,14 @@ BP
 bB
 bB
 bB
-bB
+WA
 bB
 bB
 BP
 UD
 bB
 bB
-bB
+Fo
 bB
 UD
 bB
@@ -12568,11 +12828,11 @@ bc
 bc
 bc
 bc
-bc
-bc
-bc
-bc
-bc
+FX
+FX
+FX
+FX
+FX
 bc
 bB
 bB
@@ -12582,11 +12842,11 @@ PD
 PD
 PD
 BP
-bB
-bB
-bB
-bB
-bB
+OU
+Fo
+Fo
+Fo
+OU
 BP
 BP
 BP
@@ -12666,8 +12926,8 @@ Pr
 Pr
 IT
 IT
-bc
-bc
+FX
+FX
 bc
 bc
 bc
@@ -12678,7 +12938,7 @@ bc
 bc
 bB
 bB
-bB
+WA
 bB
 PD
 PD
@@ -12724,8 +12984,8 @@ et
 eq
 lf
 lf
-le
-le
+lh
+lh
 le
 le
 lH
@@ -12769,12 +13029,12 @@ Pr
 IT
 IT
 IT
-bc
+FX
 WF
 bc
 bc
 bc
-bc
+TV
 bc
 bc
 bc
@@ -12820,14 +13080,14 @@ rM
 fY
 ep
 et
-et
+QH
 et
 ep
 eq
 le
 le
-le
-le
+lh
+lh
 le
 le
 lH
@@ -12871,7 +13131,7 @@ Pr
 IT
 IT
 IT
-bc
+FX
 bc
 bc
 bc
@@ -12928,8 +13188,8 @@ eq
 ep
 le
 le
-le
-le
+lh
+lh
 le
 lT
 mj
@@ -12973,14 +13233,14 @@ Pr
 IT
 IT
 IT
+FX
 bc
 bc
 bc
 bc
 bc
-bc
-bc
-bc
+FX
+FX
 bc
 bB
 bB
@@ -12990,7 +13250,7 @@ bB
 bB
 bB
 bB
-bB
+WA
 bB
 BP
 LJ
@@ -13005,9 +13265,9 @@ BP
 BP
 BP
 BP
-bB
-bB
-bB
+Fo
+Fo
+OU
 BP
 BP
 eu
@@ -13030,7 +13290,7 @@ eq
 ep
 le
 ls
-le
+lh
 lh
 lT
 pI
@@ -13075,13 +13335,13 @@ Pr
 IT
 IT
 IT
+FX
 bc
 bc
 bc
-bc
-bc
-bc
-bc
+FX
+FX
+FX
 Pr
 Pr
 BP
@@ -13091,9 +13351,9 @@ bB
 Va
 bB
 bB
-bB
-bB
-bB
+OU
+Fo
+Fo
 BP
 LJ
 bB
@@ -13130,10 +13390,10 @@ ep
 ep
 ep
 ep
-le
-le
-le
-le
+lh
+lh
+lh
+lh
 lT
 lZ
 ml
@@ -13176,12 +13436,12 @@ Pr
 Pr
 IT
 IT
+FX
+FX
 bc
 bc
-bc
-bc
-bc
-bc
+FX
+FX
 Pr
 Pr
 Pr
@@ -13193,7 +13453,7 @@ PD
 BP
 bB
 bB
-bB
+Fo
 bB
 bB
 bB
@@ -13232,7 +13492,7 @@ fY
 SX
 eN
 eO
-li
+lj
 FJ
 lj
 li
@@ -13278,7 +13538,7 @@ Pr
 Pr
 IT
 IT
-bc
+FX
 bc
 bc
 bc
@@ -13295,7 +13555,7 @@ PD
 PD
 BP
 bB
-bB
+Fo
 bB
 bB
 bB
@@ -13333,9 +13593,9 @@ fY
 ho
 fY
 eN
-eN
+eO
 lj
-li
+lj
 li
 li
 qG
@@ -13379,10 +13639,10 @@ Pr
 Pr
 Pr
 IT
+FX
+FX
 bc
-bc
-bc
-bc
+TV
 bc
 Pr
 IT
@@ -13397,7 +13657,7 @@ PD
 PD
 PD
 BP
-bB
+OU
 bB
 UD
 bB
@@ -13436,7 +13696,7 @@ wX
 Bg
 eO
 eO
-li
+lj
 li
 yc
 li
@@ -13481,7 +13741,7 @@ Pr
 Pr
 Pr
 IT
-bc
+FX
 bc
 bc
 bc
@@ -13508,7 +13768,7 @@ bB
 uM
 bB
 bB
-bB
+WA
 bB
 bB
 LJ
@@ -13548,7 +13808,7 @@ lT
 mA
 mw
 Wk
-Wk
+mw
 mo
 SH
 DO
@@ -13560,7 +13820,7 @@ mo
 nQ
 sU
 Wk
-Wk
+Hj
 mo
 uz
 mo
@@ -13583,9 +13843,9 @@ Pr
 Pr
 Pr
 IT
+FX
 bc
-bc
-bc
+WF
 bc
 Pr
 Pr
@@ -13685,10 +13945,10 @@ Pr
 Pr
 Pr
 IT
+FX
 bc
 bc
 bc
-WF
 Pr
 IT
 IT
@@ -13787,7 +14047,7 @@ Pr
 Pr
 Pr
 IT
-bc
+FX
 bc
 bc
 bc
@@ -13843,7 +14103,7 @@ eN
 eM
 eN
 eN
-ZJ
+eN
 li
 li
 li
@@ -13889,7 +14149,7 @@ Pr
 Pr
 Pr
 IT
-bc
+FX
 bc
 bc
 bc
@@ -13991,9 +14251,9 @@ Pr
 Pr
 Pr
 IT
+FX
 bc
-bc
-bc
+WF
 bc
 Pr
 IT
@@ -14018,7 +14278,7 @@ Hc
 bE
 bE
 bE
-bE
+bn
 Hc
 bE
 bE
@@ -14093,16 +14353,16 @@ Pr
 Pr
 Pr
 IT
-bc
-bc
-bc
-bc
+FX
+KV
+KV
+FX
 Pr
 IT
 IT
-bc
-bc
-bc
+KV
+KV
+FX
 TV
 bE
 bE
@@ -14195,7 +14455,7 @@ Pr
 Pr
 Pr
 IT
-bc
+FX
 TV
 bc
 bc
@@ -14204,7 +14464,7 @@ IT
 IT
 bc
 WF
-bc
+KV
 bc
 bE
 bE
@@ -14297,7 +14557,7 @@ Pr
 Pr
 Pr
 IT
-bc
+FX
 bc
 bc
 bc
@@ -14306,8 +14566,8 @@ Pr
 bc
 bc
 bc
+KV
 bc
-bc
 bE
 bE
 bE
@@ -14320,10 +14580,10 @@ BJ
 BJ
 Ww
 Ww
-bE
-bE
-bE
-bE
+TZ
+TZ
+TZ
+TZ
 Ww
 Ww
 bE
@@ -14332,7 +14592,7 @@ bE
 bE
 bE
 bE
-bE
+TZ
 eN
 eU
 eO
@@ -14399,7 +14659,7 @@ Pr
 Pr
 Pr
 IT
-bc
+FX
 bc
 bc
 WF
@@ -14433,8 +14693,8 @@ bE
 bE
 bE
 bE
-bE
-bE
+bn
+TZ
 eO
 eO
 eO
@@ -14501,7 +14761,7 @@ Pr
 Pr
 Pr
 IT
-bc
+FX
 bc
 bc
 bc
@@ -14536,7 +14796,7 @@ bE
 Hc
 bE
 bE
-bE
+TZ
 eO
 eO
 Lj
@@ -14638,7 +14898,7 @@ Ww
 Ww
 bE
 bE
-bE
+TZ
 eO
 eO
 eO
@@ -14741,7 +15001,7 @@ Ww
 Ww
 Ww
 Ww
-eN
+FE
 eM
 fl
 eM
@@ -14810,10 +15070,10 @@ KV
 bc
 Tt
 DN
-DN
-DN
-DN
-DN
+GM
+GM
+GM
+GM
 DN
 DN
 bc
@@ -14831,7 +15091,7 @@ BJ
 Ww
 bE
 bE
-bE
+bn
 bE
 Ww
 BJ
@@ -14917,24 +15177,24 @@ bc
 bc
 bc
 bc
-DN
+GM
 bc
-FX
+KV
 Lk
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+BJ
 BJ
 Ww
-bE
-bE
-bE
-bE
-bE
-BJ
-BJ
-Ww
-bE
-bE
-Hc
-bE
+TZ
+TZ
+yn
+TZ
 Ww
 BJ
 BJ
@@ -14993,7 +15253,7 @@ lj
 lj
 lj
 lj
-lj
+zD
 lj
 lj
 lj
@@ -15019,12 +15279,12 @@ TV
 Rm
 bc
 bc
-Tt
+Yf
 WF
 ZX
 dR
-BJ
-Ww
+bE
+bE
 bE
 bE
 bE
@@ -15123,7 +15383,7 @@ DN
 DN
 DN
 bc
-FX
+KV
 KQ
 bE
 bE
@@ -15284,7 +15544,7 @@ ll
 ll
 KK
 li
-ll
+jw
 ll
 ll
 li
@@ -15337,8 +15597,8 @@ bE
 bE
 BJ
 Ww
-bE
-bE
+xP
+xP
 bE
 bE
 bE
@@ -15350,13 +15610,13 @@ bE
 bE
 Hc
 bE
+TZ
 bE
 bE
+Ge
 bE
 bE
-bE
-bE
-bE
+TZ
 bE
 Px
 eM
@@ -15426,9 +15686,9 @@ bc
 bc
 bc
 bc
-bc
-bc
-bc
+FX
+FX
+FX
 IT
 BJ
 BJ
@@ -15440,25 +15700,25 @@ BJ
 BJ
 Ww
 bE
+TZ
 bE
 bE
 bE
 bE
 bE
 bE
+bn
+bE
+bE
+bE
+bE
+TZ
 bE
 bE
 bE
 bE
 bE
-bE
-bE
-bE
-bE
-bE
-bE
-bE
-fB
+yZ
 fB
 eN
 eM
@@ -15493,16 +15753,16 @@ lm
 lm
 ll
 KK
+ZE
 ll
 ll
 ll
 ll
-ll
-KK
-ll
-ll
-ll
-ll
+OO
+ZE
+ZE
+ZE
+PJ
 lm
 lm
 lm
@@ -15528,7 +15788,7 @@ bc
 WF
 TV
 bc
-bc
+KV
 bc
 bc
 WF
@@ -15542,7 +15802,7 @@ BJ
 Ww
 bE
 bE
-bE
+TZ
 bE
 bE
 bE
@@ -15560,7 +15820,7 @@ Ww
 Ww
 Ww
 Ww
-fB
+Rg
 Sx
 Sx
 eN
@@ -15586,32 +15846,32 @@ ll
 lm
 ll
 lm
-lm
+ll
 ll
 yc
 ll
+ZE
+ll
+ll
+KK
+ll
+lm
+lm
+ll
+ll
+lm
+lm
+KK
+ll
+ll
+ll
 ll
 ll
 ll
 KK
-ll
 lm
-lm
-ll
-ll
-lm
-lm
-KK
-ll
-ll
-ll
-ll
-ll
-ll
-KK
-lm
-lm
-lm
+ZE
+ZE
 lm
 KK
 PG
@@ -15630,7 +15890,7 @@ bc
 bc
 bc
 bc
-bc
+KV
 bc
 bc
 bc
@@ -15644,7 +15904,7 @@ Ww
 Ww
 Hc
 bE
-bE
+xP
 bE
 Hc
 bE
@@ -15688,13 +15948,13 @@ ll
 ll
 lm
 lm
-li
-li
+ZE
+Up
 lm
+ZE
+PJ
 ll
-ll
-ll
-ll
+Qo
 ll
 lm
 lm
@@ -15707,7 +15967,7 @@ ll
 li
 li
 lj
-ll
+Qo
 ll
 ll
 ll
@@ -15799,10 +16059,10 @@ ll
 ll
 ll
 lm
-ll
-ll
-ll
-ll
+ZE
+ZE
+PJ
+ZE
 lm
 ll
 li
@@ -15814,11 +16074,11 @@ ll
 ll
 ll
 ll
-ll
+Qo
 ll
 ll
 lm
-ll
+ZE
 PG
 "}
 (92,1,1) = {"
@@ -15842,7 +16102,7 @@ bE
 Hc
 bE
 bE
-bE
+TZ
 bE
 bE
 bE
@@ -15872,10 +16132,10 @@ Sx
 Sx
 Sx
 Sx
-eN
-eM
-eN
-Px
+aU
+UR
+eO
+VN
 eN
 eM
 eM
@@ -15903,8 +16163,8 @@ ll
 KK
 ll
 ll
+ZE
 ll
-lm
 ll
 XI
 li
@@ -15944,7 +16204,7 @@ Ww
 bE
 bE
 bE
-bE
+TZ
 bE
 bE
 bE
@@ -15954,7 +16214,7 @@ BJ
 Ww
 bE
 bE
-bE
+ye
 bE
 bE
 bE
@@ -15975,7 +16235,7 @@ WI
 fB
 fB
 fB
-eO
+Jn
 VN
 eU
 eU
@@ -15995,7 +16255,7 @@ lm
 li
 li
 lj
-li
+XI
 ll
 ll
 ll
@@ -16005,8 +16265,8 @@ ll
 ll
 ll
 ll
-lm
-lm
+ZE
+ll
 ll
 li
 yc
@@ -16060,7 +16320,7 @@ bE
 bE
 bE
 bE
-bE
+bn
 bE
 bE
 bE
@@ -16075,9 +16335,9 @@ Sx
 fB
 fB
 fB
+YB
 fB
-fB
-fB
+Rg
 eU
 eU
 eN
@@ -16104,7 +16364,7 @@ ll
 ll
 lm
 ll
-ll
+Qo
 ll
 li
 lm
@@ -16122,7 +16382,7 @@ lm
 lm
 yv
 ll
-ll
+Qo
 li
 BZ
 PG
@@ -16173,7 +16433,7 @@ bE
 bE
 bE
 fB
-fB
+yZ
 fB
 fB
 fB
@@ -16209,7 +16469,7 @@ ll
 ll
 ll
 li
-li
+Up
 li
 Xa
 NK
@@ -16224,7 +16484,7 @@ ll
 ll
 ll
 li
-li
+lW
 li
 PG
 PG
@@ -16268,14 +16528,14 @@ bE
 bE
 Hc
 bE
-bE
+TZ
 bE
 Hc
 bE
-bE
+bn
 bE
 fB
-fB
+yZ
 fB
 WI
 Sx
@@ -16284,10 +16544,10 @@ Sx
 Sx
 Sx
 Sx
-eN
-eM
-eM
-eN
+aU
+UR
+UR
+gA
 eU
 eU
 eO
@@ -16300,9 +16560,9 @@ ZA
 ZA
 ZA
 ZA
-lj
-lj
-lj
+TW
+TW
+TW
 lm
 lm
 lm
@@ -16311,7 +16571,7 @@ ll
 KK
 ll
 li
-li
+Up
 li
 Xa
 WS
@@ -16370,7 +16630,7 @@ bE
 bE
 bE
 bE
-bE
+TZ
 bE
 bE
 bE
@@ -16392,7 +16652,7 @@ eN
 eN
 eN
 KE
-eO
+Jn
 eU
 ZA
 ZA
@@ -16426,7 +16686,7 @@ Pv
 Xa
 ll
 li
-li
+XI
 li
 Xn
 PG
@@ -16483,12 +16743,12 @@ Sx
 Sx
 WI
 fB
+YB
 fB
 fB
 fB
 fB
-fB
-fB
+yZ
 fB
 jC
 nj
@@ -16503,13 +16763,13 @@ fB
 fB
 fB
 WI
-fB
+YB
 fB
 fB
 Sx
 jC
 jC
-jC
+GY
 jC
 jC
 jC
@@ -16531,9 +16791,9 @@ li
 li
 PG
 PG
-PG
-PG
-PG
+IG
+IG
+IG
 "}
 (99,1,1) = {"
 PG
@@ -16590,6 +16850,7 @@ fB
 fB
 fB
 fB
+yZ
 fB
 fB
 fB
@@ -16598,8 +16859,7 @@ fB
 fB
 fB
 fB
-fB
-fB
+YB
 fB
 fB
 fB
@@ -16633,9 +16893,9 @@ PG
 PG
 PG
 PG
-PG
-PG
-PG
+IG
+bT
+IG
 "}
 (100,1,1) = {"
 PG
@@ -16735,7 +16995,7 @@ PG
 PG
 PG
 PG
-PG
-PG
-PG
+IG
+IG
+IG
 "}
