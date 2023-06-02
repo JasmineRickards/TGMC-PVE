@@ -149,8 +149,12 @@ Godspeed, captain! And remember, you are not above the law."})
 			new_human.wear_id.paygrade = "O6"
 		if(1501 to 7500) // 25hrs
 			new_human.wear_id.paygrade = "O7"
-		if(7501 to INFINITY) //125 hrs
+		if(7501 to 12500) //125 hrs
 			new_human.wear_id.paygrade = "O8"
+		if(12001 to 18000) //175 hrs
+			new_human.wear_id.paygrade = "O9"
+		if(18001 to INFINITY) //300 hrs
+			new_human.wear_id.paygrade = "O10"
 
 //Field Commander
 /datum/job/terragov/command/fieldcommander
@@ -215,12 +219,16 @@ Make the TGMC proud!"})
 	if(!playtime_mins || playtime_mins < 1 )
 		return
 	switch(playtime_mins)
-		if(0 to 1500) //starting
+		if(0 to 600) //starting
 			new_human.wear_id.paygrade = "O3"
-		if(1500 to 7500) // 25 hrs
+		if(601 to 1500) // 10 hrs
+			new_human.wear_id.paygrade = "O4"
+		if(1500 to 6000) // 25 hrs
 			new_human.wear_id.paygrade = "MO4"
-		if(7501 to INFINITY) // 125 hrs
+		if(6001 to 12000) // 100 hrs
 			new_human.wear_id.paygrade = "MO5"
+		if(12001 to INFINITY) // 200 hrs
+			new_human.wear_id.paygrade = "MO6"
 
 
 /datum/outfit/job/command/fieldcommander
@@ -255,7 +263,7 @@ Make the TGMC proud!"})
 //Staff Officer
 /datum/job/terragov/command/staffofficer
 	title = STAFF_OFFICER
-	paygrade = "O3"
+	paygrade = "O1"
 	comm_title = "SO"
 	total_positions = 4
 	access = list(ACCESS_MARINE_BRIDGE, ACCESS_MARINE_BRIG, ACCESS_MARINE_CARGO, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_LOGISTICS, ACCESS_MARINE_ALPHA, ACCESS_MARINE_BRAVO, ACCESS_MARINE_CHARLIE, ACCESS_MARINE_DELTA)
@@ -308,11 +316,15 @@ You are in charge of logistics and the overwatch system. You are also in line to
 	if(!playtime_mins || playtime_mins < 1 )
 		return
 	switch(playtime_mins)
-		if(0 to 1500) // starting
-			new_human.wear_id.paygrade = "O3"
+		if(0 to 600) // starting
+			new_human.wear_id.paygrade = "O1"
+		if(601 to 1500) // 10 hrs
+			new_human.wear_id.paygrade = "O2"
 		if(1501 to 3000) // 25 hrs
+			new_human.wear_id.paygrade = "O3"
+		if(3001 to 6000) // 50 hrs
 			new_human.wear_id.paygrade = "O4"
-		if(3001 to INFINITY) // 50 hrs
+		if(6001 to INFINITY) // 100 hrs
 			new_human.wear_id.paygrade = "O5"
 
 /datum/outfit/job/command/staffofficer
@@ -343,7 +355,7 @@ You are in charge of logistics and the overwatch system. You are also in line to
 //Military Police
 /datum/job/terragov/police/officer
 	title = MASTER_AT_ARMS
-	paygrade = "PO"
+	paygrade = "E5"
 	comm_title = "MAA"
 	total_positions = 5
 	access = list(ACCESS_MARINE_BRIG, ACCESS_MARINE_BRIDGE, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_LOGISTICS, ACCESS_MARINE_PREP)
@@ -360,7 +372,25 @@ You are in charge of logistics and the overwatch system. You are also in line to
 	to_chat(M, {"Your primary job is to make sure the groundside HQ remains in a useable condition.
 In addition, you are tasked with the security of high-ranking personnel, including the command staff. Keep them safe!"})
 
-
+/datum/job/terragov/police/officer/after_spawn(mob/living/carbon/new_mob, mob/user, latejoin = FALSE)
+	. = ..()
+	if(!ishuman(new_mob))
+		return
+	var/mob/living/carbon/human/new_human = new_mob
+	var/playtime_mins = user?.client?.get_exp(title)
+	if(!playtime_mins || playtime_mins < 1 )
+		return
+	switch(playtime_mins)
+		if(0 to 600) // starting
+			new_human.wear_id.paygrade = "E5"
+		if(601 to 1500) // 10 hrs
+			new_human.wear_id.paygrade = "E6"
+		if(1501 to 3000) // 25 hrs
+			new_human.wear_id.paygrade = "E7"
+		if(3001 to 9000) // 50 hrs
+			new_human.wear_id.paygrade = "E8"
+		if(9001 to INFINITY) // 150 hrs
+			new_human.wear_id.paygrade = "E8E"
 
 /datum/outfit/job/police/officer
 	name = MASTER_AT_ARMS
@@ -403,6 +433,24 @@ In addition, you are tasked with the security of high-ranking personnel, includi
 Failure to do so may result in a job ban.
 You lead the Masters at Arms, ensure that the ship and FOB does not fall, no matter what!
 In addition, you are tasked with the security of high-ranking personnel, including the command staff. Keep them safe!"})
+
+/datum/job/terragov/police/officer/after_spawn(mob/living/carbon/new_mob, mob/user, latejoin = FALSE)
+	. = ..()
+	if(!ishuman(new_mob))
+		return
+	var/mob/living/carbon/human/new_human = new_mob
+	var/playtime_mins = user?.client?.get_exp(title)
+	if(!playtime_mins || playtime_mins < 1 )
+		return
+	switch(playtime_mins)
+		if(0 to 600) // starting
+			new_human.wear_id.paygrade = "O2"
+		if(601 to 3000) // 10 hrs
+			new_human.wear_id.paygrade = "O3"
+		if(3001 to 6000) // 50 hrs
+			new_human.wear_id.paygrade = "O4"
+		if(6001 to INFINITY) // 100 hrs
+			new_human.wear_id.paygrade = "O5"
 
 /datum/outfit/job/police/chief
 	name = COMMAND_MASTER_AT_ARMS
@@ -471,12 +519,16 @@ In addition, you are tasked with the security of high-ranking personnel, includi
 	switch(playtime_mins)
 		if(0 to 600) // starting
 			new_human.wear_id.paygrade = "WO"
-		if(601 to 3000) // 10 hrs
+		if(601 to 1500) // 10 hrs
 			new_human.wear_id.paygrade = "CWO"
-		if(3001 to 6000) // 50 hrs
+		if(1501 to 3000) // 25 hrs
 			new_human.wear_id.paygrade = "O1"
-		if(6001 to INFINITY) // 100 hrs
+		if(3001 to 6000) // 50 hrs
 			new_human.wear_id.paygrade = "O2"
+		if(6001 to 12000) // 100 hrs
+			new_human.wear_id.paygrade = "O3"
+		if(12001 to INFINITY) // 200 hrs
+			new_human.wear_id.paygrade = "O4"
 
 /datum/job/terragov/command/pilot/radio_help_message(mob/M)
 	. = ..()
