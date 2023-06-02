@@ -438,6 +438,41 @@
 		/obj/item/reagent_containers/hypospray,
 	)
 
+/obj/item/storage/pouch/medkit/marsoc
+	name = "tactical medkit pouch"
+	desc = "Black with red stripes medical pouch. More pouches per pouches!"
+	icon_state = "socmed"
+	storage_slots = 14
+	can_hold = list(
+		/obj/item/healthanalyzer,
+		/obj/item/reagent_containers/dropper,
+		/obj/item/reagent_containers/pill,
+		/obj/item/reagent_containers/glass/bottle,
+		/obj/item/reagent_containers/syringe,
+		/obj/item/storage/pill_bottle,
+		/obj/item/stack/medical,
+		/obj/item/storage/pill_bottle/packet,
+		/obj/item/reagent_containers/hypospray,
+		/obj/item/tweezers,
+	)
+
+/obj/item/storage/pouch/medkit/marsoc/Initialize()
+	. = ..()
+	new /obj/item/reagent_containers/hypospray/autoinjector/combat_advanced(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/combat_advanced(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/combat_advanced(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/elite(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/peridaxon_plus(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/dexalinplus(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/quickclotplus(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/imidazoline(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/alkysine(src)
+	new /obj/item/stack/medical/heal_pack/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/heal_pack/advanced/burn_pack(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/healthanalyzer(src)
+	new /obj/item/tweezers(src)
+
 /obj/item/storage/pouch/medkit/survivor/Initialize()
 	. = ..()
 	new /obj/item/reagent_containers/glass/bottle/virilynth(src)
@@ -768,6 +803,23 @@
 	new /obj/item/tool/weldingtool (src)
 	new /obj/item/tool/wrench (src)
 	new /obj/item/tool/crowbar (src)
+
+/obj/item/storage/pouch/tools/marsoc
+	name = "tactical tools pouch"
+	desc = "Tactically looking pouch for tools."
+	storage_slots = 8
+	max_w_class = 3
+	icon_state = "soctools"
+
+/obj/item/storage/pouch/tools/marsoc/full/Initialize()
+	. = ..()
+	new /obj/item/tool/screwdriver (src)
+	new /obj/item/tool/wirecutters/tactical (src)
+	new /obj/item/tool/weldingtool/hugetank (src)
+	new /obj/item/tool/wrench (src)
+	new /obj/item/tool/crowbar/tactical(src)
+	new /obj/item/stack/cable_coil(src)
+	new /obj/item/multitool(src)
 
 /obj/item/storage/pouch/tools/som
 	desc = "It's designed to hold maintenance tools - screwdriver, wrench, cable coil, etc. It also has a hook for an entrenching tool. Made with traditional SOM leather."

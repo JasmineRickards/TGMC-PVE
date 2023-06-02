@@ -166,6 +166,14 @@
 	default_ammo = /datum/ammo/bullet/rifle/heavy/ap
 	icon_state_mini = "mag_rifle_big"
 
+/obj/item/ammo_magazine/rifle/m41a/marsoc
+	name = "\improper M40-SD magazine (10x24mm)"
+	desc = "A semi-round box of rounds for the M40-SD Heavy Pulse Rifle."
+	icon_state = "m40_sd"
+	max_rounds = 250
+	icon_state_mini = "mag_rifle_big"
+	default_ammo = /datum/ammo/bullet/rifle/heavy/ap
+
 /obj/item/ammo_magazine/rifle/m41a/captain
 	name = "\improper M46C high-impact magazine (10x24mm)"
 	desc = "A semi-rectangular box of rounds for the M46C Pulse Rifle. This one is loaded with high-impact rounds."

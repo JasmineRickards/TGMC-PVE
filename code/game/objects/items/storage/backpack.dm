@@ -360,6 +360,13 @@
 		/obj/item/stack/sandbags,
 	)
 
+/obj/item/storage/backpack/marine/marsoc
+	name = "\improper MARSOC tactical rucksack"
+	desc = "With this backpack, you feel like you'll be able to wear planet on yourself."
+	icon_state = "tacrucksack"
+	item_state = "tacrucksack"
+	max_storage_space = 55
+
 /obj/item/storage/backpack/marine/satchel
 	name = "\improper TGMC satchel"
 	desc = "A heavy-duty satchel carried by some TGMC soldiers and support personnel."

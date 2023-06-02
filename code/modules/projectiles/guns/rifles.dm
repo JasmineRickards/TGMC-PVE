@@ -581,9 +581,41 @@
 		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old,
 		)
 
+/obj/item/weapon/gun/rifle/m41a/old/marsoc
+	name = "\improper M40-SD heavy pulse rifle"
+	desc = "Very tactical gun given to the unheard TGMC Marine Special Operation Force. This model is able to be loaded with nearly any M41A magazines."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "m40sd"
+	item_state = "m40sd"
+	caliber = CALIBER_10X24_CASELESS
+	fire_sound = "gun_silenced"
+	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
+	unload_sound = 'sound/weapons/guns/interact/m40sd_unload.ogg'
+	reload_sound = 'sound/weapons/guns/interact/m40sd_reload.ogg'
+	aim_slowdown = 0.2
+	wield_delay = 0.2 SECONDS
+	max_shells = 99 //codex
+	damage_mult = 2.5
+	attachable_allowed = list(/obj/item/attachable/magnetic_harness)
+	starting_attachment_types = list(/obj/item/attachable/magnetic_harness)
+	default_ammo_type = /obj/item/ammo_magazine/rifle/m41a/marsoc
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/m41a/mk2,
+		/obj/item/ammo_magazine/rifle/m41a/mk2/extended,
+		/obj/item/ammo_magazine/rifle/m41a/mk2/ap,
+		/obj/item/ammo_magazine/rifle/m41a/marsoc,
+		)
+	burst_amount = 6
+	aim_fire_delay = 0.4 SECONDS
+	burst_delay = 0.15 SECONDS
+	autoburst_delay = 0.125 SECONDS
+	actions_types = list(/datum/action/item_action/aim_mode)
+	scatter = 0
+	fire_delay = 0.125 SECONDS
+
 /obj/item/weapon/gun/rifle/m41a/captain
 	name = "\improper M46C pulse rifle"
-	desc = "Luxury version of the M41A pulse rifle made for high ranking officer. Uses IFF system like the smartgun."
+	desc = "Luxury version of the M41A pulse rifle made for high ranking officer. Uses IFF system like the smartgun. Can be loaded with nearly any M41A magazine"
 	icon = 'icons/Marine/gun64.dmi'
 	icon_state = "m46c"
 	item_state = "m46c"

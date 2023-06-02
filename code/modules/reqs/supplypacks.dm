@@ -1354,17 +1354,17 @@ Imports
 	cost = 35
 
 /datum/supply_packs/imports/m41a/elite/ammo
-	name = "M41A MK2/3 Pulse Rifle"
+	name = "M41A MK2 Pulse Rifle ammo magazine"
 	contains = list(/obj/item/ammo_magazine/rifle/m41a/mk2)
 	cost = 1
 
 /datum/supply_packs/imports/m41a/elite/ammo/extended
-	name = "M41A MK2/3 Pulse Rifle"
+	name = "M41A MK2 Pulse Rifle extended ammo magazine"
 	contains = list(/obj/item/ammo_magazine/rifle/m41a/mk2/extended)
 	cost = 2
 
 /datum/supply_packs/imports/m41a/elite/ammo/ap
-	name = "M41A MK2/3 Pulse Rifle"
+	name = "M41A MK2 Pulse Rifle armor-piercing ammo magazine"
 	contains = list(/obj/item/ammo_magazine/rifle/m41a/mk2/ap)
 	cost = 4
 

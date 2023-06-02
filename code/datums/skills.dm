@@ -726,6 +726,48 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	powerloader = SKILL_POWERLOADER_MASTER
 	large_vehicle = SKILL_LARGE_VEHICLE_TRAINED
 
+/datum/skills/marsoc
+	name = "MARSOC Member"
+	engineer = 3
+	construction = 3
+	firearms = 2
+	smartgun = 0
+	medical = 5
+	cqc = 5
+	surgery = 2
+	melee_weapons = 3
+	leadership = 1
+	pilot = 0
+	pistols = 0
+	smgs = 0
+	rifles = 0
+	shotguns = 0
+	heavy_weapons = 0
+	police = 2
+	powerloader = 1
+	large_vehicle = 0
+
+/datum/skills/marsoc/officer
+	name = "MARSOC Officer"
+	engineer = 4
+	construction = 4
+	firearms = 2
+	smartgun = 0
+	medical = 5
+	cqc = 5
+	surgery = 5
+	melee_weapons = 3
+	leadership = 6
+	pilot = 0
+	pistols = 0
+	smgs = 0
+	rifles = 0
+	shotguns = 0
+	heavy_weapons = 0
+	police = 2
+	powerloader = 2
+	large_vehicle = 1
+
 /*======  I.o.M.  ======*/
 
 /datum/skills/imperial
