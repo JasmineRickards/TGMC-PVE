@@ -117,7 +117,7 @@
 
 /obj/item/weapon/energy/sword/blue/nt
 	name = "NT combat energy sword"
-	desc = "Brand new NT combat energy sword, capable of slicing with ease nearly any badly armored target."
+	desc = "Brand new NT combat energy sword, capable of slicing with ease nearly any badly armored target. Alt-click on it to tighten the grip."
 
 
 /obj/item/weapon/energy/sword/blue/nt/attack_self(mob/living/user as mob)

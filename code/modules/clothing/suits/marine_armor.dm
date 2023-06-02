@@ -203,7 +203,19 @@
 	max_storage_space = 18
 	max_w_class = 3
 
+/obj/item/clothing/suit/storage/marine/marsoc
+	name = "\improper M4 advanced pattern MARSOC armor"
+	desc = "Superior armor of M pattern line. Given to only the most elite special forces of TGMC."
+	icon_state = "marsoc"
+	soft_armor = list(MELEE = 90, BULLET = 110, LASER = 110, ENERGY = 95, BOMB = 95, BIO = 20, FIRE = 90, ACID = 95)
+	hard_armor = list(MELEE = 3, BULLET = 5, LASER = 5, ENERGY = 5, BOMB = 5, BIO = 0, FIRE = 0, ACID = 2)
+	light_range = 12
+	pockets = /obj/item/storage/internal/suit/marine/marsoc
+	slowdown = 0.1
 
+/obj/item/storage/internal/suit/marine/marsoc
+	storage_slots = 4
+	max_storage_space = 8
 
 /obj/item/clothing/suit/storage/marine/leader
 	name = "\improper PAS-10 pattern leader armor"

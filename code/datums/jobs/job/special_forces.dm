@@ -157,3 +157,125 @@
 	H.equip_to_slot_or_del(new /obj/item/weapon/gun/revolver/standard_revolver, SLOT_IN_L_POUCH)
 
 	H.equip_to_slot_or_del(new /obj/item/armor_module/storage/uniform/black_vest, SLOT_L_HAND)
+
+//MARSOC unit
+
+/datum/job/special_forces/marsoc
+	title = "MARSOC Unit"
+	outfit = /datum/outfit/job/special_forces/marsoc
+	skills_type = /datum/skills/marsoc
+	access = ALL_MARINE_ACCESS
+	faction = FACTION_TERRAGOV
+	paygrade = "E9"
+	comm_title = "MARSOC"
+
+
+/datum/outfit/job/special_forces/marsoc
+	name = "MARSOC Unit"
+	jobtype = /datum/job/special_forces/marsoc
+
+	glasses = /obj/item/clothing/glasses/night/m42_night_goggles
+	id = /obj/item/card/id/silver
+	belt = /obj/item/weapon/gun/shotgun/marsoc
+	ears = /obj/item/radio/headset/mainship/mcom
+	mask = /obj/item/clothing/mask/gas/PMC
+	w_uniform = /obj/item/clothing/under/marine/officer/marsoc
+	shoes = /obj/item/clothing/shoes/marine/full
+	wear_suit = /obj/item/clothing/suit/storage/marine/marsoc
+	gloves = /obj/item/clothing/gloves/marine/veteran/PMC
+	head = /obj/item/clothing/head/helmet/marine/marsoc
+	suit_store = /obj/item/weapon/gun/rifle/m41a/old/marsoc
+	r_store = /obj/item/storage/pouch/tools/marsoc/full
+	l_store = /obj/item/storage/pouch/medkit/marsoc
+	back = /obj/item/storage/backpack/marine/marsoc
+
+/datum/outfit/job/special_forces/marsoc/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_SUIT)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_SUIT)
+	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/phosphorus, SLOT_IN_SUIT)
+	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/phosphorus, SLOT_IN_SUIT)
+
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41a/marsoc, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41a/marsoc, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41a/marsoc, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41a/marsoc, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/shotgun/buckshot, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/shotgun/buckshot, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/shotgun/buckshot, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/weapon/gun/sentry/mini, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/weapon/gun/sentry/mini, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/minisentry, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/minisentry, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/phosphorus, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/phosphorus, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/phosphorus, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/phosphorus, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new  /obj/item/storage/box/MRE, SLOT_IN_BACKPACK)
+
+
+//MARSOC Officer
+
+/datum/job/special_forces/marsoc/officer
+	title = "MARSOC Officer"
+	outfit = /datum/outfit/job/special_forces/marsoc_officer
+	skills_type = /datum/skills/marsoc/officer
+	access = ALL_MARINE_ACCESS
+	faction = FACTION_TERRAGOV
+	paygrade = "E9E"
+	comm_title = "MARSOC"
+
+
+/datum/outfit/job/special_forces/marsoc_officer
+	name = "MARSOC Officer"
+	jobtype = /datum/job/special_forces/marsoc/officer
+
+	glasses = /obj/item/clothing/glasses/night/m42_night_goggles
+	id = /obj/item/card/id/gold
+	belt = /obj/item/weapon/gun/shotgun/marsoc
+	ears = /obj/item/radio/headset/mainship/mcom
+	mask = /obj/item/clothing/mask/gas/PMC
+	w_uniform = /obj/item/clothing/under/marine/officer/marsoc
+	shoes = /obj/item/clothing/shoes/marine/full
+	wear_suit = /obj/item/clothing/suit/storage/marine/marsoc
+	gloves = /obj/item/clothing/gloves/marine/veteran/PMC
+	head = /obj/item/clothing/head/helmet/marine/marsoc
+	suit_store = /obj/item/weapon/gun/rifle/m41a/old/marsoc
+	r_store = /obj/item/storage/pouch/tools/marsoc/full
+	l_store = /obj/item/storage/pouch/medkit/marsoc
+	back = /obj/item/storage/backpack/marine/marsoc
+
+/datum/outfit/job/special_forces/marsoc_officer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_SUIT)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_SUIT)
+	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/phosphorus, SLOT_IN_SUIT)
+	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/phosphorus, SLOT_IN_SUIT)
+
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41a/marsoc, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41a/marsoc, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41a/marsoc, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41a/marsoc, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/shotgun/buckshot, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/shotgun/buckshot, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/shotgun/buckshot, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/weapon/gun/sentry/mini, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/weapon/gun/sentry/mini, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/minisentry, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/minisentry, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/phosphorus, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/phosphorus, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/phosphorus, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/phosphorus, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new  /obj/item/defibrillator, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new  /obj/item/storage/box/MRE, SLOT_IN_BACKPACK)
