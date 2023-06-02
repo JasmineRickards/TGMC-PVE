@@ -315,6 +315,8 @@
 			. = size ? "MAJ " : "Major"
 		if("MO5")
 			. = size ? "LtCol " : "Lieutenant Colonel"
+		if("MO6")
+			. = size ? "Col " : "Colonel"
 		if("UPP1")
 			. = size ? "UGNR " : "USL Gunner"
 		if("UPP2")

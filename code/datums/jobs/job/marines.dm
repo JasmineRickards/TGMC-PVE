@@ -70,14 +70,24 @@ Make your way to the cafeteria for some post-cryosleep chow, and then get equipp
 	switch(playtime_mins)
 		if(0 to 600) // starting
 			new_human.wear_id.paygrade = "E1"
-		if(601 to 6000) // 10hrs
+		if(601 to 1500) // 10hrs
 			new_human.wear_id.paygrade = "E2"
-		if(6001 to 18000) // 100 hrs
+		if(1501 to 3000) // 25 hrs
 			new_human.wear_id.paygrade = "E3"
-		if(18001 to 60000) // 300 hrs
+		if(3001 to 4500) // 50 hrs
 			new_human.wear_id.paygrade = "E3E"
-		if(60001 to INFINITY) // 1000 hrs
-			new_human.wear_id.paygrade = "E8" //If you play way too much TGMC. 1000 hours.
+		if(4501 to 6000) // 75 hrs
+			new_human.wear_id.paygrade = "E4"
+		if(6001 to 9000) // 100 hrs
+			new_human.wear_id.paygrade = "E5"
+		if(9001 to 12000) // 150 hrs
+			new_human.wear_id.paygrade = "E6"
+		if(12001 to 18000) // 200 hrs
+			new_human.wear_id.paygrade = "E7"
+		if(18001 to 30000) // 300 hrs
+			new_human.wear_id.paygrade = "E8"
+		if(30001 to INFINITY) // 500 hrs
+			new_human.wear_id.paygrade = "E8E"
 
 /datum/job/terragov/squad/standard/radio_help_message(mob/M)
 	. = ..()
@@ -211,10 +221,14 @@ Your squaddies will look to you when it comes to construction in the field of ba
 	switch(playtime_mins)
 		if(0 to 1500) // starting
 			new_human.wear_id.paygrade = "E3"
-		if(1501 to 6000) // 25 hrs
+		if(1501 to 3000) // 25 hrs
 			new_human.wear_id.paygrade = "E4"
-		if(6001 to INFINITY) // 100 hrs
+		if(3001 to 6000) // 50 hrs
 			new_human.wear_id.paygrade = "E5"
+		if(6001 to 12000) // 100 hrs
+			new_human.wear_id.paygrade = "E6"
+		if(12001 to INFINITY) // 200 hrs
+			new_human.wear_id.paygrade = "E7"
 
 //Squad Corpsman
 /datum/job/terragov/squad/corpsman
@@ -317,10 +331,14 @@ You may not be a fully-fledged doctor, but you stand between life and death when
 	switch(playtime_mins)
 		if(0 to 1500) // starting
 			new_human.wear_id.paygrade = "E3"
-		if(1501 to 6000) // 25 hrs
+		if(1501 to 3000) // 25 hrs
 			new_human.wear_id.paygrade = "E4"
-		if(6001 to INFINITY) // 100 hrs
+		if(3001 to 6000) // 50 hrs
 			new_human.wear_id.paygrade = "E5"
+		if(6001 to 12000) // 100 hrs
+			new_human.wear_id.paygrade = "E6"
+		if(12001 to INFINITY) // 200 hrs
+			new_human.wear_id.paygrade = "E7"
 
 //Squad Smartgunner
 /datum/job/terragov/squad/smartgunner
@@ -371,10 +389,14 @@ You may not be a fully-fledged doctor, but you stand between life and death when
 	switch(playtime_mins)
 		if(0 to 1500) // starting
 			new_human.wear_id.paygrade = "E3"
-		if(1501 to 6000) // 25 hrs
+		if(1501 to 3000) // 25 hrs
 			new_human.wear_id.paygrade = "E4"
-		if(6001 to INFINITY) // 100 hrs
+		if(3001 to 6000) // 50 hrs
 			new_human.wear_id.paygrade = "E5"
+		if(6001 to 12000) // 100 hrs
+			new_human.wear_id.paygrade = "E6"
+		if(12001 to INFINITY) // 200 hrs
+			new_human.wear_id.paygrade = "E7"
 
 /datum/outfit/job/marine/smartgunner
 	name = SQUAD_SMARTGUNNER
@@ -555,10 +577,14 @@ You are also in charge of communicating with command and letting them know about
 	switch(playtime_mins)
 		if(0 to 1500) // starting
 			new_human.wear_id.paygrade = "E5"
-		if(1501 to 7500) // 25 hrs
+		if(1501 to 4500) // 25 hrs
 			new_human.wear_id.paygrade = "E6"
-		if(7501 to INFINITY) // 125 hrs
+		if(4501 to 7500) // 75 hrs
 			new_human.wear_id.paygrade = "E7"
+		if(7501 to 18000) // 125 hrs
+			new_human.wear_id.paygrade = "E8E"
+		if(18001 to INFINITY) // 300 hrs
+			new_human.wear_id.paygrade = "E9E"
 	if(!latejoin)
 		return
 	if(!new_human.assigned_squad)
