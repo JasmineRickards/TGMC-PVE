@@ -192,6 +192,8 @@
 /datum/outfit/job/special_forces/marsoc/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 
+	H.grant_language(/datum/language/commando)
+
 	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_SUIT)
 	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_SUIT)
 	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/phosphorus, SLOT_IN_SUIT)
