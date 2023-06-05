@@ -1291,6 +1291,7 @@
 #include "code\modules\keybindings\setup.dm"
 #include "code\modules\language\aphasia.dm"
 #include "code\modules\language\beachbum.dm"
+#include "code\modules\language\commando.dm"
 #include "code\modules\language\common.dm"
 #include "code\modules\language\felinid.dm"
 #include "code\modules\language\imperial.dm"

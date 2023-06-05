@@ -1059,7 +1059,7 @@
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_RALLY_HIVE,
 	)
 	keybind_flags = XACT_KEYBIND_USE_ABILITY
-	cooldown_timer = 60 SECONDS
+	cooldown_timer = 10 SECONDS
 	use_state_flags = XACT_USE_LYING|XACT_USE_BUCKLED
 
 /datum/action/xeno_action/rally_hive/action_activate()
@@ -1084,7 +1084,7 @@
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_RALLY_MINION,
 	)
 	keybind_flags = XACT_KEYBIND_USE_ABILITY
-	cooldown_timer = 10 SECONDS
+	cooldown_timer = 1 SECONDS
 	use_state_flags = XACT_USE_LYING|XACT_USE_BUCKLED
 
 /datum/action/xeno_action/rally_minion/action_activate()

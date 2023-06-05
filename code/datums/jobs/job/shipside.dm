@@ -705,7 +705,7 @@ You are also next in the chain of command, should the bridge crew fall in the li
 	belt = /obj/item/storage/belt/utility/full
 	ears = /obj/item/radio/headset/mainship/mcom
 	w_uniform = /obj/item/clothing/under/marine/officer/ce
-	wear_suit = /obj/item/clothing/suit/storage/marine/MP
+	wear_suit = /obj/item/clothing/suit/storage/marine/MP/RO
 	shoes = /obj/item/clothing/shoes/marine/full
 	glasses = /obj/item/clothing/glasses/welding/superior
 	gloves = /obj/item/clothing/gloves/yellow
