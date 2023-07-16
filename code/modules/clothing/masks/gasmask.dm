@@ -50,6 +50,14 @@
 	icon_state = "gascoif"
 	flags_inv_hide = HIDEEARS|HIDEFACE|HIDEALLHAIR
 
+/obj/item/clothing/mask/gas/icc
+	name = "\improper black tactical gasmask"
+	desc = "An armored gasmask designed for some tactical ops. Has blood-red visor."
+	icon_state = "icc"
+	anti_hug = 3
+	flags_inventory = COVERMOUTH|ALLOWINTERNALS|BLOCKGASEFFECT
+	flags_inv_hide = HIDEEARS|HIDEFACE|HIDEALLHAIR
+
 /obj/item/clothing/mask/gas/PMC
 	name = "\improper M8 pattern armored balaclava"
 	desc = "An armored balaclava designed to conceal both the identity of the operator and act as an air-filter."

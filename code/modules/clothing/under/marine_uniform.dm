@@ -30,6 +30,11 @@
 	icon_state = "marine_engineer_old"
 	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
+/obj/item/clothing/under/marine/icc
+	name = "\improper tactical military suit"
+	desc = "Tactical uniform for some tacticool soldiers."
+	icon_state = "icc"
+
 /obj/item/clothing/under/marine/standard
 	flags_item_map_variant = null
 

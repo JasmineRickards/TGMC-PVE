@@ -968,6 +968,7 @@
 	recoil_unwielded = 0
 	movement_acc_penalty_mult = 2
 	aim_slowdown = 0.1
+	ammo_datum_type = /datum/ammo/energy/volkite/light
 
 /obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/serpenta/survivor
 	name = "Smuggled VX-12 Serpenta"
