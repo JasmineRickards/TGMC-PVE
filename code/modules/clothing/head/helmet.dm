@@ -371,6 +371,14 @@
 	soft_armor = list(MELEE = 75, BULLET = 85, LASER = 85, ENERGY = 75, BOMB = 76, BIO = 50, FIRE = 75, ACID = 85)
 	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
+/obj/item/clothing/head/helmet/marine/icc
+	name = "\improper tactical camo helmet"
+	icon_state = "icc"
+	item_state = "icc"
+	desc = "Desert camouflauged helmet for combat usage."
+	soft_armor = list(MELEE = 50, BULLET = 90, LASER = 90, ENERGY = 80, BOMB = 90, BIO = 30, FIRE = 50, ACID = 55)
+	hard_armor = list(MELEE = 0, BULLET = 15, LASER = 15, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+
 /obj/item/clothing/head/helmet/marine/marsoc
 	name = "\improper M11 advanced pattern MARSOC helmet"
 	desc = "Tactical helmet used by some black-ops."

@@ -169,7 +169,7 @@
 	name = "\improper M3-P pattern marine armor"
 	desc = "A standard Marine M3 Padded Pattern Chestplate. Better protection against bullets and explosions, with limited thermal shielding against energy weapons, but worse against melee."
 	icon_state = "6"
-	soft_armor = list(MELEE = 30, BULLET = 95, LASER = 95, ENERGY = 85, BOMB = 85, BIO = 10, FIRE = 70, ACID = 60)
+	soft_armor = list(MELEE = 30, BULLET = 85, LASER = 85, ENERGY = 85, BOMB = 85, BIO = 10, FIRE = 70, ACID = 60)
 	hard_armor = list(MELEE = 0, BULLET = 5, LASER = 5, ENERGY = 5, BOMB = 5, BIO = 0, FIRE = 5, ACID = 0)
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
 	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
@@ -367,6 +367,20 @@
 	desc = "Based on the M-3 pattern employed by the TGMC, the UA-M1 body armor is employed by TG security, riot control and union-busting teams."
 	icon_state = "ua_riot"
 	flags_item_map_variant = NONE //Redundant, but if we ever get around to getting the camo sprites ported, yay.
+
+/obj/item/clothing/suit/storage/marine/icc
+	name = "\improper heavy plate carrier set"
+	desc = "Old and reliable plate carrier in a desert camouflauge. Was originally used by some pre-FTL military and mercenary groups, but became somewhat widespread in a present day"
+	icon_state = "icc"
+	slowdown = 1
+	soft_armor = list(MELEE = 55, BULLET = 90, LASER = 90, ENERGY = 80, BOMB = 90, BIO = 30, FIRE = 50, ACID = 60)
+	hard_armor = list(MELEE = 0, BULLET = 15, LASER = 15, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+	flags_armor_protection = CHEST|GROIN|ARMS|LEGS
+	flags_cold_protection = CHEST|GROIN|ARMS|LEGS
+	flags_heat_protection = CHEST|GROIN|ARMS|LEGS
+	flags_item_map_variant = NONE
+	pockets = /obj/item/storage/internal/suit/marine/M3IS
+
 //===========================SPECIALIST================================
 
 

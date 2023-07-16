@@ -1757,6 +1757,18 @@ Imports
 		/obj/item/weapon/chainsword,)
 	cost = 180
 
+/datum/supply_packs/imports/tactical
+	name = "Tactical armor plate set"
+	contains = list(
+		/obj/item/clothing/suit/storage/marine/icc,
+		/obj/item/clothing/head/helmet/marine/icc,
+		/obj/item/clothing/gloves/marine/icc,
+		/obj/item/clothing/shoes/marine/icc,
+		/obj/item/clothing/mask/gas/icc,
+		/obj/item/storage/backpack/lightpack/icc,
+		/obj/item/clothing/under/marine/icc,)
+	cost = 60
+
 /*******************************************************************************
 VEHICLES
 *******************************************************************************/

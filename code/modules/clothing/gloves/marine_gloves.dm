@@ -23,6 +23,15 @@
 	desc = "Insulated marine tactical gloves that protect against electrical shocks."
 	siemens_coefficient = 0
 
+/obj/item/clothing/gloves/marine/icc
+	name = "armored camo gloves"
+	desc = "Insulated tactical gloves that protect against electrical shocks."
+	icon_state = "icc"
+	item_state = "icc"
+	soft_armor = list(MELEE = 30, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 60, BIO = 30, FIRE = 50, ACID = 35)
+	hard_armor = list(MELEE = 0, BULLET = 10, LASER = 10, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+	siemens_coefficient = 0
+
 /obj/item/clothing/gloves/marine/officer
 	name = "officer gloves"
 	desc = "Shiny and impressive. They look expensive."

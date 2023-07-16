@@ -769,6 +769,11 @@
 	icon_state = "ERT_satchel"
 	access_delay = 0
 
+/obj/item/storage/backpack/lightpack/icc
+	name = "\improper lightweight tactical combat pack"
+	desc = "A small lightweight pack for expeditions and short-range operations. It is painted in desert camouflage"
+	icon_state = "icc_bag"
+
 /obj/item/storage/backpack/commando
 	name = "commando bag"
 	desc = "A heavy-duty bag carried by Nanotrasen commandos."

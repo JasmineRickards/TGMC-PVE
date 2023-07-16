@@ -113,7 +113,7 @@ should be alright.
 
 
 /obj/item/weapon/gun/proc/harness_return(mob/living/carbon/human/user)
-	if(!isturf(loc) || QDELETED(user) || !isnull(user.s_store) && !isnull(user.back))
+	if(!isturf(loc) || QDELETED(user) || !isnull(user.s_store) && !isnull(user.back) && !isnull(user.belt))
 		return
 
 	user.equip_to_slot_if_possible(src, SLOT_S_STORE, warning = FALSE)
@@ -127,6 +127,12 @@ should be alright.
 	if(user.back == src)
 		to_chat(user, span_warning("[src] snaps into place on your back."))
 	user.update_inv_back()
+
+
+	user.equip_to_slot_if_possible(src, SLOT_BELT, warning = FALSE)
+	if(user.belt == src)
+		to_chat(user, span_warning("[src] snaps into place on your belt."))
+	user.update_inv_belt()
 
 
 /obj/item/weapon/gun/attack_self(mob/user)
