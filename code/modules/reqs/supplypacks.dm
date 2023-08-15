@@ -927,6 +927,13 @@ ARMOR
 	)
 	cost = 12
 
+/datum/supply_packs/armor/modular/attachments/huldra_autorepair
+	name = "Golem Huldra autorepair module"
+	contains = list(
+		/obj/item/armor_module/module/huldra_autorepair,
+	)
+	cost = 15
+
 /datum/supply_packs/armor/modular/attachments/eshield
 	name = "Jaeger Arrowhead mk.2"
 	contains = list(

@@ -1021,6 +1021,7 @@
 		/obj/item/armor_module/module/eshield,
 		/obj/item/armor_module/module/eshield/mk2,
 		/obj/item/armor_module/module/fire_proof/mk2,
+		/obj/item/armor_module/module/huldra_autorepair,
 
 		/obj/item/armor_module/storage/general,
 		/obj/item/armor_module/storage/ammo_mag,
