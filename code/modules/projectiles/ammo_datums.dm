@@ -2629,7 +2629,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "xray heat bolt"
 	icon_state = "u_laser"
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_SUNDERING|AMMO_HITSCAN
-	damage = 105
+	damage = 200
 	penetration = 15
 	sundering = 1
 	max_range = 18
@@ -2639,7 +2639,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "xray piercing bolt"
 	icon_state = "xray"
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_HITSCAN|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
-	damage = 50
+	damage = 105
 	penetration = 100
 	max_range = 10
 	hitscan_effect_icon = "xray_beam"
