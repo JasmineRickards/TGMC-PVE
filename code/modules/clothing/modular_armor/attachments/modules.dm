@@ -38,8 +38,9 @@
 	. = ..()
 	var/list/tricord = list(/datum/reagent/medicine/tricordrazine)
 	var/list/tramadol = list(/datum/reagent/medicine/tramadol)
+	var/list/russian_red = list(/datum/reagent/medicine/russian_red)
 	/// This will do nothing without the autodoc update
-	parent.AddComponent(/datum/component/suit_autodoc, 4 MINUTES, tricord, tricord, tricord, tricord, tramadol, 0.5)
+	parent.AddComponent(/datum/component/suit_autodoc, 4 MINUTES, tricord, tricord, tricord, tricord, russian_red, tramadol, 0.5)
 	parent.AddElement(/datum/element/limb_support, supported_limbs)
 
 
