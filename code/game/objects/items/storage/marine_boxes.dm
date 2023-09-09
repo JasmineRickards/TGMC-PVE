@@ -915,3 +915,127 @@
 	new /obj/item/ammo_magazine/rifle/standard_assaultrifle(src)
 	new /obj/item/ammo_magazine/rifle/standard_assaultrifle(src)
 	new /obj/item/clothing/mask/rebreather/scarf(src)
+
+/obj/item/storage/box/squadmarine/hev
+	name = "\improper HEV set crate"
+	desc = "A large case containing full set of HEV suit, including special energy sword. Drag this sprite into you to open it up!\nNOTE: You cannot put items back inside this case. "
+	storage_slots = 4
+
+/obj/item/storage/box/squadmarine/hev/Initialize(mapload, ...)
+	. = ..()
+	new /obj/item/clothing/suit/armor/rig/nt/heavy(src)
+	new	/obj/item/clothing/head/helmet/rig/nt/heavy(src)
+	new	/obj/item/weapon/energy/sword/blue/nt(src)
+	new /obj/item/clothing/glasses/hud/xenohud/night/meson(src)
+
+/obj/item/storage/box/squadmarine/gorgon
+	name = "\improper SOM Gorgon set crate"
+	desc = "A large case containing full set of Gorgon suit. Drag this sprite into you to open it up!\nNOTE: You cannot put items back inside this case. "
+	storage_slots = 2
+
+/obj/item/storage/box/squadmarine/gorgon/Initialize(mapload, ...)
+	. = ..()
+	new /obj/item/clothing/head/modular/som/leader(src)
+	new	/obj/item/clothing/suit/modular/som/heavy/leader/valk(src)
+
+/obj/item/storage/box/squadmarine/spec/pmcb18
+	name = "\improper Commando set crate"
+	desc = "A large case containing full set of Commando suit. Drag this sprite into you to open it up!\nNOTE: You cannot put items back inside this case. "
+	storage_slots = 4
+
+/obj/item/storage/box/squadmarine/spec/pmcb18/Initialize(mapload, ...)
+	. = ..()
+	new /obj/item/clothing/suit/storage/marine/specialist/PMC(src)
+	new	/obj/item/clothing/head/helmet/marine/specialist/PMC(src)
+	new	/obj/item/clothing/gloves/marine/specialist/PMC(src)
+	new	/obj/item/clothing/under/marine/veteran/PMC/commando/vendor(src)
+
+/obj/item/storage/box/squadmarine/mortar/tx54
+	name = "\improper GL-55M crate"
+	desc = "A large case containing GL-55M with some ammo. Drag this sprite into you to open it up!\nNOTE: You cannot put items back inside this case. "
+	icon_state = "smartgun_case"
+	storage_slots = 5
+
+/obj/item/storage/box/squadmarine/mortar/tx54/Initialize(mapload, ...)
+	. = ..()
+	new /obj/item/weapon/gun/rifle/tx54/mortar(src)
+	new	/obj/item/ammo_magazine/rifle/tx54/shell/he(src)
+	new	/obj/item/ammo_magazine/rifle/tx54/shell/he(src)
+	new	/obj/item/ammo_magazine/rifle/tx54/shell/he(src)
+	new	/obj/item/ammo_magazine/rifle/tx54/shell/he(src)
+
+/obj/item/storage/box/squadmarine/xray_gun
+	name = "\improper X-ray rifle crate"
+	desc = "A large case containing X-ray laser rifle. Drag this sprite into you to open it up!\nNOTE: You cannot put items back inside this case. "
+	icon_state = "smartgun_case"
+	storage_slots = 5
+
+/obj/item/storage/box/squadmarine/xray_gun/Initialize(mapload, ...)
+	. = ..()
+	new /obj/item/weapon/gun/energy/lasgun/lasrifle/xray(src)
+	new	/obj/item/cell/lasgun(src)
+	new	/obj/item/cell/lasgun(src)
+	new	/obj/item/cell/lasgun(src)
+	new	/obj/item/cell/lasgun(src)
+
+/obj/item/storage/box/squadmarine/mech/weapon/ballistic
+	name = "\improper Mobile Suit ballistic crate"
+	desc = "A large case containing ballistic weaponry for mech. Drag this sprite into you to open it up!\nNOTE: You cannot put items back inside this case. "
+	icon_state = "smartgun_case"
+	storage_slots = 6
+
+/obj/item/storage/box/squadmarine/mech/weapon/ballistic/Initialize(mapload, ...)
+	. = ..()
+	new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg(src)
+	new	/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot(src)
+	new	/obj/item/mecha_ammo/scattershot(src)
+	new	/obj/item/mecha_ammo/scattershot(src)
+	new	/obj/item/mecha_ammo/lmg(src)
+	new	/obj/item/mecha_ammo/lmg(src)
+
+/obj/item/storage/box/squadmarine/mech/weapon/laser
+	name = "\improper Mobile Suit laser crate"
+	desc = "A large case containing laser weaponry for mech. Drag this sprite into you to open it up!\nNOTE: You cannot put items back inside this case. "
+	icon_state = "smartgun_case"
+	storage_slots = 2
+
+/obj/item/storage/box/squadmarine/mech/weapon/laser/Initialize(mapload, ...)
+	. = ..()
+	new /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_smg(src)
+	new	/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_projector(src)
+
+/obj/item/storage/box/squadmarine/mech/weapon/artillery
+	name = "\improper Mobile Suit artillery crate"
+	desc = "A large case containing artillery weaponry for mech. Drag this sprite into you to open it up!\nNOTE: You cannot put items back inside this case. "
+	icon_state = "smartgun_case"
+	storage_slots = 4
+
+/obj/item/storage/box/squadmarine/mech/weapon/artillery/Initialize(mapload, ...)
+	. = ..()
+	new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack(src)
+	new	/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/sabot(src)
+	new /obj/item/mecha_ammo/missiles_he(src)
+	new /obj/item/mecha_ammo/missiles_sabot(src)
+
+/obj/item/storage/box/squadmarine/mech/armor
+	name = "\improper Mobile Suit armor plates crate"
+	desc = "A large case containing armor plates for mech. Drag this sprite into you to open it up!\nNOTE: You cannot put items back inside this case. "
+	storage_slots = 3
+
+/obj/item/storage/box/squadmarine/mech/armor/Initialize(mapload, ...)
+	. = ..()
+	new /obj/item/mecha_parts/mecha_equipment/armor/anticcw_armor_booster(src)
+	new	/obj/item/mecha_parts/mecha_equipment/armor/antiproj_armor_booster(src)
+	new	/obj/item/mecha_parts/mecha_equipment/armor/antiproj_armor_booster(src)
+
+/obj/item/storage/box/squadmarine/mech/utility
+	name = "\improper Mobile Suit utility crate"
+	desc = "A large case containing utility equipment for mech. Drag this sprite into you to open it up!\nNOTE: You cannot put items back inside this case. "
+	storage_slots = 4
+
+/obj/item/storage/box/squadmarine/mech/utility/Initialize(mapload, ...)
+	. = ..()
+	new /obj/item/cell/mecha(src)
+	new	/obj/item/cell/mecha/medium(src)
+	new	/obj/item/cell/mecha/large(src)
+	new /obj/item/mecha_parts/mecha_equipment/repair_droid(src)

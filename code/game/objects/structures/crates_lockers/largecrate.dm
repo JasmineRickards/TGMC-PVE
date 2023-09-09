@@ -83,6 +83,29 @@
 	spawn_type = /mob/living/simple_animal/chick
 	spawn_amount = 4
 
+/obj/structure/largecrate/gygax
+	name = "Scout Mobile Suit crate"
+	icon_state = "densecrate"
+	spawn_type = /obj/vehicle/sealed/mecha/combat/gygax
+	spawn_amount = 1
+
+/obj/structure/largecrate/gygax_mk2
+	name = "Scout Mobile Suit MK2 crate"
+	icon_state = "densecrate"
+	spawn_type = /obj/vehicle/sealed/mecha/combat/gygax/darkTGMC
+	spawn_amount = 1
+
+/obj/structure/largecrate/marauder
+	name = "Defensive Mobile Suit crate"
+	icon_state = "densecrate"
+	spawn_type = /obj/vehicle/sealed/mecha/combat/marauder
+	spawn_amount = 1
+
+/obj/structure/largecrate/seraph
+	name = "Assault Mobule Suit crate"
+	icon_state = "densecrate"
+	spawn_type = /obj/vehicle/sealed/mecha/combat/marauder/seraphtgmc
+	spawn_amount = 1
 
 ///////////CM largecrates ///////////////////////
 

@@ -145,7 +145,7 @@
 
 /obj/item/ammo_magazine/rifle/m41a/mk2
 	name = "\improper M41A MK2 magazine (10x24mm)"
-	desc = "A semi-rectangular box of rounds for the PR-11 Pulse Rifle."
+	desc = "A semi-rectangular box of rounds for the M41A MK2 Pulse Rifle."
 	icon_state = "m41a_mk2"
 	max_rounds = 99
 	default_ammo = /datum/ammo/bullet/rifle/heavy/m41a
@@ -153,14 +153,14 @@
 
 /obj/item/ammo_magazine/rifle/m41a/mk2/extended
 	name = "\improper M41A MK2 extended magazine (10x24mm)"
-	desc = "An extended semi-rectangular box of rounds for the PR-11 Pulse Rifle."
+	desc = "An extended semi-rectangular box of rounds for the M41A MK2 Pulse Rifle."
 	icon_state = "m41a_mk2_extended"
 	max_rounds = 180
 	icon_state_mini = "mag_rifle_big"
 
 /obj/item/ammo_magazine/rifle/m41a/mk2/ap
 	name = "\improper M41A MK2 armor-piercing magazine (10x24mm)"
-	desc = "An armor-piercing semi-rectangular box of rounds for the PR-11 Pulse Rifle."
+	desc = "An armor-piercing semi-rectangular box of rounds for the M41A MK2 Pulse Rifle."
 	icon_state = "m41a_mk2_ap"
 	max_rounds = 99
 	default_ammo = /datum/ammo/bullet/rifle/heavy/ap

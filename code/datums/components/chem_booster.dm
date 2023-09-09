@@ -59,13 +59,13 @@
 	///Information about how reagents boost the system's effects.
 	var/reagent_info = ""
 	///Vali brute healing is multiplied by this
-	var/brute_heal_amp = 1.3
+	var/brute_heal_amp = 1.6
 	///Vali burn healing is multiplied by this
-	var/burn_heal_amp = 1.3
+	var/burn_heal_amp = 1.6
 	///Vali toxin healing is multiplied by this
-	var/tox_heal = 0.5
+	var/tox_heal = 0.8
 	///Vali stamina regen is multiplied by this
-	var/stamina_regen_amp = 1
+	var/stamina_regen_amp = 1.1
 	///Vali movement speed buff is this value
 	var/movement_boost = 0.4
 	///How much time left on vali heal till necrosis occurs
@@ -77,14 +77,14 @@
 	 * brute_heal_amp, burn_heal_amp, tox_heal, stamina_regen_amp, movement_boost, min required volume, entry name
 	 */
 	var/static/list/reagent_stats = list(
-		/datum/reagent/medicine/bicaridine = list(NAME = "Bicaridine", REQ = 5, BRUTE_AMP = 0.1, BURN_AMP = 0, TOX_HEAL = 0, STAM_REG_AMP = 0, SPEED_BOOST = 0),
-		/datum/reagent/medicine/kelotane = list(NAME = "Kelotane", REQ = 5, BRUTE_AMP = 0, BURN_AMP = 0.1, TOX_HEAL = 0, STAM_REG_AMP = 0, SPEED_BOOST = 0),
-		/datum/reagent/medicine/paracetamol = list(NAME = "Paracetamol", REQ = 5, BRUTE_AMP = 0, BURN_AMP = 0, TOX_HEAL = 0, STAM_REG_AMP = 0.2, SPEED_BOOST = -0.1),
-		/datum/reagent/medicine/meralyne = list(NAME = "Meralyne", REQ = 5, BRUTE_AMP = 0.2, BURN_AMP = 0, TOX_HEAL = 0, STAM_REG_AMP = 0, SPEED_BOOST = 0),
-		/datum/reagent/medicine/dermaline = list(NAME = "Dermaline", REQ = 5, BRUTE_AMP = 0, BURN_AMP = 0.2, TOX_HEAL = 0, STAM_REG_AMP = 0, SPEED_BOOST = 0),
-		/datum/reagent/medicine/dylovene = list(NAME = "Dylovene", REQ = 5, BRUTE_AMP = 0, BURN_AMP = 0, TOX_HEAL = 0.5, STAM_REG_AMP = 0, SPEED_BOOST = 0),
-		/datum/reagent/medicine/synaptizine = list(NAME = "Synaptizine", REQ = 3, BRUTE_AMP = 0, BURN_AMP = 0, TOX_HEAL = 1, STAM_REG_AMP = 0.1, SPEED_BOOST = 0),
-		/datum/reagent/medicine/neuraline = list(NAME = "Neuraline", REQ = 2, BRUTE_AMP = 1, BURN_AMP = 1, TOX_HEAL = -3, STAM_REG_AMP = 0, SPEED_BOOST = -0.3),
+		/datum/reagent/medicine/bicaridine = list(NAME = "Bicaridine", REQ = 5, BRUTE_AMP = 0.3, BURN_AMP = 0, TOX_HEAL = 0, STAM_REG_AMP = 0, SPEED_BOOST = 0),
+		/datum/reagent/medicine/kelotane = list(NAME = "Kelotane", REQ = 5, BRUTE_AMP = 0, BURN_AMP = 0.3, TOX_HEAL = 0, STAM_REG_AMP = 0, SPEED_BOOST = 0),
+		/datum/reagent/medicine/paracetamol = list(NAME = "Paracetamol", REQ = 5, BRUTE_AMP = 0, BURN_AMP = 0, TOX_HEAL = 0, STAM_REG_AMP = 0.4, SPEED_BOOST = -0.2),
+		/datum/reagent/medicine/meralyne = list(NAME = "Meralyne", REQ = 5, BRUTE_AMP = 0.6, BURN_AMP = 0, TOX_HEAL = 0, STAM_REG_AMP = 0, SPEED_BOOST = 0),
+		/datum/reagent/medicine/dermaline = list(NAME = "Dermaline", REQ = 5, BRUTE_AMP = 0, BURN_AMP = 0.6, TOX_HEAL = 0, STAM_REG_AMP = 0, SPEED_BOOST = 0),
+		/datum/reagent/medicine/dylovene = list(NAME = "Dylovene", REQ = 5, BRUTE_AMP = 0, BURN_AMP = 0, TOX_HEAL = 1, STAM_REG_AMP = 0, SPEED_BOOST = 0),
+		/datum/reagent/medicine/synaptizine = list(NAME = "Synaptizine", REQ = 3, BRUTE_AMP = 0, BURN_AMP = 0, TOX_HEAL = 2, STAM_REG_AMP = 0.2, SPEED_BOOST = 0),
+		/datum/reagent/medicine/neuraline = list(NAME = "Neuraline", REQ = 2, BRUTE_AMP = 3, BURN_AMP = 3, TOX_HEAL = -3, STAM_REG_AMP = 0, SPEED_BOOST = -0.5),
 	)
 
 /datum/component/chem_booster/Initialize()

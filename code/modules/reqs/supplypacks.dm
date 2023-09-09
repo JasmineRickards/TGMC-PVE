@@ -880,7 +880,7 @@ ARMOR
 	)
 	cost = B17_PRICE
 
-/datum/supply_packs/imports/nt/rig
+/datum/supply_packs/armor/nt/rig
 	name = "Nanotrasen brand HEV suit"
 	contains = list(
 		/obj/item/clothing/suit/armor/rig/nt/heavy,
