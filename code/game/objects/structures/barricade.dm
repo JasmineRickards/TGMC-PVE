@@ -443,7 +443,7 @@
 	desc = "A sturdy and easily assembled barricade made of metal plates, often used for quick fortifications. Use a blowtorch to repair."
 	icon_state = "metal_0"
 	max_integrity = 200
-	soft_armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 100, "fire" = 80, "acid" = 40)
+	soft_armor = list("melee" = 50, "bullet" = 75, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 100, "fire" = 100, "acid" = 50)
 	coverage = 128
 	stack_type = /obj/item/stack/sheet/metal
 	stack_amount = 4
@@ -540,12 +540,14 @@
 		if(CADE_TYPE_BOMB)
 			soft_armor = soft_armor.modifyRating(bomb = 50)
 		if(CADE_TYPE_MELEE)
-			soft_armor = soft_armor.modifyRating(melee = 30, bullet = 30)
+			soft_armor = soft_armor.modifyRating(melee = 30, bullet = 20)
 		if(CADE_TYPE_ACID)
-			soft_armor = soft_armor.modifyRating(acid = 20)
+			soft_armor = soft_armor.modifyRating(acid = 30)
 			resistance_flags |= UNACIDABLE
 
 	barricade_upgrade_type = choice
+
+	modify_max_integrity(max_integrity + 300)
 
 	balloon_alert_to_viewers("[choice] attached")
 
@@ -757,9 +759,9 @@
 				if(CADE_TYPE_BOMB)
 					soft_armor = soft_armor.modifyRating(bomb = -50)
 				if(CADE_TYPE_MELEE)
-					soft_armor = soft_armor.modifyRating(melee = -30, bullet = -30)
+					soft_armor = soft_armor.modifyRating(melee = -30, bullet = -20)
 				if(CADE_TYPE_ACID)
-					soft_armor = soft_armor.modifyRating(acid = -20)
+					soft_armor = soft_armor.modifyRating(acid = -30)
 					resistance_flags &= ~UNACIDABLE
 
 			new /obj/item/stack/sheet/metal(loc, CADE_UPGRADE_REQUIRED_SHEETS)
@@ -797,7 +799,7 @@
 	desc = "A very sturdy barricade made out of plasteel panels, the pinnacle of strongpoints. Use a blowtorch to repair. Can be flipped down to create a path."
 	icon_state = "plasteel_closed_0"
 	max_integrity = 500
-	soft_armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 100, "fire" = 80, "acid" = 40)
+	soft_armor = list("melee" = 50, "bullet" = 90, "laser" = 90, "energy" = 90, "bomb" = 50, "bio" = 100, "fire" = 100, "acid" = 50)
 	coverage = 128
 	stack_type = /obj/item/stack/sheet/plasteel
 	stack_amount = 5
@@ -1061,7 +1063,7 @@
 	desc = "A bunch of bags filled with sand, stacked into a small wall. Surprisingly sturdy, albeit labour intensive to set up. Trusted to do the job since 1914."
 	icon_state = "sandbag_0"
 	max_integrity = 300
-	soft_armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 100, "fire" = 80, "acid" = 40)
+	soft_armor = list("melee" = 60, "bullet" = 95, "laser" = 95, "energy" = 95, "bomb" = 80, "bio" = 100, "fire" = 100, "acid" = 60)
 	coverage = 128
 	stack_type = /obj/item/stack/sandbags
 	hit_sound = "sound/weapons/genhit.ogg"
@@ -1131,7 +1133,7 @@
 	barricade_type = "folding"
 	can_wire = TRUE
 	is_wired = FALSE
-	soft_armor = list(MELEE = 35, BULLET = 30, LASER = 20, ENERGY = 40, BOMB = 25, BIO = 100, FIRE = 100, ACID = 30)
+	soft_armor = list(MELEE = 90, BULLET = 90, LASER = 90, ENERGY = 90, BOMB = 80, BIO = 100, FIRE = 100, ACID = 70)
 	///Whether this item can be deployed or undeployed
 	var/flags_item = IS_DEPLOYABLE
 	///What it deploys into. typecast version of internal_item

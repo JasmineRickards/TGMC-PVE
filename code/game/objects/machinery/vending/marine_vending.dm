@@ -305,6 +305,7 @@
 		"Utility" = list(
 			/obj/item/flashlight/combat = -1,
 			/obj/item/weapon/gun/grenade_launcher/single_shot/flare/marine = -1,
+			/obj/item/tool/shovel = -1,
 			/obj/item/tool/shovel/etool = -1,
 			/obj/item/tool/extinguisher = -1,
 			/obj/item/tool/extinguisher/mini = -1,
@@ -313,6 +314,8 @@
 			/obj/item/compass = -1,
 			/obj/item/tool/hand_labeler = -1,
 			/obj/item/stack/sandbags_empty/full = -1,
+			/obj/item/stack/barbed_wire/full = -1,
+			/obj/item/stack/razorwire/full = -1,
 			/obj/item/book/manual/ordtech = -1,
 		),
 	)

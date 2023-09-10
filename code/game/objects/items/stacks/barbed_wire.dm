@@ -54,7 +54,7 @@
 	throwforce = 10
 	throw_range = 5
 	attack_verb = list("hit", "whacked", "sliced")
-	max_amount = 10
+	max_amount = 25
 	merge_type = /obj/item/stack/razorwire
 
 
@@ -68,7 +68,7 @@
 
 //full stack
 /obj/item/stack/razorwire/full
-	amount = 20
+	amount = 25
 
 /obj/item/stack/razorwire/attack_self(mob/user) //use barbed wire to deploy it
 	if(!ishuman(usr))
