@@ -477,7 +477,7 @@
 	greyscale_colors = "#fa7923"
 
 /obj/item/ammo_magazine/rifle/tx54/shell/he
-	name = "\improper 80mm airburst grenade magazine"
+	name = "\improper 80mm shell magazine"
 	desc = "An 80mm magazine loaded with mortar shells. For use with the GL-55M."
 	caliber = CALIBER_20MM
 	icon_state = "tx54_airburst"

@@ -883,7 +883,7 @@ ARMOR
 /datum/supply_packs/armor/nt/rig
 	name = "Nanotrasen brand HEV suit"
 	contains = list(
-		/obj/item/clothing/suit/armor/rig/nt/heavy,
+		/obj/item/clothing/suit/storage/marine/rig/nt/heavy,
 		/obj/item/clothing/head/helmet/rig/nt/heavy,
 		/obj/item/clothing/glasses/hud/xenohud/night/meson,
 		/obj/item/weapon/energy/sword/blue/nt)
@@ -1767,7 +1767,7 @@ Imports
 		/obj/item/clothing/mask/gas/icc,
 		/obj/item/storage/backpack/lightpack/icc,
 		/obj/item/clothing/under/marine/icc,)
-	cost = 60
+	cost = 25
 
 /*******************************************************************************
 VEHICLES
