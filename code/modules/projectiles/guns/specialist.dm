@@ -778,6 +778,39 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 /obj/item/weapon/gun/launcher/rocket/recoillessrifle/low_impact
 	default_ammo_type = /obj/item/ammo_magazine/rocket/recoilless/low_impact
 
+/obj/item/weapon/gun/energy/recoillessrifle/lasercannon
+	name = "\improper LC-Incinerator Incendiary Artillery"
+	desc = "The LC-Incinerator Incendiary Artillery is a long range explosive ordanance device used by the TGMC used to fire incendiary explosive bolts at far distances. Uses the M-70 power pack for energy charging."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "t160_l"
+	item_state = "t160"
+	fire_sound = 'sound/weapons/guns/fire/laser.ogg'
+	load_method = CELL //codex
+	rounds_per_shot = 300
+	ammo_datum_type  = /datum/ammo/energy/lasgun/marine/heavy_laser
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun/volkite/powerpack,
+		/obj/item/cell/lasgun/volkite/turret
+	)
+	attachable_allowed = list(
+		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/scope/mini,
+	)
+	flags_equip_slot = ITEM_SLOT_BACK
+	fire_sound = 'sound/weapons/guns/fire/tank_flamethrower.ogg'
+	reload_sound = 'sound/weapons/guns/interact/minigun_cocked.ogg'
+	muzzleflash_iconstate = "muzzle_flash_laser"
+	w_class = WEIGHT_CLASS_BULKY
+	flags_gun_features = GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
+	force = 15
+	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER
+	gun_skill_category = GUN_SKILL_FIREARMS
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 15, "rail_y" = 19, "under_x" = 19, "under_y" = 14, "stock_x" = 19, "stock_y" = 14)
+
+	fire_delay = 0.3 SECONDS
+	recoil = 3
+	scatter = -100
 //-------------------------------------------------------
 //Disposable RPG
 
