@@ -15,9 +15,9 @@
 	var/dirt_overlay = "shovel_overlay"
 	var/folded = FALSE
 	var/dirt_type = NO_DIRT // 0 for no dirt, 1 for brown dirt, 2 for snow, 3 for big red, 4 for basalt(lava-land).
-	var/shovelspeed = 15
+	var/shovelspeed = 5
 	var/dirt_amt = 0
-	var/dirt_amt_per_dig = 5
+	var/dirt_amt_per_dig = 10
 
 /obj/item/tool/shovel/update_overlays()
 	. = ..()
@@ -140,7 +140,7 @@
 	folded = TRUE
 	dirt_overlay = "etool_overlay"
 	dirt_amt_per_dig = 5
-	shovelspeed = 20
+	shovelspeed = 10
 
 /obj/item/tool/shovel/etool/update_icon_state()
 	if(!folded && !sharp)
