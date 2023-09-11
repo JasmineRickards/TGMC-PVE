@@ -923,7 +923,7 @@
 
 /obj/item/storage/box/squadmarine/hev/Initialize(mapload, ...)
 	. = ..()
-	new /obj/item/clothing/suit/armor/rig/nt/heavy(src)
+	new /obj/item/clothing/suit/storage/marine/rig/nt/heavy(src)
 	new	/obj/item/clothing/head/helmet/rig/nt/heavy(src)
 	new	/obj/item/weapon/energy/sword/blue/nt(src)
 	new /obj/item/clothing/glasses/hud/xenohud/night/meson(src)

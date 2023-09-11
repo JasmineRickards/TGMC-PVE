@@ -381,6 +381,50 @@
 	flags_item_map_variant = NONE
 	pockets = /obj/item/storage/internal/suit/marine/M3IS
 
+//NT Hazard Environment suit
+/obj/item/clothing/suit/storage/marine/rig/nt/heavy
+	name = "NT HEV-1 hardsuit set"
+	desc = "Newly created type of hardsuit by NT Research Department. This masterpiece of science and engineer minds is nearly impossible to be effected by any acid or biohazard dangers. Heavy platings also provide excellent protection against melee and ranged weapons. However, suit by itself is very bulky to wear. Because of that, engineers placed an expensive exoskeleton on it, making it's user strong enough to wear, walk and run in the suit with ease. NT sells this hardsuit to some military corps, such as TGMC."
+	icon_state = "rig-hazardhardsuit"
+	item_state = "rig-hazardhardsuit"
+	flags_item = SYNTH_RESTRICTED
+	soft_armor = list(MELEE = 85, BULLET = 90, LASER = 90, ENERGY = 90, BOMB = 95, BIO = 100, FIRE = 90, ACID = 100)
+	hard_armor = list(MELEE = 2, BULLET = 5, LASER = 5, ENERGY = 5, BOMB = 10, BIO = 100, FIRE = 20, ACID = 95)
+	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
+	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
+	flags_heat_protection = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
+	slowdown = 0.75
+	time_to_unequip = 8 SECONDS
+	time_to_equip = 8 SECONDS
+	light_range = 10
+	pockets = /obj/item/storage/internal/suit/marine/M3IS
+	resistance_flags = UNACIDABLE
+	supporting_limbs = HEAD | CHEST | GROIN | ARM_LEFT | ARM_RIGHT | LEG_LEFT | LEG_RIGHT | HAND_RIGHT | HAND_LEFT | FOOT_RIGHT | FOOT_LEFT
+	allowed = list(
+		/obj/item/weapon/gun,
+		/obj/item/instrument,
+		/obj/item/storage/belt/sparepouch,
+		/obj/item/storage/holster/blade,
+		/obj/item/weapon/claymore,
+		/obj/item/storage/belt/gun,
+		/obj/item/storage/belt/knifepouch,
+		/obj/item/weapon/twohanded,
+		/obj/item/tool/pickaxe/plasmacutter,
+		/obj/item/tank/emergency_oxygen,
+		/obj/item/flashlight,
+		/obj/item/ammo_magazine,
+		/obj/item/explosive/grenade,
+		/obj/item/binoculars,
+		/obj/item/weapon/combat_knife,
+		/obj/item/attachable/bayonetknife,
+	)
+
+/obj/item/clothing/suit/storage/marine/rig/nt/heavy/Initialize(mapload, ...)
+	. = ..()
+	AddComponent(/datum/component/suit_autodoc)
+	AddElement(/datum/element/limb_support, supporting_limbs)
+
+
 //===========================SPECIALIST================================
 
 

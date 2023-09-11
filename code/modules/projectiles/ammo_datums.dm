@@ -2197,6 +2197,8 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	accuracy = 1000
 	max_range = 1000
 	ping = null
+	hud_state = "grenade_he"
+	hud_state_empty = "grenade_empty"
 	bullet_color = COLOR_WHITE
 
 /datum/ammo/mortar/drop_nade(turf/T)
