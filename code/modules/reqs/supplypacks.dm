@@ -799,6 +799,10 @@ EXPLOSIVES
 	cost = 10
 	available_against_xeno_only = TRUE
 
+/datum/supply_packs/explosives/ai_target_module
+	name = "LC-Incinerator Energy Cannon"
+	contains = list(/obj/item/weapon/gun/energy/recoillessrifle/lasercannon)
+	cost = 5
 /*******************************************************************************
 ARMOR
 *******************************************************************************/
