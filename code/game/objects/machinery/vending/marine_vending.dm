@@ -306,6 +306,7 @@
 		"Utility" = list(
 			/obj/item/flashlight/combat = -1,
 			/obj/item/weapon/gun/grenade_launcher/single_shot/flare/marine = -1,
+			/obj/item/tool/shovel = -1,
 			/obj/item/tool/shovel/etool = -1,
 			/obj/item/tool/extinguisher = -1,
 			/obj/item/tool/extinguisher/mini = -1,
