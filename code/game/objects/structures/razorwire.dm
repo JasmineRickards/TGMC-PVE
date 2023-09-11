@@ -18,20 +18,6 @@
 	max_integrity = RAZORWIRE_MAX_HEALTH
 	var/soak = 5
 
-/obj/structure/razorwire/deconstruct(disassembled = TRUE)
-	if(disassembled)
-		if(obj_integrity > max_integrity * 0.5)
-			new sheet_type(loc)
-		var/obj/item/stack/rods/salvage = new sheet_type2(loc)
-		salvage.amount = min(1, round(4 * (obj_integrity / max_integrity) ) )
-	else
-		if(prob(50))
-			new sheet_type(loc)
-		if(prob(50))
-			var/obj/item/stack/rods/salvage = new sheet_type2(loc)
-			salvage.amount = rand(1,4)
-	return ..()
-
 /obj/structure/razorwire/Initialize()
 	. = ..()
 	var/static/list/connections = list(
