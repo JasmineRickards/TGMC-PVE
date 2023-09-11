@@ -63,7 +63,7 @@
 	desc = "A box of cannon shells, used for the mobile suit's Heavy weapons, or the AP-HE cannon to be specific."
 	icon_state = "missile_br"
 	rounds = 12
-	direct_load = TRUE
+	direct_load = FALSE
 	load_audio = 'sound/mecha/mag_bullet_insert.ogg'
 	ammo_type = MECHA_AMMO_MISSILE_AP
 
@@ -71,8 +71,8 @@
 	name = "anti-armor missiles"
 	desc = "A box of large missiles, ready for loading into an SRM-8 exosuit missile rack."
 	icon_state = "missile_he"
-	rounds = 8
-	direct_load = TRUE
+	rounds = 12
+	direct_load = FALSE
 	load_audio = 'sound/mecha/mag_bullet_insert.ogg'
 	ammo_type = MECHA_AMMO_MISSILE_AP
 
@@ -80,8 +80,8 @@
 	name = "anti-armor sabots"
 	desc = "A box of large missiles, ready for loading into an SRM-8 exosuit missile rack."
 	icon_state = "missile_he"
-	rounds = 8
-	direct_load = TRUE
+	rounds = 12
+	direct_load = FALSE
 	load_audio = 'sound/mecha/mag_bullet_insert.ogg'
 	ammo_type = MECHA_AMMO_MISSILE_SABOT
 

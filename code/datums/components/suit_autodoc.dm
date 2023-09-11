@@ -39,8 +39,7 @@
 
 	var/static/list/default_burn_chems = list(
 		/datum/reagent/medicine/kelotane,
-		/datum/reagent/medicine/tricordrazine,
-		/datum/reagent/medicine/russian_red)
+		/datum/reagent/medicine/tricordrazine)
 	var/static/list/default_oxy_chems = list(
 		/datum/reagent/medicine/dexalinplus,
 		/datum/reagent/medicine/inaprovaline,

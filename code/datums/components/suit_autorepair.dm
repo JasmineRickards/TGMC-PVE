@@ -110,7 +110,7 @@
 	if(!(wearer.species.species_flags & ROBOTIC_LIMBS))
 		return
 	if(wearer.health < wearer.maxHealth)
-		wearer.heal_overall_damage(4, 4, TRUE, TRUE)
+		wearer.heal_overall_damage(2, 2, TRUE, TRUE)
 		playsound(src, 'sound/items/ratchet.ogg', 25)
 
 /datum/action/suit_autorepair
