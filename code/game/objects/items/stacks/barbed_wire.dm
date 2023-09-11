@@ -14,6 +14,7 @@
 	attack_verb = list("hit", "whacked", "sliced")
 	max_amount = 25
 	merge_type = /obj/item/stack/barbed_wire
+	materials = list()
 
 //small stack
 /obj/item/stack/barbed_wire/small_stack
@@ -56,6 +57,7 @@
 	attack_verb = list("hit", "whacked", "sliced")
 	max_amount = 10
 	merge_type = /obj/item/stack/razorwire
+	materials = list()
 
 
 //small stack
