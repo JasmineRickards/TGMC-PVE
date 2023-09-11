@@ -166,7 +166,6 @@
 	can_wire = FALSE
 	is_wired = TRUE
 	climbable = FALSE
-	modify_max_integrity(max_integrity + 50)
 	update_icon()
 
 /obj/structure/barricade/wirecutter_act(mob/living/user, obj/item/I)
