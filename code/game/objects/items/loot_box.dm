@@ -566,7 +566,7 @@
 	new /obj/item/armor_module/module/hlin_explosive_armor(src)
 	new /obj/item/armor_module/module/tyr_extra_armor(src)
 	new /obj/item/armor_module/module/tyr_head(src)
-	new /obj/item/armor_module/module/valkyrie_autodoc(src)
+//	new /obj/item/armor_module/module/valkyrie_autodoc(src)
 	new /obj/item/armor_module/module/mimir_environment_protection(src)
 	new /obj/item/armor_module/module/mimir_environment_protection/mimir_helmet(src)
 	new	/obj/item/armor_module/module/welding/superior(src)
