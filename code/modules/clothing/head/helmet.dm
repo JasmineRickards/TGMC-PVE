@@ -801,6 +801,17 @@
 	species_exception = list(/datum/species/robot)
 	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT)
 	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 10, ACID = 50)
+	attachments_by_slot = list(ATTACHMENT_SLOT_HEAD_MODULE)
+	attachments_allowed = list(
+		/obj/item/armor_module/module/tyr_head,
+		/obj/item/armor_module/module/hod_head,
+		/obj/item/armor_module/module/mimir_environment_protection/mimir_helmet,
+		/obj/item/armor_module/module/mimir_environment_protection/mimir_helmet/mark1,
+		/obj/item/armor_module/module/binoculars,
+		/obj/item/armor_module/module/antenna,
+		/obj/item/armor_module/storage/helmet,
+		/obj/item/armor_module/armor/badge,
+	)
 
 /obj/item/clothing/head/helmet/marine/robot/mob_can_equip(mob/M, slot, warning, override_nodrop)
 	. = ..()

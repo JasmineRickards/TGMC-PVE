@@ -232,6 +232,9 @@
 	var/picked = pick(randompick)
 	new picked(src)
 
+/obj/item/belt_harness/vendor_equip(mob/user)
+	..()
+	return user.equip_to_appropriate_slot(src)
 
 //Harness Belts
 /obj/item/belt_harness
