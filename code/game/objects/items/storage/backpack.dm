@@ -227,27 +227,28 @@
 	name = "emergency response team backpack"
 	desc = "A spacious backpack with lots of pockets, used by members of the Emergency Response Team."
 	icon_state = "ert_commander"
+	max_storage_space = 50
 
 //Commander
 /obj/item/storage/backpack/ert/commander
-	name = "emergency response team commander backpack"
-	desc = "A spacious backpack with lots of pockets, worn by the commander of a Emergency Response Team."
+	name = "response team leader backpack"
+	desc = "A spacious backpack with lots of pockets, worn by the team leaders of a Emergency Response Team."
 
 //Security
 /obj/item/storage/backpack/ert/security
-	name = "emergency response team security backpack"
-	desc = "A spacious backpack with lots of pockets, worn by security members of a Emergency Response Team."
+	name = "response team grunt backpack"
+	desc = "A spacious backpack with lots of pockets, worn by regular members of a Emergency Response Team."
 	icon_state = "ert_security"
 
 //Engineering
 /obj/item/storage/backpack/ert/engineer
-	name = "emergency response team engineer backpack"
+	name = "response team field technician backpack"
 	desc = "A spacious backpack with lots of pockets, worn by engineering members of a Emergency Response Team."
 	icon_state = "ert_engineering"
 
 //Medical
 /obj/item/storage/backpack/ert/medical
-	name = "emergency response team medical backpack"
+	name = "response team combat medic backpack"
 	desc = "A spacious backpack with lots of pockets, worn by medical members of a Emergency Response Team."
 	icon_state = "ert_medical"
 
@@ -362,6 +363,13 @@
 		/obj/item/stack/razorwire,
 		/obj/item/stack/sandbags,
 	)
+
+/obj/item/storage/backpack/marine/marsoc
+	name = "\improper MARSOC tactical rucksack"
+	desc = "With this backpack, you feel like you'll be able to wear planet on yourself."
+	icon_state = "tacrucksack"
+	item_state = "tacrucksack"
+	max_storage_space = 55
 
 /obj/item/storage/backpack/marine/satchel
 	name = "\improper TGMC satchel"
@@ -764,6 +772,11 @@
 	desc = "A small lightweight pack for expeditions and short-range operations."
 	icon_state = "ERT_satchel"
 	access_delay = 0
+
+/obj/item/storage/backpack/lightpack/icc
+	name = "\improper lightweight tactical combat pack"
+	desc = "A small lightweight pack for expeditions and short-range operations. It is painted in desert camouflage"
+	icon_state = "icc_bag"
 
 /obj/item/storage/backpack/commando
 	name = "commando bag"

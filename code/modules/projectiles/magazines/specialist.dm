@@ -55,16 +55,16 @@
 //tx8 magazines
 
 /obj/item/ammo_magazine/rifle/tx8
-	name = "\improper high velocity magazine (10x28mm)"
+	name = "\improper A19 high velocity magazine (10x28mm)"
 	desc = "A magazine of overpressuered high velocity rounds for use in the BR-8 battle rifle. The BR-8 battle rifle is the only gun that can chamber these rounds."
 	icon_state = "tx8"
 	caliber = CALIBER_10X28_CASELESS
 	default_ammo = /datum/ammo/bullet/rifle/tx8
-	max_rounds = 45
+	max_rounds = 75
 	icon_state_mini = "mag_rifle_big"
 
 /obj/item/ammo_magazine/rifle/tx8/incendiary
-	name = "\improper high velocity incendiary magazine (10x28mm)"
+	name = "\improper A19 high velocity incendiary magazine (10x28mm)"
 	desc = "A magazine of overpressuered high velocity incendiary rounds for use in the BR-8 battle rifle. The BR-8 battle rifle is the only gun that can chamber these rounds."
 	caliber = CALIBER_10X28_CASELESS
 	icon_state = "tx8_incend"
@@ -73,7 +73,7 @@
 	bonus_overlay = "tx8_incend"
 
 /obj/item/ammo_magazine/rifle/tx8/impact
-	name = "\improper high velocity impact magazine (10x28mm)"
+	name = "\improper A19 high velocity impact magazine (10x28mm)"
 	desc = "A magazine of overpressuered high velocity impact rounds for use in the BR-8 battle rifle. The BR-8 battle rifle is the only gun that can chamber these rounds."
 	icon_state = "tx8_impact"
 	default_ammo = /datum/ammo/bullet/rifle/tx8/impact
@@ -496,6 +496,15 @@
 		"16 Gauge Slugs" = /datum/ammopacktype/tx15_slug,
 		)
 
+/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old
+	name = "\improper T-72O Pointman longevity belt"
+	desc = "An alternative version of the T-72 longevity belt. This model is made for some old weapons, either used by TGMC or other military groups."
+	flags_equip_slot = ITEM_SLOT_BELT
+	caliber_types = list(
+		"10x24 Heavy Caseless" = /datum/ammopacktype/p10x24b/heavy,
+		"10x24 Heavy Armor Piercing" = /datum/ammopacktype/p10x24bap/heavy/ap,
+		)
+
 /obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/pouch
 	name = "\improper T-73 Reiter Pouch"
 	desc = "Following the successful deployment of the T-72 Pointman, the T-73 Reiter was commissioned as an ammo feed system for magazine-compatible handguns which can be clipped onto one's pocket. Thanks to the compact size of pistol munitions, it holds two boxes worth of any pistol caliber and is a popular choice for Corpsmen, who may prefer mobility and to have a hand free at all times for search and rescue operations and performance of their typical duties, and for squad marines who find either the experience of wielding handguns akimbo or the experience of fighting with a pistol from the seat of a motorbike to be especially exhilarating."
@@ -518,6 +527,14 @@
 	radial_icon_state = "10x24"
 	caliber_label = "10x24mm Caseless"
 
+/datum/ammopacktype/p10x24b/heavy
+	default_ammo = /datum/ammo/bullet/rifle/heavy/m41a
+	max_rounds = 2000
+	caliber = CALIBER_10X24_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "10x24"
+	caliber_label = "10x24mm Heavy Caseless"
+
 /datum/ammopacktype/p10x24bap
 	default_ammo = /datum/ammo/bullet/rifle/ap
 	max_rounds = 3000
@@ -525,6 +542,14 @@
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "10x24AP"
 	caliber_label = "10x24mm Armor Piercing"
+
+/datum/ammopacktype/p10x24bap/heavy/ap
+	default_ammo = /datum/ammo/bullet/rifle/heavy/ap
+	max_rounds = 2000
+	caliber = CALIBER_10X24_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "10x24AP"
+	caliber_label = "10x24mm Heavy Armor Piercing"
 
 /datum/ammopacktype/p10x24binc
 	default_ammo = /datum/ammo/bullet/rifle/incendiary

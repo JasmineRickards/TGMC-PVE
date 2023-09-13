@@ -5,7 +5,7 @@
 	icon_state = "helmet"
 	item_state = "helmet"
 	accuracy_mod = 0
-	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
+	soft_armor = list(MELEE = 65, BULLET = 75, LASER = 75, ENERGY = 50, BOMB = 60, BIO = 20, FIRE = 50, ACID = 55)
 	flags_atom = CONDUCT
 	flags_inventory = COVEREYES|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES
@@ -38,11 +38,17 @@
 /obj/item/clothing/head/helmet/riot
 	name = "riot helmet"
 	desc = "It's a helmet specifically designed to protect against close range attacks. It covers your ears."
-	icon_state = "riot"
+	icon_state = "riot_new"
 	soft_armor = list(MELEE = 85, BULLET = 25, LASER = 50, ENERGY = 50, BOMB = 25, BIO = 30, FIRE = 50, ACID = 80)
 	flags_inventory = COVEREYES|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDETOPHAIR
 	flags_item = SYNTH_RESTRICTED
+
+/obj/item/clothing/head/helmet/riot/old
+	name = "old riot helmet"
+	desc = "It's an old helmet specifically designed to protect against close range attacks. It covers your ears."
+	icon_state = "old_riot"
+	soft_armor = list(MELEE = 80, BULLET = 30, LASER = 40, ENERGY = 50, BOMB = 30, BIO = 20, FIRE = 50, ACID = 30)
 
 /obj/item/clothing/head/helmet/augment
 	name = "augment array"
@@ -101,11 +107,12 @@
 	flags_armor_protection = NONE
 
 /obj/item/clothing/head/helmet/swat
-	name = "\improper SWAT helmet"
-	desc = "They're often used by highly trained Swat Members."
+	name = "\improper bulletproof helmet"
+	desc = "Helmet that protects against high-velocity objects."
 	icon_state = "swat"
 	item_state = "swat"
-	soft_armor = list(MELEE = 35, BULLET = 85, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
+	soft_armor = list(MELEE = 50, BULLET = 95, LASER = 40, ENERGY = 30, BOMB = 75, BIO = 0, FIRE = 75, ACID = 50)
+	hard_armor = list(MELEE = 0, BULLET = 15, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 	flags_inventory = COVEREYES|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES
 	flags_cold_protection = HEAD
@@ -149,38 +156,53 @@
 
 //Non-hardsuit ERT helmets.
 /obj/item/clothing/head/helmet/ert
-	name = "emergency response team helmet"
-	desc = "An in-atmosphere helmet worn by members of the Emergency Response Team. Protects the head from impacts."
+	name = "response team PCH MK2"
+	desc = "An in-atmosphere helmet worn by members of the NT Emergency Response Team. Protects the head from impacts."
 	icon_state = "erthelmet_cmd"
 	item_state = "syndicate-helm-green"
-	soft_armor = list(MELEE = 62, BULLET = 50, LASER = 50, ENERGY = 35, BOMB = 10, BIO = 2, FIRE = 35, ACID = 35)
+	soft_armor = list(MELEE = 80, BULLET = 90, LASER = 150, ENERGY = 90, BOMB = 80, BIO = 80, FIRE = 80, ACID = 85)
+	hard_armor = list(MELEE = 5, BULLET = 10, LASER = 10, ENERGY = 5, BOMB = 10, BIO = 5, FIRE = 5, ACID = 5)
 	anti_hug = 5
+
 
 //Commander
 /obj/item/clothing/head/helmet/ert/command
-	name = "emergency response team commander helmet"
-	desc = "An in-atmosphere helmet worn by the commander of a Emergency Response Team. Has blue highlights."
+	name = "response team leader PCH MK3-B"
+	desc = "An in-atmosphere helmet worn by the team leaders of the NT Emergency Response Team. Has blue highlights.Newer version with better protection."
+	soft_armor = list(MELEE = 85, BULLET = 95, LASER = 170, ENERGY = 95, BOMB = 90, BIO = 90, FIRE = 85, ACID = 90)
+
 
 //Security
 /obj/item/clothing/head/helmet/ert/security
-	name = "emergency response team security helmet"
-	desc = "An in-atmosphere helmet worn by security members of the Emergency Response Team. Has red highlights."
+	name = "response team grunt PCH MK2-R"
+	desc = "An in-atmosphere helmet worn by the regular members of the NT Emergency Response Team. Has red highlights."
 	icon_state = "erthelmet_sec"
+
 
 //Engineer
 /obj/item/clothing/head/helmet/ert/engineer
-	name = "emergency response team engineer helmet"
-	desc = "An in-atmosphere helmet worn by engineering members of the Emergency Response Team. Has orange highlights."
+	name = "response team field technician PCH MK2-Y"
+	desc = "An in-atmosphere helmet worn by the engineering members of NT the Emergency Response Team. Has orange highlights."
 	icon_state = "erthelmet_eng"
+
 
 //Medical
 /obj/item/clothing/head/helmet/ert/medical
-	name = "emergency response team medical helmet"
-	desc = "A set of armor worn by medical members of the Emergency Response Team. Has red and white highlights."
+	name = "response team combat medic PCH MK2L-W"
+	desc = "An in-atmosphere helmet worn by the medical members of the NT Emergency Response Team. Has red and white highlights. Lighter version with less protection."
 	icon_state = "erthelmet_med"
+	soft_armor = list(MELEE = 65, BULLET = 80, LASER = 150, ENERGY = 80, BOMB = 70, BIO = 70, FIRE = 70, ACID = 75)
 
 
-
+//NT Hazard Environment helmet
+/obj/item/clothing/head/helmet/rig/nt/heavy
+	name = "NT HEV-1 hardsuit helmet"
+	desc = "Helmet that comes with the HEV-1 hardsuit. Helmet has some special cleaning functions for the visor to see the area all the time."
+	icon_state = "rig0-hazardhardsuit"
+	item_state = "rig0-hazardhardsuit"
+	flags_item = SYNTH_RESTRICTED
+	soft_armor = list(MELEE = 85, BULLET = 90, LASER = 90, ENERGY = 90, BOMB = 95, BIO = 100, FIRE = 90, ACID = 100)
+	hard_armor = list(MELEE = 2, BULLET = 5, LASER = 5, ENERGY = 5, BOMB = 10, BIO = 100, FIRE = 20, ACID = 95)
 
 
 /*===========================MARINES HELMETS=================================
@@ -195,7 +217,7 @@
 		slot_head_str = 'icons/mob/head_1.dmi',
 		slot_l_hand_str = 'icons/mob/items_lefthand_1.dmi',
 		slot_r_hand_str = 'icons/mob/items_righthand_1.dmi',)
-	icon_state = "helmet"
+	icon_state = "helmet_old"
 	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 	max_integrity = 5
 	var/list/helmet_overlays
@@ -313,21 +335,24 @@
 
 /obj/item/clothing/head/helmet/marine/standard
 	flags_item_map_variant = NONE
-	//flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+	soft_armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 60, BIO = 60, FIRE = 60, ACID = 60)
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 /obj/item/clothing/head/helmet/marine/tech
 	name = "\improper M10 technician helmet"
 	icon_state = "techhelmet"
+	soft_armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 60, BIO = 60, FIRE = 60, ACID = 60)
 	flags_item_map_variant = NONE
-	//flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
-	attachments_by_slot = list(ATTACHMENT_SLOT_HEAD_MODULE)
-	attachments_allowed = list(/obj/item/armor_module/module/welding)
-	starting_attachments = list(/obj/item/armor_module/module/welding)
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+	//attachments_by_slot = list(ATTACHMENT_SLOT_HEAD_MODULE)
+	//attachments_allowed = list(/obj/item/armor_module/module/welding)
+	//starting_attachments = list(/obj/item/armor_module/module/welding)
 
 /obj/item/clothing/head/helmet/marine/corpsman
 	name = "\improper M10 corpsman helmet"
 	icon_state = "corpshelmet"
+	soft_armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 60, BIO = 60, FIRE = 60, ACID = 60)
 	flags_item_map_variant = NONE
-	//flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
 /obj/item/clothing/head/helmet/marine/security
 	name = "\improper RC6 helmet"
@@ -338,6 +363,28 @@
 	attachments_by_slot = list(ATTACHMENT_SLOT_HEAD_MODULE)
 	attachments_allowed = list(/obj/item/armor_module/module/tyr_head)
 	starting_attachments = list(/obj/item/armor_module/module/tyr_head)
+
+/obj/item/clothing/head/helmet/marine/intel
+	name = "\improper XM12 intelligence helmet"
+	icon_state = "io"
+	desc = "Specially made helmet, usually worn by some TGMC Intelligence Officers. Has greater protection for your fragile brain."
+	soft_armor = list(MELEE = 75, BULLET = 85, LASER = 85, ENERGY = 75, BOMB = 76, BIO = 50, FIRE = 75, ACID = 85)
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+
+/obj/item/clothing/head/helmet/marine/icc
+	name = "\improper tactical camo helmet"
+	icon_state = "icc"
+	item_state = "icc"
+	desc = "Desert camouflauged helmet for combat usage."
+	soft_armor = list(MELEE = 50, BULLET = 90, LASER = 90, ENERGY = 80, BOMB = 90, BIO = 30, FIRE = 50, ACID = 55)
+	hard_armor = list(MELEE = 0, BULLET = 15, LASER = 15, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+
+/obj/item/clothing/head/helmet/marine/marsoc
+	name = "\improper M11 advanced pattern MARSOC helmet"
+	desc = "Tactical helmet used by some black-ops."
+	icon_state = "marsoc_helmet"
+	soft_armor = list(MELEE = 90, BULLET = 110, LASER = 110, ENERGY = 95, BOMB = 95, BIO = 20, FIRE = 90, ACID = 95)
+	hard_armor = list(MELEE = 3, BULLET = 5, LASER = 5, ENERGY = 5, BOMB = 5, BIO = 0, FIRE = 0, ACID = 2)
 
 /obj/item/clothing/head/helmet/marine/heavy
 	name = "\improper M10E pattern marine helmet"
@@ -376,30 +423,30 @@
 	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
 /obj/item/clothing/head/helmet/marine/scout
-	name = "\improper M3-S helmet"
-	icon_state = "scout_helmet"
+	name = "\improper M3 pattern scout helmet"
+	icon_state = "sniper_helmet"
 	flags_item = SYNTH_RESTRICTED
 	desc = "A custom helmet designed for TGMC Scouts. Made of light weight, experimental materials to provide great protection while also having less weight than the standard helmet."
-	soft_armor = list(MELEE = 75, BULLET = 70, LASER = 40, ENERGY = 40, BOMB = 35, BIO = 40, FIRE = 40, ACID = 40)
+	soft_armor = list(MELEE = 60, BULLET = 70, LASER = 70, ENERGY = 55, BOMB = 55, BIO = 50, FIRE = 50, ACID = 55)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT)
 
 /obj/item/clothing/head/helmet/marine/sniper
-	name = "\improper M3-M helmet"
-	icon_state = "sniper_helmet"
+	name = "\improper M3 pattern sniper helmet"
+	icon_state = "scout_helmet"
 	flags_item = SYNTH_RESTRICTED
 	desc = "A custom helmet designed for TGMC Marksmen. Fitted with a host of sensors and analyzers to grasp all aspects of the battlefield."
-	soft_armor = list(MELEE = 75, BULLET = 70, LASER = 40, ENERGY = 40, BOMB = 35, BIO = 40, FIRE = 40, ACID = 40)
+	soft_armor = list(MELEE = 80, BULLET = 85, LASER = 85, ENERGY = 70, BOMB = 65, BIO = 65, FIRE = 70, ACID = 65)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT)
 
 /obj/item/clothing/head/helmet/marine/pyro
-	name = "\improper M35 helmet"
+	name = "\improper M35 pattern pyrotechnician helmet"
 	icon_state = "pyro_helmet"
 	flags_item = SYNTH_RESTRICTED
 	desc = "A helmet designed for TGMC Pyrotechnicians. Contains heavy insulation, covered in nomex weave."
 	hard_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 100, ACID = 0)
-	soft_armor = list(MELEE = 85, BULLET = 80, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 40, FIRE = 90, ACID = 50)
+	soft_armor = list(MELEE = 70, BULLET = 75, LASER = 75, ENERGY = 65, BOMB = 70, BIO = 65, FIRE = 95, ACID = 65)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT)
@@ -440,10 +487,10 @@
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/marine/riot
-	name = "M8 riot helmet"
-	desc = "It's a modified version of the widely used Riot Helmets for use against angry jarheads. Boasts high ballistic protection"
+	name = "M8 xeno control helmet"
+	desc = "It's a modified version of the widely used Riot Helmets for use against angry xenos. Boasts high melee and acid protection"
 	icon_state = "marine_riot"
-	soft_armor = list(MELEE = 65, BULLET = 110, LASER = 110, ENERGY = 5, BOMB = 50, BIO = 50, FIRE = 50, ACID = 30)
+	soft_armor = list(MELEE = 92, BULLET = 50, LASER = 50, ENERGY = 25, BOMB = 50, BIO = 95, FIRE = 70, ACID = 95)
 	flags_inventory = COVEREYES|BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDETOPHAIR
 	flags_item = SYNTH_RESTRICTED
@@ -534,6 +581,19 @@
 	flags_item = SYNTH_RESTRICTED
 	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 75, BIO = 75, FIRE = 75, ACID = 50)
 
+/obj/item/clothing/head/helmet/marine/imperial/krieg
+	name = "\improper Death Korp's Krieg standart helmet"
+	desc = "Special Death Korp's Krieg helmet with a fancy gasmask. Good for the wastelands."
+	icon_state = "krieg_standard_helmet"
+	item_state = "krieg_standard_helmet"
+	soft_armor = list(MELEE = 65, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 60, BIO = 90, FIRE = 70, ACID = 85)
+
+/obj/item/clothing/head/helmet/marine/imperial/krieg/medicae
+	name = "\improper Death Korp's Krieg medicae helmet"
+	desc = "Special Death Korp's Krieg helmet with a fancy gasmask. Good for the wastelands. This one is worn by medicaes"
+	icon_state = "krieg_medicae_helmet"
+	item_state = "krieg_medicae_helmet"
+
 /obj/item/clothing/head/helmet/marine/imperial/sergeant
 	name = "\improper Imperial Guard sergeant helmet"
 	desc = "A helmet that goes with the sergeant armour, unlike the flak variant, this one will actually protect you."
@@ -607,7 +667,7 @@
 		slot_head_str = 'icons/mob/head_1.dmi',
 		slot_l_hand_str = 'icons/mob/items_lefthand_1.dmi',
 		slot_r_hand_str = 'icons/mob/items_righthand_1.dmi',)
-	icon_state = "upp_helmet1"
+	icon_state = "upp_helmet_new"
 	flags_item = SYNTH_RESTRICTED
 	soft_armor = list(MELEE = 70, BULLET = 80, LASER = 70, ENERGY = 70, BOMB = 65, BIO = 50, FIRE = 50, ACID = 60)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
@@ -619,7 +679,7 @@
 		slot_head_str = 'icons/mob/head_1.dmi',
 		slot_l_hand_str = 'icons/mob/items_lefthand_1.dmi',
 		slot_r_hand_str = 'icons/mob/items_righthand_1.dmi',)
-	icon_state = "upp_helmet_heavy"
+	icon_state = "upp_helmet_heavy_new"
 	soft_armor = list(MELEE = 90, BULLET = 85, LASER = 60, ENERGY = 65, BOMB = 85, BIO = 5, FIRE = 65, ACID = 65)
 	resistance_flags = UNACIDABLE
 	anti_hug = 3

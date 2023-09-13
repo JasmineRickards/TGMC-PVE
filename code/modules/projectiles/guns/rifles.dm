@@ -368,6 +368,7 @@
 		/obj/item/ammo_magazine/rifle/extended,
 		/obj/item/ammo_magazine/rifle/incendiary,
 		/obj/item/ammo_magazine/rifle/ap,
+		/obj/item/ammo_magazine/rifle/explosive,
 		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
 	)
 	attachable_allowed = list(
@@ -524,6 +525,132 @@
 
 // Incase you wish to re-add the invisible grenade launcher to this gun: /obj/item/weapon/gun/grenade_launcher/underslung/invisible)
 
+/obj/item/weapon/gun/rifle/m41a/old
+	name = "\improper M41A MK1 pulse rifle"
+	desc = "An old version of the electronic rifle. This one was used ages ago and still can be found on some colonies."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "m41amk1"
+	item_state = "m41amk1"
+	caliber = CALIBER_10X24_CASELESS
+	fire_sound = "gun_pulse"
+	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
+	unload_sound = 'sound/weapons/guns/interact/m41a_unload.ogg'
+	reload_sound = 'sound/weapons/guns/interact/m41a_reload.ogg'
+	aim_slowdown = 0.4
+	wield_delay = 0.4 SECONDS
+	max_shells = 99 //codex
+	default_ammo_type = /obj/item/ammo_magazine/rifle/m41a/old
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/m41a/old,
+		/obj/item/ammo_magazine/rifle/m41a/old/ap,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old,
+		)
+	attachable_allowed = list(
+		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/suppressor,
+		/obj/item/attachable/reddot
+		)
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18, "rail_x" = 12, "rail_y" = 24, "under_x" = 24, "under_y" = 13, "stock_x" = 22, "stock_y" = 16)
+
+/obj/item/weapon/gun/rifle/m41a/old/elite
+	name = "\improper M41A MK2/3 pulse rifle"
+	desc = "An old version of the electronic rifle. This particular model was used by some elite forces. Has much better firepower compared to the standart version."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "m41a2"
+	item_state = "m41a2"
+	caliber = CALIBER_10X24_CASELESS
+	fire_sound = "gun_pulse"
+	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
+	unload_sound = 'sound/weapons/guns/interact/m41a_unload.ogg'
+	reload_sound = 'sound/weapons/guns/interact/m41a_reload.ogg'
+	aim_slowdown = 0.4
+	wield_delay = 0.4 SECONDS
+	max_shells = 99 //codex
+	damage_mult = 1.75
+	default_ammo_type = /obj/item/ammo_magazine/rifle/m41a/mk2
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/m41a/mk2,
+		/obj/item/ammo_magazine/rifle/m41a/mk2/extended,
+		/obj/item/ammo_magazine/rifle/m41a/mk2/ap,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old,
+		)
+
+/obj/item/weapon/gun/rifle/m41a/old/marsoc
+	name = "\improper M40-SD heavy pulse rifle"
+	desc = "Very tactical gun given to the unheard TGMC Marine Special Operation Force. This model is able to be loaded with nearly any M41A magazines."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "m40sd"
+	item_state = "m40sd"
+	caliber = CALIBER_10X24_CASELESS
+	fire_sound = "gun_silenced"
+	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
+	unload_sound = 'sound/weapons/guns/interact/m40sd_unload.ogg'
+	reload_sound = 'sound/weapons/guns/interact/m40sd_reload.ogg'
+	aim_slowdown = 0.2
+	wield_delay = 0.2 SECONDS
+	max_shells = 99 //codex
+	damage_mult = 2.5
+	attachable_allowed = list(/obj/item/attachable/magnetic_harness)
+	starting_attachment_types = list(/obj/item/attachable/magnetic_harness)
+	default_ammo_type = /obj/item/ammo_magazine/rifle/m41a/marsoc
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/m41a/mk2,
+		/obj/item/ammo_magazine/rifle/m41a/mk2/extended,
+		/obj/item/ammo_magazine/rifle/m41a/mk2/ap,
+		/obj/item/ammo_magazine/rifle/m41a/marsoc,
+		)
+	burst_amount = 6
+	aim_fire_delay = 0.4 SECONDS
+	burst_delay = 0.15 SECONDS
+	autoburst_delay = 0.125 SECONDS
+	actions_types = list(/datum/action/item_action/aim_mode)
+	scatter = 0
+	fire_delay = 0.125 SECONDS
+
+/obj/item/weapon/gun/rifle/m41a/captain
+	name = "\improper M46C pulse rifle"
+	desc = "Luxury version of the M41A pulse rifle made for high ranking officer. Uses IFF system like the smartgun. Can be loaded with nearly any M41A magazine"
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "m46c"
+	item_state = "m46c"
+	caliber = CALIBER_10X24_CASELESS
+	fire_sound = "gun_pulse"
+	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
+	unload_sound = 'sound/weapons/guns/interact/m41a_unload.ogg'
+	reload_sound = 'sound/weapons/guns/interact/m41a_reload.ogg'
+	aim_slowdown = 0.4
+	wield_delay = 0.4 SECONDS
+	max_shells = 99 //codex
+	damage_mult = 1.25
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_IFF
+	default_ammo_type = /obj/item/ammo_magazine/rifle/m41a/captain
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/m41a/mk2,
+		/obj/item/ammo_magazine/rifle/m41a/mk2/extended,
+		/obj/item/ammo_magazine/rifle/m41a/mk2/ap,
+		/obj/item/ammo_magazine/rifle/m41a/captain,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old,
+		)
+	attachable_allowed = list(
+		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/suppressor,
+		/obj/item/attachable/reddot
+		)
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18, "rail_x" = 15, "rail_y" = 20, "under_x" = 24, "under_y" = 13, "stock_x" = 22, "stock_y" = 16)
+
+
 //-------------------------------------------------------
 
 /obj/item/weapon/gun/rifle/mpi_km
@@ -666,6 +793,66 @@
 
 /obj/item/weapon/gun/rifle/m16/somvet
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness)
+
+/obj/item/weapon/gun/rifle/m16/old
+	name = "\improper M16A1 assault rifle"
+	desc = "Older brother of the M16A4 assault rifle, the A1 model can be found on some colonies. Lacks full automatic."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "m16a1"
+	item_state = "m16a1"
+	flags_gun_features = GUN_CAN_POINTBLANK
+	gun_firemode_list = list(GUN_FIREMODE_AUTOBURST, GUN_FIREMODE_BURSTFIRE, GUN_FIREMODE_SEMIAUTO)
+	fire_sound = 'sound/weapons/guns/fire/gun_m16.ogg'
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 17,"rail_x" = 18, "rail_y" = 24, "under_x" = 27, "under_y" = 15, "stock_x" = 0, "stock_y" = 13)
+	default_ammo_type = /obj/item/ammo_magazine/rifle/m16/old
+	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/m16/old, /obj/item/ammo_magazine/rifle/m16/old/extended)
+	attachable_allowed = list(
+		/obj/item/attachable/suppressor,
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonetknife,
+		/obj/item/attachable/angledgrip,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/compensator,
+	)
+	fire_delay = 0.3 SECONDS
+	extra_delay = 0 SECONDS
+	scatter = 1
+	burst_delay = 0.1 SECONDS
+	autoburst_delay = 0.3 SECONDS
+	accuracy_mult = 1.5
+	wield_delay = 0.5 SECONDS
+	damage_mult = 3
+
+/obj/item/weapon/gun/rifle/m16/ar10
+	name = "\improper AR-10 assault rifle"
+	desc = "Older brother of the M16A1, the AR-10 is considered to be the relic. How is this thing appearing on some colonies is unknown."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "ar10"
+	item_state = "ar10"
+	flags_gun_features = GUN_CAN_POINTBLANK
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC, GUN_FIREMODE_SEMIAUTO)
+	fire_sound = 'sound/weapons/guns/fire/gun_ar10.ogg'
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 17,"rail_x" = 18, "rail_y" = 24, "under_x" = 27, "under_y" = 15, "stock_x" = 0, "stock_y" = 13)
+	default_ammo_type = /obj/item/ammo_magazine/rifle/m16/ar10
+	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/m16/ar10)
+	attachable_allowed = list(
+		/obj/item/attachable/suppressor,
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonetknife,
+		/obj/item/attachable/angledgrip,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/compensator,
+	)
+	fire_delay = 0.15 SECONDS
+	extra_delay = 0 SECONDS
+	scatter = 1
+	burst_delay = 0.1 SECONDS
+	autoburst_delay = 0.3 SECONDS
+	accuracy_mult = 1.5
+	wield_delay = 0.5 SECONDS
+	damage_mult = 2.5
 
 //-------------------------------------------------------
 //FAMAS rifle, based on the F1
@@ -967,7 +1154,7 @@
 	muzzleflash_iconstate = "muzzle_flash_medium"
 	caliber = CALIBER_762X39 //codex
 	max_shells = 42 //codex
-	fire_sound = 'sound/weapons/guns/fire/type71.ogg'
+	fire_sound = 'sound/weapons/guns/fire/type71(CM).ogg'
 	unload_sound = 'sound/weapons/guns/interact/type71_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/type71_reload.ogg'
 	cocked_sound = 'sound/weapons/guns/interact/type71_cocked.ogg'
@@ -1223,11 +1410,11 @@
 	gun_skill_category = GUN_SKILL_SMARTGUN //Uses SG skill for the penalties.
 	attachable_offset = list("muzzle_x" = 42, "muzzle_y" = 17,"rail_x" = 15, "rail_y" = 21, "under_x" = 24, "under_y" = 14, "stock_x" = 12, "stock_y" = 13)
 	fire_delay = 0.15 SECONDS
-	damage_mult = 4
+	damage_mult = 3
 	burst_amount = 0
 	accuracy_mult_unwielded = 0.5
 	accuracy_mult = 2
-	scatter = -5
+	scatter = 0
 	scatter_unwielded = 40
 	movement_acc_penalty_mult = 4
 
@@ -1712,6 +1899,22 @@
 	aim_fire_delay = 0.2 SECONDS
 	aim_speed_modifier = 2
 
+/obj/item/weapon/gun/rifle/tx54/mortar
+	name = "GL-55M shell launcher"
+	desc = "A magazine fed, semiautomatic shell launcher designed to shoot big mortar shells. Requires a T49 scope for precision aiming."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "tx54"
+	item_state = "tx54" ///todo
+	max_shells = 5 //codex
+	max_chamber_items = 1
+	fire_delay = 1 SECONDS
+	gun_firemode = GUN_FIREMODE_AUTOMATIC
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC,GUN_FIREMODE_SEMIAUTO)
+	caliber = CALIBER_20MM
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/tx54/shell/he,
+	)
+
 //-------------------------------------------------------
 // AR-55 built in grenade launcher
 
@@ -1831,8 +2034,9 @@
 	unload_sound = 'sound/weapons/guns/interact/garand_ping.ogg'
 	reload_sound = 'sound/weapons/guns/interact/m41a_reload.ogg'
 	empty_sound = null
+	damage_mult = 1.8
 	caliber = CALIBER_3006 //codex
-	max_shells = 8 //codex
+	max_shells = 24 //codex
 	default_ammo_type = /obj/item/ammo_magazine/rifle/garand
 	allowed_ammo_types = list(
 		/obj/item/ammo_magazine/rifle/garand,

@@ -63,10 +63,31 @@
 
 /obj/item/clothing/suit/armor/vest/security
 	name = "security armor"
-	desc = "An armored vest that protects against some damage."
+	desc = "Standart colonial security's armored vest that protects against some damage."
 	icon_state = "armorsec"
 	item_state = "armorsec"
-	slowdown = SLOWDOWN_ARMOR_MEDIUM //prevents powergaming marine by swapping armor.
+	soft_armor = list(MELEE = 45, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 35, BIO = 20, FIRE = 30, ACID = 30)
+	flags_armor_protection = CHEST|GROIN
+	slowdown = 0
+	allowed = list(
+		/obj/item/weapon/gun,
+		/obj/item/instrument,
+		/obj/item/storage/belt/sparepouch,
+		/obj/item/storage/holster/blade,
+		/obj/item/weapon/claymore,
+		/obj/item/storage/belt/gun,
+		/obj/item/storage/belt/knifepouch,
+		/obj/item/weapon/twohanded,
+		/obj/item/tool/pickaxe/plasmacutter,
+		/obj/item/tank/emergency_oxygen,
+		/obj/item/flashlight,
+		/obj/item/ammo_magazine,
+		/obj/item/explosive/grenade,
+		/obj/item/binoculars,
+		/obj/item/weapon/combat_knife,
+		/obj/item/attachable/bayonetknife,
+		/obj/item/weapon/baton,
+	)
 
 /obj/item/clothing/suit/armor/vest/warden
 	name = "Warden's jacket"
@@ -92,8 +113,8 @@
 	blood_overlay_type = "armor"
 	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT//It has only 30 melee armor
 	flags_armor_protection = CHEST
-	soft_armor = list(MELEE = 30, BULLET = 95, LASER = 95, ENERGY = 36, BOMB = 75, BIO = 0, FIRE = 75, ACID = 50)
-//	hard_armor = list(MELEE = 0, BULLET = 20, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 5)
+	soft_armor = list(MELEE = 30, BULLET = 95, LASER = 50, ENERGY = 30, BOMB = 75, BIO = 0, FIRE = 75, ACID = 50)
+	hard_armor = list(MELEE = 0, BULLET = 15, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 	siemens_coefficient = 0.7
 	flags_armor_protection = CHEST|GROIN|LEGS|ARMS|HANDS|FEET
 	permeability_coefficient = 0.9
@@ -110,18 +131,27 @@
 /obj/item/clothing/suit/armor/riot
 	name = "riot suit"
 	desc = "A suit of armor with heavy padding to protect against melee and ballistic attacks. Layers of Cimex chitin help against acid."
-	icon_state = "riot"
-	item_state = "swat"
+	icon_state = "riot_new"
+	item_state = "swat_new"
 	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
 	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	soft_armor = list(MELEE = 82, BULLET = 15, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
 	flags_inventory = BLOCKSHARPOBJ
-	flags_inv_hide = HIDEJUMPSUIT
+	flags_inv_hide = NONE
 	flags_item = SYNTH_RESTRICTED
 	siemens_coefficient = 0.5
 	permeability_coefficient = 0.2
 	time_to_unequip = 20
 	time_to_equip = 20
+
+/obj/item/clothing/suit/armor/riot/old
+	name = "old riot suit"
+	desc = "An old suit of armor with heavy padding to protect against melee attacks. Barely withstands ranged weapons."
+	icon_state = "riot"
+	item_state = "swat"
+	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
+	slowdown = 0.8
+	soft_armor = list(MELEE = 80, BULLET = 30, LASER = 40, ENERGY = 50, BOMB = 40, BIO = 20, FIRE = 55, ACID = 30)
 
 /obj/item/clothing/suit/armor/swat
 	name = "swat suit"
@@ -133,7 +163,7 @@
 	flags_armor_protection = CHEST|GROIN|LEGS|FEET|ARMS
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/baton,/obj/item/restraints/handcuffs,/obj/item/tank/emergency_oxygen)
 	slowdown = SLOWDOWN_ARMOR_HEAVY
-	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 100, FIRE = 50, ACID = 25)
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 50, BOMB = 75, BIO = 100, FIRE = 50, ACID = 75)
 	flags_inventory = BLOCKSHARPOBJ|NOPRESSUREDMAGE
 	flags_item = SYNTH_RESTRICTED
 	flags_inv_hide = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
@@ -310,38 +340,128 @@
 
 //Non-hardsuit ERT armor.
 /obj/item/clothing/suit/armor/vest/ert
-	name = "emergency response team armor"
-	desc = "A set of armor worn by members of the NanoTrasen Emergency Response Team."
+	name = "response team PCV MK2"
+	desc = "Protective combat vest worn by members of the NanoTrasen Emergency Response Team."
 	icon_state = "ertarmor_cmd"
 	item_state = "ertarmor_cmd"
 	flags_item = SYNTH_RESTRICTED
-	soft_armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 40, BOMB = 20, BIO = 0, FIRE = 40, ACID = 40)
+	soft_armor = list(MELEE = 80, BULLET = 90, LASER = 150, ENERGY = 90, BOMB = 80, BIO = 80, FIRE = 80, ACID = 85) //150 Laser to avoid FF
+	hard_armor = list(MELEE = 5, BULLET = 10, LASER = 10, ENERGY = 5, BOMB = 10, BIO = 5, FIRE = 5, ACID = 5)
+	allowed = list(
+		/obj/item/weapon/gun,
+		/obj/item/instrument,
+		/obj/item/storage/belt/sparepouch,
+		/obj/item/storage/holster/blade,
+		/obj/item/weapon/claymore,
+		/obj/item/storage/belt/gun,
+		/obj/item/storage/belt/knifepouch,
+		/obj/item/weapon/twohanded,
+		/obj/item/tool/pickaxe/plasmacutter,
+		/obj/item/tank/emergency_oxygen,
+		/obj/item/flashlight,
+		/obj/item/ammo_magazine,
+		/obj/item/explosive/grenade,
+		/obj/item/binoculars,
+		/obj/item/weapon/combat_knife,
+		/obj/item/attachable/bayonetknife,
+	)
+	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
+	time_to_unequip = 20
+	time_to_equip = 20
+	slowdown = 0.35
+	supporting_limbs = CHEST | GROIN | ARM_LEFT | ARM_RIGHT | LEG_LEFT | LEG_RIGHT
+	resistance_flags = UNACIDABLE
+	flags_cold_protection = CHEST|GROIN|ARMS|LEGS
+	flags_heat_protection = CHEST|GROIN|ARMS|LEGS
+
+/obj/item/clothing/suit/armor/vest/ert/Initialize(mapload, ...)
+	. = ..()
+	AddComponent(/datum/component/suit_autodoc)
+	AddElement(/datum/element/limb_support, supporting_limbs)
 
 //Captain
 /obj/item/clothing/suit/armor/vest/ert/command
-	name = "emergency response team commander armor"
-	desc = "A set of armor worn by the commander of a NanoTrasen Emergency Response Team. Has blue highlights."
+	name = "responce team leader PCV MK3-B"
+	desc = "Protective combat vest worn by the team leaders of the NanoTrasen Emergency Response Team. Has blue highlights. Newer version with better protection but slightly bigger weight."
+	soft_armor = list(MELEE = 85, BULLET = 95, LASER = 170, ENERGY = 95, BOMB = 90, BIO = 90, FIRE = 85, ACID = 90)
+	slowdown = 0.45
 
 //Security
 /obj/item/clothing/suit/armor/vest/ert/security
-	name = "emergency response team security armor"
-	desc = "A set of armor worn by security members of the NanoTrasen Emergency Response Team. Has red highlights."
+	name = "response team grunt PCV MK2-R"
+	desc = "Protective combat vest worn by regular members of the NanoTrasen Emergency Response Team. Has red highlights."
 	icon_state = "ertarmor_sec"
 	item_state = "ertarmor_sec"
 
 //Engineer
 /obj/item/clothing/suit/armor/vest/ert/engineer
-	name = "emergency response team engineer armor"
-	desc = "A set of armor worn by engineering members of the NanoTrasen Emergency Response Team. Has orange highlights."
+	name = "response team field technician PCV MK2-Y"
+	desc = "Protective combat vest worn by engineering members of the NanoTrasen Emergency Response Team. Has orange highlights."
 	icon_state = "ertarmor_eng"
 	item_state = "ertarmor_eng"
 
 //Medical
 /obj/item/clothing/suit/armor/vest/ert/medical
-	name = "emergency response team medical armor"
-	desc = "A set of armor worn by medical members of the NanoTrasen Emergency Response Team. Has red and white highlights."
+	name = "response team combat medic PCV MK2L-W"
+	desc = "Protective combat vest worn by medical members of the NanoTrasen Emergency Response Team. Has red and white highlights. It is lighter than regular vests."
 	icon_state = "ertarmor_med"
 	item_state = "ertarmor_med"
+	soft_armor = list(MELEE = 65, BULLET = 80, LASER = 150, ENERGY = 80, BOMB = 70, BIO = 70, FIRE = 70, ACID = 75)
+	slowdown = 0.1
+	time_to_unequip = 10
+	time_to_equip = 10
+
+//NT Hazard Environment suit
+//obj/item/clothing/suit/armor/rig/nt/heavy
+//	name = "NT HEV-1 hardsuit set"
+//	desc = "Newly created type of hardsuit by NT Research Department. This masterpiece of science and engineer minds is nearly impossible to be effect by any acid or biohazard dangers. Heavy platings also provides excellent protection against melee and ranged weapons. However, suit by itself is very bulky to wear. Because of that, engineers placed an expensive exoskeleton in it, making it's user strong enough to wear, walk and run in suit the with ease. NT sells this hardsuit to some military corps, such as TGMC."
+//	icon_state = "rig-hazardhardsuit"
+//	item_state = "rig-hazardhardsuit"
+//	flags_item = SYNTH_RESTRICTED
+//	soft_armor = list(MELEE = 85, BULLET = 90, LASER = 90, ENERGY = 90, BOMB = 95, BIO = 100, FIRE = 90, ACID = 100)
+//	hard_armor = list(MELEE = 2, BULLET = 5, LASER = 5, ENERGY = 5, BOMB = 10, BIO = 100, FIRE = 20, ACID = 95)
+//	flags_armor_protection = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
+//	flags_cold_protection = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
+//	flags_heat_protection = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
+//	slowdown = 0.75
+//	time_to_unequip = 8 SECONDS
+//	time_to_equip = 8 SECONDS
+//	resistance_flags = UNACIDABLE
+//	supporting_limbs = HEAD | CHEST | GROIN | ARM_LEFT | ARM_RIGHT | LEG_LEFT | LEG_RIGHT | HAND_RIGHT | HAND_LEFT | FOOT_RIGHT | FOOT_LEFT
+//	allowed = list(
+//		/obj/item/weapon/gun,
+//		/obj/item/instrument,
+//		/obj/item/storage/belt/sparepouch,
+//		/obj/item/storage/holster/blade,
+//		/obj/item/weapon/claymore,
+//		/obj/item/storage/belt/gun,
+//		/obj/item/storage/belt/knifepouch,
+//		/obj/item/weapon/twohanded,
+//		/obj/item/tool/pickaxe/plasmacutter,
+//		/obj/item/tank/emergency_oxygen,
+//		/obj/item/flashlight,
+//		/obj/item/ammo_magazine,
+//		/obj/item/explosive/grenade,
+//		/obj/item/binoculars,
+//		/obj/item/weapon/combat_knife,
+//		/obj/item/attachable/bayonetknife,
+//	)
+//
+///obj/item/clothing/suit/armor/rig/nt/heavy/Initialize(mapload, ...)
+//	. = ..()
+//	AddComponent(/datum/component/suit_autodoc)
+//	AddElement(/datum/element/limb_support, supporting_limbs)
+//
+///Takes off src after a delay.
+///obj/item/clothing/suit/armor/rig/nt/heavy/proc/handle_drop_delay(mob/user, slot)
+//	if(!do_after(user, time_to_unequip, TRUE, src, BUSY_ICON_FRIENDLY))
+//		to_chat(user, "You stop taking off \the [src]")
+//		return
+//	user.dropItemToGround(src)
+//	if(slot == "r_hand")
+//		user.put_in_r_hand(src)
+//	if(slot == "l_hand")
+//		user.put_in_l_hand(src)
 
 
 /obj/item/clothing/suit/armor/hos
@@ -351,7 +471,7 @@
 	item_state = "hos"
 	flags_armor_protection = CHEST|GROIN|ARMS|LEGS
 	flags_item = SYNTH_RESTRICTED
-	soft_armor = list(MELEE = 65, BULLET = 30, LASER = 50, ENERGY = 10, BOMB = 25, BIO = 0, FIRE = 10, ACID = 10)
+	soft_armor = list(MELEE = 65, BULLET = 80, LASER = 80, ENERGY = 70, BOMB = 75, BIO = 50, FIRE = 60, ACID = 50)
 	flags_inventory = NONE
 	flags_inv_hide = HIDEJUMPSUIT
 	siemens_coefficient = 0.6

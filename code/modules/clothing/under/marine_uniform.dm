@@ -12,6 +12,29 @@
 		"Half" = "_h",
 	)
 
+/obj/item/clothing/under/marine/old
+	name = "\improper old TGMC uniform"
+	desc = "An old standard-issue, kevlar-weaved, hazmat-tested, EMF-augmented marine uniform. You suspect it's not as robust-proof as advertised."
+	icon_state = "marine_jumpsuit_old"
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+
+/obj/item/clothing/under/marine/old/medic
+	name = "\improper old TGMC corpsman fatigues"
+	desc = "An old standard-issue, kevlar-weaved, hazmat-tested, EMF-augmented combat corpsman fatigues. You suspect it's not as robust-proof as advertised."
+	icon_state = "marine_medic_old"
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+
+/obj/item/clothing/under/marine/old/engi
+	name = "\improper old TGMC engineer fatigues"
+	desc = "An old standard-issue, kevlar-weaved, hazmat-tested, EMF-augmented combat engineer fatigues. You suspect it's not as robust-proof as advertised."
+	icon_state = "marine_engineer_old"
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+
+/obj/item/clothing/under/marine/icc
+	name = "\improper tactical military suit"
+	desc = "Tactical uniform for some tacticool soldiers."
+	icon_state = "icc"
+
 /obj/item/clothing/under/marine/standard
 	flags_item_map_variant = null
 
@@ -188,6 +211,16 @@
 	desc = "A set of formal, yet comfy, clothing worn by scholars and researchers alike."
 	icon_state = "research_jumpsuit"
 
+/obj/item/clothing/under/marine/officer/intel
+	name = "intelligence officer uniform"
+	desc = "The most expensive suit you've ever seen. Required years of work to re-create it. It costs more than your ship, probably."
+	icon_state = "io"
+
+/obj/item/clothing/under/marine/officer/marsoc
+	name = "MARSOC tactical uniform"
+	desc = "Black-ops suit for some elite units."
+	icon_state = "marsoc"
+
 /obj/item/clothing/under/whites
 	name = "\improper TGMC white dress uniform"
 	desc = "A standard-issue TerraGov Marine Corps white dress uniform. The starch in the fabric chafes a small amount but it pales in comparison to the pride you feel when you first put it on during graduation from boot camp. Doesn't seem to fit perfectly around the waist though."
@@ -215,6 +248,18 @@
 	icon_state = "guardjumpsuit"
 	item_state = "guardjumpsuit"
 	soft_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+
+/obj/item/clothing/under/marine/imperial/krieg
+	name = "\improper Death Korp's Krieg standart uniform"
+	desc = "This uniform is given out to pretty much every soldier of the Death Korp's of Krieg."
+	icon_state = "krieg_standard_jumpsuit"
+	item_state = "krieg_standard_jumpsuit"
+
+/obj/item/clothing/under/marine/imperial/krieg/medicae
+	name = "\improper Death Korp's Krieg medicae uniform"
+	desc = "This uniform is given out to every medicae in the Death Korp's of Krieg."
+	icon_state = "krieg_medicae_jumpsuit"
+	item_state = "krieg_medicae_jumpsuit"
 
 /obj/item/clothing/under/marine/veteran
 	adjustment_variants = list()

@@ -31,6 +31,7 @@
 		/obj/item/storage/belt/knifepouch,
 		/obj/item/weapon/twohanded,
 		/obj/item/tool/pickaxe/plasmacutter,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
 	)
 	flags_equip_slot = ITEM_SLOT_OCLOTHING
 	w_class = WEIGHT_CLASS_BULKY
@@ -1021,6 +1022,7 @@
 		/obj/item/armor_module/module/eshield,
 		/obj/item/armor_module/module/eshield/mk2,
 		/obj/item/armor_module/module/fire_proof/mk2,
+		/obj/item/armor_module/module/huldra_autorepair,
 
 		/obj/item/armor_module/storage/general,
 		/obj/item/armor_module/storage/ammo_mag,

@@ -76,6 +76,33 @@
 	recoil_unwielded = 4
 	aim_slowdown = 0.4
 
+//-------------------------------------------------------
+//XM38 for MARSOC
+
+/obj/item/weapon/gun/shotgun/marsoc
+	name = "\improper XM38 tactical shotgun"
+	desc = "Way back in 2168, Wey-Yu began testing the MK221. The USCM picked up an early prototype, and later adopted it with a limited military contract. But the USCM Special Operations Forces wasn't satisfied, and iterated on the early prototypes they had access to; eventually, their internal armorers and tinkerers produced the MK210, designated XM38, a lightweight folding shotgun that snaps to the belt. And to boot, it's fully automatic, made of stamped medal, and keeps the UGL. Truly an engineering marvel."
+	icon_state = "mk210"
+	item_state = "mk210"
+	flags_equip_slot = ITEM_SLOT_BACK|ITEM_SLOT_BELT
+	fire_sound = 'sound/weapons/guns/fire/shotgun_automatic.ogg'
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
+	max_chamber_items = 30
+	attachable_allowed = list(/obj/item/attachable/magnetic_harness)
+	starting_attachment_types = list(/obj/item/attachable/magnetic_harness)
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 10, "rail_y" = 21, "under_x" = 14, "under_y" = 16, "stock_x" = 14, "stock_y" = 16)
+
+	fire_delay = 0.2 SECONDS
+	accuracy_mult_unwielded = 0.5 //you need to wield this gun for any kind of accuracy
+	scatter_unwielded = 10
+	damage_falloff_mult = 1
+	akimbo_additional_delay = 0.2 SECONDS
+	damage_mult = 2.25
+	recoil = -1
+	recoil_unwielded = 4
+	aim_slowdown = 0.2
 
 //-------------------------------------------------------
 //SH-39 semi automatic shotgun. Used by marines.

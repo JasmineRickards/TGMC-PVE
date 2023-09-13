@@ -207,7 +207,7 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	name = "Military Police"
 	cqc = SKILL_CQC_MP
 	police = SKILL_POLICE_MP
-	construction = SKILL_CONSTRUCTION_METAL
+	construction = 2
 	engineer = SKILL_ENGINEER_ENGI
 	medical = SKILL_MEDICAL_PRACTICED
 	surgery = SKILL_SURGERY_TRAINED
@@ -221,6 +221,7 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	construction = SKILL_CONSTRUCTION_MASTER
 	engineer = SKILL_ENGINEER_MASTER
 	powerloader = SKILL_POWERLOADER_MASTER
+	leadership = 4
 
 /datum/skills/civilian
 	name = "Civilian"
@@ -484,6 +485,36 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	construction = SKILL_CONSTRUCTION_METAL
 	engineer = SKILL_ENGINEER_METAL
 
+/datum/skills/ert
+	name = "ERT Grunt"
+	cqc = 5
+	melee_weapons = 1
+	firearms = 2
+	engineer = 2
+	construction = 2
+	leadership = 1
+	medical = 2
+	surgery = 2
+	pilot = 0
+	police = 2
+	powerloader = 2
+
+/datum/skills/ert/leader
+	name = "ERT Leader"
+	leadership = 5
+	pilot = 1
+	medical = 4
+
+/datum/skills/ert/medic
+	name = "ERT Medic"
+	medical = 5
+	surgery = 5
+
+/datum/skills/ert/engi
+	name = "ERT Engineer"
+	engineer = 5
+	construction = 5
+
 /datum/skills/crafty
 	name = "Crafty Private"
 	construction = SKILL_CONSTRUCTION_METAL
@@ -694,6 +725,48 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	police = SKILL_POLICE_MP
 	powerloader = SKILL_POWERLOADER_MASTER
 	large_vehicle = SKILL_LARGE_VEHICLE_TRAINED
+
+/datum/skills/marsoc
+	name = "MARSOC Member"
+	engineer = 3
+	construction = 3
+	firearms = 2
+	smartgun = 0
+	medical = 5
+	cqc = 5
+	surgery = 2
+	melee_weapons = 3
+	leadership = 1
+	pilot = 0
+	pistols = 0
+	smgs = 0
+	rifles = 0
+	shotguns = 0
+	heavy_weapons = 0
+	police = 2
+	powerloader = 1
+	large_vehicle = 0
+
+/datum/skills/marsoc/officer
+	name = "MARSOC Officer"
+	engineer = 4
+	construction = 4
+	firearms = 2
+	smartgun = 0
+	medical = 5
+	cqc = 5
+	surgery = 5
+	melee_weapons = 3
+	leadership = 6
+	pilot = 0
+	pistols = 0
+	smgs = 0
+	rifles = 0
+	shotguns = 0
+	heavy_weapons = 0
+	police = 2
+	powerloader = 2
+	large_vehicle = 1
 
 /*======  I.o.M.  ======*/
 

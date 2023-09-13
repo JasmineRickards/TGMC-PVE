@@ -1,21 +1,22 @@
 /datum/game_mode/infestation/colony_survival
 	name = "Colony Survival"
 	config_tag = "Colony Survival"
-	flags_round_type = MODE_INFESTATION|MODE_XENO_RULER|MODE_PSY_POINTS|MODE_PSY_POINTS_ADVANCED|MODE_DEAD_GRAB_FORBIDDEN|MODE_HIJACK_POSSIBLE|MODE_SILO_RESPAWN|MODE_SPAWNING_MINIONS
-	flags_landmarks = MODE_LANDMARK_SPAWN_XENO_TURRETS
+	//flags_round_type = MODE_INFESTATION|MODE_XENO_RULER|MODE_PSY_POINTS|MODE_PSY_POINTS_ADVANCED|MODE_DEAD_GRAB_FORBIDDEN|MODE_HIJACK_POSSIBLE|MODE_SILO_RESPAWN|MODE_SPAWNING_MINIONS
+	//flags_landmarks = MODE_LANDMARK_SPAWN_XENO_TURRETS
 	flags_xeno_abilities = ABILITY_DISTRESS
 	valid_job_types = list(
-		/datum/job/survivor/deputy = 2,
-		/datum/job/survivor/prospector = 4,
-		/datum/job/survivor/maint_tech = 4,
-		/datum/job/survivor/botanist = 4,
-		/datum/job/survivor/sous_chef = 4,
-		/datum/job/survivor/priest = 2,
+		/datum/job/survivor/armed/marshal = 1,
+		/datum/job/survivor/deputy = 1,
+		/datum/job/survivor/prospector = 3,
+		/datum/job/survivor/maint_tech = 3,
+		/datum/job/survivor/botanist = 2,
+		/datum/job/survivor/sous_chef = 2,
+		/datum/job/survivor/priest = 1,
 		/datum/job/survivor/civilian = -1,
-		/datum/job/survivor/sec_patrol = 4,
-		/datum/job/survivor/liaison = 2,
-		/datum/job/survivor/nurse= 4,
-		/datum/job/survivor/junior_rsr = 4,
+		/datum/job/survivor/sec_patrol = 3,
+		/datum/job/survivor/liaison = 1,
+		/datum/job/survivor/nurse= 3,
+		/datum/job/survivor/junior_rsr = 2,
 		/datum/job/survivor/supervisor = 1
 	)
 	var/siloless_hive_timer

@@ -1,3 +1,54 @@
+/obj/machinery/vending/weaponciv
+	name = "\improper Automated Civilian grade Weapons Rack"
+	desc = "A automated weapon rack hooked up to a colossal storage of standard-issue weapons."
+	icon_state = "marinearmory"
+	icon_vend = "marinearmory-vend"
+	icon_deny = "marinearmory"
+	resistance_flags = INDESTRUCTIBLE
+	wrenchable = FALSE
+	product_ads = "If it moves, it's hostile!;How many enemies have you killed today?;Shoot first, perform autopsy later!;Your ammo is right here.;Guns!;Die, scumbag!;Don't shoot me bro!;Shoot them, bro.;Why not have a donut?"
+	isshared = TRUE
+
+	products = list(
+		"Rifles" = list(
+			/obj/item/weapon/gun/rifle/m41a/old = 2,
+			/obj/item/ammo_magazine/rifle/m41a/old = 20,
+			/obj/item/weapon/gun/rifle/m16/ar10 = 2,
+			/obj/item/ammo_magazine/rifle/m16/ar10 = 30,
+			/obj/item/weapon/gun/rifle/m16/old = 2,
+			/obj/item/ammo_magazine/rifle/m16/old = 25,
+			/obj/item/ammo_magazine/rifle/m16/old/extended = 10,
+			/obj/item/ammo_magazine/packet/p10x24mm/heavy = 1,
+		),
+		"Shotguns" = list(
+			/obj/item/weapon/gun/shotgun/pump = 3,
+			/obj/item/weapon/gun/shotgun/double =2,
+			/obj/item/weapon/gun/shotgun/pump/cmb = 1,
+			/obj/item/ammo_magazine/shotgun = 4,
+			/obj/item/ammo_magazine/shotgun/buckshot = 4,
+			/obj/item/ammo_magazine/shotgun/beanbag = 2,
+		),
+		"SMGs" = list(
+			/obj/item/weapon/gun/smg/m25 = 3,
+			/obj/item/ammo_magazine/smg/m25 = 30,
+			/obj/item/weapon/gun/smg/mp7 = 3,
+			/obj/item/ammo_magazine/smg/mp7 = 30,
+		),
+		"Pistols" = list(
+			/obj/item/weapon/gun/pistol/vp70 = 5,
+			/obj/item/ammo_magazine/pistol/vp70 = 50,
+			/obj/item/weapon/gun/pistol/highpower = 5,
+			/obj/item/ammo_magazine/pistol/highpower = 50,
+			/obj/item/weapon/gun/pistol/m1911 = 5,
+			/obj/item/ammo_magazine/pistol/m1911 = 50,
+			/obj/item/weapon/gun/pistol/auto9 = 2,
+			/obj/item/ammo_magazine/pistol/auto9 =20
+		),
+	)
+
+
+
+
 /obj/machinery/vending/weapon
 	name = "\improper Automated Weapons Rack"
 	desc = "A automated weapon rack hooked up to a colossal storage of standard-issue weapons."
@@ -51,6 +102,7 @@
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/cope/tgmc = 8,
 			/obj/item/cell/lasgun/volkite/powerpack = -1,
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/culverin = 5,
+			/obj/item/weapon/gun/energy/recoillessrifle/lasercannon = 3,
 
 
 
@@ -254,6 +306,7 @@
 		"Utility" = list(
 			/obj/item/flashlight/combat = -1,
 			/obj/item/weapon/gun/grenade_launcher/single_shot/flare/marine = -1,
+			/obj/item/tool/shovel = -1,
 			/obj/item/tool/shovel/etool = -1,
 			/obj/item/tool/extinguisher = -1,
 			/obj/item/tool/extinguisher/mini = -1,
@@ -314,6 +367,7 @@
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/cope/tgmc = 8,
 			/obj/item/cell/lasgun/volkite/powerpack = -1,
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/culverin = 5,
+			/obj/item/weapon/gun/energy/recoillessrifle/lasercannon = 3,
 
 
 
@@ -552,6 +606,7 @@
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/cope/tgmc = -1,
 			/obj/item/cell/lasgun/volkite/powerpack = -1,
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/culverin = -1,
+			/obj/item/weapon/gun/energy/recoillessrifle/lasercannon = -1,
 
 
 
@@ -1293,6 +1348,19 @@
 		/obj/item/reagent_containers/blood/empty = 10,
 	)
 
+/obj/machinery/vending/MarineMed/Blood/colonial
+	name = "\improper CM Blood Dispenser"
+	desc = "Colony Med brand Blood Pack dispensery."
+	products = list(
+		/obj/item/reagent_containers/blood/APlus = 2,
+		/obj/item/reagent_containers/blood/AMinus = 2,
+		/obj/item/reagent_containers/blood/BPlus = 2,
+		/obj/item/reagent_containers/blood/BMinus = 2,
+		/obj/item/reagent_containers/blood/OPlus = 2,
+		/obj/item/reagent_containers/blood/OMinus = 2,
+		/obj/item/reagent_containers/blood/empty = 5,
+	)
+
 /obj/machinery/vending/MarineMed/Blood/rebel
 	req_one_access = list(ACCESS_MARINE_MEDBAY_REBEL, ACCESS_MARINE_CHEMISTRY_REBEL)
 
@@ -1334,7 +1402,7 @@
 			/obj/item/clothing/suit/storage/marine/robot = -1,
 			/obj/item/clothing/suit/storage/marine/robot/heavy = -1,
 			/obj/item/clothing/suit/modular/robot = -1,
-			/obj/item/clothing/suit/storage/marine = -1,
+			/obj/item/clothing/suit/storage/marine/vending = -1,
 			/obj/item/clothing/suit/storage/marine/M3HB = -1,
 			/obj/item/clothing/suit/storage/marine/M3LB = -1,
 			/obj/item/clothing/suit/storage/marine/M3IS = -1,
@@ -1444,6 +1512,10 @@
 			/obj/item/clothing/head/helmet/marine/imperial = -1,
 			/obj/item/clothing/suit/storage/marine/imperial = -1,
 			/obj/item/clothing/suit/storage/marine/imperial/medicae = -1,
+			/obj/item/clothing/head/helmet/marine/imperial/krieg = -1,
+			/obj/item/clothing/head/helmet/marine/imperial/krieg/medicae = -1,
+			/obj/item/clothing/suit/storage/marine/imperial/krieg = -1,
+			/obj/item/clothing/suit/storage/marine/imperial/krieg/medicae = -1,
 
 		),
 		"USL" = list(
@@ -1533,6 +1605,9 @@
 	products = list(
 		"Standard" = list(
 			/obj/item/clothing/under/marine/robotic = -1,
+			/obj/item/clothing/under/marine/old = -1,
+			/obj/item/clothing/under/marine/old/medic = -1,
+			/obj/item/clothing/under/marine/old/engi = -1,
 			/obj/item/clothing/under/marine = -1,
 			/obj/item/clothing/under/marine/standard = -1,
 			/obj/item/clothing/under/marine/camo = -1,
@@ -1631,6 +1706,7 @@
 			/obj/item/clothing/mask/rebreather = -1,
 			/obj/item/clothing/mask/breath = -1,
 			/obj/item/clothing/mask/gas = -1,
+			/obj/item/clothing/mask/gas/old = -1,
 			/obj/item/clothing/mask/gas/tactical = -1,
 			/obj/item/clothing/mask/gas/tactical/coif = -1,
 		),
@@ -1689,6 +1765,8 @@
 		),
 		"Imperial Guard" = list(
 			/obj/item/clothing/under/marine/imperial = -1,
+			/obj/item/clothing/under/marine/imperial/krieg = -1,
+			/obj/item/clothing/under/marine/imperial/krieg/medicae = -1,
 			/obj/item/reagent_containers/food/snacks/enrg_bar = -1,
 			/obj/item/clothing/shoes/marine/imperial = -1,
 			/obj/item/storage/backpack/lightpack = -1,

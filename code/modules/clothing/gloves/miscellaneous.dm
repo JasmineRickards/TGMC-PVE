@@ -43,6 +43,20 @@
 	flags_heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
 
+
+/obj/item/clothing/gloves/combat/ert
+	desc = "These tactical gloves are somewhat fire and impact resistant. Worn by some NT ERT members."
+	name = "ERT armored gloves"
+	icon_state = "black"
+	item_state = "swat_gl"
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+	flags_cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
+	flags_heat_protection = HANDS
+	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
+	soft_armor = list(MELEE = 90, BULLET = 95, LASER = 150, ENERGY = 95, BOMB = 90, BIO = 90, FIRE = 90, ACID = 95)
+
 /obj/item/clothing/gloves/ruggedgloves
 	desc = "A pair of gloves used by workers in dangerous environments."
 	name = "rugged gloves"

@@ -63,6 +63,7 @@
 	if(prob(75))
 		pixel_y = rand(0, 16)
 
+
 /obj/item/tool/wirecutters
 	name = "wirecutters"
 	desc = "This cuts wires."
@@ -97,6 +98,11 @@
 	else
 		..()
 
+/obj/item/tool/wirecutters/tactical
+	name = "tactical wirecutters"
+	desc = "This cuts wires with extreme precision."
+	icon = 'icons/obj/items/items.dmi'
+	icon_state = "tac_cutters"
 
 /obj/item/tool/weldingtool
 	name = "blowtorch"
@@ -351,6 +357,12 @@
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 	pry_capable = IS_PRY_CAPABLE_CROWBAR
 	tool_behaviour = TOOL_CROWBAR
+
+/obj/item/tool/crowbar/tactical
+	name = "crowbar"
+	desc = "Used to remove floors and to pry open doors with style."
+	icon = 'icons/obj/items/items.dmi'
+	icon_state = "tac_prybar"
 
 
 /obj/item/tool/crowbar/red

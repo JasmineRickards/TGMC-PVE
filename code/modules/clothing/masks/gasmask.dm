@@ -36,6 +36,10 @@
 			HM.playsound_local(user, "gasbreath", 20, 1)
 			TIMER_COOLDOWN_START(src, COOLDOWN_GAS_BREATH, 10 SECONDS)
 
+/obj/item/clothing/mask/gas/old
+	name = "Old military gas mask"
+	icon_state = "gas_alt_new"
+
 /obj/item/clothing/mask/gas/tactical
 	name = "Tactical gas mask"
 	icon_state = "gas_alt_tactical"
@@ -44,6 +48,14 @@
 	name = "Tactical coifed gas mask"
 	desc = "A face-covering coifed mask that can be connected to an air supply. Filters harmful gases from the air."
 	icon_state = "gascoif"
+	flags_inv_hide = HIDEEARS|HIDEFACE|HIDEALLHAIR
+
+/obj/item/clothing/mask/gas/icc
+	name = "\improper black tactical gasmask"
+	desc = "An armored gasmask designed for some tactical ops. Has blood-red visor."
+	icon_state = "icc"
+	anti_hug = 3
+	flags_inventory = COVERMOUTH|ALLOWINTERNALS|BLOCKGASEFFECT
 	flags_inv_hide = HIDEEARS|HIDEFACE|HIDEALLHAIR
 
 /obj/item/clothing/mask/gas/PMC

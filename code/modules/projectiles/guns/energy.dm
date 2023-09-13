@@ -230,7 +230,7 @@
 /obj/item/weapon/gun/energy/lasgun/pulse
 	name = "\improper M19C4 pulse energy rifle"
 	desc = "A heavy-duty, multifaceted energy weapon that uses pulse-based beam generation technology to emit powerful laser blasts. Because of its complexity and cost, it is rarely seen in use except by specialists and front-line combat personnel. This is a testing model issued only for Asset Protection units and offshore elite Nanotrasen squads."
-	force = 23 //Slightly more heftier than the M43, but without the stock.
+	force = 30 //Slightly more heftier than the M43, but without the stock.
 	icon_state = "m19c4"
 	item_state = "m19c4"
 	fire_sound = 'sound/weapons/guns/fire/pulseenergy.ogg'
@@ -239,6 +239,7 @@
 	reload_sound = 'sound/weapons/guns/interact/m4ra_reload.ogg'
 	max_shots = 100//codex stuff
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC,GUN_FIREMODE_SEMIAUTO)
 	load_method = CELL //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/pulsebolt
 	muzzleflash_iconstate = "muzzle_flash_pulse"
@@ -248,13 +249,15 @@
 	allowed_ammo_types = list(/obj/item/cell/lasgun/pulse)
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_ENERGY|GUN_AMMO_COUNT_BY_SHOTS_REMAINING|GUN_NO_PITCH_SHIFT_NEAR_EMPTY
+	starting_attachment_types = list(/obj/item/attachable/magnetic_harness)
 	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18,"rail_x" = 12, "rail_y" = 23, "under_x" = 23, "under_y" = 15, "stock_x" = 22, "stock_y" = 12)
 	ammo_level_icon = "m19c4"
-	fire_delay = 8
+	fire_delay = 2
 	burst_delay = 0.2 SECONDS
-	accuracy_mult = 1.15
+	accuracy_mult = 1.3
 	accuracy_mult_unwielded = 0.95
 	scatter_unwielded = 25
+	scatter = 3
 
 //-------------------------------------------------------
 //A practice version of M43, only for the marine hq map.
@@ -291,7 +294,7 @@
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
 	)
-	rounds_per_shot = 12
+	rounds_per_shot = 75
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
 	attachable_allowed = list(
@@ -405,7 +408,7 @@
 	muzzle_flash_color = COLOR_TESLA_BLUE
 	ammo_level_icon = "tesla"
 	max_shots = 6 //codex stuff
-	rounds_per_shot = 100
+	rounds_per_shot = 200
 	fire_delay = 4 SECONDS
 	turret_flags = TURRET_INACCURATE
 	attachable_allowed = list(
@@ -422,7 +425,7 @@
 	)
 
 /datum/lasrifle/base/tesla_mode/standard
-	rounds_per_shot = 100
+	rounds_per_shot = 150
 	ammo_datum_type = /datum/ammo/energy/tesla
 	fire_delay = 4 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/tesla.ogg'
@@ -431,7 +434,7 @@
 	icon_state = "tesla"
 
 /datum/lasrifle/base/tesla_mode/focused
-	rounds_per_shot = 100
+	rounds_per_shot = 200
 	ammo_datum_type = /datum/ammo/energy/tesla/focused
 	fire_delay = 4 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/tesla.ogg'
@@ -459,7 +462,7 @@
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
 	)
-	rounds_per_shot = 12
+	rounds_per_shot = 75
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
 	turret_flags = TURRET_INACCURATE
@@ -502,7 +505,7 @@
 	starting_attachment_types = list(/obj/item/attachable/bayonet, /obj/item/attachable/magnetic_harness, /obj/item/weapon/gun/flamer/mini_flamer)
 
 /datum/lasrifle/base/energy_rifle_mode/standard
-	rounds_per_shot = 12
+	rounds_per_shot = 75
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine
 	fire_delay = 0.1 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/Laser Rifle Standard.ogg'
@@ -512,7 +515,7 @@
 
 
 /datum/lasrifle/base/energy_rifle_mode/overcharge
-	rounds_per_shot = 30
+	rounds_per_shot = 100
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/overcharge
 	fire_delay = 0.13 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/Laser overcharge standard.ogg'
@@ -530,12 +533,13 @@
 	fire_sound = 'sound/weapons/guns/fire/Laser Pistol Standard.ogg'
 	icon_state = "tep"
 	item_state = "tep"
+	fire_delay = 0.1
 	w_class = WEIGHT_CLASS_NORMAL
 	flags_equip_slot = ITEM_SLOT_BELT
 	max_shots = 30 //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/pistol
 	ammo_diff = null
-	rounds_per_shot = 20
+	rounds_per_shot = 75
 	gun_firemode = GUN_FIREMODE_SEMIAUTO
 	gun_firemode_list = list(GUN_FIREMODE_SEMIAUTO)
 
@@ -563,7 +567,7 @@
 	wield_delay = 0.3 SECONDS
 	scatter = 2
 	scatter_unwielded = 4
-	fire_delay = 0.05 SECONDS
+	fire_delay = 0.1 SECONDS
 	accuracy_mult = 1
 	accuracy_mult_unwielded = 0.9
 	damage_falloff_mult = 0.2
@@ -577,12 +581,12 @@
 	starting_attachment_types = list(/obj/item/attachable/reddot, /obj/item/attachable/lasersight)
 
 /datum/lasrifle/base/energy_pistol_mode/standard
-	rounds_per_shot = 20
+	rounds_per_shot = 75
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/pistol
 	fire_delay = 0.1 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/Laser Pistol Standard.ogg'
 	message_to_user = "You set the laser pistol's charge mode to standard fire."
-	fire_mode = GUN_FIREMODE_SEMIAUTO
+	fire_mode = GUN_FIREMODE_AUTOMATIC
 	icon_state = "tep"
 
 /datum/lasrifle/base/energy_pistol_mode/disabler
@@ -623,7 +627,7 @@
 		/obj/item/cell/lasgun/lasrifle,
 		)
 	ammo_diff = null
-	rounds_per_shot = 15
+	rounds_per_shot = 75
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
 	ammo_level_icon = "te"
@@ -666,7 +670,7 @@
 	starting_attachment_types = list(/obj/item/attachable/reddot, /obj/item/weapon/gun/grenade_launcher/underslung,)
 
 /datum/lasrifle/base/energy_carbine_mode/auto_burst_standard ///I know this seems tacky, but if I make auto burst a standard firemode it somehow buffs spread's fire delay.
-	rounds_per_shot = 15
+	rounds_per_shot = 75
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine
 	fire_delay = 0.1 SECONDS
 	burst_amount = 4
@@ -680,13 +684,13 @@
 	fire_mode = GUN_FIREMODE_AUTOMATIC
 
 /datum/lasrifle/base/energy_carbine_mode/base/spread
-	rounds_per_shot = 60
+	rounds_per_shot = 125
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/blast
-	fire_delay = 0.6 SECONDS
+	fire_delay = 0.2 SECONDS
 	burst_amount = 1
 	fire_sound = 'sound/weapons/guns/fire/Laser Carbine Scatter.ogg'
 	message_to_user = "You set the laser carbine's charge mode to spread."
-	fire_mode = GUN_FIREMODE_SEMIAUTO
+	fire_mode = GUN_FIREMODE_AUTOMATIC
 	icon_state = "tec"
 	radial_icon_state = "laser_spread"
 
@@ -703,15 +707,15 @@
 	max_shots = 12 //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/sniper
 	ammo_diff = null
-	rounds_per_shot = 50
+	rounds_per_shot = 250
 	allowed_ammo_types = list(
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
 	)
 	damage_falloff_mult = 0
-	gun_firemode = GUN_FIREMODE_SEMIAUTO
-	gun_firemode_list = list(GUN_FIREMODE_SEMIAUTO)
+	gun_firemode = GUN_FIREMODE_AUTOMATIC
+	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
 
 	ammo_level_icon = "te"
 	icon_overlay_x_offset = -1
@@ -748,21 +752,21 @@
 	)
 
 /datum/lasrifle/base/energy_sniper_mode/standard
-	rounds_per_shot = 50
+	rounds_per_shot = 250
 	fire_delay = 0.2 SECONDS
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/sniper
 	fire_sound = 'sound/weapons/guns/fire/Laser Sniper Standard.ogg'
 	message_to_user = "You set the sniper rifle's charge mode to standard fire."
-	fire_mode = GUN_FIREMODE_SEMIAUTO
+	fire_mode = GUN_FIREMODE_AUTOMATIC
 	icon_state = "tes"
 
 /datum/lasrifle/base/energy_sniper_mode/heat
-	rounds_per_shot = 150
+	rounds_per_shot = 300
 	fire_delay = 0.3 SECONDS
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/sniper_heat
 	fire_sound = 'sound/weapons/guns/fire/laser3.ogg'
 	message_to_user = "You set the sniper rifle's charge mode to wave heat."
-	fire_mode = GUN_FIREMODE_SEMIAUTO
+	fire_mode = GUN_FIREMODE_AUTOMATIC
 	icon_state = "tes"
 	radial_icon_state = "laser_heat"
 
@@ -782,7 +786,7 @@
 		/obj/item/cell/lasgun/lasrifle,
 	)
 	ammo_diff = null
-	rounds_per_shot = 4
+	rounds_per_shot = 75
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
 	ammo_level_icon = "te"
@@ -819,7 +823,7 @@
 	)
 
 /datum/lasrifle/base/energy_mg_mode/standard
-	rounds_per_shot = 4
+	rounds_per_shot = 75
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/autolaser
 	fire_delay = 0.09 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/Laser Sniper Standard.ogg'
@@ -830,7 +834,7 @@
 /datum/lasrifle/base/energy_mg_mode/standard/efficiency
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/autolaser/efficiency
 	fire_delay = 0.07 SECONDS
-	rounds_per_shot = 3
+	rounds_per_shot = 50
 	message_to_user = "You set the machine laser's charge mode to efficiency mode."
 
 /obj/item/weapon/gun/energy/lasgun/lasrifle/xray
@@ -842,7 +846,7 @@
 	item_state = "tex"
 	max_shots = 40 //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/xray
-	rounds_per_shot = 15
+	rounds_per_shot = 200
 	allowed_ammo_types = list(
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
@@ -880,7 +884,7 @@
 	)
 
 /datum/lasrifle/base/energy_rifle_mode/xray
-	rounds_per_shot = 15
+	rounds_per_shot = 150
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/xray
 	fire_delay = 0.4 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/laser3.ogg'
@@ -890,7 +894,7 @@
 	radial_icon_state = "laser_heat"
 
 /datum/lasrifle/base/energy_rifle_mode/xray/piercing
-	rounds_per_shot = 30
+	rounds_per_shot = 150
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/xray/piercing
 	fire_delay = 0.6 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/laser.ogg'
@@ -914,7 +918,7 @@
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
 	)
-	rounds_per_shot = 24
+	rounds_per_shot = 50
 	default_ammo_type = /obj/item/cell/lasgun/volkite
 	allowed_ammo_types = list(/obj/item/cell/lasgun/volkite)
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
@@ -965,6 +969,7 @@
 	recoil_unwielded = 0
 	movement_acc_penalty_mult = 2
 	aim_slowdown = 0.1
+	ammo_datum_type = /datum/ammo/energy/volkite/light
 
 /obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/serpenta/survivor
 	name = "Smuggled VX-12 Serpenta"
@@ -979,7 +984,7 @@
 	item_state = "charger"
 	max_shots = 45
 	fire_delay = 0.13 SECONDS
-	rounds_per_shot = 32
+	rounds_per_shot = 65
 	ammo_datum_type = /datum/ammo/energy/volkite/medium
 	allowed_ammo_types = list(
 		/obj/item/cell/lasgun/volkite,
@@ -1031,7 +1036,7 @@
 	fire_sound = 'sound/weapons/guns/fire/volkite_3.ogg'
 	max_shots = 40
 	ammo_datum_type = /datum/ammo/energy/volkite/medium
-	rounds_per_shot = 36
+	rounds_per_shot = 65
 	default_ammo_type = /obj/item/cell/lasgun/volkite
 	allowed_ammo_types = list(
 		/obj/item/cell/lasgun/volkite,
@@ -1096,7 +1101,7 @@
 	max_shots = 120
 	fire_delay = 0.1 SECONDS
 	ammo_datum_type = /datum/ammo/energy/volkite/heavy
-	rounds_per_shot = 30
+	rounds_per_shot = 65
 	default_ammo_type = null
 	allowed_ammo_types = list(/obj/item/cell/lasgun/volkite/powerpack,/obj/item/cell/lasgun/volkite)
 	attachable_allowed = list(

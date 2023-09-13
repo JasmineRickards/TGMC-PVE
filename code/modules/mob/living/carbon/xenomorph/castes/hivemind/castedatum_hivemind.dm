@@ -42,6 +42,8 @@
 		/datum/action/xeno_action/change_form,
 		/datum/action/xeno_action/return_to_core,
 		/datum/action/xeno_action/rally_hive/hivemind,
+		/datum/action/xeno_action/rally_minion,
+		/datum/action/xeno_action/set_agressivity,
 		/datum/action/xeno_action/activable/command_minions,
 		/datum/action/xeno_action/activable/plant_weeds/ranged,
 		/datum/action/xeno_action/activable/psychic_cure/hivemind,

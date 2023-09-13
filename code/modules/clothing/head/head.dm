@@ -88,7 +88,15 @@
 	name = "\improper Command Master at Arms beret"
 	desc = "A beret with the lieutenant insignia emblazoned on it. It shines with the glow of corrupt authority and a smudge of doughnut."
 	icon_state = "beretwo"
-	soft_armor = list(MELEE = 15, BULLET = 50, LASER = 50, ENERGY = 15, BOMB = 50, BIO = 5, FIRE = 50, ACID = 5)
+	soft_armor = list(MELEE = 65, BULLET = 95, LASER = 95, ENERGY = 75, BOMB = 80, BIO = 75, FIRE = 70, ACID = 75)
+	hard_armor = list(MELEE = 0, BULLET = 5, LASER = 5, ENERGY = 0, BOMB = 5, BIO = 0, FIRE = 0, ACID = 0)
+	flags_item_map_variant = NONE
+
+/obj/item/clothing/head/tgmcberet/red/mp
+	name = "\improper Master at Arms beret"
+	desc = "Red beret with MP insignia emblazoned on it. Smell of donuts coming from it."
+	icon_state = "beretred"
+	soft_armor = list(MELEE = 50, BULLET = 90, LASER = 90, ENERGY = 70, BOMB = 70, BIO = 65, FIRE = 60, ACID = 60)
 	flags_item_map_variant = NONE
 
 /obj/item/clothing/head/tgmcberet/fc

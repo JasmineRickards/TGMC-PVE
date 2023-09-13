@@ -173,6 +173,7 @@
 	default_ammo_type = /obj/item/ammo_magazine/revolver/mateba
 	allowed_ammo_types = list(/obj/item/ammo_magazine/revolver/mateba)
 	force = 15
+	damage_mult = 1.5
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/flashlight,

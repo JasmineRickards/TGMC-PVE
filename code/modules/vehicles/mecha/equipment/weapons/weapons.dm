@@ -344,9 +344,10 @@
 	ammotype = /datum/ammo/rocket/atgun_shell/he
 	fire_sound = 'sound/weapons/guns/fire/tank_cannon1.ogg'
 	projectiles = 8
-	projectiles_cache = 0
-	projectiles_cache_max = 0
-	disabledreload = TRUE
+	projectiles_cache = 12
+	projectiles_cache_max = 34
+	disabledreload = FALSE
+//	windup_delay = 5
 	equip_cooldown = 60
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_MISSILE_HE
@@ -360,7 +361,8 @@
 	projectiles = 6
 	projectiles_cache = 12
 	projectiles_cache_max = 34
-	disabledreload = TRUE
+	disabledreload = FALSE
+//	windup_delay = 5
 	equip_cooldown = 60
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_MISSILE_AP
@@ -374,7 +376,8 @@
 	projectiles = 6
 	projectiles_cache = 12
 	projectiles_cache_max = 34
-	disabledreload = TRUE
+	disabledreload = FALSE
+//	windup_delay = 5
 	equip_cooldown = 60
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_MISSILE_SABOT

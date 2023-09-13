@@ -187,3 +187,220 @@
 	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/impact, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/ap, SLOT_IN_BACKPACK)
+
+/datum/job/ert
+	job_category = JOB_CAT_MARINE
+	access = ALL_PMC_ACCESS
+	minimal_access = ALL_PMC_ACCESS
+	skills_type = /datum/skills/ert/leader
+	faction = FACTION_NANOTRASEN
+
+// ERT Leader
+/datum/job/ert/leader
+	job_category = JOB_CAT_COMMAND
+	title = "Responce Team Leader"
+	paygrade = "ERTL"
+	skills_type = /datum/skills/ert/leader
+	outfit = /datum/outfit/job/ert/leader
+
+
+datum/outfit/job/ert/leader
+	name = "Responce Team Leader"
+	jobtype = /datum/job/ert/leader
+
+	id = /obj/item/card/id/gold
+	belt = /obj/item/storage/belt/marine
+	ears = /obj/item/radio/headset/mainship/mcom
+	w_uniform = /obj/item/clothing/under/ert
+	shoes = /obj/item/clothing/shoes/swat/ert
+	wear_suit = /obj/item/clothing/suit/armor/vest/ert/command
+	gloves = /obj/item/clothing/gloves/combat/ert
+	head = /obj/item/clothing/head/helmet/ert/command
+	mask = /obj/item/clothing/mask/gas/PMC
+	glasses = /obj/item/clothing/glasses/hud/xenohud/night/meson
+	suit_store = /obj/item/weapon/gun/energy/lasgun/pulse
+	r_store = /obj/item/storage/pouch/general/large/command
+	l_store = /obj/item/storage/pouch/medkit/survivor
+	back = /obj/item/storage/backpack/ert/commander
+
+
+/datum/outfit/job/ert/leader/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	H.equip_to_slot_or_del(new /obj/item/radio, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/tool/crowbar/red, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/storage/pill_bottle/tricordrazine, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/defibrillator, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/weapon/gun/revolver/mateba, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/revolver/mateba, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/revolver/mateba, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/revolver/mateba, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/revolver/mateba, SLOT_IN_BACKPACK)
+
+	H.equip_to_slot_or_del(new /obj/item/cell/lasgun/pulse, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/cell/lasgun/pulse, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/cell/lasgun/pulse, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/cell/lasgun/pulse, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/cell/lasgun/pulse, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/cell/lasgun/pulse, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/cell/lasgun/pulse, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/cell/lasgun/pulse, SLOT_IN_BELT)
+
+
+// ERT grunt
+/datum/job/ert/grunt
+	job_category = JOB_CAT_COMMAND
+	title = "Responce Team Grunt"
+	paygrade = "ERTG"
+	skills_type = /datum/skills/ert
+	outfit = /datum/outfit/job/ert/grunt
+
+
+/datum/outfit/job/ert/grunt
+	name = "Responce Team Grunt"
+	jobtype = /datum/job/ert/grunt
+
+	id = /obj/item/card/id/silver
+	belt = /obj/item/storage/belt/marine
+	ears = /obj/item/radio/headset/mainship/mcom
+	w_uniform = /obj/item/clothing/under/ert
+	shoes = /obj/item/clothing/shoes/swat/ert
+	wear_suit = /obj/item/clothing/suit/armor/vest/ert/security
+	gloves = /obj/item/clothing/gloves/combat/ert
+	head = /obj/item/clothing/head/helmet/ert/security
+	mask = /obj/item/clothing/mask/gas/PMC
+	glasses = /obj/item/clothing/glasses/hud/xenohud/night/meson
+	suit_store = /obj/item/weapon/gun/rifle/m412/elite
+	r_store = /obj/item/storage/pouch/grenade/phosphorus
+	l_store = /obj/item/storage/pouch/medkit/survivor
+	back = /obj/item/storage/backpack/ert/security
+
+
+/datum/outfit/job/ert/grunt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	H.equip_to_slot_or_del(new /obj/item/radio, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/tool/crowbar/red, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/storage/pill_bottle/tricordrazine, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
+
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/extended, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/extended, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/extended, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/extended, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/extended, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/extended, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/extended, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/extended, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/ap, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/ap, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/ap, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/ap, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/ap, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/ap, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/ap, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/ap, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/incendiary, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/incendiary, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/incendiary, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/incendiary, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/incendiary, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/incendiary, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/incendiary, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/incendiary, SLOT_IN_BELT)
+
+
+// ERT Medic
+/datum/job/ert/medic
+	job_category = JOB_CAT_COMMAND
+	title = "Responce Team Combat Medic"
+	paygrade = "ERTM"
+	skills_type = /datum/skills/ert/medic
+	outfit = /datum/outfit/job/ert/medic
+
+
+/datum/outfit/job/ert/medic
+	name = "Responce Team Combat Medic"
+	jobtype = /datum/job/ert/medic
+
+	id = /obj/item/card/id/silver
+	belt = /obj/item/storage/belt/lifesaver/quick
+	ears = /obj/item/radio/headset/mainship/mcom
+	w_uniform = /obj/item/clothing/under/ert
+	shoes = /obj/item/clothing/shoes/swat/ert
+	wear_suit = /obj/item/clothing/suit/armor/vest/ert/medical
+	gloves = /obj/item/defibrillator/gloves
+	head = /obj/item/clothing/head/helmet/ert/medical
+	mask = /obj/item/clothing/mask/gas/PMC
+	glasses = /obj/item/clothing/glasses/hud/xenohud/night/meson
+	suit_store = /obj/item/weapon/gun/smg/m25/elite
+	r_store = /obj/item/storage/pouch/magazine/large/ert_m25/ap
+	l_store = /obj/item/storage/pouch/magazine/large/ert_m25/extended
+	back = /obj/item/storage/backpack/ert/medical
+
+
+/datum/outfit/job/ert/medic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	H.equip_to_slot_or_del(new /obj/item/radio, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/tool/crowbar/red, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/defibrillator, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/ap, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/ap, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/reagent_containers/hypospray/autoinjector/peridaxon_plus, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/reagent_containers/hypospray/autoinjector/peridaxon_plus, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/reagent_containers/hypospray/autoinjector/peridaxon_plus, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/reagent_containers/hypospray/autoinjector/quickclotplus, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/reagent_containers/hypospray/autoinjector/quickclotplus, SLOT_IN_BELT)
+	H.equip_to_slot_or_del(new /obj/item/reagent_containers/hypospray/autoinjector/quickclotplus, SLOT_IN_BELT)
+
+
+//ERT Engineer
+/datum/job/ert/engi
+	job_category = JOB_CAT_COMMAND
+	title = "Responce Team Field Technician"
+	paygrade = "ERTE"
+	skills_type = /datum/skills/ert/engi
+	outfit = /datum/outfit/job/ert/engi
+
+
+/datum/outfit/job/ert/engi
+	name = "Responce Team Field Technician"
+	jobtype = /datum/job/ert/engi
+
+	id = /obj/item/card/id/silver
+	belt = /obj/item/storage/belt/utility/full
+	ears = /obj/item/radio/headset/mainship/mcom
+	w_uniform = /obj/item/clothing/under/ert
+	shoes = /obj/item/clothing/shoes/swat/ert
+	wear_suit = /obj/item/clothing/suit/armor/vest/ert/engineer
+	gloves = /obj/item/clothing/gloves/combat/ert
+	head = /obj/item/clothing/head/helmet/ert/engineer
+	mask = /obj/item/clothing/mask/gas/PMC
+	glasses = /obj/item/clothing/glasses/hud/xenohud/night/meson
+	suit_store = /obj/item/weapon/gun/smg/m25/elite
+	r_store = /obj/item/storage/pouch/magazine/large/ert_m25/ap
+	l_store = /obj/item/storage/pouch/construction/ert
+	back = /obj/item/storage/backpack/ert/engineer
+
+
+/datum/outfit/job/ert/engi/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	H.equip_to_slot_or_del(new /obj/item/radio, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/tool/crowbar/red, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/storage/pill_bottle/tricordrazine, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/weapon/gun/sentry/mini, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/weapon/gun/sentry/mini, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/minisentry, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/minisentry, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/minisentry, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/minisentry, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m25/extended, SLOT_IN_BACKPACK)
+

@@ -494,8 +494,8 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "high-impact revolver bullet"
 	hud_state = "revolver_impact"
 	handful_amount = 6
-	damage = 60
-	penetration = 20
+	damage = 200
+	penetration = 40
 	sundering = 3
 
 /datum/ammo/bullet/revolver/highimpact/on_hit_mob(mob/M,obj/projectile/P)
@@ -628,6 +628,46 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	penetration = 10
 	sundering = 1.25
 
+/datum/ammo/bullet/rifle/heavy/m41a
+	name = "old heavy rifle bullet"
+	hud_state = "hivelo"
+	damage = 45
+	penetration = 10
+	sundering = 1.25
+
+/datum/ammo/bullet/rifle/heavy/ap
+	name = "armor-piercing heavy rifle bullet"
+	hud_state = "rifle_ap"
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
+	damage = 45
+	penetration = 30
+	sundering = 3
+
+/datum/ammo/bullet/rifle/explosive
+	name = "explosive rifle bullet"
+	hud_state = "rifle"
+	hud_state_empty = "rifle_empty"
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_EXPLOSIVE
+	accurate_range = 12
+	damage = 75
+	penetration = 15
+	sundering = 0.5
+
+/datum/ammo/bullet/rifle/explosive/drop_nade(turf/T)
+	explosion(T, 2, 1, 1, 0)
+
+/datum/ammo/bullet/rifle/explosive/on_hit_mob(mob/M, obj/projectile/P)
+	drop_nade(get_turf(M))
+
+/datum/ammo/bullet/rifle/explosive/on_hit_obj(obj/O, obj/projectile/P)
+	drop_nade(get_turf(O))
+
+/datum/ammo/bullet/rifle/explosive/on_hit_turf(turf/T, obj/projectile/P)
+	drop_nade(T.density ? P.loc : T)
+
+/datum/ammo/bullet/rifle/explosive/do_at_max_range(turf/T, obj/projectile/P)
+	drop_nade(T.density ? P.loc : T)
+
 /datum/ammo/bullet/rifle/repeater
 	name = "heavy impact rifle bullet"
 	hud_state = "revolver_heavy"
@@ -673,20 +713,20 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 10
 
 /datum/ammo/bullet/rifle/tx8/incendiary
-	name = "high velocity incendiary bullet"
+	name = "A19 high velocity incendiary bullet"
 	hud_state = "hivelo_fire"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_INCENDIARY|AMMO_SUNDERING
-	damage = 25
+	damage = 75
 	accuracy = -10
 	penetration = 20
 	sundering = 2.5
 
 /datum/ammo/bullet/rifle/tx8/impact
-	name = "high velocity impact bullet"
+	name = "A19 high velocity impact bullet"
 	hud_state = "hivelo_impact"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
-	damage = 25
-	penetration = 30
+	damage = 75
+	penetration = 35
 	sundering = 5
 
 /datum/ammo/bullet/rifle/tx8/impact/on_hit_mob(mob/M, obj/projectile/P)
@@ -1245,6 +1285,18 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	penetration = 15
 	sundering = 15
 	on_pierce_multiplier = 0.8
+
+/datum/ammo/bullet/smartmachinegun/rifle
+	name = "smartrifle bullet"
+	bullet_color = COLOR_SOFT_RED //Red bullets to indicate friendly fire restriction
+	hud_state = "smartgun"
+	hud_state_empty = "smartgun_empty"
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
+	accurate_range = 12
+	damage = 70
+	penetration = 30
+	sundering = 6
+	on_pierce_multiplier = 0.6
 
 /datum/ammo/bullet/smart_minigun
 	name = "smartminigun bullet"
@@ -2145,10 +2197,12 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	accuracy = 1000
 	max_range = 1000
 	ping = null
+	hud_state = "grenade_he"
+	hud_state_empty = "grenade_empty"
 	bullet_color = COLOR_WHITE
 
 /datum/ammo/mortar/drop_nade(turf/T)
-	explosion(T, 1, 2, 5, 3)
+	explosion(T, 3, 2, 5, 3)
 
 /datum/ammo/mortar/do_at_max_range(turf/T, obj/projectile/P)
 	drop_nade(T)
@@ -2320,7 +2374,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING
 	shell_speed = 4
 	accurate_range = 15
-	damage = 20
+	damage = 30
 	penetration = 10
 	max_range = 30
 	accuracy_var_low = 3
@@ -2334,7 +2388,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "overcharged laser bolt"
 	icon_state = "overchargedlaser"
 	hud_state = "laser_sniper"
-	damage = 40
+	damage = 50
 	max_range = 40
 	penetration = 50
 	sundering = 5
@@ -2423,9 +2477,9 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 
 /datum/ammo/energy/lasgun/marine
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING|AMMO_HITSCAN
-	damage = 20
+	damage = 30
 	penetration = 10
-	sundering = 1
+	sundering = 0
 	max_range = 30
 	hitscan_effect_icon = "beam"
 
@@ -2433,9 +2487,9 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "overcharged laser bolt"
 	icon_state = "overchargedlaser"
 	hud_state = "laser_sniper"
-	damage = 40
+	damage = 50
 	penetration = 20
-	sundering = 2
+	sundering = 0
 	hitscan_effect_icon = "beam_heavy"
 
 /datum/ammo/energy/lasgun/marine/blast
@@ -2449,9 +2503,9 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	accuracy_var_high = 9
 	accurate_range = 5
 	max_range = 8
-	damage = 35
-	penetration = 20
-	sundering = 1
+	damage = 45
+	penetration = 10
+	sundering = 0
 	hitscan_effect_icon = "pu_laser"
 
 /datum/ammo/energy/lasgun/marine/spread
@@ -2462,15 +2516,15 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	accuracy_var_high = 9
 	accurate_range = 5
 	max_range = 8
-	damage = 35
-	penetration = 20
-	sundering = 1
+	damage = 45
+	penetration = 10
+	sundering = 0
 	hitscan_effect_icon = "pu_laser"
 
 /datum/ammo/energy/lasgun/marine/autolaser
 	name = "machine laser bolt"
-	damage = 15
-	penetration = 15
+	damage = 30
+	penetration = 10
 
 /datum/ammo/energy/lasgun/marine/autolaser/efficiency
 	name = "efficient machine laser bolt"
@@ -2480,11 +2534,11 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 /datum/ammo/energy/lasgun/marine/sniper
 	name = "sniper laser bolt"
 	hud_state = "laser_sniper"
-	damage = 60
+	damage = 90
 	penetration = 30
 //	accurate_range_min = 5
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING|AMMO_HITSCAN|AMMO_SNIPER
-	sundering = 4
+	sundering = 1
 	max_range = 40
 	damage_falloff = 0
 	hitscan_effect_icon = "beam_heavy"
@@ -2494,7 +2548,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	icon_state = "microwavelaser"
 	hud_state = "laser_heat"
 	shell_speed = 2.5
-	damage = 40
+	damage = 90
 	penetration = 0
 //	accurate_range_min = 5
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_SUNDERING|AMMO_HITSCAN|AMMO_SNIPER
@@ -2503,7 +2557,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 
 /datum/ammo/energy/lasgun/marine/pistol
 	name = "pistol laser bolt"
-	damage = 20
+	damage = 25
 	penetration = 5
 	hitscan_effect_icon = "beam_particle"
 
@@ -2520,7 +2574,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "microwave heat bolt"
 	icon_state = "microwavelaser"
 	hud_state = "laser_heat"
-	damage = 20
+	damage = 25
 	shell_speed = 2.5
 	penetration = 10
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_SUNDERING|AMMO_HITSCAN
@@ -2532,7 +2586,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 
 /datum/ammo/energy/lasgun/marine/cutter
 	name = "plasma bolt clump"
-	damage = 65
+	damage = 95
 	penetration = 15
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING|AMMO_HITSCAN
 	sundering = 3
@@ -2542,7 +2596,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "plasma bolt"
 	icon_state = "pulse"
 	hud_state = "laser_spread"
-	damage = 25
+	damage = 45
 	penetration = 5
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING
 	bonus_projectiles_type = /datum/ammo/energy/lasgun/marine/cutter/spread
@@ -2554,7 +2608,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "plasma bolt"
 	icon_state = "pulse"
 	hud_state = "laser_spread"
-	damage = 25
+	damage = 45
 	penetration = 5
 	sundering = 1
 
@@ -2577,7 +2631,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "xray heat bolt"
 	icon_state = "u_laser"
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_SUNDERING|AMMO_HITSCAN
-	damage = 105
+	damage = 200
 	penetration = 15
 	sundering = 1
 	max_range = 18
@@ -2587,7 +2641,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	name = "xray piercing bolt"
 	icon_state = "xray"
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_HITSCAN|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
-	damage = 50
+	damage = 105
 	penetration = 100
 	max_range = 10
 	hitscan_effect_icon = "xray_beam"
@@ -2601,9 +2655,9 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 
 /datum/ammo/energy/lasgun/marine/heavy_laser
 	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_ENERGY|AMMO_SUNDERING|AMMO_HITSCAN|AMMO_INCENDIARY
-	damage = 60
+	damage = 120
 	penetration = 10
-	sundering = 1
+	sundering = 0
 	max_range = 30
 	hitscan_effect_icon = "beam_incen"
 
@@ -2648,8 +2702,8 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 
 /datum/ammo/energy/lasgun/marine/mech/smg
 	name = "superheated pulsed laser bolt"
-	damage = 70
-	penetration = 20
+	damage = 35
+	penetration = 0
 
 // Plasma //
 /datum/ammo/energy/plasma

@@ -51,6 +51,7 @@
 	adjustment_variants = list()
 
 /obj/item/clothing/under/rank/security/corp
+	name = "black security officer's jumpsuit"
 	icon_state = "sec_corporate"
 	adjustment_variants = list()
 

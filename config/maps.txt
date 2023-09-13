@@ -63,3 +63,10 @@ endmap
 map gelida_iv
 	minplayers 5
 endmap
+
+map icy_caves_colony
+	minplayers 15
+endmap
+map Research_Outpost_colony
+	minplayers 15
+endmap

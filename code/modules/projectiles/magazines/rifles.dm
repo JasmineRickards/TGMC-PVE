@@ -38,6 +38,15 @@
 	icon_state_mini = "mag_rifle_big_green"
 	bonus_overlay = "m412_ap"
 
+/obj/item/ammo_magazine/rifle/explosive
+	name = "\improper PR-412 explosive magazine (10x24mm)"
+	desc = "A 10mm assault rifle magazine."
+	icon_state = "m412_incendiary"
+	default_ammo = /datum/ammo/bullet/rifle/explosive
+	icon_state_mini = "mag_rifle_big_red"
+	bonus_overlay = "m412_incend"
+
+
 //-------------------------------------------------------
 //T18 Carbine
 
@@ -120,6 +129,59 @@
 	max_rounds = 180
 	icon_state_mini = "mag_rifle_big"
 
+/obj/item/ammo_magazine/rifle/m41a/old
+	name = "\improper M41A MK1 magazine (10x24mm)"
+	desc = "A semi-rectangular box of older rounds for the M41A MK1 Pulse Rifle."
+	icon_state = "m41a_mk1"
+	default_ammo = /datum/ammo/bullet/rifle/heavy/m41a
+	max_rounds = 120
+	icon_state_mini = "mag_rifle_big"
+
+/obj/item/ammo_magazine/rifle/m41a/old/ap
+	name = "\improper M41A MK1 armor-piercing magazine (10x24mm)"
+	desc = "A semi-rectangular box of older armor-piercing rounds for the M41A MK1 Pulse Rifle."
+	icon_state = "m41a_mk1_ap"
+	default_ammo = /datum/ammo/bullet/rifle/heavy/ap
+
+/obj/item/ammo_magazine/rifle/m41a/mk2
+	name = "\improper M41A MK2 magazine (10x24mm)"
+	desc = "A semi-rectangular box of rounds for the M41A MK2 Pulse Rifle."
+	icon_state = "m41a_mk2"
+	max_rounds = 99
+	default_ammo = /datum/ammo/bullet/rifle/heavy/m41a
+	icon_state_mini = "mag_rifle_big"
+
+/obj/item/ammo_magazine/rifle/m41a/mk2/extended
+	name = "\improper M41A MK2 extended magazine (10x24mm)"
+	desc = "An extended semi-rectangular box of rounds for the M41A MK2 Pulse Rifle."
+	icon_state = "m41a_mk2_extended"
+	max_rounds = 180
+	icon_state_mini = "mag_rifle_big"
+
+/obj/item/ammo_magazine/rifle/m41a/mk2/ap
+	name = "\improper M41A MK2 armor-piercing magazine (10x24mm)"
+	desc = "An armor-piercing semi-rectangular box of rounds for the M41A MK2 Pulse Rifle."
+	icon_state = "m41a_mk2_ap"
+	max_rounds = 99
+	default_ammo = /datum/ammo/bullet/rifle/heavy/ap
+	icon_state_mini = "mag_rifle_big"
+
+/obj/item/ammo_magazine/rifle/m41a/marsoc
+	name = "\improper M40-SD magazine (10x24mm)"
+	desc = "A semi-round box of rounds for the M40-SD Heavy Pulse Rifle."
+	icon_state = "m40_sd"
+	max_rounds = 250
+	icon_state_mini = "mag_rifle_big"
+	default_ammo = /datum/ammo/bullet/rifle/heavy/ap
+
+/obj/item/ammo_magazine/rifle/m41a/captain
+	name = "\improper M46C high-impact magazine (10x24mm)"
+	desc = "A semi-rectangular box of rounds for the M46C Pulse Rifle. This one is loaded with high-impact rounds."
+	icon_state = "m46c_iff"
+	max_rounds = 150
+	icon_state_mini = "mag_rifle_big"
+	default_ammo = /datum/ammo/bullet/smartmachinegun/rifle
+
 
 //-------------------------------------------------------
 //MAR-40 AK CLONE //AK47 and FN FAL together as one.
@@ -153,6 +215,28 @@
 	default_ammo = /datum/ammo/bullet/rifle
 	max_rounds = 60 //Also comes in 30 and 100 round Beta-C mag.
 	icon_state_mini = "mag_rifle_big"
+
+/obj/item/ammo_magazine/rifle/m16/old
+	name = "\improper M16 magazine (5.56x45mm)"
+	desc = "A 5.56x45mm magazine for the M16 assault rifle platform."
+	icon_state = "m16_old"
+	icon_state_mini = "mag_rifle_big"
+	default_ammo = /datum/ammo/bullet/rifle/heavy
+	max_rounds = 30
+
+/obj/item/ammo_magazine/rifle/m16/old/extended
+	name = "\improper extended M16 magazine (5.56x45mm)"
+	desc = "An extended 5.56x45mm magazine for the M16 assault rifle platform."
+	icon_state = "m16_ext_old"
+	max_rounds = 60
+
+/obj/item/ammo_magazine/rifle/m16/ar10
+	name = "\improper AR-10 magazine (5.56x45mm)"
+	desc = "An 5.56x45mm magazine for the AR-10 assault rifle platform."
+	icon_state = "ar10"
+	icon_state_mini = "mag_rifle_big"
+	default_ammo = /datum/ammo/bullet/rifle/heavy
+	max_rounds = 45
 
 //-------------------------------------------------------
 //FAMAS RIFLE
@@ -392,6 +476,18 @@
 	icon_state = "tx54_airburst"
 	greyscale_colors = "#fa7923"
 
+/obj/item/ammo_magazine/rifle/tx54/shell/he
+	name = "\improper 80mm shell magazine"
+	desc = "An 80mm magazine loaded with mortar shells. For use with the GL-55M."
+	caliber = CALIBER_20MM
+	icon_state = "tx54_airburst"
+	w_class = WEIGHT_CLASS_NORMAL
+	default_ammo = /datum/ammo/mortar
+	max_rounds = 25
+	icon_state_mini = "mag_sniper"
+	greyscale_config = /datum/greyscale_config/ammo
+	greyscale_colors = "#b02323"
+
 //-------------------------------------------------------
 //Garand
 /obj/item/ammo_magazine/rifle/garand
@@ -400,7 +496,7 @@
 	caliber = CALIBER_3006
 	icon_state = "garand"
 	default_ammo = /datum/ammo/bullet/rifle/garand
-	max_rounds = 8
+	max_rounds = 24
 	icon_state_mini = "mag_sniper"
 
 /obj/item/ammo_magazine/rifle/garand_grenade
@@ -409,7 +505,7 @@
 	caliber = CALIBER_3006 //Technically true?
 	icon_state = "garand_grenade"
 	default_ammo = /datum/ammo/rocket/garand
-	max_rounds = 1
+	max_rounds = 3
 	reload_delay = 1.5 SECONDS
 	bonus_overlay = "c1_rifle_grenade"
 

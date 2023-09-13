@@ -87,6 +87,8 @@
 	desc = "It's baseball hat in tasteful red color."
 	icon_state = "secsoft"
 	cap_color = "sec"
+	soft_armor = list(MELEE = 30, BULLET = 35, LASER = 35, ENERGY = 20, BOMB = 20, BIO = 10, FIRE = 10, ACID = 15)
+	flags_inventory = BLOCKSHARPOBJ
 
 /obj/item/clothing/head/soft/sec/corp
 	name = "corporate security cap"

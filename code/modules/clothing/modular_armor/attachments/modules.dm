@@ -38,8 +38,9 @@
 	. = ..()
 	var/list/tricord = list(/datum/reagent/medicine/tricordrazine)
 	var/list/tramadol = list(/datum/reagent/medicine/tramadol)
+	var/list/russian_red = list(/datum/reagent/medicine/russian_red)
 	/// This will do nothing without the autodoc update
-	parent.AddComponent(/datum/component/suit_autodoc, 4 MINUTES, tricord, tricord, tricord, tricord, tramadol, 0.5)
+	parent.AddComponent(/datum/component/suit_autodoc, 4 MINUTES, tricord, tricord, tricord, tricord, russian_red, tramadol, 0.5)
 	parent.AddElement(/datum/element/limb_support, supported_limbs)
 
 
@@ -587,3 +588,24 @@
 	SIGNAL_HANDLER
 	beacon_datum = null
 
+/obj/item/armor_module/module/huldra_autorepair
+	name = "\improper Huldra Autorepair System"
+	icon = 'icons/mob/modular/modular_armor_modules.dmi'
+	desc = "Designed for mounting on modular robot armor. This module will swiftly and automatically repair the mechanical components of the wearer, and the hydraulic frame stabilizes damaged limbs. Will definitely impact mobility."
+	icon_state = "mod_autodoc"
+	item_state = "mod_autodoc_a"
+	slowdown = 0.3
+	slot = ATTACHMENT_SLOT_MODULE
+	variants_by_parent_type = list(/obj/item/clothing/suit/modular/xenonauten = "mod_autodoc_xn", /obj/item/clothing/suit/modular/xenonauten/light = "mod_autodoc_xn", /obj/item/clothing/suit/modular/xenonauten/heavy = "mod_autodoc_xn")
+	var/static/list/supported_limbs = list(CHEST, GROIN, ARM_LEFT, ARM_RIGHT, HAND_LEFT, HAND_RIGHT, LEG_LEFT, LEG_RIGHT, FOOT_LEFT, FOOT_RIGHT)
+
+/obj/item/armor_module/module/huldra_autorepair/on_attach(obj/item/attaching_to, mob/user)
+	. = ..()
+	parent.AddComponent(/datum/component/suit_autorepair)
+	parent.AddElement(/datum/element/limb_support, supported_limbs)
+
+
+/obj/item/armor_module/module/huldra_autorepair/on_detach(obj/item/detaching_from, mob/user)
+	qdel(parent.GetComponent(/datum/component/suit_autorepair))
+	parent.RemoveElement(/datum/element/limb_support, supported_limbs)
+	return ..()

@@ -233,42 +233,42 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_projector
 	name = "\improper Gyges laser projector"
 	icon = 'icons/mecha/mecha_equipment_64x32.dmi'
-	desc = "A laser projector, capable of burstfiring. Does not require amnmo refills and shoots highly accurate lasers that immediately hit, but deals slightly less damage compared to similar weapons."
+	desc = "A laser projector, capable of burstfiring. Does not require amnmo refills and shoots highly accurate lasers that immediately hit, but deals immense damage in exchange for high power draw"
 	icon_state = "laserrifle"
 	fire_sound = 'sound/mecha/weapons/mech_laser_heavy.ogg'
-	mech_flags = EXOSUIT_MODULE_GREYSCALE
-	flash_offsets = list(
-		MECHA_R_ARM = list("N" = list(33,52), "S" = list(-2,-6), "E" = list(75,11), "W" = list(-45,31)),
-		MECHA_L_ARM = list("N" = list(0,52), "S" = list(32,-6), "E" = list(75,31), "W" = list(-45,11)),
-	)
+//	mech_flags = EXOSUIT_MODULE_GREYSCALE
+//	flash_offsets = list(
+//		MECHA_R_ARM = list("N" = list(33,52), "S" = list(-2,-6), "E" = list(75,11), "W" = list(-45,31)),
+//		MECHA_L_ARM = list("N" = list(0,52), "S" = list(32,-6), "E" = list(75,31), "W" = list(-45,11)),
+//	)
 	ammotype = /datum/ammo/energy/lasgun/marine/mech/burst
 	max_integrity = 400
-	energy_drain = 5
-	variance = 0
-	projectile_delay = 0.6 SECONDS
-	burst_amount = 3
+	energy_drain = 50
+	variance = 0.5
+	projectile_delay = 0.1 SECONDS
+	burst_amount = 6
 	projectile_burst_delay = 0.2 SECONDS
-	slowdown = 0.4
+//	slowdown = 0.4
 	harmful = TRUE
 	fire_mode = GUN_FIREMODE_AUTOBURST
 
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_smg
 	name = "\improper Mnemosyne laser SMG"
 	icon = 'icons/mecha/mecha_equipment_64x32.dmi'
-	desc = "Standard mech laser SMG. Does not require amnmo refills and shoots highly accurate lasers that immediately hit, but deals slightly less damage compared to similar weapons. More mobile than the laser rifle."
+	desc = "Standard mech laser SMG. Does not require ammo refills and shoots highly accurate rapid firing lasers for crowd suppression, favored for its low energy cost."
 	icon_state = "lasersmg"
 	fire_sound = 'sound/mecha/weapons/mech_laser_light.ogg'
-	flash_offsets = list(
-		MECHA_R_ARM = list("N" = list(33,48), "S" = list(-2,6), "E" = list(67,11), "W" = list(-37,31)),
-		MECHA_L_ARM = list("N" = list(0,48), "S" = list(32,6), "E" = list(67,31), "W" = list(-37,11)),
-	)
-	mech_flags = EXOSUIT_MODULE_GREYSCALE
+//	flash_offsets = list(
+//		MECHA_R_ARM = list("N" = list(33,48), "S" = list(-2,6), "E" = list(67,11), "W" = list(-37,31)),
+//		MECHA_L_ARM = list("N" = list(0,48), "S" = list(32,6), "E" = list(67,31), "W" = list(-37,11)),
+//	)
+//	mech_flags = EXOSUIT_MODULE_GREYSCALE
 	ammotype = /datum/ammo/energy/lasgun/marine/mech/smg
 	max_integrity = 400
-	energy_drain = 5
+	energy_drain = 2
 	variance = 0
-	projectile_delay = 0.2 SECONDS
-	slowdown = 0.2
+	projectile_delay = 0.1 SECONDS
+//	slowdown = 0.2
 	harmful = TRUE
 	fire_mode = GUN_FIREMODE_AUTOMATIC
 

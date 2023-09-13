@@ -63,8 +63,10 @@
 //Security
 /obj/item/clothing/head/beret/sec
 	name = "security beret"
-	desc = "A beret with the security insignia emblazoned on it. For officers that are more inclined towards style than safety."
+	desc = "A beret with the security insignia emblazoned on it. For officers that are more inclined towards style than safety. Has some very light kevlar shards inside."
 	icon_state = "beret_badge"
+	soft_armor = list(MELEE = 30, BULLET = 35, LASER = 35, ENERGY = 20, BOMB = 20, BIO = 10, FIRE = 10, ACID = 15)
+	flags_inventory = BLOCKSHARPOBJ
 /obj/item/clothing/head/beret/sec/alt
 	name = "officer beret"
 	desc = "A navy blue beret with an officer's rank emblem. For officers that are more inclined towards style than safety."
@@ -117,7 +119,7 @@
 	icon_state = "detective"
 	species_exception = list(/datum/species/robot)
 	allowed = list(/obj/item/reagent_containers/food/snacks/candy_corn, /obj/item/tool/pen)
-	soft_armor = list(MELEE = 50, BULLET = 5, LASER = 25, ENERGY = 10, BOMB = 0, BIO = 0, FIRE = 10, ACID = 10)
+	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 60, ENERGY = 40, BOMB = 50, BIO = 20, FIRE = 40, ACID = 35)
 	siemens_coefficient = 0.9
 	flags_armor_protection = NONE
 

@@ -6,7 +6,7 @@
 	icon = 'icons/obj/items/ammo.dmi'
 	icon_state = "m43"
 	item_state = null
-	maxcharge = 2850 ///Changed due to the fact some maps and ERTs spawn with the child, the lasrifle. Charges on guns changed accordingly.
+	maxcharge = 5000 ///Changed due to the fact some maps and ERTs spawn with the child, the lasrifle. Charges on guns changed accordingly.
 	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "mag_cell"
 	charge_overlay = "m43"
@@ -34,7 +34,7 @@
 	desc = "An advanced, ultrahigh capacity battery used to power the M19C4 pulse rifle system; Uses pulse-based energy rather than laser energy, massively increasing its firepower. It can also recharge on its own."
 	charge_overlay = "pulse"
 	icon_state = "pulse"
-	maxcharge = 4000 // 200 shots.
+	maxcharge = 5000 // 200 shots.
 	self_recharge = TRUE
 	charge_amount = 25 // 10%, 1 shot
 	charge_delay = 2 SECONDS
@@ -52,7 +52,7 @@
 	charge_overlay = "te"
 	icon_state = "te"
 	icon_state_mini = "mag_cell_te"
-	maxcharge = 2850
+	maxcharge = 5000
 
 /obj/item/cell/lasgun/lasrifle/survivor
 	name = "\improper Aftermarket T.E battery"
@@ -72,7 +72,7 @@
 	desc = "A specialized high density battery used to power volkite weaponry."
 	icon = 'icons/obj/items/ammo.dmi'
 	icon_state = "volkite"
-	maxcharge = 3500
+	maxcharge = 5000
 	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "mag_cell"
 	charge_overlay = "volkite"
@@ -93,13 +93,13 @@
 	desc = "A nuclear powered battery designed for certain heavy SOM machinery like sentries. Slowly charges over time."
 	icon = 'icons/obj/items/ammo.dmi'
 	icon_state = "volkite_turret"
-	maxcharge = 1800
+	maxcharge = 5000
 	w_class = WEIGHT_CLASS_NORMAL
 	icon_state_mini = "mag_cell"
 	charge_overlay = "volkite_big"
 	reload_delay = 0
 	self_recharge = TRUE
-	charge_amount = 24
+	charge_amount = 50
 	charge_delay = 2 SECONDS
 
 /obj/item/cell/lasgun/volkite/powerpack
@@ -113,7 +113,7 @@
 	flags_magazine_features = MAGAZINE_REFUND_IN_CHAMBER|MAGAZINE_WORN
 	w_class = WEIGHT_CLASS_HUGE
 	slowdown = 0.3
-	maxcharge = 15000
+	maxcharge = 20000
 	self_recharge = TRUE
 	charge_amount = 300
 	charge_delay = 5 SECONDS

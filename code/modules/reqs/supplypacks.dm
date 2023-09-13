@@ -43,6 +43,30 @@ OPERATIONS
 	contains = list(/obj/item/storage/box/spec/pyro)
 	cost = 100
 
+/datum/supply_packs/operations/specsniper
+	name = "Sniper spec kit"
+	notes = "Contains a full sniper kit with advanced light armor."
+	contains = list(/obj/item/storage/box/spec/sniper)
+	cost = 100
+
+/datum/supply_packs/operations/specscout
+	name = "Scout spec kit"
+	notes = "Contains a full scout kit with advanced medium armor."
+	contains = list(/obj/item/storage/box/spec/scout)
+	cost = 100
+
+/datum/supply_packs/operations/specdemo
+	name = "Heavy demolitionist spec kit"
+	notes = "Contains a full heavy demolitionist kit with heavy EOD armor."
+	contains = list(/obj/item/storage/box/spec/heavy_grenadier)
+	cost = 100
+
+/datum/supply_packs/operations/specrocket
+	name = "Rocket demolitionist spec kit"
+	notes = "Contains a full rocket demolitionist kit with light EOD armor."
+	contains = list(/obj/item/storage/box/spec/demolitionist)
+	cost = 100
+
 /datum/supply_packs/operations/fobkit
 	name = "Fob Materials"
 	notes = "Contains materials for most sized fobs."
@@ -270,6 +294,16 @@ WEAPONS
 	contains = list(/obj/item/ammo_magazine/rifle/tx54/he)
 	cost = 10
 	available_against_xeno_only = TRUE
+
+/datum/supply_packs/weapons/tx54/mortar
+	name = "GL-55M shell launcher"
+	contains = list(/obj/item/weapon/gun/rifle/tx54/mortar)
+	cost = 220
+
+/datum/supply_packs/weapons/tx54/mortar/shell_he
+	name = "GL-55M shell magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/tx54/shell/he)
+	cost = 20
 
 /datum/supply_packs/weapons/recoillesskit
 	name = "RL-160 Recoilless rifle kit"
@@ -564,7 +598,7 @@ WEAPONS
 	name = "Mateba Autorevolver belt"
 	contains = list(/obj/item/storage/belt/gun/mateba/full)
 	notes = "Contains 6 speedloaders"
-	cost = 15
+	cost = 20
 	available_against_xeno_only = TRUE
 
 /datum/supply_packs/weapons/mateba_ammo
@@ -620,6 +654,11 @@ WEAPONS
 	name = "Big Ammo Box (10x20mm)"
 	contains = list(/obj/item/big_ammo_box/smg)
 	cost = 5
+
+/datum/supply_packs/weapons/m46c/ammo
+	name = "M46C Pulse rifle ammo magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a/captain)
+	cost = 6
 
 /*******************************************************************************
 EXPLOSIVES
@@ -760,6 +799,10 @@ EXPLOSIVES
 	cost = 10
 	available_against_xeno_only = TRUE
 
+/datum/supply_packs/explosives/ai_target_module
+	name = "LC-Incinerator Energy Cannon"
+	contains = list(/obj/item/weapon/gun/energy/recoillessrifle/lasercannon)
+	cost = 5
 /*******************************************************************************
 ARMOR
 *******************************************************************************/
@@ -783,13 +826,22 @@ ARMOR
 	cost = 10
 
 /datum/supply_packs/armor/riot
-	name = "Heavy Riot Armor Set"
+	name = "Heavy Xeno Control Armor Set"
 	contains = list(
 		/obj/item/clothing/suit/storage/marine/riot,
 		/obj/item/clothing/head/helmet/marine/riot,
 	)
-	cost = 12
+	cost = 25
 	available_against_xeno_only = TRUE
+
+/datum/supply_packs/armor/intel
+	name = "Intelligence Officer armor set"
+	contains = list(
+		/obj/item/clothing/suit/storage/marine/intel,
+		/obj/item/clothing/head/helmet/marine/intel,
+		/obj/item/clothing/under/marine/officer/intel,
+	)
+	cost = 80
 
 /datum/supply_packs/armor/marine_shield
 	name = "TL-172 Defensive Shield"
@@ -800,6 +852,20 @@ ARMOR
 	name = "TL-182 Deployable Shield"
 	contains = list(/obj/item/weapon/shield/riot/marine/deployable)
 	cost = 3
+
+/datum/supply_packs/armor/marine_shield/deployablex10
+	name = "TL-182 Deployable Shields x10"
+	contains = list(/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,
+					/obj/item/weapon/shield/riot/marine/deployable,)
+	cost = 30
 
 /datum/supply_packs/armor/b18
 	name = "B18 Armor Set"
@@ -817,6 +883,15 @@ ARMOR
 		/obj/item/clothing/head/helmet/marine/grenadier,
 	)
 	cost = B17_PRICE
+
+/datum/supply_packs/armor/nt/rig
+	name = "Nanotrasen brand HEV suit"
+	contains = list(
+		/obj/item/clothing/suit/storage/marine/rig/nt/heavy,
+		/obj/item/clothing/head/helmet/rig/nt/heavy,
+		/obj/item/clothing/glasses/hud/xenohud/night/meson,
+		/obj/item/weapon/energy/sword/blue/nt)
+	cost = 650
 
 //datum/supply_packs/armor/scout_cloak
 //	name = "Scout Cloak"
@@ -837,7 +912,7 @@ ARMOR
 /datum/supply_packs/armor/modular/attachments/mixed
 	name = "Jaeger experimental mark 2 modules"
 	contains = list(
-		/obj/item/armor_module/module/valkyrie_autodoc,
+//		/obj/item/armor_module/module/valkyrie_autodoc,
 		/obj/item/armor_module/module/fire_proof,
 		/obj/item/armor_module/module/tyr_extra_armor,
 		/obj/item/armor_module/module/mimir_environment_protection,
@@ -845,15 +920,23 @@ ARMOR
 		/obj/item/armor_module/module/hlin_explosive_armor,
 		/obj/item/armor_module/module/eshield/mk2,
         /obj/item/armor_module/module/chemsystem/mk2,
+        /obj/item/weapon/claymore/harvester/advanced,
 	)
 	cost = 40
 
-/datum/supply_packs/armor/modular/attachments/valkyrie_autodoc
-	name = "Jaeger Valkyrie autodoc module"
+//datum/supply_packs/armor/modular/attachments/valkyrie_autodoc
+//	name = "Jaeger Valkyrie autodoc module"
+//	contains = list(
+//		/obj/item/armor_module/module/valkyrie_autodoc,
+//	)
+//	cost = 12
+
+/datum/supply_packs/armor/modular/attachments/huldra_autorepair
+	name = "Golem Huldra autorepair module"
 	contains = list(
-		/obj/item/armor_module/module/valkyrie_autodoc,
+		/obj/item/armor_module/module/huldra_autorepair,
 	)
-	cost = 12
+	cost = 15
 
 /datum/supply_packs/armor/modular/attachments/eshield
 	name = "Jaeger Arrowhead mk.2"
@@ -891,8 +974,11 @@ ARMOR
 
 /datum/supply_packs/armor/modular/attachments/chemsystem_mk2
 	name = "Jaegar Vali Chemical System Mark 2"
-	contains = list(/obj/item/armor_module/module/chemsystem/mk2)
-	cost = 8
+	contains = list(
+	/obj/item/armor_module/module/chemsystem/mk2,
+	/obj/item/weapon/claymore/harvester/advanced,
+	)
+	cost = 12
 
 /*******************************************************************************
 CLOTHING
@@ -1287,6 +1373,26 @@ Imports
 	contains = list(/obj/item/ammo_magazine/sniper/elite = 3)
 	cost = 5
 
+/datum/supply_packs/imports/m41a/elite
+	name = "M41A MK2/3 Pulse Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/m41a/old/elite)
+	cost = 35
+
+/datum/supply_packs/imports/m41a/elite/ammo
+	name = "M41A MK2 Pulse Rifle ammo magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a/mk2)
+	cost = 1
+
+/datum/supply_packs/imports/m41a/elite/ammo/extended
+	name = "M41A MK2 Pulse Rifle extended ammo magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a/mk2/extended)
+	cost = 2
+
+/datum/supply_packs/imports/m41a/elite/ammo/ap
+	name = "M41A MK2 Pulse Rifle armor-piercing ammo magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a/mk2/ap)
+	cost = 4
+
 /datum/supply_packs/imports/m412e
 	name = "PR-412B2 Commando Rifle"
 	contains = list(/obj/item/weapon/gun/rifle/m412/elite)
@@ -1301,6 +1407,11 @@ Imports
 	name = "PR-412 Pulse Rifle Incendiary Ammo"
 	contains = list(/obj/item/ammo_magazine/rifle/incendiary = 10)
 	cost = 1
+
+/datum/supply_packs/imports/m412/EXPL_ammo
+	name = "PR412 Pulse Rifle Explosive Ammo"
+	contains = list(/obj/item/ammo_magazine/rifle/explosive)
+	cost = 20
 
 /datum/supply_packs/imports/m412/AP_ammoboxes
 	name = "10x24mm Caseless Armor Piercing Ammoboxes"
@@ -1443,6 +1554,37 @@ Imports
 	name = "CAU C1 Ammo"
 	contains = list(/obj/item/ammo_magazine/rifle/garand)
 	cost = 1
+
+/datum/supply_packs/imports/m41amk1
+	name = "M41A MK1 Pulse Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/m41a/old)
+	cost = 10
+
+/datum/supply_packs/imports/m41amk1/ammo
+	name = "M41A MK1 Pulse Rifle magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a/old)
+	cost = 1
+
+/datum/supply_packs/imports/m41amk1/ammo/ap
+	name = "M41A MK1 Pulse Rifle armor-piercing magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/m41a/old/ap)
+	cost = 4
+
+/datum/supply_packs/imports/m41amk1/ammopacket
+	name = "10x24 Heavy Caseless ammo packet"
+	contains = list(/obj/item/ammo_magazine/packet/p10x24mm/heavy)
+	cost = 10
+
+/datum/supply_packs/imports/m41amk1/ammopacket/ap
+	name = "10x24 Heavy Armor-Piercing Caseless ammo packet"
+	contains = list(/obj/item/ammo_magazine/packet/p10x24mm/heavy/ap)
+	cost = 30
+
+/datum/supply_packs/imports/ammobelt/old
+	name = "T-72O Longevity Ammo Belt"
+	contains = list(/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old)
+	cost = 5
+
 /*
 /datum/supply_packs/imports/mpi_km
 	name = "MPi-KM Assault Rifle"
@@ -1626,6 +1768,18 @@ Imports
 		/obj/item/weapon/chainsword,)
 	cost = 180
 
+/datum/supply_packs/imports/tactical
+	name = "Tactical armor plate set"
+	contains = list(
+		/obj/item/clothing/suit/storage/marine/icc,
+		/obj/item/clothing/head/helmet/marine/icc,
+		/obj/item/clothing/gloves/marine/icc,
+		/obj/item/clothing/shoes/marine/icc,
+		/obj/item/clothing/mask/gas/icc,
+		/obj/item/storage/backpack/lightpack/icc,
+		/obj/item/clothing/under/marine/icc,)
+	cost = 25
+
 /*******************************************************************************
 VEHICLES
 *******************************************************************************/
@@ -1721,6 +1875,16 @@ VEHICLES
 	name = "Heavy-Duty suit powercell"
 	cost = 50
 	contains = list(/obj/item/cell/mecha/large)
+
+/datum/supply_packs/vehicles/mechburstlaser
+	name = "Mobile Suit Burst Laser burst cannon"
+	cost = 50
+	contains = list(/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_projector)
+
+/datum/supply_packs/vehicles/mechsmg
+	name = "Mobile Suit Laser SMG"
+	cost = 25
+	contains = list(/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_smg)
 
 /datum/supply_packs/vehicles/motorbike
 	name = "All-Terrain Motorbike"

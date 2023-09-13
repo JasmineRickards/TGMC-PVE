@@ -82,8 +82,14 @@
 	name = "flame-resistant combat boots"
 	desc = "Protects you from fire and even contains a pouch for your knife!"
 	icon_state = "marine_armored"
-	hard_armor = list(MELEE = 25, BULLET = 15, LASER = 5, ENERGY = 5, BOMB = 5, BIO = 5, FIRE = 100, ACID = 20)
+	hard_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 100, ACID = 0)
 
+/obj/item/clothing/shoes/marine/icc
+	name = "tactical camo boots"
+	desc = "Desert camouflauged pair of boots. They look rather armored"
+	icon_state = "icc"
+	soft_armor = list(MELEE = 30, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 60, BIO = 30, FIRE = 50, ACID = 35)
+	hard_armor = list(MELEE = 0, BULLET = 10, LASER = 10, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 
 /obj/item/clothing/shoes/marinechief
 	name = "chief officer shoes"
