@@ -6,7 +6,7 @@
 	icon = null
 	icon_state = "infantry_arms"
 	greyscale_config = /datum/greyscale_config/modulararms
-	slot = ATTACHMENT_SLOT_SHOULDER
+	slot = ATTACHMENT_SLOT_ARMS
 
 /obj/item/armor_module/armor/arms/marine
 	name = "\improper Jaeger Pattern Infantry arm plates"
