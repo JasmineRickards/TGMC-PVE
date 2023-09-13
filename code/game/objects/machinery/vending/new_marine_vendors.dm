@@ -416,6 +416,8 @@
 		/obj/effect/essentials_set/xenonauten_light/leader = list(CAT_AMR, "Xenonauten light armor kit", 0, "orange"),
 		/obj/effect/essentials_set/xenonauten_medium/leader = list(CAT_AMR, "Xenonauten medium armor kit", 0, "orange"),
 		/obj/effect/essentials_set/xenonauten_heavy/leader = list(CAT_AMR, "Xenonauten heavy armor kit", 0, "orange"),
+		/obj/effect/essentials_set/som/gorgon/fc = list(CAT_AMR, "Gorgon heavy armor kit", 0, "orange"),
+		/obj/effect/essentials_set/krieg/commissar = list(CAT_AMR, "Commissar armor kit", 0, "orange"),
 		/obj/item/storage/backpack/marine/satchel = list(CAT_BAK, "Satchel", 0, "black"),
 		/obj/item/storage/backpack/marine/standard = list(CAT_BAK, "Backpack", 0, "black"),
 		/obj/item/storage/holster/blade/machete/full = list(CAT_BAK, "Machete scabbard", 0, "black"),
@@ -807,6 +809,27 @@
 	spawned_gear_list = list(
 		/obj/item/clothing/head/modular/marine/m10x/leader,
 		/obj/item/clothing/suit/modular/xenonauten/heavy,
+	)
+
+/obj/effect/essentials_set/som/gorgon/fc
+	desc = "A set of heavy Gorgon pattern armor, including an armor suit and a fancy helmet. This version comes with the Valkyrie autodoc."
+	spawned_gear_list = list(
+		/obj/item/clothing/head/modular/som/leader,
+		/obj/item/clothing/suit/modular/som/heavy/leader/valk,
+	)
+
+/obj/effect/essentials_set/som/gorgon
+	desc = "A set of heavy Gorgon pattern armor, including an armor suit and a fancy helmet."
+	spawned_gear_list = list(
+		/obj/item/clothing/head/modular/som/leader,
+		/obj/item/clothing/suit/modular/som/heavy/leader,
+	)
+
+/obj/effect/essentials_set/krieg/commissar
+	desc = "A set of fancy commissar armor, including an armor suit and a helmet."
+	spawned_gear_list = list(
+		/obj/item/clothing/head/helmet/marine/imperial/krieg/commissar,
+		/obj/item/clothing/suit/storage/marine/imperial/krieg/commissar,
 	)
 
 /obj/effect/modular_set
