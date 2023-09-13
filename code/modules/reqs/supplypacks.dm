@@ -1428,6 +1428,11 @@ Imports
 	contains = list(/obj/item/weapon/gun/smg/m25/elite)
 	cost = 20
 
+/datum/supply_packs/imports/type73
+	name = "Type 73 Commando Pulse Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/type71/commando)
+	cost = 20
+
 /datum/supply_packs/imports/smg25/AP_ammo
 	name = "SMG-25 Armor Piercing Ammo"
 	contains = list(/obj/item/ammo_magazine/rifle/ap = 10)
