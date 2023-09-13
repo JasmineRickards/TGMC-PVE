@@ -1426,7 +1426,12 @@ Imports
 /datum/supply_packs/imports/smg25e
 	name = "SMG-25B2 Commando Submachinegun"
 	contains = list(/obj/item/weapon/gun/smg/m25/elite)
-	cost = 20
+	cost = 10
+
+/datum/supply_packs/imports/type73
+	name = "Type 73 Commando Pulse Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/type71/commando)
+	cost = 5
 
 /datum/supply_packs/imports/smg25/AP_ammo
 	name = "SMG-25 Armor Piercing Ammo"

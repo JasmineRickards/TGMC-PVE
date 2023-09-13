@@ -494,6 +494,7 @@
 		"492x34mm Caseless" = /datum/ammopacktype/p492x34b,
 		"16 Gauge Flechettes" = /datum/ammopacktype/tx15_flechette,
 		"16 Gauge Slugs" = /datum/ammopacktype/tx15_slug,
+		"7.62x39 Caseless" = /datum/ammopacktype/p762x39mm,
 		)
 
 /obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old
@@ -654,3 +655,11 @@
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "50ae"
 	caliber_label = ".50 Automag"
+
+/datum/ammopacktype/p762x39mm
+	default_ammo = /datum/ammo/bullet/rifle/mpi_km
+	max_rounds = 2400
+	caliber = CALIBER_762X39
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "box_762x39mm"
+	caliber_label = "7.62x39mm Caseless"

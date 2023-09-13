@@ -206,12 +206,12 @@
 
 /obj/item/ammo_magazine/packet/p762x39mm
 	name = "box of 7.62x39"
-	desc = "A box containing 800 rounds of 7.62x39 caseless."
+	desc = "A box containing 1200 rounds of 7.62x39 caseless."
 	caliber = CALIBER_762X39
-	icon_state = "box_86x70mm"
+	icon_state = "box_762x39mm"
 	default_ammo = /datum/ammo/bullet/rifle/mpi_km
-	current_rounds = 800
-	max_rounds = 800
+	current_rounds = 1200
+	max_rounds = 1200
 
 /obj/item/ammo_magazine/packet/p380acp
 	name = "packet of .380 ACP"
