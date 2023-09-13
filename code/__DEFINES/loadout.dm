@@ -474,6 +474,7 @@ GLOBAL_LIST_INIT(leader_clothes_listed_products, list(
 		/obj/effect/essentials_set/xenonauten_light/leader = list(CAT_AMR, "Xenonauten light armor kit", 0, "orange"),
 		/obj/effect/essentials_set/xenonauten_medium/leader = list(CAT_AMR, "Xenonauten medium armor kit", 0, "orange"),
 		/obj/effect/essentials_set/xenonauten_heavy/leader = list(CAT_AMR, "Xenonauten heavy armor kit", 0, "orange"),
+		/obj/effect/essentials_set/som/gorgon = list(CAT_AMR, "Gorgon heavy armor kit", 0, "orange"),
 		/obj/item/clothing/suit/storage/marine/robot/light = list(CAT_AMR, "Combat robot light armor plating", 0, "black"),
 		/obj/item/clothing/suit/storage/marine/robot = list(CAT_AMR, "Combat robot medium armor plating", 0, "black"),
 		/obj/item/clothing/suit/storage/marine/robot/heavy = list(CAT_AMR, "Combat robot heavy armor plating", 0, "black"),

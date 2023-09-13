@@ -678,15 +678,21 @@
 
 /obj/item/clothing/suit/storage/marine/imperial/krieg
 	name = "\improper Death Korp's Krieg standart flak armour"
-	desc = "A bit more special armor worn by some Death Korp's Krieg guardsmen. Has much better perfomance against biological threats."
+	desc = "Armor set worn by some Death Korp's Krieg guardsmen. Has much better perfomance against biological threats."
 	icon_state = "krieg_standard_armor"
 	soft_armor = list(MELEE = 60, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 60, BIO = 90, FIRE = 70, ACID = 85)
 	slowdown = SLOWDOWN_ARMOR_MEDIUM
 
 /obj/item/clothing/suit/storage/marine/imperial/krieg/medicae
 	name = "\improper Death Korp's Krieg medicae flak armour"
-	desc = "A bit more special armor worn by some Death Korp's Krieg medicaes. Has much better perfomance against biological threats."
+	desc = "Armor set worn by some Death Korp's Krieg medicaes. Has much better perfomance against biological threats."
 	icon_state = "krieg_medicae_armor"
+
+/obj/item/clothing/suit/storage/marine/imperial/krieg/commissar
+	name = "\improper Death Korp's Krieg medicae flak armour"
+	desc = "Armor set worn by some Death Korp's Krieg commissars. Lead your men to victory! Has much better perfomance against biological threats."
+	icon_state = "krieg_commisar_armor"
+	soft_armor = list(MELEE = 75, BULLET = 85, LASER = 85, ENERGY = 70, BOMB = 75, BIO = 99, FIRE = 75, ACID = 90)
 
 /obj/item/clothing/suit/storage/marine/imperial/sergeant
 	// SL armour, better than flak, covers more

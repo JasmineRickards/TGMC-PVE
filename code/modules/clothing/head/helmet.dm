@@ -594,6 +594,13 @@
 	icon_state = "krieg_medicae_helmet"
 	item_state = "krieg_medicae_helmet"
 
+/obj/item/clothing/head/helmet/marine/imperial/krieg/commissar
+	name = "\improper Death Korp's Krieg commissar helmet"
+	desc = "Special Death Korp's Krieg helmet with a fancy gasmask. Good for the wastelands. This one is worn by commissars. For Krieg!"
+	icon_state = "krieg_commissar_helmet"
+	item_state = "krieg_commissar_helmet"
+	soft_armor = list(MELEE = 75, BULLET = 85, LASER = 85, ENERGY = 70, BOMB = 75, BIO = 99, FIRE = 75, ACID = 90)
+
 /obj/item/clothing/head/helmet/marine/imperial/sergeant
 	name = "\improper Imperial Guard sergeant helmet"
 	desc = "A helmet that goes with the sergeant armour, unlike the flak variant, this one will actually protect you."
