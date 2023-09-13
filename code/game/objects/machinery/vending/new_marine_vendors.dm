@@ -182,6 +182,9 @@
 					if(istype(H.job, /datum/job/terragov/squad/leader))
 						new /obj/item/hud_tablet(loc, vendor_role, H.assigned_squad)
 
+
+			vended_item.on_vend(usr, faction, auto_equip = TRUE)
+
 			if(use_points && (item_category in I.marine_points))
 				I.marine_points[item_category] -= cost
 			. = TRUE

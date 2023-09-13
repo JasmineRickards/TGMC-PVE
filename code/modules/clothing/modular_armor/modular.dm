@@ -1090,3 +1090,9 @@
 		/obj/item/armor_module/storage/helmet,
 		/obj/item/armor_module/armor/badge,
 	)
+
+///When vended, limits the paintable colors based on the vending machine's faction
+/obj/item/clothing/head/modular/on_vend(mob/user, faction, fill_container = FALSE, auto_equip = FALSE)
+	. = ..()
+	if(faction)
+		limit_colorable_colors(faction)
