@@ -1159,7 +1159,10 @@
 	reload_sound = 'sound/weapons/guns/interact/type71_reload.ogg'
 	cocked_sound = 'sound/weapons/guns/interact/type71_cocked.ogg'
 	default_ammo_type = /obj/item/ammo_magazine/rifle/type71
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/type71)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/type71,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
+		)
 	aim_slowdown = 0.6
 	wield_delay = 0.3 SECONDS
 	attachable_allowed = list(
@@ -1242,7 +1245,7 @@
 	item_state = "type71"
 	wield_delay = 0 //Ends up being .5 seconds due to scope
 	attachable_offset = list("muzzle_x" = 30, "muzzle_y" = 19,"rail_x" = 10, "rail_y" = 22, "under_x" = 21, "under_y" = 18, "stock_x" = 21, "stock_y" = 18)
-	starting_attachment_types = list(/obj/item/attachable/suppressor/unremovable/invisible, /obj/item/attachable/scope/unremovable)
+	starting_attachment_types = list(/obj/item/attachable/suppressor/unremovable/invisible)
 
 	fire_delay = 0.08 SECONDS
 	burst_amount = 2
@@ -1825,7 +1828,10 @@
 	reload_sound = 'sound/weapons/guns/interact/ak47_reload.ogg'
 	cocked_sound = 'sound/weapons/guns/interact/ak47_cocked.ogg'
 	default_ammo_type = /obj/item/ammo_magazine/rifle/mkh
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/mkh)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/mkh,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt,
+		)
 	aim_slowdown = 0.35
 	attachable_allowed = list(
 		/obj/item/attachable/flashlight,
