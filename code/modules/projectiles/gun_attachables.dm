@@ -1381,7 +1381,6 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	///Blacklist of item types not allowed to be in the users hand to fire the gun.
 	var/list/in_hand_items_blacklist = list(
 		/obj/item/weapon/gun,
-		/obj/item/weapon/shield,
 	)
 
 /obj/item/attachable/shoulder_mount/on_attach(attaching_item, mob/user)
