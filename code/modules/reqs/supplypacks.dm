@@ -225,7 +225,7 @@ WEAPONS
 	contains = list(
 		/obj/item/attachable/shoulder_mount,
 	)
-	cost = 25
+	cost = 40
 
 /datum/supply_packs/weapons/m56d_emplacement
 	name = "HSG-102 Mounted Heavy Smartgun"
