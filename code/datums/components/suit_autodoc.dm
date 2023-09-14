@@ -60,10 +60,6 @@
 		/datum/reagent/medicine/tramadol)
 	var/static/list/default_emergency_chems = list(
 		/datum/reagent/medicine/inaprovaline,
-		/datum/reagent/medicine/meralyne,
-		/datum/reagent/medicine/dermaline,
-		/datum/reagent/medicine/dexalinplus,
-		/datum/reagent/medicine/hyronalin,
 		)
 
 	var/datum/action/suit_autodoc/toggle/toggle_action
