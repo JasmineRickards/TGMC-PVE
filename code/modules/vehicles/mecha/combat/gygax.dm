@@ -14,6 +14,7 @@
 	leg_overload_coeff = 80
 	force = 25
 	wreckage = /obj/structure/mecha_wreckage/gygax
+	mecha_flags = CANSTRAFE | IS_ENCLOSED | HAS_HEADLIGHTS
 	mech_type = EXOSUIT_MODULE_GYGAX
 	max_equip_by_category = list(
 		MECHA_UTILITY = 1,

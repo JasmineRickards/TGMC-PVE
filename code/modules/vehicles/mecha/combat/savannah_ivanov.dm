@@ -26,6 +26,7 @@
 	soft_armor = list(MELEE = 45, BULLET = 40, LASER = 30, ENERGY = 30, BOMB = 40, BIO = 0, FIRE = 100, ACID = 100)
 	max_temperature = 30000
 	wreckage = /obj/structure/mecha_wreckage/savannah_ivanov
+	mecha_flags = CANSTRAFE | IS_ENCLOSED | HAS_HEADLIGHTS
 	max_occupants = 2
 	max_equip_by_category = list(
 		MECHA_UTILITY = 1,
