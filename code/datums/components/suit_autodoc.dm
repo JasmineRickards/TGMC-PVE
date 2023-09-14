@@ -5,6 +5,7 @@
 #define COOLDOWN_CHEM_BRUTE "brute_chems"
 #define COOLDOWN_CHEM_TOX "tox_chems"
 #define COOLDOWN_CHEM_PAIN "pain_chems"
+#define COOLDOWN_CHEM_EMERGENCY "emergency_chems"
 
 /**
 	Autodoc component
@@ -18,6 +19,7 @@
 	* list/brute_chems {list/datum/reagent/medicine} chemicals available to be injected to treat brute injuries
 	* list/tox_chems {list/datum/reagent/medicine} chemicals available to be injected to treat toxin injuries
 	* list/pain_chems {list/datum/reagent/medicine} chemicals available to be injected to treat pain injuries
+	* list/emergency_chems {list/datum/reagent/medicine} chemicals available to be injected if the patient is in critical condition
 	* overdose_threshold_mod {float} how close to overdosing will drugs inject to
 
 */
@@ -36,12 +38,13 @@
 	var/list/brute_chems
 	var/list/tox_chems
 	var/list/pain_chems
+	var/list/emergency_chems
 
 	var/static/list/default_burn_chems = list(
 		/datum/reagent/medicine/kelotane,
 		/datum/reagent/medicine/tricordrazine)
 	var/static/list/default_oxy_chems = list(
-		/datum/reagent/medicine/dexalinplus,
+		/datum/reagent/medicine/dexalin,
 		/datum/reagent/medicine/inaprovaline,
 		/datum/reagent/medicine/tricordrazine)
 	var/static/list/default_brute_chems = list(
@@ -55,6 +58,13 @@
 	var/static/list/default_pain_chems = list(
 		/datum/reagent/medicine/hydrocodone,
 		/datum/reagent/medicine/tramadol)
+	var/static/list/default_emergency_chems = list(
+		/datum/reagent/medicine/inaprovaline,
+		/datum/reagent/medicine/meralyne,
+		/datum/reagent/medicine/dermaline,
+		/datum/reagent/medicine/dexalinplus,
+		/datum/reagent/medicine/hyronalin,
+		)
 
 	var/datum/action/suit_autodoc/toggle/toggle_action
 	var/datum/action/suit_autodoc/scan/scan_action
@@ -64,10 +74,35 @@
 
 	var/overdose_threshold_mod = 0.5
 
+/datum/component/suit_autodoc/module
+	chem_cooldown = 5 MINUTES
+	damage_threshold = 25
+	pain_threshold = 70
+
+	burn_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		)
+	oxy_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		)
+	brute_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		)
+	tox_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		)
+	pain_chems = list(
+		/datum/reagent/medicine/tramadol,
+		)
+	emergency_chems = list(
+		/datum/reagent/medicine/inaprovaline,
+		/datum/reagent/medicine/russian_red,
+		)
+	overdose_threshold_mod = 0.66
 /**
 	Setup the default cooldown, chemicals and supported limbs
 */
-/datum/component/suit_autodoc/Initialize(chem_cooldown, list/burn_chems, list/oxy_chems, list/brute_chems, list/tox_chems, list/pain_chems, overdose_threshold_mod)
+/datum/component/suit_autodoc/Initialize(chem_cooldown, list/burn_chems, list/oxy_chems, list/brute_chems, list/tox_chems, list/pain_chems, list/emergency_chems, overdose_threshold_mod)
 	if(!istype(parent, /obj/item))
 		return COMPONENT_INCOMPATIBLE
 
@@ -80,10 +115,33 @@
 	src.brute_chems = brute_chems || default_brute_chems
 	src.tox_chems = tox_chems || default_tox_chems
 	src.pain_chems = pain_chems || default_pain_chems
+	src.emergency_chems = emergency_chems || default_emergency_chems
 
 	if(!isnull(overdose_threshold_mod))
 		src.overdose_threshold_mod = overdose_threshold_mod
 
+/datum/component/suit_autodoc/module/Initialize(chem_cooldown, list/burn_chems, list/oxy_chems, list/brute_chems, list/tox_chems, list/pain_chems, list/emergency_chems, overdose_threshold_mod)
+	..()
+	src.burn_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		)
+	src.oxy_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		)
+	src.brute_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		)
+	src.tox_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		)
+	src.pain_chems = list(
+		/datum/reagent/medicine/tramadol,
+		)
+	src.emergency_chems = list(
+		/datum/reagent/medicine/inaprovaline,
+		/datum/reagent/medicine/russian_red,
+		)
+	overdose_threshold_mod = 0.66
 /**
 	Cleans up any actions, and internal items used by the autodoc component
 */
@@ -269,10 +327,10 @@
 	var/oxy = inject_chems(oxy_chems, wearer, COOLDOWN_CHEM_OXY, wearer.getOxyLoss(), damage_threshold, "Oxygenation treatment", "Low blood oxygen detected. Reoxygenating preparation")
 	var/tox = inject_chems(tox_chems, wearer, COOLDOWN_CHEM_TOX, wearer.getToxLoss(), damage_threshold, "Toxicity treatment", "Significant blood toxicity detected. Chelating agents and curatives")
 	var/pain = inject_chems(pain_chems, wearer, COOLDOWN_CHEM_PAIN, wearer.traumatic_shock, pain_threshold, "Painkiller", "User pain at performance impeding levels. Painkillers")
-
-	if(burns || brute || oxy || tox || pain)
+	var/emergency = inject_chems(emergency_chems, wearer, COOLDOWN_CHEM_EMERGENCY, wearer.health_threshold_crit, wearer.health, "Critical Condition", "User experiencing cardiac arrest. Dispensing emergency reservoir.")
+	if(burns || brute || oxy || tox || pain || emergency)
 		playsound(parent,'sound/items/hypospray.ogg', 25, 0, 1)
-		to_chat(wearer, span_notice("[icon2html(parent, wearer)] beeps:</br>[burns][brute][oxy][tox][pain]Estimated [chem_cooldown/600] minute replenishment time for each dosage."))
+		to_chat(wearer, span_notice("[icon2html(parent, wearer)] beeps:</br>[burns][brute][oxy][tox][pain][emergency]Estimated [chem_cooldown/600] minute replenishment time for each dosage."))
 
 /**
 	Plays a sound and message to the user informing the user chemicals are ready again
@@ -448,3 +506,4 @@
 #undef COOLDOWN_CHEM_BRUTE
 #undef COOLDOWN_CHEM_TOX
 #undef COOLDOWN_CHEM_PAIN
+#undef COOLDOWN_CHEM_EMERGENCY
