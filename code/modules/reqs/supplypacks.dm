@@ -1435,7 +1435,7 @@ Imports
 
 /datum/supply_packs/imports/smg25/AP_ammo
 	name = "SMG-25 Armor Piercing Ammo"
-	contains = list(/obj/item/ammo_magazine/rifle/ap = 10)
+	contains = list(/obj/item/ammo_magazine/smg/m25/ap = 10)
 	cost = 2
 
 /datum/supply_packs/imports/smg25/AP_ammoboxes
