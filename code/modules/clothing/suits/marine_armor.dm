@@ -689,7 +689,7 @@
 	icon_state = "krieg_medicae_armor"
 
 /obj/item/clothing/suit/storage/marine/imperial/krieg/commissar
-	name = "\improper Death Korp's Krieg medicae flak armour"
+	name = "\improper Death Korp's Krieg commissar flak armour"
 	desc = "Armor set worn by some Death Korp's Krieg commissars. Lead your men to victory! Has much better perfomance against biological threats."
 	icon_state = "krieg_commisar_armor"
 	soft_armor = list(MELEE = 75, BULLET = 85, LASER = 85, ENERGY = 70, BOMB = 75, BIO = 99, FIRE = 75, ACID = 90)
