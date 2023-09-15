@@ -912,7 +912,7 @@ ARMOR
 /datum/supply_packs/armor/modular/attachments/mixed
 	name = "Jaeger experimental mark 2 modules"
 	contains = list(
-//		/obj/item/armor_module/module/valkyrie_autodoc,
+		/obj/item/armor_module/module/valkyrie_autodoc,
 		/obj/item/armor_module/module/fire_proof,
 		/obj/item/armor_module/module/tyr_extra_armor,
 		/obj/item/armor_module/module/mimir_environment_protection,
@@ -924,12 +924,12 @@ ARMOR
 	)
 	cost = 40
 
-//datum/supply_packs/armor/modular/attachments/valkyrie_autodoc
-//	name = "Jaeger Valkyrie autodoc module"
-//	contains = list(
-//		/obj/item/armor_module/module/valkyrie_autodoc,
-//	)
-//	cost = 12
+/datum/supply_packs/armor/modular/attachments/valkyrie_autodoc
+	name = "Jaeger Valkyrie autodoc module"
+	contains = list(
+		/obj/item/armor_module/module/valkyrie_autodoc,
+	)
+	cost = 15
 
 /datum/supply_packs/armor/modular/attachments/huldra_autorepair
 	name = "Golem Huldra autorepair module"

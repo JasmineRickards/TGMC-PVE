@@ -24,7 +24,7 @@
 /datum/component/suit_autodoc
 	var/obj/item/healthanalyzer/integrated/analyzer
 
-	var/chem_cooldown = 2.5 MINUTES
+	var/chem_cooldown = 1.5 MINUTES
 
 	var/enabled = FALSE
 
@@ -41,7 +41,7 @@
 		/datum/reagent/medicine/kelotane,
 		/datum/reagent/medicine/tricordrazine)
 	var/static/list/default_oxy_chems = list(
-		/datum/reagent/medicine/dexalinplus,
+		/datum/reagent/medicine/dexalin,
 		/datum/reagent/medicine/inaprovaline,
 		/datum/reagent/medicine/tricordrazine)
 	var/static/list/default_brute_chems = list(
@@ -64,6 +64,32 @@
 
 	var/overdose_threshold_mod = 0.5
 
+/datum/component/suit_autodoc/module
+	chem_cooldown = 1.5 MINUTES
+	damage_threshold = 25
+	pain_threshold = 70
+
+	burn_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		/datum/reagent/medicine/kelotane
+		)
+	oxy_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		/datum/reagent/medicine/dexalin
+		)
+	brute_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		/datum/reagent/medicine/bicaridine
+		)
+	tox_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		/datum/reagent/medicine/dylovene,
+		)
+	pain_chems = list(
+		/datum/reagent/medicine/tramadol,
+		)
+
+	overdose_threshold_mod = 0.66
 /**
 	Setup the default cooldown, chemicals and supported limbs
 */
@@ -83,6 +109,29 @@
 
 	if(!isnull(overdose_threshold_mod))
 		src.overdose_threshold_mod = overdose_threshold_mod
+
+/datum/component/suit_autodoc/module/Initialize(chem_cooldown, list/burn_chems, list/oxy_chems, list/brute_chems, list/tox_chems, list/pain_chems, overdose_threshold_mod)
+	..()
+	burn_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		/datum/reagent/medicine/kelotane
+		)
+	oxy_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		/datum/reagent/medicine/dexalin
+		)
+	brute_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		/datum/reagent/medicine/bicaridine
+		)
+	tox_chems = list(
+		/datum/reagent/medicine/tricordrazine,
+		/datum/reagent/medicine/dylovene,
+		)
+	pain_chems = list(
+		/datum/reagent/medicine/tramadol,
+		)
+	overdose_threshold_mod = 0.66
 
 /**
 	Cleans up any actions, and internal items used by the autodoc component
