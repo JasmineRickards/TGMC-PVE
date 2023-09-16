@@ -2503,7 +2503,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	accuracy_var_high = 9
 	accurate_range = 5
 	max_range = 8
-	damage = 45
+	damage = 35
 	penetration = 10
 	sundering = 0
 	hitscan_effect_icon = "pu_laser"
