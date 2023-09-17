@@ -2802,6 +2802,16 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	accuracy_var_high = 3
 	fire_burst_damage = 20
 
+/datum/ammo/energy/volkite/medium/advanced
+	max_range = 50
+	accurate_range = 25
+	damage = 65
+	accuracy_var_low = 3
+	accuracy_var_high = 3
+	fire_burst_damage = 45
+	bullet_color = COLOR_BLUE_LIGHT
+	hud_state = "laser_disabler"
+
 /datum/ammo/energy/volkite/heavy
 	max_range = 35
 	accurate_range = 12
