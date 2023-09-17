@@ -684,7 +684,7 @@
 	fire_mode = GUN_FIREMODE_AUTOMATIC
 
 /datum/lasrifle/base/energy_carbine_mode/base/spread
-	rounds_per_shot = 125
+	rounds_per_shot = 150
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/blast
 	fire_delay = 0.2 SECONDS
 	burst_amount = 1
