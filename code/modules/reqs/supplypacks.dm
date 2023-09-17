@@ -417,7 +417,7 @@ WEAPONS
 /datum/supply_packs/weapons/specdemo
 	name = "RL-152 SADAR Rocket Launcher"
 	contains = list(/obj/item/weapon/gun/launcher/rocket/sadar)
-	cost = SADAR_PRICE
+	cost = 50
 	available_against_xeno_only = TRUE
 
 /datum/supply_packs/weapons/rpg_regular
@@ -586,6 +586,11 @@ WEAPONS
 /datum/supply_packs/weapons/back_fuel_tank_x
 	name = "Type X back fuel tank"
 	contains = list(/obj/item/ammo_magazine/flamer_tank/backtank/X)
+	cost = 60
+
+/datum/supply_packs/weapons/charger/advanced
+	name = "VX-32M Charger"
+	contains = list(/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/charger/advanced)
 	cost = 60
 
 /datum/supply_packs/weapons/rpgoneuse

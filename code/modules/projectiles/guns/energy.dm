@@ -1021,6 +1021,18 @@
 /obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/charger/scout
 	starting_attachment_types = list(/obj/item/attachable/motiondetector, /obj/item/attachable/gyro)
 
+/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/charger/advanced
+	name = "\improper VX-32M Charger"
+	desc = "Volkite weapons are the pride of Martian weapons manufacturing, their construction being a tightly guarded secret. Infamous for its ability to deflagrate organic targets with its tremendous thermal energy, explosively burning flesh in a fiery blast that can be deadly to anyone unfortunate enough to be nearby. The charger is a light weight weapon with a high rate of fire, designed for high mobility and easy handling. Ineffective at longer ranges. This prototype received new heaters, giving this version a bright light blue color. Much more devastating."
+	icon_state = "charger_adv"
+	item_state = "charger_adv"
+	max_shots = 90
+	fire_delay = 0.13 SECONDS
+	rounds_per_shot = 64
+	ammo_datum_type = /datum/ammo/energy/volkite/medium/advanced
+	damage_falloff_mult = 0.3
+	muzzle_flash_color = COLOR_BLUE_LIGHT
+
 /obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/caliver
 	name = "\improper VX-33 Caliver"
 	desc = "Volkite weapons are the pride of Martian weapons manufacturing, their construction being a tightly guarded secret. Infamous for its ability to deflagrate organic targets with its tremendous thermal energy, explosively burning flesh in a fiery blast that can be deadly to anyone unfortunate enough to be nearby. The caliver is the primary rifle of the volkite family, and effective at most ranges and situations. Drag click the powerpack to the gun to use that instead of magazines."
