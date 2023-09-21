@@ -164,7 +164,7 @@
 	current_rounds = 800
 	max_rounds = 800
 
-obj/item/ammo_magazine/packet/p762x54
+/obj/item/ammo_magazine/packet/p762x54
 	name = "box of 7.62x54mmR"
 	desc = "A box containing 500 rounds of 7.62x54mm Rimfire."
 	caliber = CALIBER_762X54
