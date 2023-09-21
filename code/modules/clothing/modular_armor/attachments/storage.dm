@@ -263,7 +263,7 @@
 	bypass_w_limit = list()
 	storage_slots = null
 	max_storage_space = 15
-	max_w_class = WEIGHT_CLASS_NORMAL
+	max_w_class = 3
 
 /obj/item/armor_module/storage/grenade
 	name = "Grenade Storage module"

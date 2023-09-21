@@ -795,7 +795,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	fire_sound = 'sound/weapons/guns/fire/laser.ogg'
 	load_method = CELL //codex
 	rounds_per_shot = 300
-	ammo_datum_type  = /datum/ammo/energy/lasgun/marine/heavy_laser
+	ammo_datum_type  = /datum/ammo/energy/lasgun/marine/heavy_laser/lc
 	allowed_ammo_types = list(
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/volkite/turret

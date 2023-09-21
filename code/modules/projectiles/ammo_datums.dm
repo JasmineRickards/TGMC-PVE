@@ -2653,6 +2653,36 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	penetration = 0
 	armor_type = ACID
 
+/datum/ammo/energy/lasgun/marine/heavy_laser/lc
+	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_ENERGY|AMMO_SUNDERING|AMMO_INCENDIARY
+	name = "pulse bolt"
+	icon_state = "pulse2"
+	hud_state = "pulse"
+	damage = 120 // this is gotta hurt...
+	max_range = 40
+	penetration = 10
+	sundering = 0
+	bullet_color = COLOR_PULSE_BLUE
+
+/datum/ammo/energy/lasgun/marine/heavy_laser/lc/drop_nade(turf/T, radius = 1)
+	if(!T || !isturf(T))
+		return
+	playsound(T, 'sound/weapons/guns/fire/flamethrower2.ogg', 50, 1, 4)
+	flame_radius(radius, T, 3, 3, 3, 3)
+
+/datum/ammo/energy/lasgun/marine/heavy_laser/lc/on_hit_mob(mob/M, obj/projectile/P)
+	drop_nade(get_turf(M))
+
+/datum/ammo/energy/lasgun/marine/heavy_laser/lc/on_hit_obj(obj/O, obj/projectile/P)
+	drop_nade(get_turf(O))
+
+/datum/ammo/energy/lasgun/marine/heavy_laser/lc/on_hit_turf(turf/T, obj/projectile/P)
+	drop_nade(T.density ? P.loc : T)
+
+/datum/ammo/energy/lasgun/marine/heavy_laser/lc/do_at_max_range(turf/T, obj/projectile/P)
+	drop_nade(T.density ? P.loc : T)
+
+
 /datum/ammo/energy/lasgun/marine/heavy_laser
 	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_ENERGY|AMMO_SUNDERING|AMMO_HITSCAN|AMMO_INCENDIARY
 	damage = 120
