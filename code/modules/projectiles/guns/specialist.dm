@@ -40,6 +40,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 		/obj/item/ammo_magazine/sniper,
 		/obj/item/ammo_magazine/sniper/incendiary,
 		/obj/item/ammo_magazine/sniper/flak,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/sniper,
 	)
 	force = 12
 	wield_delay = 12 //Ends up being 1.6 seconds due to scope
@@ -239,7 +240,10 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	reload_sound = 'sound/weapons/guns/interact/sniper_heavy_reload.ogg'
 	cocked_sound = 'sound/weapons/guns/interact/sniper_heavy_cocked.ogg'
 	default_ammo_type = /obj/item/ammo_magazine/sniper/elite
-	allowed_ammo_types = list(/obj/item/ammo_magazine/sniper/elite)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/sniper/elite,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/sniper,
+	)
 	force = 17
 	attachable_allowed = list()
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER|GUN_IFF
@@ -290,7 +294,10 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	reload_sound = 'sound/weapons/guns/interact/svd_reload.ogg'
 	cocked_sound = 'sound/weapons/guns/interact/svd_cocked.ogg'
 	default_ammo_type = /obj/item/ammo_magazine/sniper/svd
-	allowed_ammo_types = list(/obj/item/ammo_magazine/sniper/svd)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/sniper/svd,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/sniper,
+	)
 	attachable_allowed = list(
 		/obj/item/attachable/reddot,
 		/obj/item/attachable/verticalgrip,
@@ -340,6 +347,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 		/obj/item/ammo_magazine/rifle/tx8,
 		/obj/item/ammo_magazine/rifle/tx8/incendiary,
 		/obj/item/ammo_magazine/rifle/tx8/impact,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/sniper
 	)
 	force = 16
 	aim_slowdown = 0.45

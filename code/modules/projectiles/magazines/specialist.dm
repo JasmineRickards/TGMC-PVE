@@ -494,7 +494,26 @@
 		"492x34mm Caseless" = /datum/ammopacktype/p492x34b,
 		"16 Gauge Flechettes" = /datum/ammopacktype/tx15_flechette,
 		"16 Gauge Slugs" = /datum/ammopacktype/tx15_slug,
-		"7.62x39 Caseless" = /datum/ammopacktype/p762x39mm,
+		"7.62x39 Caseless" = /datum/ammopacktype/p762x39,
+		)
+
+/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/sniper
+	icon_state = "ammopacksniper"
+	name = "\improper T-74 Marksman longevity belt"
+	desc = "Originally patterned for MARSOC scout-snipers, the rarity of occasions where MARSOC is deployed led to a surplus of T-74 belts in storage. This surplus has recently been made available to Squad Marines filling the role of Designated Marksman. Due to the mechanisms needed to adapt to the wide variety of overpressurized and higher caliber rounds, there is noticable variation in the number of rounds each caliber setting accomodates. Aside from the Battle Rifle caliber, all types hold at most one ammo box worth of munitions."
+	caliber_types = list(
+		"10x26.5 Caseless" = /datum/ammopacktype/p10x265b,
+		"10x27 Caseless" = /datum/ammopacktype/p10x27,
+		"10x28 Caseless" = /datum/ammopacktype/p10x28,
+		"10x28 Caseless Incendiary" = /datum/ammopacktype/p10x28I,
+		"10x28 Caseless Flak" = /datum/ammopacktype/p10x28F,
+		"10x28 Over-Pressure" = /datum/ammopacktype/p10x28p,
+		"10x28 Over-Pressure Incendiary" = /datum/ammopacktype/p10x28pI,
+		"10x28 Over-Pressure Impact" = /datum/ammopacktype/p10x28pF,
+		"8.6x70mm Centerfire" = /datum/ammopacktype/p86x70p,
+		"8.6x70mm Centerfire Flak" = /datum/ammopacktype/p86x70pF,
+		"10x99mm Caseless" = /datum/ammopacktype/p10x99,
+		"7.62x54mm Rimfire" = /datum/ammopacktype/p762x54,
 		)
 
 /obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/old
@@ -656,10 +675,106 @@
 	radial_icon_state = "50ae"
 	caliber_label = ".50 Automag"
 
-/datum/ammopacktype/p762x39mm
+/datum/ammopacktype/p762x39
 	default_ammo = /datum/ammo/bullet/rifle/mpi_km
 	max_rounds = 2400
 	caliber = CALIBER_762X39
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "box_762x39mm"
 	caliber_label = "7.62x39mm Caseless"
+
+/datum/ammopacktype/p762x54
+	default_ammo = /obj/item/ammo_magazine/sniper/svd
+	max_rounds = 600 // 20 magazines' worth of ammo
+	caliber = CALIBER_762X39
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "box_762x54mm"
+	caliber_label = "7.62x54mm Rimfire"
+
+/datum/ammopacktype/p10x27
+	default_ammo = /datum/ammo/bullet/rifle/standard_dmr
+	max_rounds = 1000 // 1 Packet -- pre-existing
+	caliber = CALIBER_10x27_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "box_10x27"
+	caliber_label = "10x27 Caseless"
+
+/datum/ammopacktype/p10x28
+	default_ammo = /datum/ammo/bullet/sniper
+	max_rounds = 450 // 10 magazines' worth of ammo
+	caliber = CALIBER_10X28
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "box_10x28"
+	caliber_label = "10x28 Caseless"
+
+/datum/ammopacktype/p10x28F
+	default_ammo = /datum/ammo/bullet/sniper/flak
+	max_rounds = 450 // 10 magazines' worth of ammo
+	caliber = CALIBER_10X28
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "box_10x28F"
+	caliber_label = "10x28 Caseless Flak"
+
+/datum/ammopacktype/p10x28I
+	default_ammo = /datum/ammo/bullet/sniper/incendiary
+	max_rounds = 450 // 10 magazines' worth of ammo
+	caliber = CALIBER_10X28
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "box_10x28I"
+	caliber_label = "10x28 Caseless Incendiary"
+
+/datum/ammopacktype/p10x28p
+	default_ammo = /datum/ammo/bullet/rifle/tx8
+	max_rounds = 750 // 10 magazines' worth of ammo
+	caliber = CALIBER_10X28_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "box_10x28p"
+	caliber_label = "10x28 Over-Pressure"
+
+/datum/ammopacktype/p10x28pF
+	default_ammo = /datum/ammo/bullet/rifle/tx8/impact
+	max_rounds = 750 // 10 magazines' worth of ammo
+	caliber = CALIBER_10X28_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "box_10x28pF"
+	caliber_label = "10x28 Over-Pressure Impact"
+
+/datum/ammopacktype/p10x28pI
+	default_ammo = /datum/ammo/bullet/rifle/tx8/incendiary
+	max_rounds = 750 // 10 magazines' worth of ammo
+	caliber = CALIBER_10X28_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "box_10x28pI"
+	caliber_label = "10x28 Over-Pressure Incendiary"
+
+/datum/ammopacktype/p86x70p
+	default_ammo = /datum/ammo/bullet/sniper/pfc
+	max_rounds = 500 // 1 Packet -- pre-existing
+	caliber = CALIBER_10X28_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "box_86x70mm"
+	caliber_label = "8.6x70mm Centerfire"
+
+/datum/ammopacktype/p86x70pF
+	default_ammo = /datum/ammo/bullet/sniper/pfc/flak
+	max_rounds = 500 // 1 Packet -- pre-existing
+	caliber = CALIBER_10X28_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "box_10x28mmF"
+	caliber_label = "8.6x70mm Centerfire Flak"
+
+/datum/ammopacktype/p86x70auto
+	default_ammo = /datum/ammo/bullet/sniper/pfc
+	max_rounds = 500 // 1 Packet -- pre-existing
+	caliber = CALIBER_10X28_CASELESS
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "box_86x70auto"
+	caliber_label = "8.6x70mm Centerfire"
+
+/datum/ammopacktype/p10x99
+	default_ammo = /datum/ammo/bullet/sniper/elite
+	max_rounds = 320 // 10 magazines' worth of ammo
+	caliber = CALIBER_10X99
+	radial_icon = 'icons/mob/radial.dmi'
+	radial_icon_state = "box_10x99"
+	caliber_label = "10x28 Caseless"

@@ -386,8 +386,8 @@ WEAPONS
 
 /datum/supply_packs/weapons/scout_regular_box
 	name = "BR-8 scout ammo box"
-	contains = list(/obj/item/ammo_magazine/packet/scout_rifle)
-	cost = 5
+	contains = list(/obj/item/ammo_magazine/packet/p10x28p)
+	cost = 8
 	available_against_xeno_only = TRUE
 
 /datum/supply_packs/weapons/scout_impact
@@ -396,10 +396,22 @@ WEAPONS
 	cost = 4
 	available_against_xeno_only = TRUE
 
+/datum/supply_packs/weapons/scout_impact_box
+	name = "BR-8 scout impact box"
+	contains = list(/obj/item/ammo_magazine/packet/p10x28pF)
+	cost = 10
+	available_against_xeno_only = TRUE
+
 /datum/supply_packs/weapons/scout_incendiary
 	name = "Br-8 scout incendiary magazine"
 	contains = list(/obj/item/ammo_magazine/rifle/tx8/incendiary)
 	cost = 4
+	available_against_xeno_only = TRUE
+
+/datum/supply_packs/weapons/scout_incendiary_box
+	name = "BR-8 scout incendiary box"
+	contains = list(/obj/item/ammo_magazine/packet/p10x28pI)
+	cost = 10
 	available_against_xeno_only = TRUE
 
 /datum/supply_packs/weapons/thermobaric
@@ -467,6 +479,12 @@ WEAPONS
 	cost = 3
 	available_against_xeno_only = TRUE
 
+/datum/supply_packs/weapons/autosniper_bulk
+	name = "SR-81 IFF sniper ammo box"
+	contains = list(/obj/item/ammo_magazine/packet/p86x70auto)
+	cost = 10
+	available_against_xeno_only = TRUE
+
 /datum/supply_packs/weapons/antimaterial
 	name = "SR-26 Antimaterial rifle kit"
 	contains = list(/obj/item/weapon/gun/rifle/sniper/antimaterial)
@@ -479,16 +497,34 @@ WEAPONS
 	cost = 3
 	available_against_xeno_only = TRUE
 
+/datum/supply_packs/weapons/antimaterial_ammo_bulk
+	name = "SR-26 AMR ammo box"
+	contains = list(/obj/item/ammo_magazine/packet/p10x28)
+	cost = 10
+	available_against_xeno_only = TRUE
+
 /datum/supply_packs/weapons/antimaterial_incend_ammo
 	name = "SR-26 AMR incendiary magazine"
 	contains = list(/obj/item/ammo_magazine/sniper/incendiary)
 	cost = 5
 	available_against_xeno_only = TRUE
 
+/datum/supply_packs/weapons/antimaterial_ammo_incend_bulk
+	name = "SR-26 AMR Incendiary ammo box"
+	contains = list(/obj/item/ammo_magazine/packet/p10x28I)
+	cost = 10
+	available_against_xeno_only = TRUE
+
 /datum/supply_packs/weapons/antimaterial_flak_ammo
 	name = "SR-26 AMR flak magazine"
 	contains = list(/obj/item/ammo_magazine/sniper/flak)
 	cost = 4
+	available_against_xeno_only = TRUE
+
+/datum/supply_packs/weapons/antimaterial_ammo_iflak_bulk
+	name = "SR-26 AMR Flak ammo box"
+	contains = list(/obj/item/ammo_magazine/packet/p10x28F)
+	cost = 10
 	available_against_xeno_only = TRUE
 
 /datum/supply_packs/weapons/specminigun
@@ -629,6 +665,12 @@ WEAPONS
 	name = "Tl-127 Flak Magazine"
 	contains = list(/obj/item/ammo_magazine/rifle/chamberedrifle/flak)
 	cost = 5
+	available_against_xeno_only = TRUE
+
+/datum/supply_packs/weapons/pfcflak_box
+	name = "Tl-127 Flak Ammo Box"
+	contains = list(/obj/item/ammo_magazine/packet/p86x70mm/flak)
+	cost = 8
 	available_against_xeno_only = TRUE
 
 /datum/supply_packs/weapons/xray_gun
@@ -1374,9 +1416,14 @@ Imports
 	cost = 45
 
 /datum/supply_packs/imports/snipereliteammo //(haha, punny)
-	name = "SR-42 anti-tank sniper rifle"
+	name = "SR-42 anti-tank sniper rifle magazines"
 	contains = list(/obj/item/ammo_magazine/sniper/elite = 3)
 	cost = 5
+
+/datum/supply_packs/imports/snipereliteammo_bulk //(haha, punny)
+	name = "SR-42 anti-tank sniper ammo box"
+	contains = list(/obj/item/ammo_magazine/packet/p10x99)
+	cost = 10
 
 /datum/supply_packs/imports/m41a/elite
 	name = "M41A MK2/3 Pulse Rifle"
@@ -1553,6 +1600,12 @@ Imports
 	name = "SVD Dragunov Sniper Ammo"
 	contains = list(/obj/item/ammo_magazine/sniper/svd)
 	cost = 5
+	available_against_xeno_only = TRUE
+
+/datum/supply_packs/imports/dragunov/ammo_bulk
+	name = "SVD Dragunov Sniper Ammo Box"
+	contains = list(/obj/item/ammo_magazine/packet/p762x54)
+	cost = 8
 	available_against_xeno_only = TRUE
 
 /datum/supply_packs/imports/garand
