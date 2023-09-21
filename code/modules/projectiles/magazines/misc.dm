@@ -54,7 +54,7 @@
 /obj/item/ammo_magazine/packet/p10x265mm
 	name = "box of 10x26.5mm"
 	desc = "A box containing 1000 rounds of 10x26.5mm caseless."
-	caliber = CALIBER_10x265_CASELESS
+	caliber = CALIBER_10X265_CASELESS
 	icon_state = "box_10x265mm"
 	default_ammo = /datum/ammo/bullet/rifle/standard_br
 	current_rounds = 1000
@@ -63,7 +63,7 @@
 /obj/item/ammo_magazine/packet/p10x27mm
 	name = "box of 10x27mm"
 	desc = "A box containing 1000 rounds of 10x27mm caseless."
-	caliber = CALIBER_10x27_CASELESS
+	caliber = CALIBER_10X27_CASELESS
 	icon_state = "box_10x27mm"
 	default_ammo = /datum/ammo/bullet/rifle/standard_dmr
 	current_rounds = 1000
@@ -72,7 +72,7 @@
 /obj/item/ammo_magazine/packet/p10x28
 	name = "box of 10x28mm caseless"
 	desc = "A box containing 450 rounds of 10x28mm caseless."
-	caliber = CALIBER_10x28
+	caliber = CALIBER_10X28
 	icon_state = "box_10x28"
 	default_ammo = /datum/ammo/bullet/rifle/sniper
 	current_rounds = 450
@@ -81,7 +81,7 @@
 /obj/item/ammo_magazine/packet/p10x28F
 	name = "box of 10x28mm caseless flak"
 	desc = "A box containing 450 rounds of 10x28mm caseless flak."
-	caliber = CALIBER_10x28
+	caliber = CALIBER_10X28
 	icon_state = "box_10x28F"
 	default_ammo = /datum/ammo/bullet/rifle/sniper/flak
 	current_rounds = 450
@@ -90,7 +90,7 @@
 /obj/item/ammo_magazine/packet/p10x28I
 	name = "box of 10x28mm caseless incendiary"
 	desc = "A box containing 450 rounds of 10x28mm caseless incendiary."
-	caliber = CALIBER_10x28
+	caliber = CALIBER_10X28
 	icon_state = "box_10x28I"
 	default_ammo = /datum/ammo/bullet/rifle/sniper/incendiary
 	current_rounds = 450
@@ -99,7 +99,7 @@
 /obj/item/ammo_magazine/packet/p10x28p
 	name = "box of 10x28mm Over-Pressure"
 	desc = "A box containing 1500 10x28mm caseless over-pressure rounds."
-	caliber = CALIBER_10x28_CASELESS
+	caliber = CALIBER_10X28_CASELESS
 	icon_state = "box_10x28"
 	default_ammo = /datum/ammo/bullet/rifle/tx8
 	current_rounds = 1500
@@ -108,7 +108,7 @@
 /obj/item/ammo_magazine/packet/p10x28pF
 	name = "box of 10x28mm Over-Pressure Impact"
 	desc = "A box containing 1500 10x28mm caseless over-pressure impact rounds."
-	caliber =CALIBER_10x28_CASELESS
+	caliber =CALIBER_10X28_CASELESS
 	icon_state = "box_10x28"
 	default_ammo = /datum/ammo/bullet/rifle/tx8/impact
 	current_rounds = 1500
@@ -117,7 +117,7 @@
 /obj/item/ammo_magazine/packet/p10x28pI
 	name = "box of 10x28mm Over-Pressure Incendiary"
 	desc = "A box containing 1500 10x28mm caseless over-pressure incendiary rounds."
-	caliber = CALIBER_10x28_CASELESS
+	caliber = CALIBER_10X28_CASELESS
 	icon_state = "box_10x28"
 	default_ammo = /datum/ammo/bullet/rifle/tx8/incendiary
 	current_rounds = 1500
@@ -176,9 +176,9 @@
 /obj/item/ammo_magazine/packet/p10x99
 	name = "box of 10x99mm caseless"
 	desc = "A box containing 320 rounds of 10x99mm caseless."
-	caliber = CALIBER_10x99
+	caliber = CALIBER_10X99
 	icon_state = "box_10x99"
-	default_ammo = /datum/ammo/bullet/rifle/sniper/elite
+	default_ammo = /datum/ammo/bullet/sniper/elite
 	current_rounds = 320
 	max_rounds = 320
 

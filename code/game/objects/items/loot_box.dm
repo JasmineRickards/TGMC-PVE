@@ -764,10 +764,10 @@
 	new /obj/item/clothing/glasses/night/tx8
 	new /obj/item/clothing/glasses/night/tx8
 	new /obj/item/clothing/glasses/night/tx8
-	new /obj/item/ammo_magazine/packet/scout_rifle(src)
-	new /obj/item/ammo_magazine/packet/scout_rifle(src)
-	new /obj/item/ammo_magazine/packet/scout_rifle(src)
-	new /obj/item/ammo_magazine/packet/scout_rifle(src)
+	new /obj/item/ammo_magazine/packet/p10x28p(src)
+	new /obj/item/ammo_magazine/packet/p10x28p(src)
+	new /obj/item/ammo_magazine/packet/p10x28p(src)
+	new /obj/item/ammo_magazine/packet/p10x28p(src)
 	new /obj/item/ammo_magazine/rifle/tx8(src)
 	new /obj/item/ammo_magazine/rifle/tx8(src)
 	new /obj/item/ammo_magazine/rifle/tx8(src)

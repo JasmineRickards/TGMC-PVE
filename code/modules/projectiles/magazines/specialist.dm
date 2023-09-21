@@ -509,7 +509,8 @@
 		"10x28 Over-Pressure" = /datum/ammopacktype/p10x28p,
 		"10x28 Over-Pressure Incendiary" = /datum/ammopacktype/p10x28pI,
 		"10x28 Over-Pressure Impact" = /datum/ammopacktype/p10x28pF,
-		"8.6x70mm Centerfire" = /datum/ammopacktype/p86x70,
+		"8.6x70mm Centerfire" = /datum/ammopacktype/p86x70p,
+		"8.6x70mm Centerfire Flak" = /datum/ammopacktype/p86x70pF,
 		"10x99mm Caseless" = /datum/ammopacktype/p10x99,
 		"7.62x54mm Rimfire" = /datum/ammopacktype/p762x54,
 		)
@@ -766,7 +767,7 @@
 	max_rounds = 500 // 1 Packet -- pre-existing
 	caliber = CALIBER_10X28_CASELESS
 	radial_icon = 'icons/mob/radial.dmi'
-	radial_icon_state = "box_86x70mm"
+	radial_icon_state = "box_86x70auto"
 	caliber_label = "8.6x70mm Centerfire"
 
 /datum/ammopacktype/p10x99
