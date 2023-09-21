@@ -219,7 +219,10 @@
 	force = 20
 	max_shells = 10 //codex
 	default_ammo_type = /obj/item/ammo_magazine/rifle/standard_dmr
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/standard_dmr)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/standard_dmr,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/sniper,
+	)
 	attachable_allowed = list(
 		/obj/item/attachable/suppressor,
 		/obj/item/attachable/bayonet,
@@ -1501,6 +1504,7 @@
 	allowed_ammo_types = list(
 		/obj/item/ammo_magazine/rifle/chamberedrifle,
 		/obj/item/ammo_magazine/rifle/chamberedrifle/flak,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/sniper,
 	)
 	attachable_allowed = list(
 		/obj/item/attachable/scope/unremovable/tl127,
@@ -1573,7 +1577,10 @@
 	caliber = CALIBER_86X70 //codex
 	max_shells = 20 //codex
 	default_ammo_type = /obj/item/ammo_magazine/rifle/autosniper
-	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/autosniper)
+	allowed_ammo_types = list(
+		/obj/item/ammo_magazine/rifle/autosniper,
+		/obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/sniper,
+	)
 	attachable_allowed = list(
 		/obj/item/attachable/autosniperbarrel,
 		/obj/item/attachable/scope/nightvision,
