@@ -500,8 +500,9 @@
 /obj/item/ammo_magazine/minigun_powerpack/adaptive_ammopack/belt/sniper
 	icon_state = "ammopacksniper"
 	name = "\improper T-74 Marksman longevity belt"
-	desc = "Originally patterned for MARSOC scout-snipers, the rarity of occasions where MARSOC is deployed led to a surplus of T-74 belts in storage. This surplus has recently been made available to Squad Marines filling the role of Designated Marksman. Due to the mechanisms needed to adapt to the wide variety of overpressurized and higher caliber rounds, there is noticable variation in the number of rounds each caliber setting accomodates."
+	desc = "Originally patterned for MARSOC scout-snipers, the rarity of occasions where MARSOC is deployed led to a surplus of T-74 belts in storage. This surplus has recently been made available to Squad Marines filling the role of Designated Marksman. Due to the mechanisms needed to adapt to the wide variety of overpressurized and higher caliber rounds, there is noticable variation in the number of rounds each caliber setting accomodates. Aside from the Battle Rifle caliber, all types hold at most one ammo box worth of munitions."
 	caliber_types = list(
+		"10x26.5 Caseless" = /datum/ammopacktype/p10x265b,
 		"10x27 Caseless" = /datum/ammopacktype/p10x27,
 		"10x28 Caseless" = /datum/ammopacktype/p10x28,
 		"10x28 Caseless Incendiary" = /datum/ammopacktype/p10x28I,
