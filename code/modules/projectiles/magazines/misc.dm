@@ -54,7 +54,7 @@
 /obj/item/ammo_magazine/packet/p10x265mm
 	name = "box of 10x26.5mm"
 	desc = "A box containing 1000 rounds of 10x26.5mm caseless."
-	caliber = CALIBER_10X265_CASELESS
+	caliber = CALIBER_10x265_CASELESS
 	icon_state = "box_10x265mm"
 	default_ammo = /datum/ammo/bullet/rifle/standard_br
 	current_rounds = 1000
@@ -63,7 +63,7 @@
 /obj/item/ammo_magazine/packet/p10x27mm
 	name = "box of 10x27mm"
 	desc = "A box containing 1000 rounds of 10x27mm caseless."
-	caliber = CALIBER_10X27_CASELESS
+	caliber = CALIBER_10x27_CASELESS
 	icon_state = "box_10x27mm"
 	default_ammo = /datum/ammo/bullet/rifle/standard_dmr
 	current_rounds = 1000
@@ -74,7 +74,7 @@
 	desc = "A box containing 450 rounds of 10x28mm caseless."
 	caliber = CALIBER_10X28
 	icon_state = "box_10x28"
-	default_ammo = /datum/ammo/bullet/rifle/sniper
+	default_ammo = /datum/ammo/bullet/sniper
 	current_rounds = 450
 	max_rounds = 450
 
@@ -83,7 +83,7 @@
 	desc = "A box containing 450 rounds of 10x28mm caseless flak."
 	caliber = CALIBER_10X28
 	icon_state = "box_10x28F"
-	default_ammo = /datum/ammo/bullet/rifle/sniper/flak
+	default_ammo = /datum/ammo/bullet/sniper/flak
 	current_rounds = 450
 	max_rounds = 450
 
@@ -92,7 +92,7 @@
 	desc = "A box containing 450 rounds of 10x28mm caseless incendiary."
 	caliber = CALIBER_10X28
 	icon_state = "box_10x28I"
-	default_ammo = /datum/ammo/bullet/rifle/sniper/incendiary
+	default_ammo = /datum/ammo/bullet/sniper/incendiary
 	current_rounds = 450
 	max_rounds = 450
 

@@ -1604,7 +1604,7 @@ Imports
 
 /datum/supply_packs/imports/dragunov/ammo_bulk
 	name = "SVD Dragunov Sniper Ammo Box"
-	contains = list(obj/item/ammo_magazine/packet/p762x54)
+	contains = list(/obj/item/ammo_magazine/packet/p762x54)
 	cost = 8
 	available_against_xeno_only = TRUE
 

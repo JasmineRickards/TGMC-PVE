@@ -693,7 +693,7 @@
 /datum/ammopacktype/p10x27
 	default_ammo = /datum/ammo/bullet/rifle/standard_dmr
 	max_rounds = 1000 // 1 Packet -- pre-existing
-	caliber = CALIBER_10X27_CASELESS
+	caliber = CALIBER_10x27_CASELESS
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "box_10x27"
 	caliber_label = "10x27 Caseless"
