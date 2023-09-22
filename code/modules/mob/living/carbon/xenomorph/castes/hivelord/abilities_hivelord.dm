@@ -263,14 +263,14 @@
 	name = "Healing Infusion"
 	action_icon_state = "healing_infusion"
 	mechanics_text = "Psychically infuses a friendly xeno with regenerative energies, greatly improving its natural healing. Doesn't work if the target can't naturally heal."
-	cooldown_timer = 12.5 SECONDS
-	plasma_cost = 200
+	cooldown_timer = 5 SECONDS
+	plasma_cost = 300
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_HEALING_INFUSION,
 	)
 	use_state_flags = XACT_USE_LYING
 	target_flags = XABB_MOB_TARGET
-	var/heal_range = HIVELORD_HEAL_RANGE
+	var/heal_range = 8
 
 /datum/action/xeno_action/activable/healing_infusion/can_use_ability(atom/target, silent = FALSE, override_flags)
 	. = ..()
