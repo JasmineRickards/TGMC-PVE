@@ -9,7 +9,7 @@
 
 /datum/action/xeno_action/activable/secrete_resin/ranged/slow
 	base_wait = 1 SECONDS
-	max_range = 4
+	max_range = 5
 
 /datum/action/xeno_action/activable/secrete_resin/ranged/slow/can_use_action(silent = FALSE, override_flags, selecting = FALSE)
 	if (owner.status_flags & INCORPOREAL)
@@ -36,7 +36,7 @@
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_RALLY_MINION,
 	)
 	keybind_flags = XACT_KEYBIND_USE_ABILITY
-	cooldown_timer = 60 SECONDS
+	cooldown_timer = 10 SECONDS
 	use_state_flags = XACT_USE_LYING|XACT_USE_BUCKLED
 
 /datum/action/xeno_action/activable/command_minions/use_ability(atom/target)
@@ -75,4 +75,3 @@
 		return
 	var/mob/living/carbon/xenomorph/hivemind/hivemind = source
 	hivemind.jump(selected_xeno)
-

@@ -543,3 +543,22 @@
 
 //----WIDOW END----//
 //============//
+//----HIVEMIND START----//
+
+/mob/living/carbon/xenomorph/hivemind/active
+	upgrade = XENO_UPGRADE_ONE
+	upgrade_stored = TIER_TWO_MATURE_THRESHOLD
+
+/mob/living/carbon/xenomorph/hivemind/evolved
+	upgrade = XENO_UPGRADE_TWO
+	upgrade_stored = TIER_TWO_ELDER_THRESHOLD
+
+/mob/living/carbon/xenomorph/hivemind/psionic
+	upgrade = XENO_UPGRADE_THREE
+	upgrade_stored = TIER_TWO_ANCIENT_THRESHOLD
+
+/mob/living/carbon/xenomorph/hivemind/highlypsionic
+	upgrade = XENO_UPGRADE_FOUR
+	upgrade_stored = TIER_THREE_ANCIENT_THRESHOLD
+//============//
+//----HIVEMIND END----//

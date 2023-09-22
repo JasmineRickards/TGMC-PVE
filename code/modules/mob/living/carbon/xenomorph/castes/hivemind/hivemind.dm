@@ -20,7 +20,7 @@
 	maxHealth = 1000
 	plasma_stored = 5
 	tier = XENO_TIER_ZERO
-	upgrade = XENO_UPGRADE_BASETYPE
+	upgrade = XENO_UPGRADE_ZERO
 
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE
 	see_invisible = SEE_INVISIBLE_LIVING
@@ -44,12 +44,12 @@
 	RegisterSignal(src, COMSIG_XENOMORPH_HIVEMIND_CHANGE_FORM, .proc/change_form)
 	update_action_buttons()
 
-/mob/living/carbon/xenomorph/hivemind/upgrade_possible()
-	return FALSE
+//mob/living/carbon/xenomorph/hivemind/upgrade_possible()
+//	return FALSE
 
-/mob/living/carbon/xenomorph/hivemind/upgrade_xeno(newlevel, silent = FALSE)
-	newlevel = XENO_UPGRADE_BASETYPE
-	return ..()
+//mob/living/carbon/xenomorph/hivemind/upgrade_xeno(newlevel, silent = FALSE)
+//	newlevel = XENO_UPGRADE_BASETYPE
+//	return ..()
 
 /mob/living/carbon/xenomorph/hivemind/updatehealth()
 	if(on_fire)
