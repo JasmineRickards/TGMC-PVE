@@ -764,7 +764,7 @@
 	caliber_label = "8.6x70mm Centerfire Flak"
 
 /datum/ammopacktype/p86x70auto
-	default_ammo = /datum/ammo/bullet/sniper/pfc
+	default_ammo = /datum/ammo/bullet/sniper/auto
 	max_rounds = 500 // 1 Packet -- pre-existing
 	caliber = CALIBER_86X70
 	radial_icon = 'icons/mob/radial.dmi'
