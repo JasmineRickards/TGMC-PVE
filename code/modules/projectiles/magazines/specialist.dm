@@ -686,7 +686,7 @@
 /datum/ammopacktype/p762x54
 	default_ammo = /obj/item/ammo_magazine/sniper/svd
 	max_rounds = 600 // 20 magazines' worth of ammo
-	caliber = CALIBER_762X39
+	caliber = CALIBER_762X54
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "box_762x54mm"
 	caliber_label = "7.62x54mm Rimfire"
