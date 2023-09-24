@@ -1802,7 +1802,7 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	barricade_clear_distance = 2
 
 /datum/ammo/rocket/drop_nade(turf/T)
-	explosion(T, 2, 4, 6, 2)
+	explosion(T, 0, 4, 6, 2)
 
 /datum/ammo/rocket/on_hit_mob(mob/M, obj/projectile/P)
 	drop_nade(get_turf(M))
@@ -1823,9 +1823,6 @@ datum/ammo/bullet/tx54_spread/mech/on_hit_mob(mob/M, obj/projectile/proj)
 	accurate_range = 15
 	penetration = 150
 	damage = 525
-
-datum/ammo/rocket/ap/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, weaken = 3, stagger = 4, knockback = 0, slowdown = 4, stun = 4, soft_size_threshold = 10, hard_size_threshold = 10)
 
 /datum/ammo/rocket/ap/drop_nade(turf/T)
 	explosion(T, flash_range = 1)
@@ -1883,22 +1880,12 @@ datum/ammo/rocket/ap/on_hit_mob(mob/M,obj/projectile/P)
 	sundering = 100
 	//The radius for the non explosion effects
 	var/effect_radius = 3
-	///The smoke system that the WP gas uses to spread.
-	var/datum/effect_system/smoke_spread/smoke_system
-
-/datum/ammo/rocket/wp/set_smoke()
-	smoke_system = new /datum/effect_system/smoke_spread/phosphorus()
 
 /datum/ammo/rocket/wp/drop_nade(turf/T)
 	if(!T || !isturf(T))
 		return
-	set_smoke()
-	smoke_system.set_up(effect_radius, T)
-	smoke_system.start()
-	smoke_system = null
-	T.visible_message(span_danger("The rocket explodes into white gas!") )
 	playsound(T, 'sound/weapons/guns/fire/flamethrower2.ogg', 50, 1, 4)
-	flame_radius(effect_radius, T, 27, 27, 27, 17, burn_intensity = 70, burn_duration = 40, colour = "blue")
+	flame_radius(effect_radius, T, 27, 27, 27, 17)
 
 /datum/ammo/rocket/wp/quad
 	name = "thermobaric rocket"
@@ -1910,7 +1897,7 @@ datum/ammo/rocket/ap/on_hit_mob(mob/M,obj/projectile/P)
 	sundering = 2
 
 	///The smoke system that the WP gas uses to spread.
-	//var/datum/effect_system/smoke_spread/smoke_system
+	var/datum/effect_system/smoke_spread/smoke_system
 
 /datum/ammo/rocket/wp/quad/set_smoke()
 	smoke_system = new /datum/effect_system/smoke_spread/phosphorus()
