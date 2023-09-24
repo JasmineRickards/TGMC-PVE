@@ -684,7 +684,7 @@
 	caliber_label = "7.62x39mm Caseless"
 
 /datum/ammopacktype/p762x54
-	default_ammo = /obj/item/ammo_magazine/sniper/svd
+	default_ammo = /datum/ammo/bullet/sniper/svd
 	max_rounds = 600 // 20 magazines' worth of ammo
 	caliber = CALIBER_762X54
 	radial_icon = 'icons/mob/radial.dmi'
@@ -750,7 +750,7 @@
 /datum/ammopacktype/p86x70p
 	default_ammo = /datum/ammo/bullet/sniper/pfc
 	max_rounds = 500 // 1 Packet -- pre-existing
-	caliber = CALIBER_10X28_CASELESS
+	caliber = CALIBER_86X70
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "box_86x70mm"
 	caliber_label = "8.6x70mm Centerfire"
@@ -758,7 +758,7 @@
 /datum/ammopacktype/p86x70pF
 	default_ammo = /datum/ammo/bullet/sniper/pfc/flak
 	max_rounds = 500 // 1 Packet -- pre-existing
-	caliber = CALIBER_10X28_CASELESS
+	caliber = CALIBER_86X70
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "box_10x28mmF"
 	caliber_label = "8.6x70mm Centerfire Flak"
@@ -766,7 +766,7 @@
 /datum/ammopacktype/p86x70auto
 	default_ammo = /datum/ammo/bullet/sniper/pfc
 	max_rounds = 500 // 1 Packet -- pre-existing
-	caliber = CALIBER_10X28_CASELESS
+	caliber = CALIBER_86X70
 	radial_icon = 'icons/mob/radial.dmi'
 	radial_icon_state = "box_86x70auto"
 	caliber_label = "8.6x70mm Centerfire"
