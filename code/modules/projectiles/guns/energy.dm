@@ -846,7 +846,7 @@
 	item_state = "tex"
 	max_shots = 40 //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/xray
-	rounds_per_shot = 200
+	rounds_per_shot = 150
 	allowed_ammo_types = list(
 		/obj/item/cell/lasgun,
 		/obj/item/cell/lasgun/volkite/powerpack,
