@@ -2644,7 +2644,7 @@ datum/ammo/rocket/ap/on_hit_mob(mob/M,obj/projectile/P)
 	name = "xray heat bolt"
 	icon_state = "u_laser"
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_SUNDERING|AMMO_HITSCAN
-	damage = 200
+	damage = 150
 	penetration = 15
 	sundering = 1
 	max_range = 18
