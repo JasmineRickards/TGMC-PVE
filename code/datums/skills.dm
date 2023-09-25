@@ -397,8 +397,8 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	name = CAPTAIN
 	leadership = SKILL_LEAD_MASTER
 	police = SKILL_POLICE_MP
-	medical = SKILL_MEDICAL_COMPETENT
-	surgery = SKILL_SURGERY_AMATEUR
+	medical = SKILL_SURGERY_PROFESSIONAL
+	surgery = SKILL_SURGERY_PROFESSIONAL
 	engineer = SKILL_ENGINEER_ENGI
 	construction = SKILL_CONSTRUCTION_ADVANCED
 	powerloader = SKILL_POWERLOADER_MASTER
@@ -419,7 +419,7 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	construction = SKILL_CONSTRUCTION_PLASTEEL
 	leadership = SKILL_LEAD_MASTER
 	medical = SKILL_MEDICAL_PRACTICED
-	surgery = SKILL_SURGERY_AMATEUR
+	surgery = SKILL_SURGERY_PROFESSIONAL
 	police = SKILL_POLICE_MP
 	powerloader = SKILL_POWERLOADER_TRAINED
 	cqc = SKILL_CQC_TRAINED
@@ -432,7 +432,7 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	construction = SKILL_CONSTRUCTION_PLASTEEL
 //	leadership = SKILL_LEAD_MASTER
 	medical = SKILL_MEDICAL_PRACTICED
-	surgery = SKILL_SURGERY_AMATEUR
+	surgery = SKILL_SURGERY_PROFESSIONAL
 	police = SKILL_POLICE_MP
 	powerloader = SKILL_POWERLOADER_TRAINED
 	cqc = SKILL_CQC_TRAINED
