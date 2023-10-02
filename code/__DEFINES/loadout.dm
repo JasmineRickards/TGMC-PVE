@@ -59,7 +59,7 @@ GLOBAL_LIST_INIT(engineer_gear_listed_products, list(
 		/obj/item/explosive/plastique = list(CAT_ENGSUP, "Plastique explosive", 1, "black"),
 		/obj/item/detpack = list(CAT_ENGSUP, "Detonation pack", 2, "black"),
 		/obj/item/storage/box/minisentry = list(CAT_ENGSUP, "ST-580 point defense sentry kit", 10, "black"),
-		/obj/structure/closet/crate/uav_crate = list(CAT_ENGSUP, "Iguana Unmanned Vehicle", 10, "black"),
+//		/obj/structure/closet/crate/uav_crate = list(CAT_ENGSUP, "Iguana Unmanned Vehicle", 10, "black"),
 		/obj/item/attachable/buildasentry = list(CAT_ENGSUP, "Build-A-Sentry Attachment", 5, "black"),
 		/obj/item/binoculars/tactical/range = list(CAT_ENGSUP, "Range Finder", 5, "black"),
 		/obj/item/ai_target_beacon = list(CAT_ENGSUP, "AI remote targeting module", 5, "black"),
