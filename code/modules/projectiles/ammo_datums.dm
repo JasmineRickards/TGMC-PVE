@@ -2410,9 +2410,9 @@ datum/ammo/rocket/ap/on_hit_mob(mob/M,obj/projectile/P)
 	name = "microwave heat bolt"
 	icon_state = "microwavelaser"
 	hud_state = "laser_heat"
-	damage = 12 //requires mod with -0.15 multiplier should math out to 10
+	damage = 15 //requires mod with -0.15 multiplier should math out to 10
 	penetration = 100 // It's a laser that burns the skin! The fire stacks go threw anyway.
-	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_SUNDERING
+	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
 	sundering = 1
 
 /datum/ammo/energy/lasgun/M43/blast
@@ -2430,6 +2430,16 @@ datum/ammo/rocket/ap/on_hit_mob(mob/M,obj/projectile/P)
 	damage_falloff = 10
 	penetration = 0
 	sundering = 5
+
+/datum/ammo/energy/lasgun/M43/eff
+	name = "efficient laser blast"
+	hud_state = "laser_disabler"
+	max_range = 30
+	damage = 30
+	penetration = 25
+	sundering = 5
+	bullet_color = COLOR_BLUE_LIGHT
+	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE
 
 /datum/ammo/energy/lasgun/M43/spread
 	name = "additional laser blast"
