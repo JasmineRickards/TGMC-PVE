@@ -494,7 +494,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	pixel_shift_x = 18
 	pixel_shift_y = 15
 	ammo_mod = /datum/ammo/energy/lasgun/M43/blast
-	damage_mod = 1.2
+	damage_mod = 1.5
 
 /obj/item/attachable/heatlens
 	name = "M43 heat lens"
@@ -504,16 +504,20 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	pixel_shift_x = 18
 	pixel_shift_y = 16
 	ammo_mod = /datum/ammo/energy/lasgun/M43/heat
-	damage_mod = -0.15
+	damage_mod = 0.5
 
 /obj/item/attachable/efflens
 	name = "M43 efficient lens"
-	desc = "Makes the lens smaller and lighter to use, allowing the lasgun to use its energy much more efficiently. \nDecreases energy output of the lasgun."
+	desc = "Makes the lens smaller and lighter to use, allowing the lasgun to use its energy much more efficiently. \nIncreases overall stats of the lasgun, as well as adding special mode to pierce enemies."
 	slot = ATTACHMENT_SLOT_MUZZLE
 	icon_state = "efficient"
 	pixel_shift_x = 18
 	pixel_shift_y = 14
-	charge_mod = -12
+	delay_mod = -0.03 SECONDS
+	scatter_mod = -1
+	damage_falloff_mod = -0.1
+	accuracy_mod = 0.2
+	ammo_mod = /datum/ammo/energy/lasgun/M43/eff
 
 /obj/item/attachable/sx16barrel
 	name = "SX-16 barrel"
@@ -524,13 +528,14 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 
 /obj/item/attachable/pulselens
 	name = "M43 pulse lens"
-	desc = "Agitates the lens, allowing the lasgun to discharge at a rapid rate. \nAllows the weapon to be fired automatically."
+	desc = "Agitates the lens, allowing the lasgun to discharge at a rapid rate. \nAllows the weapon to fire much faster and with greater damage."
 	slot = ATTACHMENT_SLOT_MUZZLE
 	icon_state = "pulse"
 	pixel_shift_x = 18
 	pixel_shift_y = 15
-//	damage_mod = -0.15
-	gun_firemode_list_mod = list(GUN_FIREMODE_AUTOMATIC)
+	delay_mod = -0.03 SECONDS
+	damage_mod = 0.5
+//	gun_firemode_list_mod = list(GUN_FIREMODE_AUTOMATIC)
 
 /obj/item/attachable/sgbarrel
 	name = "SG-29 barrel"

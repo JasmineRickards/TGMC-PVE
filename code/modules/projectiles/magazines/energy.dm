@@ -27,7 +27,7 @@
 	desc = "An advanced, ultrahigh capacity battery used to power the M43 lasgun; has sixty percent more charge capacity than standard laspacks."
 	charge_overlay = "m43_e"
 	icon_state = "m43_e"
-	maxcharge = 4500
+	maxcharge = 10000
 
 /obj/item/cell/lasgun/pulse
 	name = "\improper M19C4 pulse battery"

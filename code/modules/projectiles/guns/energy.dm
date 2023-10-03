@@ -178,6 +178,8 @@
 	ammo_datum_type = /datum/ammo/energy/lasgun/M43
 	allowed_ammo_types = list(
 		/obj/item/cell/lasgun,
+		/obj/item/cell/lasgun/M43,
+		/obj/item/cell/lasgun/M43/highcap,
 		/obj/item/cell/lasgun/volkite/powerpack,
 		/obj/item/cell/lasgun/lasrifle,
 	)
@@ -215,8 +217,10 @@
 	starting_attachment_types = list(/obj/item/attachable/stock/lasgun)
 	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18,"rail_x" = 12, "rail_y" = 23, "under_x" = 23, "under_y" = 15, "stock_x" = 22, "stock_y" = 12)
 	ammo_level_icon = "m43"
+	accuracy_mult = 1.3
 	accuracy_mult_unwielded = 0.5 //Heavy and unwieldy; you don't one hand this.
 	scatter_unwielded = 5 //Heavy and unwieldy; you don't one hand this.
+	scatter = 3
 	damage_falloff_mult = 0.1
 
 //variant without ugl attachment

@@ -1498,12 +1498,37 @@ Imports
 /datum/supply_packs/imports/m43
 	name = "M43 Imperial Lasrifle"
 	contains = list(/obj/item/weapon/gun/energy/lasgun/M43)
-	cost = 35
+	cost = 20
 
 /datum/supply_packs/imports/m43focuslens
 	name = "M43 Focusing lense"
 	contains = list(/obj/item/attachable/focuslens)
-	cost = 35
+	cost = 50
+
+/datum/supply_packs/imports/m43widelens
+	name = "M43 Wide lense"
+	contains = list(/obj/item/attachable/widelens)
+	cost = 120
+
+/datum/supply_packs/imports/m43heatlens
+	name = "M43 Heat lense"
+	contains = list(/obj/item/attachable/heatlens)
+	cost = 30
+
+/datum/supply_packs/imports/m43efflens
+	name = "M43 Efficient lense"
+	contains = list(/obj/item/attachable/efflens)
+	cost = 50
+
+/datum/supply_packs/imports/m43pulselens
+	name = "M43 Pulse lense"
+	contains = list(/obj/item/attachable/pulselens)
+	cost = 15
+
+/datum/supply_packs/imports/m43highcap
+	name = "M43 Highcap Cell"
+	contains = list(/obj/item/cell/lasgun/M43/highcap)
+	cost = 1
 
 /*/datum/supply_packs/imports/mp7
 	name = "SMG-27 SMG"
