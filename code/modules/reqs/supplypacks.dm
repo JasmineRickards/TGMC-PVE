@@ -1772,12 +1772,17 @@ Imports
 /datum/supply_packs/imports/vp78
 	name = "VP78 Handgun"
 	contains = list(/obj/item/weapon/gun/pistol/vp78)
-	cost = 5
+	cost = 10
 
 /datum/supply_packs/imports/vp78/ammo
 	name = "VP78 Handgun Ammo"
 	contains = list(/obj/item/ammo_magazine/pistol/vp78)
 	cost = 1
+
+/datum/supply_packs/imports/vp78/ammo/ext
+	name = "VP78 Handgun Extended Ammo"
+	contains = list(/obj/item/ammo_magazine/pistol/vp78/ext)
+	cost = 2
 
 /datum/supply_packs/imports/highpower
 	name = "Highpower Automag"
