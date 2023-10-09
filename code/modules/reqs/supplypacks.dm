@@ -1899,6 +1899,11 @@ VEHICLES
 	cost = 140
 	contains = list(/obj/vehicle/sealed/mecha/combat/marauder/seraphtgmc)
 
+/datum/supply_packs/vehicles/mechbelt
+	name = "M300 Mech Ammo Belt"
+	cost = 20
+	contains = list(/obj/item/storage/belt/tankbelt)
+
 /datum/supply_packs/vehicles/mechlmg
 	name = "FS-M Mobile suit LMG"
 	cost = 35
