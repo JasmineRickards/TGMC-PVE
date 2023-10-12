@@ -125,7 +125,7 @@
 	icon_state = "rocket_case"
 	spec_set = "demolitionist"
 	w_class = WEIGHT_CLASS_HUGE
-	storage_slots = 16
+	storage_slots = 18
 	slowdown = 1
 	can_hold = list() //Nada. Once you take the stuff out it doesn't fit back in.
 	foldable = null
@@ -133,7 +133,7 @@
 /obj/item/storage/box/spec/demolitionist/Initialize(mapload, ...)
 	. = ..()
 	new /obj/item/clothing/suit/storage/marine/M3T(src)
-	new /obj/item/clothing/head/modular/marine/m10x(src)
+	new /obj/item/clothing/head/helmet/marine/sadar(src)
 	new /obj/item/weapon/gun/launcher/rocket/sadar(src)
 	new /obj/item/ammo_magazine/rocket/sadar(src)
 	new /obj/item/ammo_magazine/rocket/sadar(src)
@@ -148,6 +148,8 @@
 	new /obj/item/detpack(src)
 	new /obj/item/detpack(src)
 	new /obj/item/assembly/signaler(src)
+	new /obj/item/storage/backpack/sadar(src)
+	new /obj/item/storage/backpack/sadar(src)
 
 
 

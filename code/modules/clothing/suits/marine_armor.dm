@@ -474,7 +474,7 @@
 /obj/item/clothing/suit/storage/marine/M3T
 	name = "\improper M3 pattern demolitionist armor"
 	desc = "A custom set of M3 armor designed for users of long ranged explosive weaponry." // light EOD armor
-	icon_state = "demolitionist"
+	icon_state = "demolitionist_cm"
 	soft_armor = list(MELEE = 55, BULLET = 75, LASER = 75, ENERGY = 50, BOMB = 100, BIO = 50, FIRE = 50, ACID = 60)
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	allowed = list(/obj/item/weapon/gun/launcher/rocket)

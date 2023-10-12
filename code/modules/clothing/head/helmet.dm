@@ -354,6 +354,14 @@
 	flags_item_map_variant = NONE
 	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
+/obj/item/clothing/head/helmet/marine/sadar
+	name = "\improper M10 demolitionist helmet"
+	icon_state = "sadar_helmet"
+	desc = "Unique M10 Demolitionist Helmet. Can be seen on some TGMC demolitionists. Supposed to protect your ears from loud noises."
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 100, BIO = 75, FIRE = 75, ACID = 75)
+	flags_item_map_variant = NONE
+	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
+
 /obj/item/clothing/head/helmet/marine/security
 	name = "\improper RC6 helmet"
 	icon_state = "ua_riot"

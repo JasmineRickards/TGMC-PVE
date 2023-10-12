@@ -581,6 +581,8 @@
 	accuracy_mult = 1.15
 	accuracy_mult_unwielded = 0.85
 	recoil_unwielded = 3
+	damage_mult = 2
+	damage_falloff_mult = 0.5
 
 /obj/item/weapon/gun/pistol/vp78/director
 	name = "\improper VP78 combat pistol"

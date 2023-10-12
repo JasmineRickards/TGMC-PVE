@@ -83,6 +83,21 @@
 	new /obj/item/tool/wirecutters(src)
 	new /obj/item/t_scanner(src)
 
+/obj/item/storage/belt/tankbelt
+	name = "\improper M300 pattern tank rig"
+	desc = "The M300 is the standard load-bearing equipment of the TGMC mech pilots. It consists of a modular belt with various clips."
+	icon_state = "tankbelt"
+	item_state = "tankbelt"
+	storage_slots = 7
+	max_storage_space = 28
+	max_w_class = 4
+	can_hold = list(
+		/obj/item/mecha_ammo/missiles_br,
+		/obj/item/mecha_ammo/missiles_sabot,
+		/obj/item/mecha_ammo/lmg,
+		/obj/item/mecha_ammo/scattershot,
+	)
+
 /obj/item/storage/belt/lifesaver
 	name = "\improper M276 pattern lifesaver bag"
 	desc = "The M276 is the standard load-bearing equipment of the TGMC. This configuration mounts a duffel bag filled with a range of injectors and light medical supplies and is common among medics."
@@ -358,6 +373,7 @@
 		/obj/item/flashlight,
 		/obj/item/radio/headset,
 		/obj/item/tool/taperoll/police,
+		/obj/item/hailer,
 	)
 
 /obj/item/storage/belt/security/MP
@@ -388,6 +404,7 @@
 		/obj/item/radio/headset,
 		/obj/item/tool/taperoll/police,
 		/obj/item/weapon/gun/pistol,
+		/obj/item/hailer,
 //	cant_hold = list(
 //		/obj/item/weapon/gun,
 	)

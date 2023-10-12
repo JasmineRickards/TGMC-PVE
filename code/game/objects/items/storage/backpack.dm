@@ -786,6 +786,14 @@
 	max_storage_space = 40
 	access_delay = 0
 
+/obj/item/storage/backpack/sadar
+	name = "heavy duty rocket bag"
+	desc = "A heavy-duty bag carried by some rocket specialists."
+	icon_state = "rocketpack"
+	storage_slots = 30
+	max_storage_space = 90
+	access_delay = 0
+
 /obj/item/storage/backpack/captain
 	name = "marine captain backpack"
 	desc = "The contents of this backpack are top secret."

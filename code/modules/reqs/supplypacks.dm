@@ -1772,12 +1772,17 @@ Imports
 /datum/supply_packs/imports/vp78
 	name = "VP78 Handgun"
 	contains = list(/obj/item/weapon/gun/pistol/vp78)
-	cost = 5
+	cost = 10
 
 /datum/supply_packs/imports/vp78/ammo
 	name = "VP78 Handgun Ammo"
 	contains = list(/obj/item/ammo_magazine/pistol/vp78)
 	cost = 1
+
+/datum/supply_packs/imports/vp78/ammo/ext
+	name = "VP78 Handgun Extended Ammo"
+	contains = list(/obj/item/ammo_magazine/pistol/vp78/ext)
+	cost = 2
 
 /datum/supply_packs/imports/highpower
 	name = "Highpower Automag"
@@ -1893,6 +1898,11 @@ VEHICLES
 	name = "Assault Mobile Suit"
 	cost = 140
 	contains = list(/obj/vehicle/sealed/mecha/combat/marauder/seraphtgmc)
+
+/datum/supply_packs/vehicles/mechbelt
+	name = "M300 Mech Ammo Belt"
+	cost = 20
+	contains = list(/obj/item/storage/belt/tankbelt)
 
 /datum/supply_packs/vehicles/mechlmg
 	name = "FS-M Mobile suit LMG"
