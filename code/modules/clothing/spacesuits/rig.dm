@@ -302,14 +302,14 @@
 	icon_state = "rig0-mining"
 	item_state = "mining_helm"
 	rig_color = "mining"
-	soft_armor = list(MELEE = 70, BULLET = 5, LASER = 20, ENERGY = 5, BOMB = 55, BIO = 100, FIRE = 30, ACID = 45)
+	soft_armor = list(MELEE = 70, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 70, BIO = 100, FIRE = 30, ACID = 50)
 
 /obj/item/clothing/suit/space/rig/mining
 	icon_state = "rig-mining"
 	name = "mining hardsuit"
 	desc = "A special suit that protects against hazardous, low pressure environments. Has reinforced plating."
 	item_state = "mining_hardsuit"
-	soft_armor = list(MELEE = 70, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 70, BIO = 100, FIRE = 30, ACID = 45)
+	soft_armor = list(MELEE = 70, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 70, BIO = 100, FIRE = 30, ACID = 50)
 
 
 //Syndicate rig
