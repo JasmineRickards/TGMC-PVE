@@ -262,6 +262,7 @@ Good luck, but do not expect to survive."})
 	name = "Miner"
 	jobtype = /datum/job/survivor/armed/miner
 
+	mask = /obj/item/clothing/mask/gas
 	belt = /obj/item/weapon/gun/energy/lasgun/lasrifle/plasmacutter
 	ears = /obj/item/radio/headset/mainship/survivor/mining
 	w_uniform = /obj/item/clothing/under/rank/miner
@@ -270,12 +271,16 @@ Good luck, but do not expect to survive."})
 	head = /obj/item/clothing/head/helmet/space/rig/mining
 	glasses = /obj/item/clothing/glasses/night
 	back = /obj/item/storage/backpack/satchel/norm
+	gloves = /obj/item/clothing/gloves/black
+	l_store = /obj/item/storage/pouch/electronics/miner
+	r_store = /obj/item/storage/pouch/construction
 
 /datum/outfit/job/survivor/armed/miner/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 
 	H.equip_to_slot_or_del(new /obj/item/cell/super, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/cell/super, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
 
 //Colonial Marshal
 /datum/job/survivor/armed/marshal
@@ -284,7 +289,7 @@ Good luck, but do not expect to survive."})
 	display_order = JOB_DISPLAY_ORDER_SURVIVOR
 	selection_color = "#ccccff"
 	title = "Colonial Marshal"
-	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG)
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG, ACCESS_MARINE_ARMORY, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY, ACCESS_MARINE_BRIDGE)
 	skills_type = /datum/skills/civilian/survivor/marshal
 	outfit = /datum/outfit/job/survivor/armed/marshal
 	minimap_icon = "marshal"
@@ -295,16 +300,23 @@ Good luck, but do not expect to survive."})
 	jobtype = /datum/job/survivor/armed/marshal
 
 	id = /obj/item/card/id/silver
-	belt = /obj/item/storage/belt/gun/pistol/m4a3/fieldcommander
+	belt = /obj/item/weapon/classic_baton
 	ears = /obj/item/radio/headset/mainship/survivor/sec/command
 	w_uniform = /obj/item/clothing/under/CM_uniform
 	wear_suit = /obj/item/clothing/suit/storage/CMB/b
+	suit_store = /obj/item/storage/belt/gun/pistol/m4a3/fieldcommander
 	head = /obj/item/clothing/head/det_hat/black
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/sunglasses/fake
-	suit_store = /obj/item/storage/belt/gun/pistol/m4a3/fieldcommander
 	back = /obj/item/storage/backpack/satchel/sec
+	mask = /obj/item/clothing/mask/cigarette/cigar/cohiba
+	r_store = /obj/item/tool/lighter/zippo
+	l_store = /obj/item/megaphone
 
+/datum/outfit/job/survivor/armed/marshal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
 
 
 // Rambo Survivor
@@ -348,7 +360,7 @@ Good luck, but do not expect to survive."})
 	title = "Research Assistant"
 	job_category = JOB_COL_SERVICE
 	paygrade = "CD"
-	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_RESEARCH)
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_RESEARCH)
 	display_order = JOB_DISPLAY_ORDER_SUPPORT
 	selection_color = "#99FF99"
 	skills_type = /datum/skills/civilian/survivor/scientist
@@ -367,6 +379,11 @@ Good luck, but do not expect to survive."})
 	wear_suit = /obj/item/clothing/suit/storage/labcoat
 	back = /obj/item/storage/backpack/satchel/tox
 	r_store = /obj/item/storage/pouch/field_pouch/jnr_rsr
+
+/datum/outfit/job/survivor/junior_rsr/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
 
 
 //Low gear Doctor
@@ -396,18 +413,25 @@ Good luck, but do not expect to survive."})
 	glasses = /obj/item/clothing/glasses/hud/medglasses
 	suit_store = /obj/item/flashlight
 	back = /obj/item/storage/backpack/satchel/med
+	gloves = /obj/item/clothing/gloves/latex
 	r_store = /obj/item/storage/pouch/surgery
+
+/datum/outfit/job/survivor/nurse/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
 
 
 //Liaison
 /datum/job/survivor/liaison
 	title = "Liaison"
 	job_category = JOB_COL_COMMAND
-	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_NT_CORPORATE)
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_NT_CORPORATE, ACCESS_MARINE_BRIDGE)
 	paygrade = "NT2"
 	display_order = JOB_DISPLAY_ORDER_MISC
 	selection_color = "#ffeedd"
 	outfit = /datum/outfit/job/survivor/liaison
+	skills_type = /datum/skills/civilian/survivor/liaison
 	minimap_icon = "cl"
 
 
@@ -424,6 +448,7 @@ Good luck, but do not expect to survive."})
 
 /datum/outfit/job/survivor/liaison/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/derringer, SLOT_IN_L_POUCH)
 	H.equip_to_slot_or_del(new /obj/item/flashlight, SLOT_IN_L_POUCH)
 
@@ -456,6 +481,10 @@ Good luck, but do not expect to survive."})
 	l_store = /obj/item/storage/pouch/magazine/pistol/hi_pwr
 	r_store = /obj/item/storage/pouch/pistol/hi_pwr
 
+/datum/outfit/job/survivor/sec_patrol/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
+
 
 //Civilian
 /datum/job/survivor/civilian
@@ -463,6 +492,8 @@ Good luck, but do not expect to survive."})
 	job_category = JOB_COL_ETC
 	paygrade = "C"
 	outfit = /datum/outfit/job/survivor/civilian
+	access = list(ACCESS_CIVILIAN_PUBLIC)
+	skills_type = /datum/skills/civilian/survivor/civilian
 	minimap_icon = "survivor_generic"
 
 
@@ -475,10 +506,11 @@ Good luck, but do not expect to survive."})
 	shoes = /obj/item/clothing/shoes/black
 	back = /obj/item/storage/backpack/satchel/norm
 	r_store = /obj/item/storage/pouch/general/medium
-	l_store = /obj/item/weapon/karambit
+//	l_store = /obj/item/weapon/karambit
 
 /datum/outfit/job/survivor/civilian/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/flashlight, SLOT_IN_R_POUCH)
 
 //Macheteless Chef
@@ -505,6 +537,10 @@ Good luck, but do not expect to survive."})
 	back = /obj/item/storage/backpack/satchel/norm
 	l_store = /obj/item/storage/pouch/med_lolipops
 
+/datum/outfit/job/survivor/sous_chef/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
+
 
 //Botanist
 /datum/job/survivor/botanist
@@ -513,6 +549,7 @@ Good luck, but do not expect to survive."})
 	selection_color = "#008000"
 	display_order = JOB_DISPLAY_ORDER_SUPPORT
 	outfit = /datum/outfit/job/survivor/botanist
+	skills_type = /datum/skills/civilian/survivor/botanist
 	minimap_icon = "yankee_private"
 
 
@@ -532,6 +569,7 @@ Good luck, but do not expect to survive."})
 /datum/outfit/job/survivor/botanist/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/seeds/messa, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/seeds/srandar, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/reagent_containers/glass/bottle/diethylamine, SLOT_IN_BACKPACK)
@@ -541,7 +579,7 @@ Good luck, but do not expect to survive."})
 	H.equip_to_slot_or_del(new /obj/item/tool/wirecutters, SLOT_IN_BACKPACK)
 
 
-//Atmospherics Technician
+//Maintenance Technician
 /datum/job/survivor/maint_tech
 	title = "Maintenance Technician"
 	job_category = JOB_COL_SERVICE
@@ -572,6 +610,11 @@ Good luck, but do not expect to survive."})
 	l_store = /obj/item/storage/pouch/construction/equippedengineer
 	r_store = /obj/item/storage/pouch/electronics/full
 
+/datum/outfit/job/survivor/maint_tech/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
+
 //Blessless chaplain
 /datum/job/survivor/priest
 	title = "Priest"
@@ -597,6 +640,11 @@ Good luck, but do not expect to survive."})
 	back = /obj/item/storage/backpack/satchel/norm
 	l_store = /obj/item/flashlight
 	r_store = /obj/item/weapon/nullrod
+
+/datum/outfit/job/survivor/priest/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
 
 
 //Prospector
@@ -628,6 +676,7 @@ Good luck, but do not expect to survive."})
 /datum/outfit/job/survivor/prospector/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/pinpointer, SLOT_IN_BACKPACK)
 
 //Salesman
@@ -655,13 +704,14 @@ Good luck, but do not expect to survive."})
 
 	H.put_in_hands(new /obj/item/portable_vendor/corporate/survivor(H))
 	H.equip_to_slot_or_del(new /obj/item/flashlight, SLOT_IN_L_POUCH)
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
 
 
 //lesser Colonial Marshal
 /datum/job/survivor/deputy
 	job_category = JOB_COL_SEC
 	title = "Colonial Marshal Deputy"
-	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG)
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG, ACCESS_MARINE_ARMORY)
 	paygrade = "CMB1"
 	display_order = JOB_DISPLAY_ORDER_CMB
 	selection_color = "#BF2F2F"
@@ -684,11 +734,16 @@ Good luck, but do not expect to survive."})
 	l_store = /obj/item/megaphone
 	r_store = /obj/item/flashlight
 
+/datum/outfit/job/survivor/deputy/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)
+
 
 /datum/job/survivor/supervisor
 	job_category = JOB_COL_COMMAND
 	title = "Colony Director"
-	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG, ACCESS_MARINE_BRIDGE, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY, ACCESS_NT_CORPORATE)
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_BRIG, ACCESS_MARINE_ARMORY, ACCESS_MARINE_BRIDGE, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY, ACCESS_NT_CORPORATE)
 	paygrade = "NT6"
 	display_order = JOB_DISPLAY_ORDER_DIRECTOR //Appears at the top, no matter what.
 	selection_color = "#ccccff"
@@ -718,3 +773,5 @@ Good luck, but do not expect to survive."})
 	H.equip_to_slot_or_del(new /obj/item/megaphone, SLOT_IN_R_POUCH)
 	H.equip_to_slot_or_del(new /obj/item/flashlight, SLOT_IN_R_POUCH)
 	H.equip_to_slot_or_del(new /obj/item/storage/fancy/cigar, SLOT_IN_R_POUCH)
+	H.equip_to_slot_or_del(new /obj/item/tool/lighter/zippo, SLOT_IN_R_POUCH)
+	H.equip_to_slot_or_del(new /obj/item/storage/box/emergency, SLOT_IN_BACKPACK)

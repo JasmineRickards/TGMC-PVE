@@ -236,6 +236,27 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	construction = SKILL_CONSTRUCTION_METAL
 	medical = SKILL_MEDICAL_PRACTICED
 
+/datum/skills/civilian/survivor/civilian
+	name = "Survivor civilian"
+	engineer = 2
+	medical = 2
+	construction = 2
+	pistols = 2
+
+/datum/skills/civilian/survivor/liaison
+	name = "Survivor Liaison"
+	engineer = 1
+	medical = 1
+	pistols = 2
+
+/datum/skills/civilian/survivor/botanist
+	name = "Survivor Botanist"
+	engineer = 1
+	medical = 1
+	pistols = 1
+	melee_weapons = 2
+	cqc = 1
+
 /datum/skills/civilian/survivor/master
 	name = "Survivor"
 	firearms = SKILL_FIREARMS_DEFAULT
@@ -250,53 +271,72 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	name = "Survivor Doctor"
 	medical = SKILL_MEDICAL_COMPETENT
 	surgery = SKILL_SURGERY_EXPERT
+	engineer = 1
+	pistols = 1
 
 
 /datum/skills/civilian/survivor/scientist
 	name = "Survivor Scientist"
-	medical = SKILL_MEDICAL_PRACTICED
+	medical = 3
 	surgery = SKILL_SURGERY_PROFESSIONAL
+	pistols = 1
 
 /datum/skills/civilian/survivor/chef
 	name = "Survivor Chef"
-	melee_weapons = SKILL_MELEE_SUPER
+	melee_weapons = 4
+	cqc = 4
+	engineer = 1
+	medical = 1
+	pistols = 1
 
 /datum/skills/civilian/survivor/chaplain
-	name = "Survivor Chef"
+	name = "Survivor Chaplain"
 	shotguns = SKILL_SHOTGUNS_SPECIALIZED
-	melee_weapons = SKILL_MELEE_DEFAULT
+	melee_weapons = 1
+	engineer = 1
+	medical = 1
 
 /datum/skills/civilian/survivor/miner
 	name = "Survivor Miner"
 
-	melee_weapons = SKILL_MELEE_DEFAULT
+	melee_weapons = 1
 	heavy_weapons = SKILL_HEAVY_WEAPONS_SPECIALIZED
 	powerloader = SKILL_POWERLOADER_TRAINED
+	cqc = 1
+	medical = 1
 
 /datum/skills/civilian/survivor/atmos
 	name = "Survivor Atmos Tech"
 	engineer = SKILL_ENGINEER_MASTER
 	construction = SKILL_CONSTRUCTION_MASTER
+	pistols = 1
+	medical = 1
 
 /datum/skills/civilian/survivor/security
 	name = "Survivor Security"
 	cqc = SKILL_CQC_MP
 	firearms = SKILL_FIREARMS_DEFAULT
-	melee_weapons = SKILL_MELEE_DEFAULT
+	melee_weapons = 1
 	police = SKILL_POLICE_MP
+	engineer = 1
+	medical = 1
 
 /datum/skills/civilian/survivor/marshal
 	name = "Survivor Marshal"
-	cqc = SKILL_CQC_MP
+	cqc = 3
 	firearms = SKILL_FIREARMS_DEFAULT
-	melee_weapons = SKILL_MELEE_DEFAULT
-	pistols = SKILL_PISTOLS_TRAINED
+	melee_weapons = 2
+	pistols = 2
 	police = SKILL_POLICE_MP
 	leadership = SKILL_LEAD_MASTER
+	engineer = 1
 
 /datum/skills/civilian/survivor/marshal/deputy
 	leadership = SKILL_LEAD_EXPERT
-	pistols = SKILL_PISTOLS_DEFAULT
+	pistols = 1
+	melee_weapons = 1
+	cqc = 2
+	engineer = 1
 
 /datum/skills/civilian/survivor/director
 	name = "Colony Director"
@@ -305,6 +345,8 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	firearms = SKILL_FIREARMS_UNTRAINED
 	melee_weapons = SKILL_MELEE_DEFAULT
 	police = SKILL_POLICE_MP
+	engineer = 2
+
 
 /datum/skills/civilian/survivor/prisoner
 	name = "Survivor Prisoner"

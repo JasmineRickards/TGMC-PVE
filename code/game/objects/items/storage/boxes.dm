@@ -74,6 +74,26 @@
 	new /obj/item/clothing/mask/breath( src )
 	new /obj/item/tank/emergency_oxygen/engi( src )
 
+/obj/item/storage/box/emergency
+	name = "emergency box"
+	desc = "A box with some items for emergency situations."
+	icon_state = "box"
+	item_state = "syringe_kit"
+	foldable = /obj/item/paper/crumpled
+	storage_slots = null
+	max_w_class = 2 //Changed because of in-game abuse
+	w_class = 3
+	spawn_number = 1
+	spawn_type = list(
+		/obj/item/tool/crowbar/red,
+		/obj/item/flashlight/combat,
+		/obj/item/stack/medical/heal_pack/ointment,
+		/obj/item/stack/medical/heal_pack/gauze,
+		/obj/item/reagent_containers/hypospray/autoinjector/inaprovaline,
+		/obj/item/reagent_containers/food/snacks/protein_pack,
+	)
+
+
 /obj/item/storage/box/gloves
 	name = "box of latex gloves"
 	desc = "Contains white gloves."
