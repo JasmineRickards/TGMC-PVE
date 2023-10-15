@@ -436,7 +436,7 @@ Failure to do so may result in a job ban.
 You lead the Masters at Arms, ensure that the ship and FOB does not fall, no matter what!
 In addition, you are tasked with the security of high-ranking personnel, including the command staff. Keep them safe!"})
 
-/datum/job/terragov/police/officer/chief/after_spawn(mob/living/carbon/new_mob, mob/user, latejoin = FALSE)
+/datum/job/terragov/police/chief/after_spawn(mob/living/carbon/new_mob, mob/user, latejoin = FALSE)
 	. = ..()
 	if(!ishuman(new_mob))
 		return
