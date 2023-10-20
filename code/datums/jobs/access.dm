@@ -214,7 +214,7 @@
 		if("OFC1")
 			. = size ? "OFC  " : "Patrol Officer"
 		if("OFC2")
-			. = size ? "OFC " : "Rapid Reponse Officer"
+			. = size ? "OFC " : "Rapid Response Officer"
 		if("CHP")
 			. = size ? "Reverend " : "Chaplain"
 		if("ENG")
