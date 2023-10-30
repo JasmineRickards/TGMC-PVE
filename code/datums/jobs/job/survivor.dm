@@ -253,6 +253,7 @@ Good luck, but do not expect to survive."})
 	job_category = JOB_COL_SERVICE
 	selection_color = "#FF6A00"
 	paygrade = "MNR2"
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_LOGISTICS)
 	skills_type = /datum/skills/civilian/survivor/miner
 	outfit = /datum/outfit/job/survivor/armed/miner
 	minimap_icon = "zulu_smartgunner"
@@ -390,7 +391,7 @@ Good luck, but do not expect to survive."})
 /datum/job/survivor/nurse
 	title = "Nurse"
 	job_category = JOB_COL_SERVICE
-	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_ENGINEERING, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY)
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_LOGISTICS, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY)
 	paygrade = "RES"
 	display_order = JOB_DISPLAY_ORDER_SUPPORT
 	selection_color = "#99FF99"
@@ -519,6 +520,7 @@ Good luck, but do not expect to survive."})
 	job_category = JOB_COL_SERVICE
 	selection_color = "#008000"
 	display_order = JOB_DISPLAY_ORDER_FIGHTER
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_LOGISTICS)
 	skills_type = /datum/skills/civilian/survivor/chef
 	outfit = /datum/outfit/job/survivor/sous_chef
 	minimap_icon = "xray_private"
@@ -548,6 +550,7 @@ Good luck, but do not expect to survive."})
 	job_category = JOB_COL_SERVICE
 	selection_color = "#008000"
 	display_order = JOB_DISPLAY_ORDER_SUPPORT
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_LOGISTICS)
 	outfit = /datum/outfit/job/survivor/botanist
 	skills_type = /datum/skills/civilian/survivor/botanist
 	minimap_icon = "yankee_private"
@@ -621,6 +624,7 @@ Good luck, but do not expect to survive."})
 	paygrade = "CHP"
 	job_category = JOB_COL_SERVICE
 	display_order = JOB_DISPLAY_ORDER_MISC
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_LOGISTICS)
 	selection_color = "#008000"
 	skills_type = /datum/skills/civilian/survivor/chaplain
 	outfit = /datum/outfit/job/survivor/priest
@@ -653,6 +657,7 @@ Good luck, but do not expect to survive."})
 	job_category = JOB_COL_SERVICE
 	paygrade = "MNR2"
 	display_order = JOB_DISPLAY_ORDER_FIGHTER
+	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_LOGISTICS)
 	selection_color = "#FF6A00"
 	skills_type = /datum/skills/civilian/survivor/miner
 	outfit = /datum/outfit/job/survivor/prospector

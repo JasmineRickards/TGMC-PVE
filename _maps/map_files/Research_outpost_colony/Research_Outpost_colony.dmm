@@ -509,7 +509,8 @@
 /area/outpost/engineering/security)
 "cR" = (
 /obj/machinery/door/airlock/mainship/engineering/free_access{
-	dir = 2
+	dir = 2;
+	req_access = list(102)
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden,
@@ -594,7 +595,8 @@
 "dm" = (
 /obj/machinery/door/airlock/mainship/security/glass/free_access{
 	dir = 1;
-	name = "\improper Marshal Office Armory"
+	name = "\improper Marshal Office Armory";
+	req_access = list(4)
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden,
@@ -773,12 +775,13 @@
 /turf/open/floor/plating/ground/mars/random/cave,
 /area/outpost/caves/south_east)
 "eg" = (
-/obj/machinery/door/airlock/mainship/research/glass/free_access{
-	dir = 8
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
 	dir = 4
+	},
+/obj/machinery/door/airlock/mainship/research/glass/free_access{
+	dir = 8;
+	req_access = list(3)
 	},
 /turf/open/floor/tile/dark,
 /area/outpost/science/security)
@@ -841,7 +844,8 @@
 /area/outpost/hallway/east)
 "ez" = (
 /obj/machinery/door/airlock/mainship/security/glass/free_access{
-	dir = 1
+	dir = 1;
+	req_access = list(3)
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden,
@@ -856,7 +860,8 @@
 /area/outpost/science/hydponics)
 "eD" = (
 /obj/machinery/door/airlock/mainship/generic{
-	dir = 1
+	dir = 1;
+	req_access = list(101)
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden,
@@ -1187,11 +1192,12 @@
 	},
 /area/outpost/medbay/surgery)
 "fZ" = (
-/obj/machinery/door/airlock/mainship/medical/free_access{
-	dir = 2
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden,
+/obj/machinery/door/airlock/mainship/medical/free_access{
+	dir = 1;
+	req_access = list(104)
+	},
 /turf/open/floor/tile/dark,
 /area/outpost/medbay/surgery)
 "ga" = (
@@ -1215,7 +1221,9 @@
 	},
 /area/outpost/hallway/east)
 "gf" = (
-/obj/machinery/door/airlock/multi_tile/mainship/engineering/glass,
+/obj/machinery/door/airlock/multi_tile/mainship/engineering/glass{
+	req_access = list(102)
+	},
 /turf/open/floor/tile/dark2,
 /area/outpost/cargo/engineering)
 "gg" = (
@@ -1264,7 +1272,9 @@
 	},
 /area/outpost/brig/armoury)
 "gr" = (
-/obj/machinery/door/airlock/mainship/medical/free_access,
+/obj/machinery/door/airlock/mainship/medical/free_access{
+	req_access = list(104)
+	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
 	dir = 4
@@ -1425,12 +1435,15 @@
 /area/outpost/cargo)
 "hb" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/secure,
+/obj/machinery/door/window/secure{
+	req_access = list(4)
+	},
 /turf/open/floor/tile/dark,
 /area/outpost/brig/armoury)
 "hd" = (
 /obj/machinery/door/airlock/mainship/security/glass/free_access{
-	name = "\improper Marshal Office Armory"
+	name = "\improper Marshal Office Armory";
+	req_access = list(4)
 	},
 /turf/open/floor/tile/dark,
 /area/outpost/brig/wardens_office)
@@ -1625,7 +1638,8 @@
 /area/outpost/science)
 "ib" = (
 /obj/machinery/door/airlock/mainship/security/glass/free_access{
-	dir = 2
+	dir = 2;
+	req_access = list(3)
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
@@ -1653,7 +1667,8 @@
 /area/outpost/caves/south)
 "if" = (
 /obj/machinery/door/airlock/mainship/engineering/free_access{
-	dir = 2
+	dir = 2;
+	req_access = list(102)
 	},
 /turf/open/floor/tile/dark2,
 /area/outpost/cargo/engineering)
@@ -1762,12 +1777,13 @@
 /turf/open/floor/tile/dark,
 /area/outpost/science)
 "iC" = (
-/obj/machinery/door/airlock/mainship/security/glass/free_access{
-	dir = 1;
-	name = "\improper Marshal Office Armory"
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden,
+/obj/machinery/door/airlock/mainship/security/glass/free_access{
+	dir = 1;
+	name = "\improper Marshal Office Armory";
+	req_access = list(4)
+	},
 /turf/open/floor/tile/dark,
 /area/outpost/brig/armoury)
 "iD" = (
@@ -2376,7 +2392,8 @@
 /area/outpost/medbay/storage)
 "lk" = (
 /obj/machinery/door/airlock/mainship/research/glass/free_access{
-	dir = 1
+	dir = 1;
+	req_access = list(4)
 	},
 /turf/open/floor/tile/dark,
 /area/outpost/science/xenobiology)
@@ -2533,7 +2550,8 @@
 /area/outpost/hallway/south_west)
 "lN" = (
 /obj/machinery/door/airlock/multi_tile/mainship/generic{
-	dir = 1
+	dir = 1;
+	req_access = list(101)
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
@@ -2798,7 +2816,8 @@
 /area/outpost/hallway/south_west)
 "nl" = (
 /obj/machinery/door/airlock/multi_tile/mainship/research{
-	dir = 1
+	dir = 1;
+	req_access = list(103)
 	},
 /turf/open/floor/tile/dark,
 /area/outpost/science/xenobiology)
@@ -2910,11 +2929,11 @@
 /turf/open/floor/tile/dark,
 /area/outpost/hallway/south_east)
 "nM" = (
-/obj/machinery/door/airlock/mainship/medical/free_access{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
 	dir = 8
+	},
+/obj/machinery/door/airlock/mainship/medical/free_access{
+	req_access = list(104)
 	},
 /turf/open/floor/tile/dark,
 /area/outpost/medbay/storage)
@@ -3209,7 +3228,9 @@
 /turf/open/floor/tile/dark,
 /area/outpost/brig/gear_room)
 "pa" = (
-/obj/machinery/door/airlock/multi_tile/mainship/generic,
+/obj/machinery/door/airlock/multi_tile/mainship/generic{
+	req_access = list(101)
+	},
 /turf/open/floor/tile/dark,
 /area/outpost/cargo)
 "pb" = (
@@ -3238,7 +3259,9 @@
 	},
 /area/outpost/cargo)
 "pg" = (
-/obj/machinery/door/airlock/mainship/engineering/free_access,
+/obj/machinery/door/airlock/mainship/engineering/free_access{
+	req_access = list(102)
+	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
 	dir = 4
@@ -3316,7 +3339,8 @@
 /area/outpost/engineering/hallway)
 "pB" = (
 /obj/machinery/door/airlock/mainship/research/glass/free_access{
-	dir = 8
+	dir = 8;
+	req_access = list(101)
 	},
 /turf/open/floor/tile/dark2,
 /area/outpost/cargo)
@@ -3690,11 +3714,11 @@
 /turf/open/floor/plating/asteroidfloor,
 /area/outpost/cargo)
 "re" = (
+/obj/machinery/atmospherics/pipe/simple/green/hidden,
 /obj/machinery/door/airlock/mainship/security/glass/free_access{
 	dir = 1;
-	name = "\improper Marshal Office Holding Cell"
+	req_access = list(3)
 	},
-/obj/machinery/atmospherics/pipe/simple/green/hidden,
 /turf/open/floor/tile/dark,
 /area/outpost/brig)
 "rf" = (
@@ -4146,7 +4170,7 @@
 /area/outpost/engineering/engine)
 "tf" = (
 /obj/machinery/door/airlock/multi_tile/mainship/research{
-	dir = 8
+	req_access = list(103)
 	},
 /turf/open/floor/tile/dark,
 /area/outpost/science)
@@ -4312,7 +4336,8 @@
 /area/outpost/lz1)
 "tS" = (
 /obj/machinery/door/airlock/mainship/engineering/free_access{
-	dir = 8
+	dir = 8;
+	req_access = list(102)
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
@@ -4792,7 +4817,8 @@
 /area/outpost/science/hydponics)
 "wm" = (
 /obj/machinery/door/airlock/mainship/engineering/free_access{
-	dir = 2
+	dir = 2;
+	req_access = list(102)
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden,
@@ -4952,8 +4978,8 @@
 /obj/item/clothing/head/helmet/riot/old,
 /obj/item/weapon/shield/riot,
 /obj/item/weapon/shield/riot,
-/obj/item/weapon/telebaton,
-/obj/item/weapon/telebaton,
+/obj/item/weapon/classic_baton,
+/obj/item/weapon/classic_baton,
 /turf/open/floor/tile/dark/red2{
 	dir = 8
 	},
@@ -4971,7 +4997,8 @@
 /area/outpost/hallway/northern)
 "xa" = (
 /obj/machinery/door/airlock/multi_tile/mainship/research{
-	dir = 1
+	dir = 1;
+	req_access = list(103)
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
@@ -5144,7 +5171,8 @@
 /area/outpost/engineering/engine)
 "xT" = (
 /obj/machinery/door/airlock/multi_tile/mainship/generic{
-	dir = 1
+	dir = 1;
+	req_access = list(102)
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
@@ -5966,8 +5994,8 @@
 /obj/structure/rack,
 /obj/item/clothing/suit/armor/bulletproof,
 /obj/item/clothing/suit/armor/bulletproof,
-/obj/item/clothing/head/helmet,
-/obj/item/clothing/head/helmet,
+/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/head/helmet/swat,
 /turf/open/floor/tile/dark/red2{
 	dir = 8
 	},
@@ -7419,7 +7447,8 @@
 /area/outpost/caves/north)
 "IZ" = (
 /obj/machinery/door/airlock/multi_tile/mainship/engineering/glass{
-	dir = 2
+	dir = 2;
+	req_access = list(102)
 	},
 /turf/open/floor/tile/dark2,
 /area/outpost/cargo/engineering)
@@ -7537,7 +7566,8 @@
 /area/outpost/caves/south_west)
 "JG" = (
 /obj/machinery/door/airlock/mainship/engineering/free_access{
-	dir = 1
+	dir = 2;
+	req_access = list(102)
 	},
 /turf/open/floor/plating,
 /area/outpost/engineering/engine)
@@ -7822,12 +7852,13 @@
 	},
 /area/outpost/engineering)
 "KP" = (
-/obj/machinery/door/airlock/mainship/research/glass/free_access{
-	dir = 8
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
 	dir = 8
+	},
+/obj/machinery/door/airlock/mainship/research/glass/free_access{
+	dir = 8;
+	req_access = list(103)
 	},
 /turf/open/floor/tile/dark,
 /area/outpost/science/hydponics)
@@ -7993,10 +8024,10 @@
 /turf/open/floor/plating/ground/mars/random/sand,
 /area/outpost/yard/north)
 "LM" = (
-/obj/machinery/door/airlock/multi_tile/mainship/research{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/green/hidden,
+/obj/machinery/door/airlock/multi_tile/mainship/research{
+	req_access = list(103)
+	},
 /turf/open/floor/tile/dark,
 /area/outpost/science/xenobiology)
 "LN" = (
@@ -8837,12 +8868,12 @@
 /turf/open/floor/plating/ground/mars/random/cave,
 /area/outpost/caves/north_east)
 "Py" = (
-/obj/machinery/door/airlock/mainship/security/glass/free_access{
-	dir = 1;
-	name = "\improper Marshal Office"
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden,
+/obj/machinery/door/airlock/mainship/security/glass/free_access{
+	dir = 1;
+	req_access = list(3)
+	},
 /turf/open/floor/tile/dark,
 /area/outpost/brig/gear_room)
 "Pz" = (
@@ -9673,7 +9704,8 @@
 /area/outpost/cargo)
 "Tx" = (
 /obj/machinery/door/airlock/mainship/security/glass/free_access{
-	dir = 1
+	dir = 1;
+	req_access = list(3)
 	},
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
 	dir = 1
@@ -10032,10 +10064,11 @@
 /turf/open/floor/tile/dark,
 /area/outpost/hallway/east)
 "UZ" = (
-/obj/machinery/door/airlock/mainship/engineering/free_access{
-	dir = 1
-	},
 /obj/structure/cable,
+/obj/machinery/door/airlock/mainship/engineering/free_access{
+	dir = 2;
+	req_access = list(102)
+	},
 /turf/open/floor/plating,
 /area/outpost/engineering/engine)
 "Va" = (
@@ -10170,10 +10203,10 @@
 /turf/open/floor/wood,
 /area/outpost/dormitories)
 "VK" = (
-/obj/machinery/door/airlock/multi_tile/mainship/research{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/green/hidden,
+/obj/machinery/door/airlock/multi_tile/mainship/research{
+	req_access = list(103)
+	},
 /turf/open/floor/tile/dark,
 /area/outpost/science)
 "VM" = (
@@ -10924,7 +10957,8 @@
 /area/outpost/cargo/engineering)
 "Zn" = (
 /obj/machinery/door/airlock/mainship/research/glass/free_access{
-	dir = 8
+	dir = 8;
+	req_access = list(103)
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/green/hidden{
@@ -11064,10 +11098,11 @@
 /turf/open/floor/tile/dark2,
 /area/outpost/cargo/engineering)
 "ZR" = (
-/obj/machinery/door/airlock/mainship/medical/free_access{
-	dir = 1
-	},
 /obj/structure/cable,
+/obj/machinery/door/airlock/mainship/medical/free_access{
+	dir = 1;
+	req_access = list(104)
+	},
 /turf/open/floor/tile/dark,
 /area/outpost/medbay/storage)
 "ZS" = (
