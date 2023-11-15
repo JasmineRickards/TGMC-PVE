@@ -102,7 +102,7 @@
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/cope/tgmc = 8,
 			/obj/item/cell/lasgun/volkite/powerpack = -1,
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/culverin = 5,
-			/obj/item/weapon/gun/energy/recoillessrifle/lasercannon = 3,
+			/obj/item/weapon/gun/energy/lasgun/lasrifle/lasercannon = 3,
 
 
 
@@ -368,7 +368,7 @@
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/cope/tgmc = 8,
 			/obj/item/cell/lasgun/volkite/powerpack = -1,
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/culverin = 5,
-			/obj/item/weapon/gun/energy/recoillessrifle/lasercannon = 3,
+			/obj/item/weapon/gun/energy/lasgun/lasrifle/lasercannon = 3,
 
 
 
@@ -607,7 +607,7 @@
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/cope/tgmc = -1,
 			/obj/item/cell/lasgun/volkite/powerpack = -1,
 			/obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/culverin = -1,
-			/obj/item/weapon/gun/energy/recoillessrifle/lasercannon = -1,
+			/obj/item/weapon/gun/energy/lasgun/lasrifle/lasercannon = -1,
 
 
 

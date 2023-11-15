@@ -2705,6 +2705,37 @@ datum/ammo/rocket/ap/on_hit_mob(mob/M,obj/projectile/P)
 /datum/ammo/energy/lasgun/marine/heavy_laser/lc/do_at_max_range(turf/T, obj/projectile/P)
 	drop_nade(T.density ? P.loc : T)
 
+/datum/ammo/energy/lasgun/marine/heavy_laser/lc_overcharge
+	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_ENERGY|AMMO_SUNDERING|AMMO_HITSCAN|AMMO_INCENDIARY
+	name = "overcharged pulse beam"
+	hud_state = "pulse"
+	damage = 500 // kill
+	armor_type = BOMB
+	max_range = 40
+	penetration = 15
+	sundering = 30
+	hitscan_effect_icon = "u_laser_beam"
+
+/datum/ammo/energy/lasgun/marine/heavy_laser/lc_overcharge/drop_nade(turf/T, radius = 1)
+	if(!T || !isturf(T))
+		return
+	playsound(T, 'sound/weapons/guns/fire/flamethrower2.ogg', 50, 1, 4)
+	explosion(T, 1, 2, 3, 2)
+	flame_radius(radius, T, 3, 3, 3, 3)
+
+/datum/ammo/energy/lasgun/marine/heavy_laser/lc_overcharge/on_hit_mob(mob/M, obj/projectile/P)
+	drop_nade(get_turf(M))
+
+/datum/ammo/energy/lasgun/marine/heavy_laser/lc_overcharge/on_hit_obj(obj/O, obj/projectile/P)
+	drop_nade(get_turf(O))
+
+/datum/ammo/energy/lasgun/marine/heavy_laser/lc_overcharge/on_hit_turf(turf/T, obj/projectile/P)
+	drop_nade(get_turf(T))
+
+/datum/ammo/energy/lasgun/marine/heavy_laser/lc_overcharge/do_at_max_range(turf/T, obj/projectile/P)
+	drop_nade(get_turf(T))
+
+
 
 /datum/ammo/energy/lasgun/marine/heavy_laser
 	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_ENERGY|AMMO_SUNDERING|AMMO_HITSCAN|AMMO_INCENDIARY

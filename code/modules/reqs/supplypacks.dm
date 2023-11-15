@@ -848,7 +848,7 @@ EXPLOSIVES
 
 /datum/supply_packs/explosives/ai_target_module
 	name = "LC-Incinerator Energy Cannon"
-	contains = list(/obj/item/weapon/gun/energy/recoillessrifle/lasercannon)
+	contains = list(/obj/item/weapon/gun/energy/lasgun/lasrifle/lasercannon)
 	cost = 5
 /*******************************************************************************
 ARMOR
