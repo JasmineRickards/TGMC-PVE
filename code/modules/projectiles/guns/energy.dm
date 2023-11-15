@@ -1260,3 +1260,71 @@
 			if(!CHECK_BITFIELD(xeno.xeno_caste.caste_flags, CASTE_PLASMADRAIN_IMMUNE))
 				xeno.use_plasma(round(xeno.xeno_caste.plasma_regen_limit * xeno.xeno_caste.plasma_max * 0.2)) //One fifth of the xeno's regeneratable plasma per hit.
 	return ..()
+
+// LC - INCINERATOR //
+
+/obj/item/weapon/gun/energy/lasgun/lasrifle/lasercannon
+	name = "\improper LC-Incinerator  Artillery"
+	desc = "The LC-Incinerator Artillery is a long range energy ordanance device used by the TGMC used to fire incendiary explosive bolts at far distances. Usually used in conjunction with the M-70 power pack, but also supports smaller cells"
+	icon = 'icons/Marine/gun64.dmi'
+	item_state = "t160_l"
+	icon_state = "t160_l"
+	ammo_level_icon = "t160_l"
+	reload_sound = 'sound/weapons/guns/interact/minigun_cocked.ogg'
+	fire_sound = 'sound/weapons/guns/fire/laser_rifle_2.ogg'
+	load_method = CELL //codex
+	ammo_datum_type  = /datum/ammo/energy/lasgun/marine/heavy_laser/lc
+	recoil = 3
+	scatter = -100
+	fire_delay = 0.3 SECONDS
+	rounds_per_shot = 250 //changed from 300 so it plays nice with normal energy cells
+	windup_delay = 0.3 SECONDS
+
+	w_class = WEIGHT_CLASS_HUGE
+	wield_delay = 1 SECONDS
+	wield_penalty = 1.6 SECONDS
+	aim_slowdown = 1
+
+	allowed_ammo_types = list(
+		/obj/item/cell/lasgun/volkite/powerpack,
+		/obj/item/cell/lasgun/volkite/turret,
+		/obj/item/cell/lasgun/lasrifle
+	)
+
+	attachable_allowed = list(
+		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/scope/mini
+	)
+
+	flags_equip_slot = ITEM_SLOT_BACK
+	muzzleflash_iconstate = "muzzle_flash_laser"
+	w_class = WEIGHT_CLASS_BULKY
+	flags_gun_features = GUN_AMMO_COUNTER|GUN_AMMO_COUNT_BY_SHOTS_REMAINING|GUN_WIELDED_FIRING_ONLY
+	force = 15
+	gun_skill_category = GUN_SKILL_FIREARMS
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 26, "rail_y" = 24, "under_x" = 19, "under_y" = 14, "stock_x" = 19, "stock_y" = 14)
+
+	mode_list = list(
+		"Standard" = /datum/lasrifle/base/lasercannon_mode/standard,
+		"Overcharge" = /datum/lasrifle/base/lasercannon_mode/overcharge
+	)
+
+/datum/lasrifle/base/lasercannon_mode/standard
+	rounds_per_shot = 250
+	ammo_datum_type = /datum/ammo/energy/lasgun/marine/heavy_laser/lc
+	fire_delay = 0.3 SECONDS
+	fire_sound = 'sound/weapons/guns/fire/laser_rifle_2.ogg'
+	message_to_user = "You set the Laser cannons's charge mode to standard fire."
+	fire_mode = GUN_FIREMODE_AUTOMATIC
+	icon_state = "t160_l"
+
+
+/datum/lasrifle/base/lasercannon_mode/overcharge
+	rounds_per_shot = 2500
+	ammo_datum_type = /datum/ammo/energy/lasgun/marine/heavy_laser/lc_overcharge
+	fire_delay = 2 SECONDS
+	fire_sound = 'sound/weapons/guns/fire/laser_rifle_2.ogg'
+	message_to_user = "You set the Laser cannons's charge mode to overcharge."
+	fire_mode = GUN_FIREMODE_SEMIAUTO
+	icon_state = "t160_l"
+	radial_icon_state = "laser_overcharge"
