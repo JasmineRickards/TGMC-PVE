@@ -1265,7 +1265,7 @@
 
 /obj/item/weapon/gun/energy/lasgun/lasrifle/lasercannon
 	name = "\improper LC-Incinerator  Artillery"
-	desc = "The LC-Incinerator Artillery is a long range energy ordanance device used by the TGMC used to fire incendiary explosive bolts at far distances. ussualy used in conjunction with the M-70 power pack, but supports smaller cells"
+	desc = "The LC-Incinerator Artillery is a long range energy ordanance device used by the TGMC used to fire incendiary explosive bolts at far distances. Usually used in conjunction with the M-70 power pack, but also supports smaller cells"
 	icon = 'icons/Marine/gun64.dmi'
 	item_state = "t160_l"
 	icon_state = "t160_l"
