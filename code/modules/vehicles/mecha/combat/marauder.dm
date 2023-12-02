@@ -7,7 +7,7 @@
 	move_delay = 5
 //	minimap_icon = "mech_pilot"
 	max_integrity = 500
-	soft_armor = list(MELEE = 50, BULLET = 75, LASER = 40, ENERGY = 30, BOMB = 30, BIO = 0, FIRE = 100, ACID = 100)
+	soft_armor = list(MELEE = 50, BULLET = 75, LASER = 75, ENERGY = 30, BOMB = 30, BIO = 0, FIRE = 100, ACID = 100)
 	max_temperature = 60000
 	wreckage = /obj/structure/mecha_wreckage/marauder
 	mecha_flags = CANSTRAFE | IS_ENCLOSED | HAS_HEADLIGHTS
@@ -70,7 +70,7 @@
 
 /obj/vehicle/sealed/mecha/combat/marauder/seraph
 	desc = "Heavy-duty,Front line assault suit, intended for heavy duty attacks."
-	name = "\improper Heavy Combat Suit"
+	name = "\improper Assault Mobile Suit mk.1"
 	icon_state = "seraph"
 	base_icon_state = "seraph"
 	move_delay = 3

@@ -58,6 +58,13 @@
 	rounds = 900
 	ammo_type = MECHA_AMMO_LMG
 
+/obj/item/mecha_ammo/lmg/vulcanminigun
+	name = "16mm ammunition"
+	desc = "A box of linked ammunition, designed for the Vulkan Minigun exosuit weapon."
+	icon_state = "minigun_ammo"
+	rounds = 1200
+	ammo_type = MECHA_AMMO_MINIGUN
+
 /obj/item/mecha_ammo/missiles_br
 	name = "AP-HE rounds"
 	desc = "A box of cannon shells, used for the mobile suit's Heavy weapons, or the AP-HE cannon to be specific."

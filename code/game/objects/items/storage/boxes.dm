@@ -83,15 +83,15 @@
 	storage_slots = null
 	max_w_class = 2 //Changed because of in-game abuse
 	w_class = 3
-	spawn_number = 1
-	spawn_type = list(
-		/obj/item/tool/crowbar/red,
-		/obj/item/flashlight/combat,
-		/obj/item/stack/medical/heal_pack/ointment,
-		/obj/item/stack/medical/heal_pack/gauze,
-		/obj/item/reagent_containers/hypospray/autoinjector/inaprovaline,
-		/obj/item/reagent_containers/food/snacks/protein_pack,
-	)
+
+/obj/item/storage/box/emergency/Initialize(mapload, ...)
+	. = ..()
+	new	/obj/item/tool/crowbar/red(src)
+	new	/obj/item/flashlight/combat(src)
+	new	/obj/item/stack/medical/heal_pack/ointment(src)
+	new	/obj/item/stack/medical/heal_pack/gauze(src)
+	new	/obj/item/reagent_containers/hypospray/autoinjector/inaprovaline(src)
+	new	/obj/item/reagent_containers/food/snacks/protein_pack(src)
 
 
 /obj/item/storage/box/gloves

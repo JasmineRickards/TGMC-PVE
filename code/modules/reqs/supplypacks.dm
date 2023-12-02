@@ -1914,6 +1914,16 @@ VEHICLES
 	cost = 5
 	contains = list(/obj/item/mecha_ammo/lmg)
 
+/datum/supply_packs/vehicles/mechmin
+	name = "FS-M Mobile suit Vulcan Minigun"
+	cost = 90
+	contains = list(/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/vulcanminigun)
+
+/datum/supply_packs/vehicles/mechminammo
+	name = "FS-M Mobile suit Vulcan Minigun ammo"
+	cost = 10
+	contains = list(/obj/item/mecha_ammo/lmg/vulcanminigun)
+
 /datum/supply_packs/vehicles/mechaphegun
 	name = "67mm AP-HE autocannon"
 	cost = 75
@@ -1926,7 +1936,7 @@ VEHICLES
 
 /datum/supply_packs/vehicles/mechshottie
 	name = "Mobile suit scattergun"
-	cost = 35
+	cost = 50
 	contains = list(/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot)
 
 /datum/supply_packs/vehicles/mechshottieammo
