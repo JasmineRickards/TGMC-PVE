@@ -832,6 +832,13 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	keyslot2 = /obj/item/encryptionkey/director/colony
 	keyslot = /obj/item/encryptionkey/squadlead
 
+/obj/item/radio/headset/mainship/distress/PMC
+	name = "contractor headset"
+	keyslot = /obj/item/encryptionkey/PMC
+	keyslot2 = /obj/item/encryptionkey/mcom
+	frequency = FREQ_PMC
+	minimap_type = /datum/action/minimap/marine
+
 //Distress headsets.
 /obj/item/radio/headset/distress
 	name = "operative headset"

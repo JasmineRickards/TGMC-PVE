@@ -1117,29 +1117,29 @@ datum/ammo/bullet/shotgun/tx15_slug/on_hit_mob(mob/M, obj/projectile/P)
 	icon_state = "buckshot"
 	hud_state = "shotgun_buckshot"
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/mech/spread
-	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_IFF
-	bonus_projectiles_amount = 2
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	bonus_projectiles_amount = 5
 	bonus_projectiles_scatter = 5
 	accuracy_var_low = 10
 	accuracy_var_high = 10
 	max_range = 10
-	damage = 100
-	penetration = 25
+	damage = 75
+	penetration = 20
 	damage_falloff = 2
 	sundering = 10
 
 /datum/ammo/bullet/shotgun/mech/spread
 	name = "super-heavy additional buckshot"
 	icon_state = "buckshot"
-	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_IFF
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
 	max_range = 10
-	damage = 75
-	penetration = 25
+	damage = 60
+	penetration = 20
 	damage_falloff = 2
 	sundering = 10
 
 datum/ammo/bullet/shotgun/mech/on_hit_mob(mob/M, obj/projectile/proj)
-	staggerstun(M, proj, weaken = 1, stagger = 1, knockback = 2, slowdown = 0.5, max_range = 3)
+	staggerstun(M, proj, weaken = 1, stagger = 1, knockback = 1, slowdown = 0.5, max_range = 2)
 
 /*
 //================================================
@@ -1382,13 +1382,15 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 
 /datum/ammo/bullet/minigun/mech
 	name = "vulcan bullet"
-	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_IFF
-	damage = 50
-	penetration = 20
+	hud_state = "minigun"
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	damage = 100
+	penetration = 40
 	accuracy_var_low = 0.5
 	accuracy_var_high = 0.5
 	accurate_range = 7
-	sundering = 1
+	shrapnel_chance = 30
+	sundering = 10
 
 /datum/ammo/bullet/dual_cannon
 	name = "dualcannon bullet"

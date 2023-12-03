@@ -11,6 +11,7 @@
 	title = "PMC Standard"
 	paygrade = "PMC1"
 	outfit = /datum/outfit/job/pmc/standard
+	minimap_icon = "nt_st"
 
 
 /datum/outfit/job/pmc/standard
@@ -19,7 +20,7 @@
 
 	id = /obj/item/card/id/silver
 	belt = /obj/item/storage/belt/gun/pistol/m4a3/vp70
-	ears = /obj/item/radio/headset/distress/PMC
+	ears = /obj/item/radio/headset/mainship/distress/PMC
 	w_uniform = /obj/item/clothing/under/marine/veteran/PMC
 	shoes = /obj/item/clothing/shoes/veteran/PMC
 	wear_suit = /obj/item/clothing/suit/storage/marine/veteran/PMC
@@ -55,7 +56,7 @@
 	paygrade = "PMC2"
 	skills_type = /datum/skills/smartgunner/pmc
 	outfit = /datum/outfit/job/pmc/gunner
-
+	minimap_icon = "nt_sg"
 
 /datum/outfit/job/pmc/gunner
 	name = "PMC Gunner"
@@ -63,7 +64,7 @@
 
 	id = /obj/item/card/id/silver
 	belt = /obj/item/storage/belt/gun/pistol/m4a3/vp70
-	ears = /obj/item/radio/headset/distress/PMC
+	ears = /obj/item/radio/headset/mainship/distress/PMC
 	w_uniform = /obj/item/clothing/under/marine/veteran/PMC
 	shoes = /obj/item/clothing/shoes/veteran/PMC
 	wear_suit = /obj/item/clothing/suit/storage/marine/smartgunner/veteran/PMC
@@ -105,6 +106,7 @@
 	paygrade = "PMC3"
 	skills_type = /datum/skills/specialist/pmc
 	outfit = /datum/outfit/job/pmc/sniper
+	minimap_icon = "nt_sniper"
 
 
 /datum/outfit/job/pmc/sniper
@@ -113,7 +115,7 @@
 
 	id = /obj/item/card/id/silver
 	belt = /obj/item/storage/belt/gun/pistol/m4a3/vp70
-	ears = /obj/item/radio/headset/distress/PMC
+	ears = /obj/item/radio/headset/mainship/distress/PMC
 	w_uniform = /obj/item/clothing/under/marine/veteran/PMC
 	shoes = /obj/item/clothing/shoes/veteran/PMC
 	wear_suit = /obj/item/clothing/suit/storage/marine/veteran/PMC/sniper
@@ -150,6 +152,7 @@
 	paygrade = "PMC4"
 	skills_type = /datum/skills/sl/pmc
 	outfit = /datum/outfit/job/pmc/leader
+	minimap_icon = "nt_leader"
 
 
 /datum/outfit/job/pmc/leader
@@ -158,7 +161,7 @@
 
 	id = /obj/item/card/id/silver
 	belt = /obj/item/storage/belt/gun/pistol/m4a3/vp78
-	ears = /obj/item/radio/headset/distress/PMC
+	ears = /obj/item/radio/headset/mainship/distress/PMC
 	w_uniform = /obj/item/clothing/under/marine/veteran/PMC/leader
 	shoes = /obj/item/clothing/shoes/veteran/PMC
 	wear_suit = /obj/item/clothing/suit/storage/marine/veteran/PMC/leader
@@ -187,6 +190,7 @@
 	H.equip_to_slot_or_del(new /obj/item/explosive/grenade/impact, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/ap, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/defibrillator, SLOT_IN_BACKPACK)
 
 /datum/job/ert
 	job_category = JOB_CAT_MARINE

@@ -524,13 +524,19 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 
 /datum/skills/pmc
 	name = "PMC Private"
-	construction = SKILL_CONSTRUCTION_METAL
-	engineer = SKILL_ENGINEER_METAL
+	cqc = 2
+	melee_weapons = 1
+	firearms = 2
+	construction = 2
+	engineer = 2
+	medical = 2
+	surgery = 1
+	police = 2
 
 /datum/skills/ert
 	name = "ERT Grunt"
 	cqc = 5
-	melee_weapons = 1
+	melee_weapons = 2
 	firearms = 2
 	engineer = 2
 	construction = 2
@@ -598,12 +604,21 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 
 /datum/skills/sl/pmc
 	name = "PMC Leader"
+	cqc = 4
+	melee_weapons = 1
 	firearms = SKILL_FIREARMS_TRAINED
 	pistols = SKILL_PISTOLS_TRAINED
 	smgs = SKILL_SMGS_TRAINED
 	rifles = SKILL_RIFLES_TRAINED
 	shotguns = SKILL_SHOTGUNS_TRAINED
 	heavy_weapons = SKILL_HEAVY_WEAPONS_TRAINED
+	leadership = 5
+	medical = 4
+	surgery = 3
+	construction = 4
+	engineer = 4
+	police = 2
+
 /datum/skills/sl/pmc/special_forces
 	name = "Special Force Leader"
 	police = SKILL_POLICE_MP
@@ -619,7 +634,19 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 
 /datum/skills/specialist/pmc
 	name = "PMC Specialist"
-	engineer = SKILL_ENGINEER_METAL
+	cqc = 4
+	melee_weapons = 1
+	firearms = SKILL_FIREARMS_TRAINED
+	pistols = SKILL_PISTOLS_TRAINED
+	smgs = SKILL_SMGS_TRAINED
+	rifles = SKILL_RIFLES_TRAINED
+	shotguns = SKILL_SHOTGUNS_TRAINED
+	heavy_weapons = SKILL_HEAVY_WEAPONS_TRAINED
+	engineer = 3
+	construction = 3
+	medical = 3
+	surgery = 2
+	police = 2
 
 /datum/skills/specialist/upp
 	name = "UPP Specialist"
@@ -641,8 +668,9 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 
 /datum/skills/smartgunner/pmc
 	name = "PMC Smartgunner"
-	cqc = SKILL_CQC_TRAINED
-	construction = SKILL_CONSTRUCTION_METAL
+	cqc = 3
+	engineer = 2
+	construction = 2
 	firearms = SKILL_FIREARMS_TRAINED
 	smartgun = SKILL_SMART_TRAINED
 	leadership = SKILL_LEAD_BEGINNER
@@ -652,6 +680,8 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	rifles = SKILL_RIFLES_TRAINED
 	shotguns = SKILL_SHOTGUNS_TRAINED
 	heavy_weapons = SKILL_HEAVY_WEAPONS_TRAINED
+	medical = 3
+	police = 2
 
 /datum/skills/commando
 	name = "Commando"

@@ -154,7 +154,7 @@
 	desc = "It's a very fancy satchel made with fine leather."
 	icon_state = "satchel"
 	storage_slots = null
-	max_storage_space = 15
+	max_storage_space = 20
 	access_delay = 0
 
 /obj/item/storage/backpack/satchel/withwallet/Initialize(mapload, ...)

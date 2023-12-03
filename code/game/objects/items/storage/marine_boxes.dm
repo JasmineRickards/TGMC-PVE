@@ -1014,9 +1014,9 @@
 
 /obj/item/storage/box/squadmarine/mech/weapon/artillery/Initialize(mapload, ...)
 	. = ..()
-	new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack(src)
+	new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/breaching(src)
 	new	/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/sabot(src)
-	new /obj/item/mecha_ammo/missiles_he(src)
+	new /obj/item/mecha_ammo/missiles_br(src)
 	new /obj/item/mecha_ammo/missiles_sabot(src)
 
 /obj/item/storage/box/squadmarine/mech/armor

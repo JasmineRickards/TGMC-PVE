@@ -313,7 +313,7 @@
 	fire_sound = 'sound/weapons/guns/fire/shotgun_light.ogg'
 	icon_state = "mecha_scatter"
 	equip_cooldown = 20
-	ammotype = /datum/ammo/bullet/shotgun/buckshot
+	ammotype = /datum/ammo/bullet/shotgun/mech
 	projectiles = 40
 	projectiles_cache = 40
 	projectiles_cache_max = 180
@@ -336,6 +336,23 @@
 	projectile_delay = 2
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_LMG
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/vulcanminigun
+	name = "\improper vulcan minigun"
+	fire_sound = 'sound/mecha/weapons/mech_minigun.ogg'
+	desc = "A weapon for combat exosuits. Shoots a rapid bursts."
+	icon = 'icons/mecha/mecha_equipment_64x32.dmi'
+	icon_state = "minigun"
+	equip_cooldown = 10
+	ammotype = /datum/ammo/bullet/minigun/mech
+	projectiles = 1000
+	fire_delay = 0.1 SECONDS
+	projectiles_cache = 1000
+	projectiles_cache_max = 5000
+	variance = 8
+	projectile_delay = 0.25
+	harmful = TRUE
+	ammo_type = MECHA_AMMO_MINIGUN
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack
 	name = "\improper SRM-8 missile rack"
