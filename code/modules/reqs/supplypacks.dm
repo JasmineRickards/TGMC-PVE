@@ -1916,7 +1916,7 @@ VEHICLES
 
 /datum/supply_packs/vehicles/mechmin
 	name = "FS-M Mobile suit Vulcan Minigun"
-	cost = 90
+	cost = 120
 	contains = list(/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/vulcanminigun)
 
 /datum/supply_packs/vehicles/mechminammo
