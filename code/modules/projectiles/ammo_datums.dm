@@ -1384,8 +1384,8 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	name = "vulcan bullet"
 	hud_state = "minigun"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
-	damage = 100
-	penetration = 40
+	damage = 45
+	penetration = 25
 	accuracy_var_low = 0.5
 	accuracy_var_high = 0.5
 	accurate_range = 7
