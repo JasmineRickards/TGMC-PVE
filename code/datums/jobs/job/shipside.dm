@@ -611,6 +611,14 @@ You can serve your Division in a variety of roles, so choose carefully."})
 			new_human.wear_id.paygrade = "E4"
 		if(7501 to INFINITY) // 125 hrs
 			new_human.wear_id.paygrade = "E5"
+		if(1501 to 4500) // 25 hrs
+			new_human.wear_id.paygrade = "E6"
+		if(4501 to 7500) // 75 hrs
+			new_human.wear_id.paygrade = "E7"
+		if(7501 to 18000) // 125 hrs
+			new_human.wear_id.paygrade = "E8E"
+		if(18001 to INFINITY) // 300 hrs
+			new_human.wear_id.paygrade = "E9E"
 
 /datum/outfit/job/command/mech_pilot
 	name = MECH_PILOT
