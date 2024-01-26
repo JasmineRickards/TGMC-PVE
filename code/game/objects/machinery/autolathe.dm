@@ -273,8 +273,8 @@
 	for(var/obj/item/stock_parts/matter_bin/MB in component_parts)
 		tot_rating += MB.rating
 
-	storage_capacity[/datum/material/metal] = tot_rating  * 25000
-	storage_capacity[/datum/material/glass] = tot_rating  * 12500
+	storage_capacity[/datum/material/metal] = tot_rating  * 750000
+	storage_capacity[/datum/material/glass] = tot_rating  * 125000
 
 /obj/machinery/autolathe/deconstruct()
 	var/list/sheets = list(/datum/material/metal = /obj/item/stack/sheet/metal, /datum/material/glass = /obj/item/stack/sheet/glass)

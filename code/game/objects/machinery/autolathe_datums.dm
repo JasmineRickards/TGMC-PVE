@@ -263,3 +263,103 @@ GLOBAL_LIST_EMPTY(autolathe_categories)
 	name = "Conveyor Switch"
 	path = /obj/item/conveyor_switch_construct
 	category = "Devices and Components"
+
+/datum/autolathe/recipe/mechalmg
+	name = "Exosuit 12.7mm Autocannon"
+	path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechalmgammo
+	name = "Exosuit 12.7mm Autocannon ammo"
+	path = /obj/item/mecha_ammo/lmg
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechashottie
+	name = "Exosuit LBX AC 10 Scattershot"
+	path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechashottieammo
+	name = "Exosuit LBX AC 10 Scattershot Ammo"
+	path = /obj/item/mecha_ammo/scattershot
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechaatgun
+	name = "Exosuit AT-12 arm mounted cannon"
+	path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/breaching
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechaatgunammo
+	name = "Exosuit AP-HE rounds"
+	path = /obj/item/mecha_ammo/missiles_he
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechaapgun
+	name = "Exosuit AT-12 arm mounted SABOT cannon"
+	path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/sabot
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechaapgunammo
+	name = "Exosuit anti-armor sabots"
+	path = /obj/item/mecha_ammo/missiles_sabot
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechalassmg
+	name = "Exosuit Mnemosyne laser SMG"
+	path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_smg
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechalascannon
+	name = "Exosuit Gyges laser projector"
+	path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_projector
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechagygax
+	name = "Mobile Scout Suit mk.1"
+	path = /obj/vehicle/sealed/mecha/combat/gygax
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechagygaxmk2
+	name = "Mobile Scout Suit mk.2"
+	path = /obj/vehicle/sealed/mecha/combat/gygax/darkTGMC
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechamarauder
+	name = "Defensive Mobile Suit mk.1"
+	path = /obj/vehicle/sealed/mecha/combat/marauder
+	category = "Engineering"
+/obj/item/cell/mecha/large
+/datum/autolathe/recipe/mechamaraudermk2
+	name = "Heavy Combat Suit"
+	path = /obj/vehicle/sealed/mecha/combat/marauder/seraphtgmc
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechacells
+	name = "Exosuit small radiotope cell"
+	path = /obj/item/cell/mecha
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechacellm
+	name = "Exosuit medium radiotope cell"
+	path = /obj/item/cell/mecha/medium
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechacellh
+	name = "Exosuit large radiotope cell"
+	path = /obj/item/cell/mecha/large
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechaarmorclaw
+	name = "Exosuit claw armor booster module (Close Combat Weaponry)"
+	path = /obj/item/mecha_parts/mecha_equipment/armor/anticcw_armor_booster
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechaarmorproj
+	name = "Exosuit ballistic armor booster (Ranged Weaponry)"
+	path = /obj/item/mecha_parts/mecha_equipment/armor/antiproj_armor_booster
+	category = "Engineering"
+
+/datum/autolathe/recipe/mecharepairdroid
+	name = "Exosuit repair droid"
+	path = /obj/item/mecha_parts/mecha_equipment/repair_droid
+	category = "Engineering"

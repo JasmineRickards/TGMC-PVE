@@ -30,6 +30,7 @@
 	iconstate_name = "melee"
 	protect_name = "Melee Armor"
 	armor_mod = list(MELEE = 15, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+	materials = list(/datum/material/metal = 50000)
 
 /obj/item/mecha_parts/mecha_equipment/armor/antiproj_armor_booster
 	name = "Ballistic armor booster (Ranged Weaponry)"
@@ -38,6 +39,7 @@
 	iconstate_name = "range"
 	protect_name = "Ranged Armor"
 	armor_mod = list(MELEE = 0, BULLET = 35, LASER = 35, ENERGY = 0, BOMB = 45, BIO = 0, FIRE = 0, ACID = 0)
+	materials = list(/datum/material/metal = 50000)
 
 
 ////////////////////////////////// REPAIR DROID //////////////////////////////////////////////////
@@ -56,6 +58,7 @@
 	///overlay to show on the mech
 	var/image/droid_overlay
 	var/list/repairable_damage = list(MECHA_INT_TEMP_CONTROL,MECHA_INT_TANK_BREACH)
+	materials = list(/datum/material/metal = 75000)
 
 /obj/item/mecha_parts/mecha_equipment/repair_droid/Destroy()
 	STOP_PROCESSING(SSobj, src)

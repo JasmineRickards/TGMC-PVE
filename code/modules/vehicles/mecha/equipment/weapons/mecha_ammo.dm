@@ -50,6 +50,7 @@
 	icon_state = "scattershot"
 	rounds = 40
 	ammo_type = MECHA_AMMO_BUCKSHOT
+	materials = list(/datum/material/metal = 20000)
 
 /obj/item/mecha_ammo/lmg
 	name = "12.7mm ammunition"
@@ -57,6 +58,7 @@
 	icon_state = "lmg"
 	rounds = 900
 	ammo_type = MECHA_AMMO_LMG
+	materials = list(/datum/material/metal = 25000)
 
 /obj/item/mecha_ammo/lmg/vulcanminigun
 	name = "16mm ammunition"
@@ -82,6 +84,7 @@
 	direct_load = FALSE
 	load_audio = 'sound/mecha/mag_bullet_insert.ogg'
 	ammo_type = MECHA_AMMO_MISSILE_AP
+	materials = list(/datum/material/metal = 10000)
 
 /obj/item/mecha_ammo/missiles_sabot
 	name = "anti-armor sabots"

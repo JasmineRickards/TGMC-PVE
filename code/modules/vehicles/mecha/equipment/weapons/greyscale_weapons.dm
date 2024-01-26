@@ -251,6 +251,7 @@
 //	slowdown = 0.4
 	harmful = TRUE
 	fire_mode = GUN_FIREMODE_AUTOBURST
+	materials = list(/datum/material/metal = 75000, /datum/material/glass = 15000)
 
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_smg
 	name = "\improper Mnemosyne laser SMG"
@@ -271,6 +272,7 @@
 //	slowdown = 0.2
 	harmful = TRUE
 	fire_mode = GUN_FIREMODE_AUTOMATIC
+	materials = list(/datum/material/metal = 60000, /datum/material/glass = 30000)
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/heavy_cannon
 	name = "\improper Themis heavy cannon"

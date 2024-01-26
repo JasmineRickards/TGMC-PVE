@@ -22,6 +22,7 @@
 		MECHA_ARMOR = 2,
 	)
 	step_energy_drain = 3
+	materials = list(/datum/material/metal = 120000)
 
 /obj/vehicle/sealed/mecha/combat/gygax/generate_actions()
 	. = ..()
@@ -89,6 +90,7 @@
 		MECHA_ARMOR = list(/obj/item/mecha_parts/mecha_equipment/armor/anticcw_armor_booster, /obj/item/mecha_parts/mecha_equipment/armor/antiproj_armor_booster),
 	)
 	destruction_sleep_duration = 20
+	materials = list(/datum/material/metal = 160000)
 
 /obj/vehicle/sealed/mecha/combat/gygax/dark/loaded/Initialize(mapload)
 	. = ..()
@@ -112,3 +114,4 @@
 		MECHA_POWER = 1,
 		MECHA_ARMOR = 3,
 	)
+	materials = list(/datum/material/metal = 200000)

@@ -8,6 +8,13 @@
 	mouse_pointer = 'icons/mecha/mecha_mouse.dmi'
 	return ..()
 
+/obj/vehicle/sealed/mecha/combat/mob_try_enter(mob/M)
+	if(M.skills.getRating("large_vehicle") < SKILL_LARGE_VEHICLE_TRAINED)
+		balloon_alert(M, "You don't know how to pilot this")
+		return FALSE
+	return ..()
+
+
 /obj/vehicle/sealed/mecha/combat/proc/max_ammo() //Max the ammo stored for Nuke Ops mechs, or anyone else that calls this
 	for(var/obj/item/I AS in flat_equipment)
 		if(istype(I, /obj/item/mecha_parts/mecha_equipment/weapon/ballistic))

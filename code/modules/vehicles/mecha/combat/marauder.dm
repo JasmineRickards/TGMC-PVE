@@ -19,6 +19,7 @@
 		MECHA_ARMOR = 3,
 	)
 	bumpsmash = FALSE
+	materials = list(/datum/material/metal = 350000)
 
 /obj/vehicle/sealed/mecha/combat/marauder/generate_actions()
 	. = ..()
@@ -103,6 +104,7 @@
 		MECHA_POWER = 2,
 		MECHA_ARMOR = 3,
 	)
+	materials = list(/datum/material/metal = 500000)
 
 /obj/vehicle/sealed/mecha/combat/marauder/mauler
 	desc = "Heavy-duty, combat exosuit, developed off of the existing Marauder model."

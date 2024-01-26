@@ -144,6 +144,7 @@
 	self_recharge = TRUE
 	charge_amount = 100
 	charge_delay = 2 SECONDS //One hit on a resin thingy every 4 seconds, or one actual wall every 40 seconds.
+	materials = list(/datum/material/metal = 35000, /datum/material/glass = 15000)
 
 /obj/item/cell/mecha/medium
 	name = "medium radiotope cell"
@@ -151,6 +152,7 @@
 	self_recharge = TRUE
 	charge_amount = 250
 	charge_delay = 2 SECONDS //One hit on a resin thingy every 4 seconds, or one actual wall every 40 seconds.
+	materials = list(/datum/material/metal = 65000, /datum/material/glass = 15000)
 
 /obj/item/cell/mecha/large
 	name = "large radiotope cell"
@@ -158,3 +160,4 @@
 	self_recharge = TRUE
 	charge_amount = 500
 	charge_delay = 2 SECONDS //One hit on a resin thingy every 4 seconds, or one actual wall every 40 seconds.
+	materials = list(/datum/material/metal = 95000, /datum/material/glass = 15000)

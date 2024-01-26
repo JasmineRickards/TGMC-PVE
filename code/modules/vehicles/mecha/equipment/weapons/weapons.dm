@@ -320,6 +320,7 @@
 	variance = 25
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_BUCKSHOT
+	materials = list(/datum/material/metal = 125000)
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
 	name = "\improper 12.7mm autocannon"
@@ -336,6 +337,7 @@
 	projectile_delay = 2
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_LMG
+	materials = list(/datum/material/metal = 30000)
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/vulcanminigun
 	name = "\improper vulcan minigun"
@@ -353,6 +355,7 @@
 	projectile_delay = 0.25
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_MINIGUN
+	materials = list(/datum/material/metal = 200000)
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack
 	name = "\improper SRM-8 missile rack"
@@ -368,6 +371,7 @@
 	equip_cooldown = 60
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_MISSILE_HE
+	materials = list(/datum/material/metal = 125000)
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/breaching
 	name = "\improper AT-12 arm mounted cannon"
@@ -383,6 +387,7 @@
 	equip_cooldown = 60
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_MISSILE_AP
+	materials = list(/datum/material/metal = 25000)
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/sabot
 	name = "\improper AT-12 arm mounted SABOT cannon"
