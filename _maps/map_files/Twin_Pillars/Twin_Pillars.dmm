@@ -3008,6 +3008,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/vehicle/sealed/mecha/combat/gygax/darkTGMC,
 /turf/open/floor/mainship/mono,
 /area/mainship/squads/req/rebel)
 "cRv" = (
@@ -9205,6 +9206,14 @@
 	},
 /turf/open/floor/mainship/mono,
 /area/mainship/living/numbertwobunks/rebel)
+"irj" = (
+/obj/structure/cable,
+/obj/item/mecha_ammo/lmg,
+/obj/item/mecha_ammo/lmg,
+/obj/item/mecha_ammo/lmg,
+/obj/item/mecha_ammo/lmg,
+/turf/open/floor/plating/plating_catwalk,
+/area/mainship/squads/req/rebel)
 "isA" = (
 /obj/machinery/door/airlock/mainship/maint/rebel{
 	dir = 2
@@ -9515,6 +9524,13 @@
 /obj/machinery/vending/armor_supply/loyalist,
 /turf/open/floor/mainship,
 /area/mainship/squads/general)
+"iHO" = (
+/obj/machinery/door/poddoor/railing{
+	id = "supply_elevator_railing"
+	},
+/obj/item/mecha_parts/mecha_equipment/repair_droid,
+/turf/open/floor/mainship,
+/area/mainship/squads/req/rebel)
 "iHW" = (
 /obj/effect/decal/warning_stripes/thin{
 	dir = 8
@@ -12209,6 +12225,7 @@
 /obj/machinery/alarm{
 	dir = 4
 	},
+/obj/vehicle/sealed/mecha/combat/gygax/darkTGMC,
 /turf/open/floor/plating/plating_catwalk,
 /area/mainship/squads/req/rebel)
 "laj" = (
@@ -22555,6 +22572,7 @@
 /obj/machinery/gear{
 	id = "supply_elevator_gear"
 	},
+/obj/item/mecha_parts/mecha_equipment/repair_droid,
 /turf/open/floor/mainship/mono,
 /area/mainship/squads/req/rebel)
 "tXF" = (
@@ -24259,6 +24277,10 @@
 /obj/machinery/firealarm{
 	dir = 4
 	},
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
+/obj/item/cell/mecha,
+/obj/item/cell/mecha,
 /turf/open/floor/plating/plating_catwalk,
 /area/mainship/squads/req/rebel)
 "vxt" = (
@@ -41055,7 +41077,7 @@ xCV
 vxb
 cRo
 lah
-yaI
+irj
 yik
 wPF
 ncO
@@ -41310,7 +41332,7 @@ mGD
 mGD
 lCj
 mGD
-mGD
+iHO
 tXB
 yaI
 fEE

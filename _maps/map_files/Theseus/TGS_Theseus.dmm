@@ -7380,6 +7380,8 @@
 /turf/open/floor/mainship/silver,
 /area/mainship/hull/starboard_hull)
 "bZv" = (
+/obj/item/mecha_parts/mecha_equipment/repair_droid,
+/obj/item/mecha_parts/mecha_equipment/repair_droid,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 4
 	},
@@ -8762,6 +8764,9 @@
 	},
 /area/mainship/squads/delta)
 "dIh" = (
+/obj/item/cell/mecha,
+/obj/item/mecha_ammo/lmg,
+/obj/item/mecha_ammo/lmg,
 /turf/open/floor/plating/icefloor/warnplate,
 /area/mainship/living/tankerbunks)
 "dIX" = (
@@ -10545,6 +10550,7 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/mainship/command/corporateliaison)
 "gIn" = (
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 9
 	},
@@ -11246,6 +11252,9 @@
 	},
 /area/mainship/hallways/hangar)
 "hTN" = (
+/obj/item/cell/mecha,
+/obj/item/mecha_ammo/lmg,
+/obj/item/mecha_ammo/lmg,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 1
 	},
@@ -12165,6 +12174,7 @@
 	},
 /area/mainship/squads/req)
 "jFp" = (
+/obj/vehicle/sealed/mecha/combat/gygax/darkTGMC,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 5
 	},
@@ -16425,6 +16435,7 @@
 /turf/open/floor/mainship/mono,
 /area/mainship/squads/alpha)
 "qDv" = (
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 10
 	},
@@ -16646,6 +16657,7 @@
 /obj/machinery/door_control/mainship/mech{
 	dir = 1
 	},
+/obj/vehicle/sealed/mecha/combat/gygax/darkTGMC,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 6
 	},
@@ -17366,7 +17378,6 @@
 /turf/open/floor/mainship/mono,
 /area/mainship/command/corporateliaison)
 "skp" = (
-/obj/machinery/computer/mech_builder,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 8
 	},

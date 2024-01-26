@@ -9163,9 +9163,7 @@
 /turf/open/floor/wood,
 /area/sulaco/liaison)
 "aUV" = (
-/obj/machinery/computer/mech_builder{
-	dir = 2
-	},
+/obj/vehicle/sealed/mecha/combat/gygax/darkTGMC,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 9
 	},
@@ -9704,6 +9702,8 @@
 /obj/machinery/light/mainship{
 	dir = 1
 	},
+/obj/item/mecha_parts/mecha_equipment/repair_droid,
+/obj/item/mecha_parts/mecha_equipment/repair_droid,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 1
 	},
@@ -10335,9 +10335,7 @@
 /area/sulaco/hydro)
 "bjL" = (
 /obj/effect/decal/cleanable/blood/oil,
-/obj/machinery/computer/mech_builder{
-	dir = 2
-	},
+/obj/vehicle/sealed/mecha/combat/gygax/darkTGMC,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 5
 	},
@@ -15226,6 +15224,7 @@
 /area/sulaco/hangar)
 "idU" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 6
 	},
@@ -15972,6 +15971,9 @@
 /area/sulaco/marine)
 "jcv" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/item/mecha_ammo/lmg,
+/obj/item/mecha_ammo/lmg,
+/obj/item/cell/mecha,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 8
 	},
@@ -23751,6 +23753,9 @@
 /turf/open/floor/mainship/tcomms,
 /area/sulaco/command/ai)
 "tpA" = (
+/obj/item/mecha_ammo/lmg,
+/obj/item/mecha_ammo/lmg,
+/obj/item/cell/mecha,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 4
 	},
@@ -26245,6 +26250,7 @@
 /area/sulaco/cafeteria/kitchen)
 "wQC" = (
 /obj/effect/decal/cleanable/blood/gibs/robot,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
 /turf/open/floor/plating/icefloor/warnplate{
 	dir = 10
 	},

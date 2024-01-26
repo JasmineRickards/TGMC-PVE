@@ -6663,6 +6663,8 @@
 /area/mainship/living/briefing)
 "tI" = (
 /obj/effect/decal/cleanable/blood/gibs/robot,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
+/obj/item/cell/mecha,
 /turf/open/floor/plating,
 /area/mainship/living/tankerbunks)
 "tJ" = (
@@ -6767,6 +6769,11 @@
 /obj/machinery/light/mainship/small,
 /turf/open/floor/plating/plating_catwalk,
 /area/mainship/hull/starboard_hull)
+"tY" = (
+/obj/effect/decal/cleanable/blood/gibs/robot,
+/obj/item/mecha_ammo/lmg,
+/turf/open/floor/plating,
+/area/mainship/living/tankerbunks)
 "tZ" = (
 /obj/structure/ship_ammo/heavygun,
 /obj/machinery/light/mainship{
@@ -6839,9 +6846,7 @@
 /turf/open/floor/mainship/sterile/dark,
 /area/mainship/medical/lower_medical)
 "up" = (
-/obj/machinery/computer/mech_builder{
-	dir = 8
-	},
+/obj/item/mecha_ammo/lmg,
 /turf/open/floor/plating,
 /area/mainship/living/tankerbunks)
 "uq" = (
@@ -9343,6 +9348,8 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/mainship/command/self_destruct)
 "Bf" = (
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
+/obj/item/cell/mecha,
 /turf/open/floor/plating,
 /area/mainship/living/tankerbunks)
 "Bg" = (
@@ -11530,6 +11537,8 @@
 /area/mainship/living/cafeteria_starboard)
 "HE" = (
 /obj/effect/ai_node,
+/obj/item/mecha_parts/mecha_equipment/repair_droid,
+/obj/item/mecha_parts/mecha_equipment/repair_droid,
 /turf/open/floor/plating,
 /area/mainship/living/tankerbunks)
 "HF" = (
@@ -16343,6 +16352,7 @@
 /turf/open/floor/mainship/mono,
 /area/mainship/living/tankerbunks)
 "VB" = (
+/obj/vehicle/sealed/mecha/combat/gygax/darkTGMC,
 /turf/open/floor/mech_bay_recharge_floor,
 /area/mainship/living/tankerbunks)
 "VC" = (
@@ -25815,9 +25825,9 @@ fg
 pB
 mA
 nz
+tY
 tI
-tI
-Bf
+up
 di
 BC
 mA
