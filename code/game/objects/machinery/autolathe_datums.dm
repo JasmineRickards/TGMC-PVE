@@ -324,6 +324,11 @@ GLOBAL_LIST_EMPTY(autolathe_categories)
 	path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_projector
 	category = "Engineering"
 
+/datum/autolathe/recipe/mechalascannon
+	name = "Exosuit scorcher exo LC-Incinerator cannon"
+	path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laserincinerator
+	category = "Engineering"
+
 /datum/autolathe/recipe/mechagygax
 	name = "Mobile Scout Suit mk.1"
 	path = /obj/vehicle/sealed/mecha/combat/gygax

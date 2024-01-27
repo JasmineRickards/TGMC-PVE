@@ -243,14 +243,14 @@
 //	)
 	ammotype = /datum/ammo/energy/lasgun/marine/mech/burst
 	max_integrity = 400
-	energy_drain = 50
+	energy_drain = 8
 	variance = 0.5
-	projectile_delay = 0.1 SECONDS
+	projectile_delay = 0.12 SECONDS
 	burst_amount = 6
 	projectile_burst_delay = 0.2 SECONDS
 //	slowdown = 0.4
 	harmful = TRUE
-	fire_mode = GUN_FIREMODE_AUTOBURST
+	fire_mode = GUN_FIREMODE_AUTOMATIC
 	materials = list(/datum/material/metal = 75000, /datum/material/glass = 15000)
 
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_smg
@@ -273,6 +273,28 @@
 	harmful = TRUE
 	fire_mode = GUN_FIREMODE_AUTOMATIC
 	materials = list(/datum/material/metal = 60000, /datum/material/glass = 30000)
+
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/laserincinerator
+	name = "\improper Scorcher exo LC-Incinerator cannon"
+	icon = 'icons/mecha/mecha_equipment_64x32.dmi'
+	desc = "Heavy duty exosuit mounted LC-Incinerator cannon, dubbed the scorcher."
+	icon_state = "lasersmg"
+	fire_sound = 'sound/mecha/weapons/mech_laser_light.ogg'
+//	flash_offsets = list(
+//		MECHA_R_ARM = list("N" = list(33,48), "S" = list(-2,6), "E" = list(67,11), "W" = list(-37,31)),
+//		MECHA_L_ARM = list("N" = list(0,48), "S" = list(32,6), "E" = list(67,31), "W" = list(-37,11)),
+//	)
+//	mech_flags = EXOSUIT_MODULE_GREYSCALE
+	ammotype = /datum/ammo/energy/lasgun/marine/heavy_laser/lc_overcharge
+	max_integrity = 400
+	energy_drain = 100
+	variance = 0
+	projectile_delay = 1 SECONDS
+//	slowdown = 0.2
+	harmful = TRUE
+	fire_mode = GUN_FIREMODE_AUTOMATIC
+	materials = list(/datum/material/metal = 95000, /datum/material/glass = 30000)
+
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/heavy_cannon
 	name = "\improper Themis heavy cannon"

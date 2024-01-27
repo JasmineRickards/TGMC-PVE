@@ -2783,13 +2783,14 @@ datum/ammo/rocket/ap/on_hit_mob(mob/M,obj/projectile/P)
 /datum/ammo/energy/lasgun/marine/mech/burst
 	damage = 90
 	penetration = 20
-	sundering = 5
+	sundering = 10
 	damage_falloff = 0
 
 /datum/ammo/energy/lasgun/marine/mech/smg
 	name = "superheated pulsed laser bolt"
 	damage = 35
 	penetration = 0
+	sundering = 0
 
 // Plasma //
 /datum/ammo/energy/plasma
