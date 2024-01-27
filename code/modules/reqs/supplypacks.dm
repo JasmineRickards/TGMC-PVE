@@ -1878,6 +1878,11 @@ VEHICLES
 *******************************************************************************/
 /datum/supply_packs/vehicles
 	group = "Vehicles"
+
+/datum/supply_packs/vehicles/mechbelt
+	name = "M300 Mech Ammo Belt"
+	cost = 20
+	contains = list(/obj/item/storage/belt/tankbelt)
 /*
 /datum/supply_packs/vehicles/mechscout
 	name = "Scout Mobile suit"
@@ -1898,11 +1903,6 @@ VEHICLES
 	name = "Assault Mobile Suit"
 	cost = 140
 	contains = list(/obj/vehicle/sealed/mecha/combat/marauder/seraphtgmc)
-
-/datum/supply_packs/vehicles/mechbelt
-	name = "M300 Mech Ammo Belt"
-	cost = 20
-	contains = list(/obj/item/storage/belt/tankbelt)
 
 /datum/supply_packs/vehicles/mechlmg
 	name = "FS-M Mobile suit LMG"
