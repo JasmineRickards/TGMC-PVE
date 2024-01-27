@@ -284,6 +284,16 @@ GLOBAL_LIST_EMPTY(autolathe_categories)
 	path = /obj/item/mecha_ammo/scattershot
 	category = "Engineering"
 
+/datum/autolathe/recipe/mechaminigun
+	name = "Exosuit vulcan minigun"
+	path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/vulcanminigun
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechaminigunammo
+	name = "Exosuit 16mm vulcan ammunition"
+	path = /obj/item/mecha_ammo/lmg/vulcanminigun
+	category = "Engineering"
+
 /datum/autolathe/recipe/mechaatgun
 	name = "Exosuit AT-12 arm mounted cannon"
 	path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/breaching

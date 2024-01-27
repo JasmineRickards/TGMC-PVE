@@ -66,6 +66,7 @@
 	icon_state = "minigun_ammo"
 	rounds = 1200
 	ammo_type = MECHA_AMMO_MINIGUN
+	materials = list(/datum/material/metal = 50000)
 
 /obj/item/mecha_ammo/missiles_br
 	name = "AP-HE rounds"
@@ -94,6 +95,7 @@
 	direct_load = FALSE
 	load_audio = 'sound/mecha/mag_bullet_insert.ogg'
 	ammo_type = MECHA_AMMO_MISSILE_SABOT
+	materials = list(/datum/material/metal = 10000)
 
 /obj/item/mecha_ammo/flashbang
 	name = "launchable flashbangs"
