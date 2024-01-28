@@ -38,7 +38,7 @@
 	icon_state = "mecha_abooster_proj"
 	iconstate_name = "range"
 	protect_name = "Ranged Armor"
-	armor_mod = list(MELEE = 0, BULLET = 35, LASER = 35, ENERGY = 0, BOMB = 45, BIO = 0, FIRE = 0, ACID = 0)
+	armor_mod = list(MELEE = 0, BULLET = 35, LASER = 35, ENERGY = 45, BOMB = 45, BIO = 0, FIRE = 0, ACID = 0)
 	materials = list(/datum/material/metal = 50000)
 
 
