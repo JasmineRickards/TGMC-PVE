@@ -11,7 +11,7 @@
 	max_integrity = 250
 	soft_armor = list(MELEE = 25, BULLET = 50, LASER = 50, ENERGY = 15, BOMB = 0, BIO = 0, FIRE = 100, ACID = 100)
 	max_temperature = 25000
-	leg_overload_coeff = 80
+	leg_overload_coeff = 15
 	force = 25
 	wreckage = /obj/structure/mecha_wreckage/gygax
 	mecha_flags = CANSTRAFE | IS_ENCLOSED | HAS_HEADLIGHTS
@@ -54,7 +54,7 @@
 			ability.sound_loop.stop(chassis)
 	//tgmc end
 	if(chassis.leg_overload_mode)
-		chassis.speed_mod = min(chassis.move_delay-1, round(chassis.move_delay * 0.5))
+		chassis.speed_mod = min(chassis.move_delay-1.5, round(chassis.move_delay * 0.5))
 		chassis.move_delay -= chassis.speed_mod
 		chassis.step_energy_drain = max(chassis.overload_step_energy_drain_min,chassis.step_energy_drain*chassis.leg_overload_coeff)
 		chassis.balloon_alert(owner,"leg actuators overloaded")
@@ -72,7 +72,7 @@
 	max_integrity = 300
 	soft_armor = list(MELEE = 40, BULLET = 50, LASER = 50, ENERGY = 35, BOMB = 20, BIO = 0, FIRE = 100, ACID = 100)
 	max_temperature = 35000
-	leg_overload_coeff = 70
+	leg_overload_coeff = 10
 	force = 30
 	operation_req_access = list()
 	internals_req_access = list()
@@ -104,7 +104,7 @@
 	max_integrity = 300
 	soft_armor = list(MELEE = 40, BULLET = 50, LASER = 50, ENERGY = 35, BOMB = 20, BIO = 0, FIRE = 100, ACID = 100)
 	max_temperature = 35000
-	leg_overload_coeff = 70
+	leg_overload_coeff = 10
 	force = 30
 	operation_req_access = list()
 	internals_req_access = list()

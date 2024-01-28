@@ -232,7 +232,7 @@
 	icon_state = "mech_pilot_suit"
 	item_state = "mech_pilot_suit"
 	slowdown = SLOWDOWN_ARMOR_LIGHT
-	soft_armor = list(MELEE = 45, BULLET = 55, LASER = 55, ENERGY = 20, BOMB = 45, BIO = 30, FIRE = 25, ACID = 35)
+	soft_armor = list(MELEE = 55, BULLET = 80, LASER = 80, ENERGY = 50, BOMB = 70, BIO = 50, FIRE = 40, ACID = 45)
 	flags_item_map_variant = NONE
 
 /obj/item/storage/internal/suit/leader

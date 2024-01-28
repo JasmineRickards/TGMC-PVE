@@ -492,6 +492,7 @@
 	name = "\improper M12C pattern neurolink helmet"
 	icon_state = "mech_pilot_helmet"
 	desc = "A lightweight helmet with a small port in the back. Offers lower response times for TGMC mech pilots by integrating them directly into their mech suit's systems, though it certainly doesn't make them smarter."
+	soft_armor = list(MELEE = 50, BULLET = 80, LASER = 80, ENERGY = 50, BOMB = 70, BIO = 50, FIRE = 40, ACID = 50)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/marine/riot
