@@ -605,13 +605,13 @@ You can serve your Division in a variety of roles, so choose carefully."})
 	if(!playtime_mins || playtime_mins < 1 )
 		return
 	switch(playtime_mins)
-		if(0 to 1500) //starting
+		if(0 to 600) //starting
 			new_human.wear_id.paygrade = "E3"
-		if(1500 to 7500) // 25 hrs
+		if(601 to 1500) // 10 hrs
 			new_human.wear_id.paygrade = "E4"
-		if(7501 to INFINITY) // 125 hrs
+		if(1501 to 3000) // 25 hrs
 			new_human.wear_id.paygrade = "E5"
-		if(1501 to 4500) // 25 hrs
+		if(3001 to 4500) // 50 hrs
 			new_human.wear_id.paygrade = "E6"
 		if(4501 to 7500) // 75 hrs
 			new_human.wear_id.paygrade = "E7"
