@@ -335,6 +335,35 @@
 	///Holds id for a timer which triggers recharge start. Null if not currently delayed.
 	recharge_timer
 
+/obj/item/armor_module/module/eshield/mkex
+	name = "Arrowhead mk.ex Energy Shield System"
+	desc = "A brand new innovation in armor systems, this module creates a shield around the user that is capable of negating all damage. If it sustains too much it will deactivate, and leave the user vulnerable. This model uses special nanite protection, making it even more powerful."
+	icon = 'icons/mob/modular/modular_armor_modules.dmi'
+	icon_state = "mod_eshield"
+	item_state = "mod_eshield_a"
+	slot = ATTACHMENT_SLOT_MODULE
+	soft_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+	variants_by_parent_type = list(/obj/item/clothing/suit/modular/xenonauten = "mod_eshield_xn", /obj/item/clothing/suit/modular/xenonauten/light = "mod_eshield_xn", /obj/item/clothing/suit/modular/xenonauten/heavy = "mod_eshield_xn")
+
+	///Current shield Health
+	shield_health = 0
+	///Maximum shield Health
+	max_shield_health = 300
+	///Amount to recharge per tick, processes once every two seconds.
+	recharge_rate = 50
+	///Shield color when the shield is 0 - 33% full
+	shield_color_low = COLOR_MAROON
+	///Shield color when the shield is 33 - 66% full
+	shield_color_mid = COLOR_STRONG_VIOLET
+	///Shield color when the shield is 66% to full
+	shield_color_full = COLOR_VIOLET
+	///Current shield color
+	current_color
+	///Delay it takes to start recharging again after the shield has been damaged.
+	damaged_shield_cooldown = 5 SECONDS
+	///Holds id for a timer which triggers recharge start. Null if not currently delayed.
+	recharge_timer
+
 /obj/item/armor_module/module/eshield/Initialize()
 	. = ..()
 	spark_system = new()

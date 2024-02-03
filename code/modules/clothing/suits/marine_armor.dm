@@ -1295,7 +1295,8 @@
 	name = "Moebius XM-02 hardsuit"
 	desc = "A heavily armored suit built by who-knows-what for elite operations. It is a fully self-contained system with a neat purple sheen"
 	icon_state = "moebius_armor"
-	soft_armor = list(MELEE = 80, BULLET = 90, LASER = 90, ENERGY = 90, BOMB = 80, BIO = 70, FIRE = 90, ACID = 75)
+	soft_armor = list(MELEE = 90, BULLET = 110, LASER = 175, ENERGY = 110, BOMB = 95, BIO = 100, FIRE = 100, ACID = 95)
+	hard_armor = list(MELEE = 5, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 0, BIO = 100, FIRE = 100, ACID = 2)
 	pockets = /obj/item/storage/internal/suit/imperial
 	slowdown = SLOWDOWN_ARMOR_HEAVY
 	attachments_by_slot = list(ATTACHMENT_SLOT_MODULE)
@@ -1303,4 +1304,6 @@
 	/obj/item/armor_module/module/better_shoulder_lamp,
 	/obj/item/armor_module/module/eshield,
 	/obj/item/armor_module/module/eshield/mk2,
+	/obj/item/armor_module/module/eshield/mkex,
 	)
+	starting_attachments = list(/obj/item/armor_module/module/eshield/mkex)
