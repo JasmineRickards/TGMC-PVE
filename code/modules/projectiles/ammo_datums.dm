@@ -1392,6 +1392,32 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	shrapnel_chance = 30
 	sundering = 10
 
+/datum/ammo/bullet/minigunmech/hi
+	name = "30mm high-impact bullet"
+	hud_state = "rifle_fire"
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	bullet_color = COLOR_TAN_ORANGE
+	accuracy_var_low = 3
+	accuracy_var_high = 3
+	accurate_range = 5
+	damage = 130
+	penetration = 20
+	shrapnel_chance = 25
+	sundering = 5
+
+/datum/ammo/bullet/minigunmech/ap
+	name = "30mm armor-piercing bullet"
+	hud_state = "rifle_ap"
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_MOVABLE|AMMO_PASS_THROUGH_TURF
+	bullet_color = COLOR_DARK_MODERATE_LIME_GREEN
+	accuracy_var_low = 3
+	accuracy_var_high = 3
+	accurate_range = 5
+	damage = 50
+	penetration = 60
+	shrapnel_chance = 25
+	sundering = 20
+
 /datum/ammo/bullet/dual_cannon
 	name = "dualcannon bullet"
 	hud_state = "minigun"

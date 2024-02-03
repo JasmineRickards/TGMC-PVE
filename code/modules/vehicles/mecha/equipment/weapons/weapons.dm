@@ -325,7 +325,7 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
 	name = "\improper 12.7mm autocannon"
 	fire_sound = 'sound/weapons/guns/fire/GPMG.ogg'
-	desc = "A weapon for combat exosuits. Shoots a rapid, three shot burst."
+	desc = "A weapon for combat exosuits. Shoots a rapid burst."
 	icon_state = "mecha_uac2"
 	equip_cooldown = 10
 	ammotype = /datum/ammo/bullet/minigunmech
@@ -342,7 +342,7 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/vulcanminigun
 	name = "\improper vulcan minigun"
 	fire_sound = 'sound/mecha/weapons/mech_minigun.ogg'
-	desc = "A weapon for combat exosuits. Shoots a rapid bursts."
+	desc = "A weapon for combat exosuits. Shoots a very rapid bursts."
 	icon = 'icons/mecha/mecha_equipment_64x32.dmi'
 	icon_state = "minigun"
 	equip_cooldown = 10
@@ -356,6 +356,42 @@
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_MINIGUN
 	materials = list(/datum/material/metal = 200000)
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/hi
+	name = "\improper 30mm HI autocannon"
+	fire_sound = 'sound/weapons/guns/fire/autocannon_fire.ogg'
+	desc = "A weapon for combat exosuits. Shoots with anti-infanrty rounds."
+	icon = 'icons/mecha/mecha_equipment_64x32.dmi'
+	icon_state = "heavycannon"
+	equip_cooldown = 10
+	ammotype = /datum/ammo/bullet/minigunmech/hi
+	projectiles = 50
+	fire_delay = 0.1 SECONDS
+	projectiles_cache = 150
+	projectiles_cache_max = 500
+	variance = 3
+	projectile_delay = 1.5
+	harmful = TRUE
+	ammo_type = MECHA_AMMO_LMG_HI
+	materials = list(/datum/material/metal = 175000)
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/ap
+	name = "\improper 30mm AP autocannon"
+	fire_sound = 'sound/weapons/guns/fire/autocannon_fire.ogg'
+	desc = "A weapon for combat exosuits. Shoots with anti-vehicle rounds."
+	icon = 'icons/mecha/mecha_equipment_64x32.dmi'
+	icon_state = "heavycannon"
+	equip_cooldown = 10
+	ammotype = /datum/ammo/bullet/minigunmech/ap
+	projectiles = 50
+	fire_delay = 0.1 SECONDS
+	projectiles_cache = 150
+	projectiles_cache_max = 500
+	variance = 3
+	projectile_delay = 1.5
+	harmful = TRUE
+	ammo_type = MECHA_AMMO_LMG_AP
+	materials = list(/datum/material/metal = 175000)
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack
 	name = "\improper SRM-8 missile rack"
@@ -391,7 +427,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/sabot
 	name = "\improper AT-12 arm mounted SABOT cannon"
-	desc = "A weapon for combat exosuits. Launches explosive armor piercing cannon shells via 67mm Autocannon."
+	desc = "A weapon for combat exosuits. Launches armor piercing cannon shells via 67mm Autocannon."
 	icon_state = "mecha_missilerack_six"
 	ammotype = /datum/ammo/rocket/atgun_shell/apcr
 	fire_sound = 'sound/weapons/guns/fire/tat36.ogg'

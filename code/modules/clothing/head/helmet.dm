@@ -768,7 +768,8 @@
 	desc = "A sturdy hardsuit helmet worn by Moebius corporation operatives."
 	icon_state = "moebius_helmet"
 	flags_armor_protection = HEAD|FACE|EYES
-	soft_armor = list(MELEE = 75, BULLET = 60, LASER = 55, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 90, BULLET = 110, LASER = 175, ENERGY = 110, BOMB = 95, BIO = 100, FIRE = 100, ACID = 95)
+	hard_armor = list(MELEE = 5, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 0, BIO = 100, FIRE = 100, ACID = 2)
 	pockets = /obj/item/storage/internal/imperialhelmet
 
 

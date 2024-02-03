@@ -1,6 +1,6 @@
 /obj/vehicle/sealed/mecha/combat/marauder
 	desc = "Heavy-duty, combat exosuit, developed for FOB defence operations or escorts."
-	name = "\improper Defensive Mobile Suit mk.1"
+	name = "\improper Defensive Mobile Suit MK.1"
 	icon_state = "marauder"
 	iff_signal = TGMC_LOYALIST_IFF
 	base_icon_state = "marauder"
@@ -71,7 +71,7 @@
 
 /obj/vehicle/sealed/mecha/combat/marauder/seraph
 	desc = "Heavy-duty,Front line assault suit, intended for heavy duty attacks."
-	name = "\improper Assault Mobile Suit mk.1"
+	name = "\improper Assault Mobile Suit MK.1"
 	icon_state = "seraph"
 	base_icon_state = "seraph"
 	move_delay = 3
@@ -92,7 +92,7 @@
 	)
 /obj/vehicle/sealed/mecha/combat/marauder/seraphtgmc
 	desc = "Heavy-duty,Front line assault suit, intended for heavy duty attacks."
-	name = "\improper Heavy Combat Suit"
+	name = "\improper Assault Mobile Suit MK.1"
 	icon_state = "seraph"
 	base_icon_state = "seraph"
 	move_delay = 3
@@ -107,10 +107,11 @@
 	materials = list(/datum/material/metal = 500000)
 
 /obj/vehicle/sealed/mecha/combat/marauder/mauler
-	desc = "Heavy-duty, combat exosuit, developed off of the existing Marauder model."
-	name = "\improper Mauler"
+	desc = "Super-Heavy-duty, combat exosuit, developed off of the existing Assault Mobile Suit MK.1 model. A literal juggernaut."
+	name = "\improper Assault Heavy Mobile Suit MK.2"
 	icon_state = "mauler"
 	base_icon_state = "mauler"
+	max_integrity = 1000
 	wreckage = /obj/structure/mecha_wreckage/mauler
 	max_equip_by_category = list(
 		MECHA_UTILITY = 3,

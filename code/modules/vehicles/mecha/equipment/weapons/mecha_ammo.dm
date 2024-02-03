@@ -54,7 +54,7 @@
 
 /obj/item/mecha_ammo/lmg
 	name = "12.7mm ammunition"
-	desc = "A box of linked ammunition, designed for the Ultra AC 2 exosuit weapon."
+	desc = "A box of linked ammunition, designed for the 12.7mm exosuit weapon."
 	icon_state = "lmg"
 	rounds = 900
 	ammo_type = MECHA_AMMO_LMG
@@ -67,6 +67,22 @@
 	rounds = 1200
 	ammo_type = MECHA_AMMO_MINIGUN
 	materials = list(/datum/material/metal = 50000)
+
+/obj/item/mecha_ammo/lmg/hi
+	name = "30mm ammunition"
+	desc = "A box of linked ammunition, designed for the 30mm high-impact exosuit weapon."
+	icon_state = "incendiary"
+	rounds = 200
+	ammo_type = MECHA_AMMO_LMG_HI
+	materials = list(/datum/material/metal = 40000)
+
+/obj/item/mecha_ammo/lmg/ap
+	name = "30mm ammunition"
+	desc = "A box of linked ammunition, designed for the 30mm armor-piercing exosuit weapon."
+	icon_state = "ap"
+	rounds = 200
+	ammo_type = MECHA_AMMO_LMG_AP
+	materials = list(/datum/material/metal = 40000)
 
 /obj/item/mecha_ammo/missiles_br
 	name = "AP-HE rounds"
