@@ -274,6 +274,26 @@ GLOBAL_LIST_EMPTY(autolathe_categories)
 	path = /obj/item/mecha_ammo/lmg
 	category = "Engineering"
 
+/datum/autolathe/recipe/mechalmg/hi
+	name = "Exosuit 30mm HI Autocannon"
+	path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/hi
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechalmgammo/hi
+	name = "Exosuit 30mm HI Autocannon ammo"
+	path = /obj/item/mecha_ammo/lmg/hi
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechalmg/ap
+	name = "Exosuit 30mm AP Autocannon"
+	path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/ap
+	category = "Engineering"
+
+/datum/autolathe/recipe/mechalmgammo/ap
+	name = "Exosuit 30mm AP Autocannon ammo"
+	path = /obj/item/mecha_ammo/lmg/ap
+	category = "Engineering"
+
 /datum/autolathe/recipe/mechashottie
 	name = "Exosuit LBX AC 10 Scattershot"
 	path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot

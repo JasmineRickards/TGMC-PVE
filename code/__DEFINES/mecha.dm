@@ -49,6 +49,8 @@
 #define MECHA_AMMO_MISSILE_SABOT "Discarding sabot"
 #define MECHA_AMMO_BUCKSHOT "Buckshot shell"
 #define MECHA_AMMO_LMG "LMG bullet"
+#define MECHA_AMMO_LMG_HI "LMG HI bullet"
+#define MECHA_AMMO_LMG_AP "LMG AP bullet"
 #define MECHA_AMMO_MISSILE_HE "HE missile"
 #define MECHA_AMMO_MISSILE_AP "AP missile"
 #define MECHA_AMMO_FLASHBANG "Flashbang"

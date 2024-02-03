@@ -92,10 +92,12 @@
 	max_storage_space = 28
 	max_w_class = 4
 	can_hold = list(
-		/obj/item/mecha_ammo/missiles_br,
+		/obj/item/mecha_ammo/missiles_he,
 		/obj/item/mecha_ammo/missiles_sabot,
 		/obj/item/mecha_ammo/lmg,
 		/obj/item/mecha_ammo/scattershot,
+		/obj/item/mecha_ammo/lmg/hi,
+		/obj/item/mecha_ammo/lmg/ap,
 	)
 
 /obj/item/storage/belt/lifesaver
