@@ -1400,7 +1400,7 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	accuracy_var_low = 3
 	accuracy_var_high = 3
 	accurate_range = 5
-	damage = 130
+	damage = 160
 	penetration = 20
 	shrapnel_chance = 25
 	sundering = 5
@@ -1413,7 +1413,7 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	accuracy_var_low = 3
 	accuracy_var_high = 3
 	accurate_range = 5
-	damage = 50
+	damage = 55
 	penetration = 60
 	shrapnel_chance = 25
 	sundering = 20
@@ -3629,11 +3629,13 @@ datum/ammo/rocket/ap/on_hit_mob(mob/M,obj/projectile/P)
 /datum/ammo/flamethrower/mech_flamer
 	name = "phoron phosphate flame"
 	flags_ammo_behavior = AMMO_INCENDIARY|AMMO_FLAME|AMMO_EXPLOSIVE|AMMO_IFF
-	fire_color = "blue"
+	fire_color = "violet"
+	bullet_color = COLOR_VIOLET
 	max_range = 14
-	damage = 100
-	burntime = 60
-	burnlevel = 50
+	damage = 120
+	burntime = 120
+	burnlevel = 90
+	incendiary_strength = 60
 
 /datum/ammo/flamethrower/drop_flame(turf/T)
 	if(!istype(T))

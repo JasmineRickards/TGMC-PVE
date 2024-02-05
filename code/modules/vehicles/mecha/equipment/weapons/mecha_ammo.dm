@@ -72,7 +72,7 @@
 	name = "30mm ammunition"
 	desc = "A box of linked ammunition, designed for the 30mm high-impact exosuit weapon."
 	icon_state = "incendiary"
-	rounds = 200
+	rounds = 450
 	ammo_type = MECHA_AMMO_LMG_HI
 	materials = list(/datum/material/metal = 40000)
 
@@ -80,7 +80,7 @@
 	name = "30mm ammunition"
 	desc = "A box of linked ammunition, designed for the 30mm armor-piercing exosuit weapon."
 	icon_state = "ap"
-	rounds = 200
+	rounds = 450
 	ammo_type = MECHA_AMMO_LMG_AP
 	materials = list(/datum/material/metal = 40000)
 
@@ -235,5 +235,6 @@
 	name = "flamer napalm tank"
 	desc = "A specialized fuel tank designed for refilling TGMC standard issue mech flamers."
 	icon_state = "flamer_ammo"
-	rounds = 10
+	rounds = 20
 	ammo_type = MECHA_AMMO_FLAMER
+	materials = list(/datum/material/metal = 35000)
