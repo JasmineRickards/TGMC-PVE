@@ -361,7 +361,7 @@
 	hud_icons = list("minigun", "smartgun_empty")
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/hi
-	name = "\improper 30mm HI autocannon"
+	name = "\improper 30mm MP autocannon"
 	fire_sound = 'sound/weapons/guns/fire/autocannon_fire.ogg'
 	desc = "A weapon for combat exosuits. Shoots with anti-infanrty rounds."
 	icon = 'icons/mecha/mecha_equipment_64x32.dmi'

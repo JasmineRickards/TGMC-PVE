@@ -1389,21 +1389,37 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	accuracy_var_low = 0.5
 	accuracy_var_high = 0.5
 	accurate_range = 7
-	shrapnel_chance = 30
+	shrapnel_chance = 5
 	sundering = 10
 
 /datum/ammo/bullet/minigunmech/hi
-	name = "30mm high-impact bullet"
+	name = "30mm MP bullet"
 	hud_state = "rifle_fire"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
 	bullet_color = COLOR_TAN_ORANGE
 	accuracy_var_low = 3
 	accuracy_var_high = 3
 	accurate_range = 5
-	damage = 160
-	penetration = 20
-	shrapnel_chance = 25
+	penetration = 25
+	damage = 120
+	shrapnel_chance = 50
 	sundering = 5
+
+/datum/ammo/bullet/minigunmech/hi/drop_nade(turf/T)
+	explosion(T, 2, 1, 1, 0)
+
+/datum/ammo/bullet/minigunmech/hi/on_hit_mob(mob/M, obj/projectile/P)
+	drop_nade(get_turf(M))
+
+/datum/ammo/bullet/minigunmech/hi/on_hit_obj(obj/O, obj/projectile/P)
+	drop_nade(get_turf(O))
+
+/datum/ammo/bullet/minigunmech/hi/on_hit_turf(turf/T, obj/projectile/P)
+	drop_nade(T.density ? P.loc : T)
+
+/datum/ammo/bullet/minigunmech/hi/do_at_max_range(turf/T, obj/projectile/P)
+	drop_nade(T.density ? P.loc : T)
+
 
 /datum/ammo/bullet/minigunmech/ap
 	name = "30mm armor-piercing bullet"
@@ -3628,11 +3644,11 @@ datum/ammo/rocket/ap/on_hit_mob(mob/M,obj/projectile/P)
 
 /datum/ammo/flamethrower/mech_flamer
 	name = "phoron phosphate flame"
-	flags_ammo_behavior = AMMO_INCENDIARY|AMMO_FLAME|AMMO_EXPLOSIVE|AMMO_IFF
+	flags_ammo_behavior = AMMO_INCENDIARY|AMMO_FLAME|AMMO_EXPLOSIVE
 	fire_color = "violet"
 	bullet_color = COLOR_VIOLET
 	max_range = 14
-	damage = 120
+	damage = 100
 	burntime = 120
 	burnlevel = 90
 	incendiary_strength = 60

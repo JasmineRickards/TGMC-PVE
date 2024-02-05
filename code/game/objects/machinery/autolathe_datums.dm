@@ -275,7 +275,7 @@ GLOBAL_LIST_EMPTY(autolathe_categories)
 	category = "Engineering"
 
 /datum/autolathe/recipe/mechalmg/hi
-	name = "Exosuit 30mm HI Autocannon"
+	name = "Exosuit 30mm MP Autocannon"
 	path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/hi
 	category = "Engineering"
 
