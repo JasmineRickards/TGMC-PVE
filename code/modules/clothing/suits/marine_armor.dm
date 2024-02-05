@@ -1297,6 +1297,7 @@
 	icon_state = "moebius_armor"
 	soft_armor = list(MELEE = 90, BULLET = 110, LASER = 175, ENERGY = 110, BOMB = 95, BIO = 100, FIRE = 100, ACID = 95)
 	hard_armor = list(MELEE = 5, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 0, BIO = 100, FIRE = 100, ACID = 2)
+	flags_item_map_variant = NONE
 	pockets = /obj/item/storage/internal/suit/imperial
 	slowdown = SLOWDOWN_ARMOR_HEAVY
 	attachments_by_slot = list(ATTACHMENT_SLOT_MODULE)

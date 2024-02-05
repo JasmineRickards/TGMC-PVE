@@ -401,26 +401,26 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/flamethrower
 	name = "\improper Helios flamethrower"
 	icon = 'icons/mecha/mecha_equipment_64x32.dmi'
-	desc = "A specialized flamer for mounting on mechs. Bad mobility, but the additional napalm more than makes up for it."
+	desc = "A specialized flamer for mounting on mechs. Extremely hot napalm comes from it."
 	icon_state = "flamer"
 	fire_sound = 'sound/mecha/weapons/mech_flamer.ogg'
-	flash_offsets = list(
-		MECHA_R_ARM = list("N" = list(36,30), "S" = list(-2,-11), "E" = list(77,3), "W" = list(-47,23)),
-		MECHA_L_ARM = list("N" = list(-4,30), "S" = list(32,-11), "E" = list(77,23), "W" = list(-47,3)),
-	)
-	mech_flags = EXOSUIT_MODULE_GREYSCALE
+//	flash_offsets = list(
+//		MECHA_R_ARM = list("N" = list(36,30), "S" = list(-2,-11), "E" = list(77,3), "W" = list(-47,23)),
+//		MECHA_L_ARM = list("N" = list(-4,30), "S" = list(32,-11), "E" = list(77,23), "W" = list(-47,3)),
+//	)
+//	mech_flags = EXOSUIT_MODULE_GREYSCALE
 	ammotype = /datum/ammo/flamethrower/mech_flamer
 	max_integrity = 250
 	projectiles = 20
-	projectiles_cache = 80 // low ammo counts so player cant just spam fire while rushing infinitely
+	projectiles_cache = 40 // low ammo counts so player cant just spam fire while rushing infinitely
 	projectiles_cache_max = 80
 	variance = 0
 	projectile_delay = 2 SECONDS
 	slowdown = 0.4
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_FLAMER
-	hud_icons = list("flame", "flame_empty")
-	fire_mode = GUN_FIREMODE_SEMIAUTO
+	hud_icons = list("flame_purple", "flame_empty")
+	materials = list(/datum/material/metal = 120000, /datum/material/glass = 45000)
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/rpg
 	name = "\improper Iapetus missile pod"

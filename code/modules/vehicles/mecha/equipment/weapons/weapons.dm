@@ -321,6 +321,7 @@
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_BUCKSHOT
 	materials = list(/datum/material/metal = 125000)
+	hud_icons = list("shotgun_buckshot", "shotgun_empty")
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
 	name = "\improper 12.7mm autocannon"
@@ -338,6 +339,7 @@
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_LMG
 	materials = list(/datum/material/metal = 30000)
+	hud_icons = list("rifle_heavy", "rifle_empty")
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/vulcanminigun
 	name = "\improper vulcan minigun"
@@ -356,6 +358,7 @@
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_MINIGUN
 	materials = list(/datum/material/metal = 200000)
+	hud_icons = list("minigun", "smartgun_empty")
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/hi
 	name = "\improper 30mm HI autocannon"
@@ -368,12 +371,13 @@
 	projectiles = 50
 	fire_delay = 0.1 SECONDS
 	projectiles_cache = 150
-	projectiles_cache_max = 500
+	projectiles_cache_max = 1000
 	variance = 3
 	projectile_delay = 1.5
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_LMG_HI
 	materials = list(/datum/material/metal = 175000)
+	hud_icons = list("rifle_heavy_hi", "rifle_empty")
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/ap
 	name = "\improper 30mm AP autocannon"
@@ -386,12 +390,13 @@
 	projectiles = 50
 	fire_delay = 0.1 SECONDS
 	projectiles_cache = 150
-	projectiles_cache_max = 500
+	projectiles_cache_max = 1000
 	variance = 3
 	projectile_delay = 1.5
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_LMG_AP
 	materials = list(/datum/material/metal = 175000)
+	hud_icons = list("rifle_heavy_ap", "rifle_empty")
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack
 	name = "\improper SRM-8 missile rack"
