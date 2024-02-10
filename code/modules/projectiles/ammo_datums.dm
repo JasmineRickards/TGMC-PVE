@@ -1400,13 +1400,13 @@ datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
 	accuracy_var_low = 3
 	accuracy_var_high = 3
 	accurate_range = 5
-	penetration = 25
-	damage = 120
+	penetration = 0
+	damage = 75
 	shrapnel_chance = 50
 	sundering = 5
 
 /datum/ammo/bullet/minigunmech/hi/drop_nade(turf/T)
-	explosion(T, 2, 1, 1, 0)
+	explosion(T, 1, 1, 3, 0)
 
 /datum/ammo/bullet/minigunmech/hi/on_hit_mob(mob/M, obj/projectile/P)
 	drop_nade(get_turf(M))
