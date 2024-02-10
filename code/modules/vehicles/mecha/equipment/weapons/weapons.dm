@@ -369,11 +369,11 @@
 	equip_cooldown = 10
 	ammotype = /datum/ammo/bullet/minigunmech/hi
 	projectiles = 50
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.3 SECONDS
 	projectiles_cache = 150
 	projectiles_cache_max = 1000
 	variance = 3
-	projectile_delay = 1.5
+	projectile_delay = 3
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_LMG_HI
 	materials = list(/datum/material/metal = 175000)
@@ -388,11 +388,11 @@
 	equip_cooldown = 10
 	ammotype = /datum/ammo/bullet/minigunmech/ap
 	projectiles = 50
-	fire_delay = 0.1 SECONDS
+	fire_delay = 0.2 SECONDS
 	projectiles_cache = 150
 	projectiles_cache_max = 1000
 	variance = 3
-	projectile_delay = 1.5
+	projectile_delay = 2
 	harmful = TRUE
 	ammo_type = MECHA_AMMO_LMG_AP
 	materials = list(/datum/material/metal = 175000)
