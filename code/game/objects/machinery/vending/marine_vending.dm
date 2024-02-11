@@ -1522,13 +1522,15 @@
 
 		),
 		"USL" = list(
-			/obj/item/clothing/suit/storage/faction/UPP/heavy = -1,
-			/obj/item/clothing/head/uppcap = -1,
-			/obj/item/clothing/head/uppcap/beret = -1,
 			/obj/item/clothing/suit/storage/faction/UPP = -1,
+			/obj/item/clothing/suit/storage/faction/UPP/engi = -1,
+			/obj/item/clothing/suit/storage/faction/UPP/heavy = -1,
 			/obj/item/clothing/suit/storage/faction/UPP/commando = -1,
 			/obj/item/clothing/head/helmet/marine/UPP = -1,
+			/obj/item/clothing/head/helmet/marine/UPP/engi = -1,
 			/obj/item/clothing/head/helmet/marine/UPP/heavy = -1,
+			/obj/item/clothing/head/uppcap = -1,
+			/obj/item/clothing/head/uppcap/beret = -1,
 		),
 
 		"Nanotrasen" = list(
@@ -1569,13 +1571,13 @@
 			/obj/item/clothing/head/frelancer = -1,
 		),
 		"Civilian" = list(
-			/obj/item/clothing/suit/armor/riot = -1,
+			/obj/item/clothing/suit/storage/marine/civriot = -1,
 			/obj/item/clothing/head/helmet/riot = -1,
-			/obj/item/clothing/suit/armor/bulletproof = -1,
+			/obj/item/clothing/suit/storage/marine/bulletproof = -1,
 			/obj/item/clothing/head/helmet = -1,
 			/obj/item/clothing/head/helmet/swat = -1,
-			/obj/item/clothing/suit/armor/swat/officer = -1,
-			/obj/item/clothing/suit/armor/swat = -1,
+			/obj/item/clothing/suit/storage/marine/swat/officer = -1,
+			/obj/item/clothing/suit/storage/marine/swat = -1,
 			/obj/item/clothing/head/helmet/space/deathsquad/beret = -1,
 			/obj/item/clothing/head/helmet/space/deathsquad = -1,
 			/obj/item/clothing/head/militia = -1,
