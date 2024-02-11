@@ -1,7 +1,7 @@
 
 /obj/item/clothing/head/helmet
 	name = "helmet"
-	desc = "Standard Security gear. Protects the head from impacts."
+	desc = "Standard security gear. Protects the head from impacts."
 	icon_state = "helmet"
 	item_state = "helmet"
 	accuracy_mod = 0
@@ -17,6 +17,14 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	flags_armor_features = ARMOR_NO_DECAP
 	flags_item = SYNTH_RESTRICTED
+
+/obj/item/clothing/head/helmet/nt
+	name = "corporate helmet"
+	desc = "Expensive security gear used by corporate goons and some colonies."
+	icon_state = "nt_helmet"
+	item_state = "nt_helmet"
+	accuracy_mod = 0
+	soft_armor = list(MELEE = 75, BULLET = 85, LASER = 85, ENERGY = 60, BOMB = 70, BIO = 30, FIRE = 60, ACID = 65)
 
 /obj/item/clothing/head/ruggedhelm
 	name = "rugged helmet"
@@ -687,6 +695,16 @@
 	flags_item = SYNTH_RESTRICTED
 	soft_armor = list(MELEE = 70, BULLET = 80, LASER = 70, ENERGY = 70, BOMB = 65, BIO = 50, FIRE = 50, ACID = 60)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/marine/UPP/engi
+	name = "\improper UM4S helmet"
+	desc = "A skirted helmet designed for use with the UM/UH system. Usually used by field engineers."
+	icon = 'icons/obj/clothing/cm_hats.dmi'
+	item_icons = list(
+		slot_head_str = 'icons/mob/head_1.dmi',
+		slot_l_hand_str = 'icons/mob/items_lefthand_1.dmi',
+		slot_r_hand_str = 'icons/mob/items_righthand_1.dmi',)
+	icon_state = "upp_helmet_engi_new"
 
 /obj/item/clothing/head/helmet/marine/UPP/heavy
 	name = "\improper UH7 helmet"

@@ -366,6 +366,7 @@
 	name = "\improper TG-M1 body armor"
 	desc = "Based on the M-3 pattern employed by the TGMC, the UA-M1 body armor is employed by TG security, riot control and union-busting teams."
 	icon_state = "ua_riot"
+	soft_armor = list(MELEE = 70, BULLET = 75, LASER = 75, ENERGY = 70, BOMB = 60, BIO = 50, FIRE = 55, ACID = 55)
 	flags_item_map_variant = NONE //Redundant, but if we ever get around to getting the camo sprites ported, yay.
 
 /obj/item/clothing/suit/storage/marine/icc
@@ -423,6 +424,66 @@
 	. = ..()
 	AddComponent(/datum/component/suit_autodoc)
 	AddElement(/datum/element/limb_support, supporting_limbs)
+
+//===========================CIVILIAN==================================
+
+/obj/item/clothing/suit/storage/marine/civriot
+	name = "M1 riot suit"
+	desc = "A suit of armor with heavy padding to protect against melee and ballistic attacks. Layers of Cimex chitin help against acid."
+	icon_state = "riot_new"
+	item_state = "swat_new"
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
+	soft_armor = list(MELEE = 82, BULLET = 15, LASER = 50, ENERGY = 50, BOMB = 65, BIO = 30, FIRE = 50, ACID = 80)
+	flags_inventory = BLOCKSHARPOBJ|NOQUICKEQUIP
+	flags_item_map_variant = NONE
+	siemens_coefficient = 0.5
+	permeability_coefficient = 0.2
+
+/obj/item/clothing/suit/storage/marine/bulletproof
+	name = "M1 bulletproof vest"
+	desc = "A vest that excels in protecting the wearer against high-velocity solid projectiles."
+	icon_state = "bulletproof"
+	item_state = "bulletproof"
+	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT//It has only 30 melee armor
+	flags_item_map_variant = NONE
+	soft_armor = list(MELEE = 30, BULLET = 95, LASER = 50, ENERGY = 30, BOMB = 75, BIO = 0, FIRE = 75, ACID = 50)
+	hard_armor = list(MELEE = 0, BULLET = 15, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+	siemens_coefficient = 0.7
+	permeability_coefficient = 0.9
+
+/obj/item/clothing/suit/storage/marine/swat
+	name = "swat suit"
+	desc = "A heavily armored, environmentally sealed suit that protects against melee, acid and ballistic damage. Used in special operations."
+	icon_state = "deathsquad"
+	item_state = "swat"
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/baton,/obj/item/restraints/handcuffs,/obj/item/tank/emergency_oxygen)
+	slowdown = SLOWDOWN_ARMOR_HEAVY
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 50, BOMB = 75, BIO = 100, FIRE = 50, ACID = 75)
+	flags_inventory = BLOCKSHARPOBJ|NOPRESSUREDMAGE|NOQUICKEQUIP
+	flags_inv_hide = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	flags_item_map_variant = NONE
+	siemens_coefficient = 0.6
+
+/obj/item/clothing/suit/storage/marine/swat/officer
+	name = "armored officer jacket"
+	desc = "An armored jacket used in special operations."
+	icon_state = "detective"
+	item_state = "det_suit"
+	blood_overlay_type = "coat"
+
+//Improved Security armor vests
+/obj/item/clothing/suit/storage/marine/ntsecurity
+	name = "M1 corporate security armor"
+	desc = "Improved version of the standart colonial security vest, coming with the in-built light and small pouch."
+	icon_state = "nt_armor"
+	item_state = "nt_armor"
+	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
+	flags_item_map_variant = NONE
+	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 45, BIO = 25, FIRE = 40, ACID = 45)
+	flags_armor_protection = CHEST|GROIN|ARMS|LEGS
 
 
 //===========================SPECIALIST================================
@@ -783,6 +844,8 @@
 	)
 	flags_armor_features = ARMOR_LAMP_OVERLAY
 	flags_item = SYNTH_RESTRICTED
+	time_to_unequip = 2 SECONDS
+	time_to_equip = 2 SECONDS
 	var/locate_cooldown = 0 //Cooldown for SL locator
 	var/armor_overlays["lamp"]
 	actions_types = list(/datum/action/item_action/toggle)
@@ -855,12 +918,24 @@
 /obj/item/clothing/suit/storage/faction/UPP/hvh
 	soft_armor = list(MELEE = 55, BULLET = 75, LASER = 75, ENERGY = 60, BOMB = 60, BIO = 45, FIRE = 60, ACID = 65)
 
+/obj/item/clothing/suit/storage/faction/UPP/engi
+	name = "\improper UM5S personal armor"
+	desc = "A modification of the UM5, designed for support troopers."
+	icon_state = "upp_armor_support"
+	slowdown = SLOWDOWN_ARMOR_LIGHT
 
 /obj/item/clothing/suit/storage/faction/UPP/commando
 	name = "\improper UM5CU personal armor"
 	desc = "A modification of the UM5, designed for stealth operations."
 	icon_state = "upp_armor_commando_new"
 	slowdown = SLOWDOWN_ARMOR_LIGHT
+
+/obj/item/clothing/suit/storage/faction/UPP/commando/heavy
+	name = "\improper UH7CU personal armor"
+	desc = "A modification of the UH7, designed for stealth operations."
+	icon_state = "upp_armor_commando_full_new"
+	soft_armor = list(MELEE = 75, BULLET = 85, LASER = 85, ENERGY = 75, BOMB = 75, BIO = 50, FIRE = 75, ACID = 85)
+	slowdown = 0.25
 
 /// Modified version of the armor for HvH combat. Stats are based on medium armor, with tyr mark 2.
 /obj/item/clothing/suit/storage/faction/UPP/commando/hvh

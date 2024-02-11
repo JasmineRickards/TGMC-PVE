@@ -1873,6 +1873,11 @@ Imports
 		/obj/item/clothing/under/marine/icc,)
 	cost = 25
 
+/datum/supply_packs/imports/uppheavy
+	name = "UPP commando heavy armor set"
+	contains = list(/obj/item/clothing/suit/storage/faction/UPP/commando/heavy)
+	cost = 80
+
 /*******************************************************************************
 VEHICLES
 *******************************************************************************/

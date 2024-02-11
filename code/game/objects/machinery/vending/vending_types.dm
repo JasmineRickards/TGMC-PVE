@@ -514,21 +514,29 @@
 	icon_state = "secdrobe"
 	icon_deny = "secdrobe-off"
 	products = list(
-		/obj/item/clothing/glasses/sunglasses/sechud = 3,
-		/obj/item/clothing/head/helmet = 3,
-		/obj/item/clothing/head/soft/sec/corp = 3,
-		/obj/item/clothing/head/beret/sec = 3,
-		/obj/item/clothing/suit/armor/vest/security = 3,
-		/obj/item/clothing/under/rank/security/corp = 3,
-		/obj/item/clothing/under/rank/security = 3,
-		/obj/item/clothing/shoes/jackboots = 3,
-		/obj/item/clothing/gloves/marine/veteran/PMC = 3,
-		/obj/item/storage/backpack/security = 3,
-		/obj/item/storage/backpack/satchel/sec = 3,
-		/obj/item/storage/belt/security = 3,
-		/obj/item/radio/headset/mainship/survivor/sec = 3,
+		/obj/item/clothing/glasses/sunglasses/sechud = 4,
+		/obj/item/clothing/head/helmet = 4,
+		/obj/item/clothing/head/helmet/nt = 2,
+		/obj/item/clothing/head/soft/sec/corp = 4,
+		/obj/item/clothing/head/beret/sec = 4,
+		/obj/item/clothing/suit/armor/vest/security = 4,
+		/obj/item/clothing/suit/storage/marine/ntsecurity = 2,
+		/obj/item/clothing/under/rank/security/corp = 4,
+		/obj/item/clothing/under/rank/security = 4,
+		/obj/item/clothing/shoes/jackboots = 4,
+		/obj/item/clothing/gloves/marine/veteran/PMC = 4,
+		/obj/item/storage/backpack/security = 4,
+		/obj/item/storage/backpack/satchel/sec = 4,
+		/obj/item/storage/belt/security = 4,
+		/obj/item/radio/headset/mainship/survivor/sec = 4,
 		/obj/item/armor_module/storage/uniform/black_vest = 2,
 		/obj/item/armor_module/storage/uniform/webbing = 2,
+		/obj/item/storage/belt/marine = 2,
+		/obj/item/storage/pouch/general/large = 2,
+		/obj/item/storage/pouch/magazine = 4,
+		/obj/item/storage/pouch/magazine/pistol/large = 4,
+		/obj/item/storage/pouch/shotgun = 4,
+
 	)
 
 /obj/machinery/vending/hydronutrients
