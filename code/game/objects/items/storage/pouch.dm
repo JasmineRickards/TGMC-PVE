@@ -628,7 +628,7 @@
 	name = "flare pouch"
 	desc = "A pouch designed to hold flares and a single flaregun. Refillable with a M94 flare pack."
 	max_w_class = 2
-	storage_slots = 7
+	storage_slots = 21
 	draw_mode = 1
 	icon_state = "flare"
 	storage_type_limits = list(/obj/item/weapon/gun/grenade_launcher/single_shot/flare = 1)
@@ -670,7 +670,7 @@
 
 /obj/item/storage/pouch/flare/full
 	fill_type = /obj/item/explosive/grenade/flare
-	fill_number = 7
+	fill_number = 21
 
 /obj/item/storage/pouch/radio
 	name = "radio pouch"
