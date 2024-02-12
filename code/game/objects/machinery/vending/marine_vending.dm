@@ -562,6 +562,91 @@
 		SEASONAL_GUNS = "Seasonal",
 	)
 
+/obj/machinery/vending/mech
+	resistance_flags = INDESTRUCTIBLE
+	wrenchable = FALSE
+	use_power = NO_POWER_USE
+	products = list(
+		"Mecha Frames" = list(
+			/obj/vehicle/sealed/mecha/combat/gygax/darkTGMC = -1,
+),
+		"Mecha Weaponry" = list(
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/carbine = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/vulcanminigun = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/hi = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/ap = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/breaching = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/sabot = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/flashbang = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/pistol = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/burstpistol = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/smg = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/burstrifle = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/assault_rifle = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/shotgun = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/greyscale_lmg = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/light_cannon = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_rifle = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_projector = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser_smg = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/energy/laserincinerator = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/heavy_cannon = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/minigun = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/sniper = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/grenadelauncher = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/flamethrower = -1,
+			/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/rpg = -1,
+			/obj/item/mecha_parts/mecha_equipment/laser_sword = -1,
+		),
+		"Mecha Armor" = list(
+			/obj/item/mecha_parts/mecha_equipment/armor/melee = -1,
+			/obj/item/mecha_parts/mecha_equipment/armor/acid = -1,
+			/obj/item/mecha_parts/mecha_equipment/armor/explosive = -1,
+			/obj/item/mecha_parts/mecha_equipment/generator/greyscale = -1,
+			/obj/item/mecha_parts/mecha_equipment/generator/greyscale/upgraded = -1,
+			/obj/item/mecha_parts/mecha_equipment/energy_optimizer = -1,
+			/obj/item/cell/mecha = -1,
+		),
+		"Mecha Modules" = list(
+			/obj/item/mecha_parts/mecha_equipment/ability/dash = -1,
+			/obj/item/mecha_parts/mecha_equipment/ability/zoom = -1,
+			/obj/item/mecha_parts/mecha_equipment/melee_core = -1,
+			/obj/item/mecha_parts/mecha_equipment/ability/smoke/tanglefoot = -1,
+			/obj/item/mecha_parts/mecha_equipment/ability/smoke/cloak_smoke = -1,
+			/obj/item/mecha_parts/mecha_equipment/repair_droid = -1,
+		),
+		"Mecha Ammo" = list(
+			/obj/item/mecha_ammo/incendiary = -1,
+			/obj/item/mecha_ammo/scattershot = -1,
+			/obj/item/mecha_ammo/lmg = -1,
+			/obj/item/mecha_ammo/lmg/vulcanminigun = -1,
+			/obj/item/mecha_ammo/lmg/hi = -1,
+			/obj/item/mecha_ammo/lmg/ap = -1,
+			/obj/item/mecha_ammo/missiles_br = -1,
+			/obj/item/mecha_ammo/missiles_he = -1,
+			/obj/item/mecha_ammo/missiles_sabot = -1,
+			/obj/item/mecha_ammo/flashbang = -1,
+			/obj/item/mecha_ammo/clusterbang = -1,
+			/obj/item/mecha_ammo/vendable/lmg = -1,
+			/obj/item/mecha_ammo/vendable/rifle = -1,
+			/obj/item/mecha_ammo/vendable/burstrifle = -1,
+			/obj/item/mecha_ammo/vendable/shotgun = -1,
+			/obj/item/mecha_ammo/vendable/lightcannon = -1,
+			/obj/item/mecha_ammo/vendable/heavycannon = -1,
+			/obj/item/mecha_ammo/vendable/smg = -1,
+			/obj/item/mecha_ammo/vendable/burstpistol = -1,
+			/obj/item/mecha_ammo/vendable/pistol = -1,
+			/obj/item/mecha_ammo/vendable/rpg = -1,
+			/obj/item/mecha_ammo/vendable/minigun = -1,
+			/obj/item/mecha_ammo/vendable/sniper = -1,
+			/obj/item/mecha_ammo/vendable/grenade = -1,
+			/obj/item/mecha_ammo/vendable/flamer = -1,
+		),
+	)
+
 /obj/machinery/vending/weapon/valhalla
 	resistance_flags = INDESTRUCTIBLE
 	use_power = NO_POWER_USE
