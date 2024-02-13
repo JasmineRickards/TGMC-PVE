@@ -566,6 +566,7 @@
 	resistance_flags = INDESTRUCTIBLE
 	wrenchable = FALSE
 	use_power = NO_POWER_USE
+	req_access = ACCESS_MARINE_MECH
 	products = list(
 		"Mecha Frames" = list(
 			/obj/vehicle/sealed/mecha/combat/gygax/darkTGMC = -1,
