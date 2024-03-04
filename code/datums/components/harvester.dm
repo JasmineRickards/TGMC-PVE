@@ -142,10 +142,10 @@
 	to_chat(user, span_rose("You prepare to stab <b>[target != user ? "[target]" : "yourself"]</b>!"))
 	new /obj/effect/temp_visual/telekinesis(get_turf(target))
 	if((target != user) && do_after(user, 2 SECONDS, TRUE, target, BUSY_ICON_DANGER))
-		target.heal_overall_damage(12.5, 0, updating_health = TRUE)
+		target.heal_overall_damage(50, 25, updating_health = TRUE)
 	else
 		target.adjustStaminaLoss(-30)
-		target.heal_overall_damage(6, 0, updating_health = TRUE)
+		target.heal_overall_damage(25, 10, updating_health = TRUE)
 
 ///Signal handler calling when user is filling the harvester
 /datum/component/harvester/proc/attackby(datum/source, obj/item/cont, mob/user)
@@ -170,17 +170,17 @@
 
 	switch(loaded_reagent)
 		if(/datum/reagent/medicine/tramadol)
-			target.apply_damage(weapon.force*0.6, BRUTE, user.zone_selected)
-			target.apply_status_effect(/datum/status_effect/incapacitating/harvester_slowdown, 1 SECONDS)
+			target.apply_damage(weapon.force*3, BRUTE, user.zone_selected)
+			target.apply_status_effect(/datum/status_effect/incapacitating/harvester_slowdown, 3 SECONDS)
 
 		if(/datum/reagent/medicine/kelotane)
 			target.flamer_fire_act(10)
-			target.apply_damage(max(0, 20 - 20*target.hard_armor.getRating("fire")), BURN, user.zone_selected, target.get_soft_armor("fire", user.zone_selected))
+			target.apply_damage(max(0, 80 - 20*target.hard_armor.getRating("fire")), BURN, user.zone_selected, target.get_soft_armor("fire", user.zone_selected))
 			var/list/cone_turfs = generate_cone(target, 1, 0, 181, Get_Angle(user, target.loc))
 			for(var/turf/checked_turf AS in cone_turfs)
 				for(var/mob/living/victim in checked_turf)
 					victim.flamer_fire_act(10)
-					victim.apply_damage(max(0, 20 - 20*victim.hard_armor.getRating("fire")), BURN, user.zone_selected, victim.get_soft_armor("fire", user.zone_selected))
+					victim.apply_damage(max(0, 80 - 20*victim.hard_armor.getRating("fire")), BURN, user.zone_selected, victim.get_soft_armor("fire", user.zone_selected))
 
 		if(/datum/reagent/medicine/bicaridine)
 			if(isxeno(target))
