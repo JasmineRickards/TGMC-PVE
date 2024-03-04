@@ -142,10 +142,10 @@
 	to_chat(user, span_rose("You prepare to stab <b>[target != user ? "[target]" : "yourself"]</b>!"))
 	new /obj/effect/temp_visual/telekinesis(get_turf(target))
 	if((target != user) && do_after(user, 2 SECONDS, TRUE, target, BUSY_ICON_DANGER))
-		target.heal_overall_damage(50, 25, updating_health = TRUE)
+		target.heal_overall_damage(12.5, 5, updating_health = TRUE)
 	else
 		target.adjustStaminaLoss(-30)
-		target.heal_overall_damage(25, 10, updating_health = TRUE)
+		target.heal_overall_damage(12.5, 5, updating_health = TRUE)
 
 ///Signal handler calling when user is filling the harvester
 /datum/component/harvester/proc/attackby(datum/source, obj/item/cont, mob/user)

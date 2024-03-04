@@ -53,7 +53,7 @@
 	var/force_wielded = 40
 
 	var/codex_info = {"<b>Reagent info:</b><BR>
-	Bicaridine - heal your target for 50 brute and 25 burn. Usable on both dead and living targets.<BR>
+	Bicaridine - heal your target for 12.5 brute and 5 burn. Usable on both dead and living targets.<BR>
 	Kelotane - produce a cone of flames, as well as dealing extra burn damage.<BR>
 	Tramadol - slow your target for 3 seconds and triple the damage.<BR>
 	<BR>
