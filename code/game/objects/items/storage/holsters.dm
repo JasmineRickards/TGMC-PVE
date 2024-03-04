@@ -225,10 +225,12 @@
 	holsterable_allowed = list(
 		/obj/item/weapon/claymore/mercsword/machete,
 		/obj/item/weapon/claymore/harvester,
+		/obj/item/weapon/claymore/harvester/advanced,
 	)
 	can_hold = list(
 		/obj/item/weapon/claymore/mercsword/machete,
 		/obj/item/weapon/claymore/harvester,
+		/obj/item/weapon/claymore/harvester/advanced,
 	)
 
 /obj/item/storage/holster/blade/machete/full/Initialize()

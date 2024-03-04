@@ -462,7 +462,7 @@
 	slowdown = SLOWDOWN_ARMOR_HEAVY
 	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 50, BOMB = 75, BIO = 100, FIRE = 50, ACID = 75)
 	flags_inventory = BLOCKSHARPOBJ|NOPRESSUREDMAGE|NOQUICKEQUIP
-	flags_inv_hide = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
+	flags_inv_hide = HIDEJUMPSUIT
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_item_map_variant = NONE
 	siemens_coefficient = 0.6
@@ -473,6 +473,7 @@
 	icon_state = "detective"
 	item_state = "det_suit"
 	blood_overlay_type = "coat"
+	flags_inv_hide = NONE
 
 //Improved Security armor vests
 /obj/item/clothing/suit/storage/marine/ntsecurity

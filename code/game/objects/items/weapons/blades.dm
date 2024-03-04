@@ -53,9 +53,9 @@
 	var/force_wielded = 40
 
 	var/codex_info = {"<b>Reagent info:</b><BR>
-	Bicaridine - heal your target for 10 brute. Usable on both dead and living targets.<BR>
-	Kelotane - produce a cone of flames<BR>
-	Tramadol - slow your target for 2 seconds<BR>
+	Bicaridine - heal your target for 50 brute and 25 burn. Usable on both dead and living targets.<BR>
+	Kelotane - produce a cone of flames, as well as dealing extra burn damage.<BR>
+	Tramadol - slow your target for 3 seconds and triple the damage.<BR>
 	<BR>
 	<b>Tips:</b><BR>
 	> Needs to be connected to the Vali system to collect green blood. You can connect it though the Vali system's configurations menu.<BR>
@@ -84,7 +84,23 @@
 	icon_state = "energy_sword"
 	item_state = "energy_katana"
 	force = 180
-	attack_speed = 9
+	attack_speed = 7
+
+/obj/item/weapon/claymore/harvester/advanced/Initialize()
+	. = ..()
+	AddComponent(/datum/component/harvester)
+
+/obj/item/weapon/claymore/harvester/advanced/equipped(mob/user, slot)
+	. = ..()
+	toggle_item_bump_attack(user, TRUE)
+
+/obj/item/weapon/claymore/harvester/advanced/dropped(mob/user)
+	. = ..()
+	toggle_item_bump_attack(user, FALSE)
+
+/obj/item/weapon/claymore/harvester/advanced/get_mechanics_info()
+	. = ..()
+	. += jointext(codex_info, "<br>")
 
 /obj/item/weapon/claymore/mercsword
 	name = "combat sword"
