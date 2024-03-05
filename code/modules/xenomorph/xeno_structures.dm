@@ -1321,12 +1321,42 @@ TUNNEL
 	COOLDOWN_DECLARE(spawner_damage_alert_cooldown)
 	COOLDOWN_DECLARE(spawner_proxy_alert_cooldown)
 
+/obj/structure/xeno/spawner/elite
+	name = "Elite Nest"
+	desc = "A slimy, oozy resin bed filled with foul-looking, large egg-like ...things."
+
+/obj/structure/xeno/spawner/test
+	max_integrity = 500000
+	xeno_structure_flags = IGNORE_WEED_REMOVAL
+
 /obj/structure/xeno/spawner/Initialize()
 	. = ..()
 	GLOB.xeno_spawner += src
 	SSspawning.registerspawner(src, INFINITY, GLOB.xeno_ai_spawnable, 0, 0, null)
 	SSspawning.spawnerdata[src].required_increment = max(2 SECONDS, 1 MINUTES - SSmonitor.maximum_connected_players_count * SPAWN_RATE_PER_PLAYER)/SSspawning.wait
 	SSspawning.spawnerdata[src].max_allowed_mobs = max(14, MAX_SPAWNABLE_MOB_PER_PLAYER * SSmonitor.maximum_connected_players_count)
+	for(var/turfs in RANGE_TURFS(XENO_SILO_DETECTION_RANGE, src))
+		RegisterSignal(turfs, COMSIG_ATOM_ENTERED, .proc/spawner_proxy_alert)
+	update_minimap_icon()
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/structure/xeno/spawner/elite/Initialize()
+	. = ..()
+	GLOB.xeno_spawner += src
+	SSspawning.registerspawner(src, INFINITY, GLOB.xeno_ai_spawnable_elite, 0, 0, null)
+	SSspawning.spawnerdata[src].required_increment = max(2 SECONDS, 1 MINUTES - SSmonitor.maximum_connected_players_count * SPAWN_RATE_PER_PLAYER)/SSspawning.wait
+	SSspawning.spawnerdata[src].max_allowed_mobs = max(14, MAX_SPAWNABLE_MOB_PER_PLAYER * SSmonitor.maximum_connected_players_count)
+	for(var/turfs in RANGE_TURFS(XENO_SILO_DETECTION_RANGE, src))
+		RegisterSignal(turfs, COMSIG_ATOM_ENTERED, .proc/spawner_proxy_alert)
+	update_minimap_icon()
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/structure/xeno/spawner/test/Initialize()
+	. = ..()
+	GLOB.xeno_spawner += src
+	SSspawning.registerspawner(src, INFINITY, GLOB.xeno_ai_spawnable, 0, 0, null)
+	SSspawning.spawnerdata[src].required_increment = max(2 SECONDS, 1 MINUTES - SSmonitor.maximum_connected_players_count * SPAWN_RATE_PER_PLAYER)/SSspawning.wait
+	SSspawning.spawnerdata[src].max_allowed_mobs = max(35, MAX_SPAWNABLE_MOB_PER_PLAYER * SSmonitor.maximum_connected_players_count)
 	for(var/turfs in RANGE_TURFS(XENO_SILO_DETECTION_RANGE, src))
 		RegisterSignal(turfs, COMSIG_ATOM_ENTERED, .proc/spawner_proxy_alert)
 	update_minimap_icon()

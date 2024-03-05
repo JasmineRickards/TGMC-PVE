@@ -207,8 +207,8 @@
 	desc = "A crate full of 30mm bullets used on the dropship heavy guns. Moving this will require some sort of lifter."
 	equipment_type = /obj/structure/dropship_equipment/weapon/heavygun
 	travelling_time =  1 SECONDS
-	ammo_count = 400
-	max_ammo_count = 400
+	ammo_count = 2000
+	max_ammo_count = 2000
 	transferable_ammo = TRUE
 	ammo_used_per_firing = 20
 	point_cost = 15
@@ -316,13 +316,12 @@
 	icon_state = "laser_battery"
 	desc = "A high-capacity laser battery used to power laser beam weapons. Moving this will require some sort of lifter."
 	travelling_time = 0.3 SECONDS
-	ammo_count = 200
-	max_ammo_count = 200
+	ammo_count = 2000
+	max_ammo_count = 2000
 	ammo_used_per_firing = 40
 	equipment_type = /obj/structure/dropship_equipment/weapon/laser_beam_gun
 	ammo_name = "charge"
 	transferable_ammo = TRUE
-	ammo_used_per_firing = 10
 	warning_sound = 'sound/effects/nightvision.ogg'
 	point_cost = 25
 	///The length of the beam that will come out of when we fire do both ends xxxoxxx where o is where you click
@@ -377,8 +376,8 @@
 	icon_state = "single"
 	icon = 'icons/Marine/mainship_props64.dmi'
 	equipment_type = /obj/structure/dropship_equipment/weapon/rocket_pod
-	ammo_count = 1
-	max_ammo_count = 1
+	ammo_count = 6
+	max_ammo_count = 6
 	ammo_name = "rocket"
 	ammo_id = ""
 	bound_width = 64
@@ -508,8 +507,8 @@
 	icon_state = "minirocket"
 	icon = 'icons/Marine/mainship_props.dmi'
 	equipment_type = /obj/structure/dropship_equipment/weapon/minirocket_pod
-	ammo_count = 6
-	max_ammo_count = 6
+	ammo_count = 24
+	max_ammo_count = 24
 	ammo_name = "minirocket"
 	travelling_time = 1 SECONDS
 	transferable_ammo = TRUE

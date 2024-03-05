@@ -120,6 +120,13 @@ GLOBAL_LIST_INIT(xeno_ai_spawnable, list(
 	/mob/living/carbon/xenomorph/scorpion/ai,
 ))
 
+GLOBAL_LIST_INIT(xeno_ai_spawnable_elite, list(
+	/mob/living/carbon/xenomorph/drone/ai,
+	/mob/living/carbon/xenomorph/warrior/ai,
+	/mob/living/carbon/xenomorph/spitter/ai,
+	/mob/living/carbon/xenomorph/defender/ai,
+))
+
 GLOBAL_LIST_INIT(uv_ai_spawnable, list(
 	/mob/living/carbon/xenomorph/zuv/ai,
 	/mob/living/carbon/xenomorph/zuv/komodo/ai,
