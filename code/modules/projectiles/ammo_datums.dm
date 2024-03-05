@@ -883,7 +883,7 @@ datum/ammo/bullet/shotgun/slug/enemyturret/on_hit_mob(mob/M,obj/projectile/P)
 	accuracy_var_low = 8
 	accuracy_var_high = 8
 	max_range = 15
-	damage = 50
+	damage = 25
 	damage_falloff = 0.5
 	penetration = 15
 	sundering = 7
@@ -896,7 +896,7 @@ datum/ammo/bullet/shotgun/slug/enemyturret/on_hit_mob(mob/M,obj/projectile/P)
 	accuracy_var_low = 8
 	accuracy_var_high = 8
 	max_range = 15
-	damage = 40
+	damage = 25
 	damage_falloff = 1
 	penetration = 25
 	sundering = 5
@@ -977,7 +977,7 @@ datum/ammo/bullet/shotgun/slug/enemyturret/on_hit_mob(mob/M,obj/projectile/P)
 	accuracy_var_low = 7
 	accuracy_var_high = 7
 	max_range = 15
-	damage = 15
+	damage = 12
 	damage_falloff = 0.5
 	penetration = 15
 	on_pierce_multiplier = 0.4
@@ -988,7 +988,7 @@ datum/ammo/bullet/shotgun/slug/enemyturret/on_hit_mob(mob/M,obj/projectile/P)
 	accuracy_var_low = 7
 	accuracy_var_high = 7
 	max_range = 15
-	damage = 15
+	damage = 12
 	damage_falloff = 0.5
 	penetration = 15
 	on_pierce_multiplier = 0.4
@@ -1016,7 +1016,7 @@ datum/ammo/bullet/shotgun/sx16_slug/on_hit_mob(mob/M, obj/projectile/P)
 	bonus_projectiles_amount = 4
 	bonus_projectiles_scatter = 2
 	max_range = 15
-	damage = 17
+	damage = 15
 	damage_falloff = 0.25
 	penetration = 15
 	sundering = 1.5
